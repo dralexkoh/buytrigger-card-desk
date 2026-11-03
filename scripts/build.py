@@ -2,11 +2,13 @@ from pathlib import Path
 from bs4 import BeautifulSoup
 import json, html, shutil, hashlib
 from xml.sax.saxutils import escape
-P=Path(__file__).resolve().parents[1];D=P/'dist';BASE='https://dralexkoh.github.io/buytrigger-card-desk/'
+P=Path(__file__).resolve().parents[1];D=P/'dist';BASE='https://buytrigger.cards/'
+# Existing item IDs remain stable across the custom-domain move.
+FEED_GUID_BASE='https://dralexkoh.github.io/buytrigger-card-desk/'
 BRAND='BuyTrigger.Cards';BYLINE='Alex & Oscar'
 if D.exists():shutil.rmtree(D)
 D.mkdir()
-FILES=['analytics.js','analytics-config.json','index.html','tcg-modern-index.html','site.css','header.css','social.css','site.js','social.js','modern.css','modern.js','catalogue.js','editorial.js','market-engine.js','market-history.js','market-release.json','image-sources.json','market-sources.json','top-50.html','top50.css','top50.js','top50-data.js','top50-feature.js','top50-release.json','top50-sources.json','top50-image-sources.json','refresh-status.js','refresh-status.json']
+FILES=['CNAME','analytics.js','analytics-config.json','index.html','tcg-modern-index.html','site.css','header.css','social.css','site.js','social.js','modern.css','modern.js','catalogue.js','editorial.js','market-engine.js','market-history.js','market-release.json','image-sources.json','market-sources.json','top-50.html','top50.css','top50.js','top50-data.js','top50-feature.js','top50-release.json','top50-sources.json','top50-image-sources.json','refresh-status.js','refresh-status.json']
 for name in FILES:shutil.copy2(P/name,D/name)
 shutil.copytree(P/'assets',D/'assets')
 # Public, immutable collector receipts only; no operational state or private files.
@@ -34,7 +36,7 @@ for a in e['articles']:
 urls=[BASE,BASE+'tcg-modern-index.html',BASE+'top-50.html']+[BASE+'stories/'+a['slug']+'/' for a in e['articles']]
 (D/'sitemap.xml').write_text('<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'+''.join('<url><loc>'+escape(u)+'</loc><lastmod>2026-11-03</lastmod></url>'for u in urls)+'</urlset>')
 (D/'robots.txt').write_text('User-agent: *\nAllow: /\nSitemap: '+BASE+'sitemap.xml\n')
-items=''.join('<item><title>'+escape(a['title'])+'</title><link>'+BASE+'stories/'+a['slug']+'/</link><guid>'+BASE+'stories/'+a['slug']+'/</guid><pubDate>Tue, 03 Nov 2026 00:00:00 GMT</pubDate><description>'+escape(a['summary'])+'</description></item>'for a in e['articles'])
+items=''.join('<item><title>'+escape(a['title'])+'</title><link>'+BASE+'stories/'+a['slug']+'/</link><guid>'+FEED_GUID_BASE+'stories/'+a['slug']+'/</guid><pubDate>Tue, 03 Nov 2026 00:00:00 GMT</pubDate><description>'+escape(a['summary'])+'</description></item>'for a in e['articles'])
 (D/'rss.xml').write_text('<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"><channel><title>BuyTrigger.Cards — Card Desk by Alex &amp; Oscar</title><link>'+BASE+'</link><description>Free news and practical card collecting research.</description><language>en-gb</language>'+items+'</channel></rss>')
 (D/'404.html').write_text('<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Page not found · BuyTrigger.Cards</title><body style="background:#f7f5ef;color:#171719;font-family:Arial;padding:10vw"><h1>That card slipped out of the binder.</h1><p>This page could not be found.</p><a style="color:#c01922" href="'+BASE+'">Back to BuyTrigger.Cards →</a></body></html>')
 (D/'.nojekyll').write_text('')

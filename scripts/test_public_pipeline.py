@@ -134,6 +134,14 @@ class PublicPipelineTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             P.apply_output(output, stage, True)
 
+    def test_isolated_build_keeps_domain_contract_without_broad_file_copy(self):
+        (self.site / 'CNAME').write_text('buytrigger.cards\n')
+        (self.site / 'not-public.txt').write_text('must not enter build stage')
+        stage = self.root / 'domain-stage'
+        P.copy_source(self.site, stage)
+        self.assertEqual((stage / 'CNAME').read_text(), 'buytrigger.cards\n')
+        self.assertFalse((stage / 'not-public.txt').exists())
+
 
 if __name__ == "__main__":
     unittest.main()

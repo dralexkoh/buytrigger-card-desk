@@ -7,13 +7,15 @@ test('route notification follows successful rendering and skips redirect-only ro
   const src=fs.readFileSync('site.js','utf8');
   const code=src.slice(src.indexOf('function render(){'),src.indexOf("document.addEventListener('click'"));
   const nodes={'#main':{innerHTML:''},'#site-nav':{classList:{remove(){}}},'.mobile-menu':{setAttribute(){}}};
-  const rendered=[],redirects=[],document={body:{dataset:{}},title:''},location={hash:'#home',replace:url=>redirects.push(url)};
+  const rendered=[],redirects=[],document={body:{dataset:{}},title:''},location={hash:'#home',search:'',replace:url=>redirects.push(url)};
   const window={scrollTo(){},BTAnalytics:{routeRendered(){rendered.push({html:nodes['#main'].innerHTML,title:document.title});}}};
   const context={window,document,location,$:s=>nodes[s],$$:()=>[],imageErrors(){},calculate(){},article:()=>null,read:()=>'',home:()=>'<h1>Rendered home</h1>'};
   for(const name of ['desk','journal','targets','japan','top50','method','funding','privacy'])context[name]=()=>name;
   vm.runInNewContext(code+';render();',context);
   assert.equal(rendered.length,1);assert.match(rendered[0].html,/Rendered home/);assert.match(rendered[0].title,/BuyTrigger.Cards/);
   location.hash='#top50';vm.runInNewContext('render();',context);assert.equal(rendered.length,1);assert.deepEqual(redirects,['top-50.html']);
+  location.search='?utm_source=x&utm_campaign=top50&bt_analytics=qa';vm.runInNewContext('render();',context);
+  assert.equal(rendered.length,1);assert.equal(redirects.at(-1),'top-50.html'+location.search);
 });
 
 function sharing(failClipboard=false,failAnalytics=false){
@@ -30,6 +32,8 @@ function sharing(failClipboard=false,failAnalytics=false){
 test('share-copy event follows clipboard success with exact story/platform, never caption',async()=>{
   const s=sharing();await s.click('[data-share-story]',{dataset:{shareStory:'welcome'}});await s.click('[data-share-platform]',{dataset:{sharePlatform:'threads'}});
   await s.click('#copy-caption');assert.equal(s.writes.length,1);assert.equal(s.sent.length,1);
+  assert.ok(s.writes[0].includes('https://buytrigger.cards/stories/welcome/'));
+  assert.ok(!s.writes[0].includes('dralexkoh.github.io'));
   assert.equal(s.sent[0].name,'share_caption_copy');assert.equal(s.sent[0].props.article,'welcome');assert.equal(s.sent[0].props.platform,'threads');
   assert.deepEqual(Object.keys(s.sent[0].props).sort(),['article','platform']);
 });

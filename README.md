@@ -1,8 +1,8 @@
 # BuyTrigger.Cards — Card Desk by Alex & Oscar
 
-V1.2.1 · Clear graded-price status on both indices · 3 November 2026. Free card news, collecting guides, TCG Modern Index and Top 50 Raw editions.
+V1.2.2 · BuyTrigger.Cards custom domain · 3 November 2026. Free card news, collecting guides, TCG Modern Index and Top 50 Raw editions.
 
-Website: https://dralexkoh.github.io/buytrigger-card-desk/
+Website: https://buytrigger.cards/
 
 This repository contains the public static website only. Personal holdings, costs, photographs, owner analytics and authentication data are excluded.
 
@@ -18,7 +18,7 @@ This repository contains the public static website only. Personal holdings, cost
 - Top 50 history: 330 source dates, 8 February 2024 through 2 November 2026. First archive plus calendar month ends in 2024–25; daily in 2026. January 2024 is unavailable. 13,208 usable guide observations; 113 suspected observations held with originals preserved. The fixed long-history comparison uses 14 complete-history printings; all 50 have only one common priced date and no full-50 return. Both current selection and completeness filtering create hindsight bias.
 - Three independently source-linked historic Heritage auction highlights, separate from the Raw ranking and charts. No current-record claim.
 - Three-outcome grading calculator, all 50 gallery/table views, exact-printing search, individual history/evidence tabs and three-outcome bars.
-- No membership, active ads or affiliate programme. Optional first-party statistics start only after Allow statistics. Aggregate Cards reports are private in the existing BuyTrigger CRM and separate from stock traffic and personal holdings. Revenue integrations and the custom domain follow separately.
+- No membership, active ads or affiliate programme. Optional first-party statistics start only after Allow statistics. Aggregate Cards reports are private in the existing BuyTrigger CRM and separate from stock traffic and personal holdings. Revenue integrations follow separately.
 
 ## Credits and reuse
 
@@ -55,3 +55,9 @@ python3 scripts/run_daily_pipeline.py --dist-out /tmp/buytrigger-public --receip
 ```
 
 Only `dist/` is published. Build sources, tests and operational refresh state remain outside the Pages artifact. The frozen test fixture contains already-public price payloads. The workflow commits only validated price/history/status paths, checks the remote head before saving and verifies deployed file hashes.
+
+## Public domain
+
+The primary address is `https://buytrigger.cards/`. Porkbun remains the DNS provider. GitHub Pages settings own the custom-domain and HTTPS configuration; the artifact’s `CNAME` file records the expected domain but does not configure a custom Actions deployment. `www.buytrigger.cards` and the former GitHub Pages address should redirect to the primary address. Keep paths, query parameters and fragment links intact when verifying the redirects.
+
+Analytics accepts only the apex, `www` and the original GitHub project path. The collector must allow those exact origins before cutover. Consent remains local to each browser origin; no prior preference is copied across domains. RSS item links use the new domain while existing item GUIDs stay unchanged for subscriber continuity.

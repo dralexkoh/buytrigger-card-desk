@@ -6,7 +6,7 @@ function selectPlatform(platform){
  activePlatform=platform;
  dialog.querySelectorAll('[data-share-platform]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.sharePlatform===platform)));
  const signature='BuyTrigger.Cards · Alex & Oscar',tags=platform==='instagram'?'\n\n#PokemonTCG #CardCollecting #BuyTriggerCards':'';
- caption.value=activeArticle.title+(platform==='x'?'':'\n\n'+activeArticle.summary)+'\n\n'+'https://dralexkoh.github.io/buytrigger-card-desk/stories/'+activeArticle.slug+'/'+'\n\n'+signature+tags;
+ caption.value=activeArticle.title+(platform==='x'?'':'\n\n'+activeArticle.summary)+'\n\n'+'https://buytrigger.cards/stories/'+activeArticle.slug+'/'+'\n\n'+signature+tags;
  document.querySelector('#share-caption-label').textContent=(platform==='instagram'?'Instagram caption':platform==='threads'?'Threads post':'X post')+' · draft';
  status.textContent='';
 }

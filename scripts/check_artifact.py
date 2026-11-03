@@ -1,7 +1,10 @@
 from pathlib import Path
+import xml.etree.ElementTree as ET
 import re,json,math,hashlib,os
 from bs4 import BeautifulSoup
 p=Path(__file__).resolve().parents[1];d=Path(os.environ.get('BT_CARD_DESK_ARTIFACT_DIR',p/'dist'));fail=[]
+PUBLIC_BASE='https://buytrigger.cards/'
+assert (d/'CNAME').read_text()=='buytrigger.cards\n', 'Wrong public domain contract'
 APPROVED_COLLECTOR='https://brzawmbpwkdundruicca.supabase.co/functions/v1/cards-traffic-ingest'
 analytics=json.loads((d/'analytics-config.json').read_text())
 assert set(analytics)=={'schemaVersion','enabled','provider','collectorEndpoint','privacyReviewed','consentVersion','origins','campaigns','campaignSources','campaignMediums','campaignContent'}
@@ -9,6 +12,9 @@ assert analytics['schemaVersion']==1 and analytics['provider']=='buytrigger-crm'
 assert analytics['collectorEndpoint']==APPROVED_COLLECTOR
 assert isinstance(analytics['enabled'],bool) and isinstance(analytics['privacyReviewed'],bool)
 assert not analytics['enabled'] or analytics['privacyReviewed']
+assert {(site['origin'],site['basePath']) for site in analytics['origins']}=={
+ ('https://buytrigger.cards','/'),('https://www.buytrigger.cards','/'),
+ ('https://dralexkoh.github.io','/buytrigger-card-desk/')}
 for f in d.rglob('*'):
  if not f.is_file():continue
  if re.search(r' \d+(?:\.|$)',f.name):fail.append(f'Unexpected duplicate generated filename: {f.relative_to(d)}')
@@ -26,8 +32,28 @@ for f in d.rglob('*'):
    if not v or v.startswith(('http:','https:','data:','#')):continue
    if not (base/v.split('#')[0].split('?')[0]).exists():fail.append(f'{f.relative_to(d)}: missing {v}')
   if not soup.title:fail.append(f'{f}: missing title')
+  if f.name!='404.html':
+   relative=str(f.relative_to(d));route='' if relative=='index.html' else relative.removesuffix('index.html') if relative.startswith('stories/') else relative
+   expected=PUBLIC_BASE+route
+   canonical=soup.select_one('link[rel=canonical]');og=soup.select_one('meta[property="og:url"]');picture=soup.select_one('meta[property="og:image"]')
+   if not canonical or canonical.get('href')!=expected:fail.append(f'{relative}: wrong canonical URL')
+   if not og or og.get('content')!=expected:fail.append(f'{relative}: wrong sharing URL')
+   if not picture or not picture.get('content','').startswith(PUBLIC_BASE):fail.append(f'{relative}: wrong sharing picture origin')
+   if 'https://dralexkoh.github.io/buytrigger-card-desk/' in s:fail.append(f'{relative}: old public domain in page')
+   for tag in soup.select('script[type="application/ld+json"]'):
+    structured=json.loads(tag.string)
+    if structured.get('@type')=='Article' and (structured.get('mainEntityOfPage')!=expected or not structured.get('image','').startswith(PUBLIC_BASE)):
+     fail.append(f'{relative}: wrong article metadata domain')
   analytics_tags=[tag for tag in soup.select('script[src]') if tag['src'].split('?',1)[0]=='analytics.js']
   if f.name!='404.html' and len(analytics_tags)!=1:fail.append(f'{f.relative_to(d)}: expected exactly one optional analytics client')
+site_map=ET.fromstring((d/'sitemap.xml').read_text())
+assert all(node.text.startswith(PUBLIC_BASE) for node in site_map.iter('{http://www.sitemaps.org/schemas/sitemap/0.9}loc'))
+feed=ET.fromstring((d/'rss.xml').read_text())
+assert all(node.text.startswith(PUBLIC_BASE) for node in feed.iter('link'))
+# Stable legacy GUIDs identify existing feed items; they are not current links.
+assert all(node.text.startswith('https://dralexkoh.github.io/buytrigger-card-desk/stories/') for node in feed.iter('guid'))
+assert 'Sitemap: '+PUBLIC_BASE+'sitemap.xml' in (d/'robots.txt').read_text()
+assert PUBLIC_BASE in (d/'404.html').read_text()
 cat=(d/'catalogue.js').read_text();data=json.loads(cat[cat.index('=')+1:].strip().rstrip(';'))
 assert len(data['cards'])==100
 assert all(set(c['quotes'])<= {'Raw'} for c in data['cards'])

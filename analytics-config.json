@@ -6,6 +6,14 @@
   "consentVersion": "2026-11-03-v1",
   "origins": [
     {
+      "origin": "https://buytrigger.cards",
+      "basePath": "/"
+    },
+    {
+      "origin": "https://www.buytrigger.cards",
+      "basePath": "/"
+    },
+    {
       "origin": "https://dralexkoh.github.io",
       "basePath": "/buytrigger-card-desk/"
     }

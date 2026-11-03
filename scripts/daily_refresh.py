@@ -46,7 +46,7 @@ import urllib.request
 
 SCHEMA = 1
 BASE = "https://tcgcsv.com"
-USER_AGENT = "BuyTrigger.Cards/1.1 (+https://dralexkoh.github.io/buytrigger-card-desk/)"
+USER_AGENT = "BuyTrigger.Cards/1.1 (+https://buytrigger.cards/)"
 FILES = ("catalogue.js", "market-history.js", "market-release.json", "market-sources.json",
          "top50-data.js", "top50-release.json", "top50-sources.json")
 PUBLIC_OUTPUTS = (*FILES, "refresh-status.json", "data/refresh")

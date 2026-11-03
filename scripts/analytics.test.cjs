@@ -15,6 +15,25 @@ test('inactive or unreviewed config and other products cannot collect',()=>{
   for(const href of ['https://cards.alexkoh.me/','http://127.0.0.1:8000/','https://dralexkoh.github.io/another-repo/','https://dralexkoh.github.io/buytrigger-card-desk-evil/']) assert.equal(A.validConfig(config,href),false);
   assert.equal(A.validConfig({...config,collectorEndpoint:'https://bad.example/functions/v1/cards-traffic-ingest'},base),false);
 });
+test('custom domains and legacy project normalize the same pages and still require local consent',()=>{
+  for(const origin of ['https://buytrigger.cards/','https://www.buytrigger.cards/',base]){
+    const win=windowAt(),out=[];
+    win.location=new URL('tcg-modern-index.html?utm_source=x&utm_medium=social&utm_campaign=modern_index&bt_analytics=qa#cards',origin);
+    assert.equal(A.validConfig(config,win.location.href),true);
+    const c=A.createController(win,config,event=>out.push(event));
+    c.routeRendered();assert.equal(out.length,0);assert.equal(win.localStorage.writes,0);
+    c.choose('granted');c.routeRendered();
+    assert.deepEqual(out.map(event=>[event.event,event.page]),[['page_view','/tcg-modern-index'],['index_open','/tcg-modern-index']]);
+    assert.ok(out.every(event=>event.qa && event.utm_source==='x'));
+    win.location=new URL('stories/welcome/',origin);c.routeRendered();
+    assert.equal(out.at(-1).page,'/stories/welcome/');
+    c.choose('denied');win.location=new URL('top-50.html',origin);c.routeRendered();
+    assert.equal(out.at(-1).page,'/stories/welcome/');
+  }
+  for(const href of ['http://buytrigger.cards/','https://buytrigger.cards.evil.example/','https://www.buytrigger.cards.evil.example/','https://other.buytrigger.cards/','https://buytrigger.cards:8443/']){
+    assert.equal(A.validConfig(config,href),false);
+  }
+});
 test('no events or storage writes before choice; decline stays silent',()=>{
   const {win,out,controller:c}=controller(); c.routeRendered(); c.track('cta_click',{destination:'modern'});
   assert.equal(out.length,0); assert.equal(win.localStorage.writes,0); assert.equal(win.sessionStorage.writes,0);

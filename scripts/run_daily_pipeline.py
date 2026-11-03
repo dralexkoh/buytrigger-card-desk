@@ -25,7 +25,7 @@ def copy_source(source, stage):
     for p in source.iterdir():
         if p.is_symlink():
             raise ValueError('Symlink in public source')
-        if p.is_file() and (p.suffix in {'.html', '.css', '.js', '.json'} or p.name in {'requirements.txt', '.nojekyll'}):
+        if p.is_file() and (p.suffix in {'.html', '.css', '.js', '.json'} or p.name in {'requirements.txt', '.nojekyll', 'CNAME'}):
             shutil.copy2(p, stage/p.name)
     for name in ('assets', 'scripts', 'data'):
         if (source/name).exists():
