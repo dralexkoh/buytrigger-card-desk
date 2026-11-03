@@ -1,0 +1,82 @@
+/* V1.4: the cards, then the chart. */
+#modern-preview .hero{padding-top:42px;padding-bottom:38px;min-height:490px}
+#modern-preview .hero h1{margin-bottom:20px}
+#modern-preview .hero-sub{max-width:520px;font-size:19px;line-height:1.55}
+#modern-preview .hero-actions{margin-top:24px}
+#modern-preview .section-nav{margin-bottom:0}
+#modern-preview #performance{padding-top:24px}
+#modern-preview .performance-layout{display:block}
+#modern-preview .chart-panel{padding:24px 30px}
+#modern-preview .chart-top{margin-bottom:12px;gap:20px}
+#modern-preview .chart-top .small{margin:5px 0 0}
+#modern-preview .cohort-controls{display:flex;align-items:center;gap:16px;padding:0;margin:0 0 12px;border:0}
+#modern-preview .cohort-controls>span{font-size:12px;text-transform:uppercase;letter-spacing:.08em}
+#modern-preview #chart{margin:0;min-height:0}
+#modern-preview #cohort-description{font-size:13px;color:#68666b;line-height:1.5;margin:15px 0}
+#modern-preview #grade-availability{font-size:12px;margin:18px 0 0}
+#modern-preview .chart-footer{gap:15px}
+#modern-preview .chart-footer>span{font-size:12px;max-width:560px}
+#modern-preview .hero-art .art-note{font-size:12px}
+body[data-index="bluechip"] #modern-preview .hero h1>span{color:#ef3540}
+#modern-preview #card-dialog{width:min(1200px,96vw);max-width:1200px;padding:30px;max-height:94dvh}
+#modern-preview #card-dialog .dialog-layout{display:grid;grid-template-columns:minmax(280px,380px) minmax(0,1fr);gap:34px;padding-top:14px}
+#modern-preview #card-dialog .dialog-image{max-width:none;padding:20px;align-self:start}
+#modern-preview #card-dialog .dialog-image img{display:block;width:100%;height:auto;max-height:none;object-fit:contain}
+#modern-preview .artwork-open{display:block;width:100%;border:0;background:none;padding:0;cursor:zoom-in;color:inherit}
+#modern-preview .artwork-open>span{display:block;margin-top:12px;font-size:12px;font-weight:700;text-decoration:underline;text-underline-offset:3px}
+#modern-preview .artwork-open:focus-visible{outline:3px solid #df242b;outline-offset:6px}
+#modern-preview #card-dialog .dialog-image>small{margin-top:14px}
+#modern-preview #card-dialog .dialog-main{min-width:0}
+#modern-preview #card-dialog .dialog-meta{font-size:14px;line-height:1.5}
+#modern-preview #card-dialog .scenario-row{font-size:16px}
+#artwork-dialog{box-sizing:border-box;width:100vw;max-width:100vw;height:100dvh;max-height:100dvh;margin:0;padding:20px 28px;border:0;border-radius:0;background:#171719;color:#fff;overflow:hidden}
+#artwork-dialog::backdrop{background:#171719}
+#artwork-dialog .artwork-toolbar{display:flex;align-items:center;justify-content:space-between;gap:16px;height:66px;margin:0 0 12px}
+#artwork-dialog .artwork-toolbar>div:last-child{display:flex;gap:10px;flex-shrink:0}
+#artwork-dialog .artwork-toolbar span{font-size:10px;letter-spacing:.15em;color:#ffd35b}
+#artwork-dialog h2{font-size:21px;margin:5px 0;line-height:1.2;color:#fff}
+#artwork-dialog button{font:inherit;font-size:13px;font-weight:700;background:#303034;color:#fff;border:1px solid #666;border-radius:5px;padding:10px 14px;cursor:pointer;min-height:42px}
+#artwork-dialog button:focus-visible{outline:3px solid #ffd35b;outline-offset:3px}
+#artwork-dialog .artwork-stage{height:calc(100dvh - 142px);width:100%;overflow:auto;text-align:center}
+#artwork-dialog .artwork-stage img{display:block;width:auto;height:100%;max-width:100%;object-fit:contain;margin:0 auto}
+#artwork-dialog .artwork-stage.original-size img{height:auto;width:auto;max-width:none;margin:0 auto}
+#artwork-dialog .artwork-caption{color:#aaa;font-size:11px;text-align:center;margin:10px 0 0}
+@media(max-width:1000px){
+ #modern-preview #card-dialog .dialog-layout{grid-template-columns:minmax(240px,32%) minmax(0,1fr);gap:24px}
+ #modern-preview #card-dialog .dialog-image{padding:14px}
+}
+@media(max-width:760px){
+ #modern-preview .hero{padding:30px 20px 26px;min-height:0}
+ #modern-preview .hero-sub{font-size:17px}
+ #modern-preview #performance{padding-top:16px}
+ #modern-preview .chart-panel{padding:20px 16px}
+ #modern-preview .chart-top{flex-wrap:wrap;gap:12px}
+ #modern-preview .cohort-controls{gap:10px;flex-wrap:wrap}
+ #modern-preview .cohort-controls>span{display:none}
+ #modern-preview #card-dialog{padding:22px 18px}
+ #modern-preview #card-dialog .dialog-layout{display:flex;flex-direction:column;gap:24px}
+ #modern-preview #card-dialog .dialog-image{width:min(100%,310px);align-self:center;box-sizing:border-box}
+ #modern-preview #card-dialog .dialog-main{width:100%}
+ #modern-preview #card-dialog .dialog-image img{height:auto;max-height:none}
+ #artwork-dialog{padding:12px}
+ #artwork-dialog h2{font-size:15px}
+ #artwork-dialog .artwork-toolbar{height:74px;gap:10px}
+ #artwork-dialog button{padding:8px;font-size:11px}
+ #artwork-dialog .artwork-toolbar>div:last-child{gap:6px}
+ #artwork-dialog .artwork-stage{height:calc(100dvh - 138px)}
+}
+body[data-index="modern"] #modern-preview .hero h1>span{color:#b58b00}
+#modern-preview #card-dialog .scenario-row{grid-template-columns:72px minmax(0,1fr) 86px;gap:12px;min-height:34px}
+#modern-preview #card-dialog .scenario-row>span{white-space:nowrap}
+#modern-preview #card-dialog .three-bars{margin:15px 0;gap:14px}
+#modern-preview #card-dialog .scenario-note{font-size:12px;line-height:1.5;margin:12px 0;padding:10px}
+#modern-preview #card-dialog .dialog-meta{margin:8px 0 14px}
+#modern-preview #card-dialog .dialog-tabs{margin:15px 0}
+#modern-preview #card-dialog .individual-history{margin-top:16px}
+#modern-preview #card-dialog .individual-history h3{font-size:15px;margin:0 0 8px}
+#modern-preview #card-dialog .individual-history .scenario-note{padding:0;font-size:11px}
+@media(max-width:760px){#modern-preview #card-dialog .scenario-row{grid-template-columns:58px minmax(0,1fr) 72px;font-size:14px;gap:8px}}
+#modern-preview #card-dialog .three-bars{display:grid;gap:9px;margin:12px 0}
+#modern-preview #card-dialog .scenario-row{margin:0;min-height:28px}
+#modern-preview #card-dialog .individual-history svg{height:130px;width:100%}
+#modern-preview .entrant-layout{display:block}

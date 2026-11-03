@@ -5,10 +5,7 @@ from urllib.parse import urlsplit
 import argparse,hashlib,time,urllib.request,urllib.error
 
 PRIMARY_URL='https://buytrigger.cards/'
-NAMES=['homepage.css','typography.css','assets/editorial-grading-desk-v1.jpg','editorial.js','site.css','header.css','stories/psa-value-returns/index.html','index.html','tcg-modern-index.html','top-50.html','catalogue.js','market-history.js',
-       'market-release.json','top50-data.js','top50-release.json','refresh-status.json','refresh-status.js',
-       'modern.js','top50.js','site.js','social.js','analytics.js','analytics-config.json',
-       'sitemap.xml','rss.xml','robots.txt','stories/how-the-index-works/index.html']
+NAMES=['index-refinement.css', 'card-art.js', 'modern.js', 'top50.js', 'site.js', 'stories/how-the-index-works/index.html', 'homepage.css', 'typography.css', 'assets/editorial-grading-desk-v1.jpg', 'editorial.js', 'site.css', 'header.css', 'stories/psa-value-returns/index.html', 'index.html', 'tcg-modern-index.html', 'top-50.html', 'catalogue.js', 'market-history.js', 'market-release.json', 'top50-data.js', 'top50-release.json', 'refresh-status.json', 'refresh-status.js', 'social.js', 'analytics.js', 'analytics-config.json', 'sitemap.xml', 'rss.xml', 'robots.txt']
 
 
 def verify(dist,url=PRIMARY_URL,attempts=9,delay=10):

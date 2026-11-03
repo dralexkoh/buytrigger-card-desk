@@ -10,7 +10,7 @@
   const EXCLUSION_KEY = 'buytrigger.cards.analytics.exclude.v1';
   const CONSENT_DAYS = 180;
   const COLLECTOR = 'https://brzawmbpwkdundruicca.supabase.co/functions/v1/cards-traffic-ingest';
-  const PAGES = Object.freeze({home:'Home',desk:'Card Desk',journal:'Journal',targets:'Grading calculator',japan:'Japan Desk',method:'Sources and methods',funding:'Funding',privacy:'Privacy'});
+  const PAGES = Object.freeze({home:'Home',desk:'Newsroom',journal:'Features',targets:'Undervalued & calculator',japan:'Japanese cards',method:'Sources and methods',funding:'Funding',privacy:'Privacy'});
   const SOURCES = Object.freeze({
     'google.com':'google', 'www.google.com':'google', 'www.google.co.uk':'google',
     'bing.com':'bing', 'www.bing.com':'bing', 'duckduckgo.com':'duckduckgo',
@@ -57,7 +57,7 @@
       return article ? {id:'article:' + slug, url:'/stories/' + slug + '/', title:'Story: ' + slug, article:slug} : {id:'story-not-found',url:'/story-not-found',title:'Story not found'};
     }
     // Keep advertiser visits in the existing funding report category.
-    const route = parts[0] === 'advertise' ? 'funding' : Object.hasOwn(PAGES, parts[0]) ? parts[0] : 'home';
+    const route = parts[0] === 'advertise' ? 'funding' : parts[0] === 'calculator' ? 'targets' : Object.hasOwn(PAGES, parts[0]) ? parts[0] : 'home';
     return {id:route, url:route === 'home' ? '/' : '/' + route, title:PAGES[route]};
   }
   function campaign(href, config, data) {

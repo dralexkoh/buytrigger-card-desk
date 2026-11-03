@@ -101,7 +101,7 @@
       ],
       "cta": {
         "label": "Try the grading-cost calculator",
-        "href": "#targets"
+        "href": "#calculator"
       },
       "preparedAt": "2026-11-02",
       "publicationStatus": "Published 3 November 2026",
@@ -392,7 +392,7 @@
       ],
       "cta": {
         "label": "Change the costs and see all three outcomes",
-        "href": "#targets"
+        "href": "#calculator"
       },
       "preparedAt": "2026-11-02",
       "publicationStatus": "Published 3 November 2026",
@@ -437,7 +437,7 @@
       ],
       "cta": {
         "label": "Test the $19 example yourself",
-        "href": "#targets"
+        "href": "#calculator"
       },
       "preparedAt": "2026-11-02",
       "publicationStatus": "Published 3 November 2026",
@@ -446,36 +446,32 @@
     },
     {
       "slug": "how-the-index-works",
-      "title": "What TCG Modern Index is measuring—and what it isn't.",
+      "title": "How to read the TCG Modern Index.",
       "eyebrow": "INSIDE THE INDEX",
-      "summary": "The basket, the grades, the missing observations and the difference between an index level and a card price.",
-      "minutes": 4,
+      "summary": "Start with the chart, meet the cards, then follow the price history. A reader’s guide to the numbers on screen.",
+      "minutes": 3,
       "art": "cards",
       "date": "3 November 2026",
       "sections": [
         {
-          "heading": "A common starting point",
-          "html": "<p>An index puts the price paths of a defined basket onto a common scale. A baseline of 100 means the series starts at 100 points; it does not mean a card costs US$100, or that US$100 buys the basket.</p><p>For a simple two-card example with equal starting weights, one price rising 10% while the other falls 10% leaves the index at 100 before any rebalancing. The level tells you about the selected basket and method, not the whole hobby.</p>"
+          "heading": "Index points are not a card price",
+          "html": "<p>The chart puts price movement on a shared scale. A reading of 100 is an index level, not a card costing $100. Open a card for its own price, currency and dated history.</p>"
         },
         {
-          "heading": "What is available in this edition",
-          "html": "<p>The Raw edition contains 100 exact English card issues, all with real catalogue artwork and historical Raw observations. The source date is 2 November 2026: 99 issues have a USD market guide; Empoleon has a separately labelled European reference because its current USD row is missing. The currencies are not combined.</p><p>Daily archives cover 1 January through 2 November. A card has no price before its release, and missing observations stay blank. PSA 9/10 numeric data, transaction counts and population statistics remain pending.</p>"
+          "heading": "Choose the view that answers your question",
+          "html": "<p>2026 trend follows the cards with history from January. Latest lineup shows the more recent shared history. The number of cards and the actual date range appear beside the chart: neither view claims a full-year history for all 100 cards.</p><p>BlueChip Index follows 50 high-value cards, including vintage favourites. Its Since 2024 view covers 14 cards with longer history; all 50 remain visible with their individual charts. The earliest available archive is 8 February 2024.</p>"
         },
         {
-          "heading": "Raw, PSA 9 and PSA 10 stay separate",
-          "html": "<p>Different grades can trade differently and have different evidence coverage. Each series needs its own matched cards, dates and missing-data rules. A blank PSA 9 observation cannot be filled with a PSA 10 price. The three series are alternative views, never amounts to add together.</p><p>Provider guides are useful reference points, but they are not automatically independently verified completed sales. The page should show which kind of observation supports each figure.</p>"
+          "heading": "Get closer to the cards",
+          "html": "<p>Open any card for larger artwork, its three price outcomes and its history. Choose View full artwork to appreciate the scan at its available resolution. Catalogue pictures are references; edition notes matter, and a scan does not establish the condition of a card for sale.</p>"
         },
         {
-          "heading": "Where this first edition stands",
-          "html": "<p>The original 90 issues remain in place and ten disclosed additions complete the public catalogue. Every card has some genuine Raw history, but no date has all 100 simultaneously priced. We cannot honestly publish a full-100 historical return from this source.</p><p>The full-year comparison therefore uses an explicit fixed basket of <strong>82 issues</strong> with a USD guide for every day from 1 January through 2 November. Thirteen cards lack a January baseline; another five have source gaps: Latias &amp; Latios GX, Rayquaza, Garchomp, Empoleon and Zoroark. The separate latest USD basket contains 99 issues and starts on 2 November, its first common valid date. It has one observation and no historical return yet.</p><p>Each basket starts with equal weights and fixed notional quantities. Prices then move the weights. All 100 cards remain in the catalogue with their individual available histories, and the private legacy series is unchanged.</p><p>Selection happened in November and earlier prices were reconstructed. Choosing for complete data can itself introduce bias. This is retrospective research, not a strategy selected in January. The separate <a href=\"top-50.html\">Top 50 Raw edition</a> ranks 50 English printings by available USD market guides, including older cards. Trophy auction highlights stay outside that ranking.</p>"
+          "heading": "Read the price, then the source",
+          "html": "<p>Raw prices are provider market guides combining conditions, not independently checked individual sales. The currency and source date stay beside the number. Missing observations remain gaps, and a retained older price keeps its original date.</p><p>PSA 9 and PSA 10 prices are not connected yet. Pending means unknown, not zero. The three outcomes are alternatives and must never be added together.</p>"
         },
         {
-          "heading": "The Top 50 starts with a defined price universe",
-          "html": "<p>The Top 50 ranks the highest available English Raw USD guides in the reviewed source catalogue, matched to exact product and printing. A First Edition and an Unlimited card are separate series. Sealed products and trophy/winner awards are excluded. A guide is not evidence that a card trades frequently, and expensive cards without usable market guides remain unranked.</p><p>January 2024 is unavailable in the archive provider. We show the first archive on 8 February 2024, month-end observations through 2025, and daily observations in 2026. The long-history chart uses a disclosed fixed subset with complete usable observations; it is not a full-50 return. Both today’s selection and the completeness filter introduce hindsight bias. Held source observations retain their original amounts and dated receipts.</p><p><a href=\"top-50.html\">Explore the cards, history and separate auction room →</a></p>"
-        },
-        {
-          "heading": "What every change needs to explain",
-          "html": "<p>A new member needs an exact identity, a dated admission and a continuity calculation. Adding an expensive card must not manufacture a return. This first Raw version keeps its cohorts fixed; future membership or methodology changes require a new version.</p><p>Source-guide prices can jump when data is thin or the provider changes its estimate. These observations are preserved, not promoted as independently verified sales. The website is a dated snapshot; automatic daily updates are not active yet. TCG Modern Index is a research index, not shares in an investable fund.</p><p>Mew Blue’s 7 October archive row reports $5 before $1,702.50 on 8 October. That isolated source anomaly is held out of charts and returns; its original value and dated archive remain available in Evidence. No replacement price is invented.</p>"
+          "heading": "History is context, not a promise",
+          "html": "<p>These are retrospective views of a selection made in November 2026. Earlier prices do not establish that the cards would have been selected then. Source estimates can change sharply, especially with thin data; the charts are not an investable fund or returns after fees.</p><p>Open Evidence for dated observations and their original sources. A price chart can start a question; it cannot tell you the condition or value of a specific seller’s copy.</p>"
         }
       ],
       "sources": [
@@ -484,8 +480,8 @@
           "url": "https://tcgcsv.com/faq"
         },
         {
-          "label": "BuyTrigger: published Raw methodology and source receipt",
-          "url": "https://buytrigger.cards/tcg-modern-index.html#method"
+          "label": "BuyTrigger.Cards: price notes and sources",
+          "url": "https://buytrigger.cards/tcg-modern-index.html#sources"
         }
       ],
       "related": [

@@ -10,7 +10,7 @@ test('route notification follows successful rendering and skips redirect-only ro
   const rendered=[],redirects=[],document={body:{dataset:{}},title:''},location={hash:'#home',search:'',replace:url=>redirects.push(url)};
   const window={scrollTo(){},BTAnalytics:{routeRendered(){rendered.push({html:nodes['#main'].innerHTML,title:document.title});}}};
   const context={window,document,location,$:s=>nodes[s],$$:()=>[],imageErrors(){},calculate(){},article:()=>null,read:()=>'',home:()=>'<h1>Rendered home</h1>'};
-  for(const name of ['desk','journal','targets','japan','top50','method','funding','advertise','privacy'])context[name]=()=>name;
+  for(const name of ['desk','journal','calculator','targets','japan','top50','method','funding','advertise','privacy'])context[name]=()=>name;
   vm.runInNewContext(code+';render();',context);
   assert.equal(rendered.length,1);assert.match(rendered[0].html,/Rendered home/);assert.match(rendered[0].title,/BuyTrigger.Cards/);
   location.hash='#top50';vm.runInNewContext('render();',context);assert.equal(rendered.length,1);assert.deepEqual(redirects,['top-50.html']);
@@ -40,4 +40,17 @@ test('share-copy event follows clipboard success with exact story/platform, neve
 test('failed clipboard writes emit no success event; counter failure cannot misreport copy outcome',async()=>{
   const failed=sharing(true);await failed.click('[data-share-story]',{dataset:{shareStory:'welcome'}});await failed.click('#copy-caption');assert.equal(failed.sent.length,0);assert.match(failed.nodes['#share-status'].textContent,/Select and copy/);
   const optional=sharing(false,true);await optional.click('[data-share-story]',{dataset:{shareStory:'welcome'}});await optional.click('#copy-caption');assert.equal(optional.writes.length,1);assert.equal(optional.nodes['#share-status'].textContent,'Caption copied. Nothing has been posted.');
+});
+
+test('undervalued route is separate from the working calculator',()=>{
+  const src=fs.readFileSync('site.js','utf8');
+  const code=src.slice(src.indexOf('function render(){'),src.indexOf("document.addEventListener('click'"));
+  const nodes={'#main':{innerHTML:''},'#site-nav':{classList:{remove(){}}},'.mobile-menu':{setAttribute(){}}};
+  let calculations=0;
+  const context={document:{body:{dataset:{}},title:''},location:{hash:'#targets'},window:{scrollTo(){}},$:s=>nodes[s],$$:()=>[],imageErrors(){},calculate(){calculations++;},article:()=>null,read:()=>'',home:()=>''};
+  for(const name of ['desk','journal','targets','calculator','japan','top50','method','funding','advertise','privacy'])context[name]=()=>name;
+  vm.runInNewContext(code+';render();',context);
+  assert.equal(nodes['#main'].innerHTML,'targets');assert.equal(calculations,0);assert.match(context.document.title,/Undervalued Cards/);
+  context.location.hash='#calculator';vm.runInNewContext('render();',context);
+  assert.equal(nodes['#main'].innerHTML,'calculator');assert.equal(calculations,1);assert.match(context.document.title,/Grading Calculator/);
 });
