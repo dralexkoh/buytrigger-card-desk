@@ -22,3 +22,5 @@
 }
 @media(max-width:480px){.masthead{padding:12px 16px}.masthead .brand img{width:44px;height:44px}.masthead .brand strong{font-size:23px}.masthead .brand small{font-size:8px;letter-spacing:1.2px}.masthead .mobile-menu{padding:9px 10px;font-size:11px}}
 @media(max-width:360px){.masthead{gap:10px}.masthead .brand{gap:8px}.masthead .brand img{width:40px;height:40px}.masthead .brand strong{font-size:21px}}
+
+.masthead a.private-link{color:#171719;text-decoration:none;text-align:center}.masthead a.private-link:hover{border-color:#df242b;color:#b91c24}.masthead a.private-link:focus-visible{outline:3px solid #df242b;outline-offset:3px}
