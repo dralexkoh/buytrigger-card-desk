@@ -129,3 +129,10 @@ test('decline removes the banner and remains silent; full preferences require an
   const footer=elements.find(x=>x.textContent==='Visitor statistics preferences');footer.listeners.click();assert.equal(dialog.modalOpens,2);
   elements.find(x=>x.textContent==='Allow statistics').listeners.click();assert.equal(calls.length,2);assert.equal(win.BTAnalytics.status().consent,'granted');
 });
+
+// The new display route retains the collector's established page contract.
+test('advertising enquiries retain the existing funding category without leaking email or query',()=>{
+ const {win,out,controller:c}=controller('index.html?email=PRIVATE#advertise');
+ c.routeRendered();assert.equal(out.length,0);c.choose('granted');c.routeRendered();
+ assert.equal(out.length,1);assert.equal(out[0].page,'/funding');assert.ok(!JSON.stringify(out).includes('PRIVATE'));
+});

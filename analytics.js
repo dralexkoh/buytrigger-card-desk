@@ -56,7 +56,8 @@
       const article = data.articles.find(a => a.slug === slug);
       return article ? {id:'article:' + slug, url:'/stories/' + slug + '/', title:'Story: ' + slug, article:slug} : {id:'story-not-found',url:'/story-not-found',title:'Story not found'};
     }
-    const route = Object.hasOwn(PAGES, parts[0]) ? parts[0] : 'home';
+    // Keep advertiser visits in the existing funding report category.
+    const route = parts[0] === 'advertise' ? 'funding' : Object.hasOwn(PAGES, parts[0]) ? parts[0] : 'home';
     return {id:route, url:route === 'home' ? '/' : '/' + route, title:PAGES[route]};
   }
   function campaign(href, config, data) {

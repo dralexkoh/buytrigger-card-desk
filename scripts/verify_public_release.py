@@ -5,7 +5,7 @@ from urllib.parse import urlsplit
 import argparse,hashlib,time,urllib.request,urllib.error
 
 PRIMARY_URL='https://buytrigger.cards/'
-NAMES=['index.html','tcg-modern-index.html','top-50.html','catalogue.js','market-history.js',
+NAMES=['homepage.css','typography.css','assets/editorial-grading-desk-v1.jpg','editorial.js','site.css','header.css','stories/psa-value-returns/index.html','index.html','tcg-modern-index.html','top-50.html','catalogue.js','market-history.js',
        'market-release.json','top50-data.js','top50-release.json','refresh-status.json','refresh-status.js',
        'modern.js','top50.js','site.js','social.js','analytics.js','analytics-config.json',
        'sitemap.xml','rss.xml','robots.txt','stories/how-the-index-works/index.html']
@@ -18,7 +18,7 @@ def verify(dist,url=PRIMARY_URL,attempts=9,delay=10):
         for name,expected in list(pending.items()):
             try:
                 req=urllib.request.Request(url.rstrip('/')+'/'+name+'?release-check='+expected[:16],
-                    headers={'User-Agent':'BuyTrigger.Cards release verification/1.2.2','Cache-Control':'no-cache'})
+                    headers={'User-Agent':'BuyTrigger.Cards release verification/1.3.0','Cache-Control':'no-cache'})
                 with urllib.request.urlopen(req,timeout=20) as response:
                     final=urlsplit(response.geturl())
                     actual=hashlib.sha256(response.read()).hexdigest()

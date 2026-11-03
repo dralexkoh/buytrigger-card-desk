@@ -109,7 +109,11 @@
       "eventDate": "2026-10-28",
       "kind": "News",
       "publishedAt": "2026-11-03",
-      "status": "published"
+      "status": "published",
+      "image": "assets/editorial-grading-desk-v1.jpg",
+      "imageAlt": "Original editorial illustration of a collector inspecting a fantasy trading card with a magnifying glass",
+      "imageCaption": "Original editorial illustration · BuyTrigger.Cards",
+      "imageCredit": "Original editorial illustration · BuyTrigger.Cards"
     },
     {
       "slug": "psa-october-theft-update",
@@ -586,5 +590,6 @@
     "completeDailyArchive": false,
     "description": "Curated three-week catch-up plus evergreen guides"
   },
-  "publishedAt": "2026-11-03"
+  "publishedAt": "2026-11-03",
+  "featuredArticle": "psa-value-returns"
 }

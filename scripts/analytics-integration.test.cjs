@@ -10,7 +10,7 @@ test('route notification follows successful rendering and skips redirect-only ro
   const rendered=[],redirects=[],document={body:{dataset:{}},title:''},location={hash:'#home',search:'',replace:url=>redirects.push(url)};
   const window={scrollTo(){},BTAnalytics:{routeRendered(){rendered.push({html:nodes['#main'].innerHTML,title:document.title});}}};
   const context={window,document,location,$:s=>nodes[s],$$:()=>[],imageErrors(){},calculate(){},article:()=>null,read:()=>'',home:()=>'<h1>Rendered home</h1>'};
-  for(const name of ['desk','journal','targets','japan','top50','method','funding','privacy'])context[name]=()=>name;
+  for(const name of ['desk','journal','targets','japan','top50','method','funding','advertise','privacy'])context[name]=()=>name;
   vm.runInNewContext(code+';render();',context);
   assert.equal(rendered.length,1);assert.match(rendered[0].html,/Rendered home/);assert.match(rendered[0].title,/BuyTrigger.Cards/);
   location.hash='#top50';vm.runInNewContext('render();',context);assert.equal(rendered.length,1);assert.deepEqual(redirects,['top-50.html']);

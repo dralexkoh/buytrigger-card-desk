@@ -8,7 +8,7 @@ FEED_GUID_BASE='https://dralexkoh.github.io/buytrigger-card-desk/'
 BRAND='BuyTrigger.Cards';BYLINE='Alex & Oscar'
 if D.exists():shutil.rmtree(D)
 D.mkdir()
-FILES=['CNAME','analytics.js','analytics-config.json','index.html','tcg-modern-index.html','site.css','header.css','social.css','site.js','social.js','modern.css','modern.js','catalogue.js','editorial.js','market-engine.js','market-history.js','market-release.json','image-sources.json','market-sources.json','top-50.html','top50.css','top50.js','top50-data.js','top50-feature.js','top50-release.json','top50-sources.json','top50-image-sources.json','refresh-status.js','refresh-status.json']
+FILES=['homepage.css','typography.css','CNAME','analytics.js','analytics-config.json','index.html','tcg-modern-index.html','site.css','header.css','social.css','site.js','social.js','modern.css','modern.js','catalogue.js','editorial.js','market-engine.js','market-history.js','market-release.json','image-sources.json','market-sources.json','top-50.html','top50.css','top50.js','top50-data.js','top50-feature.js','top50-release.json','top50-sources.json','top50-image-sources.json','refresh-status.js','refresh-status.json']
 for name in FILES:shutil.copy2(P/name,D/name)
 shutil.copytree(P/'assets',D/'assets')
 # Public, immutable collector receipts only; no operational state or private files.
@@ -18,6 +18,8 @@ if refresh.exists():
   for receipt in (refresh/folder).rglob('*.json'):
    target=D/receipt.relative_to(P);target.parent.mkdir(parents=True,exist_ok=True);shutil.copy2(receipt,target)
 e=json.loads((P/'editorial.json').read_text())
+featured=next(a for a in e['articles'] if a['slug']==e.get('featuredArticle','psa-value-returns'))
+assert featured.get('image') and (P/featured['image']).is_file(), 'Featured story needs real editorial artwork'
 for a in e['articles']:
  soup=BeautifulSoup((P/'index.html').read_text(),'html.parser');soup.body['data-route']='read/'+a['slug'];soup.head.insert(0,soup.new_tag('base',href='../../'))
  soup.title.string=a['title']+' · '+BRAND;url=BASE+'stories/'+a['slug']+'/'

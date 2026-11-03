@@ -1,0 +1,58 @@
+{
+  "retrievedAt": "2026-11-03",
+  "provider": "Google Fonts / font authors",
+  "licences": [
+    "https://github.com/google/fonts/blob/main/ofl/barlowcondensed/OFL.txt",
+    "https://github.com/google/fonts/blob/main/ofl/ibmplexsans/OFL.txt"
+  ],
+  "fonts": [
+    {
+      "family": "Barlow Condensed",
+      "weight": "600",
+      "url": "https://fonts.gstatic.com/s/barlowcondensed/v13/HTxwL3I-JCGChYJ8VI-L6OO_au7B4873z3bWuYMBYro.woff2",
+      "file": "barlow-condensed-600.woff2",
+      "sha256": "5bc49d41f32810a114765314392332ce2acae2276635eee265a50319a12c1b49",
+      "bytes": 14844
+    },
+    {
+      "family": "Barlow Condensed",
+      "weight": "700",
+      "url": "https://fonts.gstatic.com/s/barlowcondensed/v13/HTxwL3I-JCGChYJ8VI-L6OO_au7B46r2z3bWuYMBYro.woff2",
+      "file": "barlow-condensed-700.woff2",
+      "sha256": "e3e520cb7468f2efd60bc2ce96694567c3312f4ef414fffbe605e3ad146b24e6",
+      "bytes": 14888
+    },
+    {
+      "family": "IBM Plex Sans",
+      "weight": "400",
+      "url": "https://fonts.gstatic.com/s/ibmplexsans/v23/zYXzKVElMYYaJe8bpLHnCwDKr932-G7dytD-Dmu1syxeKYbSB4Zh.woff2",
+      "file": "ibm-plex-sans-400.woff2",
+      "sha256": "056e4e2459f57a0033c8c9c844ff19d6e42ac8602027803d4345823bcc939818",
+      "bytes": 40240
+    },
+    {
+      "family": "IBM Plex Sans",
+      "weight": "500",
+      "url": "https://fonts.gstatic.com/s/ibmplexsans/v23/zYXzKVElMYYaJe8bpLHnCwDKr932-G7dytD-Dmu1syxeKYbSB4Zh.woff2",
+      "file": "ibm-plex-sans-500.woff2",
+      "sha256": "056e4e2459f57a0033c8c9c844ff19d6e42ac8602027803d4345823bcc939818",
+      "bytes": 40240
+    },
+    {
+      "family": "IBM Plex Sans",
+      "weight": "600",
+      "url": "https://fonts.gstatic.com/s/ibmplexsans/v23/zYXzKVElMYYaJe8bpLHnCwDKr932-G7dytD-Dmu1syxeKYbSB4Zh.woff2",
+      "file": "ibm-plex-sans-600.woff2",
+      "sha256": "056e4e2459f57a0033c8c9c844ff19d6e42ac8602027803d4345823bcc939818",
+      "bytes": 40240
+    },
+    {
+      "family": "IBM Plex Sans",
+      "weight": "700",
+      "url": "https://fonts.gstatic.com/s/ibmplexsans/v23/zYXzKVElMYYaJe8bpLHnCwDKr932-G7dytD-Dmu1syxeKYbSB4Zh.woff2",
+      "file": "ibm-plex-sans-700.woff2",
+      "sha256": "056e4e2459f57a0033c8c9c844ff19d6e42ac8602027803d4345823bcc939818",
+      "bytes": 40240
+    }
+  ]
+}
