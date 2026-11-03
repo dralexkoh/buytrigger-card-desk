@@ -1,6 +1,6 @@
 # BuyTrigger.Cards — Card Desk by Alex & Oscar
 
-V1.2 · Optional Cards traffic reporting · 3 November 2026. Free card news, collecting guides, TCG Modern Index and Top 50 Raw editions.
+V1.2.1 · Clear graded-price status on both indices · 3 November 2026. Free card news, collecting guides, TCG Modern Index and Top 50 Raw editions.
 
 Website: https://dralexkoh.github.io/buytrigger-card-desk/
 

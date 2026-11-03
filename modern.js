@@ -39,7 +39,7 @@ function chartSVG(points,{width=740,height=280,small=false,currency=false,label=
 }
 function renderChart(){
  const points=selectedPoints(),s=series();
- $('#chart').innerHTML=state.grade==='Raw'?chartSVG(points,{width:Math.max(400,$('#chart').clientWidth),label:`Retrospective Raw USD index, fixed ${s.ids.length}-card basket`}):'<div class="chart-unavailable"><b>PSA data is pending.</b><span>Raw prices and history are available. No graded values or returns are estimated.</span></div>';
+ $('#chart').innerHTML=state.grade==='Raw'?chartSVG(points,{width:Math.max(400,$('#chart').clientWidth),label:`Retrospective Raw USD index, fixed ${s.ids.length}-card basket`}):'<div class="chart-unavailable"><b>Graded prices are not connected yet.</b><span>Raw prices and history are available. PSA 9/10 prices and charts need their own dated sources.</span><a href="#graded-status">See price coverage &amp; sources →</a></div>';
  $('.periods').hidden=state.grade!=='Raw';$('.cohort-controls').hidden=state.grade!=='Raw';$('.scrubber-label').hidden=state.grade!=='Raw';$('#chart-scrub').hidden=state.grade!=='Raw'||!points.length;
  $('#chart-scrub').max=Math.max(0,points.length-1);$('#chart-scrub').value=Math.max(0,points.length-1);inspect(points.length-1);
 }
@@ -62,7 +62,7 @@ function renderMetrics(){
  $('#fact-usd').textContent=referenceCounts.USD+' /'+cards.length;$('#fact-range').textContent=date(data.release.historyStart)+' → '+date(data.release.historyEnd);
  $('#selected-coverage').textContent=isRaw?coverageLabel:'Pending';$('#coverage-fill').style.width=isRaw?(referenceCounts.total/cards.length*100)+'%':'0%';
  $('#coverage-description').textContent=isRaw?'Only available dated references count here. A separate EUR guide does not fill a missing USD index observation.':'PSA 9/10 are explicitly pending; unknown is not zero.';
- $('#grade-overview').innerHTML=grades.map(g=>`<article class="grade-card ${state.grade===g?'selected':''}"><span>${g}</span><small>${g==='Raw'?'DATED REFERENCES':'STATUS'}</small><strong>${g==='Raw'?coverageLabel:'Pending'}</strong><b>${g==='Raw'?date(data.release.sourceDate):'No estimated substitutes'}</b><p>${g==='Raw'?'100 exact issues · currencies kept separate':'Raw-first edition; graded sources next'}</p></article>`).join('');
+ $('#grade-overview').innerHTML=grades.map(g=>`<article class="grade-card ${state.grade===g?'selected':''}"><span>${g}</span><small>${g==='Raw'?'DATED REFERENCES':'STATUS'}</small><strong>${g==='Raw'?coverageLabel:'Pending'}</strong><b>${g==='Raw'?date(data.release.sourceDate):'No estimated substitutes'}</b><p>${g==='Raw'?'100 exact issues · currencies kept separate':'Graded prices are not connected yet'}</p></article>`).join('');
  $('#return-matrix').innerHTML=`<div class="matrix-heading"><h3>Same basket. Different windows.</h3><span>${isRaw?s.ids.length+'-card Raw USD basket':'PSA data pending'}</span></div><div class="matrix-scroll"><table><thead><tr><th>Window</th><th>Actual observations</th><th>Price return</th><th>Missing dates</th></tr></thead><tbody>${['7D','1M','3M','YTD','All'].map(period=>{const p=M.windowed(s.points,period),b=bounds(p);return `<tr><th>${period}</th><td>${isRaw&&b.first?date(b.first.date)+' → '+date(b.last.date):'Pending'}</td><td>${isRaw&&b.first?pct(M.observedChange(b.first,b.last)):'—'}</td><td>${isRaw?p.length-b.valid.length:'—'}</td></tr>`;}).join('')}</tbody></table></div>`;
  renderChart();renderMovers();
 }

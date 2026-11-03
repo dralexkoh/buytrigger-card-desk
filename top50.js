@@ -40,7 +40,7 @@ function inspect(i){const p=selectedPoints()[i];$('#chart-inspect').textContent=
 function renderChart(){
  const s=series(),points=selectedPoints(),b=bounds(points),raw=state.grade==='Raw';
  press('[data-grade]','grade',state.grade);press('[data-period]','period',state.period);press('[data-cohort]','cohort',state.cohort);
- $('#chart').innerHTML=raw?chartSVG(points,{width:Math.max(400,$('#chart').clientWidth),label:`Fixed ${s.ids.length}-card retrospective Raw USD basket`}):'<div class="chart-unavailable"><b>PSA data is pending.</b><span>No graded values or returns are inferred from Raw guides.</span></div>';
+ $('#chart').innerHTML=raw?chartSVG(points,{width:Math.max(400,$('#chart').clientWidth),label:`Fixed ${s.ids.length}-card retrospective Raw USD basket`}):'<div class="chart-unavailable"><b>Graded prices are not connected yet.</b><span>Raw prices and history are available. PSA 9/10 prices and charts need their own dated sources.</span><a href="#graded-status">See price coverage &amp; sources →</a></div>';
  $('#series-label').textContent=raw?`RAW USD / ${s.ids.length} FIXED PRINTINGS / BASE 100`:state.grade+' / NOT CONNECTED';
  $('#index-level').textContent=raw&&b.last?b.last.value.toFixed(2):'—';$('#index-return').textContent=raw?pct(M.observedChange(b.first,b.last)):'Pending';
  $('#period-description').textContent=raw&&b.first?`${date(b.first.date)} → ${date(b.last.date)} · chart dates, not trade dates`:'No supported performance series';
