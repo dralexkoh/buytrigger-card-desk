@@ -2,6 +2,13 @@ from pathlib import Path
 import re,json,math,hashlib,os
 from bs4 import BeautifulSoup
 p=Path(__file__).resolve().parents[1];d=Path(os.environ.get('BT_CARD_DESK_ARTIFACT_DIR',p/'dist'));fail=[]
+APPROVED_COLLECTOR='https://brzawmbpwkdundruicca.supabase.co/functions/v1/cards-traffic-ingest'
+analytics=json.loads((d/'analytics-config.json').read_text())
+assert set(analytics)=={'schemaVersion','enabled','provider','collectorEndpoint','privacyReviewed','consentVersion','origins','campaigns','campaignSources','campaignMediums','campaignContent'}
+assert analytics['schemaVersion']==1 and analytics['provider']=='buytrigger-crm'
+assert analytics['collectorEndpoint']==APPROVED_COLLECTOR
+assert isinstance(analytics['enabled'],bool) and isinstance(analytics['privacyReviewed'],bool)
+assert not analytics['enabled'] or analytics['privacyReviewed']
 for f in d.rglob('*'):
  if not f.is_file():continue
  if re.search(r' \d+(?:\.|$)',f.name):fail.append(f'Unexpected duplicate generated filename: {f.relative_to(d)}')
@@ -9,8 +16,8 @@ for f in d.rglob('*'):
  if f.suffix not in ['.html','.js','.css','.json','.xml','.txt','.svg']:continue
  s=f.read_text()
  if f.name in ['analytics.js','analytics-config.json']:
-  s=s.replace('https://brzawmbpwkdundruicca.supabase.co/functions/v1/cards-traffic-ingest','https://approved-public-card-traffic-collector.invalid')
- for pattern in [r'/Users/',r'/var/folders/',r'ACQI?-\d{6}',r'CT-\d{6}',r'TGT-\d{6}',r'eyJ[a-zA-Z0-9_-]{30}',r'gh[pousr]_[a-zA-Z0-9]{20}',r'supabase\.co',r'(?i)service_role',r'(?i)unpublished draft',r'(?i)local full-site preview']:
+  s=re.sub(re.escape(APPROVED_COLLECTOR)+r'''(?=['"\s<>]|$)''','https://approved-public-card-traffic-collector.invalid',s)
+ for pattern in [r'/Users/',r'/var/folders/',r'ACQI?-\d{6}',r'CT-\d{6}',r'TGT-\d{6}',r'eyJ[a-zA-Z0-9_-]{30}',r'gh[pousr]_[a-zA-Z0-9]{20}',r'supabase\.co\b',r'(?i)service_role',r'(?i)unpublished draft',r'(?i)local full-site preview']:
   if re.search(pattern,s):fail.append(f'{f.relative_to(d)}: {pattern}')
  if f.suffix=='.html':
   soup=BeautifulSoup(s,'html.parser');base=(f.parent/'../../').resolve()if soup.select_one('base') else f.parent
@@ -19,6 +26,8 @@ for f in d.rglob('*'):
    if not v or v.startswith(('http:','https:','data:','#')):continue
    if not (base/v.split('#')[0].split('?')[0]).exists():fail.append(f'{f.relative_to(d)}: missing {v}')
   if not soup.title:fail.append(f'{f}: missing title')
+  analytics_tags=[tag for tag in soup.select('script[src]') if tag['src'].split('?',1)[0]=='analytics.js']
+  if f.name!='404.html' and len(analytics_tags)!=1:fail.append(f'{f.relative_to(d)}: expected exactly one optional analytics client')
 cat=(d/'catalogue.js').read_text();data=json.loads(cat[cat.index('=')+1:].strip().rstrip(';'))
 assert len(data['cards'])==100
 assert all(set(c['quotes'])<= {'Raw'} for c in data['cards'])

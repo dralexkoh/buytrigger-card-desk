@@ -1,6 +1,6 @@
 # BuyTrigger.Cards — Card Desk by Alex & Oscar
 
-V1.1 · Daily Raw refresh infrastructure · 3 November 2026. Free card news, collecting guides, TCG Modern Index and Top 50 Raw editions.
+V1.2 · Optional Cards traffic reporting · 3 November 2026. Free card news, collecting guides, TCG Modern Index and Top 50 Raw editions.
 
 Website: https://dralexkoh.github.io/buytrigger-card-desk/
 
@@ -18,7 +18,7 @@ This repository contains the public static website only. Personal holdings, cost
 - Top 50 history: 330 source dates, 8 February 2024 through 2 November 2026. First archive plus calendar month ends in 2024–25; daily in 2026. January 2024 is unavailable. 13,208 usable guide observations; 113 suspected observations held with originals preserved. The fixed long-history comparison uses 14 complete-history printings; all 50 have only one common priced date and no full-50 return. Both current selection and completeness filtering create hindsight bias.
 - Three independently source-linked historic Heritage auction highlights, separate from the Raw ranking and charts. No current-record claim.
 - Three-outcome grading calculator, all 50 gallery/table views, exact-printing search, individual history/evidence tabs and three-outcome bars.
-- No membership, active ads, affiliate programme or visitor tracking in this release. Custom Cards traffic reporting is prepared separately for the existing private CRM; the collector remains disabled until deployment and verification. Revenue integrations and the custom domain follow separately.
+- No membership, active ads or affiliate programme. Optional first-party statistics start only after Allow statistics. Aggregate Cards reports are private in the existing BuyTrigger CRM and separate from stock traffic and personal holdings. Revenue integrations and the custom domain follow separately.
 
 ## Credits and reuse
 

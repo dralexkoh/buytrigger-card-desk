@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "enabled": true,
+  "provider": "buytrigger-crm",
+  "privacyReviewed": true,
+  "consentVersion": "2026-11-03-v1",
+  "origins": [
+    {
+      "origin": "https://dralexkoh.github.io",
+      "basePath": "/buytrigger-card-desk/"
+    }
+  ],
+  "campaigns": [
+    "launch_2026_11",
+    "card_desk",
+    "modern_index",
+    "top50"
+  ],
+  "campaignSources": [
+    "x",
+    "threads",
+    "instagram",
+    "tiktok",
+    "newsletter"
+  ],
+  "campaignMediums": [
+    "social",
+    "organic_social",
+    "email"
+  ],
+  "campaignContent": [
+    "launch",
+    "profile",
+    "story",
+    "index",
+    "top50"
+  ],
+  "collectorEndpoint": "https://brzawmbpwkdundruicca.supabase.co/functions/v1/cards-traffic-ingest"
+}
