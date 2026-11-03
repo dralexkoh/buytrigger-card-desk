@@ -1,0 +1,3007 @@
+{
+  "checked": "2026-11-03",
+  "purpose": "Exact catalogue illustrations for the public TCG Modern Index; not physical-copy condition evidence or a market-value ranking.",
+  "cards": [
+    {
+      "rank": 1,
+      "name": "Latias & Latios GX",
+      "set_name": "Team Up",
+      "number": "170/181",
+      "image_provider": "TCGdex",
+      "source_metadata_url": "https://api.tcgdex.net/v2/en/sets/sm9",
+      "files": {
+        "low": {
+          "file": "modern-001-low.webp",
+          "url": "https://assets.tcgdex.net/en/sm/sm9/170/low.webp",
+          "bytes": 24262,
+          "sha256": "e9ed0769799c2263ce953dc02aad067f2201b5c4c5cd9cad483f1785e34866bc",
+          "width": 245,
+          "height": 337,
+          "format": "WEBP",
+          "unchanged_download": true
+        },
+        "high": {
+          "file": "modern-001-high.webp",
+          "url": "https://assets.tcgdex.net/en/sm/sm9/170/high.webp",
+          "bytes": 96542,
+          "sha256": "eff69c64ac459f0d3d7c179c17e3e40a4c1927d3918e1de65dc936186bef3239",
+          "width": 600,
+          "height": 825,
+          "format": "WEBP",
+          "unchanged_download": true
+        }
+      }
+    },
+    {
+      "rank": 2,
+      "name": "Mew (Red)",
+      "set_name": "30th Celebration",
+      "number": "R/RGB",
+      "image_provider": "Limitless public card catalogue",
+      "source_metadata_url": "https://limitlesstcg.com/cards/en/30C/R",
+      "files": {
+        "low": {
+          "file": "modern-002-original.png",
+          "url": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/30C/30C_R_R_EN.png",
+          "bytes": 606727,
+          "sha256": "7f320531660a34eb16a01e5ad7954964a8a23f3103bfa8e54a9fdbbb4a5e1237",
+          "width": 736,
+          "height": 1024,
+          "format": "PNG",
+          "unchanged_download": true
+        },
+        "high": {
+          "file": "modern-002-original.png",
+          "url": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/30C/30C_R_R_EN.png",
+          "bytes": 606727,
+          "sha256": "7f320531660a34eb16a01e5ad7954964a8a23f3103bfa8e54a9fdbbb4a5e1237",
+          "width": 736,
+          "height": 1024,
+          "format": "PNG",
+          "unchanged_download": true
+        }
+      }
+    },
+    {
+      "rank": 3,
+      "name": "Mew (Blue)",
+      "set_name": "30th Celebration",
+      "number": "B/RGB",
+      "image_provider": "Limitless public card catalogue",
+      "source_metadata_url": "https://limitlesstcg.com/cards/en/30C/B",
+      "files": {
+        "low": {
+          "file": "modern-003-original.png",
+          "url": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/30C/30C_B_R_EN.png",
+          "bytes": 631181,
+          "sha256": "9cf509e2e7bc821813826a24f7feeb3a3dda966ff9cd067103e22932eb6c3227",
+          "width": 736,
+          "height": 1024,
+          "format": "PNG",
+          "unchanged_download": true
+        },
+        "high": {
+          "file": "modern-003-original.png",
+          "url": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/30C/30C_B_R_EN.png",
+          "bytes": 631181,
+          "sha256": "9cf509e2e7bc821813826a24f7feeb3a3dda966ff9cd067103e22932eb6c3227",
+          "width": 736,
+          "height": 1024,
+          "format": "PNG",
+          "unchanged_download": true
+        }
+      }
+    },
+    {
+      "rank": 4,
+      "name": "Mew (Green)",
+      "set_name": "30th Celebration",
+      "number": "G/RGB",
+      "image_provider": "Limitless public card catalogue",
+      "source_metadata_url": "https://limitlesstcg.com/cards/en/30C/G",
+      "files": {
+        "low": {
+          "file": "modern-004-original.png",
+          "url": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/30C/30C_G_R_EN.png",
+          "bytes": 677287,
+          "sha256": "9d2c9289cae84cdeee47c35770af857451d2ee1c3212c00ebfcb091d175af2b1",
+          "width": 736,
+          "height": 1024,
+          "format": "PNG",
+          "unchanged_download": true
+        },
+        "high": {
+          "file": "modern-004-original.png",
+          "url": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/30C/30C_G_R_EN.png",
+          "bytes": 677287,
+          "sha256": "9d2c9289cae84cdeee47c35770af857451d2ee1c3212c00ebfcb091d175af2b1",
+          "width": 736,
+          "height": 1024,
+          "format": "PNG",
+          "unchanged_download": true
+        }
+      }
+    },
+    {
+      "rank": 5,
+      "name": "Lugia EX",
+      "set_name": "Plasma Storm",
+      "number": "134/135",
+      "image_provider": "TCGdex",
+      "source_metadata_url": "https://api.tcgdex.net/v2/en/sets/bw8",
+      "files": {
+        "low": {
+          "file": "modern-005-low.webp",
+          "url": "https://assets.tcgdex.net/en/bw/bw8/134/low.webp",
+          "bytes": 25322,
+          "sha256": "92e6baf72dabd126757b05f665a3986f45237a16bea2d41ddaf78596b2642216",
+          "width": 245,
+          "height": 337,
+          "format": "WEBP",
+          "unchanged_download": true
+        },
+        "high": {
+          "file": "modern-005-high.webp",
+          "url": "https://assets.tcgdex.net/en/bw/bw8/134/high.webp",
+          "bytes": 89210,
+          "sha256": "63a6e0d5b2ea45b880a0bf43a1be461e438bcfc48184a5291df53296f4cc651d",
+          "width": 600,
+          "height": 825,
+          "format": "WEBP",
+          "unchanged_download": true
+        }
+      }
+    },
+    {
+      "rank": 6,
+      "name": "Umbreon VMAX",
+      "set_name": "Evolving Skies",
+      "number": "215/203",
+      "image_provider": "TCGdex",
+      "source_metadata_url": "https://api.tcgdex.net/v2/en/sets/swsh7",
+      "files": {
+        "low": {
+          "file": "modern-006-low.webp",
+          "url": "https://assets.tcgdex.net/en/swsh/swsh7/215/low.webp",
+          "bytes": 27514,
+          "sha256": "2509b1e9a6ee47ced69e9c7571deeac8e303f15a8e127cd4779b1c7b0f1c11ac",
+          "width": 245,
+          "height": 337,
+          "format": "WEBP",
+          "unchanged_download": true
+        },
+        "high": {
+          "file": "modern-006-high.webp",
+          "url": "https://assets.tcgdex.net/en/swsh/swsh7/215/high.webp",
+          "bytes": 113022,
+          "sha256": "29deb2deed66aba61b0162ab35890856da05cce80b5e8d1fafc27e6e0c3a63d4",
+          "width": 600,
+          "height": 825,
+          "format": "WEBP",
+          "unchanged_download": true
+        }
+      }
+    },
+    {
+      "rank": 7,
+      "name": "Gengar & Mimikyu GX",
+      "set_name": "Team Up",
+      "number": "165/181",
+      "image_provider": "TCGdex",
+      "source_metadata_url": "https://api.tcgdex.net/v2/en/sets/sm9",
+      "files": {
+        "low": {
+          "file": "modern-007-low.webp",
+          "url": "https://assets.tcgdex.net/en/sm/sm9/165/low.webp",
+          "bytes": 21856,
+          "sha256": "ba05a824c8979d1134c1ad683d75e4b9c0d361c9da4365c09e19cd16d796a0fc",
+          "width": 245,
+          "height": 337,
+          "format": "WEBP",
+          "unchanged_download": true
+        },
+        "high": {
+          "file": "modern-007-high.webp",
+          "url": "https://assets.tcgdex.net/en/sm/sm9/165/high.webp",
+          "bytes": 79760,
+          "sha256": "46952a70d657607e6851e001d6d667b2f7daef147d23cd8a8829e7933bfc8dd8",
+          "width": 600,
+          "height": 825,
+          "format": "WEBP",
+          "unchanged_download": true
+        }
+      }
+    },
+    {
+      "rank": 8,
+      "name": "M Charizard EX (X)",
+      "set_name": "Flashfire",
+      "number": "108/106",
+      "image_provider": "TCGdex",
+      "source_metadata_url": "https://api.tcgdex.net/v2/en/sets/xy2",
+      "files": {
+        "low": {
+          "file": "modern-008-low.webp",
+          "url": "https://assets.tcgdex.net/en/xy/xy2/108/low.webp",
+          "bytes": 35054,
+          "sha256": "6d8f9a2a9248c6653a1f202d982fc014f4a54e5dfb62086f55ec039e60fc6df5",
+          "width": 245,
+          "height": 337,
+          "format": "WEBP",
+          "unchanged_download": true
+        },
+        "high": {
+          "file": "modern-008-high.webp",
+          "url": "https://assets.tcgdex.net/en/xy/xy2/108/high.webp",
+          "bytes": 127394,
+          "sha256": "4977518f8945237771200960a77748f368a08346e29e35b960e5300b112866db",
+          "width": 600,
+          "height": 825,
+          "format": "WEBP",
+          "unchanged_download": true
+        }
+      }
+    },
+    {
+      "rank": 9,
+      "name": "Rayquaza",
+      "set_name": "Dragons Exalted",
+      "number": "128/124",
+      "image_provider": "TCGdex",
+      "source_metadata_url": "https://api.tcgdex.net/v2/en/sets/bw6",
+      "files": {
+        "low": {
+          "file": "modern-009-low.webp",
+          "url": "https://assets.tcgdex.net/en/bw/bw6/128/low.webp",
+          "bytes": 18196,
+          "sha256": "cdce2fb8e7ac3822c2cba2040fef36bd000255a0a6bb4eee375bbd2f281f1b82",
+          "width": 245,
+          "height": 337,
+          "format": "WEBP",
+          "unchanged_download": true
+        },
+        "high": {
+          "file": "modern-009-high.webp",
+          "url": "https://assets.tcgdex.net/en/bw/bw6/128/high.webp",
+          "bytes": 74300,
+          "sha256": "bd1f7cd5368a3de2af3528f259f6ebc8bbd2be61aa83c8c00c6ccfb20e34ea86",
+          "width": 600,
+          "height": 825,
+          "format": "WEBP",
+          "unchanged_download": true
+        }
+      }
+    },
+    {
+      "rank": 10,
+      "name": "Rayquaza VMAX",
+      "set_name": "Evolving Skies",
+      "number": "218/203",
+      "image_provider": "TCGdex",
+      "source_metadata_url": "https://api.tcgdex.net/v2/en/sets/swsh7",
+      "files": {
+        "low": {
+          "file": "modern-010-low.webp",
+          "url": "https://assets.tcgdex.net/en/swsh/swsh7/218/low.webp",
+          "bytes": 31312,
+          "sha256": "348d032699b73142f2261d43c2aa1abebf5358596aa1212e04bb864faf530962",
+          "width": 245,
+          "height": 337,
+          "format": "WEBP",
+          "unchanged_download": true
+        },
+        "high": {
+          "file": "modern-010-high.webp",
+          "url": "https://assets.tcgdex.net/en/swsh/swsh7/218/high.webp",
+          "bytes": 141618,
+          "sha256": "bd2e28700f54fec24a0d75fd9665d5d9e5689aff90e64a08ea30a20a16759dd0",
+          "width": 600,
+          "height": 825,
+          "format": "WEBP",
+          "unchanged_download": true
+        }
+      }
+    },
+    {
+      "rank": 11,
+      "name": "Ultra Ball",
+      "set_name": "Plasma Freeze",
+      "number": "122/116",
+      "image_provider": "TCGdex",
+      "source_metadata_url": "https://api.tcgdex.net/v2/en/sets/bw9",
+      "files": {
+        "low": {
+          "file": "modern-011-low.webp",
+          "url": "https://assets.tcgdex.net/en/bw/bw9/122/low.webp",
+          "bytes": 19052,
+          "sha256": "fbae081048c023ead8ca1b4b63effb92b14a19466562d0ad674241521f0290ab",
+          "width": 245,
+          "height": 337,
+          "format": "WEBP",
+          "unchanged_download": true
+        },
+        "high": {
+          "file": "modern-011-high.webp",
+          "url": "https://assets.tcgdex.net/en/bw/bw9/122/high.webp",
+          "bytes": 77248,
+          "sha256": "ab917166cd10ded586f948ea4db958349fbf264647d3a4a9e783565228f75803",
+          "width": 600,
+          "height": 825,
+          "format": "WEBP",
+          "unchanged_download": true
+        }
+      }
+    },
+    {
+      "rank": 12,
+      "name": "Umbreon ex",
+      "set_name": "Prismatic Evolutions",
+      "number": "161/131",
+      "image_provider": "TCGdex",
+      "source_metadata_url": "https://api.tcgdex.net/v2/en/sets/sv08.5",
+      "files": {
+        "low": {
+          "file": "modern-012-low.webp",
+          "url": "https://assets.tcgdex.net/en/sv/sv08.5/161/low.webp",
+          "bytes": 35654,
+          "sha256": "91974b52afdaa7eb05c44e86b070779f1b021ddf1d012ab733a02d3d0710a5b7",
+          "width": 245,
+          "height": 337,
+          "format": "WEBP",
+          "unchanged_download": true
+        },
+        "high": {
+          "file": "modern-012-high.webp",
+          "url": "https://assets.tcgdex.net/en/sv/sv08.5/161/high.webp",
+          "bytes": 168102,
+          "sha256": "d066a934daaced5239b16fc33b0a83a6cafac1ea8a21998dd3c2b18dbb1d78d5",
+          "width": 600,
+          "height": 825,
+          "format": "WEBP",
+          "unchanged_download": true
+        }
+      }
+    },
+    {
+      "rank": 13,
+      "name": "M Rayquaza EX",
+      "set_name": "Ancient Origins",
+      "number": "98/98",
+      "image_provider": "TCGdex",
+      "source_metadata_url": "https://api.tcgdex.net/v2/en/sets/xy7",
+      "files": {
+        "low": {
+          "file": "modern-013-low.webp",
+          "url": "https://assets.tcgdex.net/en/xy/xy7/98/low.webp",
+          "bytes": 36158,
+          "sha256": "177b1c9e9fe97435db4ace6cfea8db816104854ede19224315f7e9ac80affbef",
+          "width": 245,
+          "height": 337,
+          "format": "WEBP",
+          "unchanged_download": true
+        },
+        "high": {
+          "file": "modern-013-high.webp",
+          "url": "https://assets.tcgdex.net/en/xy/xy7/98/high.webp",
+          "bytes": 128932,
+          "sha256": "fac5dda7adabbed937b3b3d8a868ff63e379f5deb615f49a9657fce6b07ac3c1",
+          "width": 600,
+          "height": 825,
+          "format": "WEBP",
+          "unchanged_download": true
+        }
+      }
+    },
+    {
+      "rank": 14,
+      "name": "Gengar VMAX",
+      "set_name": "Fusion Strike",
+      "number": "271/264",
+      "image_provider": "TCGdex",
+      "source_metadata_url": "https://api.tcgdex.net/v2/en/sets/swsh8",
+      "files": {
+        "low": {
+          "file": "modern-014-low.webp",
+          "url": "https://assets.tcgdex.net/en/swsh/swsh8/271/low.webp",
+          "bytes": 27952,
+          "sha256": "4b2ac90beda0af38a2d2cc1130e87cdf000b0b5f269dab5abfdcf58b999a5064",
+          "width": 245,
+          "height": 337,
+          "format": "WEBP",
+          "unchanged_download": true
+        },
+        "high": {
+          "file": "modern-014-high.webp",
+          "url": "https://assets.tcgdex.net/en/swsh/swsh8/271/high.webp",
+          "bytes": 102786,
+          "sha256": "ffbcf28ecdf2263fa378c9ed1fc490f4ad214d75282a9894be254409146d4168",
+          "width": 600,
+          "height": 825,
+          "format": "WEBP",
+          "unchanged_download": true
+        }
+      }
+    },
+    {
+      "rank": 15,
+      "name": "Dialga EX",
+      "set_name": "Phantom Forces",
+      "number": "122/119",
+      "image_provider": "TCGdex",
+      "source_metadata_url": "https://api.tcgdex.net/v2/en/sets/xy4",
+      "files": {
+        "low": {
+          "file": "modern-015-low.webp",
+          "url": "https://assets.tcgdex.net/en/xy/xy4/122/low.webp",
+          "bytes": 13026,
+          "sha256": "29feac34c67ab77ee01e0a5dd820648cf770d0c1b52f61e7ab34205d35c7cadc",
+          "width": 245,
+          "height": 337,
+          "format": "WEBP",
+          "unchanged_download": true
+        },
+        "high": {
+          "file": "modern-015-high.webp",
+          "url": "https://assets.tcgdex.net/en/xy/xy4/122/high.webp",
+          "bytes": 40408,
+          "sha256": "b41a8e3fbbaf013081cd34fa221b66c8e4f9d5f9ccfae029f2fadc66a90dfedb",
+          "width": 600,
+          "height": 825,
+          "format": "WEBP",
+          "unchanged_download": true
+        }
+      }
+    },
+    {
+      "rank": 16,
+      "name": "Gardevoir",
+      "set_name": "Dark Explorers",
+      "number": "109/108",
+      "image_provider": "TCGdex",
+      "source_metadata_url": "https://api.tcgdex.net/v2/en/sets/bw5",
+      "files": {
+        "low": {
+          "file": "modern-016-low.webp",
+          "url": "https://assets.tcgdex.net/en/bw/bw5/109/low.webp",
+          "bytes": 17038,
+          "sha256": "a31cdc7ce6da9b95377160c4d966b878ca9effd968359dc7da1c2f99654f32c2",
+          "width": 245,
+          "height": 337,
+          "format": "WEBP",
+          "unchanged_download": true
+        },
+        "high": {
+          "file": "modern-016-high.webp",
+          "url": "https://assets.tcgdex.net/en/bw/bw5/109/high.webp",
+          "bytes": 58538,
+          "sha256": "404bba5ec1f0224d1744fd0fb974c99fd5e225a2f25de0f5de0a53264fbd7f9b",
+          "width": 600,
+          "height": 825,
+          "format": "WEBP",
+          "unchanged_download": true
+        }
+      }
+    },
+    {
+      "rank": 17,
+      "name": "Magikarp & Wailord GX",
+      "set_name": "Team Up",
+      "number": "161/181",
+      "image_provider": "TCGdex",
+      "source_metadata_url": "https://api.tcgdex.net/v2/en/sets/sm9",
+      "files": {
+        "low": {
+          "file": "modern-017-low.webp",
+          "url": "https://assets.tcgdex.net/en/sm/sm9/161/low.webp",
+          "bytes": 28316,
+          "sha256": "dfa0c8b6b27869fdfc4e4d8d0ca521e828e0e3490a5181af3aec345b25baa01f",
+          "width": 245,
+          "height": 337,
+          "format": "WEBP",
+          "unchanged_download": true
+        },
+        "high": {
+          "file": "modern-017-high.webp",
+          "url": "https://assets.tcgdex.net/en/sm/sm9/161/high.webp",
+          "bytes": 100702,
+          "sha256": "99188b679323a0aad51900e34987ad768e68eff5ed0c8dfb83d60600d64e372f",
+          "width": 600,
+          "height": 825,
+          "format": "WEBP",
+          "unchanged_download": true
+        }
+      }
+    },
+    {
+      "rank": 18,
+      "name": "Black Kyurem EX",
+      "set_name": "Boundaries Crossed",
+      "number": "145/149",
+      "image_provider": "TCGdex",
+      "source_metadata_url": "https://api.tcgdex.net/v2/en/sets/bw7",
+      "files": {
+        "low": {
+          "file": "modern-018-low.webp",
+          "url": "https://assets.tcgdex.net/en/bw/bw7/145/low.webp",
+          "bytes": 26822,
+          "sha256": "5a5f3e306e506f11f91fba28b46c66887c79a89bb032542eaabeaedf1adda024",
+          "width": 245,
+          "height": 337,
+          "format": "WEBP",
+          "unchanged_download": true
+        },
+        "high": {
+          "file": "modern-018-high.webp",
+          "url": "https://assets.tcgdex.net/en/bw/bw7/145/high.webp",
+          "bytes": 91514,
+          "sha256": "abc80e20b47a14ecef49ef0b6377f378031312a0af4fcc7c70eed665c83ab3c0",
+          "width": 600,
+          "height": 825,
+          "format": "WEBP",
+          "unchanged_download": true
+        }
+      }
+    },
+    {
+      "rank": 19,
+      "name": "Garchomp",
+      "set_name": "Plasma Freeze",
+      "number": "120/116",
+      "image_provider": "TCGdex",
+      "source_metadata_url": "https://api.tcgdex.net/v2/en/sets/bw9",
+      "files": {
+        "low": {
+          "file": "modern-019-low.webp",
+          "url": "https://assets.tcgdex.net/en/bw/bw9/120/low.webp",
+          "bytes": 18570,
+          "sha256": "921e36ae386609d20440f727ab3779a2a3f1fe0ce79b1fc1e85ed2590f31a693",
+          "width": 245,
+          "height": 337,
+          "format": "WEBP",
+          "unchanged_download": true
+        },
+        "high": {
+          "file": "modern-019-high.webp",
+          "url": "https://assets.tcgdex.net/en/bw/bw9/120/high.webp",
+          "bytes": 73624,
+          "sha256": "bd975903c3b0c957ee20ed95e6d377ad9fe10e3cbae56144d216683c915cd8da",
+          "width": 600,
+          "height": 825,
+          "format": "WEBP",
+          "unchanged_download": true
+        }
+      }
+    },
+    {
+      "rank": 20,
+      "name": "Giratina V",
+      "set_name": "Lost Origin",
+      "number": "186/196",
+      "image_provider": "TCGdex",
+      "source_metadata_url": "https://api.tcgdex.net/v2/en/sets/swsh11",
+      "files": {
+        "low": {
+          "file": "modern-020-low.webp",
+          "url": "https://assets.tcgdex.net/en/swsh/swsh11/186/low.webp",
+          "bytes": 37344,
+          "sha256": "698db5fc8c0993d9044259b4e63b980aef7f796abca0ae6e45cace8f6e6b6d3f",
+          "width": 245,
+          "height": 337,
+          "format": "WEBP",
+          "unchanged_download": true
+        },
+        "high": {
+          "file": "modern-020-high.webp",
+          "url": "https://assets.tcgdex.net/en/swsh/swsh11/186/high.webp",
+          "bytes": 168918,
+          "sha256": "d9183cbf993e1d558683c5d175278d021202f335d3f7219ec38326284d10d83c",
+          "width": 600,
+          "height": 825,
+          "format": "WEBP",
+          "unchanged_download": true
+        }
+      }
+    },
+    {
+      "rank": 21,
+      "name": "Mew ex",
+      "set_name": "Paldean Fates",
+      "number": "232/091",
+      "image_provider": "TCGdex",
+      "source_metadata_url": "https://api.tcgdex.net/v2/en/sets/sv04.5",
+      "files": {
+        "low": {
+          "file": "modern-021-low.webp",
+          "url": "https://assets.tcgdex.net/en/sv/sv04.5/232/low.webp",
+          "bytes": 20756,
+          "sha256": "3cad517db95d205c21969fad646e1b698f769f65cfea9aa150f5dfe494e42d98",
+          "width": 245,
+          "height": 337,
+          "format": "WEBP",
+          "unchanged_download": true
+        },
+        "high": {
+          "file": "modern-021-high.webp",
+          "url": "https://assets.tcgdex.net/en/sv/sv04.5/232/high.webp",
+          "bytes": 68420,
+          "sha256": "bb1aa92d704a9e5c2e186967b05324cf0ba17770fb667bcd40fb3d115e7e561a",
+          "width": 600,
+          "height": 825,
+          "format": "WEBP",
+          "unchanged_download": true
+        }
+      }
+    },
+    {
+      "rank": 22,
+      "name": "Charizard GX",
+      "set_name": "Burning Shadows",
+      "number": "150/147",
+      "image_provider": "TCGdex",
+      "source_metadata_url": "https://api.tcgdex.net/v2/en/sets/sm3",
+      "files": {
+        "low": {
+          "file": "modern-022-low.webp",
+          "url": "https://assets.tcgdex.net/en/sm/sm3/150/low.webp",
+          "bytes": 20962,
+          "sha256": "898505c2f4946702aa6f1ef579b754bb8255f728df41308844f338964a557fc3",
+          "width": 245,
+          "height": 337,
+          "format": "WEBP",
+          "unchanged_download": true
+        },
+        "high": {
+          "file": "modern-022-high.webp",
+          "url": "https://assets.tcgdex.net/en/sm/sm3/150/high.webp",
+          "bytes": 72880,
+          "sha256": "afd48e453c518345fae5a8e54221c5abde82be8b7427dd3490ca8837258041de",
+          "width": 600,
+          "height": 825,
+          "format": "WEBP",
+          "unchanged_download": true
+        }
+      }
+    },
+    {
+      "rank": 23,
+      "name": "Deoxys EX",
+      "set_name": "Plasma Freeze",
+      "number": "111/116",
+      "image_provider": "TCGdex",
+      "source_metadata_url": "https://api.tcgdex.net/v2/en/sets/bw9",
+      "files": {
+        "low": {
+          "file": "modern-023-low.webp",
+          "url": "https://assets.tcgdex.net/en/bw/bw9/111/low.webp",
+          "bytes": 28784,
+          "sha256": "3414c4ebf64d3be7906e45f219eac8084a8071cc5fe445e4184803cb0a943706",
+          "width": 245,
+          "height": 337,
+          "format": "WEBP",
+          "unchanged_download": true
+        },
+        "high": {
+          "file": "modern-023-high.webp",
+          "url": "https://assets.tcgdex.net/en/bw/bw9/111/high.webp",
+          "bytes": 101092,
+          "sha256": "2774e8e45739034ad3d66db0f2c45d0774c51880d1fd90e63a4b372d97ee8633",
+          "width": 600,
+          "height": 825,
+          "format": "WEBP",
+          "unchanged_download": true
+        }
+      }
+    },
+    {
+      "rank": 24,
+      "name": "Mewtwo GX",
+      "set_name": "Shining Legends",
+      "number": "78/73",
+      "image_provider": "Limitless public card catalogue",
+      "source_metadata_url": "https://limitlesstcg.com/cards/en/SLG/78",
+      "files": {
+        "low": {
+          "file": "modern-024-original.png",
+          "url": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/SLG/SLG_078_R_EN.png",
+          "bytes": 702833,
+          "sha256": "1d75e8245a1c5c558f8b907538d9539ab4136b1212bdcf52c6b9a7e6ba0a09e7",
+          "width": 736,
+          "height": 1024,
+          "format": "PNG",
+          "unchanged_download": true
+        },
+        "high": {
+          "file": "modern-024-original.png",
+          "url": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/SLG/SLG_078_R_EN.png",
+          "bytes": 702833,
+          "sha256": "1d75e8245a1c5c558f8b907538d9539ab4136b1212bdcf52c6b9a7e6ba0a09e7",
+          "width": 736,
+          "height": 1024,
+          "format": "PNG",
+          "unchanged_download": true
+        }
+      }
+    },
+    {
+      "rank": 25,
+      "name": "Darkrai EX",
+      "set_name": "Dark Explorers",
+      "number": "107/108",
+      "image_provider": "TCGdex",
+      "source_metadata_url": "https://api.tcgdex.net/v2/en/sets/bw5",
+      "files": {
+        "low": {
+          "file": "modern-025-low.webp",
+          "url": "https://assets.tcgdex.net/en/bw/bw5/107/low.webp",
+          "bytes": 24240,
+          "sha256": "e1bdedc0c4d713dc975fde62895c891a28f30b91a70ff9a622f56876fcfb8ccf",
+          "width": 245,
+          "height": 337,
+          "format": "WEBP",
+          "unchanged_download": true
+        },
+        "high": {
+          "file": "modern-025-high.webp",
+          "url": "https://assets.tcgdex.net/en/bw/bw5/107/high.webp",
+          "bytes": 86594,
+          "sha256": "efad14e8b24ca94ecd8cc95ca0c41c2ea3d8b6cc6a7b8989a0bda43c487b0b02",
+          "width": 600,
+          "height": 825,
+          "format": "WEBP",
+          "unchanged_download": true
+        }
+      }
+    },
+    {
+      "rank": 26,
+      "name": "Gengar EX",
+      "set_name": "Phantom Forces",
+      "number": "114/119",
+      "image_provider": "TCGdex",
+      "source_metadata_url": "https://api.tcgdex.net/v2/en/sets/xy4",
+      "files": {
+        "low": {
+          "file": "modern-026-low.webp",
+          "url": "https://assets.tcgdex.net/en/xy/xy4/114/low.webp",
+          "bytes": 23136,
+          "sha256": "97d9b75b50a12d30f9b7dbf1b7102d14cd6a75c548eb247c0984d6d23a20166f",
+          "width": 245,
+          "height": 337,
+          "format": "WEBP",
+          "unchanged_download": true
+        },
+        "high": {
+          "file": "modern-026-high.webp",
+          "url": "https://assets.tcgdex.net/en/xy/xy4/114/high.webp",
+          "bytes": 83590,
+          "sha256": "71f892fd7a29bd889a393c032c56fddad2df93f5a889b2f4003678033e285696",
+          "width": 600,
+          "height": 825,
+          "format": "WEBP",
+          "unchanged_download": true
+        }
+      }
+    },
+    {
+      "rank": 27,
+      "name": "Charizard GX",
+      "set_name": "Hidden Fates: Shiny Vault",
+      "number": "SV49/SV94",
+      "image_provider": "TCGdex",
+      "source_metadata_url": "https://api.tcgdex.net/v2/en/sets/sma",
+      "files": {
+        "low": {
+          "file": "modern-027-low.webp",
+          "url": "https://assets.tcgdex.net/en/sm/sma/SV49/low.webp",
+          "bytes": 23262,
+          "sha256": "a86771cffdfc48ed457640cb6eef5a6ce6d5bb07ffe3a33f4431171d58fabb13",
+          "width": 245,
+          "height": 337,
+          "format": "WEBP",
+          "unchanged_download": true
+        },
+        "high": {
+          "file": "modern-027-high.webp",
+          "url": "https://assets.tcgdex.net/en/sm/sma/SV49/high.webp",
+          "bytes": 81824,
+          "sha256": "aa613e9549c139cda806d7cc203d76a45ccc9875be8c7933d328b112b8a7ad9d",
+          "width": 600,
+          "height": 825,
+          "format": "WEBP",
+          "unchanged_download": true
+        }
+      }
+    },
+    {
+      "rank": 28,
+      "name": "Mega Gengar ex",
+      "set_name": "Ascended Heroes",
+      "number": "284/217",
+      "image_provider": "TCGdex",
+      "source_metadata_url": "https://api.tcgdex.net/v2/en/sets/me02.5",
+      "files": {
+        "low": {
+          "file": "modern-028-low.webp",
+          "url": "https://assets.tcgdex.net/en/me/me02.5/284/low.webp",
+          "bytes": 31314,
+          "sha256": "11bb7f374f7d894d4d66388c6f9454b06bb7b47692b0945cc29107a18e44ef0d",
+          "width": 245,
+          "height": 337,
+          "format": "WEBP",
+          "unchanged_download": true
+        },
+        "high": {
+          "file": "modern-028-high.webp",
+          "url": "https://assets.tcgdex.net/en/me/me02.5/284/high.webp",
+          "bytes": 130678,
+          "sha256": "75f9e6ea79e4c6acbab6cc31298e96dc82c3efb831a03d5e09b4b9caa27b4c27",
+          "width": 600,
+          "height": 825,
+          "format": "WEBP",
+          "unchanged_download": true
+        }
+      }
+    },
+    {
+      "rank": 29,
+      "name": "Gardevoir & Sylveon GX",
+      "set_name": "Unbroken Bonds",
+      "number": "205/214",
+      "image_provider": "TCGdex",
+      "source_metadata_url": "https://api.tcgdex.net/v2/en/sets/sm10",
+      "files": {
+        "low": {
+          "file": "modern-029-low.webp",
+          "url": "https://assets.tcgdex.net/en/sm/sm10/205/low.webp",
+          "bytes": 23490,
+          "sha256": "3c6bb6b3ccbefaeef2ef75d06681b63333a09ecfdc68779e3b8ca119dc70cf1d",
+          "width": 245,
+          "height": 337,
+          "format": "WEBP",
+          "unchanged_download": true
+        },
+        "high": {
+          "file": "modern-029-high.webp",
+          "url": "https://assets.tcgdex.net/en/sm/sm10/205/high.webp",
+          "bytes": 85864,
+          "sha256": "fa0e2bfc22c5ab401d57b9467dfdc08e2b3694d5a8a3c8261eed6816c530c5fd",
+          "width": 600,
+          "height": 825,
+          "format": "WEBP",
+          "unchanged_download": true
+        }
+      }
+    },
+    {
+      "rank": 30,
+      "name": "Charizard",
+      "set_name": "Plasma Storm",
+      "number": "136/135",
+      "image_provider": "TCGdex",
+      "source_metadata_url": "https://api.tcgdex.net/v2/en/sets/bw8",
+      "files": {
+        "low": {
+          "file": "modern-030-low.webp",
+          "url": "https://assets.tcgdex.net/en/bw/bw8/136/low.webp",
+          "bytes": 20128,
+          "sha256": "e3ab1fdd93ed3f455c98458896a13fd23e881c2f0b3dfdedc98a00692f4492b8",
+          "width": 245,
+          "height": 337,
+          "format": "WEBP",
+          "unchanged_download": true
+        },
+        "high": {
+          "file": "modern-030-high.webp",
+          "url": "https://assets.tcgdex.net/en/bw/bw8/136/high.webp",
+          "bytes": 70152,
+          "sha256": "5d59810900ccb118b5c4e36913713d2432503555f0a6d2b771233918fbc6837a",
+          "width": 600,
+          "height": 825,
+          "format": "WEBP",
+          "unchanged_download": true
+        }
+      }
+    },
+    {
+      "rank": 31,
+      "name": "Team Aqua's Kyogre EX",
+      "set_name": "Double Crisis",
+      "number": "6/34",
+      "image_provider": "TCGdex",
+      "source_metadata_url": "https://api.tcgdex.net/v2/en/sets/dc1",
+      "files": {
+        "low": {
+          "file": "modern-031-low.webp",
+          "url": "https://assets.tcgdex.net/en/xy/dc1/6/low.webp",
+          "bytes": 29014,
+          "sha256": "f9e6406f12944f4cb2a14eba866b802e6f231de3e9522e2cc6bde2c132fa00ed",
+          "width": 245,
+          "height": 337,
+          "format": "WEBP",
+          "unchanged_download": true
+        },
+        "high": {
+          "file": "modern-031-high.webp",
+          "url": "https://assets.tcgdex.net/en/xy/dc1/6/high.webp",
+          "bytes": 105524,
+          "sha256": "7a233477b39fe79ab888cfc063310389a8698d73b0eadc69a4d3c73ec40ca7b7",
+          "width": 600,
+          "height": 825,
+          "format": "WEBP",
+          "unchanged_download": true
+        }
+      }
+    },
+    {
+      "rank": 32,
+      "name": "Pikachu ex",
+      "set_name": "Ascended Heroes",
+      "number": "276/217",
+      "image_provider": "TCGdex",
+      "source_metadata_url": "https://api.tcgdex.net/v2/en/sets/me02.5",
+      "files": {
+        "low": {
+          "file": "modern-032-low.webp",
+          "url": "https://assets.tcgdex.net/en/me/me02.5/276/low.webp",
+          "bytes": 20302,
+          "sha256": "1ac10558c7e4574524d62911d7cbf84968ddbe385cfae2444cc1de35d850bb0c",
+          "width": 245,
+          "height": 337,
+          "format": "WEBP",
+          "unchanged_download": true
+        },
+        "high": {
+          "file": "modern-032-high.webp",
+          "url": "https://assets.tcgdex.net/en/me/me02.5/276/high.webp",
+          "bytes": 71136,
+          "sha256": "51cb3c8fb83b0c387b1a5f2fe47b47662975d96d73881a184d52fbf9703dbe33",
+          "width": 600,
+          "height": 825,
+          "format": "WEBP",
+          "unchanged_download": true
+        }
+      }
+    },
+    {
+      "rank": 33,
+      "name": "Victini",
+      "set_name": "Black Bolt",
+      "number": "171/086",
+      "image_provider": "TCGdex",
+      "source_metadata_url": "https://api.tcgdex.net/v2/en/sets/sv10.5b",
+      "files": {
+        "low": {
+          "file": "modern-033-low.webp",
+          "url": "https://assets.tcgdex.net/en/sv/sv10.5b/171/low.webp",
+          "bytes": 17012,
+          "sha256": "f320cf141b7c9999e6043375fc78357b74030a62f9e64183837a59fcaac33266",
+          "width": 245,
+          "height": 337,
+          "format": "WEBP",
+          "unchanged_download": true
+        },
+        "high": {
+          "file": "modern-033-high.webp",
+          "url": "https://assets.tcgdex.net/en/sv/sv10.5b/171/high.webp",
+          "bytes": 134994,
+          "sha256": "5f281e80828084575a7d920ec448c6e15e645254e6e287b95144d6b935253611",
+          "width": 600,
+          "height": 825,
+          "format": "WEBP",
+          "unchanged_download": true
+        }
+      }
+    },
+    {
+      "rank": 34,
+      "name": "Giratina EX",
+      "set_name": "Dragons Exalted",
+      "number": "124/124",
+      "image_provider": "TCGdex",
+      "source_metadata_url": "https://api.tcgdex.net/v2/en/sets/bw6",
+      "files": {
+        "low": {
+          "file": "modern-034-low.webp",
+          "url": "https://assets.tcgdex.net/en/bw/bw6/124/low.webp",
+          "bytes": 24836,
+          "sha256": "d751f9c1102e848cc72439ff80cfd5399166f6fb43d53cfeb049420b33e90e93",
+          "width": 245,
+          "height": 337,
+          "format": "WEBP",
+          "unchanged_download": true
+        },
+        "high": {
+          "file": "modern-034-high.webp",
+          "url": "https://assets.tcgdex.net/en/bw/bw6/124/high.webp",
+          "bytes": 80998,
+          "sha256": "bad31269b6d6182c1ce91465ef9482a2c73e2927a9f017d86aa737bd1aeb1979",
+          "width": 600,
+          "height": 825,
+          "format": "WEBP",
+          "unchanged_download": true
+        }
+      }
+    },
+    {
+      "rank": 35,
+      "name": "Zekrom ex",
+      "set_name": "Black Bolt",
+      "number": "172/086",
+      "image_provider": "TCGdex",
+      "source_metadata_url": "https://api.tcgdex.net/v2/en/sets/sv10.5b",
+      "files": {
+        "low": {
+          "file": "modern-035-low.webp",
+          "url": "https://assets.tcgdex.net/en/sv/sv10.5b/172/low.webp",
+          "bytes": 16122,
+          "sha256": "032ceb437ea92d499e268db967cf368d5bbba7c68dcc43af537f3095afaf46c2",
+          "width": 245,
+          "height": 337,
+          "format": "WEBP",
+          "unchanged_download": true
+        },
+        "high": {
+          "file": "modern-035-high.webp",
+          "url": "https://assets.tcgdex.net/en/sv/sv10.5b/172/high.webp",
+          "bytes": 118926,
+          "sha256": "a5765c16661f3f49bc7e4640d1a00b4c8d2d5a70595f0219f136ca0e18479b29",
+          "width": 600,
+          "height": 825,
+          "format": "WEBP",
+          "unchanged_download": true
+        }
+      }
+    },
+    {
+      "rank": 36,
+      "name": "Mega Charizard X ex",
+      "set_name": "Phantasmal Flames",
+      "number": "125/094",
+      "image_provider": "TCGdex",
+      "source_metadata_url": "https://api.tcgdex.net/v2/en/sets/me02",
+      "files": {
+        "low": {
+          "file": "modern-036-low.webp",
+          "url": "https://assets.tcgdex.net/en/me/me02/125/low.webp",
+          "bytes": 29308,
+          "sha256": "83f98badff7c161dab4c6c4f99a9af6b3b3c70e6f612bb1dd50120dcd09ff251",
+          "width": 245,
+          "height": 337,
+          "format": "WEBP",
+          "unchanged_download": true
+        },
+        "high": {
+          "file": "modern-036-high.webp",
+          "url": "https://assets.tcgdex.net/en/me/me02/125/high.webp",
+          "bytes": 138138,
+          "sha256": "b50de31bc4eb9ef8686fe81cad319d4767e438d617303976e56f73e3b2576fc5",
+          "width": 600,
+          "height": 825,
+          "format": "WEBP",
+          "unchanged_download": true
+        }
+      }
+    },
+    {
+      "rank": 37,
+      "name": "Arceus & Dialga & Palkia GX",
+      "set_name": "Cosmic Eclipse",
+      "number": "221/236",
+      "image_provider": "TCGdex",
+      "source_metadata_url": "https://api.tcgdex.net/v2/en/sets/sm12",
+      "files": {
+        "low": {
+          "file": "modern-037-low.webp",
+          "url": "https://assets.tcgdex.net/en/sm/sm12/221/low.webp",
+          "bytes": 26124,
+          "sha256": "20aba20628d757b9a56a593901924baa32c265e8f2b02a135a4f188a793ab1c6",
+          "width": 245,
+          "height": 337,
+          "format": "WEBP",
+          "unchanged_download": true
+        },
+        "high": {
+          "file": "modern-037-high.webp",
+          "url": "https://assets.tcgdex.net/en/sm/sm12/221/high.webp",
+          "bytes": 108284,
+          "sha256": "a72468e8a8f335715a2d76fd5aa3536be5746e8c3302c8d3b22f35463cebaf1d",
+          "width": 600,
+          "height": 825,
+          "format": "WEBP",
+          "unchanged_download": true
+        }
+      }
+    },
+    {
+      "rank": 38,
+      "name": "M Rayquaza EX",
+      "set_name": "Roaring Skies",
+      "number": "105/108",
+      "image_provider": "TCGdex",
+      "source_metadata_url": "https://api.tcgdex.net/v2/en/sets/xy6",
+      "files": {
+        "low": {
+          "file": "modern-038-low.webp",
+          "url": "https://assets.tcgdex.net/en/xy/xy6/105/low.webp",
+          "bytes": 36520,
+          "sha256": "8863bac2620a94b45de2dcd4bcabfdeb90b0d9b5f54b71516aeb5d6dc1151b33",
+          "width": 245,
+          "height": 337,
+          "format": "WEBP",
+          "unchanged_download": true
+        },
+        "high": {
+          "file": "modern-038-high.webp",
+          "url": "https://assets.tcgdex.net/en/xy/xy6/105/high.webp",
+          "bytes": 130514,
+          "sha256": "e945b66e60cee0e6d932bba44a40b22a1e571b10198af5e620c4da4bbfaac185",
+          "width": 600,
+          "height": 825,
+          "format": "WEBP",
+          "unchanged_download": true
+        }
+      }
+    },
+    {
+      "rank": 39,
+      "name": "Gengar & Mimikyu GX",
+      "set_name": "Team Up",
+      "number": "186/181",
+      "image_provider": "TCGdex",
+      "source_metadata_url": "https://api.tcgdex.net/v2/en/sets/sm9",
+      "files": {
+        "low": {
+          "file": "modern-039-low.webp",
+          "url": "https://assets.tcgdex.net/en/sm/sm9/186/low.webp",
+          "bytes": 22604,
+          "sha256": "0401ef2cbd777b003473616cc875e3e41935156f110fa5e5ad97ae299f855c9d",
+          "width": 245,
+          "height": 337,
+          "format": "WEBP",
+          "unchanged_download": true
+        },
+        "high": {
+          "file": "modern-039-high.webp",
+          "url": "https://assets.tcgdex.net/en/sm/sm9/186/high.webp",
+          "bytes": 82946,
+          "sha256": "8b9bff26b08c8430ee0f1af78192175928e011e3fc5e02041200d9c97556038a",
+          "width": 600,
+          "height": 825,
+          "format": "WEBP",
+          "unchanged_download": true
+        }
+      }
+    },
+    {
+      "rank": 40,
+      "name": "White Kyurem EX",
+      "set_name": "Boundaries Crossed",
+      "number": "146/149",
+      "image_provider": "TCGdex",
+      "source_metadata_url": "https://api.tcgdex.net/v2/en/sets/bw7",
+      "files": {
+        "low": {
+          "file": "modern-040-low.webp",
+          "url": "https://assets.tcgdex.net/en/bw/bw7/146/low.webp",
+          "bytes": 28340,
+          "sha256": "5c951ad46749a47c7529d3cac1270769a9dfafa861dae1b2e867758207eb5bda",
+          "width": 245,
+          "height": 337,
+          "format": "WEBP",
+          "unchanged_download": true
+        },
+        "high": {
+          "file": "modern-040-high.webp",
+          "url": "https://assets.tcgdex.net/en/bw/bw7/146/high.webp",
+          "bytes": 97262,
+          "sha256": "9c56be9b75842762803d8cc43b36f2b75c5c35713018013833ce108d0ee7064c",
+          "width": 600,
+          "height": 825,
+          "format": "WEBP",
+          "unchanged_download": true
+        }
+      }
+    },
+    {
+      "rank": 41,
+      "name": "Victini",
+      "set_name": "White Flare",
+      "number": "172/086",
+      "image_provider": "TCGdex",
+      "source_metadata_url": "https://api.tcgdex.net/v2/en/sets/sv10.5w",
+      "files": {
+        "low": {
+          "file": "modern-041-low.webp",
+          "url": "https://assets.tcgdex.net/en/sv/sv10.5w/172/low.webp",
+          "bytes": 16998,
+          "sha256": "65b3e347ce87310c5cdf3639e1c1128f02a500bbbe0e1766b6aea3d62d7cfaf9",
+          "width": 245,
+          "height": 337,
+          "format": "WEBP",
+          "unchanged_download": true
+        },
+        "high": {
+          "file": "modern-041-high.webp",
+          "url": "https://assets.tcgdex.net/en/sv/sv10.5w/172/high.webp",
+          "bytes": 135072,
+          "sha256": "c788b89a774753a3441fc0190bcaef69b32886238b598ea8f29551c9077a76fa",
+          "width": 600,
+          "height": 825,
+          "format": "WEBP",
+          "unchanged_download": true
+        }
+      }
+    },
+    {
+      "rank": 42,
+      "name": "Palkia EX",
+      "set_name": "Plasma Blast",
+      "number": "100/101",
+      "image_provider": "TCGdex",
+      "source_metadata_url": "https://api.tcgdex.net/v2/en/sets/bw10",
+      "files": {
+        "low": {
+          "file": "modern-042-low.webp",
+          "url": "https://assets.tcgdex.net/en/bw/bw10/100/low.webp",
+          "bytes": 28796,
+          "sha256": "dff5c812c4a4be1924d91f61b47bf48b3d95766aaed28ef9075d963e99ec1bbb",
+          "width": 245,
+          "height": 337,
+          "format": "WEBP",
+          "unchanged_download": true
+        },
+        "high": {
+          "file": "modern-042-high.webp",
+          "url": "https://assets.tcgdex.net/en/bw/bw10/100/high.webp",
+          "bytes": 102128,
+          "sha256": "0b4e4639a54d61649b41e8772981c70b63431395562e5e5bae5d48f0bd6e7dd5",
+          "width": 600,
+          "height": 825,
+          "format": "WEBP",
+          "unchanged_download": true
+        }
+      }
+    },
+    {
+      "rank": 43,
+      "name": "Zekrom",
+      "set_name": "Legendary Treasures",
+      "number": "115/113",
+      "image_provider": "TCGdex",
+      "source_metadata_url": "https://api.tcgdex.net/v2/en/sets/bw11",
+      "files": {
+        "low": {
+          "file": "modern-043-low.webp",
+          "url": "https://assets.tcgdex.net/en/bw/bw11/115/low.webp",
+          "bytes": 13854,
+          "sha256": "563c8ee47341f1dca7ea63889fd078d3b404b5ab9a880f8e2fd87b346d56143a",
+          "width": 245,
+          "height": 337,
+          "format": "WEBP",
+          "unchanged_download": true
+        },
+        "high": {
+          "file": "modern-043-high.webp",
+          "url": "https://assets.tcgdex.net/en/bw/bw11/115/high.webp",
+          "bytes": 43910,
+          "sha256": "0d130922504355f8194a6bf52d99bfb4818744025e096d9c841de10e041138b4",
+          "width": 600,
+          "height": 825,
+          "format": "WEBP",
+          "unchanged_download": true
+        }
+      }
+    },
+    {
+      "rank": 44,
+      "name": "M Gengar EX",
+      "set_name": "Phantom Forces",
+      "number": "121/119",
+      "image_provider": "TCGdex",
+      "source_metadata_url": "https://api.tcgdex.net/v2/en/sets/xy4",
+      "files": {
+        "low": {
+          "file": "modern-044-low.webp",
+          "url": "https://assets.tcgdex.net/en/xy/xy4/121/low.webp",
+          "bytes": 28622,
+          "sha256": "820c4931a8a2c619f706a22511303bab321801635435b5d3c61161c999751b04",
+          "width": 245,
+          "height": 337,
+          "format": "WEBP",
+          "unchanged_download": true
+        },
+        "high": {
+          "file": "modern-044-high.webp",
+          "url": "https://assets.tcgdex.net/en/xy/xy4/121/high.webp",
+          "bytes": 92552,
+          "sha256": "88f192ce8e66239183bf9804afcb47b00109bf6df43e4033a9a7ba1bf8584abc",
+          "width": 600,
+          "height": 825,
+          "format": "WEBP",
+          "unchanged_download": true
+        }
+      }
+    },
+    {
+      "rank": 45,
+      "name": "Empoleon",
+      "set_name": "Plasma Freeze",
+      "number": "117/116",
+      "image_provider": "TCGdex",
+      "source_metadata_url": "https://api.tcgdex.net/v2/en/sets/bw9",
+      "files": {
+        "low": {
+          "file": "modern-045-low.webp",
+          "url": "https://assets.tcgdex.net/en/bw/bw9/117/low.webp",
+          "bytes": 21832,
+          "sha256": "35e71b982c0d03e57bc727b86ab146e5f1d93f2153543cb53fbb6681f1c9808b",
+          "width": 245,
+          "height": 337,
+          "format": "WEBP",
+          "unchanged_download": true
+        },
+        "high": {
+          "file": "modern-045-high.webp",
+          "url": "https://assets.tcgdex.net/en/bw/bw9/117/high.webp",
+          "bytes": 76708,
+          "sha256": "38db6cd5a48a563ee6d8962e23e6f3f627a18732549018196cec520f9893b007",
+          "width": 600,
+          "height": 825,
+          "format": "WEBP",
+          "unchanged_download": true
+        }
+      }
+    },
+    {
+      "rank": 46,
+      "name": "Blastoise & Piplup GX",
+      "set_name": "Cosmic Eclipse",
+      "number": "215/236",
+      "image_provider": "TCGdex",
+      "source_metadata_url": "https://api.tcgdex.net/v2/en/sets/sm12",
+      "files": {
+        "low": {
+          "file": "modern-046-low.webp",
+          "url": "https://assets.tcgdex.net/en/sm/sm12/215/low.webp",
+          "bytes": 29596,
+          "sha256": "cb2f4b7589845800435d2b6ebc36907d9166c9427989fb5cc67d4f9ef598d761",
+          "width": 245,
+          "height": 337,
+          "format": "WEBP",
+          "unchanged_download": true
+        },
+        "high": {
+          "file": "modern-046-high.webp",
+          "url": "https://assets.tcgdex.net/en/sm/sm12/215/high.webp",
+          "bytes": 110450,
+          "sha256": "2191122b50df2b4fb3e4a9f80f2105aab095c7b75e5902c4caf183b1cec9ddbe",
+          "width": 600,
+          "height": 825,
+          "format": "WEBP",
+          "unchanged_download": true
+        }
+      }
+    },
+    {
+      "rank": 47,
+      "name": "Blastoise",
+      "set_name": "Plasma Storm",
+      "number": "137/135",
+      "image_provider": "TCGdex",
+      "source_metadata_url": "https://api.tcgdex.net/v2/en/sets/bw8",
+      "files": {
+        "low": {
+          "file": "modern-047-low.webp",
+          "url": "https://assets.tcgdex.net/en/bw/bw8/137/low.webp",
+          "bytes": 21638,
+          "sha256": "12d0183418460d2fa6ac9a68935350afb9e310b150c30c83fdd401c377481816",
+          "width": 245,
+          "height": 337,
+          "format": "WEBP",
+          "unchanged_download": true
+        },
+        "high": {
+          "file": "modern-047-high.webp",
+          "url": "https://assets.tcgdex.net/en/bw/bw8/137/high.webp",
+          "bytes": 76640,
+          "sha256": "bb46295bbd61eab97197058352b6a645bdc7b1d62a96e0ec36d2f4d5e5e20b55",
+          "width": 600,
+          "height": 825,
+          "format": "WEBP",
+          "unchanged_download": true
+        }
+      }
+    },
+    {
+      "rank": 48,
+      "name": "Lillie",
+      "set_name": "Ultra Prism",
+      "number": "151/156",
+      "image_provider": "TCGdex",
+      "source_metadata_url": "https://api.tcgdex.net/v2/en/sets/sm5",
+      "files": {
+        "low": {
+          "file": "modern-048-low.webp",
+          "url": "https://assets.tcgdex.net/en/sm/sm5/151/low.webp",
+          "bytes": 23848,
+          "sha256": "4b6199a2105319720e223df005e74bb24f797dd8a8cf1f6e185e4596f28c2ac5",
+          "width": 245,
+          "height": 337,
+          "format": "WEBP",
+          "unchanged_download": true
+        },
+        "high": {
+          "file": "modern-048-high.webp",
+          "url": "https://assets.tcgdex.net/en/sm/sm5/151/high.webp",
+          "bytes": 83652,
+          "sha256": "f5bf2cb584c5a0b932bca70b9b8e696bb731655a7a19442584207a3091a68448",
+          "width": 600,
+          "height": 825,
+          "format": "WEBP",
+          "unchanged_download": true
+        }
+      }
+    },
+    {
+      "rank": 49,
+      "name": "Lugia V",
+      "set_name": "Silver Tempest",
+      "number": "186/195",
+      "image_provider": "TCGdex",
+      "source_metadata_url": "https://api.tcgdex.net/v2/en/sets/swsh12",
+      "files": {
+        "low": {
+          "file": "modern-049-low.webp",
+          "url": "https://assets.tcgdex.net/en/swsh/swsh12/186/low.webp",
+          "bytes": 21750,
+          "sha256": "cd5611c75e231ed5945aa2bd4ccab57f42aa24488795d7675e6a1d5bb95b4ce9",
+          "width": 245,
+          "height": 337,
+          "format": "WEBP",
+          "unchanged_download": true
+        },
+        "high": {
+          "file": "modern-049-high.webp",
+          "url": "https://assets.tcgdex.net/en/swsh/swsh12/186/high.webp",
+          "bytes": 74572,
+          "sha256": "c198f4fa60357186aa388cb83ed25c255e5ed6c2cf5911f3e9bd600f1fa58188",
+          "width": 600,
+          "height": 825,
+          "format": "WEBP",
+          "unchanged_download": true
+        }
+      }
+    },
+    {
+      "rank": 50,
+      "name": "Team Magma's Groudon EX",
+      "set_name": "Double Crisis",
+      "number": "15/34",
+      "image_provider": "TCGdex",
+      "source_metadata_url": "https://api.tcgdex.net/v2/en/sets/dc1",
+      "files": {
+        "low": {
+          "file": "modern-050-low.webp",
+          "url": "https://assets.tcgdex.net/en/xy/dc1/15/low.webp",
+          "bytes": 28506,
+          "sha256": "5abb42610d66b97689593b698ddd058071215dfcd10d9403aca4dcf72c0166ef",
+          "width": 245,
+          "height": 337,
+          "format": "WEBP",
+          "unchanged_download": true
+        },
+        "high": {
+          "file": "modern-050-high.webp",
+          "url": "https://assets.tcgdex.net/en/xy/dc1/15/high.webp",
+          "bytes": 106200,
+          "sha256": "c9b3ec1a4f5b7b6fe33983dc6f690acbcf3cc0d60058d0a551f977dfd5ddf4a6",
+          "width": 600,
+          "height": 825,
+          "format": "WEBP",
+          "unchanged_download": true
+        }
+      }
+    },
+    {
+      "rank": 51,
+      "name": "Reshiram ex",
+      "set_name": "White Flare",
+      "number": "173/086",
+      "image_provider": "TCGdex",
+      "source_metadata_url": "https://api.tcgdex.net/v2/en/sets/sv10.5w",
+      "files": {
+        "low": {
+          "file": "modern-051-low.webp",
+          "url": "https://assets.tcgdex.net/en/sv/sv10.5w/173/low.webp",
+          "bytes": 12636,
+          "sha256": "fe4658bbde71bc0007472086c0d809edbd46214654e056115b54dacecb7ccb91",
+          "width": 245,
+          "height": 337,
+          "format": "WEBP",
+          "unchanged_download": true
+        },
+        "high": {
+          "file": "modern-051-high.webp",
+          "url": "https://assets.tcgdex.net/en/sv/sv10.5w/173/high.webp",
+          "bytes": 82238,
+          "sha256": "3f5adcb7f2b4c68e859abe74dbd50c8bfac7e85eb74bf9f11b232fce1d6d19b5",
+          "width": 600,
+          "height": 825,
+          "format": "WEBP",
+          "unchanged_download": true
+        }
+      }
+    },
+    {
+      "rank": 52,
+      "name": "Dialga EX",
+      "set_name": "Plasma Blast",
+      "number": "99/101",
+      "image_provider": "TCGdex",
+      "source_metadata_url": "https://api.tcgdex.net/v2/en/sets/bw10",
+      "files": {
+        "low": {
+          "file": "modern-052-low.webp",
+          "url": "https://assets.tcgdex.net/en/bw/bw10/99/low.webp",
+          "bytes": 27440,
+          "sha256": "758b1ac5451e3772ab94fa32dca891120f2ae76247a688c1b96d03043968bb9b",
+          "width": 245,
+          "height": 337,
+          "format": "WEBP",
+          "unchanged_download": true
+        },
+        "high": {
+          "file": "modern-052-high.webp",
+          "url": "https://assets.tcgdex.net/en/bw/bw10/99/high.webp",
+          "bytes": 94226,
+          "sha256": "0c0e11918476d59d4f4d668013e1d4aed4cb0389f6b7eab38634b3a8ebb1d34c",
+          "width": 600,
+          "height": 825,
+          "format": "WEBP",
+          "unchanged_download": true
+        }
+      }
+    },
+    {
+      "rank": 53,
+      "name": "Rayquaza V",
+      "set_name": "Evolving Skies",
+      "number": "194/203",
+      "image_provider": "TCGdex",
+      "source_metadata_url": "https://api.tcgdex.net/v2/en/sets/swsh7",
+      "files": {
+        "low": {
+          "file": "modern-053-low.webp",
+          "url": "https://assets.tcgdex.net/en/swsh/swsh7/194/low.webp",
+          "bytes": 25902,
+          "sha256": "df434fcd76c5cc7eec546ff1656e49014a6b623a470ebbdc3a67bcb196665e38",
+          "width": 245,
+          "height": 337,
+          "format": "WEBP",
+          "unchanged_download": true
+        },
+        "high": {
+          "file": "modern-053-high.webp",
+          "url": "https://assets.tcgdex.net/en/swsh/swsh7/194/high.webp",
+          "bytes": 98890,
+          "sha256": "e7de17d592857ffdc4f1242d5ee054bbc58442cf93af3e206c248cbae258bdb9",
+          "width": 600,
+          "height": 825,
+          "format": "WEBP",
+          "unchanged_download": true
+        }
+      }
+    },
+    {
+      "rank": 54,
+      "name": "Dragonite V",
+      "set_name": "Evolving Skies",
+      "number": "192/203",
+      "image_provider": "TCGdex",
+      "source_metadata_url": "https://api.tcgdex.net/v2/en/sets/swsh7",
+      "files": {
+        "low": {
+          "file": "modern-054-low.webp",
+          "url": "https://assets.tcgdex.net/en/swsh/swsh7/192/low.webp",
+          "bytes": 20610,
+          "sha256": "c9a7a78901403d67de670f4974580b519dfbae9c04b9f5bcc740593407cf3721",
+          "width": 245,
+          "height": 337,
+          "format": "WEBP",
+          "unchanged_download": true
+        },
+        "high": {
+          "file": "modern-054-high.webp",
+          "url": "https://assets.tcgdex.net/en/swsh/swsh7/192/high.webp",
+          "bytes": 78272,
+          "sha256": "629376231ec10382392506f3aae8d9f7bbde4abd4ae840828960b66ac2edb3d3",
+          "width": 600,
+          "height": 825,
+          "format": "WEBP",
+          "unchanged_download": true
+        }
+      }
+    },
+    {
+      "rank": 55,
+      "name": "Articuno EX",
+      "set_name": "Plasma Storm",
+      "number": "132/135",
+      "image_provider": "TCGdex",
+      "source_metadata_url": "https://api.tcgdex.net/v2/en/sets/bw8",
+      "files": {
+        "low": {
+          "file": "modern-055-low.webp",
+          "url": "https://assets.tcgdex.net/en/bw/bw8/132/low.webp",
+          "bytes": 24046,
+          "sha256": "62f13506a2e70cc73ab4e8409e67ee59871d6f6762a8a43f6219dd363b3443d4",
+          "width": 245,
+          "height": 337,
+          "format": "WEBP",
+          "unchanged_download": true
+        },
+        "high": {
+          "file": "modern-055-high.webp",
+          "url": "https://assets.tcgdex.net/en/bw/bw8/132/high.webp",
+          "bytes": 85404,
+          "sha256": "38cb644169c533df99ab6c616fa3a6c1dc3107cad1c746a6235a206e06ab4855",
+          "width": 600,
+          "height": 825,
+          "format": "WEBP",
+          "unchanged_download": true
+        }
+      }
+    },
+    {
+      "rank": 56,
+      "name": "Reshiram EX",
+      "set_name": "Next Destinies",
+      "number": "95/99",
+      "image_provider": "TCGdex",
+      "source_metadata_url": "https://api.tcgdex.net/v2/en/sets/bw4",
+      "files": {
+        "low": {
+          "file": "modern-056-low.webp",
+          "url": "https://assets.tcgdex.net/en/bw/bw4/95/low.webp",
+          "bytes": 24838,
+          "sha256": "99151827ac3baf06bf68260ac03365c394f81ae32e5a5ac7f6642841e77a6467",
+          "width": 245,
+          "height": 337,
+          "format": "WEBP",
+          "unchanged_download": true
+        },
+        "high": {
+          "file": "modern-056-high.webp",
+          "url": "https://assets.tcgdex.net/en/bw/bw4/95/high.webp",
+          "bytes": 87506,
+          "sha256": "fa256ceeb7387569bcd6b276ab3092e52b012127f7e41a0c1890e76aab8e96d1",
+          "width": 600,
+          "height": 825,
+          "format": "WEBP",
+          "unchanged_download": true
+        }
+      }
+    },
+    {
+      "rank": 57,
+      "name": "Primal Kyogre EX",
+      "set_name": "Primal Clash",
+      "number": "149/160",
+      "image_provider": "TCGdex",
+      "source_metadata_url": "https://api.tcgdex.net/v2/en/sets/xy5",
+      "files": {
+        "low": {
+          "file": "modern-057-low.webp",
+          "url": "https://assets.tcgdex.net/en/xy/xy5/149/low.webp",
+          "bytes": 34280,
+          "sha256": "8a489b733d04bf660cd1e98c9db3e2478bf50749dd388c44839c5a8d9716a98f",
+          "width": 245,
+          "height": 337,
+          "format": "WEBP",
+          "unchanged_download": true
+        },
+        "high": {
+          "file": "modern-057-high.webp",
+          "url": "https://assets.tcgdex.net/en/xy/xy5/149/high.webp",
+          "bytes": 128126,
+          "sha256": "b3294ca5f8a44920450dc538c0ea8418209a8a0e9933ade2d57c6580a467e0d6",
+          "width": 600,
+          "height": 825,
+          "format": "WEBP",
+          "unchanged_download": true
+        }
+      }
+    },
+    {
+      "rank": 58,
+      "name": "Mega Dragonite ex",
+      "set_name": "Ascended Heroes",
+      "number": "290/217",
+      "image_provider": "TCGdex",
+      "source_metadata_url": "https://api.tcgdex.net/v2/en/sets/me02.5",
+      "files": {
+        "low": {
+          "file": "modern-058-low.webp",
+          "url": "https://assets.tcgdex.net/en/me/me02.5/290/low.webp",
+          "bytes": 28926,
+          "sha256": "4b3c6697a6e55f11572a3a4864a50675d456ec4b323a9ecf5a22020de50d699a",
+          "width": 245,
+          "height": 337,
+          "format": "WEBP",
+          "unchanged_download": true
+        },
+        "high": {
+          "file": "modern-058-high.webp",
+          "url": "https://assets.tcgdex.net/en/me/me02.5/290/high.webp",
+          "bytes": 118924,
+          "sha256": "3927457c9b57881e469d91f9b49a359a075dccf7cf8cb23a01c851efccdbea9f",
+          "width": 600,
+          "height": 825,
+          "format": "WEBP",
+          "unchanged_download": true
+        }
+      }
+    },
+    {
+      "rank": 59,
+      "name": "Mewtwo & Mew GX",
+      "set_name": "Unified Minds",
+      "number": "242/236",
+      "image_provider": "TCGdex",
+      "source_metadata_url": "https://api.tcgdex.net/v2/en/sets/sm11",
+      "files": {
+        "low": {
+          "file": "modern-059-low.webp",
+          "url": "https://assets.tcgdex.net/en/sm/sm11/242/low.webp",
+          "bytes": 22966,
+          "sha256": "b96fc34b0d8f813204940b64935d1383ed79b5c42803b49ebf09c6a4cf21cfe4",
+          "width": 245,
+          "height": 337,
+          "format": "WEBP",
+          "unchanged_download": true
+        },
+        "high": {
+          "file": "modern-059-high.webp",
+          "url": "https://assets.tcgdex.net/en/sm/sm11/242/high.webp",
+          "bytes": 84402,
+          "sha256": "72cac6f594413f99fdbfd2222fa8f23e6156acc4b2faca179c4e4ed754759acc",
+          "width": 600,
+          "height": 825,
+          "format": "WEBP",
+          "unchanged_download": true
+        }
+      }
+    },
+    {
+      "rank": 60,
+      "name": "Groudon EX",
+      "set_name": "Dark Explorers",
+      "number": "106/108",
+      "image_provider": "TCGdex",
+      "source_metadata_url": "https://api.tcgdex.net/v2/en/sets/bw5",
+      "files": {
+        "low": {
+          "file": "modern-060-low.webp",
+          "url": "https://assets.tcgdex.net/en/bw/bw5/106/low.webp",
+          "bytes": 29128,
+          "sha256": "2861cb6ed1ba96185c3c5e3d5dc8a22bd5cf1aa80afc7adcde533b51681f6b29",
+          "width": 245,
+          "height": 337,
+          "format": "WEBP",
+          "unchanged_download": true
+        },
+        "high": {
+          "file": "modern-060-high.webp",
+          "url": "https://assets.tcgdex.net/en/bw/bw5/106/high.webp",
+          "bytes": 109022,
+          "sha256": "b7449db8109e29bd65e34c25cda018c5726db0df26c82a3d7cfccbd3e9cb1b71",
+          "width": 600,
+          "height": 825,
+          "format": "WEBP",
+          "unchanged_download": true
+        }
+      }
+    },
+    {
+      "rank": 61,
+      "name": "Mew EX",
+      "set_name": "Dragons Exalted",
+      "number": "120/124",
+      "image_provider": "TCGdex",
+      "source_metadata_url": "https://api.tcgdex.net/v2/en/sets/bw6",
+      "files": {
+        "low": {
+          "file": "modern-061-low.webp",
+          "url": "https://assets.tcgdex.net/en/bw/bw6/120/low.webp",
+          "bytes": 21048,
+          "sha256": "ac5aaaf393ea12a6660f75faf885948c95e0baeb3faad12e466a4ee3e23d3836",
+          "width": 245,
+          "height": 337,
+          "format": "WEBP",
+          "unchanged_download": true
+        },
+        "high": {
+          "file": "modern-061-high.webp",
+          "url": "https://assets.tcgdex.net/en/bw/bw6/120/high.webp",
+          "bytes": 72994,
+          "sha256": "6d4d23c549484df34667df6353bb997695b265a31684c349cb8c2e175781eb08",
+          "width": 600,
+          "height": 825,
+          "format": "WEBP",
+          "unchanged_download": true
+        }
+      }
+    },
+    {
+      "rank": 62,
+      "name": "Gengar & Mimikyu GX",
+      "set_name": "Team Up",
+      "number": "164/181",
+      "image_provider": "TCGdex",
+      "source_metadata_url": "https://api.tcgdex.net/v2/en/sets/sm9",
+      "files": {
+        "low": {
+          "file": "modern-062-low.webp",
+          "url": "https://assets.tcgdex.net/en/sm/sm9/164/low.webp",
+          "bytes": 22470,
+          "sha256": "9aac702d66946c79172fba9695ef213e69e3b9e9ed6cac5412c4ccf98446c328",
+          "width": 245,
+          "height": 337,
+          "format": "WEBP",
+          "unchanged_download": true
+        },
+        "high": {
+          "file": "modern-062-high.webp",
+          "url": "https://assets.tcgdex.net/en/sm/sm9/164/high.webp",
+          "bytes": 84696,
+          "sha256": "a1588d92f95b1edc20f522922a9060beac2115d6d8d4716501dbf19cd9496e92",
+          "width": 600,
+          "height": 825,
+          "format": "WEBP",
+          "unchanged_download": true
+        }
+      }
+    },
+    {
+      "rank": 63,
+      "name": "Reshiram & Zekrom GX",
+      "set_name": "Cosmic Eclipse",
+      "number": "222/236",
+      "image_provider": "TCGdex",
+      "source_metadata_url": "https://api.tcgdex.net/v2/en/sets/sm12",
+      "files": {
+        "low": {
+          "file": "modern-063-low.webp",
+          "url": "https://assets.tcgdex.net/en/sm/sm12/222/low.webp",
+          "bytes": 31074,
+          "sha256": "3fc5ec85029f00cb7a26f5cfcb60473781a0ec113734a2760ea70739530afd49",
+          "width": 245,
+          "height": 337,
+          "format": "WEBP",
+          "unchanged_download": true
+        },
+        "high": {
+          "file": "modern-063-high.webp",
+          "url": "https://assets.tcgdex.net/en/sm/sm12/222/high.webp",
+          "bytes": 118434,
+          "sha256": "7b08d1ac96457e33ebdeca6945dbdc52cfd0917be6a78831da10cbd5adf5f4d4",
+          "width": 600,
+          "height": 825,
+          "format": "WEBP",
+          "unchanged_download": true
+        }
+      }
+    },
+    {
+      "rank": 64,
+      "name": "Zoroark",
+      "set_name": "Next Destinies",
+      "number": "102/99",
+      "image_provider": "TCGdex",
+      "source_metadata_url": "https://api.tcgdex.net/v2/en/sets/bw4",
+      "files": {
+        "low": {
+          "file": "modern-064-low.webp",
+          "url": "https://assets.tcgdex.net/en/bw/bw4/102/low.webp",
+          "bytes": 16192,
+          "sha256": "652f17414ea2d30d9684992a79dd031d79977849c7e7905bdd366ac9c60ea16e",
+          "width": 245,
+          "height": 337,
+          "format": "WEBP",
+          "unchanged_download": true
+        },
+        "high": {
+          "file": "modern-064-high.webp",
+          "url": "https://assets.tcgdex.net/en/bw/bw4/102/high.webp",
+          "bytes": 51966,
+          "sha256": "fa362e4815bada0307a57df996a70b7b43163cec5a91cf05dd975558cb1a0953",
+          "width": 600,
+          "height": 825,
+          "format": "WEBP",
+          "unchanged_download": true
+        }
+      }
+    },
+    {
+      "rank": 65,
+      "name": "Mega Sableye & Tyranitar GX",
+      "set_name": "Unified Minds",
+      "number": "226/236",
+      "image_provider": "TCGdex",
+      "source_metadata_url": "https://api.tcgdex.net/v2/en/sets/sm11",
+      "files": {
+        "low": {
+          "file": "modern-065-low.webp",
+          "url": "https://assets.tcgdex.net/en/sm/sm11/226/low.webp",
+          "bytes": 27980,
+          "sha256": "52863c273738c25dd8cc2651a500bf76e6e60cb1156ac9d8300915e35606a450",
+          "width": 245,
+          "height": 337,
+          "format": "WEBP",
+          "unchanged_download": true
+        },
+        "high": {
+          "file": "modern-065-high.webp",
+          "url": "https://assets.tcgdex.net/en/sm/sm11/226/high.webp",
+          "bytes": 110278,
+          "sha256": "0a88e73e191084f714b0dda5fcf72367b93cac839c2d63ffbb5009d3351f83d8",
+          "width": 600,
+          "height": 825,
+          "format": "WEBP",
+          "unchanged_download": true
+        }
+      }
+    },
+    {
+      "rank": 66,
+      "name": "Eevee & Snorlax GX",
+      "set_name": "Team Up",
+      "number": "191/181",
+      "image_provider": "TCGdex",
+      "source_metadata_url": "https://api.tcgdex.net/v2/en/sets/sm9",
+      "files": {
+        "low": {
+          "file": "modern-066-low.webp",
+          "url": "https://assets.tcgdex.net/en/sm/sm9/191/low.webp",
+          "bytes": 23158,
+          "sha256": "153b735010048b3f79c0ed95f91ae8305a87762693baa9666fd781f0e6f04aba",
+          "width": 245,
+          "height": 337,
+          "format": "WEBP",
+          "unchanged_download": true
+        },
+        "high": {
+          "file": "modern-066-high.webp",
+          "url": "https://assets.tcgdex.net/en/sm/sm9/191/high.webp",
+          "bytes": 84510,
+          "sha256": "4e98d86d655a28791c4cb6433218d1462ec459aab19e163f096faaec43f0cda7",
+          "width": 600,
+          "height": 825,
+          "format": "WEBP",
+          "unchanged_download": true
+        }
+      }
+    },
+    {
+      "rank": 67,
+      "name": "Sylveon ex",
+      "set_name": "Prismatic Evolutions",
+      "number": "156/131",
+      "image_provider": "TCGdex",
+      "source_metadata_url": "https://api.tcgdex.net/v2/en/sets/sv08.5",
+      "files": {
+        "low": {
+          "file": "modern-067-low.webp",
+          "url": "https://assets.tcgdex.net/en/sv/sv08.5/156/low.webp",
+          "bytes": 34758,
+          "sha256": "3eb02ba763d5326d59c6a933be9b6e0447fde50c8fbe6db5552cce45a7f3a0e2",
+          "width": 245,
+          "height": 337,
+          "format": "WEBP",
+          "unchanged_download": true
+        },
+        "high": {
+          "file": "modern-067-high.webp",
+          "url": "https://assets.tcgdex.net/en/sv/sv08.5/156/high.webp",
+          "bytes": 137086,
+          "sha256": "bc975adc668b581d185c1cb05b26f9e5a303f9587e76b71b512df7b20bc0034e",
+          "width": 600,
+          "height": 825,
+          "format": "WEBP",
+          "unchanged_download": true
+        }
+      }
+    },
+    {
+      "rank": 68,
+      "name": "Gengar & Mimikyu GX",
+      "set_name": "Team Up",
+      "number": "53/181",
+      "image_provider": "TCGdex",
+      "source_metadata_url": "https://api.tcgdex.net/v2/en/sets/sm9",
+      "files": {
+        "low": {
+          "file": "modern-068-low.webp",
+          "url": "https://assets.tcgdex.net/en/sm/sm9/53/low.webp",
+          "bytes": 24204,
+          "sha256": "451757e310fa0fb324dc3a86bf64af3bbbc85f6a3eeaf488dc35fd46ea53ff65",
+          "width": 245,
+          "height": 337,
+          "format": "WEBP",
+          "unchanged_download": true
+        },
+        "high": {
+          "file": "modern-068-high.webp",
+          "url": "https://assets.tcgdex.net/en/sm/sm9/53/high.webp",
+          "bytes": 118298,
+          "sha256": "3cd32032d14abf711f2105b3352a700a912031311cd95acd80cf95c75a962b30",
+          "width": 600,
+          "height": 825,
+          "format": "WEBP",
+          "unchanged_download": true
+        }
+      }
+    },
+    {
+      "rank": 69,
+      "name": "Raichu & Alolan Raichu GX",
+      "set_name": "Unified Minds",
+      "number": "221/236",
+      "image_provider": "TCGdex",
+      "source_metadata_url": "https://api.tcgdex.net/v2/en/sets/sm11",
+      "files": {
+        "low": {
+          "file": "modern-069-low.webp",
+          "url": "https://assets.tcgdex.net/en/sm/sm11/221/low.webp",
+          "bytes": 27706,
+          "sha256": "b7a4a346c11fc76a16fd13cda9fb759c47c1560228cf9cbbf9d834be9ea79947",
+          "width": 245,
+          "height": 337,
+          "format": "WEBP",
+          "unchanged_download": true
+        },
+        "high": {
+          "file": "modern-069-high.webp",
+          "url": "https://assets.tcgdex.net/en/sm/sm11/221/high.webp",
+          "bytes": 109824,
+          "sha256": "b74d1fbf2fea4b184041dfb3b45a2213f78dc702401b0413d04e4accee5a8c47",
+          "width": 600,
+          "height": 825,
+          "format": "WEBP",
+          "unchanged_download": true
+        }
+      }
+    },
+    {
+      "rank": 70,
+      "name": "Slowpoke & Psyduck GX",
+      "set_name": "Unified Minds",
+      "number": "218/236",
+      "image_provider": "TCGdex",
+      "source_metadata_url": "https://api.tcgdex.net/v2/en/sets/sm11",
+      "files": {
+        "low": {
+          "file": "modern-070-low.webp",
+          "url": "https://assets.tcgdex.net/en/sm/sm11/218/low.webp",
+          "bytes": 24210,
+          "sha256": "1bf0dd9efac0c88f3ea0d34076f4a3530d5f8067f38112063386f9aad164e87a",
+          "width": 245,
+          "height": 337,
+          "format": "WEBP",
+          "unchanged_download": true
+        },
+        "high": {
+          "file": "modern-070-high.webp",
+          "url": "https://assets.tcgdex.net/en/sm/sm11/218/high.webp",
+          "bytes": 97520,
+          "sha256": "ad9410d39efd3707946a647cdd5f60c5f6de65c5ae4e3f210779fb783edc077e",
+          "width": 600,
+          "height": 825,
+          "format": "WEBP",
+          "unchanged_download": true
+        }
+      }
+    },
+    {
+      "rank": 71,
+      "name": "Blaziken VMAX",
+      "set_name": "Chilling Reign",
+      "number": "201/198",
+      "image_provider": "TCGdex",
+      "source_metadata_url": "https://api.tcgdex.net/v2/en/sets/swsh6",
+      "files": {
+        "low": {
+          "file": "modern-071-low.webp",
+          "url": "https://assets.tcgdex.net/en/swsh/swsh6/201/low.webp",
+          "bytes": 33962,
+          "sha256": "3e43582fb1c157602c98a9b0208117e29ff146e07997a3e52d4230fd02ab6d65",
+          "width": 245,
+          "height": 337,
+          "format": "WEBP",
+          "unchanged_download": true
+        },
+        "high": {
+          "file": "modern-071-high.webp",
+          "url": "https://assets.tcgdex.net/en/swsh/swsh6/201/high.webp",
+          "bytes": 125524,
+          "sha256": "c93a3f6ce298ef20f6190edc7275ee525e6780a1d093b29315e462fd658548d9",
+          "width": 600,
+          "height": 825,
+          "format": "WEBP",
+          "unchanged_download": true
+        }
+      }
+    },
+    {
+      "rank": 72,
+      "name": "Leafeon VMAX",
+      "set_name": "Evolving Skies",
+      "number": "205/203",
+      "image_provider": "TCGdex",
+      "source_metadata_url": "https://api.tcgdex.net/v2/en/sets/swsh7",
+      "files": {
+        "low": {
+          "file": "modern-072-low.webp",
+          "url": "https://assets.tcgdex.net/en/swsh/swsh7/205/low.webp",
+          "bytes": 22962,
+          "sha256": "8a04372d0c474473ee4a16d8c6c76c85719460c9358bfad36e10fcd5ad355023",
+          "width": 245,
+          "height": 337,
+          "format": "WEBP",
+          "unchanged_download": true
+        },
+        "high": {
+          "file": "modern-072-high.webp",
+          "url": "https://assets.tcgdex.net/en/swsh/swsh7/205/high.webp",
+          "bytes": 84328,
+          "sha256": "f05e00c7b255e73c85cdce3593ab64b55275f2fc8ea0ec19832d8e53d5a5581f",
+          "width": 600,
+          "height": 825,
+          "format": "WEBP",
+          "unchanged_download": true
+        }
+      }
+    },
+    {
+      "rank": 73,
+      "name": "Umbreon V",
+      "set_name": "Evolving Skies",
+      "number": "189/203",
+      "image_provider": "TCGdex",
+      "source_metadata_url": "https://api.tcgdex.net/v2/en/sets/swsh7",
+      "files": {
+        "low": {
+          "file": "modern-073-low.webp",
+          "url": "https://assets.tcgdex.net/en/swsh/swsh7/189/low.webp",
+          "bytes": 21262,
+          "sha256": "06c9def9f5a67f82b0dc77a61ab859c507dcf6d50177a726985d5a9112b8665f",
+          "width": 245,
+          "height": 337,
+          "format": "WEBP",
+          "unchanged_download": true
+        },
+        "high": {
+          "file": "modern-073-high.webp",
+          "url": "https://assets.tcgdex.net/en/swsh/swsh7/189/high.webp",
+          "bytes": 80320,
+          "sha256": "54cc61ba11d9b6b368e159a4a6050b65c3e09c117fcb6728c4a1e97babee94fd",
+          "width": 600,
+          "height": 825,
+          "format": "WEBP",
+          "unchanged_download": true
+        }
+      }
+    },
+    {
+      "rank": 74,
+      "name": "Misty's Favor",
+      "set_name": "Unified Minds",
+      "number": "235/236",
+      "image_provider": "TCGdex",
+      "source_metadata_url": "https://api.tcgdex.net/v2/en/sets/sm11",
+      "files": {
+        "low": {
+          "file": "modern-074-low.webp",
+          "url": "https://assets.tcgdex.net/en/sm/sm11/235/low.webp",
+          "bytes": 18922,
+          "sha256": "e336e2bb94c8dccc320d1e90979231ae4a74a45346f4e21ee6bbf818e9772150",
+          "width": 245,
+          "height": 337,
+          "format": "WEBP",
+          "unchanged_download": true
+        },
+        "high": {
+          "file": "modern-074-high.webp",
+          "url": "https://assets.tcgdex.net/en/sm/sm11/235/high.webp",
+          "bytes": 71780,
+          "sha256": "8ec8b67681272b0aa6104c0c54e6358bb770caf4077f1f9ca5d403d621262d2a",
+          "width": 600,
+          "height": 825,
+          "format": "WEBP",
+          "unchanged_download": true
+        }
+      }
+    },
+    {
+      "rank": 75,
+      "name": "Lugia GX",
+      "set_name": "Lost Thunder",
+      "number": "227/214",
+      "image_provider": "TCGdex",
+      "source_metadata_url": "https://api.tcgdex.net/v2/en/sets/sm8",
+      "files": {
+        "low": {
+          "file": "modern-075-low.webp",
+          "url": "https://assets.tcgdex.net/en/sm/sm8/227/low.webp",
+          "bytes": 20900,
+          "sha256": "b2ac2db81fe9ea25ac9012666b812a07bdf3cfdcf34053f4951cdf2533067ce9",
+          "width": 245,
+          "height": 337,
+          "format": "WEBP",
+          "unchanged_download": true
+        },
+        "high": {
+          "file": "modern-075-high.webp",
+          "url": "https://assets.tcgdex.net/en/sm/sm8/227/high.webp",
+          "bytes": 75286,
+          "sha256": "8aeddb31c6df5a6f73c4d9cb3b6174d2e28d61a7a778537172fab641abb5b722",
+          "width": 600,
+          "height": 825,
+          "format": "WEBP",
+          "unchanged_download": true
+        }
+      }
+    },
+    {
+      "rank": 76,
+      "name": "Reshiram",
+      "set_name": "Legendary Treasures",
+      "number": "114/113",
+      "image_provider": "TCGdex",
+      "source_metadata_url": "https://api.tcgdex.net/v2/en/sets/bw11",
+      "files": {
+        "low": {
+          "file": "modern-076-low.webp",
+          "url": "https://assets.tcgdex.net/en/bw/bw11/114/low.webp",
+          "bytes": 12574,
+          "sha256": "5ff83a4cc284b4436dac3ac307ea38f1fda39364713351fc5e7eb4162020c659",
+          "width": 245,
+          "height": 337,
+          "format": "WEBP",
+          "unchanged_download": true
+        },
+        "high": {
+          "file": "modern-076-high.webp",
+          "url": "https://assets.tcgdex.net/en/bw/bw11/114/high.webp",
+          "bytes": 41102,
+          "sha256": "fd8bfe05a7bf507ff2bce0b586b9d893daa91a30c095aee1546ebf9557cced67",
+          "width": 600,
+          "height": 825,
+          "format": "WEBP",
+          "unchanged_download": true
+        }
+      }
+    },
+    {
+      "rank": 77,
+      "name": "Primal Kyogre EX",
+      "set_name": "Ancient Origins",
+      "number": "96/98",
+      "image_provider": "TCGdex",
+      "source_metadata_url": "https://api.tcgdex.net/v2/en/sets/xy7",
+      "files": {
+        "low": {
+          "file": "modern-077-low.webp",
+          "url": "https://assets.tcgdex.net/en/xy/xy7/96/low.webp",
+          "bytes": 33298,
+          "sha256": "5dc2c26f6b179a4b4036d80e12149b878347dbd8ab48151b3c21555e94c00a02",
+          "width": 245,
+          "height": 337,
+          "format": "WEBP",
+          "unchanged_download": true
+        },
+        "high": {
+          "file": "modern-077-high.webp",
+          "url": "https://assets.tcgdex.net/en/xy/xy7/96/high.webp",
+          "bytes": 124484,
+          "sha256": "45a0fc13f9562f09626d48ce81b688667826b143438e5f106ade37272282a1f4",
+          "width": 600,
+          "height": 825,
+          "format": "WEBP",
+          "unchanged_download": true
+        }
+      }
+    },
+    {
+      "rank": 78,
+      "name": "Sylveon VMAX",
+      "set_name": "Evolving Skies",
+      "number": "212/203",
+      "image_provider": "TCGdex",
+      "source_metadata_url": "https://api.tcgdex.net/v2/en/sets/swsh7",
+      "files": {
+        "low": {
+          "file": "modern-078-low.webp",
+          "url": "https://assets.tcgdex.net/en/swsh/swsh7/212/low.webp",
+          "bytes": 29708,
+          "sha256": "06c90313990b86cbda3ada5b01d9cb18ea5d3f06f551749fb4d27ba0b3f3e183",
+          "width": 245,
+          "height": 337,
+          "format": "WEBP",
+          "unchanged_download": true
+        },
+        "high": {
+          "file": "modern-078-high.webp",
+          "url": "https://assets.tcgdex.net/en/swsh/swsh7/212/high.webp",
+          "bytes": 121072,
+          "sha256": "6d88c0dd7c34cf3b55a86fd8627733fbcbaa0ab6079c01f67d4b91379e6614b3",
+          "width": 600,
+          "height": 825,
+          "format": "WEBP",
+          "unchanged_download": true
+        }
+      }
+    },
+    {
+      "rank": 79,
+      "name": "Greninja & Zoroark GX",
+      "set_name": "Unbroken Bonds",
+      "number": "201/214",
+      "image_provider": "TCGdex",
+      "source_metadata_url": "https://api.tcgdex.net/v2/en/sets/sm10",
+      "files": {
+        "low": {
+          "file": "modern-079-low.webp",
+          "url": "https://assets.tcgdex.net/en/sm/sm10/201/low.webp",
+          "bytes": 25506,
+          "sha256": "a5fc71caf1693e75990a9a99b62ff6783e06fd8013a6e9494dd74591ddbb3b4f",
+          "width": 245,
+          "height": 337,
+          "format": "WEBP",
+          "unchanged_download": true
+        },
+        "high": {
+          "file": "modern-079-high.webp",
+          "url": "https://assets.tcgdex.net/en/sm/sm10/201/high.webp",
+          "bytes": 102498,
+          "sha256": "bc706608a1b32735b739236d3d20d2e0c0c2b401e24f9b0c7f3a3a98d3a1fc89",
+          "width": 600,
+          "height": 825,
+          "format": "WEBP",
+          "unchanged_download": true
+        }
+      }
+    },
+    {
+      "rank": 80,
+      "name": "Espeon VMAX",
+      "set_name": "Fusion Strike",
+      "number": "270/264",
+      "image_provider": "TCGdex",
+      "source_metadata_url": "https://api.tcgdex.net/v2/en/sets/swsh8",
+      "files": {
+        "low": {
+          "file": "modern-080-low.webp",
+          "url": "https://assets.tcgdex.net/en/swsh/swsh8/270/low.webp",
+          "bytes": 26476,
+          "sha256": "e84ca695bb912f77795031b63cbe5820cab1b86fccacffe2ad149aed005d975d",
+          "width": 245,
+          "height": 337,
+          "format": "WEBP",
+          "unchanged_download": true
+        },
+        "high": {
+          "file": "modern-080-high.webp",
+          "url": "https://assets.tcgdex.net/en/swsh/swsh8/270/high.webp",
+          "bytes": 95254,
+          "sha256": "8de9542b90ac963d3ff0f3d2c9c955d08f8419d1b74f3e5058987ba7a50856cd",
+          "width": 600,
+          "height": 825,
+          "format": "WEBP",
+          "unchanged_download": true
+        }
+      }
+    },
+    {
+      "rank": 81,
+      "name": "Team Rocket's Mewtwo ex",
+      "set_name": "Destined Rivals",
+      "number": "231/182",
+      "image_provider": "TCGdex",
+      "source_metadata_url": "https://api.tcgdex.net/v2/en/sets/sv10",
+      "files": {
+        "low": {
+          "file": "modern-081-low.webp",
+          "url": "https://assets.tcgdex.net/en/sv/sv10/231/low.webp",
+          "bytes": 23022,
+          "sha256": "e243bb9db976fa57c026d6e46df1e46b3580735d4cff975c3d796a0c91d1416b",
+          "width": 245,
+          "height": 337,
+          "format": "WEBP",
+          "unchanged_download": true
+        },
+        "high": {
+          "file": "modern-081-high.webp",
+          "url": "https://assets.tcgdex.net/en/sv/sv10/231/high.webp",
+          "bytes": 88018,
+          "sha256": "1dabb6cbcf67c0bc14ef9641050151bd9b3a919e5aed9170cca5f063ac7ac8dd",
+          "width": 600,
+          "height": 825,
+          "format": "WEBP",
+          "unchanged_download": true
+        }
+      }
+    },
+    {
+      "rank": 82,
+      "name": "Primal Groudon EX",
+      "set_name": "Ancient Origins",
+      "number": "97/98",
+      "image_provider": "TCGdex",
+      "source_metadata_url": "https://api.tcgdex.net/v2/en/sets/xy7",
+      "files": {
+        "low": {
+          "file": "modern-082-low.webp",
+          "url": "https://assets.tcgdex.net/en/xy/xy7/97/low.webp",
+          "bytes": 36806,
+          "sha256": "fa7771b9b5da5f3082d02f673b500f5cd42fe3660698b2977ad5e1a32cbc0734",
+          "width": 245,
+          "height": 337,
+          "format": "WEBP",
+          "unchanged_download": true
+        },
+        "high": {
+          "file": "modern-082-high.webp",
+          "url": "https://assets.tcgdex.net/en/xy/xy7/97/high.webp",
+          "bytes": 133810,
+          "sha256": "9ba65a5467b612463fe6011003dfdcfc867f85bb45c6f6c09bc93c4ff978ded9",
+          "width": 600,
+          "height": 825,
+          "format": "WEBP",
+          "unchanged_download": true
+        }
+      }
+    },
+    {
+      "rank": 83,
+      "name": "Raikou EX",
+      "set_name": "Dark Explorers",
+      "number": "105/108",
+      "image_provider": "TCGdex",
+      "source_metadata_url": "https://api.tcgdex.net/v2/en/sets/bw5",
+      "files": {
+        "low": {
+          "file": "modern-083-low.webp",
+          "url": "https://assets.tcgdex.net/en/bw/bw5/105/low.webp",
+          "bytes": 25864,
+          "sha256": "ea40b0c6af93911d7930a3c6c210f0570c4dde74ccdba7aace5df6a4f70caa27",
+          "width": 245,
+          "height": 337,
+          "format": "WEBP",
+          "unchanged_download": true
+        },
+        "high": {
+          "file": "modern-083-high.webp",
+          "url": "https://assets.tcgdex.net/en/bw/bw5/105/high.webp",
+          "bytes": 89620,
+          "sha256": "67b7992c4677a8fba96a3a803aed07db5c849b53547771d6a68fd74dcadfea60",
+          "width": 600,
+          "height": 825,
+          "format": "WEBP",
+          "unchanged_download": true
+        }
+      }
+    },
+    {
+      "rank": 84,
+      "name": "Solgaleo & Lunala GX",
+      "set_name": "Cosmic Eclipse",
+      "number": "216/236",
+      "image_provider": "TCGdex",
+      "source_metadata_url": "https://api.tcgdex.net/v2/en/sets/sm12",
+      "files": {
+        "low": {
+          "file": "modern-084-low.webp",
+          "url": "https://assets.tcgdex.net/en/sm/sm12/216/low.webp",
+          "bytes": 26372,
+          "sha256": "cfdb002a5bc1744d1c54b52338134ef5f7e31f0bb94a60ee6a58825d7e1bf3eb",
+          "width": 245,
+          "height": 337,
+          "format": "WEBP",
+          "unchanged_download": true
+        },
+        "high": {
+          "file": "modern-084-high.webp",
+          "url": "https://assets.tcgdex.net/en/sm/sm12/216/high.webp",
+          "bytes": 98892,
+          "sha256": "e0347947c1fdba98883c01a883bc92409fffab3eab798d62d92f53b91822cb9f",
+          "width": 600,
+          "height": 825,
+          "format": "WEBP",
+          "unchanged_download": true
+        }
+      }
+    },
+    {
+      "rank": 85,
+      "name": "Kyogre EX",
+      "set_name": "Dark Explorers",
+      "number": "104/108",
+      "image_provider": "TCGdex",
+      "source_metadata_url": "https://api.tcgdex.net/v2/en/sets/bw5",
+      "files": {
+        "low": {
+          "file": "modern-085-low.webp",
+          "url": "https://assets.tcgdex.net/en/bw/bw5/104/low.webp",
+          "bytes": 25664,
+          "sha256": "d61a96cd3ff3329a20cd0cb24c965330637fcd61f15b1f4a8d93322f44bd02b1",
+          "width": 245,
+          "height": 337,
+          "format": "WEBP",
+          "unchanged_download": true
+        },
+        "high": {
+          "file": "modern-085-high.webp",
+          "url": "https://assets.tcgdex.net/en/bw/bw5/104/high.webp",
+          "bytes": 93714,
+          "sha256": "45d6c2e82969ecfdd91bb2f1e5243a1a273310618abbdb4cc9fbbcf4607b762a",
+          "width": 600,
+          "height": 825,
+          "format": "WEBP",
+          "unchanged_download": true
+        }
+      }
+    },
+    {
+      "rank": 86,
+      "name": "Umbreon GX",
+      "set_name": "Hidden Fates: Shiny Vault",
+      "number": "SV69/SV94",
+      "image_provider": "TCGdex",
+      "source_metadata_url": "https://api.tcgdex.net/v2/en/sets/sma",
+      "files": {
+        "low": {
+          "file": "modern-086-low.webp",
+          "url": "https://assets.tcgdex.net/en/sm/sma/SV69/low.webp",
+          "bytes": 21584,
+          "sha256": "4c10b2acb91bb125639bf40ae15c47c9decd09ec42c11350d2dbfd71355c0657",
+          "width": 245,
+          "height": 337,
+          "format": "WEBP",
+          "unchanged_download": true
+        },
+        "high": {
+          "file": "modern-086-high.webp",
+          "url": "https://assets.tcgdex.net/en/sm/sma/SV69/high.webp",
+          "bytes": 79686,
+          "sha256": "d3d74b7074fe1c9967c3fd7aed2a51bfb5d04fa32b8d37522df3111e6d3418ac",
+          "width": 600,
+          "height": 825,
+          "format": "WEBP",
+          "unchanged_download": true
+        }
+      }
+    },
+    {
+      "rank": 87,
+      "name": "M Charizard EX (Y)",
+      "set_name": "Flashfire",
+      "number": "107/106",
+      "image_provider": "TCGdex",
+      "source_metadata_url": "https://api.tcgdex.net/v2/en/sets/xy2",
+      "files": {
+        "low": {
+          "file": "modern-087-low.webp",
+          "url": "https://assets.tcgdex.net/en/xy/xy2/107/low.webp",
+          "bytes": 32622,
+          "sha256": "7805221f398ef77d723fe65aa0823ead7f5d8d32908d39b377e237ab4a86cb3a",
+          "width": 245,
+          "height": 337,
+          "format": "WEBP",
+          "unchanged_download": true
+        },
+        "high": {
+          "file": "modern-087-high.webp",
+          "url": "https://assets.tcgdex.net/en/xy/xy2/107/high.webp",
+          "bytes": 112382,
+          "sha256": "a88f394cd073ee25c8c258992444ea955e8c8880d8510c3fef5a42012f741256",
+          "width": 600,
+          "height": 825,
+          "format": "WEBP",
+          "unchanged_download": true
+        }
+      }
+    },
+    {
+      "rank": 88,
+      "name": "Mimikyu GX",
+      "set_name": "Lost Thunder",
+      "number": "226/214",
+      "image_provider": "TCGdex",
+      "source_metadata_url": "https://api.tcgdex.net/v2/en/sets/sm8",
+      "files": {
+        "low": {
+          "file": "modern-088-low.webp",
+          "url": "https://assets.tcgdex.net/en/sm/sm8/226/low.webp",
+          "bytes": 19394,
+          "sha256": "8c058330af6db8569a8e341031058e0c87a7d9c164457d34834875f8aea7212f",
+          "width": 245,
+          "height": 337,
+          "format": "WEBP",
+          "unchanged_download": true
+        },
+        "high": {
+          "file": "modern-088-high.webp",
+          "url": "https://assets.tcgdex.net/en/sm/sm8/226/high.webp",
+          "bytes": 69290,
+          "sha256": "989d21438be3a6a624533a95569890c078f0d15ba356ec53711b4a6f3ff62fe9",
+          "width": 600,
+          "height": 825,
+          "format": "WEBP",
+          "unchanged_download": true
+        }
+      }
+    },
+    {
+      "rank": 89,
+      "name": "Magikarp",
+      "set_name": "Paldea Evolved",
+      "number": "203/193",
+      "image_provider": "TCGdex",
+      "source_metadata_url": "https://api.tcgdex.net/v2/en/sets/sv02",
+      "files": {
+        "low": {
+          "file": "modern-089-low.webp",
+          "url": "https://assets.tcgdex.net/en/sv/sv02/203/low.webp",
+          "bytes": 39430,
+          "sha256": "d0e10c2c54202845a376dc528fed51f5b23ebadbc922f7482628e95391b31473",
+          "width": 245,
+          "height": 337,
+          "format": "WEBP",
+          "unchanged_download": true
+        },
+        "high": {
+          "file": "modern-089-high.webp",
+          "url": "https://assets.tcgdex.net/en/sv/sv02/203/high.webp",
+          "bytes": 188664,
+          "sha256": "6fe24f16b0416069e53ed291bdd411b006a5b4cdf0a08b3ee3290507e0513347",
+          "width": 600,
+          "height": 825,
+          "format": "WEBP",
+          "unchanged_download": true
+        }
+      }
+    },
+    {
+      "rank": 90,
+      "name": "Altaria",
+      "set_name": "Boundaries Crossed",
+      "number": "152/149",
+      "image_provider": "TCGdex",
+      "source_metadata_url": "https://api.tcgdex.net/v2/en/sets/bw7",
+      "files": {
+        "low": {
+          "file": "modern-090-low.webp",
+          "url": "https://assets.tcgdex.net/en/bw/bw7/152/low.webp",
+          "bytes": 16334,
+          "sha256": "710130a845ad42b0446567c06b2eaf6db8b10e4c450c038d63bc329bdf3513d2",
+          "width": 245,
+          "height": 337,
+          "format": "WEBP",
+          "unchanged_download": true
+        },
+        "high": {
+          "file": "modern-090-high.webp",
+          "url": "https://assets.tcgdex.net/en/bw/bw7/152/high.webp",
+          "bytes": 64376,
+          "sha256": "2c1120d69453ca15ea7beac292fc2d900d4cfe47124f081578dff8befb4565dd",
+          "width": 600,
+          "height": 825,
+          "format": "WEBP",
+          "unchanged_download": true
+        }
+      }
+    },
+    {
+      "rank": 91,
+      "name": "Charizard ex",
+      "set_name": "Scarlet & Violet\u2014151",
+      "number": "199/165",
+      "image_provider": "TCGdex",
+      "source_metadata_url": "https://api.tcgdex.net/v2/en/sets/sv03.5",
+      "files": {
+        "low": {
+          "file": "modern-091-low.webp",
+          "url": "https://assets.tcgdex.net/en/sv/sv03.5/199/low.webp",
+          "bytes": 17050,
+          "sha256": "411291487101fc7d0a53b9083f81af005e3bbe96ac48d24c4103d9770710edb4",
+          "width": 245,
+          "height": 337,
+          "format": "WEBP",
+          "unchanged_download": true
+        },
+        "high": {
+          "file": "modern-091-high.webp",
+          "url": "https://assets.tcgdex.net/en/sv/sv03.5/199/high.webp",
+          "bytes": 57376,
+          "sha256": "6f3fb724eb789841aa918056ba5879b4d539606bbbd83f70ae47a58ff8002d8b",
+          "width": 600,
+          "height": 825,
+          "format": "WEBP",
+          "unchanged_download": true
+        }
+      }
+    },
+    {
+      "rank": 92,
+      "name": "Pikachu ex",
+      "set_name": "Surging Sparks",
+      "number": "238/191",
+      "image_provider": "TCGdex",
+      "source_metadata_url": "https://api.tcgdex.net/v2/en/sets/sv08",
+      "files": {
+        "low": {
+          "file": "modern-092-low.webp",
+          "url": "https://assets.tcgdex.net/en/sv/sv08/238/low.webp",
+          "bytes": 27352,
+          "sha256": "4f598a65a4ef59d40e2dbf3f9678405876c1548daa43999807ada1d00c358558",
+          "width": 245,
+          "height": 337,
+          "format": "WEBP",
+          "unchanged_download": true
+        },
+        "high": {
+          "file": "modern-092-high.webp",
+          "url": "https://assets.tcgdex.net/en/sv/sv08/238/high.webp",
+          "bytes": 97956,
+          "sha256": "5d3659ff87a09d6f8da9d5857571d9b8a44018bbfe17c8c27443793594323b2d",
+          "width": 600,
+          "height": 825,
+          "format": "WEBP",
+          "unchanged_download": true
+        }
+      }
+    },
+    {
+      "rank": 93,
+      "name": "Team Rocket's Mewtwo ex",
+      "set_name": "Mega Evolution\u2014Ascended Heroes",
+      "number": "281/217",
+      "image_provider": "TCGdex",
+      "source_metadata_url": "https://api.tcgdex.net/v2/en/sets/me02.5",
+      "files": {
+        "low": {
+          "file": "modern-093-low.webp",
+          "url": "https://assets.tcgdex.net/en/me/me02.5/281/low.webp",
+          "bytes": 19758,
+          "sha256": "815a1b81eeef4ea6004fe8776f2f1876b6861a539aef60df6716bd1d6980aeaf",
+          "width": 245,
+          "height": 337,
+          "format": "WEBP",
+          "unchanged_download": true
+        },
+        "high": {
+          "file": "modern-093-high.webp",
+          "url": "https://assets.tcgdex.net/en/me/me02.5/281/high.webp",
+          "bytes": 80224,
+          "sha256": "239498435a83eee75610b52d425af5d17183531917c38476b1564ce3d2b89144",
+          "width": 600,
+          "height": 825,
+          "format": "WEBP",
+          "unchanged_download": true
+        }
+      }
+    },
+    {
+      "rank": 94,
+      "name": "Lillie's Clefairy ex",
+      "set_name": "Mega Evolution\u2014Ascended Heroes",
+      "number": "280/217",
+      "image_provider": "TCGdex",
+      "source_metadata_url": "https://api.tcgdex.net/v2/en/sets/me02.5",
+      "files": {
+        "low": {
+          "file": "modern-094-low.webp",
+          "url": "https://assets.tcgdex.net/en/me/me02.5/280/low.webp",
+          "bytes": 26754,
+          "sha256": "ea029e06a6f370762219d3d90bfbfdaf75956ab4c35d32dfe099b6ce42399e4c",
+          "width": 245,
+          "height": 337,
+          "format": "WEBP",
+          "unchanged_download": true
+        },
+        "high": {
+          "file": "modern-094-high.webp",
+          "url": "https://assets.tcgdex.net/en/me/me02.5/280/high.webp",
+          "bytes": 95830,
+          "sha256": "c77b38416fa6ec1cc098be9c3a7cc6f44d038c8883ca186dd6cbbe9bd875c763",
+          "width": 600,
+          "height": 825,
+          "format": "WEBP",
+          "unchanged_download": true
+        }
+      }
+    },
+    {
+      "rank": 95,
+      "name": "Pikachu ex",
+      "set_name": "Mega Evolution\u2014Ascended Heroes",
+      "number": "277/217",
+      "image_provider": "TCGdex",
+      "source_metadata_url": "https://api.tcgdex.net/v2/en/sets/me02.5",
+      "files": {
+        "low": {
+          "file": "modern-095-low.webp",
+          "url": "https://assets.tcgdex.net/en/me/me02.5/277/low.webp",
+          "bytes": 26882,
+          "sha256": "0567275210e62d156f08a8462a5fdd1c5ca807d08fb933b64ed06df0dad3c42f",
+          "width": 245,
+          "height": 337,
+          "format": "WEBP",
+          "unchanged_download": true
+        },
+        "high": {
+          "file": "modern-095-high.webp",
+          "url": "https://assets.tcgdex.net/en/me/me02.5/277/high.webp",
+          "bytes": 93386,
+          "sha256": "40dfd523c18b8382ab64096ba045434bc04359aa5277dfddd14de6f3ac7d3b80",
+          "width": 600,
+          "height": 825,
+          "format": "WEBP",
+          "unchanged_download": true
+        }
+      }
+    },
+    {
+      "rank": 96,
+      "name": "Psyduck",
+      "set_name": "Mega Evolution\u2014Ascended Heroes",
+      "number": "226/217",
+      "image_provider": "TCGdex",
+      "source_metadata_url": "https://api.tcgdex.net/v2/en/sets/me02.5",
+      "files": {
+        "low": {
+          "file": "modern-096-low.webp",
+          "url": "https://assets.tcgdex.net/en/me/me02.5/226/low.webp",
+          "bytes": 17852,
+          "sha256": "1526c10728cbb5131e1457270fad6235a5bb6e19503b1dc7a7db831da4504d53",
+          "width": 245,
+          "height": 337,
+          "format": "WEBP",
+          "unchanged_download": true
+        },
+        "high": {
+          "file": "modern-096-high.webp",
+          "url": "https://assets.tcgdex.net/en/me/me02.5/226/high.webp",
+          "bytes": 65024,
+          "sha256": "cd9f39403d78a71e2aba200f5820cb99ec2f13b52de616e8011c4d73693e9294",
+          "width": 600,
+          "height": 825,
+          "format": "WEBP",
+          "unchanged_download": true
+        }
+      }
+    },
+    {
+      "rank": 97,
+      "name": "Mega Charizard Y ex",
+      "set_name": "Mega Evolution\u2014Ascended Heroes",
+      "number": "294/217",
+      "image_provider": "TCGdex",
+      "source_metadata_url": "https://api.tcgdex.net/v2/en/sets/me02.5",
+      "files": {
+        "low": {
+          "file": "modern-097-low.webp",
+          "url": "https://assets.tcgdex.net/en/me/me02.5/294/low.webp",
+          "bytes": 13000,
+          "sha256": "64544e7a37e7e2c0d7d5f7dabb3cdbea0c93ef2c8434794b31435932795a528d",
+          "width": 245,
+          "height": 337,
+          "format": "WEBP",
+          "unchanged_download": true
+        },
+        "high": {
+          "file": "modern-097-high.webp",
+          "url": "https://assets.tcgdex.net/en/me/me02.5/294/high.webp",
+          "bytes": 48318,
+          "sha256": "a951567358aebdbd2b9f5b485b9336dae421fcd159b0cefecca6662cae4e984e",
+          "width": 600,
+          "height": 825,
+          "format": "WEBP",
+          "unchanged_download": true
+        }
+      }
+    },
+    {
+      "rank": 98,
+      "name": "Mega Dragonite ex",
+      "set_name": "Mega Evolution\u2014Ascended Heroes",
+      "number": "295/217",
+      "image_provider": "TCGdex",
+      "source_metadata_url": "https://api.tcgdex.net/v2/en/sets/me02.5",
+      "files": {
+        "low": {
+          "file": "modern-098-low.webp",
+          "url": "https://assets.tcgdex.net/en/me/me02.5/295/low.webp",
+          "bytes": 13246,
+          "sha256": "50e2e43db55746cca562614b44d48b49c1ee5e851ac0c9cd0397a483cbce7a58",
+          "width": 245,
+          "height": 337,
+          "format": "WEBP",
+          "unchanged_download": true
+        },
+        "high": {
+          "file": "modern-098-high.webp",
+          "url": "https://assets.tcgdex.net/en/me/me02.5/295/high.webp",
+          "bytes": 47422,
+          "sha256": "158633de119709653087bae70b96ef212d454b97c8eef4f24eea7ba397a7b272",
+          "width": 600,
+          "height": 825,
+          "format": "WEBP",
+          "unchanged_download": true
+        }
+      }
+    },
+    {
+      "rank": 99,
+      "name": "Mega Gengar ex",
+      "set_name": "Mega Evolution\u2014Ascended Heroes",
+      "number": "269/217",
+      "image_provider": "TCGdex",
+      "source_metadata_url": "https://api.tcgdex.net/v2/en/sets/me02.5",
+      "files": {
+        "low": {
+          "file": "modern-099-low.webp",
+          "url": "https://assets.tcgdex.net/en/me/me02.5/269/low.webp",
+          "bytes": 28680,
+          "sha256": "6fcfd15c796855da35126035d9d52b557d7292fbe86a2ef457a761af47ee069f",
+          "width": 245,
+          "height": 337,
+          "format": "WEBP",
+          "unchanged_download": true
+        },
+        "high": {
+          "file": "modern-099-high.webp",
+          "url": "https://assets.tcgdex.net/en/me/me02.5/269/high.webp",
+          "bytes": 104202,
+          "sha256": "f2bd4aa98fd7634e03d6e1b457344820cb0cb3dd727cbd0dd26659b389013ea4",
+          "width": 600,
+          "height": 825,
+          "format": "WEBP",
+          "unchanged_download": true
+        }
+      }
+    },
+    {
+      "rank": 100,
+      "name": "Greninja ex",
+      "set_name": "Twilight Masquerade",
+      "number": "214/167",
+      "image_provider": "TCGdex",
+      "source_metadata_url": "https://api.tcgdex.net/v2/en/sets/sv06",
+      "files": {
+        "low": {
+          "file": "modern-100-low.webp",
+          "url": "https://assets.tcgdex.net/en/sv/sv06/214/low.webp",
+          "bytes": 33558,
+          "sha256": "8f7c460a2e8e920a7d156343aa9280a68bf67b2804cb5d73abd0fba594dea4f2",
+          "width": 245,
+          "height": 337,
+          "format": "WEBP",
+          "unchanged_download": true
+        },
+        "high": {
+          "file": "modern-100-high.webp",
+          "url": "https://assets.tcgdex.net/en/sv/sv06/214/high.webp",
+          "bytes": 122298,
+          "sha256": "39dc7b2717079667b34d5b250a9e7bc93a1e0dc96fb03dbb78fc131e0c913934",
+          "width": 600,
+          "height": 825,
+          "format": "WEBP",
+          "unchanged_download": true
+        }
+      },
+      "identity_correction_source": "https://www.pokemon.com/uk/pokemon-tcg/pokemon-cards/series/sv06/214"
+    }
+  ]
+}
