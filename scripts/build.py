@@ -1,6 +1,7 @@
 from pathlib import Path
 from bs4 import BeautifulSoup
 import json, html, shutil, hashlib
+from editorial_visuals import validate_editorial_visuals
 from xml.sax.saxutils import escape
 P=Path(__file__).resolve().parents[1];D=P/'dist';BASE='https://buytrigger.cards/'
 # Existing item IDs remain stable across the custom-domain move.
@@ -18,6 +19,7 @@ if refresh.exists():
   for receipt in (refresh/folder).rglob('*.json'):
    target=D/receipt.relative_to(P);target.parent.mkdir(parents=True,exist_ok=True);shutil.copy2(receipt,target)
 e=json.loads((P/'editorial.json').read_text())
+validate_editorial_visuals(e,P)
 featured=next(a for a in e['articles'] if a['slug']==e.get('featuredArticle','psa-value-returns'))
 assert featured.get('image') and (P/featured['image']).is_file(), 'Featured story needs real editorial artwork'
 for a in e['articles']:
@@ -26,12 +28,12 @@ for a in e['articles']:
  soup.select_one('link[rel=canonical]')['href']=url
  for key,val in [('og:title',a['title']+' · '+BRAND),('og:description',a['summary']),('og:url',url),('og:type','article')]:soup.select_one('meta[property="'+key+'"]')['content']=val
  soup.select_one('meta[name=description]')['content']=a['summary']
- picture=a.get('image') or ('assets/family.png' if a['slug']=='welcome' else 'assets/japan.jpg' if a['slug']=='japanese-card-research' else 'assets/family.png')
+ picture=a['image']
  soup.select_one('meta[property="og:image"]')['content']=BASE+picture
  schema=soup.new_tag('script',type='application/ld+json');schema.string=json.dumps({'@context':'https://schema.org','@type':'Article','headline':a['title'],'description':a['summary'],'datePublished':'2026-11-03','dateModified':'2026-11-03','author':{'@type':'Organization','name':BYLINE},'publisher':{'@type':'Organization','name':BRAND},'mainEntityOfPage':url,'image':BASE+picture},ensure_ascii=False).replace('</','<\\/');soup.head.append(schema)
  main=soup.select_one('main');main.clear()
  content=f'<header class="reading-head"><a class="back-link" href="index.html#journal">← Back to features</a><span class="kicker red-text">{html.escape(a["eyebrow"])}</span><h1>{html.escape(a["title"])}</h1><p>{html.escape(a["summary"])}</p><p>Alex &amp; Oscar · BuyTrigger.Cards · Published 3 November 2026'+ (' · Source story '+a['sourcePublishedAt'] if a.get('sourcePublishedAt') else '')+'</p></header>'
- content+=f'<figure class="reading-image"><div class="story-cover"><img src="{picture}" style="object-fit:contain;background:#fff" alt="{html.escape(a.get("imageAlt",a["title"]))}"></div></figure><div class="reading-layout"><article class="article-body">'
+ content+=f'<figure class="reading-image"><div class="story-cover"><img src="{picture}" style="object-fit:contain;background:#fff" alt="{html.escape(a["imageAlt"])}"></div><figcaption>{html.escape(a["imageCredit"])}</figcaption></figure><div class="reading-layout"><article class="article-body">'
  for sec in a['sections']:content+=f'<section><h2>{html.escape(sec["heading"])}</h2>{sec["html"]}</section>'
  content+='<div class="source-box"><h3>Sources &amp; reading notes</h3>'+''.join(f'<a href="{html.escape(s["url"])}" rel="noopener noreferrer">{html.escape(s["label"])} ↗</a>' for s in a['sources'])+'</div><a class="btn red" href="index.html#journal">More features →</a></article></div>'
  main.append(BeautifulSoup(content,'html.parser'));folder=D/'stories'/a['slug'];folder.mkdir(parents=True);(folder/'index.html').write_text(str(soup))

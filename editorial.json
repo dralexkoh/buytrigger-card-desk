@@ -52,7 +52,11 @@
       "sourcePublishedAt": "2026-11-01",
       "kind": "Japan",
       "publishedAt": "2026-11-03",
-      "status": "published"
+      "status": "published",
+      "image": "assets/japan.jpg",
+      "visualStyle": "japan-editorial-v1",
+      "imageAlt": "Original Japan collecting illustration with Eevee by a riverside",
+      "imageCredit": "Original BuyTrigger.Cards editorial illustration; not a card photograph."
     },
     {
       "slug": "psa-value-returns",
@@ -113,7 +117,8 @@
       "image": "assets/editorial-grading-desk-v1.jpg",
       "imageAlt": "Original editorial illustration of a collector inspecting a fantasy trading card with a magnifying glass",
       "imageCaption": "Original editorial illustration · BuyTrigger.Cards",
-      "imageCredit": "Original editorial illustration · BuyTrigger.Cards"
+      "imageCredit": "Original editorial illustration · BuyTrigger.Cards",
+      "visualStyle": "editorial-ink-v1"
     },
     {
       "slug": "psa-october-theft-update",
@@ -164,7 +169,8 @@
       "imageAlt": "Original illustration of a shipping box and certificate checklist, with incident13October and PSAstatement23October dates",
       "imageCredit": "Original BuyTrigger editorial illustration; not an image of the incident or affected cards.",
       "publishedAt": "2026-11-03",
-      "status": "published"
+      "status": "published",
+      "visualStyle": "brand-graphic-v1"
     },
     {
       "slug": "delta-reign-product-guide-october",
@@ -217,7 +223,8 @@
       "imageCredit": "Official Pokémon press asset · © Pokémon / Nintendo / Creatures / GAME FREAK. Used unchanged for this free editorial edition; no endorsement.",
       "publishedAt": "2026-11-03",
       "status": "published",
-      "pressAsset": true
+      "pressAsset": true,
+      "visualStyle": "source-media-v1"
     },
     {
       "slug": "pokemon-santa-cruz-card-art",
@@ -268,7 +275,8 @@
       "imageAlt": "Original BuyTrigger editorial illustration for From binder to board: Pokémon card art meets Santa Cruz",
       "imageCredit": "Original BuyTrigger editorial graphic. Product pictures and the original report are linked in Sources.",
       "publishedAt": "2026-11-03",
-      "status": "published"
+      "status": "published",
+      "visualStyle": "brand-graphic-v1"
     },
     {
       "slug": "pocket-october-producer-letter",
@@ -320,7 +328,8 @@
       "imageCredit": "Official Pokémon press illustration, August 2026, shown for context alongside the October producer letter. © Pokémon / Nintendo / Creatures / GAME FREAK. Used unchanged for editorial reporting.",
       "publishedAt": "2026-11-03",
       "status": "published",
-      "pressAsset": true
+      "pressAsset": true,
+      "visualStyle": "source-media-v1"
     },
     {
       "slug": "welcome",
@@ -356,7 +365,11 @@
       "preparedAt": "2026-11-02",
       "publicationStatus": "Published 3 November 2026",
       "publishedAt": "2026-11-03",
-      "status": "published"
+      "status": "published",
+      "image": "assets/family.png",
+      "visualStyle": "family-anime-v1",
+      "imageAlt": "Alex and Oscar, the established dark-haired Asian father-and-son collecting mascots",
+      "imageCredit": "Original BuyTrigger.Cards family illustration."
     },
     {
       "slug": "psa10-is-not-profit",
@@ -397,7 +410,11 @@
       "preparedAt": "2026-11-02",
       "publicationStatus": "Published 3 November 2026",
       "publishedAt": "2026-11-03",
-      "status": "published"
+      "status": "published",
+      "image": "assets/editorial-price-profit-v1.svg",
+      "visualStyle": "brand-graphic-v1",
+      "imageAlt": "Price is not profit: card, grading, postage and selling fees",
+      "imageCredit": "Original BuyTrigger.Cards explainer graphic."
     },
     {
       "slug": "under20-upside",
@@ -442,7 +459,11 @@
       "preparedAt": "2026-11-02",
       "publicationStatus": "Published 3 November 2026",
       "publishedAt": "2026-11-03",
-      "status": "published"
+      "status": "published",
+      "image": "assets/editorial-under20-v1.svg",
+      "visualStyle": "brand-graphic-v1",
+      "imageAlt": "Under twenty dollars, then what? An illustrative PSA 10 price question",
+      "imageCredit": "Original BuyTrigger.Cards explainer graphic; price points are illustrative, not a market quote."
     },
     {
       "slug": "how-the-index-works",
@@ -496,7 +517,11 @@
       "publicationStatus": "Published 3 November 2026",
       "publishedAt": "2026-11-03",
       "status": "published",
-      "modifiedAt": "2026-11-03"
+      "modifiedAt": "2026-11-03",
+      "image": "assets/editorial-index-reader-v1.svg",
+      "visualStyle": "brand-graphic-v1",
+      "imageAlt": "Top 100 Modern Cards reader guide with an Umbreon VMAX catalogue scan",
+      "imageCredit": "Original BuyTrigger.Cards editorial layout; Umbreon VMAX catalogue artwork via TCGdex, credited in the Modern Index picture sources."
     }
   ],
   "wire": [
