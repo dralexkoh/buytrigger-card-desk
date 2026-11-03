@@ -192,8 +192,9 @@
         mode:'cors',credentials:'omit',referrerPolicy:'no-referrer',headers:{'content-type':'text/plain'}}).catch(() => {}); } catch (_) {}
     }
     function preferences() {
+      let banner = null, bannerSpace = null;
       const style = doc.createElement('style');
-      style.textContent = '.bt-analytics-dialog{max-width:34rem;width:calc(100% - 2rem);padding:1.5rem;border:2px solid #111;border-radius:12px;background:#fff;color:#111;font:16px/1.5 system-ui,sans-serif}.bt-analytics-dialog::backdrop{background:#0008}.bt-analytics-dialog h2{margin:0 0 .8rem;font-size:1.5rem}.bt-analytics-dialog p{margin:.7rem 0}.bt-analytics-actions{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1rem}.bt-analytics-dialog button,.bt-analytics-settings{font:inherit;padding:.65rem 1rem;border:2px solid #111;border-radius:6px;background:#fff;color:#111;cursor:pointer}.bt-analytics-dialog button:focus-visible,.bt-analytics-settings:focus-visible{outline:3px solid #B70000;outline-offset:3px}.bt-analytics-settings{font-size:.8rem;margin:.8rem}.bt-analytics-dialog .bt-analytics-accept{background:#111;color:#fff}';
+      style.textContent = '.bt-analytics-dialog{max-width:34rem;width:calc(100% - 2rem);padding:1.5rem;border:2px solid #111;border-radius:12px;background:#fff;color:#111;font:16px/1.5 system-ui,sans-serif}.bt-analytics-dialog::backdrop{background:#0008}.bt-analytics-dialog h2{margin:0 0 .8rem;font-size:1.5rem}.bt-analytics-dialog p{margin:.7rem 0}.bt-analytics-actions{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1rem}.bt-analytics-dialog button,.bt-analytics-settings{font:inherit;padding:.65rem 1rem;border:2px solid #111;border-radius:6px;background:#fff;color:#111;cursor:pointer}.bt-analytics-dialog button:focus-visible,.bt-analytics-settings:focus-visible{outline:3px solid #B70000;outline-offset:3px}.bt-analytics-settings{font-size:.8rem;margin:.8rem}.bt-analytics-banner{position:fixed;z-index:500;left:12px;right:12px;bottom:max(12px,env(safe-area-inset-bottom));box-sizing:border-box;max-width:52rem;margin:0 auto;padding:10px 14px;border:1px solid #111;border-top:3px solid #B70000;border-radius:8px;background:#fff;color:#111;box-shadow:0 3px 18px #0002;font:14px/1.35 system-ui,sans-serif;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:4px 16px;max-height:40svh;overflow:auto}.bt-analytics-banner p{margin:0;align-self:center}.bt-analytics-banner-choices{display:flex;gap:8px;grid-column:2;grid-row:1 / span 2}.bt-analytics-banner button{font:inherit;min-height:44px;padding:8px 16px;border:1px solid #111;border-radius:5px;background:#fff;color:#111;cursor:pointer}.bt-analytics-banner button:focus-visible,.bt-analytics-banner a:focus-visible{outline:3px solid #B70000;outline-offset:3px}.bt-analytics-banner-choices button{min-width:84px;flex:1}.bt-analytics-banner-links{display:flex;gap:16px;align-items:center;font-size:12px}.bt-analytics-banner-links a,.bt-analytics-banner-links button{color:#111;text-decoration:underline}.bt-analytics-banner-links button{min-height:0;padding:0;border:0;border-radius:0;background:none}.bt-analytics-banner-space{height:104px}@media(max-width:560px){.bt-analytics-banner{grid-template-columns:minmax(0,1fr);gap:6px;padding:10px 12px}.bt-analytics-banner-choices{grid-column:1;grid-row:auto}.bt-analytics-banner-links{justify-content:center}.bt-analytics-banner-space{height:164px}}';
       doc.head.append(style);
       const dialog = doc.createElement('dialog'); dialog.className = 'bt-analytics-dialog'; dialog.setAttribute('aria-labelledby','bt-analytics-title');
       const h = doc.createElement('h2'); h.id = 'bt-analytics-title'; h.textContent = 'Optional visitor statistics'; dialog.append(h);
@@ -202,17 +203,40 @@
       const link = doc.createElement('a'); link.href = new URL('index.html#privacy',source).href; link.textContent = 'Privacy details'; link.addEventListener('click',() => dialog.close()); dialog.append(link);
       const status = doc.createElement('p'); status.setAttribute('aria-live','polite'); dialog.append(status);
       const actions = doc.createElement('div'); actions.className = 'bt-analytics-actions';
+      function choose(choice) {
+        controller.choose(choice);
+        if (banner) { banner.remove(); banner = null; }
+        if (bannerSpace) { bannerSpace.remove(); bannerSpace = null; }
+        dialog.close();
+        if (choice === 'granted') controller.routeRendered();
+      }
       [['Decline statistics','denied'],['Allow statistics','granted']].forEach(([label,choice]) => {
         const button = doc.createElement('button'); button.type = 'button'; button.textContent = label;
-        if (choice === 'granted') button.className = 'bt-analytics-accept';
-        button.addEventListener('click',() => { controller.choose(choice); dialog.close(); if (choice === 'granted') controller.routeRendered(); });
+        button.addEventListener('click',() => choose(choice));
         actions.append(button);
       });
       const close = doc.createElement('button'); close.type = 'button'; close.textContent = 'Close'; close.addEventListener('click',() => dialog.close()); actions.append(close); dialog.append(actions); doc.body.append(dialog);
       const settings = doc.createElement('button'); settings.type = 'button'; settings.className = 'bt-analytics-settings'; settings.textContent = 'Visitor statistics preferences';
       openDialog = () => { status.textContent = controller.excluded() ? 'Statistics are excluded for this browser or by its privacy preference.' : controller.consent === 'unset' ? 'No analytics is sent unless you allow it.' : controller.consent === 'granted' ? 'Current choice: allowed.' : 'Current choice: declined.'; if (!dialog.open) dialog.showModal(); };
       settings.addEventListener('click',openDialog); (doc.querySelector('footer') || doc.body).append(settings);
-      if (controller.consent === 'unset' && !controller.excluded()) openDialog();
+      if (controller.consent === 'unset' && !controller.excluded()) {
+        banner = doc.createElement('section'); banner.className = 'bt-analytics-banner';
+        banner.setAttribute('role','region'); banner.setAttribute('aria-label','Optional visitor statistics');
+        const message = doc.createElement('p'); message.textContent = 'Optional visitor statistics. Nothing is sent until you allow.'; banner.append(message);
+        const choices = doc.createElement('div'); choices.className = 'bt-analytics-banner-choices';
+        [['Decline','denied'],['Allow','granted']].forEach(([label,choice]) => {
+          const button = doc.createElement('button'); button.type = 'button'; button.textContent = label;
+          button.setAttribute('aria-label',label + ' statistics'); button.addEventListener('click',() => choose(choice)); choices.append(button);
+        });
+        banner.append(choices);
+        const links = doc.createElement('div'); links.className = 'bt-analytics-banner-links';
+        const privacy = doc.createElement('a'); privacy.href = link.href; privacy.textContent = 'Privacy details'; links.append(privacy);
+        const preferences = doc.createElement('button'); preferences.type = 'button'; preferences.textContent = 'Preferences'; preferences.addEventListener('click',openDialog); links.append(preferences); banner.append(links);
+        // A normal-flow spacer lets the final footer/CTA scroll clear of the small fixed banner.
+        // No focus move, modal opening, backdrop, inert state or page-scroll lock on first visit.
+        bannerSpace = doc.createElement('div'); bannerSpace.className = 'bt-analytics-banner-space'; bannerSpace.setAttribute('aria-hidden','true');
+        doc.body.append(bannerSpace,banner);
+      }
     }
     function bindEvents() {
       win.addEventListener('bt:route-rendered',api.routeRendered);
