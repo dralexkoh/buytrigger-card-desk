@@ -1,0 +1,2966 @@
+{
+  "checked": "2026-11-03",
+  "membershipSha256": "e828b9cfce801a1a8371a65c8c0622f2b4ae710e6df43c9600d5e6976efdd89e",
+  "status": "All 50 staged and visually reviewed; reference-printing limitations must stay visible.",
+  "publicDirectory": "assets/top50/",
+  "cards": [
+    {
+      "rank": 1,
+      "key": "183899|Holofoil",
+      "productId": 183899,
+      "name": "Latias & Latios GX (Alternate Full Art)",
+      "pricedIdentity": {
+        "language": "English",
+        "set": "SM - Team Up",
+        "number": "170/181",
+        "printing": "Holofoil"
+      },
+      "language": "English",
+      "catalogueURL": "https://www.tcgplayer.com/product/183899/pokemon-sm-team-up-latias-and-latios-gx-alternate-full-art",
+      "imageExactPrinting": true,
+      "imageNote": "",
+      "files": {
+        "low": {
+          "file": "top50-183899-low.webp",
+          "publicPath": "assets/top50/top50-183899-low.webp",
+          "sourceUrl": "https://assets.tcgdex.net/en/sm/sm9/170/low.webp",
+          "url": "https://assets.tcgdex.net/en/sm/sm9/170/low.webp",
+          "sha256": "e9ed0769799c2263ce953dc02aad067f2201b5c4c5cd9cad483f1785e34866bc",
+          "bytes": 24262,
+          "width": 245,
+          "height": 337,
+          "format": "WEBP",
+          "unchangedDownload": true
+        },
+        "high": {
+          "file": "top50-183899-high.webp",
+          "publicPath": "assets/top50/top50-183899-high.webp",
+          "sourceUrl": "https://assets.tcgdex.net/en/sm/sm9/170/high.webp",
+          "url": "https://assets.tcgdex.net/en/sm/sm9/170/high.webp",
+          "sha256": "eff69c64ac459f0d3d7c179c17e3e40a4c1927d3918e1de65dc936186bef3239",
+          "bytes": 96542,
+          "width": 600,
+          "height": 825,
+          "format": "WEBP",
+          "unchangedDownload": true
+        }
+      },
+      "imageProvider": "TCGdex",
+      "sourceMetadataURL": "https://api.tcgdex.net/v2/en/sets/sm9",
+      "referenceIdentity": {
+        "language": "English",
+        "set": "Team Up",
+        "number": "170/181",
+        "printing": "Holofoil"
+      },
+      "identityMatch": "Exact English set and collector number, previously visually reviewed.",
+      "reusedModernRank": 1,
+      "alt": "Latias & Latios GX (Alternate Full Art) — English Team Up 170/181 reference scan, Holofoil.",
+      "visualReviewDate": "2026-11-03",
+      "imageSourcePage": "https://api.tcgdex.net/v2/en/sets/sm9",
+      "sourceCredit": "TCGdex",
+      "imageIsConditionEvidence": false,
+      "visualReview": "English card identity rechecked in final 50 contact sheets; exact issue previously reviewed in Modern 100 staging."
+    },
+    {
+      "rank": 2,
+      "key": "717607|Holofoil",
+      "productId": 717607,
+      "name": "Mew - R/RGB",
+      "pricedIdentity": {
+        "language": "English",
+        "set": "ME: 30th Celebration",
+        "number": "R/RGB",
+        "printing": "Holofoil"
+      },
+      "language": "English",
+      "catalogueURL": "https://www.tcgplayer.com/product/717607/pokemon-me-30th-celebration-mew-r-rgb",
+      "imageExactPrinting": true,
+      "imageNote": "",
+      "files": {
+        "low": {
+          "file": "top50-717607-low.png",
+          "publicPath": "assets/top50/top50-717607-low.png",
+          "sourceUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/30C/30C_R_R_EN.png",
+          "url": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/30C/30C_R_R_EN.png",
+          "sha256": "7f320531660a34eb16a01e5ad7954964a8a23f3103bfa8e54a9fdbbb4a5e1237",
+          "bytes": 606727,
+          "width": 736,
+          "height": 1024,
+          "format": "PNG",
+          "unchangedDownload": true
+        },
+        "high": {
+          "file": "top50-717607-high.png",
+          "publicPath": "assets/top50/top50-717607-high.png",
+          "sourceUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/30C/30C_R_R_EN.png",
+          "url": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/30C/30C_R_R_EN.png",
+          "sha256": "7f320531660a34eb16a01e5ad7954964a8a23f3103bfa8e54a9fdbbb4a5e1237",
+          "bytes": 606727,
+          "width": 736,
+          "height": 1024,
+          "format": "PNG",
+          "unchangedDownload": true
+        }
+      },
+      "imageProvider": "Limitless public card catalogue",
+      "sourceMetadataURL": "https://limitlesstcg.com/cards/en/30C/R",
+      "referenceIdentity": {
+        "language": "English",
+        "set": "30th Celebration",
+        "number": "R/RGB",
+        "printing": "Holofoil"
+      },
+      "identityMatch": "Exact English set and collector number, previously visually reviewed.",
+      "reusedModernRank": 2,
+      "alt": "Mew - R/RGB — English 30th Celebration R/RGB reference scan, Holofoil.",
+      "visualReviewDate": "2026-11-03",
+      "imageSourcePage": "https://limitlesstcg.com/cards/en/30C/R",
+      "sourceCredit": "Limitless public card catalogue",
+      "imageIsConditionEvidence": false,
+      "visualReview": "English card identity rechecked in final 50 contact sheets; exact issue previously reviewed in Modern 100 staging."
+    },
+    {
+      "rank": 3,
+      "key": "717609|Holofoil",
+      "productId": 717609,
+      "name": "Mew - B/RGB",
+      "pricedIdentity": {
+        "language": "English",
+        "set": "ME: 30th Celebration",
+        "number": "B/RGB",
+        "printing": "Holofoil"
+      },
+      "language": "English",
+      "catalogueURL": "https://www.tcgplayer.com/product/717609/pokemon-me-30th-celebration-mew-b-rgb",
+      "imageExactPrinting": true,
+      "imageNote": "",
+      "files": {
+        "low": {
+          "file": "top50-717609-low.png",
+          "publicPath": "assets/top50/top50-717609-low.png",
+          "sourceUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/30C/30C_B_R_EN.png",
+          "url": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/30C/30C_B_R_EN.png",
+          "sha256": "9cf509e2e7bc821813826a24f7feeb3a3dda966ff9cd067103e22932eb6c3227",
+          "bytes": 631181,
+          "width": 736,
+          "height": 1024,
+          "format": "PNG",
+          "unchangedDownload": true
+        },
+        "high": {
+          "file": "top50-717609-high.png",
+          "publicPath": "assets/top50/top50-717609-high.png",
+          "sourceUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/30C/30C_B_R_EN.png",
+          "url": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/30C/30C_B_R_EN.png",
+          "sha256": "9cf509e2e7bc821813826a24f7feeb3a3dda966ff9cd067103e22932eb6c3227",
+          "bytes": 631181,
+          "width": 736,
+          "height": 1024,
+          "format": "PNG",
+          "unchangedDownload": true
+        }
+      },
+      "imageProvider": "Limitless public card catalogue",
+      "sourceMetadataURL": "https://limitlesstcg.com/cards/en/30C/B",
+      "referenceIdentity": {
+        "language": "English",
+        "set": "30th Celebration",
+        "number": "B/RGB",
+        "printing": "Holofoil"
+      },
+      "identityMatch": "Exact English set and collector number, previously visually reviewed.",
+      "reusedModernRank": 3,
+      "alt": "Mew - B/RGB — English 30th Celebration B/RGB reference scan, Holofoil.",
+      "visualReviewDate": "2026-11-03",
+      "imageSourcePage": "https://limitlesstcg.com/cards/en/30C/B",
+      "sourceCredit": "Limitless public card catalogue",
+      "imageIsConditionEvidence": false,
+      "visualReview": "English card identity rechecked in final 50 contact sheets; exact issue previously reviewed in Modern 100 staging."
+    },
+    {
+      "rank": 4,
+      "key": "717608|Holofoil",
+      "productId": 717608,
+      "name": "Mew - G/RGB",
+      "pricedIdentity": {
+        "language": "English",
+        "set": "ME: 30th Celebration",
+        "number": "G/RGB",
+        "printing": "Holofoil"
+      },
+      "language": "English",
+      "catalogueURL": "https://www.tcgplayer.com/product/717608/pokemon-me-30th-celebration-mew-g-rgb",
+      "imageExactPrinting": true,
+      "imageNote": "",
+      "files": {
+        "low": {
+          "file": "top50-717608-low.png",
+          "publicPath": "assets/top50/top50-717608-low.png",
+          "sourceUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/30C/30C_G_R_EN.png",
+          "url": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/30C/30C_G_R_EN.png",
+          "sha256": "9d2c9289cae84cdeee47c35770af857451d2ee1c3212c00ebfcb091d175af2b1",
+          "bytes": 677287,
+          "width": 736,
+          "height": 1024,
+          "format": "PNG",
+          "unchangedDownload": true
+        },
+        "high": {
+          "file": "top50-717608-high.png",
+          "publicPath": "assets/top50/top50-717608-high.png",
+          "sourceUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/30C/30C_G_R_EN.png",
+          "url": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/30C/30C_G_R_EN.png",
+          "sha256": "9d2c9289cae84cdeee47c35770af857451d2ee1c3212c00ebfcb091d175af2b1",
+          "bytes": 677287,
+          "width": 736,
+          "height": 1024,
+          "format": "PNG",
+          "unchangedDownload": true
+        }
+      },
+      "imageProvider": "Limitless public card catalogue",
+      "sourceMetadataURL": "https://limitlesstcg.com/cards/en/30C/G",
+      "referenceIdentity": {
+        "language": "English",
+        "set": "30th Celebration",
+        "number": "G/RGB",
+        "printing": "Holofoil"
+      },
+      "identityMatch": "Exact English set and collector number, previously visually reviewed.",
+      "reusedModernRank": 4,
+      "alt": "Mew - G/RGB — English 30th Celebration G/RGB reference scan, Holofoil.",
+      "visualReviewDate": "2026-11-03",
+      "imageSourcePage": "https://limitlesstcg.com/cards/en/30C/G",
+      "sourceCredit": "Limitless public card catalogue",
+      "imageIsConditionEvidence": false,
+      "visualReview": "English card identity rechecked in final 50 contact sheets; exact issue previously reviewed in Modern 100 staging."
+    },
+    {
+      "rank": 5,
+      "key": "85927|Holofoil",
+      "productId": 85927,
+      "name": "Groudon Star",
+      "pricedIdentity": {
+        "language": "English",
+        "set": "EX Delta Species",
+        "number": "111/113",
+        "printing": "Holofoil"
+      },
+      "language": "English",
+      "catalogueURL": "https://www.tcgplayer.com/product/85927/pokemon-ex-delta-species-groudon-star",
+      "imageExactPrinting": true,
+      "imageNote": "",
+      "files": {
+        "low": {
+          "file": "top50-85927-low.webp",
+          "publicPath": "assets/top50/top50-85927-low.webp",
+          "sourceUrl": "https://assets.tcgdex.net/en/ex/ex11/111/low.webp",
+          "url": "https://assets.tcgdex.net/en/ex/ex11/111/low.webp",
+          "sha256": "b137161783ea861388f40ec0e0f2adbb4754fede227af814473deae0ccc88299",
+          "bytes": 20312,
+          "width": 245,
+          "height": 337,
+          "format": "WEBP",
+          "unchangedDownload": true
+        },
+        "high": {
+          "file": "top50-85927-high.webp",
+          "publicPath": "assets/top50/top50-85927-high.webp",
+          "sourceUrl": "https://assets.tcgdex.net/en/ex/ex11/111/high.webp",
+          "url": "https://assets.tcgdex.net/en/ex/ex11/111/high.webp",
+          "sha256": "e1d05afe86a2647a8995ba1fb3daeaf58cdd16a7bbbc3888c59ba310726d3ec6",
+          "bytes": 85078,
+          "width": 600,
+          "height": 825,
+          "format": "WEBP",
+          "unchangedDownload": true
+        }
+      },
+      "imageProvider": "TCGdex",
+      "sourceMetadataURL": "https://api.tcgdex.net/v2/en/cards/ex11-111",
+      "referenceIdentity": {
+        "language": "English",
+        "set": "Delta Species",
+        "number": "111/113",
+        "printing": "Holofoil"
+      },
+      "tcgdexId": "ex11-111",
+      "pricedCatalogueId": "ex11-111",
+      "identityMatch": "English name, set symbol and collector number visually checked; priced printing matches reference.",
+      "alt": "Groudon Star — English Delta Species 111/113 reference scan, Holofoil.",
+      "visualReviewDate": "2026-11-03",
+      "imageSourcePage": "https://api.tcgdex.net/v2/en/cards/ex11-111",
+      "sourceCredit": "TCGdex",
+      "imageIsConditionEvidence": false,
+      "visualReview": "English issue and regular holo/Gold Star/ex illustration verified."
+    },
+    {
+      "rank": 6,
+      "key": "84186|Reverse Holofoil",
+      "productId": 84186,
+      "name": "Charizard",
+      "pricedIdentity": {
+        "language": "English",
+        "set": "Skyridge",
+        "number": "146/144",
+        "printing": "Reverse Holofoil"
+      },
+      "language": "English",
+      "catalogueURL": "https://www.tcgplayer.com/product/84186/pokemon-skyridge-charizard",
+      "imageExactPrinting": false,
+      "imageNote": "Reference scan: catalogue art (foil subtype unconfirmed); priced printing: Reverse Holofoil.",
+      "files": {
+        "low": {
+          "file": "top50-84186-low.webp",
+          "publicPath": "assets/top50/top50-84186-low.webp",
+          "sourceUrl": "https://assets.tcgdex.net/en/ecard/ecard3/146/low.webp",
+          "url": "https://assets.tcgdex.net/en/ecard/ecard3/146/low.webp",
+          "sha256": "978485ba132e5f8bbad74b8caf224b7c4ff18df9ec26fc76688a02a1163a360e",
+          "bytes": 24476,
+          "width": 245,
+          "height": 337,
+          "format": "WEBP",
+          "unchangedDownload": true
+        },
+        "high": {
+          "file": "top50-84186-high.webp",
+          "publicPath": "assets/top50/top50-84186-high.webp",
+          "sourceUrl": "https://assets.tcgdex.net/en/ecard/ecard3/146/high.webp",
+          "url": "https://assets.tcgdex.net/en/ecard/ecard3/146/high.webp",
+          "sha256": "864933867a54925c96557afef1a18d62fac029d39d59d313e794aa7f59afd709",
+          "bytes": 93830,
+          "width": 600,
+          "height": 825,
+          "format": "WEBP",
+          "unchangedDownload": true
+        }
+      },
+      "imageProvider": "TCGdex",
+      "sourceMetadataURL": "https://api.tcgdex.net/v2/en/cards/ecard3-146",
+      "referenceIdentity": {
+        "language": "English",
+        "set": "Skyridge",
+        "number": "146/144",
+        "printing": "Catalogue reference, foil subtype unconfirmed"
+      },
+      "tcgdexId": "ecard3-146",
+      "pricedCatalogueId": "ecard3-146",
+      "identityMatch": "English name, set symbol and collector number visually checked; printing difference or unconfirmed foil explicitly captioned.",
+      "alt": "Charizard — English Skyridge 146/144 reference scan, Catalogue reference, foil subtype unconfirmed. Reference scan: catalogue art (foil subtype unconfirmed); priced printing: Reverse Holofoil.",
+      "visualReviewDate": "2026-11-03",
+      "imageSourcePage": "https://api.tcgdex.net/v2/en/cards/ecard3-146",
+      "sourceCredit": "TCGdex",
+      "imageIsConditionEvidence": false,
+      "visualReview": "English issue verified; exact foil subtype not independently resolved."
+    },
+    {
+      "rank": 7,
+      "key": "86916|Holofoil",
+      "productId": 86916,
+      "name": "Lugia EX (Team Plasma) (134 Full Art)",
+      "pricedIdentity": {
+        "language": "English",
+        "set": "Plasma Storm",
+        "number": "134/135",
+        "printing": "Holofoil"
+      },
+      "language": "English",
+      "catalogueURL": "https://www.tcgplayer.com/product/86916/pokemon-plasma-storm-lugia-ex-team-plasma-134-full-art",
+      "imageExactPrinting": true,
+      "imageNote": "",
+      "files": {
+        "low": {
+          "file": "top50-86916-low.webp",
+          "publicPath": "assets/top50/top50-86916-low.webp",
+          "sourceUrl": "https://assets.tcgdex.net/en/bw/bw8/134/low.webp",
+          "url": "https://assets.tcgdex.net/en/bw/bw8/134/low.webp",
+          "sha256": "92e6baf72dabd126757b05f665a3986f45237a16bea2d41ddaf78596b2642216",
+          "bytes": 25322,
+          "width": 245,
+          "height": 337,
+          "format": "WEBP",
+          "unchangedDownload": true
+        },
+        "high": {
+          "file": "top50-86916-high.webp",
+          "publicPath": "assets/top50/top50-86916-high.webp",
+          "sourceUrl": "https://assets.tcgdex.net/en/bw/bw8/134/high.webp",
+          "url": "https://assets.tcgdex.net/en/bw/bw8/134/high.webp",
+          "sha256": "63a6e0d5b2ea45b880a0bf43a1be461e438bcfc48184a5291df53296f4cc651d",
+          "bytes": 89210,
+          "width": 600,
+          "height": 825,
+          "format": "WEBP",
+          "unchangedDownload": true
+        }
+      },
+      "imageProvider": "TCGdex",
+      "sourceMetadataURL": "https://api.tcgdex.net/v2/en/sets/bw8",
+      "referenceIdentity": {
+        "language": "English",
+        "set": "Plasma Storm",
+        "number": "134/135",
+        "printing": "Holofoil"
+      },
+      "identityMatch": "Exact English set and collector number, previously visually reviewed.",
+      "reusedModernRank": 5,
+      "alt": "Lugia EX (Team Plasma) (134 Full Art) — English Plasma Storm 134/135 reference scan, Holofoil.",
+      "visualReviewDate": "2026-11-03",
+      "imageSourcePage": "https://api.tcgdex.net/v2/en/sets/bw8",
+      "sourceCredit": "TCGdex",
+      "imageIsConditionEvidence": false,
+      "visualReview": "English card identity rechecked in final 50 contact sheets; exact issue previously reviewed in Modern 100 staging."
+    },
+    {
+      "rank": 8,
+      "key": "86912|Holofoil",
+      "productId": 86912,
+      "name": "Lugia ex",
+      "pricedIdentity": {
+        "language": "English",
+        "set": "EX Unseen Forces",
+        "number": "105/115",
+        "printing": "Holofoil"
+      },
+      "language": "English",
+      "catalogueURL": "https://www.tcgplayer.com/product/86912/pokemon-ex-unseen-forces-lugia-ex",
+      "imageExactPrinting": true,
+      "imageNote": "",
+      "files": {
+        "low": {
+          "file": "top50-86912-low.webp",
+          "publicPath": "assets/top50/top50-86912-low.webp",
+          "sourceUrl": "https://assets.tcgdex.net/en/ex/ex10/105/low.webp",
+          "url": "https://assets.tcgdex.net/en/ex/ex10/105/low.webp",
+          "sha256": "11cfc9812808fe80edf87b87b84d51cd49f0a352c7fd53920fb542818c22e196",
+          "bytes": 21614,
+          "width": 245,
+          "height": 337,
+          "format": "WEBP",
+          "unchangedDownload": true
+        },
+        "high": {
+          "file": "top50-86912-high.webp",
+          "publicPath": "assets/top50/top50-86912-high.webp",
+          "sourceUrl": "https://assets.tcgdex.net/en/ex/ex10/105/high.webp",
+          "url": "https://assets.tcgdex.net/en/ex/ex10/105/high.webp",
+          "sha256": "eab52268ae9c529f022026f2ffe3e68d8860a9c779733452fb4051db7e16f671",
+          "bytes": 94716,
+          "width": 600,
+          "height": 825,
+          "format": "WEBP",
+          "unchangedDownload": true
+        }
+      },
+      "imageProvider": "TCGdex",
+      "sourceMetadataURL": "https://api.tcgdex.net/v2/en/cards/ex10-105",
+      "referenceIdentity": {
+        "language": "English",
+        "set": "Unseen Forces",
+        "number": "105/115",
+        "printing": "Holofoil"
+      },
+      "tcgdexId": "ex10-105",
+      "pricedCatalogueId": "ex10-105",
+      "identityMatch": "English name, set symbol and collector number visually checked; priced printing matches reference.",
+      "alt": "Lugia ex — English Unseen Forces 105/115 reference scan, Holofoil.",
+      "visualReviewDate": "2026-11-03",
+      "imageSourcePage": "https://api.tcgdex.net/v2/en/cards/ex10-105",
+      "sourceCredit": "TCGdex",
+      "imageIsConditionEvidence": false,
+      "visualReview": "English issue and regular holo/Gold Star/ex illustration verified."
+    },
+    {
+      "rank": 9,
+      "key": "246723|Holofoil",
+      "productId": 246723,
+      "name": "Umbreon VMAX (Alternate Art Secret)",
+      "pricedIdentity": {
+        "language": "English",
+        "set": "SWSH07: Evolving Skies",
+        "number": "215/203",
+        "printing": "Holofoil"
+      },
+      "language": "English",
+      "catalogueURL": "https://www.tcgplayer.com/product/246723/pokemon-swsh07-evolving-skies-umbreon-vmax-alternate-art-secret",
+      "imageExactPrinting": true,
+      "imageNote": "",
+      "files": {
+        "low": {
+          "file": "top50-246723-low.webp",
+          "publicPath": "assets/top50/top50-246723-low.webp",
+          "sourceUrl": "https://assets.tcgdex.net/en/swsh/swsh7/215/low.webp",
+          "url": "https://assets.tcgdex.net/en/swsh/swsh7/215/low.webp",
+          "sha256": "2509b1e9a6ee47ced69e9c7571deeac8e303f15a8e127cd4779b1c7b0f1c11ac",
+          "bytes": 27514,
+          "width": 245,
+          "height": 337,
+          "format": "WEBP",
+          "unchangedDownload": true
+        },
+        "high": {
+          "file": "top50-246723-high.webp",
+          "publicPath": "assets/top50/top50-246723-high.webp",
+          "sourceUrl": "https://assets.tcgdex.net/en/swsh/swsh7/215/high.webp",
+          "url": "https://assets.tcgdex.net/en/swsh/swsh7/215/high.webp",
+          "sha256": "29deb2deed66aba61b0162ab35890856da05cce80b5e8d1fafc27e6e0c3a63d4",
+          "bytes": 113022,
+          "width": 600,
+          "height": 825,
+          "format": "WEBP",
+          "unchangedDownload": true
+        }
+      },
+      "imageProvider": "TCGdex",
+      "sourceMetadataURL": "https://api.tcgdex.net/v2/en/sets/swsh7",
+      "referenceIdentity": {
+        "language": "English",
+        "set": "Evolving Skies",
+        "number": "215/203",
+        "printing": "Holofoil"
+      },
+      "identityMatch": "Exact English set and collector number, previously visually reviewed.",
+      "reusedModernRank": 6,
+      "alt": "Umbreon VMAX (Alternate Art Secret) — English Evolving Skies 215/203 reference scan, Holofoil.",
+      "visualReviewDate": "2026-11-03",
+      "imageSourcePage": "https://api.tcgdex.net/v2/en/sets/swsh7",
+      "sourceCredit": "TCGdex",
+      "imageIsConditionEvidence": false,
+      "visualReview": "English card identity rechecked in final 50 contact sheets; exact issue previously reviewed in Modern 100 staging."
+    },
+    {
+      "rank": 10,
+      "key": "85670|Reverse Holofoil",
+      "productId": 85670,
+      "name": "Gengar",
+      "pricedIdentity": {
+        "language": "English",
+        "set": "Legendary Collection",
+        "number": "011/110",
+        "printing": "Reverse Holofoil"
+      },
+      "language": "English",
+      "catalogueURL": "https://www.tcgplayer.com/product/85670/pokemon-legendary-collection-gengar",
+      "imageExactPrinting": false,
+      "imageNote": "Reference scan: regular Holofoil; priced printing: Reverse Holofoil.",
+      "files": {
+        "low": {
+          "file": "top50-85670-low.webp",
+          "publicPath": "assets/top50/top50-85670-low.webp",
+          "sourceUrl": "https://assets.tcgdex.net/en/lc/lc/11/low.webp",
+          "url": "https://assets.tcgdex.net/en/lc/lc/11/low.webp",
+          "sha256": "fa94630fda389bc0e6473d9d2c5f81382e267f5435b567f96e7a78fa8c8bcd0c",
+          "bytes": 17660,
+          "width": 245,
+          "height": 337,
+          "format": "WEBP",
+          "unchangedDownload": true
+        },
+        "high": {
+          "file": "top50-85670-high.webp",
+          "publicPath": "assets/top50/top50-85670-high.webp",
+          "sourceUrl": "https://assets.tcgdex.net/en/lc/lc/11/high.webp",
+          "url": "https://assets.tcgdex.net/en/lc/lc/11/high.webp",
+          "sha256": "77cf9ee9a448424952bbde7689f62a8df74855fb74bcd9731bdc664992ff029e",
+          "bytes": 81282,
+          "width": 600,
+          "height": 825,
+          "format": "WEBP",
+          "unchangedDownload": true
+        }
+      },
+      "imageProvider": "TCGdex",
+      "sourceMetadataURL": "https://api.tcgdex.net/v2/en/cards/lc-11",
+      "referenceIdentity": {
+        "language": "English",
+        "set": "Legendary Collection",
+        "number": "011/110",
+        "printing": "Holofoil"
+      },
+      "tcgdexId": "lc-11",
+      "pricedCatalogueId": "lc-11",
+      "identityMatch": "English name, set symbol and collector number visually checked; printing difference or unconfirmed foil explicitly captioned.",
+      "alt": "Gengar — English Legendary Collection 011/110 reference scan, Holofoil. Reference scan: regular Holofoil; priced printing: Reverse Holofoil.",
+      "visualReviewDate": "2026-11-03",
+      "imageSourcePage": "https://api.tcgdex.net/v2/en/cards/lc-11",
+      "sourceCredit": "TCGdex",
+      "imageIsConditionEvidence": false,
+      "visualReview": "English issue and regular holo/Gold Star/ex illustration verified."
+    },
+    {
+      "rank": 11,
+      "key": "607368|Holofoil",
+      "productId": 607368,
+      "name": "Gengar - SWSH241 (Prerelease) (Staff)",
+      "pricedIdentity": {
+        "language": "English",
+        "set": "SWSH: Sword & Shield Promo Cards",
+        "number": "SWSH241",
+        "printing": "Holofoil"
+      },
+      "language": "English",
+      "catalogueURL": "https://www.tcgplayer.com/product/607368/pokemon-swsh-sword-and-shield-promo-cards-gengar-swsh241-prerelease-staff",
+      "imageExactPrinting": false,
+      "imageNote": "Reference scan: prerelease without STAFF stamp; priced printing: STAFF Holofoil.",
+      "files": {
+        "low": {
+          "file": "top50-607368-low.webp",
+          "publicPath": "assets/top50/top50-607368-low.webp",
+          "sourceUrl": "https://assets.tcgdex.net/en/swsh/swshp/SWSH241/low.webp",
+          "url": "https://assets.tcgdex.net/en/swsh/swshp/SWSH241/low.webp",
+          "sha256": "a0bce9b68e69ceabe026fc39acee64bbbc28ec7dc4edf254ce2ebba8577969ea",
+          "bytes": 17842,
+          "width": 245,
+          "height": 337,
+          "format": "WEBP",
+          "unchangedDownload": true
+        },
+        "high": {
+          "file": "top50-607368-high.webp",
+          "publicPath": "assets/top50/top50-607368-high.webp",
+          "sourceUrl": "https://assets.tcgdex.net/en/swsh/swshp/SWSH241/high.webp",
+          "url": "https://assets.tcgdex.net/en/swsh/swshp/SWSH241/high.webp",
+          "sha256": "810e739235cf51190da2ff2cd0a8c0324c919740ab8d010427abe48818443426",
+          "bytes": 75642,
+          "width": 600,
+          "height": 825,
+          "format": "WEBP",
+          "unchangedDownload": true
+        }
+      },
+      "imageProvider": "TCGdex",
+      "sourceMetadataURL": "https://api.tcgdex.net/v2/en/cards/swshp-SWSH241",
+      "referenceIdentity": {
+        "language": "English",
+        "set": "SWSH Black Star Promos",
+        "number": "SWSH241",
+        "printing": "Prerelease without Staff stamp"
+      },
+      "tcgdexId": "swshp-SWSH241",
+      "pricedCatalogueId": "swshp-SWSH241",
+      "identityMatch": "English name, set symbol and collector number visually checked; printing difference or unconfirmed foil explicitly captioned.",
+      "alt": "Gengar - SWSH241 (Prerelease) (Staff) — English SWSH Black Star Promos SWSH241 reference scan, Prerelease without Staff stamp. Reference scan: prerelease without STAFF stamp; priced printing: STAFF Holofoil.",
+      "visualReviewDate": "2026-11-03",
+      "imageSourcePage": "https://api.tcgdex.net/v2/en/cards/swshp-SWSH241",
+      "sourceCredit": "TCGdex",
+      "imageIsConditionEvidence": false,
+      "visualReview": "Correct set-logo prerelease reference; Staff stamp absent."
+    },
+    {
+      "rank": 12,
+      "key": "183830|Holofoil",
+      "productId": 183830,
+      "name": "Gengar & Mimikyu GX (Alternate Full Art)",
+      "pricedIdentity": {
+        "language": "English",
+        "set": "SM - Team Up",
+        "number": "165/181",
+        "printing": "Holofoil"
+      },
+      "language": "English",
+      "catalogueURL": "https://www.tcgplayer.com/product/183830/pokemon-sm-team-up-gengar-and-mimikyu-gx-alternate-full-art",
+      "imageExactPrinting": true,
+      "imageNote": "",
+      "files": {
+        "low": {
+          "file": "top50-183830-low.webp",
+          "publicPath": "assets/top50/top50-183830-low.webp",
+          "sourceUrl": "https://assets.tcgdex.net/en/sm/sm9/165/low.webp",
+          "url": "https://assets.tcgdex.net/en/sm/sm9/165/low.webp",
+          "sha256": "ba05a824c8979d1134c1ad683d75e4b9c0d361c9da4365c09e19cd16d796a0fc",
+          "bytes": 21856,
+          "width": 245,
+          "height": 337,
+          "format": "WEBP",
+          "unchangedDownload": true
+        },
+        "high": {
+          "file": "top50-183830-high.webp",
+          "publicPath": "assets/top50/top50-183830-high.webp",
+          "sourceUrl": "https://assets.tcgdex.net/en/sm/sm9/165/high.webp",
+          "url": "https://assets.tcgdex.net/en/sm/sm9/165/high.webp",
+          "sha256": "46952a70d657607e6851e001d6d667b2f7daef147d23cd8a8829e7933bfc8dd8",
+          "bytes": 79760,
+          "width": 600,
+          "height": 825,
+          "format": "WEBP",
+          "unchangedDownload": true
+        }
+      },
+      "imageProvider": "TCGdex",
+      "sourceMetadataURL": "https://api.tcgdex.net/v2/en/sets/sm9",
+      "referenceIdentity": {
+        "language": "English",
+        "set": "Team Up",
+        "number": "165/181",
+        "printing": "Holofoil"
+      },
+      "identityMatch": "Exact English set and collector number, previously visually reviewed.",
+      "reusedModernRank": 7,
+      "alt": "Gengar & Mimikyu GX (Alternate Full Art) — English Team Up 165/181 reference scan, Holofoil.",
+      "visualReviewDate": "2026-11-03",
+      "imageSourcePage": "https://api.tcgdex.net/v2/en/sets/sm9",
+      "sourceCredit": "TCGdex",
+      "imageIsConditionEvidence": false,
+      "visualReview": "English card identity rechecked in final 50 contact sheets; exact issue previously reviewed in Modern 100 staging."
+    },
+    {
+      "rank": 13,
+      "key": "106999|Unlimited Holofoil",
+      "productId": 106999,
+      "name": "Charizard",
+      "pricedIdentity": {
+        "language": "English",
+        "set": "Base Set (Shadowless)",
+        "number": "004/102",
+        "printing": "Unlimited Holofoil"
+      },
+      "language": "English",
+      "catalogueURL": "https://www.tcgplayer.com/product/106999/pokemon-base-set-shadowless-charizard",
+      "imageExactPrinting": false,
+      "imageNote": "Reference scan: 1st Edition; priced printing: Shadowless Unlimited Holofoil.",
+      "files": {
+        "low": {
+          "file": "top50-106999-low.webp",
+          "publicPath": "assets/top50/top50-106999-low.webp",
+          "sourceUrl": "https://assets.tcgdex.net/en/base/base1/4/low.webp",
+          "url": "https://assets.tcgdex.net/en/base/base1/4/low.webp",
+          "sha256": "f9ab1488b2145f3d055acb7669bb9caf18165dd75c8df19a9e4f55c2a2640c4a",
+          "bytes": 20190,
+          "width": 245,
+          "height": 337,
+          "format": "WEBP",
+          "unchangedDownload": true
+        },
+        "high": {
+          "file": "top50-106999-high.webp",
+          "publicPath": "assets/top50/top50-106999-high.webp",
+          "sourceUrl": "https://assets.tcgdex.net/en/base/base1/4/high.webp",
+          "url": "https://assets.tcgdex.net/en/base/base1/4/high.webp",
+          "sha256": "0a1e077b13319e2e50c63d54b3afdecabe57f6dfdd07377a6979efbea48fe254",
+          "bytes": 78590,
+          "width": 600,
+          "height": 825,
+          "format": "WEBP",
+          "unchangedDownload": true
+        }
+      },
+      "imageProvider": "TCGdex",
+      "sourceMetadataURL": "https://api.tcgdex.net/v2/en/cards/base1-4",
+      "referenceIdentity": {
+        "language": "English",
+        "set": "Base Set",
+        "number": "004/102",
+        "printing": "1st Edition Holofoil (shadowless frame)"
+      },
+      "tcgdexId": "base1-4",
+      "pricedCatalogueId": "base1-4",
+      "identityMatch": "English name, set symbol and collector number visually checked; printing difference or unconfirmed foil explicitly captioned.",
+      "alt": "Charizard — English Base Set 004/102 reference scan, 1st Edition Holofoil (shadowless frame). Reference scan: 1st Edition; priced printing: Shadowless Unlimited Holofoil.",
+      "visualReviewDate": "2026-11-03",
+      "imageSourcePage": "https://api.tcgdex.net/v2/en/cards/base1-4",
+      "sourceCredit": "TCGdex",
+      "imageIsConditionEvidence": false,
+      "visualReview": "Visible 1st Edition stamp; English text and issue number verified."
+    },
+    {
+      "rank": 14,
+      "key": "102803|Holofoil",
+      "productId": 102803,
+      "name": "Gyarados - XY60 (Prerelease) [Staff]",
+      "pricedIdentity": {
+        "language": "English",
+        "set": "XY Promos",
+        "number": "XY60",
+        "printing": "Holofoil"
+      },
+      "language": "English",
+      "catalogueURL": "https://www.tcgplayer.com/product/102803/pokemon-xy-promos-gyarados-xy60-prerelease-staff",
+      "imageExactPrinting": false,
+      "imageNote": "Reference scan: prerelease without STAFF stamp; priced printing: STAFF Holofoil.",
+      "files": {
+        "low": {
+          "file": "top50-102803-low.webp",
+          "publicPath": "assets/top50/top50-102803-low.webp",
+          "sourceUrl": "https://assets.tcgdex.net/en/xy/xyp/XY60/low.webp",
+          "url": "https://assets.tcgdex.net/en/xy/xyp/XY60/low.webp",
+          "sha256": "25cb4a5bb82c810063a3de7ad6ef2b987a2fbac85bf16ce57f04c5615177bc68",
+          "bytes": 28576,
+          "width": 245,
+          "height": 337,
+          "format": "WEBP",
+          "unchangedDownload": true
+        },
+        "high": {
+          "file": "top50-102803-high.webp",
+          "publicPath": "assets/top50/top50-102803-high.webp",
+          "sourceUrl": "https://assets.tcgdex.net/en/xy/xyp/XY60/high.webp",
+          "url": "https://assets.tcgdex.net/en/xy/xyp/XY60/high.webp",
+          "sha256": "8c622028fb3974f86b35757147cec3850b8c7b280dfea56c1dc3214424f41ed9",
+          "bytes": 126904,
+          "width": 600,
+          "height": 825,
+          "format": "WEBP",
+          "unchangedDownload": true
+        }
+      },
+      "imageProvider": "TCGdex",
+      "sourceMetadataURL": "https://api.tcgdex.net/v2/en/cards/xyp-XY60",
+      "referenceIdentity": {
+        "language": "English",
+        "set": "XY Black Star Promos",
+        "number": "XY60",
+        "printing": "Prerelease without Staff stamp"
+      },
+      "tcgdexId": "xyp-XY60",
+      "pricedCatalogueId": "xyp-XY60",
+      "identityMatch": "English name, set symbol and collector number visually checked; printing difference or unconfirmed foil explicitly captioned.",
+      "alt": "Gyarados - XY60 (Prerelease) [Staff] — English XY Black Star Promos XY60 reference scan, Prerelease without Staff stamp. Reference scan: prerelease without STAFF stamp; priced printing: STAFF Holofoil.",
+      "visualReviewDate": "2026-11-03",
+      "imageSourcePage": "https://api.tcgdex.net/v2/en/cards/xyp-XY60",
+      "sourceCredit": "TCGdex",
+      "imageIsConditionEvidence": false,
+      "visualReview": "Correct set-logo prerelease reference; Staff stamp absent."
+    },
+    {
+      "rank": 15,
+      "key": "89162|1st Edition Holofoil",
+      "productId": 89162,
+      "name": "Shining Celebi",
+      "pricedIdentity": {
+        "language": "English",
+        "set": "Neo Destiny",
+        "number": "106/105",
+        "printing": "1st Edition Holofoil"
+      },
+      "language": "English",
+      "catalogueURL": "https://www.tcgplayer.com/product/89162/pokemon-neo-destiny-shining-celebi",
+      "imageExactPrinting": true,
+      "imageNote": "",
+      "files": {
+        "low": {
+          "file": "top50-89162-low.webp",
+          "publicPath": "assets/top50/top50-89162-low.webp",
+          "sourceUrl": "https://assets.tcgdex.net/en/neo/neo4/106/low.webp",
+          "url": "https://assets.tcgdex.net/en/neo/neo4/106/low.webp",
+          "sha256": "17961b8a9c543b700ffddd4d6b5d17e9861d13a5e0861bae26f0341101aba610",
+          "bytes": 18400,
+          "width": 245,
+          "height": 337,
+          "format": "WEBP",
+          "unchangedDownload": true
+        },
+        "high": {
+          "file": "top50-89162-high.webp",
+          "publicPath": "assets/top50/top50-89162-high.webp",
+          "sourceUrl": "https://assets.tcgdex.net/en/neo/neo4/106/high.webp",
+          "url": "https://assets.tcgdex.net/en/neo/neo4/106/high.webp",
+          "sha256": "0463e2b07e4d770447d088a5c62627f2b6c81b994c8cbfea87b6d78e700d69db",
+          "bytes": 90926,
+          "width": 600,
+          "height": 825,
+          "format": "WEBP",
+          "unchangedDownload": true
+        }
+      },
+      "imageProvider": "TCGdex",
+      "sourceMetadataURL": "https://api.tcgdex.net/v2/en/cards/neo4-106",
+      "referenceIdentity": {
+        "language": "English",
+        "set": "Neo Destiny",
+        "number": "106/105",
+        "printing": "1st Edition Holofoil"
+      },
+      "tcgdexId": "neo4-106",
+      "pricedCatalogueId": "neo4-106",
+      "identityMatch": "English name, set symbol and collector number visually checked; priced printing matches reference.",
+      "alt": "Shining Celebi — English Neo Destiny 106/105 reference scan, 1st Edition Holofoil.",
+      "visualReviewDate": "2026-11-03",
+      "imageSourcePage": "https://api.tcgdex.net/v2/en/cards/neo4-106",
+      "sourceCredit": "TCGdex",
+      "imageIsConditionEvidence": false,
+      "visualReview": "Visible 1st Edition stamp; English text and issue number verified."
+    },
+    {
+      "rank": 16,
+      "key": "86351|Holofoil",
+      "productId": 86351,
+      "name": "Jolteon Star",
+      "pricedIdentity": {
+        "language": "English",
+        "set": "EX Power Keepers",
+        "number": "101/108",
+        "printing": "Holofoil"
+      },
+      "language": "English",
+      "catalogueURL": "https://www.tcgplayer.com/product/86351/pokemon-ex-power-keepers-jolteon-star",
+      "imageExactPrinting": true,
+      "imageNote": "",
+      "files": {
+        "low": {
+          "file": "top50-86351-low.webp",
+          "publicPath": "assets/top50/top50-86351-low.webp",
+          "sourceUrl": "https://assets.tcgdex.net/en/ex/ex16/101/low.webp",
+          "url": "https://assets.tcgdex.net/en/ex/ex16/101/low.webp",
+          "sha256": "2e10b18e14ce279118c215e402256d0b2279a6ba6087ee614c953ac1e5d7a2d6",
+          "bytes": 22602,
+          "width": 245,
+          "height": 337,
+          "format": "WEBP",
+          "unchangedDownload": true
+        },
+        "high": {
+          "file": "top50-86351-high.webp",
+          "publicPath": "assets/top50/top50-86351-high.webp",
+          "sourceUrl": "https://assets.tcgdex.net/en/ex/ex16/101/high.webp",
+          "url": "https://assets.tcgdex.net/en/ex/ex16/101/high.webp",
+          "sha256": "42c9dbdb976bebae4c686b0f1ba2a7f68b5126e3a4697a807432816478f4eeb8",
+          "bytes": 104456,
+          "width": 600,
+          "height": 825,
+          "format": "WEBP",
+          "unchangedDownload": true
+        }
+      },
+      "imageProvider": "TCGdex",
+      "sourceMetadataURL": "https://api.tcgdex.net/v2/en/cards/ex16-101",
+      "referenceIdentity": {
+        "language": "English",
+        "set": "Power Keepers",
+        "number": "101/108",
+        "printing": "Holofoil"
+      },
+      "tcgdexId": "ex16-101",
+      "pricedCatalogueId": "ex16-101",
+      "identityMatch": "English name, set symbol and collector number visually checked; priced printing matches reference.",
+      "alt": "Jolteon Star — English Power Keepers 101/108 reference scan, Holofoil.",
+      "visualReviewDate": "2026-11-03",
+      "imageSourcePage": "https://api.tcgdex.net/v2/en/cards/ex16-101",
+      "sourceCredit": "TCGdex",
+      "imageIsConditionEvidence": false,
+      "visualReview": "English issue and regular holo/Gold Star/ex illustration verified."
+    },
+    {
+      "rank": 17,
+      "key": "85503|Holofoil",
+      "productId": 85503,
+      "name": "Flareon Star",
+      "pricedIdentity": {
+        "language": "English",
+        "set": "EX Power Keepers",
+        "number": "100/108",
+        "printing": "Holofoil"
+      },
+      "language": "English",
+      "catalogueURL": "https://www.tcgplayer.com/product/85503/pokemon-ex-power-keepers-flareon-star",
+      "imageExactPrinting": true,
+      "imageNote": "",
+      "files": {
+        "low": {
+          "file": "top50-85503-low.webp",
+          "publicPath": "assets/top50/top50-85503-low.webp",
+          "sourceUrl": "https://assets.tcgdex.net/en/ex/ex16/100/low.webp",
+          "url": "https://assets.tcgdex.net/en/ex/ex16/100/low.webp",
+          "sha256": "9313ea4e421ab7e727fa6ecef194d430726e502f5a5e73447906cd6b24549a09",
+          "bytes": 20598,
+          "width": 245,
+          "height": 337,
+          "format": "WEBP",
+          "unchangedDownload": true
+        },
+        "high": {
+          "file": "top50-85503-high.webp",
+          "publicPath": "assets/top50/top50-85503-high.webp",
+          "sourceUrl": "https://assets.tcgdex.net/en/ex/ex16/100/high.webp",
+          "url": "https://assets.tcgdex.net/en/ex/ex16/100/high.webp",
+          "sha256": "02898f6f0c17846648910f9c79ba0a519123c4e9d8a892266fb6b8c3203ef41d",
+          "bytes": 91712,
+          "width": 600,
+          "height": 825,
+          "format": "WEBP",
+          "unchangedDownload": true
+        }
+      },
+      "imageProvider": "TCGdex",
+      "sourceMetadataURL": "https://api.tcgdex.net/v2/en/cards/ex16-100",
+      "referenceIdentity": {
+        "language": "English",
+        "set": "Power Keepers",
+        "number": "100/108",
+        "printing": "Holofoil"
+      },
+      "tcgdexId": "ex16-100",
+      "pricedCatalogueId": "ex16-100",
+      "identityMatch": "English name, set symbol and collector number visually checked; priced printing matches reference.",
+      "alt": "Flareon Star — English Power Keepers 100/108 reference scan, Holofoil.",
+      "visualReviewDate": "2026-11-03",
+      "imageSourcePage": "https://api.tcgdex.net/v2/en/cards/ex16-100",
+      "sourceCredit": "TCGdex",
+      "imageIsConditionEvidence": false,
+      "visualReview": "English issue and regular holo/Gold Star/ex illustration verified."
+    },
+    {
+      "rank": 18,
+      "key": "86894|Normal",
+      "productId": 86894,
+      "name": "Lucky Stadium",
+      "pricedIdentity": {
+        "language": "English",
+        "set": "WoTC Promo",
+        "number": "41/53",
+        "printing": "Normal"
+      },
+      "language": "English",
+      "catalogueURL": "https://www.tcgplayer.com/product/86894/pokemon-wotc-promo-lucky-stadium",
+      "imageExactPrinting": true,
+      "imageNote": "",
+      "files": {
+        "low": {
+          "file": "top50-86894-low.webp",
+          "publicPath": "assets/top50/top50-86894-low.webp",
+          "sourceUrl": "https://assets.tcgdex.net/en/base/basep/41/low.webp",
+          "url": "https://assets.tcgdex.net/en/base/basep/41/low.webp",
+          "sha256": "50ccbd2c306ab243c56ed5b0cf3b32de5803ddfc41dd38660087385d3dcc0ade",
+          "bytes": 15412,
+          "width": 245,
+          "height": 337,
+          "format": "WEBP",
+          "unchangedDownload": true
+        },
+        "high": {
+          "file": "top50-86894-high.webp",
+          "publicPath": "assets/top50/top50-86894-high.webp",
+          "sourceUrl": "https://assets.tcgdex.net/en/base/basep/41/high.webp",
+          "url": "https://assets.tcgdex.net/en/base/basep/41/high.webp",
+          "sha256": "c3fc9e0dbed847d2f343f99662163a1fc5b30c69e0cd7376629f1de8ba3e7412",
+          "bytes": 78630,
+          "width": 600,
+          "height": 825,
+          "format": "WEBP",
+          "unchangedDownload": true
+        }
+      },
+      "imageProvider": "TCGdex",
+      "sourceMetadataURL": "https://api.tcgdex.net/v2/en/cards/basep-41",
+      "referenceIdentity": {
+        "language": "English",
+        "set": "Wizards Black Star Promos",
+        "number": "41/53",
+        "printing": "Normal"
+      },
+      "tcgdexId": "basep-41",
+      "pricedCatalogueId": "basep-41",
+      "identityMatch": "English name, set symbol and collector number visually checked; priced printing matches reference.",
+      "alt": "Lucky Stadium — English Wizards Black Star Promos 41/53 reference scan, Normal.",
+      "visualReviewDate": "2026-11-03",
+      "imageSourcePage": "https://api.tcgdex.net/v2/en/cards/basep-41",
+      "sourceCredit": "TCGdex",
+      "imageIsConditionEvidence": false,
+      "visualReview": "English Lucky Stadium Wizards Black Star Promo 41 visibly verified."
+    },
+    {
+      "rank": 19,
+      "key": "85275|Holofoil",
+      "productId": 85275,
+      "name": "Entei Star",
+      "pricedIdentity": {
+        "language": "English",
+        "set": "EX Unseen Forces",
+        "number": "113/115",
+        "printing": "Holofoil"
+      },
+      "language": "English",
+      "catalogueURL": "https://www.tcgplayer.com/product/85275/pokemon-ex-unseen-forces-entei-star",
+      "imageExactPrinting": true,
+      "imageNote": "",
+      "files": {
+        "low": {
+          "file": "top50-85275-low.webp",
+          "publicPath": "assets/top50/top50-85275-low.webp",
+          "sourceUrl": "https://assets.tcgdex.net/en/ex/ex10/113/low.webp",
+          "url": "https://assets.tcgdex.net/en/ex/ex10/113/low.webp",
+          "sha256": "3b99a818634fd9cc1c9089047fd646e7eebf1fd677aeb1b1778cbddecfcebe94",
+          "bytes": 19830,
+          "width": 245,
+          "height": 337,
+          "format": "WEBP",
+          "unchangedDownload": true
+        },
+        "high": {
+          "file": "top50-85275-high.webp",
+          "publicPath": "assets/top50/top50-85275-high.webp",
+          "sourceUrl": "https://assets.tcgdex.net/en/ex/ex10/113/high.webp",
+          "url": "https://assets.tcgdex.net/en/ex/ex10/113/high.webp",
+          "sha256": "4cefe0dac3779efbfe09a7f8a48a892c8bbf0c7b0529c65097754442b92c2d60",
+          "bytes": 83320,
+          "width": 600,
+          "height": 825,
+          "format": "WEBP",
+          "unchangedDownload": true
+        }
+      },
+      "imageProvider": "TCGdex",
+      "sourceMetadataURL": "https://api.tcgdex.net/v2/en/cards/ex10-113",
+      "referenceIdentity": {
+        "language": "English",
+        "set": "Unseen Forces",
+        "number": "113/115",
+        "printing": "Holofoil"
+      },
+      "tcgdexId": "ex10-113",
+      "pricedCatalogueId": "ex10-113",
+      "identityMatch": "English name, set symbol and collector number visually checked; priced printing matches reference.",
+      "alt": "Entei Star — English Unseen Forces 113/115 reference scan, Holofoil.",
+      "visualReviewDate": "2026-11-03",
+      "imageSourcePage": "https://api.tcgdex.net/v2/en/cards/ex10-113",
+      "sourceCredit": "TCGdex",
+      "imageIsConditionEvidence": false,
+      "visualReview": "English issue and regular holo/Gold Star/ex illustration verified."
+    },
+    {
+      "rank": 20,
+      "key": "88537|Holofoil",
+      "productId": 88537,
+      "name": "Raikou Star",
+      "pricedIdentity": {
+        "language": "English",
+        "set": "EX Unseen Forces",
+        "number": "114/115",
+        "printing": "Holofoil"
+      },
+      "language": "English",
+      "catalogueURL": "https://www.tcgplayer.com/product/88537/pokemon-ex-unseen-forces-raikou-star",
+      "imageExactPrinting": true,
+      "imageNote": "",
+      "files": {
+        "low": {
+          "file": "top50-88537-low.webp",
+          "publicPath": "assets/top50/top50-88537-low.webp",
+          "sourceUrl": "https://assets.tcgdex.net/en/ex/ex10/114/low.webp",
+          "url": "https://assets.tcgdex.net/en/ex/ex10/114/low.webp",
+          "sha256": "de2d80c99b05bfe8d88412b04a36f49113b9ef7cf6eb2f63099b344651c7dfc1",
+          "bytes": 20768,
+          "width": 245,
+          "height": 337,
+          "format": "WEBP",
+          "unchangedDownload": true
+        },
+        "high": {
+          "file": "top50-88537-high.webp",
+          "publicPath": "assets/top50/top50-88537-high.webp",
+          "sourceUrl": "https://assets.tcgdex.net/en/ex/ex10/114/high.webp",
+          "url": "https://assets.tcgdex.net/en/ex/ex10/114/high.webp",
+          "sha256": "580752c7777cdf28ba830ece9d35ff4dcf5ec71091e076b1d9dc2b5a30311d6a",
+          "bytes": 84172,
+          "width": 600,
+          "height": 825,
+          "format": "WEBP",
+          "unchangedDownload": true
+        }
+      },
+      "imageProvider": "TCGdex",
+      "sourceMetadataURL": "https://api.tcgdex.net/v2/en/cards/ex10-114",
+      "referenceIdentity": {
+        "language": "English",
+        "set": "Unseen Forces",
+        "number": "114/115",
+        "printing": "Holofoil"
+      },
+      "tcgdexId": "ex10-114",
+      "pricedCatalogueId": "ex10-114",
+      "identityMatch": "English name, set symbol and collector number visually checked; priced printing matches reference.",
+      "alt": "Raikou Star — English Unseen Forces 114/115 reference scan, Holofoil.",
+      "visualReviewDate": "2026-11-03",
+      "imageSourcePage": "https://api.tcgdex.net/v2/en/cards/ex10-114",
+      "sourceCredit": "TCGdex",
+      "imageIsConditionEvidence": false,
+      "visualReview": "English issue and regular holo/Gold Star/ex illustration verified."
+    },
+    {
+      "rank": 21,
+      "key": "88075|Reverse Holofoil",
+      "productId": 88075,
+      "name": "Pikachu",
+      "pricedIdentity": {
+        "language": "English",
+        "set": "Legendary Collection",
+        "number": "086/110",
+        "printing": "Reverse Holofoil"
+      },
+      "language": "English",
+      "catalogueURL": "https://www.tcgplayer.com/product/88075/pokemon-legendary-collection-pikachu",
+      "imageExactPrinting": false,
+      "imageNote": "Reference scan: standard non-holo; priced printing: Reverse Holofoil.",
+      "files": {
+        "low": {
+          "file": "top50-88075-low.webp",
+          "publicPath": "assets/top50/top50-88075-low.webp",
+          "sourceUrl": "https://assets.tcgdex.net/en/lc/lc/86/low.webp",
+          "url": "https://assets.tcgdex.net/en/lc/lc/86/low.webp",
+          "sha256": "05afdccc908fd11e90c564364de38878f3162832794e37bb79953d763d12afe7",
+          "bytes": 19760,
+          "width": 245,
+          "height": 337,
+          "format": "WEBP",
+          "unchangedDownload": true
+        },
+        "high": {
+          "file": "top50-88075-high.webp",
+          "publicPath": "assets/top50/top50-88075-high.webp",
+          "sourceUrl": "https://assets.tcgdex.net/en/lc/lc/86/high.webp",
+          "url": "https://assets.tcgdex.net/en/lc/lc/86/high.webp",
+          "sha256": "0ff8fd6ffd857cedd7f95587bd7583ddde5f8c7b1f9eb275ece71b6af2c6f4ce",
+          "bytes": 76964,
+          "width": 600,
+          "height": 825,
+          "format": "WEBP",
+          "unchangedDownload": true
+        }
+      },
+      "imageProvider": "TCGdex",
+      "sourceMetadataURL": "https://api.tcgdex.net/v2/en/cards/lc-86",
+      "referenceIdentity": {
+        "language": "English",
+        "set": "Legendary Collection",
+        "number": "086/110",
+        "printing": "Normal"
+      },
+      "tcgdexId": "lc-86",
+      "pricedCatalogueId": "lc-86",
+      "identityMatch": "English name, set symbol and collector number visually checked; printing difference or unconfirmed foil explicitly captioned.",
+      "alt": "Pikachu — English Legendary Collection 086/110 reference scan, Normal. Reference scan: standard non-holo; priced printing: Reverse Holofoil.",
+      "visualReviewDate": "2026-11-03",
+      "imageSourcePage": "https://api.tcgdex.net/v2/en/cards/lc-86",
+      "sourceCredit": "TCGdex",
+      "imageIsConditionEvidence": false,
+      "visualReview": "Standard unstamped, non-reverse catalogue reference; English issue verified."
+    },
+    {
+      "rank": 22,
+      "key": "86199|Holofoil",
+      "productId": 86199,
+      "name": "Houndoom (H11)",
+      "pricedIdentity": {
+        "language": "English",
+        "set": "Aquapolis",
+        "number": "H11/H32",
+        "printing": "Holofoil"
+      },
+      "language": "English",
+      "catalogueURL": "https://www.tcgplayer.com/product/86199/pokemon-aquapolis-houndoom-h11",
+      "imageExactPrinting": false,
+      "imageNote": "Reference scan: Aquapolis 15/147 non-holo; priced printing: H11/H32 Holofoil.",
+      "files": {
+        "low": {
+          "file": "top50-86199-low.webp",
+          "publicPath": "assets/top50/top50-86199-low.webp",
+          "sourceUrl": "https://assets.tcgdex.net/en/ecard/ecard2/15/low.webp",
+          "url": "https://assets.tcgdex.net/en/ecard/ecard2/15/low.webp",
+          "sha256": "ba29534cc30bf2fc2dde475933a0e8923622fba6fb508121392e88a346b8eb58",
+          "bytes": 19378,
+          "width": 245,
+          "height": 337,
+          "format": "WEBP",
+          "unchangedDownload": true
+        },
+        "high": {
+          "file": "top50-86199-high.webp",
+          "publicPath": "assets/top50/top50-86199-high.webp",
+          "sourceUrl": "https://assets.tcgdex.net/en/ecard/ecard2/15/high.webp",
+          "url": "https://assets.tcgdex.net/en/ecard/ecard2/15/high.webp",
+          "sha256": "92ee00fa4db3ec30c0649f781ccd6e04ce8d5e2094f9e0e67c58ccf58d821200",
+          "bytes": 74810,
+          "width": 600,
+          "height": 825,
+          "format": "WEBP",
+          "unchangedDownload": true
+        }
+      },
+      "imageProvider": "TCGdex",
+      "sourceMetadataURL": "https://api.tcgdex.net/v2/en/cards/ecard2-15",
+      "referenceIdentity": {
+        "language": "English",
+        "set": "Aquapolis",
+        "number": "15/147",
+        "printing": "Normal (non-holo)"
+      },
+      "tcgdexId": "ecard2-15",
+      "pricedCatalogueId": "ecard2-H11",
+      "identityMatch": "English Houndoom, Aquapolis, Hajime Kusajima same-art printing. Reference number 15/147 differs from priced H11/H32, explicitly captioned.",
+      "alt": "Houndoom (H11) — English Aquapolis 15/147 reference scan, Normal (non-holo). Reference scan: Aquapolis 15/147 non-holo; priced printing: H11/H32 Holofoil.",
+      "visualReviewDate": "2026-11-03",
+      "imageSourcePage": "https://api.tcgdex.net/v2/en/cards/ecard2-15",
+      "sourceCredit": "TCGdex",
+      "imageIsConditionEvidence": false,
+      "visualReview": "Standard unstamped, non-reverse catalogue reference; English issue verified."
+    },
+    {
+      "rank": 23,
+      "key": "91246|Holofoil",
+      "productId": 91246,
+      "name": "M Charizard EX (X) (Secret)",
+      "pricedIdentity": {
+        "language": "English",
+        "set": "XY - Flashfire",
+        "number": "108/106",
+        "printing": "Holofoil"
+      },
+      "language": "English",
+      "catalogueURL": "https://www.tcgplayer.com/product/91246/pokemon-xy-flashfire-m-charizard-ex-x-secret",
+      "imageExactPrinting": true,
+      "imageNote": "",
+      "files": {
+        "low": {
+          "file": "top50-91246-low.webp",
+          "publicPath": "assets/top50/top50-91246-low.webp",
+          "sourceUrl": "https://assets.tcgdex.net/en/xy/xy2/108/low.webp",
+          "url": "https://assets.tcgdex.net/en/xy/xy2/108/low.webp",
+          "sha256": "6d8f9a2a9248c6653a1f202d982fc014f4a54e5dfb62086f55ec039e60fc6df5",
+          "bytes": 35054,
+          "width": 245,
+          "height": 337,
+          "format": "WEBP",
+          "unchangedDownload": true
+        },
+        "high": {
+          "file": "top50-91246-high.webp",
+          "publicPath": "assets/top50/top50-91246-high.webp",
+          "sourceUrl": "https://assets.tcgdex.net/en/xy/xy2/108/high.webp",
+          "url": "https://assets.tcgdex.net/en/xy/xy2/108/high.webp",
+          "sha256": "4977518f8945237771200960a77748f368a08346e29e35b960e5300b112866db",
+          "bytes": 127394,
+          "width": 600,
+          "height": 825,
+          "format": "WEBP",
+          "unchangedDownload": true
+        }
+      },
+      "imageProvider": "TCGdex",
+      "sourceMetadataURL": "https://api.tcgdex.net/v2/en/sets/xy2",
+      "referenceIdentity": {
+        "language": "English",
+        "set": "Flashfire",
+        "number": "108/106",
+        "printing": "Holofoil"
+      },
+      "identityMatch": "Exact English set and collector number, previously visually reviewed.",
+      "reusedModernRank": 8,
+      "alt": "M Charizard EX (X) (Secret) — English Flashfire 108/106 reference scan, Holofoil.",
+      "visualReviewDate": "2026-11-03",
+      "imageSourcePage": "https://api.tcgdex.net/v2/en/sets/xy2",
+      "sourceCredit": "TCGdex",
+      "imageIsConditionEvidence": false,
+      "visualReview": "English card identity rechecked in final 50 contact sheets; exact issue previously reviewed in Modern 100 staging."
+    },
+    {
+      "rank": 24,
+      "key": "84187|Holofoil",
+      "productId": 84187,
+      "name": "Charizard",
+      "pricedIdentity": {
+        "language": "English",
+        "set": "EX Dragon",
+        "number": "100/97",
+        "printing": "Holofoil"
+      },
+      "language": "English",
+      "catalogueURL": "https://www.tcgplayer.com/product/84187/pokemon-ex-dragon-charizard",
+      "imageExactPrinting": true,
+      "imageNote": "",
+      "files": {
+        "low": {
+          "file": "top50-84187-low.webp",
+          "publicPath": "assets/top50/top50-84187-low.webp",
+          "sourceUrl": "https://assets.tcgdex.net/en/ex/ex3/100/low.webp",
+          "url": "https://assets.tcgdex.net/en/ex/ex3/100/low.webp",
+          "sha256": "4600460e04b3ce7ffe52bc8149930f2359bc7d7f28f6c1c3e703e8abd0af4d42",
+          "bytes": 18556,
+          "width": 245,
+          "height": 337,
+          "format": "WEBP",
+          "unchangedDownload": true
+        },
+        "high": {
+          "file": "top50-84187-high.webp",
+          "publicPath": "assets/top50/top50-84187-high.webp",
+          "sourceUrl": "https://assets.tcgdex.net/en/ex/ex3/100/high.webp",
+          "url": "https://assets.tcgdex.net/en/ex/ex3/100/high.webp",
+          "sha256": "cfa2f090aac81cba70b031399869383e4f79fa4a1c5a2ef43498450922d146c6",
+          "bytes": 62732,
+          "width": 600,
+          "height": 825,
+          "format": "WEBP",
+          "unchangedDownload": true
+        }
+      },
+      "imageProvider": "TCGdex",
+      "sourceMetadataURL": "https://api.tcgdex.net/v2/en/cards/ex3-100",
+      "referenceIdentity": {
+        "language": "English",
+        "set": "Dragon",
+        "number": "100/97",
+        "printing": "Holofoil"
+      },
+      "tcgdexId": "ex3-100",
+      "pricedCatalogueId": "ex3-100",
+      "identityMatch": "English name, set symbol and collector number visually checked; priced printing matches reference.",
+      "alt": "Charizard — English Dragon 100/97 reference scan, Holofoil.",
+      "visualReviewDate": "2026-11-03",
+      "imageSourcePage": "https://api.tcgdex.net/v2/en/cards/ex3-100",
+      "sourceCredit": "TCGdex",
+      "imageIsConditionEvidence": false,
+      "visualReview": "English issue and regular holo/Gold Star/ex illustration verified."
+    },
+    {
+      "rank": 25,
+      "key": "84760|Reverse Holofoil",
+      "productId": 84760,
+      "name": "Deoxys (Delta Species - Attack Forme)",
+      "pricedIdentity": {
+        "language": "English",
+        "set": "EX Holon Phantoms",
+        "number": "3/110",
+        "printing": "Reverse Holofoil"
+      },
+      "language": "English",
+      "catalogueURL": "https://www.tcgplayer.com/product/84760/pokemon-ex-holon-phantoms-deoxys-delta-species-attack-forme",
+      "imageExactPrinting": false,
+      "imageNote": "Reference scan: standard scan without reverse set stamp; priced printing: Reverse Holofoil.",
+      "files": {
+        "low": {
+          "file": "top50-84760-low.webp",
+          "publicPath": "assets/top50/top50-84760-low.webp",
+          "sourceUrl": "https://assets.tcgdex.net/en/ex/ex13/3/low.webp",
+          "url": "https://assets.tcgdex.net/en/ex/ex13/3/low.webp",
+          "sha256": "40b6a4b23936a86fb52544d31d1ff4ff8a740b76dd72f20d43bd91278f44b08c",
+          "bytes": 16934,
+          "width": 245,
+          "height": 337,
+          "format": "WEBP",
+          "unchangedDownload": true
+        },
+        "high": {
+          "file": "top50-84760-high.webp",
+          "publicPath": "assets/top50/top50-84760-high.webp",
+          "sourceUrl": "https://assets.tcgdex.net/en/ex/ex13/3/high.webp",
+          "url": "https://assets.tcgdex.net/en/ex/ex13/3/high.webp",
+          "sha256": "6228c8c2e38514d967d923aa09f31edb60afd47b4b7a9d529c9c6bfbfdf34489",
+          "bytes": 64796,
+          "width": 600,
+          "height": 825,
+          "format": "WEBP",
+          "unchangedDownload": true
+        }
+      },
+      "imageProvider": "TCGdex",
+      "sourceMetadataURL": "https://api.tcgdex.net/v2/en/cards/ex13-3",
+      "referenceIdentity": {
+        "language": "English",
+        "set": "Holon Phantoms",
+        "number": "3/110",
+        "printing": "Standard non-reverse reference"
+      },
+      "tcgdexId": "ex13-3",
+      "pricedCatalogueId": "ex13-3",
+      "identityMatch": "English name, set symbol and collector number visually checked; printing difference or unconfirmed foil explicitly captioned.",
+      "alt": "Deoxys (Delta Species - Attack Forme) — English Holon Phantoms 3/110 reference scan, Standard non-reverse reference. Reference scan: standard scan without reverse set stamp; priced printing: Reverse Holofoil.",
+      "visualReviewDate": "2026-11-03",
+      "imageSourcePage": "https://api.tcgdex.net/v2/en/cards/ex13-3",
+      "sourceCredit": "TCGdex",
+      "imageIsConditionEvidence": false,
+      "visualReview": "English issue verified. No reverse set-name stamp visible."
+    },
+    {
+      "rank": 26,
+      "key": "97703|Normal",
+      "productId": 97703,
+      "name": "Tropical Tidal Wave - HGSS18 (Worlds 10) [Staff]",
+      "pricedIdentity": {
+        "language": "English",
+        "set": "HGSS Promos",
+        "number": "HGSS18",
+        "printing": "Normal"
+      },
+      "language": "English",
+      "catalogueURL": "https://www.tcgplayer.com/product/97703/pokemon-hgss-promos-tropical-tidal-wave-hgss18-worlds-10-staff",
+      "imageExactPrinting": true,
+      "imageNote": "Reference scan: English HGSS18 Worlds 2010 STAFF. Original catalogue thumbnail (200 × 286).",
+      "files": {
+        "low": {
+          "file": "top50-97703-original.jpg",
+          "publicPath": "assets/top50/top50-97703-original.jpg",
+          "sourceUrl": "https://catchemtcg.com/api/card-img?pid=97703",
+          "url": "https://catchemtcg.com/api/card-img?pid=97703",
+          "sha256": "168cd969809e483c08dba59ee5ce15bc0a7d5b2def5492b869a38a4d12d15995",
+          "bytes": 14482,
+          "width": 200,
+          "height": 286,
+          "format": "JPEG",
+          "unchangedDownload": true
+        },
+        "high": {
+          "file": "top50-97703-original.jpg",
+          "publicPath": "assets/top50/top50-97703-original.jpg",
+          "sourceUrl": "https://catchemtcg.com/api/card-img?pid=97703",
+          "url": "https://catchemtcg.com/api/card-img?pid=97703",
+          "sha256": "168cd969809e483c08dba59ee5ce15bc0a7d5b2def5492b869a38a4d12d15995",
+          "bytes": 14482,
+          "width": 200,
+          "height": 286,
+          "format": "JPEG",
+          "unchangedDownload": true
+        }
+      },
+      "imageProvider": "Catch’em public catalogue / TCGplayer catalogue illustration",
+      "sourceMetadataURL": "https://catchemtcg.com/c/tcgcsv-97703",
+      "imageSourcePage": "https://catchemtcg.com/c/tcgcsv-97703",
+      "referenceIdentity": {
+        "language": "English",
+        "set": "HGSS Black Star Promos",
+        "number": "HGSS18",
+        "printing": "Worlds 2010 STAFF"
+      },
+      "identityMatch": "English text, HGSS18 number, Worlds 10 logo and STAFF stamp visually reviewed.",
+      "alt": "Tropical Tidal Wave - HGSS18 (Worlds 10) [Staff] — English HGSS Black Star Promos HGSS18 reference scan, Worlds 2010 STAFF. Reference scan: English HGSS18 Worlds 2010 STAFF. Original catalogue thumbnail (200 × 286).",
+      "visualReviewDate": "2026-11-03",
+      "sourceCredit": "Catch’em public catalogue / TCGplayer catalogue illustration",
+      "imageIsConditionEvidence": false,
+      "visualReview": "English card identity rechecked in final 50 contact sheets; original catalogue STAFF stamp verified."
+    },
+    {
+      "rank": 27,
+      "key": "85680|Holofoil",
+      "productId": 85680,
+      "name": "Gengar ex",
+      "pricedIdentity": {
+        "language": "English",
+        "set": "EX FireRed & LeafGreen",
+        "number": "108/112",
+        "printing": "Holofoil"
+      },
+      "language": "English",
+      "catalogueURL": "https://www.tcgplayer.com/product/85680/pokemon-ex-firered-and-leafgreen-gengar-ex",
+      "imageExactPrinting": true,
+      "imageNote": "",
+      "files": {
+        "low": {
+          "file": "top50-85680-low.webp",
+          "publicPath": "assets/top50/top50-85680-low.webp",
+          "sourceUrl": "https://assets.tcgdex.net/en/ex/ex6/108/low.webp",
+          "url": "https://assets.tcgdex.net/en/ex/ex6/108/low.webp",
+          "sha256": "2373edefd5e730ffab374aa041472b656ebb1b0a59b5511c1b62e0a7354b2b09",
+          "bytes": 24554,
+          "width": 245,
+          "height": 337,
+          "format": "WEBP",
+          "unchangedDownload": true
+        },
+        "high": {
+          "file": "top50-85680-high.webp",
+          "publicPath": "assets/top50/top50-85680-high.webp",
+          "sourceUrl": "https://assets.tcgdex.net/en/ex/ex6/108/high.webp",
+          "url": "https://assets.tcgdex.net/en/ex/ex6/108/high.webp",
+          "sha256": "f4028b79b009c788d5e86414daeeefe893c495644b43f665a3de60c1df85a3c8",
+          "bytes": 94378,
+          "width": 600,
+          "height": 825,
+          "format": "WEBP",
+          "unchangedDownload": true
+        }
+      },
+      "imageProvider": "TCGdex",
+      "sourceMetadataURL": "https://api.tcgdex.net/v2/en/cards/ex6-108",
+      "referenceIdentity": {
+        "language": "English",
+        "set": "FireRed & LeafGreen",
+        "number": "108/112",
+        "printing": "Holofoil"
+      },
+      "tcgdexId": "ex6-108",
+      "pricedCatalogueId": "ex6-108",
+      "identityMatch": "English name, set symbol and collector number visually checked; priced printing matches reference.",
+      "alt": "Gengar ex — English FireRed & LeafGreen 108/112 reference scan, Holofoil.",
+      "visualReviewDate": "2026-11-03",
+      "imageSourcePage": "https://api.tcgdex.net/v2/en/cards/ex6-108",
+      "sourceCredit": "TCGdex",
+      "imageIsConditionEvidence": false,
+      "visualReview": "English issue and regular holo/Gold Star/ex illustration verified."
+    },
+    {
+      "rank": 28,
+      "key": "90292|Holofoil",
+      "productId": 90292,
+      "name": "Vaporeon Star",
+      "pricedIdentity": {
+        "language": "English",
+        "set": "EX Power Keepers",
+        "number": "102/108",
+        "printing": "Holofoil"
+      },
+      "language": "English",
+      "catalogueURL": "https://www.tcgplayer.com/product/90292/pokemon-ex-power-keepers-vaporeon-star",
+      "imageExactPrinting": true,
+      "imageNote": "",
+      "files": {
+        "low": {
+          "file": "top50-90292-low.webp",
+          "publicPath": "assets/top50/top50-90292-low.webp",
+          "sourceUrl": "https://assets.tcgdex.net/en/ex/ex16/102/low.webp",
+          "url": "https://assets.tcgdex.net/en/ex/ex16/102/low.webp",
+          "sha256": "0abff6aa8655bf3f45733eb271f7b25425081c8e7e207221e3c99b9b101e8a27",
+          "bytes": 22610,
+          "width": 245,
+          "height": 337,
+          "format": "WEBP",
+          "unchangedDownload": true
+        },
+        "high": {
+          "file": "top50-90292-high.webp",
+          "publicPath": "assets/top50/top50-90292-high.webp",
+          "sourceUrl": "https://assets.tcgdex.net/en/ex/ex16/102/high.webp",
+          "url": "https://assets.tcgdex.net/en/ex/ex16/102/high.webp",
+          "sha256": "810d84c495a514e5fbe49cbee0f678165437c65b46cff32b3eb8fa23acc04aa1",
+          "bytes": 106516,
+          "width": 600,
+          "height": 825,
+          "format": "WEBP",
+          "unchangedDownload": true
+        }
+      },
+      "imageProvider": "TCGdex",
+      "sourceMetadataURL": "https://api.tcgdex.net/v2/en/cards/ex16-102",
+      "referenceIdentity": {
+        "language": "English",
+        "set": "Power Keepers",
+        "number": "102/108",
+        "printing": "Holofoil"
+      },
+      "tcgdexId": "ex16-102",
+      "pricedCatalogueId": "ex16-102",
+      "identityMatch": "English name, set symbol and collector number visually checked; priced printing matches reference.",
+      "alt": "Vaporeon Star — English Power Keepers 102/108 reference scan, Holofoil.",
+      "visualReviewDate": "2026-11-03",
+      "imageSourcePage": "https://api.tcgdex.net/v2/en/cards/ex16-102",
+      "sourceCredit": "TCGdex",
+      "imageIsConditionEvidence": false,
+      "visualReview": "English issue and regular holo/Gold Star/ex illustration verified."
+    },
+    {
+      "rank": 29,
+      "key": "89165|1st Edition Holofoil",
+      "productId": 89165,
+      "name": "Shining Kabutops",
+      "pricedIdentity": {
+        "language": "English",
+        "set": "Neo Destiny",
+        "number": "108/105",
+        "printing": "1st Edition Holofoil"
+      },
+      "language": "English",
+      "catalogueURL": "https://www.tcgplayer.com/product/89165/pokemon-neo-destiny-shining-kabutops",
+      "imageExactPrinting": true,
+      "imageNote": "",
+      "files": {
+        "low": {
+          "file": "top50-89165-low.webp",
+          "publicPath": "assets/top50/top50-89165-low.webp",
+          "sourceUrl": "https://assets.tcgdex.net/en/neo/neo4/108/low.webp",
+          "url": "https://assets.tcgdex.net/en/neo/neo4/108/low.webp",
+          "sha256": "8c38202ad7c434c45b50736116340645b2f0b539e37d83f5eec1554827a32058",
+          "bytes": 17758,
+          "width": 245,
+          "height": 337,
+          "format": "WEBP",
+          "unchangedDownload": true
+        },
+        "high": {
+          "file": "top50-89165-high.webp",
+          "publicPath": "assets/top50/top50-89165-high.webp",
+          "sourceUrl": "https://assets.tcgdex.net/en/neo/neo4/108/high.webp",
+          "url": "https://assets.tcgdex.net/en/neo/neo4/108/high.webp",
+          "sha256": "69e05c1a6d0a9b706464eb7ec5ca626472ba4dff604e11fbed465ea84f6a6024",
+          "bytes": 72732,
+          "width": 600,
+          "height": 825,
+          "format": "WEBP",
+          "unchangedDownload": true
+        }
+      },
+      "imageProvider": "TCGdex",
+      "sourceMetadataURL": "https://api.tcgdex.net/v2/en/cards/neo4-108",
+      "referenceIdentity": {
+        "language": "English",
+        "set": "Neo Destiny",
+        "number": "108/105",
+        "printing": "1st Edition Holofoil"
+      },
+      "tcgdexId": "neo4-108",
+      "pricedCatalogueId": "neo4-108",
+      "identityMatch": "English name, set symbol and collector number visually checked; priced printing matches reference.",
+      "alt": "Shining Kabutops — English Neo Destiny 108/105 reference scan, 1st Edition Holofoil.",
+      "visualReviewDate": "2026-11-03",
+      "imageSourcePage": "https://api.tcgdex.net/v2/en/cards/neo4-108",
+      "sourceCredit": "TCGdex",
+      "imageIsConditionEvidence": false,
+      "visualReview": "Visible 1st Edition stamp; English text and issue number verified."
+    },
+    {
+      "rank": 30,
+      "key": "86003|Holofoil",
+      "productId": 86003,
+      "name": "Gyarados Star (Delta Species)",
+      "pricedIdentity": {
+        "language": "English",
+        "set": "EX Holon Phantoms",
+        "number": "102/110",
+        "printing": "Holofoil"
+      },
+      "language": "English",
+      "catalogueURL": "https://www.tcgplayer.com/product/86003/pokemon-ex-holon-phantoms-gyarados-star-delta-species",
+      "imageExactPrinting": true,
+      "imageNote": "",
+      "files": {
+        "low": {
+          "file": "top50-86003-low.webp",
+          "publicPath": "assets/top50/top50-86003-low.webp",
+          "sourceUrl": "https://assets.tcgdex.net/en/ex/ex13/102/low.webp",
+          "url": "https://assets.tcgdex.net/en/ex/ex13/102/low.webp",
+          "sha256": "f601b322fe928de33e1847f80a966a78a9f1ddf185498f5392d02c9dae459d16",
+          "bytes": 21012,
+          "width": 245,
+          "height": 337,
+          "format": "WEBP",
+          "unchangedDownload": true
+        },
+        "high": {
+          "file": "top50-86003-high.webp",
+          "publicPath": "assets/top50/top50-86003-high.webp",
+          "sourceUrl": "https://assets.tcgdex.net/en/ex/ex13/102/high.webp",
+          "url": "https://assets.tcgdex.net/en/ex/ex13/102/high.webp",
+          "sha256": "b2dd7ca36788efcdd2f832b04ad17a7186f22d86e37adb25cdd09bbfff2dde08",
+          "bytes": 82540,
+          "width": 600,
+          "height": 825,
+          "format": "WEBP",
+          "unchangedDownload": true
+        }
+      },
+      "imageProvider": "TCGdex",
+      "sourceMetadataURL": "https://api.tcgdex.net/v2/en/cards/ex13-102",
+      "referenceIdentity": {
+        "language": "English",
+        "set": "Holon Phantoms",
+        "number": "102/110",
+        "printing": "Holofoil"
+      },
+      "tcgdexId": "ex13-102",
+      "pricedCatalogueId": "ex13-102",
+      "identityMatch": "English name, set symbol and collector number visually checked; priced printing matches reference.",
+      "alt": "Gyarados Star (Delta Species) — English Holon Phantoms 102/110 reference scan, Holofoil.",
+      "visualReviewDate": "2026-11-03",
+      "imageSourcePage": "https://api.tcgdex.net/v2/en/cards/ex13-102",
+      "sourceCredit": "TCGdex",
+      "imageIsConditionEvidence": false,
+      "visualReview": "English issue and regular holo/Gold Star/ex illustration verified."
+    },
+    {
+      "rank": 31,
+      "key": "84585|Reverse Holofoil",
+      "productId": 84585,
+      "name": "Dark Dragonite",
+      "pricedIdentity": {
+        "language": "English",
+        "set": "Legendary Collection",
+        "number": "005/110",
+        "printing": "Reverse Holofoil"
+      },
+      "language": "English",
+      "catalogueURL": "https://www.tcgplayer.com/product/84585/pokemon-legendary-collection-dark-dragonite",
+      "imageExactPrinting": false,
+      "imageNote": "Reference scan: regular Holofoil; priced printing: Reverse Holofoil.",
+      "files": {
+        "low": {
+          "file": "top50-84585-low.webp",
+          "publicPath": "assets/top50/top50-84585-low.webp",
+          "sourceUrl": "https://assets.tcgdex.net/en/lc/lc/5/low.webp",
+          "url": "https://assets.tcgdex.net/en/lc/lc/5/low.webp",
+          "sha256": "7d84c07c6a60ab12ae060dd94bc63962ae28050b676c216045db524319fdeb9b",
+          "bytes": 17682,
+          "width": 245,
+          "height": 337,
+          "format": "WEBP",
+          "unchangedDownload": true
+        },
+        "high": {
+          "file": "top50-84585-high.webp",
+          "publicPath": "assets/top50/top50-84585-high.webp",
+          "sourceUrl": "https://assets.tcgdex.net/en/lc/lc/5/high.webp",
+          "url": "https://assets.tcgdex.net/en/lc/lc/5/high.webp",
+          "sha256": "894eae7958a905f79927f20d1b7e9bd88adcf0123a5e29616dcceae7b3f7497e",
+          "bytes": 66068,
+          "width": 600,
+          "height": 825,
+          "format": "WEBP",
+          "unchangedDownload": true
+        }
+      },
+      "imageProvider": "TCGdex",
+      "sourceMetadataURL": "https://api.tcgdex.net/v2/en/cards/lc-5",
+      "referenceIdentity": {
+        "language": "English",
+        "set": "Legendary Collection",
+        "number": "005/110",
+        "printing": "Holofoil"
+      },
+      "tcgdexId": "lc-5",
+      "pricedCatalogueId": "lc-5",
+      "identityMatch": "English name, set symbol and collector number visually checked; printing difference or unconfirmed foil explicitly captioned.",
+      "alt": "Dark Dragonite — English Legendary Collection 005/110 reference scan, Holofoil. Reference scan: regular Holofoil; priced printing: Reverse Holofoil.",
+      "visualReviewDate": "2026-11-03",
+      "imageSourcePage": "https://api.tcgdex.net/v2/en/cards/lc-5",
+      "sourceCredit": "TCGdex",
+      "imageIsConditionEvidence": false,
+      "visualReview": "English issue and regular holo/Gold Star/ex illustration verified."
+    },
+    {
+      "rank": 32,
+      "key": "86903|1st Edition Holofoil",
+      "productId": 86903,
+      "name": "Lugia",
+      "pricedIdentity": {
+        "language": "English",
+        "set": "Neo Genesis",
+        "number": "009/111",
+        "printing": "1st Edition Holofoil"
+      },
+      "language": "English",
+      "catalogueURL": "https://www.tcgplayer.com/product/86903/pokemon-neo-genesis-lugia",
+      "imageExactPrinting": true,
+      "imageNote": "",
+      "files": {
+        "low": {
+          "file": "top50-86903-low.webp",
+          "publicPath": "assets/top50/top50-86903-low.webp",
+          "sourceUrl": "https://assets.tcgdex.net/en/neo/neo1/9/low.webp",
+          "url": "https://assets.tcgdex.net/en/neo/neo1/9/low.webp",
+          "sha256": "67c7202928b73c13408ba7906c9be071cccf3bb5970303057463f59ac22560e8",
+          "bytes": 19050,
+          "width": 245,
+          "height": 337,
+          "format": "WEBP",
+          "unchangedDownload": true
+        },
+        "high": {
+          "file": "top50-86903-high.webp",
+          "publicPath": "assets/top50/top50-86903-high.webp",
+          "sourceUrl": "https://assets.tcgdex.net/en/neo/neo1/9/high.webp",
+          "url": "https://assets.tcgdex.net/en/neo/neo1/9/high.webp",
+          "sha256": "83b2cb01218ef2d10230ffde5084b14e289dea4af0bce272de2b709e3e4016a3",
+          "bytes": 75046,
+          "width": 600,
+          "height": 825,
+          "format": "WEBP",
+          "unchangedDownload": true
+        }
+      },
+      "imageProvider": "TCGdex",
+      "sourceMetadataURL": "https://api.tcgdex.net/v2/en/cards/neo1-9",
+      "referenceIdentity": {
+        "language": "English",
+        "set": "Neo Genesis",
+        "number": "009/111",
+        "printing": "1st Edition Holofoil"
+      },
+      "tcgdexId": "neo1-9",
+      "pricedCatalogueId": "neo1-9",
+      "identityMatch": "English name, set symbol and collector number visually checked; priced printing matches reference.",
+      "alt": "Lugia — English Neo Genesis 009/111 reference scan, 1st Edition Holofoil.",
+      "visualReviewDate": "2026-11-03",
+      "imageSourcePage": "https://api.tcgdex.net/v2/en/cards/neo1-9",
+      "sourceCredit": "TCGdex",
+      "imageIsConditionEvidence": false,
+      "visualReview": "Visible 1st Edition stamp; English text and issue number verified."
+    },
+    {
+      "rank": 33,
+      "key": "89163|Unlimited Holofoil",
+      "productId": 89163,
+      "name": "Shining Charizard",
+      "pricedIdentity": {
+        "language": "English",
+        "set": "Neo Destiny",
+        "number": "107/105",
+        "printing": "Unlimited Holofoil"
+      },
+      "language": "English",
+      "catalogueURL": "https://www.tcgplayer.com/product/89163/pokemon-neo-destiny-shining-charizard",
+      "imageExactPrinting": false,
+      "imageNote": "Reference scan: 1st Edition Holofoil; priced printing: Unlimited Holofoil.",
+      "files": {
+        "low": {
+          "file": "top50-89163-low.webp",
+          "publicPath": "assets/top50/top50-89163-low.webp",
+          "sourceUrl": "https://assets.tcgdex.net/en/neo/neo4/107/low.webp",
+          "url": "https://assets.tcgdex.net/en/neo/neo4/107/low.webp",
+          "sha256": "1ff1d71b3a0a23bbaf6285a434ca2f5e36111888d8a2ef8dbf267c935af9f1f3",
+          "bytes": 18728,
+          "width": 245,
+          "height": 337,
+          "format": "WEBP",
+          "unchangedDownload": true
+        },
+        "high": {
+          "file": "top50-89163-high.webp",
+          "publicPath": "assets/top50/top50-89163-high.webp",
+          "sourceUrl": "https://assets.tcgdex.net/en/neo/neo4/107/high.webp",
+          "url": "https://assets.tcgdex.net/en/neo/neo4/107/high.webp",
+          "sha256": "e67b4d9868f58fa6370fd0d7173307832e8ac999487b9cb81666d195373952bc",
+          "bytes": 84766,
+          "width": 600,
+          "height": 825,
+          "format": "WEBP",
+          "unchangedDownload": true
+        }
+      },
+      "imageProvider": "TCGdex",
+      "sourceMetadataURL": "https://api.tcgdex.net/v2/en/cards/neo4-107",
+      "referenceIdentity": {
+        "language": "English",
+        "set": "Neo Destiny",
+        "number": "107/105",
+        "printing": "1st Edition Holofoil"
+      },
+      "tcgdexId": "neo4-107",
+      "pricedCatalogueId": "neo4-107",
+      "identityMatch": "English name, set symbol and collector number visually checked; printing difference or unconfirmed foil explicitly captioned.",
+      "alt": "Shining Charizard — English Neo Destiny 107/105 reference scan, 1st Edition Holofoil. Reference scan: 1st Edition Holofoil; priced printing: Unlimited Holofoil.",
+      "visualReviewDate": "2026-11-03",
+      "imageSourcePage": "https://api.tcgdex.net/v2/en/cards/neo4-107",
+      "sourceCredit": "TCGdex",
+      "imageIsConditionEvidence": false,
+      "visualReview": "Visible 1st Edition stamp; English text and issue number verified."
+    },
+    {
+      "rank": 34,
+      "key": "88630|Holofoil",
+      "productId": 88630,
+      "name": "Rayquaza",
+      "pricedIdentity": {
+        "language": "English",
+        "set": "Dragons Exalted",
+        "number": "128/124",
+        "printing": "Holofoil"
+      },
+      "language": "English",
+      "catalogueURL": "https://www.tcgplayer.com/product/88630/pokemon-dragons-exalted-rayquaza",
+      "imageExactPrinting": true,
+      "imageNote": "",
+      "files": {
+        "low": {
+          "file": "top50-88630-low.webp",
+          "publicPath": "assets/top50/top50-88630-low.webp",
+          "sourceUrl": "https://assets.tcgdex.net/en/bw/bw6/128/low.webp",
+          "url": "https://assets.tcgdex.net/en/bw/bw6/128/low.webp",
+          "sha256": "cdce2fb8e7ac3822c2cba2040fef36bd000255a0a6bb4eee375bbd2f281f1b82",
+          "bytes": 18196,
+          "width": 245,
+          "height": 337,
+          "format": "WEBP",
+          "unchangedDownload": true
+        },
+        "high": {
+          "file": "top50-88630-high.webp",
+          "publicPath": "assets/top50/top50-88630-high.webp",
+          "sourceUrl": "https://assets.tcgdex.net/en/bw/bw6/128/high.webp",
+          "url": "https://assets.tcgdex.net/en/bw/bw6/128/high.webp",
+          "sha256": "bd1f7cd5368a3de2af3528f259f6ebc8bbd2be61aa83c8c00c6ccfb20e34ea86",
+          "bytes": 74300,
+          "width": 600,
+          "height": 825,
+          "format": "WEBP",
+          "unchangedDownload": true
+        }
+      },
+      "imageProvider": "TCGdex",
+      "sourceMetadataURL": "https://api.tcgdex.net/v2/en/sets/bw6",
+      "referenceIdentity": {
+        "language": "English",
+        "set": "Dragons Exalted",
+        "number": "128/124",
+        "printing": "Holofoil"
+      },
+      "identityMatch": "Exact English set and collector number, previously visually reviewed.",
+      "reusedModernRank": 9,
+      "alt": "Rayquaza — English Dragons Exalted 128/124 reference scan, Holofoil.",
+      "visualReviewDate": "2026-11-03",
+      "imageSourcePage": "https://api.tcgdex.net/v2/en/sets/bw6",
+      "sourceCredit": "TCGdex",
+      "imageIsConditionEvidence": false,
+      "visualReview": "English card identity rechecked in final 50 contact sheets; exact issue previously reviewed in Modern 100 staging."
+    },
+    {
+      "rank": 35,
+      "key": "88874|1st Edition Holofoil",
+      "productId": 88874,
+      "name": "Sabrina's Gengar",
+      "pricedIdentity": {
+        "language": "English",
+        "set": "Gym Heroes",
+        "number": "014/132",
+        "printing": "1st Edition Holofoil"
+      },
+      "language": "English",
+      "catalogueURL": "https://www.tcgplayer.com/product/88874/pokemon-gym-heroes-sabrinas-gengar",
+      "imageExactPrinting": true,
+      "imageNote": "",
+      "files": {
+        "low": {
+          "file": "top50-88874-low.webp",
+          "publicPath": "assets/top50/top50-88874-low.webp",
+          "sourceUrl": "https://assets.tcgdex.net/en/gym/gym1/14/low.webp",
+          "url": "https://assets.tcgdex.net/en/gym/gym1/14/low.webp",
+          "sha256": "cd1195d5c0b126ae41ab10d268396dd285b9560ddf016b4ec3a12961cdb418d0",
+          "bytes": 22438,
+          "width": 245,
+          "height": 337,
+          "format": "WEBP",
+          "unchangedDownload": true
+        },
+        "high": {
+          "file": "top50-88874-high.webp",
+          "publicPath": "assets/top50/top50-88874-high.webp",
+          "sourceUrl": "https://assets.tcgdex.net/en/gym/gym1/14/high.webp",
+          "url": "https://assets.tcgdex.net/en/gym/gym1/14/high.webp",
+          "sha256": "46f731c18b86e9b5bbd36ef72cffd835d291f703dbea95ae308ee7ed7c9d074a",
+          "bytes": 93114,
+          "width": 600,
+          "height": 825,
+          "format": "WEBP",
+          "unchangedDownload": true
+        }
+      },
+      "imageProvider": "TCGdex",
+      "sourceMetadataURL": "https://api.tcgdex.net/v2/en/cards/gym1-14",
+      "referenceIdentity": {
+        "language": "English",
+        "set": "Gym Heroes",
+        "number": "014/132",
+        "printing": "1st Edition Holofoil"
+      },
+      "tcgdexId": "gym1-14",
+      "pricedCatalogueId": "gym1-14",
+      "identityMatch": "English name, set symbol and collector number visually checked; priced printing matches reference.",
+      "alt": "Sabrina's Gengar — English Gym Heroes 014/132 reference scan, 1st Edition Holofoil.",
+      "visualReviewDate": "2026-11-03",
+      "imageSourcePage": "https://api.tcgdex.net/v2/en/cards/gym1-14",
+      "sourceCredit": "TCGdex",
+      "imageIsConditionEvidence": false,
+      "visualReview": "Visible 1st Edition stamp; English text and issue number verified."
+    },
+    {
+      "rank": 36,
+      "key": "475983|Holofoil",
+      "productId": 475983,
+      "name": "Charizard VMAX - 020/189",
+      "pricedIdentity": {
+        "language": "English",
+        "set": "Prize Pack Series Cards",
+        "number": "020/189",
+        "printing": "Holofoil"
+      },
+      "language": "English",
+      "catalogueURL": "https://www.tcgplayer.com/product/475983/pokemon-prize-pack-series-cards-charizard-vmax-020-189",
+      "imageExactPrinting": false,
+      "imageNote": "Reference scan: Darkness Ablaze 20/189 without Play! Pokémon stamp; priced printing: Prize Pack Series Holofoil.",
+      "files": {
+        "low": {
+          "file": "top50-475983-low.webp",
+          "publicPath": "assets/top50/top50-475983-low.webp",
+          "sourceUrl": "https://assets.tcgdex.net/en/swsh/swsh3/20/low.webp",
+          "url": "https://assets.tcgdex.net/en/swsh/swsh3/20/low.webp",
+          "sha256": "3d94ba9f967cb5cc6d61797c7dfdeb29f3f5cea3ce39d65fe3cf7344d3767c8f",
+          "bytes": 25728,
+          "width": 245,
+          "height": 337,
+          "format": "WEBP",
+          "unchangedDownload": true
+        },
+        "high": {
+          "file": "top50-475983-high.webp",
+          "publicPath": "assets/top50/top50-475983-high.webp",
+          "sourceUrl": "https://assets.tcgdex.net/en/swsh/swsh3/20/high.webp",
+          "url": "https://assets.tcgdex.net/en/swsh/swsh3/20/high.webp",
+          "sha256": "97ff69c7061efa4863b7bd040495dae961c028ced22517af3640c496ffe88285",
+          "bytes": 92062,
+          "width": 600,
+          "height": 825,
+          "format": "WEBP",
+          "unchangedDownload": true
+        }
+      },
+      "imageProvider": "TCGdex",
+      "sourceMetadataURL": "https://api.tcgdex.net/v2/en/cards/swsh3-20",
+      "referenceIdentity": {
+        "language": "English",
+        "set": "Darkness Ablaze",
+        "number": "20/189",
+        "printing": "Darkness Ablaze regular Holofoil, no Play! Pokémon stamp"
+      },
+      "tcgdexId": "swsh3-20",
+      "pricedCatalogueId": "swsh3-20",
+      "identityMatch": "English Charizard VMAX 20/189, original Darkness Ablaze same artwork; Prize Pack reprint stamp is not pictured.",
+      "alt": "Charizard VMAX - 020/189 — English Darkness Ablaze 20/189 reference scan, Darkness Ablaze regular Holofoil, no Play! Pokémon stamp. Reference scan: Darkness Ablaze 20/189 without Play! Pokémon stamp; priced printing: Prize Pack Series Holofoil.",
+      "visualReviewDate": "2026-11-03",
+      "imageSourcePage": "https://api.tcgdex.net/v2/en/cards/swsh3-20",
+      "sourceCredit": "TCGdex",
+      "imageIsConditionEvidence": false,
+      "visualReview": "English Charizard VMAX 20/189 original Darkness Ablaze printing; prize-pack stamp absent."
+    },
+    {
+      "rank": 37,
+      "key": "246733|Holofoil",
+      "productId": 246733,
+      "name": "Rayquaza VMAX (Alternate Art Secret)",
+      "pricedIdentity": {
+        "language": "English",
+        "set": "SWSH07: Evolving Skies",
+        "number": "218/203",
+        "printing": "Holofoil"
+      },
+      "language": "English",
+      "catalogueURL": "https://www.tcgplayer.com/product/246733/pokemon-swsh07-evolving-skies-rayquaza-vmax-alternate-art-secret",
+      "imageExactPrinting": true,
+      "imageNote": "",
+      "files": {
+        "low": {
+          "file": "top50-246733-low.webp",
+          "publicPath": "assets/top50/top50-246733-low.webp",
+          "sourceUrl": "https://assets.tcgdex.net/en/swsh/swsh7/218/low.webp",
+          "url": "https://assets.tcgdex.net/en/swsh/swsh7/218/low.webp",
+          "sha256": "348d032699b73142f2261d43c2aa1abebf5358596aa1212e04bb864faf530962",
+          "bytes": 31312,
+          "width": 245,
+          "height": 337,
+          "format": "WEBP",
+          "unchangedDownload": true
+        },
+        "high": {
+          "file": "top50-246733-high.webp",
+          "publicPath": "assets/top50/top50-246733-high.webp",
+          "sourceUrl": "https://assets.tcgdex.net/en/swsh/swsh7/218/high.webp",
+          "url": "https://assets.tcgdex.net/en/swsh/swsh7/218/high.webp",
+          "sha256": "bd2e28700f54fec24a0d75fd9665d5d9e5689aff90e64a08ea30a20a16759dd0",
+          "bytes": 141618,
+          "width": 600,
+          "height": 825,
+          "format": "WEBP",
+          "unchangedDownload": true
+        }
+      },
+      "imageProvider": "TCGdex",
+      "sourceMetadataURL": "https://api.tcgdex.net/v2/en/sets/swsh7",
+      "referenceIdentity": {
+        "language": "English",
+        "set": "Evolving Skies",
+        "number": "218/203",
+        "printing": "Holofoil"
+      },
+      "identityMatch": "Exact English set and collector number, previously visually reviewed.",
+      "reusedModernRank": 10,
+      "alt": "Rayquaza VMAX (Alternate Art Secret) — English Evolving Skies 218/203 reference scan, Holofoil.",
+      "visualReviewDate": "2026-11-03",
+      "imageSourcePage": "https://api.tcgdex.net/v2/en/sets/swsh7",
+      "sourceCredit": "TCGdex",
+      "imageIsConditionEvidence": false,
+      "visualReview": "English card identity rechecked in final 50 contact sheets; exact issue previously reviewed in Modern 100 staging."
+    },
+    {
+      "rank": 38,
+      "key": "88635|Reverse Holofoil",
+      "productId": 88635,
+      "name": "Rayquaza - 026/110 (Delta Species)",
+      "pricedIdentity": {
+        "language": "English",
+        "set": "EX Holon Phantoms",
+        "number": "26/110",
+        "printing": "Reverse Holofoil"
+      },
+      "language": "English",
+      "catalogueURL": "https://www.tcgplayer.com/product/88635/pokemon-ex-holon-phantoms-rayquaza-026-110-delta-species",
+      "imageExactPrinting": false,
+      "imageNote": "Reference scan: standard non-holo; priced printing: Reverse Holofoil.",
+      "files": {
+        "low": {
+          "file": "top50-88635-low.webp",
+          "publicPath": "assets/top50/top50-88635-low.webp",
+          "sourceUrl": "https://assets.tcgdex.net/en/ex/ex13/26/low.webp",
+          "url": "https://assets.tcgdex.net/en/ex/ex13/26/low.webp",
+          "sha256": "a54148b8235d9fff1fea3c48c2cdff085cb992ffa1f4167b18239c9297d38848",
+          "bytes": 17920,
+          "width": 245,
+          "height": 337,
+          "format": "WEBP",
+          "unchangedDownload": true
+        },
+        "high": {
+          "file": "top50-88635-high.webp",
+          "publicPath": "assets/top50/top50-88635-high.webp",
+          "sourceUrl": "https://assets.tcgdex.net/en/ex/ex13/26/high.webp",
+          "url": "https://assets.tcgdex.net/en/ex/ex13/26/high.webp",
+          "sha256": "12640da2282b1281ccae09ea4909999733b0dee67bdcc0fd3a58629334309248",
+          "bytes": 82016,
+          "width": 600,
+          "height": 825,
+          "format": "WEBP",
+          "unchangedDownload": true
+        }
+      },
+      "imageProvider": "TCGdex",
+      "sourceMetadataURL": "https://api.tcgdex.net/v2/en/cards/ex13-26",
+      "referenceIdentity": {
+        "language": "English",
+        "set": "Holon Phantoms",
+        "number": "26/110",
+        "printing": "Normal"
+      },
+      "tcgdexId": "ex13-26",
+      "pricedCatalogueId": "ex13-26",
+      "identityMatch": "English name, set symbol and collector number visually checked; printing difference or unconfirmed foil explicitly captioned.",
+      "alt": "Rayquaza - 026/110 (Delta Species) — English Holon Phantoms 26/110 reference scan, Normal. Reference scan: standard non-holo; priced printing: Reverse Holofoil.",
+      "visualReviewDate": "2026-11-03",
+      "imageSourcePage": "https://api.tcgdex.net/v2/en/cards/ex13-26",
+      "sourceCredit": "TCGdex",
+      "imageIsConditionEvidence": false,
+      "visualReview": "Standard unstamped, non-reverse catalogue reference; English issue verified."
+    },
+    {
+      "rank": 39,
+      "key": "84195|Reverse Holofoil",
+      "productId": 84195,
+      "name": "Charizard (Delta Species)",
+      "pricedIdentity": {
+        "language": "English",
+        "set": "EX Crystal Guardians",
+        "number": "4/100",
+        "printing": "Reverse Holofoil"
+      },
+      "language": "English",
+      "catalogueURL": "https://www.tcgplayer.com/product/84195/pokemon-ex-crystal-guardians-charizard-delta-species",
+      "imageExactPrinting": false,
+      "imageNote": "Reference scan: standard scan without reverse set stamp; priced printing: Reverse Holofoil.",
+      "files": {
+        "low": {
+          "file": "top50-84195-low.webp",
+          "publicPath": "assets/top50/top50-84195-low.webp",
+          "sourceUrl": "https://assets.tcgdex.net/en/ex/ex14/4/low.webp",
+          "url": "https://assets.tcgdex.net/en/ex/ex14/4/low.webp",
+          "sha256": "2bc924ee411dfcbea13147bc60e0d2fccaf354286b82b951735876dab19e56b9",
+          "bytes": 22994,
+          "width": 245,
+          "height": 337,
+          "format": "WEBP",
+          "unchangedDownload": true
+        },
+        "high": {
+          "file": "top50-84195-high.webp",
+          "publicPath": "assets/top50/top50-84195-high.webp",
+          "sourceUrl": "https://assets.tcgdex.net/en/ex/ex14/4/high.webp",
+          "url": "https://assets.tcgdex.net/en/ex/ex14/4/high.webp",
+          "sha256": "5667d186f0dad8589dfdb7560a41ab0d7ebd18d32396a7db1349b6e8038d1408",
+          "bytes": 98266,
+          "width": 600,
+          "height": 825,
+          "format": "WEBP",
+          "unchangedDownload": true
+        }
+      },
+      "imageProvider": "TCGdex",
+      "sourceMetadataURL": "https://api.tcgdex.net/v2/en/cards/ex14-4",
+      "referenceIdentity": {
+        "language": "English",
+        "set": "Crystal Guardians",
+        "number": "4/100",
+        "printing": "Standard non-reverse reference"
+      },
+      "tcgdexId": "ex14-4",
+      "pricedCatalogueId": "ex14-4",
+      "identityMatch": "English name, set symbol and collector number visually checked; printing difference or unconfirmed foil explicitly captioned.",
+      "alt": "Charizard (Delta Species) — English Crystal Guardians 4/100 reference scan, Standard non-reverse reference. Reference scan: standard scan without reverse set stamp; priced printing: Reverse Holofoil.",
+      "visualReviewDate": "2026-11-03",
+      "imageSourcePage": "https://api.tcgdex.net/v2/en/cards/ex14-4",
+      "sourceCredit": "TCGdex",
+      "imageIsConditionEvidence": false,
+      "visualReview": "English issue verified. No reverse set-name stamp visible."
+    },
+    {
+      "rank": 40,
+      "key": "90135|Holofoil",
+      "productId": 90135,
+      "name": "Ultra Ball",
+      "pricedIdentity": {
+        "language": "English",
+        "set": "Plasma Freeze",
+        "number": "122/116",
+        "printing": "Holofoil"
+      },
+      "language": "English",
+      "catalogueURL": "https://www.tcgplayer.com/product/90135/pokemon-plasma-freeze-ultra-ball",
+      "imageExactPrinting": true,
+      "imageNote": "",
+      "files": {
+        "low": {
+          "file": "top50-90135-low.webp",
+          "publicPath": "assets/top50/top50-90135-low.webp",
+          "sourceUrl": "https://assets.tcgdex.net/en/bw/bw9/122/low.webp",
+          "url": "https://assets.tcgdex.net/en/bw/bw9/122/low.webp",
+          "sha256": "fbae081048c023ead8ca1b4b63effb92b14a19466562d0ad674241521f0290ab",
+          "bytes": 19052,
+          "width": 245,
+          "height": 337,
+          "format": "WEBP",
+          "unchangedDownload": true
+        },
+        "high": {
+          "file": "top50-90135-high.webp",
+          "publicPath": "assets/top50/top50-90135-high.webp",
+          "sourceUrl": "https://assets.tcgdex.net/en/bw/bw9/122/high.webp",
+          "url": "https://assets.tcgdex.net/en/bw/bw9/122/high.webp",
+          "sha256": "ab917166cd10ded586f948ea4db958349fbf264647d3a4a9e783565228f75803",
+          "bytes": 77248,
+          "width": 600,
+          "height": 825,
+          "format": "WEBP",
+          "unchangedDownload": true
+        }
+      },
+      "imageProvider": "TCGdex",
+      "sourceMetadataURL": "https://api.tcgdex.net/v2/en/sets/bw9",
+      "referenceIdentity": {
+        "language": "English",
+        "set": "Plasma Freeze",
+        "number": "122/116",
+        "printing": "Holofoil"
+      },
+      "identityMatch": "Exact English set and collector number, previously visually reviewed.",
+      "reusedModernRank": 11,
+      "alt": "Ultra Ball — English Plasma Freeze 122/116 reference scan, Holofoil.",
+      "visualReviewDate": "2026-11-03",
+      "imageSourcePage": "https://api.tcgdex.net/v2/en/sets/bw9",
+      "sourceCredit": "TCGdex",
+      "imageIsConditionEvidence": false,
+      "visualReview": "English card identity rechecked in final 50 contact sheets; exact issue previously reviewed in Modern 100 staging."
+    },
+    {
+      "rank": 41,
+      "key": "88625|Reverse Holofoil",
+      "productId": 88625,
+      "name": "Rayquaza",
+      "pricedIdentity": {
+        "language": "English",
+        "set": "EX Deoxys",
+        "number": "22/107",
+        "printing": "Reverse Holofoil"
+      },
+      "language": "English",
+      "catalogueURL": "https://www.tcgplayer.com/product/88625/pokemon-ex-deoxys-rayquaza",
+      "imageExactPrinting": false,
+      "imageNote": "Reference scan: standard non-holo; priced printing: Reverse Holofoil.",
+      "files": {
+        "low": {
+          "file": "top50-88625-low.webp",
+          "publicPath": "assets/top50/top50-88625-low.webp",
+          "sourceUrl": "https://assets.tcgdex.net/en/ex/ex8/22/low.webp",
+          "url": "https://assets.tcgdex.net/en/ex/ex8/22/low.webp",
+          "sha256": "d3bdd7347a255f449005c4a6d1c1ff96fc6e7656f089af33bf1742560a760c20",
+          "bytes": 16990,
+          "width": 245,
+          "height": 337,
+          "format": "WEBP",
+          "unchangedDownload": true
+        },
+        "high": {
+          "file": "top50-88625-high.webp",
+          "publicPath": "assets/top50/top50-88625-high.webp",
+          "sourceUrl": "https://assets.tcgdex.net/en/ex/ex8/22/high.webp",
+          "url": "https://assets.tcgdex.net/en/ex/ex8/22/high.webp",
+          "sha256": "df06f1cc46d47bde852393151244f1c8670e9460411740ce5d9cbf4eb697d1b8",
+          "bytes": 115370,
+          "width": 600,
+          "height": 825,
+          "format": "WEBP",
+          "unchangedDownload": true
+        }
+      },
+      "imageProvider": "TCGdex",
+      "sourceMetadataURL": "https://api.tcgdex.net/v2/en/cards/ex8-22",
+      "referenceIdentity": {
+        "language": "English",
+        "set": "Deoxys",
+        "number": "22/107",
+        "printing": "Normal"
+      },
+      "tcgdexId": "ex8-22",
+      "pricedCatalogueId": "ex8-22",
+      "identityMatch": "English name, set symbol and collector number visually checked; printing difference or unconfirmed foil explicitly captioned.",
+      "alt": "Rayquaza — English Deoxys 22/107 reference scan, Normal. Reference scan: standard non-holo; priced printing: Reverse Holofoil.",
+      "visualReviewDate": "2026-11-03",
+      "imageSourcePage": "https://api.tcgdex.net/v2/en/cards/ex8-22",
+      "sourceCredit": "TCGdex",
+      "imageIsConditionEvidence": false,
+      "visualReview": "Standard unstamped, non-reverse catalogue reference; English issue verified."
+    },
+    {
+      "rank": 42,
+      "key": "610516|Holofoil",
+      "productId": 610516,
+      "name": "Umbreon ex - 161/131",
+      "pricedIdentity": {
+        "language": "English",
+        "set": "SV: Prismatic Evolutions",
+        "number": "161/131",
+        "printing": "Holofoil"
+      },
+      "language": "English",
+      "catalogueURL": "https://www.tcgplayer.com/product/610516/pokemon-sv-prismatic-evolutions-umbreon-ex-161-131",
+      "imageExactPrinting": true,
+      "imageNote": "",
+      "files": {
+        "low": {
+          "file": "top50-610516-low.webp",
+          "publicPath": "assets/top50/top50-610516-low.webp",
+          "sourceUrl": "https://assets.tcgdex.net/en/sv/sv08.5/161/low.webp",
+          "url": "https://assets.tcgdex.net/en/sv/sv08.5/161/low.webp",
+          "sha256": "91974b52afdaa7eb05c44e86b070779f1b021ddf1d012ab733a02d3d0710a5b7",
+          "bytes": 35654,
+          "width": 245,
+          "height": 337,
+          "format": "WEBP",
+          "unchangedDownload": true
+        },
+        "high": {
+          "file": "top50-610516-high.webp",
+          "publicPath": "assets/top50/top50-610516-high.webp",
+          "sourceUrl": "https://assets.tcgdex.net/en/sv/sv08.5/161/high.webp",
+          "url": "https://assets.tcgdex.net/en/sv/sv08.5/161/high.webp",
+          "sha256": "d066a934daaced5239b16fc33b0a83a6cafac1ea8a21998dd3c2b18dbb1d78d5",
+          "bytes": 168102,
+          "width": 600,
+          "height": 825,
+          "format": "WEBP",
+          "unchangedDownload": true
+        }
+      },
+      "imageProvider": "TCGdex",
+      "sourceMetadataURL": "https://api.tcgdex.net/v2/en/sets/sv08.5",
+      "referenceIdentity": {
+        "language": "English",
+        "set": "Prismatic Evolutions",
+        "number": "161/131",
+        "printing": "Holofoil"
+      },
+      "identityMatch": "Exact English set and collector number, previously visually reviewed.",
+      "reusedModernRank": 12,
+      "alt": "Umbreon ex - 161/131 — English Prismatic Evolutions 161/131 reference scan, Holofoil.",
+      "visualReviewDate": "2026-11-03",
+      "imageSourcePage": "https://api.tcgdex.net/v2/en/sets/sv08.5",
+      "sourceCredit": "TCGdex",
+      "imageIsConditionEvidence": false,
+      "visualReview": "English card identity rechecked in final 50 contact sheets; exact issue previously reviewed in Modern 100 staging."
+    },
+    {
+      "rank": 43,
+      "key": "101520|Holofoil",
+      "productId": 101520,
+      "name": "M Rayquaza EX (Shiny Full Art)",
+      "pricedIdentity": {
+        "language": "English",
+        "set": "XY - Ancient Origins",
+        "number": "98/98",
+        "printing": "Holofoil"
+      },
+      "language": "English",
+      "catalogueURL": "https://www.tcgplayer.com/product/101520/pokemon-xy-ancient-origins-m-rayquaza-ex-shiny-full-art",
+      "imageExactPrinting": true,
+      "imageNote": "",
+      "files": {
+        "low": {
+          "file": "top50-101520-low.webp",
+          "publicPath": "assets/top50/top50-101520-low.webp",
+          "sourceUrl": "https://assets.tcgdex.net/en/xy/xy7/98/low.webp",
+          "url": "https://assets.tcgdex.net/en/xy/xy7/98/low.webp",
+          "sha256": "177b1c9e9fe97435db4ace6cfea8db816104854ede19224315f7e9ac80affbef",
+          "bytes": 36158,
+          "width": 245,
+          "height": 337,
+          "format": "WEBP",
+          "unchangedDownload": true
+        },
+        "high": {
+          "file": "top50-101520-high.webp",
+          "publicPath": "assets/top50/top50-101520-high.webp",
+          "sourceUrl": "https://assets.tcgdex.net/en/xy/xy7/98/high.webp",
+          "url": "https://assets.tcgdex.net/en/xy/xy7/98/high.webp",
+          "sha256": "fac5dda7adabbed937b3b3d8a868ff63e379f5deb615f49a9657fce6b07ac3c1",
+          "bytes": 128932,
+          "width": 600,
+          "height": 825,
+          "format": "WEBP",
+          "unchangedDownload": true
+        }
+      },
+      "imageProvider": "TCGdex",
+      "sourceMetadataURL": "https://api.tcgdex.net/v2/en/sets/xy7",
+      "referenceIdentity": {
+        "language": "English",
+        "set": "Ancient Origins",
+        "number": "98/98",
+        "printing": "Holofoil"
+      },
+      "identityMatch": "Exact English set and collector number, previously visually reviewed.",
+      "reusedModernRank": 13,
+      "alt": "M Rayquaza EX (Shiny Full Art) — English Ancient Origins 98/98 reference scan, Holofoil.",
+      "visualReviewDate": "2026-11-03",
+      "imageSourcePage": "https://api.tcgdex.net/v2/en/sets/xy7",
+      "sourceCredit": "TCGdex",
+      "imageIsConditionEvidence": false,
+      "visualReview": "English card identity rechecked in final 50 contact sheets; exact issue previously reviewed in Modern 100 staging."
+    },
+    {
+      "rank": 44,
+      "key": "84587|Reverse Holofoil",
+      "productId": 84587,
+      "name": "Dark Dragonite",
+      "pricedIdentity": {
+        "language": "English",
+        "set": "EX Team Rocket Returns",
+        "number": "15/109",
+        "printing": "Reverse Holofoil"
+      },
+      "language": "English",
+      "catalogueURL": "https://www.tcgplayer.com/product/84587/pokemon-ex-team-rocket-returns-dark-dragonite",
+      "imageExactPrinting": false,
+      "imageNote": "Reference scan: standard non-holo; priced printing: Reverse Holofoil.",
+      "files": {
+        "low": {
+          "file": "top50-84587-low.webp",
+          "publicPath": "assets/top50/top50-84587-low.webp",
+          "sourceUrl": "https://assets.tcgdex.net/en/ex/ex7/15/low.webp",
+          "url": "https://assets.tcgdex.net/en/ex/ex7/15/low.webp",
+          "sha256": "63fa0277e580198365625119173c01e282ca49cf3f4e4a7880186d95024785d3",
+          "bytes": 18964,
+          "width": 245,
+          "height": 337,
+          "format": "WEBP",
+          "unchangedDownload": true
+        },
+        "high": {
+          "file": "top50-84587-high.webp",
+          "publicPath": "assets/top50/top50-84587-high.webp",
+          "sourceUrl": "https://assets.tcgdex.net/en/ex/ex7/15/high.webp",
+          "url": "https://assets.tcgdex.net/en/ex/ex7/15/high.webp",
+          "sha256": "62b95bf5691f6166a5c9d21abdd55510abe842f43ac495f59531bd796528d440",
+          "bytes": 109260,
+          "width": 600,
+          "height": 825,
+          "format": "WEBP",
+          "unchangedDownload": true
+        }
+      },
+      "imageProvider": "TCGdex",
+      "sourceMetadataURL": "https://api.tcgdex.net/v2/en/cards/ex7-15",
+      "referenceIdentity": {
+        "language": "English",
+        "set": "Team Rocket Returns",
+        "number": "15/109",
+        "printing": "Normal"
+      },
+      "tcgdexId": "ex7-15",
+      "pricedCatalogueId": "ex7-15",
+      "identityMatch": "English name, set symbol and collector number visually checked; printing difference or unconfirmed foil explicitly captioned.",
+      "alt": "Dark Dragonite — English Team Rocket Returns 15/109 reference scan, Normal. Reference scan: standard non-holo; priced printing: Reverse Holofoil.",
+      "visualReviewDate": "2026-11-03",
+      "imageSourcePage": "https://api.tcgdex.net/v2/en/cards/ex7-15",
+      "sourceCredit": "TCGdex",
+      "imageIsConditionEvidence": false,
+      "visualReview": "Standard unstamped, non-reverse catalogue reference; English issue verified."
+    },
+    {
+      "rank": 45,
+      "key": "89608|Holofoil",
+      "productId": 89608,
+      "name": "Suicune Star",
+      "pricedIdentity": {
+        "language": "English",
+        "set": "EX Unseen Forces",
+        "number": "115/115",
+        "printing": "Holofoil"
+      },
+      "language": "English",
+      "catalogueURL": "https://www.tcgplayer.com/product/89608/pokemon-ex-unseen-forces-suicune-star",
+      "imageExactPrinting": true,
+      "imageNote": "",
+      "files": {
+        "low": {
+          "file": "top50-89608-low.webp",
+          "publicPath": "assets/top50/top50-89608-low.webp",
+          "sourceUrl": "https://assets.tcgdex.net/en/ex/ex10/115/low.webp",
+          "url": "https://assets.tcgdex.net/en/ex/ex10/115/low.webp",
+          "sha256": "d060c488ef29ee6c4cc475957610f30e660ce54e64a239b4be5b24108c4be5da",
+          "bytes": 20062,
+          "width": 245,
+          "height": 337,
+          "format": "WEBP",
+          "unchangedDownload": true
+        },
+        "high": {
+          "file": "top50-89608-high.webp",
+          "publicPath": "assets/top50/top50-89608-high.webp",
+          "sourceUrl": "https://assets.tcgdex.net/en/ex/ex10/115/high.webp",
+          "url": "https://assets.tcgdex.net/en/ex/ex10/115/high.webp",
+          "sha256": "15ed7972a212b4fdc80b3dbc4b8f7bd3a44a30ca83d88d6fc1f83914b548ab71",
+          "bytes": 95702,
+          "width": 600,
+          "height": 825,
+          "format": "WEBP",
+          "unchangedDownload": true
+        }
+      },
+      "imageProvider": "TCGdex",
+      "sourceMetadataURL": "https://api.tcgdex.net/v2/en/cards/ex10-115",
+      "referenceIdentity": {
+        "language": "English",
+        "set": "Unseen Forces",
+        "number": "115/115",
+        "printing": "Holofoil"
+      },
+      "tcgdexId": "ex10-115",
+      "pricedCatalogueId": "ex10-115",
+      "identityMatch": "English name, set symbol and collector number visually checked; priced printing matches reference.",
+      "alt": "Suicune Star — English Unseen Forces 115/115 reference scan, Holofoil.",
+      "visualReviewDate": "2026-11-03",
+      "imageSourcePage": "https://api.tcgdex.net/v2/en/cards/ex10-115",
+      "sourceCredit": "TCGdex",
+      "imageIsConditionEvidence": false,
+      "visualReview": "English issue and regular holo/Gold Star/ex illustration verified."
+    },
+    {
+      "rank": 46,
+      "key": "88801|Holofoil",
+      "productId": 88801,
+      "name": "Rocket's Zapdos ex",
+      "pricedIdentity": {
+        "language": "English",
+        "set": "EX Team Rocket Returns",
+        "number": "106/109",
+        "printing": "Holofoil"
+      },
+      "language": "English",
+      "catalogueURL": "https://www.tcgplayer.com/product/88801/pokemon-ex-team-rocket-returns-rockets-zapdos-ex",
+      "imageExactPrinting": true,
+      "imageNote": "",
+      "files": {
+        "low": {
+          "file": "top50-88801-low.webp",
+          "publicPath": "assets/top50/top50-88801-low.webp",
+          "sourceUrl": "https://assets.tcgdex.net/en/ex/ex7/106/low.webp",
+          "url": "https://assets.tcgdex.net/en/ex/ex7/106/low.webp",
+          "sha256": "5533ab89ddb756036ff26bf210b140fd4687ccab6370333224a04ccb3b09acf4",
+          "bytes": 18868,
+          "width": 245,
+          "height": 337,
+          "format": "WEBP",
+          "unchangedDownload": true
+        },
+        "high": {
+          "file": "top50-88801-high.webp",
+          "publicPath": "assets/top50/top50-88801-high.webp",
+          "sourceUrl": "https://assets.tcgdex.net/en/ex/ex7/106/high.webp",
+          "url": "https://assets.tcgdex.net/en/ex/ex7/106/high.webp",
+          "sha256": "d00d98bf57bf6bfd7f929bbd55f1979d8cadce0511c57137aefff5dfd5cfc516",
+          "bytes": 87418,
+          "width": 600,
+          "height": 825,
+          "format": "WEBP",
+          "unchangedDownload": true
+        }
+      },
+      "imageProvider": "TCGdex",
+      "sourceMetadataURL": "https://api.tcgdex.net/v2/en/cards/ex7-106",
+      "referenceIdentity": {
+        "language": "English",
+        "set": "Team Rocket Returns",
+        "number": "106/109",
+        "printing": "Holofoil"
+      },
+      "tcgdexId": "ex7-106",
+      "pricedCatalogueId": "ex7-106",
+      "identityMatch": "English name, set symbol and collector number visually checked; priced printing matches reference.",
+      "alt": "Rocket's Zapdos ex — English Team Rocket Returns 106/109 reference scan, Holofoil.",
+      "visualReviewDate": "2026-11-03",
+      "imageSourcePage": "https://api.tcgdex.net/v2/en/cards/ex7-106",
+      "sourceCredit": "TCGdex",
+      "imageIsConditionEvidence": false,
+      "visualReview": "English issue and regular holo/Gold Star/ex illustration verified."
+    },
+    {
+      "rank": 47,
+      "key": "88626|Reverse Holofoil",
+      "productId": 88626,
+      "name": "Rayquaza",
+      "pricedIdentity": {
+        "language": "English",
+        "set": "EX Emerald",
+        "number": "9/106",
+        "printing": "Reverse Holofoil"
+      },
+      "language": "English",
+      "catalogueURL": "https://www.tcgplayer.com/product/88626/pokemon-ex-emerald-rayquaza",
+      "imageExactPrinting": false,
+      "imageNote": "Reference scan: standard non-holo; priced printing: Reverse Holofoil.",
+      "files": {
+        "low": {
+          "file": "top50-88626-low.webp",
+          "publicPath": "assets/top50/top50-88626-low.webp",
+          "sourceUrl": "https://assets.tcgdex.net/en/ex/ex9/9/low.webp",
+          "url": "https://assets.tcgdex.net/en/ex/ex9/9/low.webp",
+          "sha256": "68ca00abae3abad1079b05d5b538d3d924e40dddd51acc957a244ca656f1d5ac",
+          "bytes": 18176,
+          "width": 245,
+          "height": 337,
+          "format": "WEBP",
+          "unchangedDownload": true
+        },
+        "high": {
+          "file": "top50-88626-high.webp",
+          "publicPath": "assets/top50/top50-88626-high.webp",
+          "sourceUrl": "https://assets.tcgdex.net/en/ex/ex9/9/high.webp",
+          "url": "https://assets.tcgdex.net/en/ex/ex9/9/high.webp",
+          "sha256": "f0b1f580e0529675cbc60a064f09105964b284705a7fd5545cdfc432b27d5eff",
+          "bytes": 81080,
+          "width": 600,
+          "height": 825,
+          "format": "WEBP",
+          "unchangedDownload": true
+        }
+      },
+      "imageProvider": "TCGdex",
+      "sourceMetadataURL": "https://api.tcgdex.net/v2/en/cards/ex9-9",
+      "referenceIdentity": {
+        "language": "English",
+        "set": "Emerald",
+        "number": "9/106",
+        "printing": "Normal"
+      },
+      "tcgdexId": "ex9-9",
+      "pricedCatalogueId": "ex9-9",
+      "identityMatch": "English name, set symbol and collector number visually checked; printing difference or unconfirmed foil explicitly captioned.",
+      "alt": "Rayquaza — English Emerald 9/106 reference scan, Normal. Reference scan: standard non-holo; priced printing: Reverse Holofoil.",
+      "visualReviewDate": "2026-11-03",
+      "imageSourcePage": "https://api.tcgdex.net/v2/en/cards/ex9-9",
+      "sourceCredit": "TCGdex",
+      "imageIsConditionEvidence": false,
+      "visualReview": "Standard unstamped, non-reverse catalogue reference; English issue verified."
+    },
+    {
+      "rank": 48,
+      "key": "84599|Unlimited Holofoil",
+      "productId": 84599,
+      "name": "Dark Gengar",
+      "pricedIdentity": {
+        "language": "English",
+        "set": "Neo Destiny",
+        "number": "006/105",
+        "printing": "Unlimited Holofoil"
+      },
+      "language": "English",
+      "catalogueURL": "https://www.tcgplayer.com/product/84599/pokemon-neo-destiny-dark-gengar",
+      "imageExactPrinting": false,
+      "imageNote": "Reference scan: 1st Edition Holofoil; priced printing: Unlimited Holofoil.",
+      "files": {
+        "low": {
+          "file": "top50-84599-low.webp",
+          "publicPath": "assets/top50/top50-84599-low.webp",
+          "sourceUrl": "https://assets.tcgdex.net/en/neo/neo4/6/low.webp",
+          "url": "https://assets.tcgdex.net/en/neo/neo4/6/low.webp",
+          "sha256": "f1cfca5e53a1ad198dab23d585928dc9a80c18370703555bda908af6b4658b77",
+          "bytes": 19948,
+          "width": 245,
+          "height": 337,
+          "format": "WEBP",
+          "unchangedDownload": true
+        },
+        "high": {
+          "file": "top50-84599-high.webp",
+          "publicPath": "assets/top50/top50-84599-high.webp",
+          "sourceUrl": "https://assets.tcgdex.net/en/neo/neo4/6/high.webp",
+          "url": "https://assets.tcgdex.net/en/neo/neo4/6/high.webp",
+          "sha256": "9c93d894af9b103d1d10be7a4dffec0bc45c145ecbb3f3648963bd2853cb1ee1",
+          "bytes": 104246,
+          "width": 600,
+          "height": 825,
+          "format": "WEBP",
+          "unchangedDownload": true
+        }
+      },
+      "imageProvider": "TCGdex",
+      "sourceMetadataURL": "https://api.tcgdex.net/v2/en/cards/neo4-6",
+      "referenceIdentity": {
+        "language": "English",
+        "set": "Neo Destiny",
+        "number": "006/105",
+        "printing": "1st Edition Holofoil"
+      },
+      "tcgdexId": "neo4-6",
+      "pricedCatalogueId": "neo4-6",
+      "identityMatch": "English name, set symbol and collector number visually checked; printing difference or unconfirmed foil explicitly captioned.",
+      "alt": "Dark Gengar — English Neo Destiny 006/105 reference scan, 1st Edition Holofoil. Reference scan: 1st Edition Holofoil; priced printing: Unlimited Holofoil.",
+      "visualReviewDate": "2026-11-03",
+      "imageSourcePage": "https://api.tcgdex.net/v2/en/cards/neo4-6",
+      "sourceCredit": "TCGdex",
+      "imageIsConditionEvidence": false,
+      "visualReview": "Visible 1st Edition stamp; English text and issue number verified."
+    },
+    {
+      "rank": 49,
+      "key": "87425|Reverse Holofoil",
+      "productId": 87425,
+      "name": "Mewtwo (Delta Species)",
+      "pricedIdentity": {
+        "language": "English",
+        "set": "EX Delta Species",
+        "number": "12/113",
+        "printing": "Reverse Holofoil"
+      },
+      "language": "English",
+      "catalogueURL": "https://www.tcgplayer.com/product/87425/pokemon-ex-delta-species-mewtwo-delta-species",
+      "imageExactPrinting": false,
+      "imageNote": "Reference scan: standard scan without reverse set stamp; priced printing: Reverse Holofoil.",
+      "files": {
+        "low": {
+          "file": "top50-87425-low.webp",
+          "publicPath": "assets/top50/top50-87425-low.webp",
+          "sourceUrl": "https://assets.tcgdex.net/en/ex/ex11/12/low.webp",
+          "url": "https://assets.tcgdex.net/en/ex/ex11/12/low.webp",
+          "sha256": "f4c4e6dc3ab834c0c2997579d44c0f63267e3ec30359132a8046010400a3b456",
+          "bytes": 18852,
+          "width": 245,
+          "height": 337,
+          "format": "WEBP",
+          "unchangedDownload": true
+        },
+        "high": {
+          "file": "top50-87425-high.webp",
+          "publicPath": "assets/top50/top50-87425-high.webp",
+          "sourceUrl": "https://assets.tcgdex.net/en/ex/ex11/12/high.webp",
+          "url": "https://assets.tcgdex.net/en/ex/ex11/12/high.webp",
+          "sha256": "dfb98a035c5faca92c89ecc75e008a0b0943582626e90ca5c18e095031b6672c",
+          "bytes": 88066,
+          "width": 600,
+          "height": 825,
+          "format": "WEBP",
+          "unchangedDownload": true
+        }
+      },
+      "imageProvider": "TCGdex",
+      "sourceMetadataURL": "https://api.tcgdex.net/v2/en/cards/ex11-12",
+      "referenceIdentity": {
+        "language": "English",
+        "set": "Delta Species",
+        "number": "12/113",
+        "printing": "Standard non-reverse reference"
+      },
+      "tcgdexId": "ex11-12",
+      "pricedCatalogueId": "ex11-12",
+      "identityMatch": "English name, set symbol and collector number visually checked; printing difference or unconfirmed foil explicitly captioned.",
+      "alt": "Mewtwo (Delta Species) — English Delta Species 12/113 reference scan, Standard non-reverse reference. Reference scan: standard scan without reverse set stamp; priced printing: Reverse Holofoil.",
+      "visualReviewDate": "2026-11-03",
+      "imageSourcePage": "https://api.tcgdex.net/v2/en/cards/ex11-12",
+      "sourceCredit": "TCGdex",
+      "imageIsConditionEvidence": false,
+      "visualReview": "English issue verified. No reverse set-name stamp visible."
+    },
+    {
+      "rank": 50,
+      "key": "94689|Holofoil",
+      "productId": 94689,
+      "name": "Dialga EX (122 Secret Rare)",
+      "pricedIdentity": {
+        "language": "English",
+        "set": "XY - Phantom Forces",
+        "number": "122/119",
+        "printing": "Holofoil"
+      },
+      "language": "English",
+      "catalogueURL": "https://www.tcgplayer.com/product/94689/pokemon-xy-phantom-forces-dialga-ex-122-secret-rare",
+      "imageExactPrinting": true,
+      "imageNote": "",
+      "files": {
+        "low": {
+          "file": "top50-94689-low.webp",
+          "publicPath": "assets/top50/top50-94689-low.webp",
+          "sourceUrl": "https://assets.tcgdex.net/en/xy/xy4/122/low.webp",
+          "url": "https://assets.tcgdex.net/en/xy/xy4/122/low.webp",
+          "sha256": "29feac34c67ab77ee01e0a5dd820648cf770d0c1b52f61e7ab34205d35c7cadc",
+          "bytes": 13026,
+          "width": 245,
+          "height": 337,
+          "format": "WEBP",
+          "unchangedDownload": true
+        },
+        "high": {
+          "file": "top50-94689-high.webp",
+          "publicPath": "assets/top50/top50-94689-high.webp",
+          "sourceUrl": "https://assets.tcgdex.net/en/xy/xy4/122/high.webp",
+          "url": "https://assets.tcgdex.net/en/xy/xy4/122/high.webp",
+          "sha256": "b41a8e3fbbaf013081cd34fa221b66c8e4f9d5f9ccfae029f2fadc66a90dfedb",
+          "bytes": 40408,
+          "width": 600,
+          "height": 825,
+          "format": "WEBP",
+          "unchangedDownload": true
+        }
+      },
+      "imageProvider": "TCGdex",
+      "sourceMetadataURL": "https://api.tcgdex.net/v2/en/sets/xy4",
+      "referenceIdentity": {
+        "language": "English",
+        "set": "Phantom Forces",
+        "number": "122/119",
+        "printing": "Holofoil"
+      },
+      "identityMatch": "Exact English set and collector number, previously visually reviewed.",
+      "reusedModernRank": 15,
+      "alt": "Dialga EX (122 Secret Rare) — English Phantom Forces 122/119 reference scan, Holofoil.",
+      "visualReviewDate": "2026-11-03",
+      "imageSourcePage": "https://api.tcgdex.net/v2/en/sets/xy4",
+      "sourceCredit": "TCGdex",
+      "imageIsConditionEvidence": false,
+      "visualReview": "English card identity rechecked in final 50 contact sheets; exact issue previously reviewed in Modern 100 staging."
+    }
+  ],
+  "coverage": {
+    "cards": 50,
+    "realImageCoverage": 50,
+    "exactPrintingImages": 32,
+    "captionedReferenceImages": 18,
+    "reusedModernCards": 14,
+    "providers": {
+      "TCGdex": 46,
+      "Limitless public card catalogue": 3,
+      "Catch’em public catalogue / TCGplayer catalogue illustration": 1
+    }
+  },
+  "heroRecommendation": {
+    "caption": "Genuine catalogue artwork from the Top 50 — prices track the labelled printing.",
+    "productIds": [
+      85927,
+      84187,
+      86903,
+      183899,
+      246723,
+      183830
+    ],
+    "rationale": "Three vintage issues (Groudon Gold Star, EX Dragon Charizard, first-edition Neo Lugia) and three modern icons; all six pictured printings match their priced rows."
+  }
+}

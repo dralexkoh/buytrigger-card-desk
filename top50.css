@@ -1,0 +1,50 @@
+/* Top 50 shares the established Modern Index layout and BuyTrigger colours. */
+.top50-detail-hero .hero-disc{background:#ffd743;color:#171719}
+.top50-detail-hero .hero-readout strong{font-size:30px;letter-spacing:-.8px}
+.top50-detail-hero .hero-sub{max-width:460px}
+.top50-intro{padding-top:12px;padding-bottom:10px}
+.ranking-stats{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--line);border-radius:10px;background:white;margin-bottom:20px;overflow:hidden}
+.ranking-stats>div{padding:21px 24px}.ranking-stats>div+div{border-left:1px solid var(--line)}
+.ranking-stats span{font-size:10px;font-weight:750;text-transform:uppercase;letter-spacing:.6px;color:var(--muted);display:block}
+.ranking-stats b{font-size:28px;display:block;line-height:1.5;letter-spacing:-.8px}.ranking-stats small{font-size:11px;color:var(--muted)}
+.history-coverage-band{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin:5px 0 25px;border:1px solid var(--line);border-radius:8px;overflow:hidden}
+.history-coverage-band>div{padding:15px 19px;background:#fff}.history-coverage-band>div:first-child{background:#fff3c5}
+.history-coverage-band>div+div{border-left:1px solid var(--line)}.history-coverage-band b,.history-coverage-band span{display:block}
+.history-coverage-band b{font-size:13px;margin-bottom:5px}.history-coverage-band span{font-size:11px;color:#5b5b61}
+.printing-label{font-size:11px;color:#a81820;font-weight:800;display:block;margin:8px 0;min-height:16px}
+.reference-note{font-size:10px;line-height:1.55;color:#66666d;margin:9px 0;min-height:31px}
+.top50-price{font-size:29px;letter-spacing:-1px;font-weight:850;margin:8px 0 3px}.top50-price small{font-size:10px;letter-spacing:0;color:var(--muted);font-weight:600}
+.top50-history-stats{display:flex;justify-content:space-between;border-top:1px solid var(--line);padding-top:10px;gap:12px;font-size:11px}
+.top50-history-stats small{display:block;color:var(--muted);font-size:9px}.top50-history-stats b{font-size:13px}
+.catalog-card .catalog-rank{font-size:11px;font-weight:850}.catalog-art{cursor:pointer}.catalog-body h3{min-height:34px}
+.card-gallery .price-triplet{margin-top:10px}.card-gallery .price-triplet b{font-size:11px}.card-gallery .price-triplet span{font-size:10px}
+.card-gallery .price-triplet .selected b{color:#a81820}
+.auction-section{background:#171719;color:#fff}.auction-section .section-intro,.auction-section>.small{color:#c8c8cf}
+.auction-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin:25px 0}
+.auction-card{border:1px solid #45454b;border-radius:9px;padding:26px;background:#242427;display:flex;flex-direction:column}
+.auction-card .auction-year{font-size:60px;letter-spacing:-3px;font-weight:900;color:#ffd743;line-height:1}
+.auction-card h3{font-size:21px;line-height:1.2;margin:22px 0 10px}.auction-card .auction-value{font-size:36px;font-weight:850;letter-spacing:-1px;margin:16px 0 6px}
+.auction-card p{font-size:12px;color:#c8c8cf;line-height:1.6}.auction-card a{margin-top:auto;padding-top:20px;color:#fff;font-size:12px;font-weight:750;text-decoration:underline}
+.auction-card .pill{align-self:flex-start;margin-top:14px;background:#414146;color:#fff}.auction-card .auction-context{margin:12px 0 22px}
+.cohort-members{background:white;border:1px solid var(--line);padding:20px;border-radius:9px;margin-top:30px}.cohort-members summary{cursor:pointer;font-weight:750;font-size:14px}
+.cohort-members>p{font-size:12px;color:var(--muted);margin:16px 0}.cohort-members ol{columns:3;column-gap:35px;padding-left:22px;font-size:12px}.cohort-members li{break-inside:avoid;padding:5px}.cohort-members li small{display:block;color:var(--muted)}
+.dialog-history-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:16px 0}.dialog-history-stats span{font-size:10px;color:var(--muted);display:block}.dialog-history-stats b{font-size:16px}
+.three-bars .scenario-track.pending{background:repeating-linear-gradient(135deg,#efefeb,#efefeb 5px,#e6e6e2 5px,#e6e6e2 10px)}
+.dialog-image .reference-note{margin-top:14px;font-size:11px}.dialog-main .printing-label{font-size:13px}.history-table{max-height:330px;overflow:auto}.history-table th{position:sticky;top:0;background:#fff}
+.card-data-table td:first-child{min-width:300px}.card-data-table .table-card small{white-space:normal}.top50-card-context{font-size:11px;color:var(--muted);line-height:1.6}
+[hidden]{display:none!important}
+@media(max-width:900px){.ranking-stats>div{padding:18px}.ranking-stats b{font-size:23px}.auction-grid{gap:12px}.auction-card{padding:20px}.auction-card h3{font-size:18px}.auction-card .auction-value{font-size:30px}.cohort-members ol{columns:2}}
+@media(max-width:600px){.top50-detail-hero .hero-readout strong{font-size:27px}.ranking-stats{grid-template-columns:1fr 1fr}.ranking-stats>div:nth-child(3){border-left:0}.ranking-stats>div:nth-child(n+3){border-top:1px solid var(--line)}.ranking-stats b{font-size:24px}.ranking-stats small{font-size:10px}.history-coverage-band{grid-template-columns:1fr}.history-coverage-band>div{padding:13px 16px}.history-coverage-band>div+div{border-left:0;border-top:1px solid var(--line)}.history-coverage-band span{font-size:12px}.top50-price{font-size:25px}.printing-label{font-size:10px;min-height:28px}.reference-note{font-size:10px;min-height:45px}.auction-grid{grid-template-columns:1fr}.auction-card{padding:24px}.auction-card h3{font-size:24px}.auction-card .auction-year{font-size:52px}.auction-card .auction-value{font-size:39px}.auction-card p,.auction-card a{font-size:13px}.cohort-members ol{columns:1}.dialog-history-stats b{font-size:14px}.dialog-image{max-width:180px}.section-nav{overflow-x:auto;justify-content:flex-start;white-space:nowrap}.top50-history-stats{flex-wrap:wrap}.card-gallery .price-triplet{gap:3px}.card-gallery .price-triplet b{font-size:10px}}
+
+.card-gallery .price-triplet{grid-template-columns:1.4fr 1fr 1fr;align-items:end}.card-gallery .price-triplet .selected b{font-size:24px;color:#171719;letter-spacing:-.7px}.card-gallery .price-triplet>div:not(.selected) b{color:#76767c;font-size:10px}
+@media(max-width:600px){.card-gallery .price-triplet{grid-template-columns:1fr 1fr;gap:8px}.card-gallery .price-triplet .selected{grid-column:1/-1}.card-gallery .price-triplet .selected b{font-size:27px}.card-gallery .price-triplet>div:not(.selected) b{font-size:12px}}
+
+.top50-skip{position:absolute;left:20px;top:-100px;background:#171719;color:#fff;padding:12px 18px;z-index:100}.top50-skip:focus{top:12px}
+
+/* Give the rank its own clear line above the card artwork. */
+.catalog-art{height:245px;padding:35px 16px 15px}.catalog-art img{height:190px;max-width:100%;object-fit:contain}.catalog-rank{top:10px!important;left:10px!important;z-index:2}
+#card-dialog .scenario-row{margin:10px 0}#card-dialog .dialog-layout{padding-top:0}#card-dialog .scenario-note{margin:10px 0}#card-dialog .dialog-history-stats{margin:10px 0}
+@media(min-width:761px){#card-dialog{padding:22px}#card-dialog .dialog-layout{grid-template-columns:180px 1fr;gap:24px}#card-dialog .dialog-main h2{font-size:26px}#card-dialog .printing-label{margin:5px 0}#card-dialog .dialog-image{padding:16px}}
+@media(max-width:600px){.catalog-art{height:208px;padding:32px 10px 12px}.catalog-art img{height:160px}.catalog-rank{font-size:10px!important}}
+
+@media(min-width:761px){#card-dialog .scenario-note{padding:8px 10px;font-size:10px;line-height:1.45}#card-dialog .individual-history h3{margin-bottom:6px}#card-dialog .dialog-history-stats{margin:6px 0}#card-dialog .dialog-tabs{margin:8px 0}#card-dialog .direct-source-links{font-size:11px}}
