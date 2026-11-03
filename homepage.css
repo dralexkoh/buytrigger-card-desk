@@ -76,3 +76,5 @@ body.editorial-page{font-family:'IBM Plex Sans',Arial,sans-serif;font-size:17px;
 .opportunity-note{font-size:12px;color:#626269;margin:0;padding:15px 28px;border-top:1px solid #e9e7e2;line-height:1.6}
 @media(max-width:1100px){.opportunity-board{margin-inline:40px}}
 @media(max-width:650px){.editorial-page .opportunity-intro{padding:28px 20px 0}.opportunity-intro h1{font-size:55px}.opportunity-intro>p{font-size:17px}.opportunity-languages a{font-size:14px;padding:10px 14px}.opportunity-board{margin:22px 18px 38px}.opportunity-board>header{padding:20px;display:block}.shortlist-state{display:inline-block;margin-top:12px}.opportunity-board h2{font-size:30px}.opportunity-fields{padding:13px 20px;grid-template-columns:repeat(3,1fr);font-size:11px;gap:12px}.opportunity-empty{padding:30px 20px}.opportunity-empty h3{font-size:28px}.opportunity-empty p{font-size:16px}.opportunity-note{padding:14px 20px}}
+/* Keep long shortlist headings inside narrow screens during font loading. */
+.opportunity-intro h1,.opportunity-board h2{overflow-wrap:anywhere}
