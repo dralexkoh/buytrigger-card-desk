@@ -1,0 +1,74 @@
+name: Refresh and publish BuyTrigger.Cards
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+  schedule:
+    - cron: '17 21,23 * * *'
+    - cron: '17 7 * * *'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: buytrigger-cards-public-release
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    permissions:
+      contents: write
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Check out current public source
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          ref: main
+      - name: Node
+        uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        with:
+          node-version: '22'
+      - name: Python
+        uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5
+        with:
+          python-version: '3.12'
+      - name: Public build dependency
+        run: python -m pip install -r requirements.txt
+      - name: Historical archive extractor
+        run: command -v 7z || command -v 7zz || (sudo apt-get update && sudo apt-get install -y 7zip)
+      - name: Collect, validate and build isolated public edition
+        id: pipeline
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+        run: |
+          RUN_KIND=manual
+          if [ "$EVENT_NAME" = schedule ]; then RUN_KIND=schedule; fi
+          python scripts/run_daily_pipeline.py --dist-out "$RUNNER_TEMP/public-pages" --receipt "$RUNNER_TEMP/public-refresh-receipt.json" --cache-dir "$RUNNER_TEMP/tcgcsv-cache" --run-kind "$RUN_KIND" --activate
+      - name: Save validated history and status
+        run: python scripts/commit_refresh.py --receipt "$RUNNER_TEMP/public-refresh-receipt.json"
+      - name: Configure Pages
+        uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b # v5
+      - name: Upload reviewed Pages artifact
+        uses: actions/upload-pages-artifact@7b1f4a764d45c48632c6b24a0339c27f5614fb0b # v4
+        with:
+          path: ${{ runner.temp }}/public-pages
+          retention-days: 1
+      - name: Deploy public website
+        id: deployment
+        uses: actions/deploy-pages@d6db90164ac5ed86f2b6aed7e0febac5b3c0c03e # v4
+      - name: Verify deployed prices and status
+        env:
+          PUBLIC_URL: ${{ steps.deployment.outputs.page_url }}
+        run: python scripts/verify_public_release.py --dist "$RUNNER_TEMP/public-pages" --url "$PUBLIC_URL"
+      - name: Flag failed source check after preserving last good data
+        if: steps.pipeline.outputs.source_failed == 'true'
+        run: |
+          echo 'Source check failed. Verified prior prices and a visible failure notice remain published; review the retained receipt.'
+          exit 1
