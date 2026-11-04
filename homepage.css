@@ -91,3 +91,10 @@ body.editorial-page{font-family:'IBM Plex Sans',Arial,sans-serif;font-size:17px;
  .share-close{min-width:44px;min-height:44px}.news-credit{font-size:12px}
 }
 body:has(dialog[open]){overflow:hidden}
+
+/* V1.7.3: phone index panels lead from the artwork straight to Explore. */
+@media(max-width:650px){
+ .editorial-page[data-page="home"] .market-hero .index-stats,
+ .editorial-page[data-page="home"] .market-hero .modern-home-note{display:none}
+ .editorial-page[data-page="home"] .market-hero .btn{margin-top:14px}
+}
