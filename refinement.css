@@ -63,3 +63,6 @@
 }
 
 @media(max-width:360px){.editorial-page .wire-heading h2{font-size:28px}.wire-heading .wire-all{font-size:18px}.wire-heading .wire-position{font-size:11px}}
+
+/* Named AI news bylines; legacy and owner Features keep their authorship. */
+.editorial-page .news-credit .news-author{font-size:12px;line-height:1.45;color:#44444a;font-weight:600;padding-top:8px}.news-author span{font-weight:400}
