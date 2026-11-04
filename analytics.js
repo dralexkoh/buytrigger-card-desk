@@ -45,10 +45,10 @@
     if (path === 'tcg-modern-index.html') return {id:'modern', url:'/tcg-modern-index', title:'TCG Modern Index', index:'modern'};
     if (path === 'top-50.html') return {id:'top50', url:'/top-50', title:'Top 50', index:'top50'};
     const storyPath = /^stories\/([a-z0-9-]+)\/(?:index\.html)?$/.exec(path);
-    if (path !== '' && path !== 'index.html' && !storyPath) return null;
+    if (path !== '' && path !== 'index.html' && path !== 'drops.html' && !storyPath) return null;
     const hash = url.hash.slice(1);
     // These pages render hashes before body.data-route; mirror that rule.
-    const requested = hash || bodyRoute || (storyPath ? 'read/' + storyPath[1] : 'home');
+    const requested = hash || bodyRoute || (path === 'drops.html' ? 'drops' : '') || (storyPath ? 'read/' + storyPath[1] : 'home');
     const parts = requested.split('/');
     if (parts[0] === 'top50') return null; // Renderer redirects; destination owns the view.
     if (parts[0] === 'read' || parts[0] === 'about') {
@@ -57,7 +57,7 @@
       return article ? {id:'article:' + slug, url:'/stories/' + slug + '/', title:'Story: ' + slug, article:slug} : {id:'story-not-found',url:'/story-not-found',title:'Story not found'};
     }
     // Keep advertiser visits in the existing funding report category.
-    const route = parts[0] === 'advertise' ? 'funding' : parts[0] === 'calculator' ? 'targets' : Object.hasOwn(PAGES, parts[0]) ? parts[0] : 'home';
+    const route = parts[0] === 'drops' ? 'desk' : parts[0] === 'advertise' ? 'funding' : parts[0] === 'calculator' ? 'targets' : Object.hasOwn(PAGES, parts[0]) ? parts[0] : 'home';
     return {id:route, url:route === 'home' ? '/' : '/' + route, title:PAGES[route]};
   }
   function campaign(href, config, data) {

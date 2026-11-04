@@ -4,6 +4,12 @@ const {randomUUID} = require('node:crypto');
 const A = require('../analytics.js');
 const config = {...require('../analytics-config.json'),enabled:true,privacyReviewed:true};
 const base = 'https://dralexkoh.github.io/buytrigger-card-desk/';
+test('Drops direct and hash routes use the existing Newsroom reporting category',()=>{
+  const data={articles:[]};
+  for(const suffix of ['drops.html','index.html#drops']){
+    assert.deepEqual(A.resolveRoute(base+suffix,config,data),{id:'desk',url:'/desk',title:'Newsroom'});
+  }
+});
 function storage() { const items=new Map(); return {writes:0,getItem:k=>items.get(k)||null,setItem(k,v){this.writes++;items.set(k,v);}}; }
 function windowAt(path='index.html') {
   return {location:new URL(path,base),document:{body:{dataset:{}},referrer:'https://www.google.com/search?q=SECRET'},crypto:{randomUUID},navigator:{},innerWidth:390,localStorage:storage(),sessionStorage:storage(),BT_EDITORIAL:{articles:[{slug:'welcome',sources:[{url:'https://www.psacard.com/services'}]}]},MODERN_PREVIEW_DATA:{cards:[{id:1}]},BT_TOP50:{cards:[{id:2}]}};

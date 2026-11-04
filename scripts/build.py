@@ -9,7 +9,7 @@ FEED_GUID_BASE='https://dralexkoh.github.io/buytrigger-card-desk/'
 BRAND='BuyTrigger.Cards';BYLINE='Alex & Oscar'
 if D.exists():shutil.rmtree(D)
 D.mkdir()
-FILES=['index-refinement.css','card-art.js','homepage.css','typography.css','CNAME','analytics.js','analytics-config.json','index.html','tcg-modern-index.html','site.css','header.css','social.css','site.js','social.js','modern.css','modern.js','catalogue.js','editorial.js','market-engine.js','market-history.js','market-release.json','image-sources.json','market-sources.json','top-50.html','top50.css','top50.js','top50-data.js','top50-feature.js','top50-release.json','top50-sources.json','top50-image-sources.json','refresh-status.js','refresh-status.json']
+FILES=['refinement.css','index-refinement.css','card-art.js','homepage.css','typography.css','CNAME','analytics.js','analytics-config.json','index.html','tcg-modern-index.html','site.css','header.css','social.css','site.js','social.js','modern.css','modern.js','catalogue.js','editorial.js','market-engine.js','market-history.js','market-release.json','image-sources.json','market-sources.json','top-50.html','top50.css','top50.js','top50-data.js','top50-feature.js','top50-release.json','top50-sources.json','top50-image-sources.json','refresh-status.js','refresh-status.json']
 for name in FILES:shutil.copy2(P/name,D/name)
 shutil.copytree(P/'assets',D/'assets')
 # Public, immutable collector receipts only; no operational state or private files.
@@ -18,6 +18,10 @@ if refresh.exists():
  for folder in ['receipts','observations','review']:
   for receipt in (refresh/folder).rglob('*.json'):
    target=D/receipt.relative_to(P);target.parent.mkdir(parents=True,exist_ok=True);shutil.copy2(receipt,target)
+drops=json.loads((P/'drops.json').read_text())
+from validate_drops import validate_drops
+validate_drops(drops,P)
+(D/'drops.js').write_text('window.BT_DROPS='+json.dumps(drops,ensure_ascii=False)+';\n')
 e=json.loads((P/'editorial.json').read_text())
 validate_editorial_visuals(e,P)
 featured=next(a for a in e['articles'] if a['slug']==e.get('featuredArticle','psa-value-returns'))
@@ -37,7 +41,13 @@ for a in e['articles']:
  for sec in a['sections']:content+=f'<section><h2>{html.escape(sec["heading"])}</h2>{sec["html"]}</section>'
  content+='<div class="source-box"><h3>Sources &amp; reading notes</h3>'+''.join(f'<a href="{html.escape(s["url"])}" rel="noopener noreferrer">{html.escape(s["label"])} ↗</a>' for s in a['sources'])+'</div><a class="btn red" href="index.html#journal">More features →</a></article></div>'
  main.append(BeautifulSoup(content,'html.parser'));folder=D/'stories'/a['slug'];folder.mkdir(parents=True);(folder/'index.html').write_text(str(soup))
-urls=[BASE,BASE+'tcg-modern-index.html',BASE+'top-50.html']+[BASE+'stories/'+a['slug']+'/' for a in e['articles']]
+soup=BeautifulSoup((P/'index.html').read_text(),'html.parser');soup.body['data-route']='drops';soup.title.string='Drops · Release Calendar · BuyTrigger.Cards'
+soup.select_one('link[rel=canonical]')['href']=BASE+'drops.html';soup.select_one('meta[property="og:url"]')['content']=BASE+'drops.html'
+soup.select_one('meta[property="og:title"]')['content']='Drops · Release Calendar · BuyTrigger.Cards'
+soup.select_one('meta[name=description]')['content']='Pokémon product release dates for the UK, US and Asia, with official sources and regional availability notes.'
+soup.select_one('main').clear();soup.select_one('main').append(BeautifulSoup('<section class="page-intro"><h1>Pokémon release calendar</h1>'+''.join('<p>'+html.escape(x['title'])+' · '+x['date']+' · '+x['country']+' · <a href="'+x['sourceUrl']+'">Official source</a></p>' for x in drops['items'])+'</section>','html.parser'))
+(D/'drops.html').write_text(str(soup))
+urls=[BASE,BASE+'drops.html',BASE+'tcg-modern-index.html',BASE+'top-50.html']+[BASE+'stories/'+a['slug']+'/' for a in e['articles']]
 (D/'sitemap.xml').write_text('<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'+''.join('<url><loc>'+escape(u)+'</loc><lastmod>2026-11-03</lastmod></url>'for u in urls)+'</urlset>')
 (D/'robots.txt').write_text('User-agent: *\nAllow: /\nSitemap: '+BASE+'sitemap.xml\n')
 items=''.join('<item><title>'+escape(a['title'])+'</title><link>'+BASE+'stories/'+a['slug']+'/</link><guid>'+FEED_GUID_BASE+'stories/'+a['slug']+'/</guid><pubDate>Tue, 03 Nov 2026 00:00:00 GMT</pubDate><description>'+escape(a['summary'])+'</description></item>'for a in e['articles'])
