@@ -94,9 +94,13 @@ for article in editorial['articles']:
  page=BeautifulSoup((d/'stories'/article['slug']/'index.html').read_text(),'html.parser')
  schema=next(json.loads(t.string) for t in page.select('script[type="application/ld+json"]') if json.loads(t.string).get('@type')=='Article')
  assert schema['datePublished']==article.get('publishedAt',editorial['publishedAt'])
- if article.get('author',{}).get('type')=='person':
-  assert schema['author']['@type']=='Person' and schema['author']['name']==article['author']['name']
-  assert page.select_one('.person-byline') and page.select_one('#author-alex-koh')
+ if article.get('author',{}).get('type') in ('person','family'):
+  declared=article['author'];ids=declared['members'] if declared['type']=='family' else [declared['id']]
+  expected=[{'alex-koh':'Alex Koh','oscar':'Oscar'}[i] for i in ids]
+  actual=schema['author'] if isinstance(schema['author'],list) else [schema['author']]
+  assert [x['name'] for x in actual]==expected and all(x['@type']=='Person' for x in actual)
+  assert page.select_one('.person-byline')
+  for author_id in ids:assert page.select_one('#author-'+author_id)
  else:assert schema['author']['@type']=='Organization'
 toptext=(d/'top50-data.js').read_text();top=json.loads(toptext.split('=',1)[1].strip().rstrip(';'))
 assert len(top['cards'])==50

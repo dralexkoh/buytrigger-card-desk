@@ -41,7 +41,8 @@ for a in e['articles']:
  for key,val in [('og:title',a['title']+' · '+BRAND),('og:description',a['summary']),('og:url',url),('og:type','article')]:soup.select_one('meta[property="'+key+'"]')['content']=val
  soup.select_one('meta[name=description]')['content']=a['summary']
  published=a.get('publishedAt',e['publishedAt']);modified=a.get('updatedAt',published)
- author={'@type':'Person','name':a['author']['name'],'url':url+'#author-alex-koh'} if a.get('author',{}).get('type')=='person' else {'@type':'Organization','name':BYLINE}
+ persons=[{'@type':'Person','name':person['name'],'url':url+'#author-'+person['id']} for person in authors[a['slug']]['people']]
+ author=persons[0] if len(persons)==1 else persons if persons else {'@type':'Organization','name':BYLINE}
  picture=a['image']
  soup.select_one('meta[property="og:image"]')['content']=BASE+picture
  schema=soup.new_tag('script',type='application/ld+json');schema.string=json.dumps({'@context':'https://schema.org','@type':'Article','headline':a['title'],'description':a['summary'],'datePublished':published,'dateModified':modified,'author':author,'publisher':{'@type':'Organization','name':BRAND},'mainEntityOfPage':url,'image':BASE+picture},ensure_ascii=False).replace('</','<\\/');soup.head.append(schema)
