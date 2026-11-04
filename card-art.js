@@ -4,7 +4,7 @@
   const dialog=document.createElement('dialog');
   dialog.id='artwork-dialog';
   dialog.setAttribute('aria-labelledby','artwork-title');
-  dialog.innerHTML='<header class="artwork-toolbar"><div><span>THE ARTWORK</span><h2 id="artwork-title"></h2></div><div><button type="button" data-art-zoom aria-pressed="false">Original size</button><button type="button" data-art-close aria-label="Close artwork">Close ×</button></div></header><div class="artwork-stage"><img alt=""></div><p class="artwork-caption">Catalogue reference · original scan resolution</p>';
+  dialog.innerHTML='<header class="artwork-toolbar"><div><span>THE ARTWORK</span><h2 id="artwork-title"></h2></div><div><button type="button" data-art-zoom aria-pressed="false">Original size</button><button type="button" data-art-close aria-label="Close artwork">Close ×</button></div></header><div class="artwork-stage" tabindex="0" role="region" aria-label="Card artwork; scroll to inspect at original size"><img alt=""></div><p class="artwork-caption">Catalogue reference · original scan resolution</p>';
   document.body.append(dialog);
   const img=dialog.querySelector('img'),stage=dialog.querySelector('.artwork-stage'),zoom=dialog.querySelector('[data-art-zoom]');
   let opener=null;

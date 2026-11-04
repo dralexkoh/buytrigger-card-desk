@@ -83,3 +83,11 @@ body.editorial-page{font-family:'IBM Plex Sans',Arial,sans-serif;font-size:17px;
 .illustrated-wire{display:grid;grid-template-columns:150px minmax(0,1fr);gap:23px;padding:27px 0;align-items:start}.illustrated-wire>.wire-visual{height:165px;border-radius:9px}.illustrated-wire .wire-meta{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:10px}.illustrated-wire h3{font-family:'Barlow Condensed',sans-serif;font-size:33px;line-height:1.08;margin:0 0 12px}.illustrated-wire p{font-size:16px;line-height:1.65;margin-bottom:12px}.illustrated-wire .news-credit{margin-top:15px}.illustrated-wire .market-flash{padding:17px;display:block}.illustrated-wire .market-flash span{font-size:31px}.illustrated-wire .market-flash b{display:block;font-size:74px;text-align:right}.news-card-copy>.wire-context{margin-bottom:18px}
 @media(max-width:600px){.illustrated-wire{grid-template-columns:100px minmax(0,1fr);gap:15px}.illustrated-wire>.wire-visual{height:130px}.illustrated-wire h3{font-size:29px}.illustrated-wire .market-flash{padding:12px}.illustrated-wire .market-flash span{font-size:24px}.illustrated-wire .market-flash b{font-size:55px}.illustrated-wire .news-credit a{overflow-wrap:anywhere}}
 @media(max-width:360px){.illustrated-wire{grid-template-columns:1fr}.illustrated-wire>.wire-visual{height:125px}.illustrated-wire .market-flash{display:flex}.illustrated-wire .market-flash b{font-size:75px}}
+
+/* V1.5.1: comfortable phone interaction without changing the brand layout. */
+@media(max-width:900px){
+ .filter-bar button,.archive-weeks button,.share-platforms button{min-width:44px;min-height:44px;font-size:14px}
+ .calc-row input{min-height:44px}.stress-control{min-height:44px;font-size:14px}
+ .share-close{min-width:44px;min-height:44px}.news-credit{font-size:12px}
+}
+body:has(dialog[open]){overflow:hidden}
