@@ -18,6 +18,7 @@
     'www.threads.net':'threads', 'threads.com':'threads', 'www.threads.com':'threads',
     'instagram.com':'instagram', 'www.instagram.com':'instagram', 'l.instagram.com':'instagram',
     'facebook.com':'facebook', 'www.facebook.com':'facebook', 'l.facebook.com':'facebook',
+    'm.facebook.com':'facebook', 'lm.facebook.com':'facebook', 'm.youtube.com':'youtube', 'youtu.be':'youtube', 'old.reddit.com':'reddit', 'm.reddit.com':'reddit', 'tiktok.com':'tiktok', 'www.tiktok.com':'tiktok', 'vm.tiktok.com':'tiktok', 'google.co.uk':'google', 'www.google.co.jp':'google', 'www.google.com.sg':'google', 'www.google.com.au':'google', 'www.google.ca':'google', 'www.google.de':'google', 'www.google.fr':'google',
     'reddit.com':'reddit', 'www.reddit.com':'reddit', 'youtube.com':'youtube', 'www.youtube.com':'youtube'
   });
   const safeSlug = value => typeof value === 'string' && /^[a-z0-9][a-z0-9-]{0,99}$/.test(value);
@@ -75,6 +76,14 @@
       return 'https://' + url.hostname + '/';
     } catch (_) { return ''; }
   }
+  function sourceChannel(value, config, ownOrigin) {
+    try {
+      const url = new URL(value);
+      if (!['http:','https:'].includes(url.protocol) || url.username || url.password) return 'direct_unknown';
+      if (url.origin === ownOrigin || permittedSite(config,url.href)) return 'direct_unknown';
+      return SOURCES[url.hostname] || 'other_referral';
+    } catch (_) { return 'direct_unknown'; }
+  }
   function taggedDestination(href, currentHref, config, data) {
     let destination;
     try { destination = new URL(href,currentHref); } catch (_) { return href; }
@@ -126,7 +135,7 @@
     const prefs = read(storageFor(win,'localStorage'), PREFERENCE_KEY);
     try {
       const p = JSON.parse(prefs);
-      if (p?.version === config.consentVersion && p.expires > Date.now() && ['granted','denied'].includes(p.choice)) consent = p.choice;
+      if ((p?.version === config.consentVersion || p?.choice === 'denied') && p.expires > Date.now() && ['granted','denied'].includes(p.choice)) consent = p.choice;
     } catch (_) {}
     function excluded() {
       return new URL(win.location.href).searchParams.get('bt_analytics') === 'off' || read(storageFor(win,'localStorage'), EXCLUSION_KEY) === '1' ||
@@ -136,8 +145,8 @@
     function payload(event) {
       const utm = new URLSearchParams(campaign(win.location.href,config,data).slice(1));
       const width = win.innerWidth || 0;
-      const result = {version:1,event_id:win.crypto.randomUUID(),event:event?.name || 'page_view',page:current.url,
-        referrer_channel:SOURCES[new URL(referrer(win.document.referrer,site.origin) || site.origin).hostname] || 'direct_unknown',
+      const result = {version:2,event_id:win.crypto.randomUUID(),event:event?.name || 'page_view',page:current.url,
+        referrer_channel:sourceChannel(win.document.referrer,config,site.origin),
         device:width && width < 700 ? 'phone' : width && width < 1100 && win.navigator.maxTouchPoints > 1 ? 'tablet' : 'desktop',
         qa:new URL(win.location.href).searchParams.get('bt_analytics') === 'qa'};
       ['utm_source','utm_medium','utm_campaign','utm_content'].forEach(key => { if (utm.has(key)) result[key] = utm.get(key); });
@@ -199,7 +208,7 @@
       doc.head.append(style);
       const dialog = doc.createElement('dialog'); dialog.className = 'bt-analytics-dialog'; dialog.setAttribute('aria-labelledby','bt-analytics-title');
       const h = doc.createElement('h2'); h.id = 'bt-analytics-title'; h.textContent = 'Optional visitor statistics'; dialog.append(h);
-      const p = doc.createElement('p'); p.textContent = 'May we count which public pages and tools readers use, and which approved campaigns bring visits? Our own BuyTrigger counter uses a daily changing visitor estimate from connection and browser information, without advertising cookies. We send no names, search text, calculator amounts or private collection data.'; dialog.append(p);
+      const p = doc.createElement('p'); p.textContent = 'May we count which public pages and tools readers use, and which sources bring visits and the approximate countries connections come from? Our own BuyTrigger counter uses a daily changing visitor estimate from connection and browser information, without advertising cookies. Country is estimated on our server using a local country database; visitor IP addresses are not sent to a geolocation API or stored in our analytics tables. We send no names, search text, calculator amounts or private collection data.'; dialog.append(p);
       const retention = doc.createElement('p'); retention.textContent = 'Detailed analytics older than 180 days are removed in a daily cleanup. Your choice is remembered on this browser for six months. You can change it at any time. Declining leaves all site features available.'; dialog.append(retention);
       const link = doc.createElement('a'); link.href = new URL('index.html#privacy',source).href; link.textContent = 'Privacy details'; link.addEventListener('click',() => dialog.close()); dialog.append(link);
       const status = doc.createElement('p'); status.setAttribute('aria-live','polite'); dialog.append(status);
@@ -223,7 +232,7 @@
       if (controller.consent === 'unset' && !controller.excluded()) {
         banner = doc.createElement('section'); banner.className = 'bt-analytics-banner';
         banner.setAttribute('role','region'); banner.setAttribute('aria-label','Optional visitor statistics');
-        const message = doc.createElement('p'); message.textContent = 'Optional visitor statistics. Nothing is sent until you allow.'; banner.append(message);
+        const message = doc.createElement('p'); message.textContent = 'Optional page, traffic-source and approximate-country statistics. Nothing is sent until you allow.'; banner.append(message);
         const choices = doc.createElement('div'); choices.className = 'bt-analytics-banner-choices';
         [['Decline','denied'],['Allow','granted']].forEach(([label,choice]) => {
           const button = doc.createElement('button'); button.type = 'button'; button.textContent = label;
@@ -295,5 +304,5 @@
     }).catch(() => { /* No configuration means no analytics, no fallback provider. */ });
     return api;
   }
-  return {boot,validConfig,permittedSite,resolveRoute,campaign,taggedDestination,referrer,sanitizeEvent,approvedSourceHosts,createController,PREFERENCE_KEY,EXCLUSION_KEY};
+  return {boot,validConfig,permittedSite,resolveRoute,campaign,taggedDestination,referrer,sourceChannel,sanitizeEvent,approvedSourceHosts,createController,PREFERENCE_KEY,EXCLUSION_KEY};
 });

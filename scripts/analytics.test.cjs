@@ -4,6 +4,19 @@ const {randomUUID} = require('node:crypto');
 const A = require('../analytics.js');
 const config = {...require('../analytics-config.json'),enabled:true,privacyReviewed:true};
 const base = 'https://dralexkoh.github.io/buytrigger-card-desk/';
+test('country notice requires a fresh opt-in and only the new consented client requests country lookup',()=>{
+  const w=windowAt(),out=[];
+  w.localStorage.setItem(A.PREFERENCE_KEY,JSON.stringify({version:'2026-11-03-v1',choice:'granted',expires:Date.now()+86400000}));
+  const c=A.createController(w,config,e=>out.push(e));c.routeRendered();assert.equal(out.length,0);
+  c.choose('granted');c.routeRendered();assert.equal(out[0].version,2);assert.ok(!('country_code' in out[0]));
+  const declined=windowAt();declined.localStorage.setItem(A.PREFERENCE_KEY,JSON.stringify({version:'2026-11-03-v1',choice:'denied',expires:Date.now()+86400000}));
+  const previousDecline=A.createController(declined,config,()=>assert.fail('A prior decline must remain silent'));assert.equal(previousDecline.consent,'denied');previousDecline.routeRendered();
+});
+test('coarse referral categories recognise mobile apps and other websites without URL or search leakage',()=>{
+  for(const [url,source] of [['https://lm.facebook.com/l.php?email=SECRET','facebook'],['https://www.tiktok.com/@somebody','tiktok'],['https://old.reddit.com/r/PokemonTCG/','reddit'],['https://www.google.co.jp/search?q=SECRET','google'],['https://example.org/private?email=SECRET','other_referral'],['https://buytrigger.cards/#desk','direct_unknown'],['https://dralexkoh.github.io/buytrigger-card-desk/','direct_unknown'],['javascript:alert(1)','direct_unknown'],['','direct_unknown']]){
+    const w=windowAt(),out=[];w.document.referrer=url;const c=A.createController(w,config,e=>out.push(e));c.choose('granted');c.routeRendered();assert.equal(out[0].referrer_channel,source);assert.ok(!JSON.stringify(out).includes('SECRET'));
+  }
+});
 test('Drops direct and hash routes use the existing Newsroom reporting category',()=>{
   const data={articles:[]};
   for(const suffix of ['drops.html','index.html#drops']){
