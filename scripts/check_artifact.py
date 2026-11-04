@@ -4,6 +4,8 @@ import re,json,math,hashlib,os
 from bs4 import BeautifulSoup
 p=Path(__file__).resolve().parents[1];d=Path(os.environ.get('BT_CARD_DESK_ARTIFACT_DIR',p/'dist'));fail=[]
 PUBLIC_BASE='https://buytrigger.cards/'
+shared=json.loads((d/'shared-market-config.json').read_text())
+assert shared=={'schemaVersion':1,'enabled':False,'endpoint':None}, 'Shared market activation requires its reviewed eligibility/privacy release'
 assert (d/'CNAME').read_text()=='buytrigger.cards\n', 'Wrong public domain contract'
 APPROVED_COLLECTOR='https://brzawmbpwkdundruicca.supabase.co/functions/v1/cards-traffic-ingest'
 analytics=json.loads((d/'analytics-config.json').read_text())

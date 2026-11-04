@@ -11,6 +11,8 @@ NAMES += ['article-authors.js','article-features.css'] + ['stories/'+slug+'/inde
 
 NAMES += ['assets/features-20261104-visual-v3/delta-center-etb.webp', 'assets/features-20261104-visual-v3/delta-etb.webp', 'assets/features-20261104-visual-v3/psa-pikachu-queue.webp', 'assets/features-20261104-visual-v3/psa-value-announcement.webp', 'assets/features-20261104-visual-v3/release-queue-alex-oscar.webp', 'assets/features-20261104-visual-v3/upc-day-night.webp']
 
+NAMES += ['market.html','30th-anniversary-index.html','shared-market.js','shared-market-engine.js','shared-market.css','shared-market-config.json','assets/30th-mewtwo-151-128.jpg']
+
 def verify(dist,url=PRIMARY_URL,attempts=9,delay=10):
     pending={n:hashlib.sha256((dist/n).read_bytes()).hexdigest() for n in NAMES}
     primary=urlsplit(PRIMARY_URL)

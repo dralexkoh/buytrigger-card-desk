@@ -1,10 +1,14 @@
 # BuyTrigger.Cards — Card Desk by Alex & Oscar
 
-V1.2.2 · BuyTrigger.Cards custom domain · 3 November 2026. Free card news, collecting guides, TCG Modern Index and Top 50 Raw editions.
+V1.9.0 · Market directory and held 30th tracker · 4 November 2026. Free card news, collecting guides, TCG Modern Index and Top 50 Raw editions.
 
 Website: https://buytrigger.cards/
 
 This repository contains the public static website only. Personal holdings, costs, photographs, owner analytics and authentication data are excluded.
+
+## Shared market connection
+
+Market now links the existing benchmarks and a 30th Anniversary tracker. Raw, PSA 9 and PSA 10 have separate card views; archived reporting periods remain separate from daily observations. The public consumer is disabled while source eligibility and the shared database release are completed. The 30th set aggregate is in preparation. Existing public Raw editions continue unchanged.
 
 ## Current scope
 

@@ -11,7 +11,7 @@ FEED_GUID_BASE='https://dralexkoh.github.io/buytrigger-card-desk/'
 BRAND='BuyTrigger.Cards';BYLINE='BuyTrigger Cards'
 if D.exists():shutil.rmtree(D)
 D.mkdir()
-FILES=['article-authors.js','article-features.css','commerce.js','commerce.css','refinement.css','index-refinement.css','card-art.js','homepage.css','typography.css','CNAME','analytics.js','analytics-config.json','index.html','tcg-modern-index.html','site.css','header.css','social.css','site.js','social.js','modern.css','modern.js','catalogue.js','editorial.js','market-engine.js','market-history.js','market-release.json','image-sources.json','market-sources.json','top-50.html','top50.css','top50.js','top50-data.js','top50-feature.js','top50-release.json','top50-sources.json','top50-image-sources.json','refresh-status.js','refresh-status.json']
+FILES=['shared-market-engine.js','shared-market.js','shared-market.css','shared-market-config.json','article-authors.js','article-features.css','commerce.js','commerce.css','refinement.css','index-refinement.css','card-art.js','homepage.css','typography.css','CNAME','analytics.js','analytics-config.json','index.html','tcg-modern-index.html','site.css','header.css','social.css','site.js','social.js','modern.css','modern.js','catalogue.js','editorial.js','market-engine.js','market-history.js','market-release.json','image-sources.json','market-sources.json','top-50.html','top50.css','top50.js','top50-data.js','top50-feature.js','top50-release.json','top50-sources.json','top50-image-sources.json','refresh-status.js','refresh-status.json']
 for name in FILES:shutil.copy2(P/name,D/name)
 shutil.copytree(P/'assets',D/'assets')
 # Public, immutable collector receipts only; no operational state or private files.
@@ -58,7 +58,17 @@ soup.select_one('meta[property="og:title"]')['content']='Drops · Release Calend
 soup.select_one('meta[name=description]')['content']='Pokémon product release dates for the UK, US and Asia, with official sources and regional availability notes.'
 soup.select_one('main').clear();soup.select_one('main').append(BeautifulSoup('<section class="page-intro"><h1>Pokémon release calendar</h1>'+''.join('<p>'+html.escape(x['title'])+' · '+x['date']+' · '+x['country']+' · <a href="'+x['sourceUrl']+'">Official source</a></p>' for x in drops['items'])+'</section>','html.parser'))
 (D/'drops.html').write_text(str(soup))
-urls=[BASE,BASE+'drops.html',BASE+'tcg-modern-index.html',BASE+'top-50.html']+[BASE+'stories/'+a['slug']+'/' for a in e['articles']]
+for route, filename, title, description in [('market','market.html','Market','Explore the existing card benchmarks and set trackers.'),('thirtieth','30th-anniversary-index.html','30th Anniversary Index','English 30th Celebration card market tracking, with separate Raw, PSA 9 and PSA 10 views. Aggregate in preparation.')]:
+ soup=BeautifulSoup((P/'index.html').read_text(),'html.parser');soup.body['data-route']=route
+ soup.title.string=title+' · '+BRAND
+ soup.select_one('link[rel=canonical]')['href']=BASE+filename
+ soup.select_one('meta[property="og:url"]')['content']=BASE+filename
+ soup.select_one('meta[property="og:title"]')['content']=title+' · '+BRAND
+ soup.select_one('meta[name=description]')['content']=description
+ soup.select_one('meta[property="og:description"]')['content']=description
+ soup.select_one('main').clear();soup.select_one('main').append(BeautifulSoup('<section class="page-intro"><h1>'+title+'</h1><p>'+description+'</p></section>','html.parser'))
+ (D/filename).write_text(str(soup))
+urls=[BASE,BASE+'market.html',BASE+'30th-anniversary-index.html',BASE+'drops.html',BASE+'tcg-modern-index.html',BASE+'top-50.html']+[BASE+'stories/'+a['slug']+'/' for a in e['articles']]
 lastmods={BASE+'stories/'+a['slug']+'/':a.get('updatedAt',a.get('publishedAt',e['publishedAt'])) for a in e['articles']}
 (D/'sitemap.xml').write_text('<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'+''.join('<url><loc>'+escape(u)+'</loc><lastmod>'+lastmods.get(u,'2026-11-04')+'</lastmod></url>'for u in urls)+'</urlset>')
 (D/'robots.txt').write_text('User-agent: *\nAllow: /\nSitemap: '+BASE+'sitemap.xml\n')
