@@ -1,5 +1,32 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-04T16:03:52Z",
-  "items": []
+  "updatedAt": "2026-11-04T18:06:11.523682+00:00",
+  "items": [
+    {
+      "id": "ebay-365081400866-uk",
+      "productKey": "vault-x-slim-exotec-ring-binder-forest-green-5060570203169",
+      "title": "Vault X Slim Exo-Tec ring binder · Forest Green",
+      "summary": "A new ring binder listed by Unicorn Cards. Pocket pages are sold separately; check the seller’s delivery terms before ordering.",
+      "region": "UK",
+      "country": "United Kingdom",
+      "language": "Not applicable (supplies)",
+      "retailer": "eBay",
+      "seller": "Unicorn Cards",
+      "fulfilment": "UK delivery shown; confirm delivery to your postcode",
+      "event": "Available",
+      "availability": "In stock",
+      "productUrl": "https://www.ebay.co.uk/itm/365081400866",
+      "sourceUrl": "https://www.ebay.co.uk/itm/365081400866",
+      "checkedAt": "2026-11-04T18:05:36Z",
+      "expiresAt": "2026-11-04T18:20:36.000Z",
+      "affiliateProvider": "ebay",
+      "price": {
+        "amount": 15.3,
+        "currency": "GBP",
+        "basis": "Item price; delivery shown by seller"
+      },
+      "revision": 1,
+      "affiliateUrl": "https://www.ebay.co.uk/itm/365081400866?mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339239680&toolid=10001&customid=ebay-365081400866-uk"
+    }
+  ]
 }
