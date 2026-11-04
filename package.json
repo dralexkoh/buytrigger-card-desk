@@ -1,6 +1,6 @@
 {
   "name": "buytrigger-card-desk",
-  "version": "1.7.4",
+  "version": "1.7.5",
   "private": true,
   "scripts": {
     "build": "python3 scripts/build.py",

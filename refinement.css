@@ -87,3 +87,21 @@
  .wire-scroll .news-card h3 a::after{content:' ↗';color:#b51e25;white-space:nowrap}
  .wire-scroll .wire-read,.wire-scroll .news-credit{display:none}
 }
+
+/* V1.7.5: phone catch-up stories are an image-and-headline list. */
+@media(max-width:650px){
+ .editorial-page[data-page="home"] .home-stories{padding-bottom:16px}
+ .home-stories .section-heading{margin-bottom:8px;gap:0}
+ .home-stories .section-heading .kicker{display:none}
+ .editorial-page .home-stories .section-heading h2{font-size:28px;line-height:1.08;margin:0}
+ .home-stories .section-heading>.text-link{font-size:13px;min-height:44px;display:inline-flex;align-items:center}
+ .home-stories .post-grid{gap:0}
+ .home-stories .post{display:grid;grid-template-columns:80px minmax(0,1fr);gap:12px;align-items:start;padding:14px 0;border:0;border-top:1px solid #d5d5cf;border-radius:0;background:transparent}
+ .editorial-page .home-stories .post-art{width:80px;height:88px;min-height:0;border-radius:3px}
+ .home-stories .post-art>span{display:none}
+ .editorial-page .home-stories .post-copy{padding:0;min-width:0}
+ .editorial-page .home-stories .post-copy h3{font-size:22px;line-height:1.14;margin:0;letter-spacing:0}
+ .home-stories .post-copy h3 a{display:block;min-height:44px}
+ .editorial-page .home-stories .post-date{order:1;font-size:11px;line-height:1.35;margin:5px 0 0}
+ .home-stories .post-copy>small,.home-stories .post-copy>p,.home-stories .post-copy>.text-link{display:none}
+}
