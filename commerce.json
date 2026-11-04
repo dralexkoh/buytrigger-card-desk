@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "ebay": {
+    "enabled": true,
+    "campaignId": "5339239680"
+  },
+  "amazonUk": {
+    "enabled": false,
+    "trackingId": "buytrigger-21"
+  },
+  "placements": {
+    "home": false,
+    "drops": true
+  }
+}

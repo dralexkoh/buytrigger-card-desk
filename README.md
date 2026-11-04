@@ -18,7 +18,7 @@ This repository contains the public static website only. Personal holdings, cost
 - Top 50 history: 330 source dates, 8 February 2024 through 2 November 2026. First archive plus calendar month ends in 2024–25; daily in 2026. January 2024 is unavailable. 13,208 usable guide observations; 113 suspected observations held with originals preserved. The fixed long-history comparison uses 14 complete-history printings; all 50 have only one common priced date and no full-50 return. Both current selection and completeness filtering create hindsight bias.
 - Three independently source-linked historic Heritage auction highlights, separate from the Raw ranking and charts. No current-record claim.
 - Three-outcome grading calculator, all 50 gallery/table views, exact-printing search, individual history/evidence tabs and three-outcome bars.
-- No membership, active ads or affiliate programme. Optional first-party statistics start only after Allow statistics. Aggregate Cards reports are private in the existing BuyTrigger CRM and separate from stock traffic and personal holdings. Revenue integrations follow separately.
+- No membership. Labelled eBay affiliate placements are active on Drops; verified product offers have a maximum fifteen-minute availability window. Amazon affiliate placements remain disabled. Optional first-party statistics start only after Allow statistics. Aggregate Cards reports are private in the existing BuyTrigger CRM and separate from stock traffic and personal holdings. Revenue integrations follow separately.
 
 ## Credits and reuse
 
@@ -61,3 +61,10 @@ Only `dist/` is published. Build sources, tests and operational refresh state re
 The primary address is `https://buytrigger.cards/`. Porkbun remains the DNS provider. GitHub Pages settings own the custom-domain and HTTPS configuration; the artifact’s `CNAME` file records the expected domain but does not configure a custom Actions deployment. `www.buytrigger.cards` and the former GitHub Pages address should redirect to the primary address. Keep paths, query parameters and fragment links intact when verifying the redirects.
 
 Analytics accepts only the apex, `www` and the original GitHub project path. The collector must allow those exact origins before cutover. Consent remains local to each browser origin; no prior preference is copied across domains. RSS item links use the new domain while existing item GUIDs stay unchanged for subscriber continuity.
+
+
+## Verified Drops and affiliate links
+
+`commerce.json` holds public programme identifiers and activation flags. `drops-offers.json` is the allowlisted public offer payload. The private scout publishes only that payload through the guarded Drops publisher; discovery trails and account receipts remain outside this repository. Browser expiry removes an offer’s purchase link even when the next scout or deployment fails. General eBay search advertisements are labelled separately and never claim stock, a discount or an exact-card match. No third-party ad script, image, pixel or new analytics event is loaded. Sponsored modules use original text and no Pokémon press assets. Existing editorial source links are not rewritten.
+
+The initial commercial placement is limited to Drops. Its two former press-product pictures use the existing house text-graphic treatment instead. Homepage/Feature content and artwork remain unchanged; homepage commercial placement is disabled pending its separate media review.

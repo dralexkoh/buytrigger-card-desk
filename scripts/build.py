@@ -9,7 +9,7 @@ FEED_GUID_BASE='https://dralexkoh.github.io/buytrigger-card-desk/'
 BRAND='BuyTrigger.Cards';BYLINE='Alex & Oscar'
 if D.exists():shutil.rmtree(D)
 D.mkdir()
-FILES=['refinement.css','index-refinement.css','card-art.js','homepage.css','typography.css','CNAME','analytics.js','analytics-config.json','index.html','tcg-modern-index.html','site.css','header.css','social.css','site.js','social.js','modern.css','modern.js','catalogue.js','editorial.js','market-engine.js','market-history.js','market-release.json','image-sources.json','market-sources.json','top-50.html','top50.css','top50.js','top50-data.js','top50-feature.js','top50-release.json','top50-sources.json','top50-image-sources.json','refresh-status.js','refresh-status.json']
+FILES=['commerce.js','commerce.css','refinement.css','index-refinement.css','card-art.js','homepage.css','typography.css','CNAME','analytics.js','analytics-config.json','index.html','tcg-modern-index.html','site.css','header.css','social.css','site.js','social.js','modern.css','modern.js','catalogue.js','editorial.js','market-engine.js','market-history.js','market-release.json','image-sources.json','market-sources.json','top-50.html','top50.css','top50.js','top50-data.js','top50-feature.js','top50-release.json','top50-sources.json','top50-image-sources.json','refresh-status.js','refresh-status.json']
 for name in FILES:shutil.copy2(P/name,D/name)
 shutil.copytree(P/'assets',D/'assets')
 # Public, immutable collector receipts only; no operational state or private files.
@@ -22,6 +22,11 @@ drops=json.loads((P/'drops.json').read_text())
 from validate_drops import validate_drops
 validate_drops(drops,P)
 (D/'drops.js').write_text('window.BT_DROPS='+json.dumps(drops,ensure_ascii=False)+';\n')
+from drops_offers import validate_offers
+commerce=json.loads((P/'commerce.json').read_text())
+offers=json.loads((P/'drops-offers.json').read_text())
+validate_offers(offers,commerce)
+(D/'commerce-data.js').write_text('window.BT_COMMERCE='+json.dumps(commerce,ensure_ascii=False)+';\nwindow.BT_DROPS_OFFERS='+json.dumps(offers,ensure_ascii=False)+';\n')
 e=json.loads((P/'editorial.json').read_text())
 validate_editorial_visuals(e,P)
 featured=next(a for a in e['articles'] if a['slug']==e.get('featuredArticle','psa-value-returns'))
