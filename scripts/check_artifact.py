@@ -86,7 +86,16 @@ for c in data['cards']:
  assert len(values)==len(hist['dates'])
  assert all(v is None for date,v in zip(hist['dates'],values) if date<c['releaseDate'])
  assert all(v is None or isinstance(v,(int,float)) and not isinstance(v,bool) and math.isfinite(v) and v>0 for v in values)
-assert len(list((d/'stories').glob('*/index.html')))==10
+editorial=json.loads((p/'editorial.json').read_text())
+assert {f.parent.name for f in (d/'stories').glob('*/index.html')}=={a['slug'] for a in editorial['articles']}
+for article in editorial['articles']:
+ page=BeautifulSoup((d/'stories'/article['slug']/'index.html').read_text(),'html.parser')
+ schema=next(json.loads(t.string) for t in page.select('script[type="application/ld+json"]') if json.loads(t.string).get('@type')=='Article')
+ assert schema['datePublished']==article.get('publishedAt',editorial['publishedAt'])
+ if article.get('author',{}).get('type')=='person':
+  assert schema['author']['@type']=='Person' and schema['author']['name']==article['author']['name']
+  assert page.select_one('.person-byline') and page.select_one('#author-alex-koh')
+ else:assert schema['author']['@type']=='Organization'
 toptext=(d/'top50-data.js').read_text();top=json.loads(toptext.split('=',1)[1].strip().rstrip(';'))
 assert len(top['cards'])==50
 assert len({(c['productId'],c['printing']) for c in top['cards']})==50
@@ -129,4 +138,4 @@ assert status['schemaVersion']==1 and status['status'] in ['current','partial','
 assert status['sourceDate']==release['sourceDate']==top['release']['sourceDate']
 assert not (d/'data/refresh/state.json').exists()
 if fail:raise SystemExit('\n'.join(fail))
-print('PASS: public-only artifact; Modern100 + Top50 exact identities and real images, complete declared archive retrieval, explicit price gaps, no private records/secrets/graded dataset; 10 article paths present.')
+print('PASS: public-only artifact; Modern100 + Top50 exact identities and real images, complete declared archive retrieval, explicit price gaps, no private records/secrets/graded dataset; all declared article paths, dates and authors present.')
