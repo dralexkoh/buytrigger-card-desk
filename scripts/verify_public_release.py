@@ -9,6 +9,7 @@ NAMES=['commerce-data.js','commerce.js','commerce.css','refinement.css','drops.j
 
 NAMES += ['article-authors.js','article-features.css'] + ['stories/'+slug+'/index.html' for slug in ['delta-reign-friday-uk-upc-release-check', 'psa-backlog-november-2026-collector-guide']] + ['assets/features-20261104/'+name for name in ['delta-announcement-heading.png', 'delta-pack-counts-mobile.png', 'delta-pack-counts.csv', 'delta-pack-counts.pdf', 'delta-pack-counts.png', 'delta-pack-counts.svg', 'grading-queue-hero.png', 'psa-backlog-mobile.png', 'psa-backlog.csv', 'psa-backlog.pdf', 'psa-backlog.png', 'psa-backlog.svg', 'psa-report-heading.png', 'psa-turnaround-mobile.png', 'psa-turnaround.csv', 'psa-turnaround.pdf', 'psa-turnaround.png', 'psa-turnaround.svg', 'release-calendar-hero.png', 'upc-pack-mix-mobile.png', 'upc-pack-mix.csv', 'upc-pack-mix.pdf', 'upc-pack-mix.png', 'upc-pack-mix.svg']]
 
+NAMES += ['assets/features-20261104-visual-v3/delta-center-etb.webp', 'assets/features-20261104-visual-v3/delta-etb.webp', 'assets/features-20261104-visual-v3/psa-pikachu-queue.webp', 'assets/features-20261104-visual-v3/psa-value-announcement.webp', 'assets/features-20261104-visual-v3/release-queue-alex-oscar.webp', 'assets/features-20261104-visual-v3/upc-day-night.webp']
 
 def verify(dist,url=PRIMARY_URL,attempts=9,delay=10):
     pending={n:hashlib.sha256((dist/n).read_bytes()).hexdigest() for n in NAMES}

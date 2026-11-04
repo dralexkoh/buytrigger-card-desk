@@ -25,3 +25,21 @@ class EditorialVisualTest(unittest.TestCase):
         with self.assertRaises(ValueError):validate_editorial_visuals(self.data,self.root)
         self.data['articles'][0]['visualStyle']='source-media-v1'
         self.assertEqual(validate_editorial_visuals(self.data,self.root),1)
+    def quick_read(self):
+        a=self.data['articles'][0];a['editorialFormat']='visual-quick-read-v1'
+        a['sections']=[{'heading':'The story','html':'<aside class="quick-verdict">Key takeaway</aside><figure class="feature-reference"><img src="assets/cover.svg" alt="Official box reference"><figcaption>Product reference, publisher credited.</figcaption></figure><div class="closing-call">Clear conclusion</div>'}]
+        return a
+    def test_visual_quick_read_complete_package_passes(self):
+        self.quick_read();self.assertEqual(validate_editorial_visuals(self.data,self.root),1)
+    def test_visual_quick_read_missing_verdict_is_rejected(self):
+        a=self.quick_read();a['sections'][0]['html']=a['sections'][0]['html'].replace('closing-call','other')
+        with self.assertRaises(ValueError):validate_editorial_visuals(self.data,self.root)
+    def test_inline_broken_asset_and_missing_alt_are_rejected(self):
+        a=self.quick_read();original=a['sections'][0]['html']
+        for old,new in [('assets/cover.svg','assets/missing.svg'),('alt="Official box reference"','alt=""')]:
+            with self.subTest(change=old):
+                a['sections'][0]['html']=original.replace(old,new)
+                with self.assertRaises(ValueError):validate_editorial_visuals(self.data,self.root)
+    def test_inline_source_caption_cannot_disappear(self):
+        a=self.quick_read();a['sections'][0]['html']=a['sections'][0]['html'].replace('<figcaption>Product reference, publisher credited.</figcaption>','')
+        with self.assertRaises(ValueError):validate_editorial_visuals(self.data,self.root)
