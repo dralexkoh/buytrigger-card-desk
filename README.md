@@ -68,3 +68,8 @@ Analytics accepts only the apex, `www` and the original GitHub project path. The
 `commerce.json` holds public programme identifiers and activation flags. `drops-offers.json` is the allowlisted public offer payload. The private scout publishes only that payload through the guarded Drops publisher; discovery trails and account receipts remain outside this repository. Browser expiry removes an offer’s purchase link even when the next scout or deployment fails. General eBay search advertisements are labelled separately and never claim stock, a discount or an exact-card match. No third-party ad script, image, pixel or new analytics event is loaded. Sponsored modules use original text and no Pokémon press assets. Existing editorial source links are not rewritten.
 
 The initial commercial placement is limited to Drops. Its two former press-product pictures use the existing house text-graphic treatment instead. Homepage/Feature content and artwork remain unchanged; homepage commercial placement is disabled pending its separate media review.
+
+
+## V1.8.1 — approved Gengar / Vaporeon badge, 4 November 2026
+
+Owner-approved father-and-son badge: BuyTrigger above, CARDS below, Gengar on the father’s card and Vaporeon on the son’s. Updated current website marks, favicon and three SVG explainer badge inserts. Versioned image URL avoids retaining the old logo in browser caches. Personal names removed from the paired masthead wordmark; family/about content and article authorship remain. Existing Features, price history, Drops and owner privacy boundaries preserved.
