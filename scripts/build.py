@@ -8,7 +8,7 @@ from xml.sax.saxutils import escape
 P=Path(__file__).resolve().parents[1];D=P/'dist';BASE='https://buytrigger.cards/'
 # Existing item IDs remain stable across the custom-domain move.
 FEED_GUID_BASE='https://dralexkoh.github.io/buytrigger-card-desk/'
-BRAND='BuyTrigger.Cards';BYLINE='Alex & Oscar'
+BRAND='BuyTrigger.Cards';BYLINE='BuyTrigger Cards'
 if D.exists():shutil.rmtree(D)
 D.mkdir()
 FILES=['article-authors.js','article-features.css','commerce.js','commerce.css','refinement.css','index-refinement.css','card-art.js','homepage.css','typography.css','CNAME','analytics.js','analytics-config.json','index.html','tcg-modern-index.html','site.css','header.css','social.css','site.js','social.js','modern.css','modern.js','catalogue.js','editorial.js','market-engine.js','market-history.js','market-release.json','image-sources.json','market-sources.json','top-50.html','top50.css','top50.js','top50-data.js','top50-feature.js','top50-release.json','top50-sources.json','top50-image-sources.json','refresh-status.js','refresh-status.json']
@@ -46,7 +46,7 @@ for a in e['articles']:
  soup.select_one('meta[property="og:image"]')['content']=BASE+picture
  schema=soup.new_tag('script',type='application/ld+json');schema.string=json.dumps({'@context':'https://schema.org','@type':'Article','headline':a['title'],'description':a['summary'],'datePublished':published,'dateModified':modified,'author':author,'publisher':{'@type':'Organization','name':BRAND},'mainEntityOfPage':url,'image':BASE+picture},ensure_ascii=False).replace('</','<\\/');soup.head.append(schema)
  main=soup.select_one('main');main.clear()
- content=f'<header class="reading-head"><a class="back-link" href="index.html#journal">← Back to features</a><span class="kicker red-text">{html.escape(a["eyebrow"])}</span><h1>{html.escape(a["title"])}</h1><p>{html.escape(a["summary"])}</p>'+(authors[a['slug']]['byline'] or '<p>Alex &amp; Oscar · BuyTrigger.Cards · Published '+html.escape(published)+(' · Source story '+html.escape(a['sourcePublishedAt']) if a.get('sourcePublishedAt') else '')+'</p>')+'</header>'
+ content=f'<header class="reading-head"><a class="back-link" href="index.html#journal">← Back to features</a><span class="kicker red-text">{html.escape(a["eyebrow"])}</span><h1>{html.escape(a["title"])}</h1><p>{html.escape(a["summary"])}</p>'+(authors[a['slug']]['byline'] or '<p>BuyTrigger Cards · Published '+html.escape(published)+(' · Source story '+html.escape(a['sourcePublishedAt']) if a.get('sourcePublishedAt') else '')+'</p>')+'</header>'
  content+=f'<figure class="reading-image"><div class="story-cover"><img src="{picture}" style="object-fit:contain;background:#fff" alt="{html.escape(a["imageAlt"])}"></div><figcaption>{html.escape(a["imageCredit"])}</figcaption></figure><div class="reading-layout"><article class="article-body">'
  for sec in a['sections']:content+=f'<section><h2>{html.escape(sec["heading"])}</h2>{sec["html"]}</section>'
  content+=authors[a['slug']]['profile']
@@ -63,7 +63,7 @@ lastmods={BASE+'stories/'+a['slug']+'/':a.get('updatedAt',a.get('publishedAt',e[
 (D/'sitemap.xml').write_text('<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'+''.join('<url><loc>'+escape(u)+'</loc><lastmod>'+lastmods.get(u,'2026-11-04')+'</lastmod></url>'for u in urls)+'</urlset>')
 (D/'robots.txt').write_text('User-agent: *\nAllow: /\nSitemap: '+BASE+'sitemap.xml\n')
 items=''.join('<item><title>'+escape(a['title'])+'</title><link>'+BASE+'stories/'+a['slug']+'/</link><guid>'+FEED_GUID_BASE+'stories/'+a['slug']+'/</guid><pubDate>'+format_datetime(datetime.fromisoformat(a.get('publishedAt',e['publishedAt'])).replace(tzinfo=timezone.utc),usegmt=True)+'</pubDate><description>'+escape(a['summary'])+'</description></item>'for a in e['articles'])
-(D/'rss.xml').write_text('<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"><channel><title>BuyTrigger.Cards — Newsroom by Alex &amp; Oscar</title><link>'+BASE+'</link><description>Free news and practical card collecting research.</description><language>en-gb</language>'+items+'</channel></rss>')
+(D/'rss.xml').write_text('<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"><channel><title>BuyTrigger.Cards — Newsroom</title><link>'+BASE+'</link><description>Free news and practical card collecting research.</description><language>en-gb</language>'+items+'</channel></rss>')
 (D/'404.html').write_text('<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Page not found · BuyTrigger.Cards</title><body style="background:#f7f5ef;color:#171719;font-family:Arial;padding:10vw"><h1>That card slipped out of the binder.</h1><p>This page could not be found.</p><a style="color:#c01922" href="'+BASE+'">Back to BuyTrigger.Cards →</a></body></html>')
 (D/'.nojekyll').write_text('')
 # Content fingerprints prevent a cached old script/style from pairing with a

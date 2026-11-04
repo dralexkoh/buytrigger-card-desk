@@ -73,3 +73,8 @@ The initial commercial placement is limited to Drops. Its two former press-produ
 ## V1.8.1 — approved Gengar / Vaporeon badge, 4 November 2026
 
 Owner-approved father-and-son badge: BuyTrigger above, CARDS below, Gengar on the father’s card and Vaporeon on the son’s. Updated current website marks, favicon and three SVG explainer badge inserts. Versioned image URL avoids retaining the old logo in browser caches. Personal names removed from the paired masthead wordmark; family/about content and article authorship remain. Existing Features, price history, Drops and owner privacy boundaries preserved.
+
+
+## V1.8.2 — masthead lettering and publication identity, 4 November 2026
+
+Owner requests more character in the top BuyTrigger.Cards wordmark and public brand naming without the family signature. Masthead uses an outlined Lilita One wordmark with deliberate spacing and a slight forward lean, ink/red; bundled OFL notice. Body, article/index fonts and the approved Gengar/Vaporeon badge remain. Generic masthead/footer/meta/share/fallback publication signatures use BuyTrigger Cards. Family names remain in About content; explicitly credited article authors remain intact. No article evidence, index data, Drops or schedule change.
