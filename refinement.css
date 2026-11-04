@@ -105,3 +105,20 @@
  .editorial-page .home-stories .post-date{order:1;font-size:11px;line-height:1.35;margin:5px 0 0}
  .home-stories .post-copy>small,.home-stories .post-copy>p,.home-stories .post-copy>.text-link{display:none}
 }
+
+/* Owner correction: a short author line replaces the homepage source footer. */
+.wire-scroll .compact-wire-card{gap:8px;padding:12px}
+.wire-scroll .compact-wire-card .news-card-copy{gap:7px}
+.editorial-page .wire-scroll .compact-wire-card h3{margin:0}
+.wire-scroll .wire-byline{margin-top:auto;font-size:12px;line-height:1.4;color:#44444a}
+.wire-scroll .wire-byline .news-author{font-weight:600}
+.wire-scroll .wire-byline .news-author>span{font-weight:400}
+@media(max-width:650px){
+ .wire-scroll .compact-wire-card{display:grid;grid-template-columns:24px minmax(0,1fr);align-items:start;gap:5px 8px;padding:8px}
+ .wire-scroll .compact-wire-card .wire-card-top{display:contents}
+ .wire-scroll .compact-wire-card .wire-card-top .wire-visual{grid-column:1;grid-row:1;width:24px;height:24px;min-height:24px;flex-basis:24px}
+ .editorial-page .wire-scroll .compact-wire-card .wire-meta{grid-column:2;flex-direction:row;align-items:baseline;flex-wrap:wrap;gap:3px 7px}
+ .wire-scroll .compact-wire-card .news-card-copy{grid-column:1/-1;gap:4px}
+ .editorial-page .wire-scroll .compact-wire-card h3{font-size:21px;line-height:1.14}
+ .wire-scroll .wire-byline{font-size:11px;line-height:1.35}
+}
