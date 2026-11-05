@@ -33,7 +33,45 @@
         "rawUrl": "https://elite-tcg.co.uk/products/wailord-journey-together-162-159",
         "gradingUrl": "https://thesubcenter.co.uk/product/psa-value/",
         "saleUrl": "https://www.ebay.co.uk/itm/358909553092?nordt=true",
-        "imageSourceUrl": "https://assets.tcgdex.net/en/sv/sv09/162/high.webp"
+        "imageSourceUrl": "https://assets.tcgdex.net/en/sv/sv09/162/high.webp",
+        "printing": "Illustration Rare",
+        "returnPostageFromMinor": 900
+      },
+      {
+        "id": "meowth-ex-me03-121-en",
+        "name": "Meowth ex",
+        "set": "Perfect Order",
+        "number": "121/088",
+        "printing": "Special Illustration Rare",
+        "language": "en",
+        "image": "assets/public-targets/meowth-ex-me03-121-en.webp",
+        "rawMinor": 8999,
+        "gradingMinor": 3500,
+        "psa10Minor": 19163,
+        "returnPostageFromMinor": 900,
+        "soldOn": "2026-11-04",
+        "rawUrl": "https://www.ebay.co.uk/itm/237165058967",
+        "gradingUrl": "https://thesubcenter.co.uk/product/psa-value/",
+        "saleUrl": "https://www.ebay.co.uk/itm/147665988267?nordt=true",
+        "imageSourceUrl": "https://assets.tcgdex.net/en/me/me03/121/high.webp"
+      },
+      {
+        "id": "pikachu-sv2a-173-ja",
+        "name": "Pikachu",
+        "set": "Pokémon Card 151",
+        "number": "173/165",
+        "printing": "Art Rare",
+        "language": "ja",
+        "image": "assets/public-targets/pikachu-sv2a-173-ja.webp",
+        "rawMinor": 2269,
+        "gradingMinor": 3500,
+        "psa10Minor": 6178,
+        "returnPostageFromMinor": 900,
+        "soldOn": "2026-10-29",
+        "rawUrl": "https://www.ebay.co.uk/itm/800752259497",
+        "gradingUrl": "https://thesubcenter.co.uk/product/psa-value/",
+        "saleUrl": "https://www.ebay.co.uk/itm/800835960800?nordt=true",
+        "imageSourceUrl": "https://assets.tcgdex.net/ja/SV/SV2a/173/high.webp"
       }
     ]
   }

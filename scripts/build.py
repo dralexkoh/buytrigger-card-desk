@@ -101,7 +101,7 @@ for route,filename,language,code in [('targets','undervalued.html','English','en
  findings=r.get('findings',{}).get(code,[])
  findings_html=('<ul class="target-review-findings" aria-label="What held the picks back">'+
                 ''.join(f'<li>{html.escape(line)}</li>' for line in findings)+'</ul>') if findings else ''
- soup.select_one('main').clear();soup.select_one('main').append(BeautifulSoup(f'<section class="page-intro"><h1>{title}</h1>{overview}<p>{n} listings checked on <time datetime="{day}">{day}</time>. No card in this review passed every check.</p>{findings_html}<nav aria-label="Undervalued card language"><a href="undervalued.html">English cards</a> · <a href="undervalued-japanese.html">Japanese cards</a></nav></section>','html.parser'))
+ soup.select_one('main').clear();soup.select_one('main').append(BeautifulSoup(f'<section class="page-intro"><h1>{title}</h1>{overview}<p>{n} listings checked on <time datetime="{day}">{day}</time>. No card passed every check in the earlier downside review.</p>{findings_html}<nav aria-label="Undervalued card language"><a href="undervalued.html">English cards</a> · <a href="undervalued-japanese.html">Japanese cards</a></nav></section>','html.parser'))
  (D/filename).write_text(str(soup))
 urls=[BASE,BASE+'grading-calculator.html',BASE+'undervalued.html',BASE+'undervalued-japanese.html',BASE+'market.html',BASE+'30th-anniversary-index.html',BASE+'drops.html',BASE+'tcg-modern-index.html',BASE+'top-50.html',BASE+'bluechip-raw-archive.html']+[BASE+'stories/'+a['slug']+'/' for a in e['articles']]
 lastmods={BASE+'stories/'+a['slug']+'/':a.get('updatedAt',a.get('publishedAt',e['publishedAt'])) for a in e['articles']}

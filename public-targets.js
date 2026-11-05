@@ -28,11 +28,11 @@ function validateConfig(c){
  return c;
 }
 function validUpside(c,checkedAt){
- const fields=['id','name','set','number','language','image','rawMinor','gradingMinor','psa10Minor','soldOn','rawUrl','gradingUrl','saleUrl','imageSourceUrl'];
+ const fields=['id','name','set','number','printing','language','image','rawMinor','gradingMinor','psa10Minor','returnPostageFromMinor','soldOn','rawUrl','gradingUrl','saleUrl','imageSourceUrl'];
  if(!exactKeys(c,fields)||!['en','ja'].includes(c.language)||typeof c.id!=='string'||!/^[a-z0-9-]{1,100}$/.test(c.id))return false;
- if(!['name','set','number'].every(k=>typeof c[k]==='string'&&c[k].trim()&&c[k].length<=120))return false;
+ if(!['name','set','number','printing'].every(k=>typeof c[k]==='string'&&c[k].trim()&&c[k].length<=120))return false;
  if(typeof c.image!=='string'||!/^assets\/public-targets\/[a-z0-9_-]+\.(jpg|png|webp)$/.test(c.image))return false;
- if(!['rawMinor','gradingMinor','psa10Minor'].every(k=>Number.isSafeInteger(c[k])&&c[k]>0&&c[k]<=100_000_000)||c.psa10Minor<=c.rawMinor+c.gradingMinor)return false;
+ if(!['rawMinor','gradingMinor','psa10Minor','returnPostageFromMinor'].every(k=>Number.isSafeInteger(c[k])&&c[k]>0&&c[k]<=100_000_000)||c.psa10Minor<=c.rawMinor+c.gradingMinor)return false;
  if(typeof c.soldOn!=='string'||!/^\d{4}-\d\d-\d\d$/.test(c.soldOn)||!Number.isFinite(Date.parse(c.soldOn))||new Date(c.soldOn).toISOString().slice(0,10)!==c.soldOn||c.soldOn>checkedAt)return false;
  return ['rawUrl','gradingUrl','saleUrl','imageSourceUrl'].every(k=>typeof c[k]==='string'&&/^https:\/\/[a-z0-9.-]+\/[^\s@#]+$/.test(c[k])&&c[k].length<=500);
 }
@@ -42,8 +42,8 @@ function upsideCard(c,checkedAt){
  const figures=rows.map(([label,value])=>`<div><dt>${label}</dt><dd>${money(value)}</dd></div>`).join('');
  return `<article class="public-target" id="pick-${esc(c.id)}">
   <button type="button" class="target-picture" data-target-art="${esc(c.id)}" aria-label="Enlarge ${esc(c.name)} card artwork"><img src="${esc(c.image)}" alt="${esc(c.name+' · '+c.set+' · '+c.number)}"><span>View artwork ↗</span></button>
-  <div class="target-copy"><span class="kicker">PSA 10 UPSIDE · ${c.language==='ja'?'JAPANESE':'ENGLISH'}</span><h3>${esc(c.name)}</h3><p class="target-printing">${esc(c.set+' · '+c.number)} · Illustration Rare</p><p class="target-summary">Profit shown if this card earns PSA 10. The shop lists the card as Raw. Its grade and the condition of the copy are unknown.</p><p class="target-date">Entry and grading checked ${date(checkedAt)}</p></div>
-  <div class="target-outcomes"><dl class="target-upside-figures">${figures}</dl><p class="target-context">PSA 10 sale on ${date(c.soldOn)}, excluding the buyer fee. Profit excludes grading postage and selling costs.</p><details><summary>Prices &amp; sources</summary><ul><li><a href="${esc(c.rawUrl)}">Raw listing</a></li><li><a href="${esc(c.gradingUrl)}">PSA Value fee and return postage</a></li><li><a href="${esc(c.saleUrl)}">UK PSA 10 sold listing</a></li><li><a href="${esc(c.imageSourceUrl)}">Card artwork via TCGdex</a></li></ul></details></div>
+  <div class="target-copy"><span class="kicker">PSA 10 UPSIDE · ${c.language==='ja'?'JAPANESE':'ENGLISH'}</span><h3>${esc(c.name)}</h3><p class="target-printing">${esc(c.set+' · '+c.number+' · '+c.printing)}</p><p class="target-summary">Profit shown if this card earns PSA 10. The seller lists the card as Raw. Its grade and the condition of the copy are unknown.</p><p class="target-date">Entry and grading checked ${date(checkedAt)}</p></div>
+  <div class="target-outcomes"><dl class="target-upside-figures">${figures}</dl><p class="target-context">PSA 10 sale on ${date(c.soldOn)}, excluding the buyer fee. Profit excludes grading postage and selling costs.${c.returnPostageFromMinor>c.psa10Minor-cost?' The dealer’s minimum return postage of '+money(c.returnPostageFromMinor)+' exceeds this margin.':''}</p><details><summary>Prices &amp; sources</summary><ul><li><a href="${esc(c.rawUrl)}">Raw listing</a></li><li><a href="${esc(c.gradingUrl)}">PSA Value fee and return postage</a></li><li><a href="${esc(c.saleUrl)}">UK PSA 10 sold listing</a></li><li><a href="${esc(c.imageSourceUrl)}">Card artwork via TCGdex</a></li></ul></details></div>
  </article>`;
 }
 function validCard(c,now){
