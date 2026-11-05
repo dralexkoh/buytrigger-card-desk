@@ -985,7 +985,7 @@
       "url": "https://www.ebay.com/itm/800860034263",
       "checkedAt": "2026-11-05T13:32:25.512697+00:00",
       "sourcePublishedAt": "2026-11-05",
-      "visual": "text",
+      "visual": "editorial-ink",
       "ctaUrl": null,
       "ctaLabel": null,
       "author": {
@@ -995,7 +995,11 @@
         "label": "Correspondent",
         "beat": "Markets & auctions"
       },
-      "newsRevision": 2
+      "newsRevision": 3,
+      "image": "assets/wire-20261105/red-mew-auction-editorial.webp",
+      "imageAlt": "Ink illustration of a dark auction gavel framed by a red foil spotlight.",
+      "imageCredit": "Editorial illustration by BuyTrigger.Cards.",
+      "imageSourceUrl": "https://buytrigger.cards/assets/wire-20261105/red-mew-auction-editorial.webp"
     },
     {
       "id": "gold-rayquaza-ebay-prerelease-november-2026",
@@ -1012,7 +1016,7 @@
       "sourcePublishedAt": "2026-11-05",
       "ctaUrl": "https://senseiset.com/cards/me6-141.html",
       "ctaLabel": "See the exact Gold Rayquaza 141/103 card ↗",
-      "visual": "text",
+      "visual": "editorial-ink",
       "author": {
         "id": "elliot-reed",
         "name": "Elliot Reed",
@@ -1020,7 +1024,11 @@
         "label": "Correspondent",
         "beat": "Markets & auctions"
       },
-      "newsRevision": 4
+      "newsRevision": 5,
+      "image": "assets/wire-20261105/gold-rayquaza-editorial.webp",
+      "imageAlt": "Ink illustration of a golden Mega Rayquaza sweeping through dark storm clouds.",
+      "imageCredit": "Editorial illustration by BuyTrigger.Cards.",
+      "imageSourceUrl": "https://buytrigger.cards/assets/wire-20261105/gold-rayquaza-editorial.webp"
     },
     {
       "id": "tacoma-card-shop-break-in-november-2026",
