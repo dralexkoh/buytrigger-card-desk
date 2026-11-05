@@ -14,6 +14,7 @@ args=parser.parse_args()
 receipt=json.loads(args.receipt.read_text())
 allowed={'catalogue.js','market-history.js','market-release.json','market-sources.json',
          'top50-data.js','top50-release.json','top50-sources.json','refresh-status.json','data/market-cache/thirtieth-current.json'}
+allowed.update({'bluechip-collection-data.js','bluechip-collection-sources.json'})
 paths=receipt['promotedPaths']
 for name in paths:
     p=Path(name)

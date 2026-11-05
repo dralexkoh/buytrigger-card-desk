@@ -13,6 +13,7 @@ if D.exists():shutil.rmtree(D)
 D.mkdir()
 FILES=['public-targets.js','public-targets.css','public-targets-config.json','shared-market-engine.js','shared-market.js','shared-market.css','shared-market-config.json','article-authors.js','article-features.css','commerce.js','commerce.css','refinement.css','index-refinement.css','card-art.js','homepage.css','typography.css','CNAME','analytics.js','analytics-config.json','index.html','tcg-modern-index.html','site.css','header.css','social.css','site.js','social.js','modern.css','modern.js','catalogue.js','editorial.js','market-engine.js','market-history.js','market-release.json','image-sources.json','market-sources.json','top-50.html','top50.css','top50.js','top50-data.js','top50-feature.js','top50-release.json','top50-sources.json','top50-image-sources.json','refresh-status.js','refresh-status.json']
 FILES+=['bluechip-raw-archive.html','bluechip-engine.js','bluechip.js','bluechip.css','bluechip-release.json']
+FILES+=['bluechip-collection-data.js','bluechip-collection-sources.json']
 FILES+=['grading-calculator.js','grading-calculator.css']
 FILES+=['thirtieth-engine.js','thirtieth.js','thirtieth.css','thirtieth-catalogue.json','thirtieth-release.json']
 for name in FILES:shutil.copy2(P/name,D/name)

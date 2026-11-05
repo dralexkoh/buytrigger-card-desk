@@ -127,9 +127,38 @@ bluechip=json.loads((d/'bluechip-data.js').read_text().split('=',1)[1].strip().r
 assert bluechip['rankingGrade']=='PSA 10' and bluechip['constituentCount']==50
 bluechip_page=BeautifulSoup((d/'top-50.html').read_text(),'html.parser')
 assert bluechip_page.select_one('#card-gallery')
-assert 'PSA 10 ranking and comparisons are being updated' in bluechip_page.get_text()
-assert (d/'bluechip-raw-archive.html').is_file()
+assert bluechip_page.select_one('script[src^="bluechip-collection-data.js"]')
+assert bluechip_page.select_one('a[href="bluechip-raw-archive.html"]')
+archive_page=BeautifulSoup((d/'bluechip-raw-archive.html').read_text(),'html.parser')
+assert archive_page.select_one('script[src^="top50-data.js"]')
 if bluechip['status']!='released':assert bluechip['cards']==[]
+collection=json.loads((d/'bluechip-collection-data.js').read_text().split('=',1)[1].strip().rstrip(';'))
+collection_sources=json.loads((d/'bluechip-collection-sources.json').read_text())
+selected=collection_sources['selection']
+curated=collection['cards']
+assert len(curated)==len(selected)==len({(c['productId'],c['printing']) for c in curated})==50
+assert [c['id'] for c in curated]==list(range(1,51))
+assert all(c['year']<2019 for c in curated[:44]) and all(c['year']>=2019 for c in curated[44:])
+assert collection['release']['selectionDate']==collection_sources['selectionDate']=='2026-11-04'
+collection_history=collection['history']
+assert collection_history['cohorts']['history']['members']==[3,4,5,41,44]
+assert collection_history['cohorts']['current']['members']==[c['id'] for c in curated]
+collection_days=collection_history['dates']
+assert collection_days==sorted(set(collection_days))
+assert collection_days[-1]==collection['release']['sourceDate']
+held={(e['cardId'],e['date']) for e in collection_history['exclusions']}
+for card,reviewed in zip(curated,selected):
+ assert all(card[k]==reviewed[k] for k in ('id','productId','groupId','name','number','set','printing','year','language','image','imageSource'))
+ assert card['language']=='English' and card['imageExactPrinting'] and card['imageLarge']==card['image']
+ assert hashlib.sha256((d/card['image']).read_bytes()).hexdigest()==reviewed['imageSha256']
+ values=collection_history['prices'][str(card['id'])]
+ assert len(values)==len(collection_days)
+ assert all(value is None or type(value) in (float,int) and math.isfinite(value) and value>0 for value in values)
+ valid=[(day,value) for day,value in zip(collection_days,values) if value is not None and (card['id'],day) not in held]
+ quote=card['quotes'].get('Raw')
+ assert set(card['quotes'])<= {'Raw'}
+ assert (quote is not None)==bool(valid)
+ if quote:assert quote['currency']=='USD' and (quote['date'],quote['price'])==valid[-1]
 toptext=(d/'top50-data.js').read_text();top=json.loads(toptext.split('=',1)[1].strip().rstrip(';'))
 assert len(top['cards'])==50
 assert len({(c['productId'],c['printing']) for c in top['cards']})==50
@@ -158,7 +187,7 @@ for c in top['cards']:
  for date,value in zip(top['history']['dates'],top['history']['prices'][str(c['id'])]):
   assert value is None or isinstance(value,(int,float)) and not isinstance(value,bool) and math.isfinite(value) and value>0
   assert value is None or not c.get('releaseDate') or date>=c['releaseDate']
-for history,source_manifest in [(hist,sources),(top['history'],ts)]:
+for history,source_manifest in [(hist,sources),(top['history'],ts),(collection_history,collection_sources)]:
  for day,path in history.get('sourceReceipts',{}).items():
   assert day in history['dates'] and re.fullmatch(r'data/refresh/receipts/[a-zA-Z0-9_.-]+\.json',path)
   receipt=json.loads((d/path).read_text())
@@ -170,6 +199,7 @@ for history,source_manifest in [(hist,sources),(top['history'],ts)]:
 status=json.loads((d/'refresh-status.json').read_text())
 assert status['schemaVersion']==1 and status['status'] in ['current','partial','delayed','failed']
 assert status['sourceDate']==release['sourceDate']==top['release']['sourceDate']
+assert status['sourceDate']==collection['release']['sourceDate']
 assert not (d/'data/refresh/state.json').exists()
 if fail:raise SystemExit('\n'.join(fail))
 print('PASS: public-only artifact; Modern100 + preserved Raw50 archive; PSA10 publication gate, explicit withheld artwork, complete declared archive retrieval, explicit price gaps, no private records/secrets/graded dataset; all declared article paths, dates and authors present.')

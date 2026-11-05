@@ -49,6 +49,7 @@ BASE = "https://tcgcsv.com"
 USER_AGENT = "BuyTrigger.Cards/1.1 (+https://buytrigger.cards/)"
 FILES = ("catalogue.js", "market-history.js", "market-release.json", "market-sources.json",
          "top50-data.js", "top50-release.json", "top50-sources.json")
+COLLECTION_FILES = ("bluechip-collection-data.js", "bluechip-collection-sources.json")
 PUBLIC_OUTPUTS = (*FILES, "refresh-status.json", "data/refresh")
 POLICY = {"id": "daily-factor-two-review-v1", "factor": 2,
           "minimumPreviousObservations": 3, "recentWindow": 7,
@@ -255,10 +256,12 @@ def parse_group(body, group):
     return result
 
 
-def validate_baseline(modern, history, top):
+def validate_baseline(modern, history, top, collection=None):
     """Identity and frozen cohort guards independent of changing daily values."""
     expected = ((modern, history, 100, {"january": 82, "current": 99}),
                 (top, top["history"], 50, {"history": 14, "current": 50}))
+    if collection is not None:
+        expected += ((collection, collection["history"], 50, {"history": 5, "current": 50}),)
     identities = {}
     for data, hist, count, cohorts in expected:
         if len(data["cards"]) != count or len({key(c) for c in data["cards"]}) != count:
@@ -383,21 +386,23 @@ def coverage_and_quotes(data, hist, source_date):
         value = values[index]; excluded = (card["id"], source_date) in held
         if positive(value) and not excluded:
             counts["priced"] += 1; counts["usd"] += 1
-            if not quote:
-                quote = {"currency": "USD", "provider": "TCGplayer market via TCGCSV", "source": f"https://www.tcgplayer.com/product/{card['productId']}", "method": "Exact product and printing; mixed-condition Raw USD guide, not a checked individual sale."}
-                card.setdefault("quotes", {})["Raw"] = quote
-            quote.update({"price": value, "date": source_date, "currency": "USD"})
+            last = (source_date, value)
             card["rawRefresh"] = {"status": "current", "sourceDate": source_date}
         else:
             counts["held" if excluded else "missing"] += 1
             valid = [(day, v) for day, v in zip(hist["dates"], values) if day <= source_date and positive(v) and (card["id"], day) not in held]
-            if valid and quote:
-                quote.update({"price": valid[-1][1], "date": valid[-1][0]})
-                counts["stale"] += 1
-            elif quote:
-                card["quotes"].pop("Raw", None)
+            last = valid[-1] if valid else None
+            counts["stale"] += last is not None
             card["rawRefresh"] = {"status": "held" if excluded else "missing", "sourceDate": source_date,
-                                  "lastValidDate": valid[-1][0] if valid else None}
+                                  "lastValidDate": last[0] if last else None}
+        if last:
+            if not quote:
+                quote = {"provider": "TCGplayer market via TCGCSV", "source": f"https://www.tcgplayer.com/product/{card['productId']}",
+                         "method": "Exact product and printing mixed-condition Raw USD guide"}
+                card.setdefault("quotes", {})["Raw"] = quote
+            quote.update({"date": last[0], "price": last[1], "currency": "USD"})
+        elif quote:
+            card["quotes"].pop("Raw", None)
     counts["references"] = sum("Raw" in c.get("quotes", {}) for c in data["cards"])
     return counts
 
@@ -413,7 +418,9 @@ def release_metadata(data, hist, source_date, now, status, name, source_manifest
                     "refreshStatus": status["status"], "lastSuccessfulCheck": status["lastSuccessfulCheck"],
                     "coverage": status["coverage"][name], "incompleteArchiveDates": status["gaps"]})
     release["historyDays"] = len(hist["dates"])
-    documented_dates = {r["date"] for r in source_manifest.get("archives", [])} | {r["date"] for r in source_manifest.get("dailyReceipts", [])}
+    documented_dates = ({r["date"] for r in source_manifest.get("archives", [])} |
+                        {r["date"] for r in source_manifest.get("dailyReceipts", [])} |
+                        set(source_manifest.get("initialDailySources", {})))
     release["observedSourceDays"] = len(documented_dates - set(status["gaps"]))
     usable = lambda card, date, amount: positive(amount) and not any(e["cardId"] == card["id"] and e["date"] == date for e in hist.get("exclusions", []))
     if name == "modern":
@@ -441,7 +448,8 @@ def run(args):
     output.mkdir(parents=True, exist_ok=True)
     if any(output.iterdir()):
         raise RefreshError("Output directory must be empty; prevents partial-stage replay")
-    for file in FILES:
+    files = (*FILES, *COLLECTION_FILES) if (site / COLLECTION_FILES[0]).exists() else FILES
+    for file in files:
         shutil.copy2(site / file, output / file)
     if (site / "data/refresh").exists():
         shutil.copytree(site / "data/refresh", output / "data/refresh")
@@ -449,7 +457,8 @@ def run(args):
     modern = read_js(site / "catalogue.js", "window.MODERN_PREVIEW_DATA")
     history = read_js(site / "market-history.js", "window.BT_HISTORY")
     top = read_js(site / "top50-data.js", "window.BT_TOP50")
-    identities = validate_baseline(modern, history, top)
+    collection = read_js(site / COLLECTION_FILES[0], "window.BT_TOP50") if COLLECTION_FILES[0] in files else None
+    identities = validate_baseline(modern, history, top, collection)
     shared_path = site / "thirtieth-catalogue.json"
     shared_catalogue = read_json(shared_path) if shared_path.exists() else None
     collection_identities = dict(identities)
@@ -465,9 +474,13 @@ def run(args):
     sources = {"modern": read_json(site / "market-sources.json"), "top50": read_json(site / "top50-sources.json")}
     datasets = [(modern, history), (top, top["history"])]
     named = [("modern", modern, history), ("top50", top, top["history"])]
+    if collection is not None:
+        sources["bluechip"] = read_json(site / COLLECTION_FILES[1])
+        datasets.append((collection, collection["history"]))
+        named.append(("bluechip", collection, collection["history"]))
     now = iso(timestamp(args.now)) if args.now else iso(dt.datetime.now(UTC))
     state_path = output / "data/refresh/state.json"
-    baseline_end = min(history["dates"][-1], top["history"]["dates"][-1])
+    baseline_end = min(hist["dates"][-1] for _, hist in datasets)
     state = read_json(state_path) if state_path.exists() else {"schemaVersion": SCHEMA, "baselineEndDate": baseline_end, "processedBuilds": [], "observedArchiveDates": [], "gaps": []}
     provider = Provider(args.cache_dir.resolve(), args.fixture_dir)
     status = {"schemaVersion": SCHEMA, "runKind": args.run_kind, "checkedAt": now,
@@ -498,7 +511,7 @@ def run(args):
                 "schemaVersion": SCHEMA, "kind": "reviewed-baseline-marker-check", "sourceDate": source_date,
                 "sourceBuildAt": iso(build), "checkedAt": now,
                 "marker": {k: v for k, v in marker_receipt.items() if k != "body"},
-                "payloadChecksums": {f: sha((site / f).read_bytes()) for f in FILES}})
+                "payloadChecksums": {f: sha((site / f).read_bytes()) for f in files}})
         elif iso(build) not in state["processedBuilds"]:
             if (output / f"data/refresh/review/revision-raw-{source_date}-{build_key}.json").exists():
                 raise RefreshError("This source-date revision is already retained and awaiting explicit review; no repeated source download")
@@ -597,6 +610,9 @@ def run(args):
         write_json(output / "top50-release.json", top["release"])
         write_json(output / "market-sources.json", sources["modern"])
         write_json(output / "top50-sources.json", sources["top50"])
+        if collection is not None:
+            write_js(output / COLLECTION_FILES[0], "window.BT_TOP50", collection)
+            write_json(output / COLLECTION_FILES[1], sources["bluechip"])
         write_json(state_path, state)
         status["requestCount"] = len(provider.requests)
         status["uniqueExactPrintings"] = len(identities)

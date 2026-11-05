@@ -13,7 +13,7 @@ import subprocess
 import sys
 import tempfile
 
-from daily_refresh import FILES
+from daily_refresh import COLLECTION_FILES, FILES
 
 
 def execute(argv, cwd):
@@ -39,6 +39,8 @@ def copy_one(source, target):
 
 def apply_output(output, stage, failed):
     selected = ['refresh-status.json'] if failed else [*FILES, 'refresh-status.json']
+    if not failed and (output / COLLECTION_FILES[0]).exists():
+        selected.extend(COLLECTION_FILES)
     for name in selected:
         copy_one(output/name, stage/name)
     if failed:

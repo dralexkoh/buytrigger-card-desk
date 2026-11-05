@@ -19,10 +19,10 @@ test('a wrong printing, unverified image or duplicate identity holds the release
 test('the wider cutoff, exact count and scope must pass before publishing fifty',()=>{for(const edit of [d=>d.cards.pop(),d=>d.selectionReview.unresolvedAtOrAboveCutoff=1,d=>d.selectionReview.widerUniverseChecked=false,d=>d.cards[0].scope='trophy']){const d=fixture();edit(d);assert.equal(check(d).published,false);}});
 test('undated guides, invalid dates, future prices and expired reviews stay held',()=>{for(const edit of [q=>q.measure='undated-guide',q=>q.date=null,q=>q.date='2026-13-01',q=>q.date='2026-11-06',q=>q.validUntil='2026-11-04']){const d=fixture();edit(d.cards[0].quotes['PSA 10']);assert.equal(check(d).published,false);}});
 test('research-only or non-permitted evidence cannot publish; benchmark methods cannot mix',()=>{for(const edit of [q=>q.publicDisplayApproved=false,q=>q.evidenceState='research-only',q=>q.method='historical-record-high']){const d=fixture();edit(d.cards[0].quotes['PSA 10']);assert.equal(check(d).published,false);}});
-test('current payload stays unpublished and is separate from the preserved Raw archive',()=>{
+test('the curated Raw page and earlier archive have separate payloads while PSA 10 stays held',()=>{
  const d=JSON.parse(fs.readFileSync(path.join(root,'bluechip-release.json')));assert.equal(d.rankingGrade,'PSA 10');assert.equal(check(d).published,false);assert.equal(d.cards.length,0);
- const page=fs.readFileSync(path.join(root,'top-50.html'),'utf8');assert.match(page,/id="card-gallery"/);assert.match(page,/PSA 10 ranking and comparisons are being updated/);assert.doesNotMatch(page,/The PSA 10 ranking is not published yet/);
- const archive=fs.readFileSync(path.join(root,'bluechip-raw-archive.html'),'utf8');assert.match(archive,/Raw research/);assert.match(archive,/id="card-gallery"/);
+ const page=fs.readFileSync(path.join(root,'top-50.html'),'utf8');assert.match(page,/id="card-gallery"/);assert.match(page,/src="bluechip-collection-data\.js"/);assert.match(page,/id="era-filter"/);
+ const archive=fs.readFileSync(path.join(root,'bluechip-raw-archive.html'),'utf8');assert.match(archive,/src="top50-data\.js/);assert.match(archive,/id="card-gallery"/);
  const script=fs.readFileSync(path.join(root,'top50.js'),'utf8');assert.match(script,/c\.imageExactPrinting===true/);assert.match(script,/Exact-printing picture pending/);
 });
 test('legacy Raw importer cannot silently overwrite the PSA 10 publication path',()=>{const s=fs.readFileSync(path.join(root,'scripts/import-reviewed-top50.py'),'utf8');assert.match(s,/--legacy-raw-archive/);assert.match(s,/cannot publish a PSA 10/);});

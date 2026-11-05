@@ -39,6 +39,28 @@ class PublicPipelineTests(unittest.TestCase):
             for name in [*D.FILES, "refresh-status.json"]:
                 shutil.copy2(cwd / name, cwd / "dist" / name)
 
+    def test_curated_prices_join_and_promote_through_the_same_collector(self):
+        collection = D.read_js(self.site / "top50-data.js", "window.BT_TOP50")
+        cohort = collection["history"]["cohorts"]["history"]
+        cohort["members"] = cohort["members"][:5]
+        card = collection["cards"][0]
+        price = card["quotes"]["Raw"]["price"]
+        card["productId"] = 9999901
+        D.write_js(self.site / D.COLLECTION_FILES[0], "window.BT_TOP50", collection)
+        D.write_json(self.site / D.COLLECTION_FILES[1], {"archives": []})
+        self.helper.fixture_day("2026-11-03")
+        group = self.helper.fixture / "tcgplayer/3" / str(card["groupId"]) / "prices"
+        rows = D.read_json(group)
+        rows["results"].append({"productId": card["productId"], "subTypeName": card["printing"], "marketPrice": price})
+        D.write_json(group, rows)
+        with mock.patch.object(P, "execute", side_effect=self.fake_execute):
+            receipt, _ = self.pipeline()
+        self.assertFalse(receipt["sourceFailed"])
+        self.assertTrue(set(D.COLLECTION_FILES) <= set(receipt["promotedPaths"]))
+        updated = D.read_js(self.site / D.COLLECTION_FILES[0], "window.BT_TOP50")
+        self.assertEqual(updated["cards"][0]["quotes"]["Raw"]["date"], "2026-11-03")
+        self.assertEqual(updated["history"]["cohorts"]["history"]["members"], cohort["members"])
+
     def pipeline(self, **overrides):
         self.counter += 1
         args = argparse.Namespace(site_dir=self.site, dist_out=self.root / f"dist-{self.counter}",
