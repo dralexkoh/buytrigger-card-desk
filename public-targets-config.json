@@ -17,6 +17,24 @@
         "Japanese 151 Pikachu 173/165 at £22.69 delivered left less than £18 for grading and selling costs after a 10% cut to the checked PSA 9 sale.",
         "Seller photos showed a Raw Munkidori and an Ace 10 Flygon. Both listing titles included PSA 10."
       ]
-    }
+    },
+    "psaUpside": [
+      {
+        "id": "wailord-sv09-162-en",
+        "name": "Wailord",
+        "set": "Journey Together",
+        "number": "162/159",
+        "language": "en",
+        "image": "assets/public-targets/wailord-sv09-162-en.webp",
+        "rawMinor": 1448,
+        "gradingMinor": 3500,
+        "psa10Minor": 12000,
+        "soldOn": "2026-09-05",
+        "rawUrl": "https://elite-tcg.co.uk/products/wailord-journey-together-162-159",
+        "gradingUrl": "https://thesubcenter.co.uk/product/psa-value/",
+        "saleUrl": "https://www.ebay.co.uk/itm/358909553092?nordt=true",
+        "imageSourceUrl": "https://assets.tcgdex.net/en/sv/sv09/162/high.webp"
+      }
+    ]
   }
 }

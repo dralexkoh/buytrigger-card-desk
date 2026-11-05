@@ -6,3 +6,11 @@
 
 .target-review-findings{max-width:580px;margin:16px auto 0;padding-left:1.3em;text-align:left;color:#434348;font-size:16px;line-height:1.5}
 .target-review-findings li+li{margin-top:8px}
+
+.target-upside-figures{margin:0;font-variant-numeric:tabular-nums}
+.target-upside-figures>div{display:flex;justify-content:space-between;gap:12px;padding:7px 0;border-bottom:1px solid #deded9}
+.target-upside-figures dd{margin:0;font-weight:700;white-space:nowrap}
+.target-upside-figures>div:last-child{font-weight:700;color:#b51c23}
+.target-review-history{padding:0 24px 14px;font-size:15px}
+.target-review-history summary{cursor:pointer;min-height:44px;align-content:center;font-weight:600}
+.target-review-history li+li{margin-top:8px}

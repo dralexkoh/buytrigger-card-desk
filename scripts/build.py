@@ -88,10 +88,20 @@ for route,filename,language,code in [('targets','undervalued.html','English','en
  for tag,key,value in [('link[rel=canonical]','href',BASE+filename),('meta[property="og:url"]','content',BASE+filename),('meta[property="og:title"]','content',title+' · BuyTrigger.Cards'),('meta[property="og:description"]','content',description),('meta[name=description]','content',description)]:
   soup.select_one(tag)[key]=value
  r=targets['review'];n=r['listingsChecked'][code];day=r['checkedAt']
+ examples=[card for card in r.get('psaUpside',[]) if card['language']==code]
+ if examples:
+  def gbp(value):return f'£{value/100:,.2f}'
+  overview=''.join(
+   f"<p>{html.escape(card['name'])} {html.escape(card['number'])} · PSA 10 scenario. "
+   f"Raw {gbp(card['rawMinor'])} delivered + PSA grading {gbp(card['gradingMinor'])}. "
+   f"PSA 10 sale {gbp(card['psa10Minor'])}, leaving {gbp(card['psa10Minor']-card['rawMinor']-card['gradingMinor'])} before grading postage and selling costs.</p>"
+   for card in examples)
+ else:
+  overview=''
  findings=r.get('findings',{}).get(code,[])
  findings_html=('<ul class="target-review-findings" aria-label="What held the picks back">'+
                 ''.join(f'<li>{html.escape(line)}</li>' for line in findings)+'</ul>') if findings else ''
- soup.select_one('main').clear();soup.select_one('main').append(BeautifulSoup(f'<section class="page-intro"><h1>{title}</h1><p>{n} listings checked on <time datetime="{day}">{day}</time>. No card in this review passed every check.</p>{findings_html}<nav aria-label="Undervalued card language"><a href="undervalued.html">English cards</a> · <a href="undervalued-japanese.html">Japanese cards</a></nav></section>','html.parser'))
+ soup.select_one('main').clear();soup.select_one('main').append(BeautifulSoup(f'<section class="page-intro"><h1>{title}</h1>{overview}<p>{n} listings checked on <time datetime="{day}">{day}</time>. No card in this review passed every check.</p>{findings_html}<nav aria-label="Undervalued card language"><a href="undervalued.html">English cards</a> · <a href="undervalued-japanese.html">Japanese cards</a></nav></section>','html.parser'))
  (D/filename).write_text(str(soup))
 urls=[BASE,BASE+'grading-calculator.html',BASE+'undervalued.html',BASE+'undervalued-japanese.html',BASE+'market.html',BASE+'30th-anniversary-index.html',BASE+'drops.html',BASE+'tcg-modern-index.html',BASE+'top-50.html',BASE+'bluechip-raw-archive.html']+[BASE+'stories/'+a['slug']+'/' for a in e['articles']]
 lastmods={BASE+'stories/'+a['slug']+'/':a.get('updatedAt',a.get('publishedAt',e['publishedAt'])) for a in e['articles']}

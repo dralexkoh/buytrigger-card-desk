@@ -14,13 +14,37 @@ function validateConfig(c){
  if(!exactKeys(c,fields)||c.schemaVersion!==1||typeof c.enabled!=='boolean'||(c.enabled?c.endpoint!==APPROVED_ENDPOINT:c.endpoint!==null))throw Error('Invalid public feed setup');
  if(c.review!==undefined){
   const r=c.review,d=r?.checkedAt,ms=Date.parse(d);
-  const keys=r?.findings===undefined?['checkedAt','listingsChecked']:['checkedAt','listingsChecked','findings'];
+  const keys=['checkedAt','listingsChecked'];
+  if(r?.findings!==undefined)keys.push('findings');
+  if(r?.psaUpside!==undefined)keys.push('psaUpside');
   if(!exactKeys(r,keys)||typeof d!=='string'||!/^\d{4}-\d\d-\d\d$/.test(d)||!Number.isFinite(ms)||new Date(ms).toISOString().slice(0,10)!==d||ms>Date.now()||!exactKeys(r.listingsChecked,['en','ja'])||Object.values(r.listingsChecked).some(n=>!Number.isSafeInteger(n)||n<1||n>500))throw Error('Invalid dated review');
   if(r.findings!==undefined&&(!exactKeys(r.findings,['en','ja'])||Object.values(r.findings).some(lines=>
    !Array.isArray(lines)||lines.length<1||lines.length>3||lines.some(line=>typeof line!=='string'||!line.trim()||line.length>280)
   )))throw Error('Invalid review findings');
+  if(r.psaUpside!==undefined&&(!Array.isArray(r.psaUpside)||r.psaUpside.length>20||
+   !r.psaUpside.every(c=>validUpside(c,d))||new Set(r.psaUpside.map(c=>c.id)).size!==r.psaUpside.length
+  ))throw Error('Invalid PSA upside examples');
  }
  return c;
+}
+function validUpside(c,checkedAt){
+ const fields=['id','name','set','number','language','image','rawMinor','gradingMinor','psa10Minor','soldOn','rawUrl','gradingUrl','saleUrl','imageSourceUrl'];
+ if(!exactKeys(c,fields)||!['en','ja'].includes(c.language)||typeof c.id!=='string'||!/^[a-z0-9-]{1,100}$/.test(c.id))return false;
+ if(!['name','set','number'].every(k=>typeof c[k]==='string'&&c[k].trim()&&c[k].length<=120))return false;
+ if(typeof c.image!=='string'||!/^assets\/public-targets\/[a-z0-9_-]+\.(jpg|png|webp)$/.test(c.image))return false;
+ if(!['rawMinor','gradingMinor','psa10Minor'].every(k=>Number.isSafeInteger(c[k])&&c[k]>0&&c[k]<=100_000_000)||c.psa10Minor<=c.rawMinor+c.gradingMinor)return false;
+ if(typeof c.soldOn!=='string'||!/^\d{4}-\d\d-\d\d$/.test(c.soldOn)||!Number.isFinite(Date.parse(c.soldOn))||new Date(c.soldOn).toISOString().slice(0,10)!==c.soldOn||c.soldOn>checkedAt)return false;
+ return ['rawUrl','gradingUrl','saleUrl','imageSourceUrl'].every(k=>typeof c[k]==='string'&&/^https:\/\/[a-z0-9.-]+\/[^\s@#]+$/.test(c[k])&&c[k].length<=500);
+}
+function upsideCard(c,checkedAt){
+ const cost=c.rawMinor+c.gradingMinor;
+ const rows=[['Raw delivered',c.rawMinor],['PSA Value grading',c.gradingMinor],['Card + grading',cost],['UK PSA 10 sale',c.psa10Minor],['Profit if PSA 10',c.psa10Minor-cost]];
+ const figures=rows.map(([label,value])=>`<div><dt>${label}</dt><dd>${money(value)}</dd></div>`).join('');
+ return `<article class="public-target" id="pick-${esc(c.id)}">
+  <button type="button" class="target-picture" data-target-art="${esc(c.id)}" aria-label="Enlarge ${esc(c.name)} card artwork"><img src="${esc(c.image)}" alt="${esc(c.name+' · '+c.set+' · '+c.number)}"><span>View artwork ↗</span></button>
+  <div class="target-copy"><span class="kicker">PSA 10 UPSIDE · ${c.language==='ja'?'JAPANESE':'ENGLISH'}</span><h3>${esc(c.name)}</h3><p class="target-printing">${esc(c.set+' · '+c.number)} · Illustration Rare</p><p class="target-summary">Profit shown if this card earns PSA 10. The shop lists the card as Raw. Its grade and the condition of the copy are unknown.</p><p class="target-date">Entry and grading checked ${date(checkedAt)}</p></div>
+  <div class="target-outcomes"><dl class="target-upside-figures">${figures}</dl><p class="target-context">PSA 10 sale on ${date(c.soldOn)}, excluding the buyer fee. Profit excludes grading postage and selling costs.</p><details><summary>Prices &amp; sources</summary><ul><li><a href="${esc(c.rawUrl)}">Raw listing</a></li><li><a href="${esc(c.gradingUrl)}">PSA Value fee and return postage</a></li><li><a href="${esc(c.saleUrl)}">UK PSA 10 sold listing</a></li><li><a href="${esc(c.imageSourceUrl)}">Card artwork via TCGdex</a></li></ul></details></div>
+ </article>`;
 }
 function validCard(c,now){
  if(!exactKeys(c,FIELDS))return false;
@@ -50,7 +74,7 @@ function mount(language){
  let active=true,busy=false,timer,controller,config,items=[],feedExpiresAt=0,returnFocus;
  const dialog=document.createElement('dialog');dialog.className='target-art-dialog';dialog.setAttribute('aria-label','Card artwork');dialog.innerHTML='<button type="button" aria-label="Close card artwork">Close ×</button><img alt="">';document.body.append(dialog);
  const close=()=>dialog.close();dialog.querySelector('button').onclick=close;dialog.addEventListener('close',()=>{document.documentElement.classList.remove('target-art-open');returnFocus?.focus();});
- function click(e){const b=e.target.closest('[data-target-art]');if(b){const c=items.find(x=>x.id===b.dataset.targetArt);if(!c)return;returnFocus=b;const img=dialog.querySelector('img');img.src=c.image;img.alt=c.name+' · '+c.set+' · '+c.number;dialog.showModal();document.documentElement.classList.add('target-art-open');return;}if(e.target.closest('[data-target-retry]'))refresh();}
+ function click(e){const b=e.target.closest('[data-target-art]');if(b){const c=items.find(x=>x.id===b.dataset.targetArt)??config?.review?.psaUpside?.find(x=>x.id===b.dataset.targetArt&&x.language===language);if(!c)return;returnFocus=b;const img=dialog.querySelector('img');img.src=c.image;img.alt=c.name+' · '+c.set+' · '+c.number;dialog.showModal();document.documentElement.classList.add('target-art-open');return;}if(e.target.closest('[data-target-retry]'))refresh();}
  host.addEventListener('click',click);
  function state(title,message,retry=false){items=[];status.textContent=title;host.innerHTML=`<div class="opportunity-empty"><h3>${esc(title)}</h3><p>${esc(message)}</p>${retry?'<button type="button" class="btn red" data-target-retry>Try again</button>':''}</div>`;}
  function later(delay=300000){clearTimeout(timer);timer=setTimeout(refresh,delay);}
@@ -63,6 +87,14 @@ function mount(language){
    if(!active)return;
    if(!config.enabled){
     const review=config.review,label=language==='ja'?'Japanese':'English';
+    const examples=review?.psaUpside?.filter(c=>c.language===language)??[];
+    if(examples.length){
+     status.textContent=examples.length===1?'1 PSA 10 scenario':examples.length+' PSA 10 scenarios';
+     const findings=review.findings?.[language]??[];
+     host.innerHTML=examples.map(c=>upsideCard(c,review.checkedAt)).join('')+
+      `<details class="target-review-history"><summary>Earlier downside review · ${date(review.checkedAt)}</summary><p>${review.listingsChecked[language]} listings checked. None passed the PSA 9 cost recovery and other checks.</p><ul>${findings.map(line=>`<li>${esc(line)}</li>`).join('')}</ul></details>`;
+     return;
+    }
     state('No verified picks',review?`${review.listingsChecked[language]} listings checked on ${date(review.checkedAt)} for the ${label} shortlist. No card in this review passed every check.`:'No current reviewed cards in this language.');
     const findings=review?.findings?.[language];
     if(findings)host.querySelector('.opportunity-empty').insertAdjacentHTML('beforeend',
