@@ -105,8 +105,8 @@ for article in editorial['articles']:
 bluechip=json.loads((d/'bluechip-data.js').read_text().split('=',1)[1].strip().rstrip(';'))
 assert bluechip['rankingGrade']=='PSA 10' and bluechip['constituentCount']==50
 bluechip_page=BeautifulSoup((d/'top-50.html').read_text(),'html.parser')
-assert bluechip_page.body['data-route']=='bluechip'
-assert not bluechip_page.select_one('#card-gallery')
+assert bluechip_page.select_one('#card-gallery')
+assert 'PSA 10 ranking and comparisons are being updated' in bluechip_page.get_text()
 assert (d/'bluechip-raw-archive.html').is_file()
 if bluechip['status']!='released':assert bluechip['cards']==[]
 toptext=(d/'top50-data.js').read_text();top=json.loads(toptext.split('=',1)[1].strip().rstrip(';'))
