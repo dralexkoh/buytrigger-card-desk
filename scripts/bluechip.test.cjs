@@ -21,7 +21,7 @@ test('undated guides, invalid dates, future prices and expired reviews stay held
 test('research-only or non-permitted evidence cannot publish; benchmark methods cannot mix',()=>{for(const edit of [q=>q.publicDisplayApproved=false,q=>q.evidenceState='research-only',q=>q.method='historical-record-high']){const d=fixture();edit(d.cards[0].quotes['PSA 10']);assert.equal(check(d).published,false);}});
 test('current payload stays unpublished and is separate from the preserved Raw archive',()=>{
  const d=JSON.parse(fs.readFileSync(path.join(root,'bluechip-release.json')));assert.equal(d.rankingGrade,'PSA 10');assert.equal(check(d).published,false);assert.equal(d.cards.length,0);
- const page=fs.readFileSync(path.join(root,'top-50.html'),'utf8');assert.match(page,/data-route="bluechip"/);assert.doesNotMatch(page,/id="card-gallery"/);assert.match(page,/PSA 10 ranking is not published yet/);
+ const page=fs.readFileSync(path.join(root,'top-50.html'),'utf8');assert.match(page,/id="card-gallery"/);assert.match(page,/PSA 10 ranking and comparisons are being updated/);assert.doesNotMatch(page,/The PSA 10 ranking is not published yet/);
  const archive=fs.readFileSync(path.join(root,'bluechip-raw-archive.html'),'utf8');assert.match(archive,/Raw research/);assert.match(archive,/id="card-gallery"/);
  const script=fs.readFileSync(path.join(root,'top50.js'),'utf8');assert.match(script,/c\.imageExactPrinting===true/);assert.match(script,/Exact-printing picture pending/);
 });
