@@ -16,6 +16,13 @@ if shared['enabled']:
  assert re.fullmatch('[a-f0-9]{64}',set_release['sourceVersion'])
 else:assert shared['endpoint'] is None
 
+targets=json.loads((d/'public-targets-config.json').read_text())
+assert set(targets)=={'schemaVersion','enabled','endpoint','review'}
+assert targets['schemaVersion']==1 and targets['enabled'] is False and targets['endpoint'] is None, 'Enable the feed only after the reviewed shared Cards release'
+review=targets['review']
+assert set(review)=={'checkedAt','listingsChecked'} and re.fullmatch(r'\d{4}-\d{2}-\d{2}',review['checkedAt'])
+assert set(review['listingsChecked'])=={'en','ja'} and all(type(v) is int and 0<v<=500 for v in review['listingsChecked'].values())
+APPROVED_TARGET_READER='https://ukblxmvsqihnnyysvxes.supabase.co/functions/v1/public-card-targets'
 assert (d/'CNAME').read_text()=='buytrigger.cards\n', 'Wrong public domain contract'
 APPROVED_COLLECTOR='https://brzawmbpwkdundruicca.supabase.co/functions/v1/cards-traffic-ingest'
 analytics=json.loads((d/'analytics-config.json').read_text())
@@ -33,6 +40,8 @@ for f in d.rglob('*'):
  if any(x in f.name.lower() for x in ['owner','backup','research.json','.env','.map','traffic-preview']):fail.append(str(f))
  if f.suffix not in ['.html','.js','.css','.json','.xml','.txt','.svg']:continue
  s=f.read_text()
+ if f.name=='public-targets.js':
+  s=s.replace(APPROVED_TARGET_READER,'https://approved-public-target-reader.invalid')
  if f.name=='shared-market-config.json':
   s=s.replace(APPROVED_MARKET,'https://approved-public-market.invalid')
  if f.name in ['analytics.js','analytics-config.json']:

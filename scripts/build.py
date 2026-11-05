@@ -11,7 +11,7 @@ FEED_GUID_BASE='https://dralexkoh.github.io/buytrigger-card-desk/'
 BRAND='BuyTrigger.Cards';BYLINE='BuyTrigger Cards'
 if D.exists():shutil.rmtree(D)
 D.mkdir()
-FILES=['shared-market-engine.js','shared-market.js','shared-market.css','shared-market-config.json','article-authors.js','article-features.css','commerce.js','commerce.css','refinement.css','index-refinement.css','card-art.js','homepage.css','typography.css','CNAME','analytics.js','analytics-config.json','index.html','tcg-modern-index.html','site.css','header.css','social.css','site.js','social.js','modern.css','modern.js','catalogue.js','editorial.js','market-engine.js','market-history.js','market-release.json','image-sources.json','market-sources.json','top-50.html','top50.css','top50.js','top50-data.js','top50-feature.js','top50-release.json','top50-sources.json','top50-image-sources.json','refresh-status.js','refresh-status.json']
+FILES=['public-targets.js','public-targets.css','public-targets-config.json','shared-market-engine.js','shared-market.js','shared-market.css','shared-market-config.json','article-authors.js','article-features.css','commerce.js','commerce.css','refinement.css','index-refinement.css','card-art.js','homepage.css','typography.css','CNAME','analytics.js','analytics-config.json','index.html','tcg-modern-index.html','site.css','header.css','social.css','site.js','social.js','modern.css','modern.js','catalogue.js','editorial.js','market-engine.js','market-history.js','market-release.json','image-sources.json','market-sources.json','top-50.html','top50.css','top50.js','top50-data.js','top50-feature.js','top50-release.json','top50-sources.json','top50-image-sources.json','refresh-status.js','refresh-status.json']
 FILES+=['bluechip-raw-archive.html','bluechip-engine.js','bluechip.js','bluechip.css','bluechip-release.json']
 FILES+=['thirtieth-engine.js','thirtieth.js','thirtieth.css','thirtieth-catalogue.json','thirtieth-release.json']
 for name in FILES:shutil.copy2(P/name,D/name)
@@ -78,7 +78,17 @@ for route, filename, title, description in [('market','market.html','Market','Ex
  soup.select_one('meta[property="og:description"]')['content']=description
  soup.select_one('main').clear();soup.select_one('main').append(BeautifulSoup('<section class="page-intro"><h1>'+title+'</h1><p>'+description+'</p></section>','html.parser'))
  (D/filename).write_text(str(soup))
-urls=[BASE,BASE+'market.html',BASE+'30th-anniversary-index.html',BASE+'drops.html',BASE+'tcg-modern-index.html',BASE+'top-50.html',BASE+'bluechip-raw-archive.html']+[BASE+'stories/'+a['slug']+'/' for a in e['articles']]
+targets=json.loads((P/'public-targets-config.json').read_text())
+for route,filename,language,code in [('targets','undervalued.html','English','en'),('japan','undervalued-japanese.html','Japanese','ja')]:
+ soup=BeautifulSoup((P/'index.html').read_text(),'html.parser');soup.body['data-route']=route
+ title=f'Undervalued {language} cards';description=f'Reviewed {language} Pokémon card opportunities, with exact-printing checks, delivered prices and UK sales evidence.'
+ soup.title.string=title+' · BuyTrigger.Cards'
+ for tag,key,value in [('link[rel=canonical]','href',BASE+filename),('meta[property="og:url"]','content',BASE+filename),('meta[property="og:title"]','content',title+' · BuyTrigger.Cards'),('meta[property="og:description"]','content',description),('meta[name=description]','content',description)]:
+  soup.select_one(tag)[key]=value
+ r=targets['review'];n=r['listingsChecked'][code];day=r['checkedAt']
+ soup.select_one('main').clear();soup.select_one('main').append(BeautifulSoup(f'<section class="page-intro"><h1>{title}</h1><p>{n} listings checked on <time datetime="{day}">{day}</time>. No card in this review passed every check.</p><nav aria-label="Undervalued card language"><a href="undervalued.html">English cards</a> · <a href="undervalued-japanese.html">Japanese cards</a></nav></section>','html.parser'))
+ (D/filename).write_text(str(soup))
+urls=[BASE,BASE+'undervalued.html',BASE+'undervalued-japanese.html',BASE+'market.html',BASE+'30th-anniversary-index.html',BASE+'drops.html',BASE+'tcg-modern-index.html',BASE+'top-50.html',BASE+'bluechip-raw-archive.html']+[BASE+'stories/'+a['slug']+'/' for a in e['articles']]
 lastmods={BASE+'stories/'+a['slug']+'/':a.get('updatedAt',a.get('publishedAt',e['publishedAt'])) for a in e['articles']}
 (D/'sitemap.xml').write_text('<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'+''.join('<url><loc>'+escape(u)+'</loc><lastmod>'+lastmods.get(u,'2026-11-04')+'</lastmod></url>'for u in urls)+'</urlset>')
 (D/'robots.txt').write_text('User-agent: *\nAllow: /\nSitemap: '+BASE+'sitemap.xml\n')
