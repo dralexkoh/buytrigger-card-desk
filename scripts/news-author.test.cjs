@@ -22,3 +22,33 @@ test('unsigned news does not acquire a fictional author and names remain escaped
  assert.doesNotMatch(html,/<script>/);
  assert.match(html,/&lt;script&gt;/);
 });
+
+const wireRenderer=source.slice(source.indexOf('function wire(w)'),source.indexOf('function homeWire('));
+const wire=vm.runInNewContext(esc+'\n'+wireRenderer+'\nwire',{URL});
+
+test('Newsroom briefs omit source lines and external reading links while retaining attribution',()=>{
+ const html=wire({
+  id:'photo-brief',category:'Auctions',date:'2026-11-05',displayDate:'5 Nov',kind:'Auction',
+  title:'Test brief',summary:'Reported by the original publisher.',
+  url:'https://publisher.example/lot',sourceLabel:'Publisher',
+  ctaUrl:'https://catalogue.example/card',ctaLabel:'See the card',
+  image:'assets/card.webp',imageAlt:'Exact auction card',imageCredit:'Photo: Original publisher.',
+  imageSourceUrl:'https://publisher.example/photo',
+  author:{type:'named_ai_correspondent',name:'Elliot Reed'},
+ });
+ assert.doesNotMatch(html,/Source:|Image source|publisher\.example|catalogue\.example|See the card/);
+ assert.match(html,/Elliot Reed/);
+ assert.match(html,/Photo: Original publisher\./);
+});
+
+test('Newsroom briefs keep internal reading links and a playable footage preview',()=>{
+ const html=wire({
+  id:'video-brief',category:'News',date:'2026-11-05',displayDate:'5 Nov',visual:'linked-video',
+  ctaUrl:'#journal',ctaLabel:'More collecting stories',
+  image:'https://i.ytimg.com/vi/uIMCHihZxdw/mqdefault.jpg',imageAlt:'Surveillance preview',
+  imageSourceUrl:'https://www.youtube.com/watch?v=uIMCHihZxdw',imageCredit:'Surveillance footage.',
+ });
+ assert.match(html,/href="#journal"/);
+ assert.equal((html.match(/href="https:\/\/www\.youtube\.com/g)||[]).length,1);
+ assert.match(html,/aria-label="Watch footage"/);
+});
