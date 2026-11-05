@@ -6,6 +6,9 @@ p=Path(__file__).resolve().parents[1];d=Path(os.environ.get('BT_CARD_DESK_ARTIFA
 PUBLIC_BASE='https://buytrigger.cards/'
 shared=json.loads((d/'shared-market-config.json').read_text())
 assert shared=={'schemaVersion':1,'enabled':False,'endpoint':None}, 'Shared market activation requires its reviewed eligibility/privacy release'
+targets=json.loads((d/'public-targets-config.json').read_text())
+assert targets=={'schemaVersion':1,'enabled':False,'endpoint':None}, 'Public Targets activation requires its reviewed evidence/privacy release'
+APPROVED_TARGET_READER='https://ukblxmvsqihnnyysvxes.supabase.co/functions/v1/public-card-targets'
 assert (d/'CNAME').read_text()=='buytrigger.cards\n', 'Wrong public domain contract'
 APPROVED_COLLECTOR='https://brzawmbpwkdundruicca.supabase.co/functions/v1/cards-traffic-ingest'
 analytics=json.loads((d/'analytics-config.json').read_text())
@@ -23,6 +26,8 @@ for f in d.rglob('*'):
  if any(x in f.name.lower() for x in ['owner','backup','research.json','.env','.map','traffic-preview']):fail.append(str(f))
  if f.suffix not in ['.html','.js','.css','.json','.xml','.txt','.svg']:continue
  s=f.read_text()
+ if f.name=='public-targets.js':
+  s=s.replace(APPROVED_TARGET_READER,'https://approved-public-target-reader.invalid')
  if f.name in ['analytics.js','analytics-config.json']:
   s=re.sub(re.escape(APPROVED_COLLECTOR)+r'''(?=['"\s<>]|$)''','https://approved-public-card-traffic-collector.invalid',s)
  for pattern in [r'/Users/',r'/var/folders/',r'ACQI?-\d{6}',r'CT-\d{6}',r'TGT-\d{6}',r'eyJ[a-zA-Z0-9_-]{30}',r'gh[pousr]_[a-zA-Z0-9]{20}',r'supabase\.co\b',r'(?i)service_role',r'(?i)unpublished draft',r'(?i)local full-site preview']:
