@@ -82,3 +82,8 @@ Owner-approved father-and-son badge: BuyTrigger above, CARDS below, Gengar on th
 ## V1.8.2 — masthead lettering and publication identity, 4 November 2026
 
 Owner requests more character in the top BuyTrigger.Cards wordmark and public brand naming without the family signature. Masthead uses an outlined Lilita One wordmark with deliberate spacing and a slight forward lean, ink/red; bundled OFL notice. Body, article/index fonts and the approved Gengar/Vaporeon badge remain. Generic masthead/footer/meta/share/fallback publication signatures use BuyTrigger Cards. Family names remain in About content; explicitly credited article authors remain intact. No article evidence, index data, Drops or schedule change.
+
+
+## Owner-selected serif masthead — 4 November 2026 / S68
+
+Alex selects option 21: upright Georgia bold, ink BuyTrigger and red .Cards, matching the homepage headline treatment. The versioned SVG uses installed system fonts and embeds no font files. Existing responsive header sizing, Gengar/Vaporeon badge, avatars and all publication content remain unchanged. Generated article, Market and Drops pages inherit the updated masthead from the shared source. Earlier Lilita wordmark remains available for history.
