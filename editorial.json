@@ -1014,13 +1014,9 @@
       "url": "https://www.ebay.com/sch/i.html?_nkw=Mega+Rayquaza+ex+141%2F103+Delta+Reign&LH_Sold=1&LH_Complete=1&_sop=13",
       "checkedAt": "2026-11-05T13:13:30.742029+00:00",
       "sourcePublishedAt": "2026-11-05",
-      "ctaUrl": null,
-      "ctaLabel": null,
-      "image": "assets/wire-20261105/gold-rayquaza-prerelease.webp",
-      "imageAlt": "Gold Mega Rayquaza ex 141/103 medians: US$474.50 from six October sales and US$419.95 from three November sales.",
-      "imageCredit": "Graphic: BuyTrigger.Cards. Data: eBay completed listings.",
-      "imageSourceUrl": "https://buytrigger.cards/assets/wire-20261105/gold-rayquaza-prerelease.webp",
-      "visual": "briefing-graphic",
+      "ctaUrl": "https://turnzerohq.com/pokemon/cards/me6-141",
+      "ctaLabel": "See the English 141/103 card ↗",
+      "visual": "text",
       "author": {
         "id": "elliot-reed",
         "name": "Elliot Reed",
@@ -1028,7 +1024,7 @@
         "label": "Correspondent",
         "beat": "Markets & auctions"
       },
-      "newsRevision": 1
+      "newsRevision": 2
     },
     {
       "id": "tacoma-card-shop-break-in-november-2026",
@@ -1045,11 +1041,11 @@
       "sourcePublishedAt": "2026-11-04",
       "ctaUrl": null,
       "ctaLabel": null,
-      "image": "assets/wire-20261105/tacoma-break-in.webp",
-      "imageAlt": "Conceptual illustration of a red pickup at a warehouse entrance with a US$5,000 reward headline.",
-      "imageCredit": "Conceptual illustration: BuyTrigger.Cards.",
-      "imageSourceUrl": "https://buytrigger.cards/assets/wire-20261105/tacoma-break-in.webp",
-      "visual": "briefing-graphic",
+      "image": "https://i.ytimg.com/vi/uIMCHihZxdw/mqdefault.jpg",
+      "imageAlt": "Northwest Sportscards surveillance footage shown by KIRO 7, with a person beside the shop counter.",
+      "imageCredit": "Surveillance footage: Northwest Sportscards via KIRO 7 News.",
+      "imageSourceUrl": "https://www.youtube.com/watch?v=uIMCHihZxdw",
+      "visual": "linked-video",
       "author": {
         "id": "zara-chen",
         "name": "Zara Chen",
@@ -1057,7 +1053,7 @@
         "label": "Correspondent",
         "beat": "Global news desk"
       },
-      "newsRevision": 1
+      "newsRevision": 2
     },
     {
       "id": "alt-expedition-poliwrath-psa10-20261029",

@@ -140,3 +140,7 @@
  .illustrated-wire.wire-graphic{grid-template-columns:minmax(0,1fr)}
  .illustrated-wire.wire-graphic>.wire-visual{width:min(100%,360px)}
 }
+
+.illustrated-wire.wire-text{grid-template-columns:minmax(0,1fr)}
+.illustrated-wire>.wire-video{display:block;height:auto;aspect-ratio:16/9}
+.wire-video:focus-visible{outline:3px solid #df242b;outline-offset:4px}

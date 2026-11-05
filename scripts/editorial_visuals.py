@@ -16,7 +16,11 @@ def validate_wire_media(wire,root):
     if any(not isinstance(wire.get(field),str) or not wire[field].strip() for field in WIRE_MEDIA):
         raise ValueError(f'{story}: wire picture needs alt text, credit and its public source')
     path=wire['image']
-    if not WIRE_MEDIA_PATH.fullmatch(path) or not (root/path).resolve().is_relative_to(root/'assets') or not (root/path).is_file():
+    if wire.get('visual') == 'linked-video':
+        thumbnail = re.fullmatch(r'https://i\.ytimg\.com/vi/([A-Za-z0-9_-]{11})/mqdefault\.jpg', path)
+        if not thumbnail or wire['imageSourceUrl'] != f'https://www.youtube.com/watch?v={thumbnail[1]}':
+            raise ValueError(f'{story}: video preview and source must identify the same YouTube video')
+    elif not WIRE_MEDIA_PATH.fullmatch(path) or not (root/path).resolve().is_relative_to(root/'assets') or not (root/path).is_file():
         raise ValueError(f'{story}: missing or unsafe wire picture')
     for field in ('imageSourceUrl','imageLicenseUrl'):
         if field not in wire:
