@@ -5,8 +5,18 @@
   "review": {
     "checkedAt": "2026-11-05",
     "listingsChecked": {
-      "en": 9,
+      "en": 10,
       "ja": 7
+    },
+    "findings": {
+      "en": [
+        "Wailord 162/159 at £16.20 delivered left less than £6 for grading and selling costs after a 10% cut to the checked PSA 9 sale.",
+        "Raw Drowzee 210/198 was listed at £92.21 delivered. The same printing was available in PSA 9 for £62.69 delivered."
+      ],
+      "ja": [
+        "Japanese 151 Pikachu 173/165 at £22.69 delivered left less than £18 for grading and selling costs after a 10% cut to the checked PSA 9 sale.",
+        "Seller photos showed a Raw Munkidori and an Ace 10 Flygon. Both listing titles included PSA 10."
+      ]
     }
   }
 }

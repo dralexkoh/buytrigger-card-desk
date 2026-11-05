@@ -20,7 +20,12 @@ targets=json.loads((d/'public-targets-config.json').read_text())
 assert set(targets)=={'schemaVersion','enabled','endpoint','review'}
 assert targets['schemaVersion']==1 and targets['enabled'] is False and targets['endpoint'] is None, 'Enable the feed only after the reviewed shared Cards release'
 review=targets['review']
-assert set(review)=={'checkedAt','listingsChecked'} and re.fullmatch(r'\d{4}-\d{2}-\d{2}',review['checkedAt'])
+assert set(review)=={'checkedAt','listingsChecked','findings'} and re.fullmatch(r'\d{4}-\d{2}-\d{2}',review['checkedAt'])
+assert set(review['findings'])=={'en','ja'} and all(
+    isinstance(lines,list) and 1<=len(lines)<=3 and
+    all(isinstance(line,str) and line.strip() and len(line)<=280 for line in lines)
+    for lines in review['findings'].values()
+)
 assert set(review['listingsChecked'])=={'en','ja'} and all(type(v) is int and 0<v<=500 for v in review['listingsChecked'].values())
 APPROVED_TARGET_READER='https://ukblxmvsqihnnyysvxes.supabase.co/functions/v1/public-card-targets'
 assert (d/'CNAME').read_text()=='buytrigger.cards\n', 'Wrong public domain contract'

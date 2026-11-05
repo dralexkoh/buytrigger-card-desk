@@ -12,7 +12,14 @@ const timestamp=x=>typeof x==='string'&&/(Z|[+-]\d\d:\d\d)$/.test(x)&&Number.isF
 function validateConfig(c){
  const fields=['schemaVersion','enabled','endpoint'];if(c?.review!==undefined)fields.push('review');
  if(!exactKeys(c,fields)||c.schemaVersion!==1||typeof c.enabled!=='boolean'||(c.enabled?c.endpoint!==APPROVED_ENDPOINT:c.endpoint!==null))throw Error('Invalid public feed setup');
- if(c.review!==undefined){const r=c.review,d=r?.checkedAt,ms=Date.parse(d);if(!exactKeys(r,['checkedAt','listingsChecked'])||typeof d!=='string'||!/^\d{4}-\d\d-\d\d$/.test(d)||!Number.isFinite(ms)||new Date(ms).toISOString().slice(0,10)!==d||ms>Date.now()||!exactKeys(r.listingsChecked,['en','ja'])||Object.values(r.listingsChecked).some(n=>!Number.isSafeInteger(n)||n<1||n>500))throw Error('Invalid dated review');}
+ if(c.review!==undefined){
+  const r=c.review,d=r?.checkedAt,ms=Date.parse(d);
+  const keys=r?.findings===undefined?['checkedAt','listingsChecked']:['checkedAt','listingsChecked','findings'];
+  if(!exactKeys(r,keys)||typeof d!=='string'||!/^\d{4}-\d\d-\d\d$/.test(d)||!Number.isFinite(ms)||new Date(ms).toISOString().slice(0,10)!==d||ms>Date.now()||!exactKeys(r.listingsChecked,['en','ja'])||Object.values(r.listingsChecked).some(n=>!Number.isSafeInteger(n)||n<1||n>500))throw Error('Invalid dated review');
+  if(r.findings!==undefined&&(!exactKeys(r.findings,['en','ja'])||Object.values(r.findings).some(lines=>
+   !Array.isArray(lines)||lines.length<1||lines.length>3||lines.some(line=>typeof line!=='string'||!line.trim()||line.length>280)
+  )))throw Error('Invalid review findings');
+ }
  return c;
 }
 function validCard(c,now){
@@ -54,7 +61,14 @@ function mount(language){
   try{
    if(!config)config=validateConfig(await json('public-targets-config.json'));
    if(!active)return;
-   if(!config.enabled){const r=config.review,label=language==='ja'?'Japanese':'English';state('No verified picks',r?`${r.listingsChecked[language]} ${label} listings checked on ${date(r.checkedAt)}. No card in this review passed every check.`:'No current reviewed cards in this language.');return;}
+   if(!config.enabled){
+    const review=config.review,label=language==='ja'?'Japanese':'English';
+    state('No verified picks',review?`${review.listingsChecked[language]} listings checked on ${date(review.checkedAt)} for the ${label} shortlist. No card in this review passed every check.`:'No current reviewed cards in this language.');
+    const findings=review?.findings?.[language];
+    if(findings)host.querySelector('.opportunity-empty').insertAdjacentHTML('beforeend',
+     `<ul class="target-review-findings" aria-label="What held the picks back">${findings.map(line=>`<li>${esc(line)}</li>`).join('')}</ul>`);
+    return;
+   }
    const url=new URL(config.endpoint);if(url.protocol!=='https:'||url.username||url.password||url.search||url.hash||!/^\/functions\/v1\/public-card-targets$/.test(url.pathname))throw Error('Invalid feed endpoint');url.searchParams.set('language',language);
    const data=await json(url.href),cards=validateFeed(data,language);if(!active)return;items=cards;feedExpiresAt=Date.parse(data.generatedAt)+300000;
    if(cards.length){status.textContent=cards.length+' reviewed card'+(cards.length===1?'':'s');host.innerHTML=cards.map(card).join('');host.querySelectorAll('img').forEach(img=>img.addEventListener('error',()=>{const b=img.closest('button');b.disabled=true;b.innerHTML='<span>Picture temporarily unavailable</span>';},{once:true}));}
