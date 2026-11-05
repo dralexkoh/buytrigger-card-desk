@@ -29,7 +29,9 @@ function validateConfig(c){
 }
 function validUpside(c,checkedAt){
  const fields=['id','name','set','number','printing','language','image','rawMinor','gradingMinor','psa10Minor','returnPostageFromMinor','soldOn','rawUrl','gradingUrl','saleUrl','imageSourceUrl'];
+ if(c?.gradingTier!==undefined)fields.push('gradingTier');
  if(!exactKeys(c,fields)||!['en','ja'].includes(c.language)||typeof c.id!=='string'||!/^[a-z0-9-]{1,100}$/.test(c.id))return false;
+ if(c.gradingTier!==undefined&&!['Value','Standard'].includes(c.gradingTier))return false;
  if(!['name','set','number','printing'].every(k=>typeof c[k]==='string'&&c[k].trim()&&c[k].length<=120))return false;
  if(typeof c.image!=='string'||!/^assets\/public-targets\/[a-z0-9_-]+\.(jpg|png|webp)$/.test(c.image))return false;
  if(!['rawMinor','gradingMinor','psa10Minor','returnPostageFromMinor'].every(k=>Number.isSafeInteger(c[k])&&c[k]>0&&c[k]<=100_000_000)||c.psa10Minor<=c.rawMinor+c.gradingMinor)return false;
@@ -38,12 +40,18 @@ function validUpside(c,checkedAt){
 }
 function upsideCard(c,checkedAt){
  const cost=c.rawMinor+c.gradingMinor;
- const rows=[['Raw delivered',c.rawMinor],['PSA Value grading',c.gradingMinor],['Card + grading',cost],['UK PSA 10 sale',c.psa10Minor],['Profit if PSA 10',c.psa10Minor-cost]];
+ const margin=c.psa10Minor-cost;
+ const tier=c.gradingTier??'Value';
+ const rows=[['Raw delivered',c.rawMinor],['PSA '+tier+' grading',c.gradingMinor],['Card + grading',cost],['UK PSA 10 sale',c.psa10Minor],['Profit if PSA 10',margin]];
+ const postage=c.returnPostageFromMinor;
+ let postageNote='';
+ if(postage>margin)postageNote=' The dealer’s minimum return postage of '+money(postage)+' exceeds this margin.';
+ else if(margin<=2*postage)postageNote=' After the dealer’s minimum '+money(postage)+' return postage, '+money(margin-postage)+' remains before other costs.';
  const figures=rows.map(([label,value])=>`<div><dt>${label}</dt><dd>${money(value)}</dd></div>`).join('');
  return `<article class="public-target" id="pick-${esc(c.id)}">
   <button type="button" class="target-picture" data-target-art="${esc(c.id)}" aria-label="Enlarge ${esc(c.name)} card artwork"><img src="${esc(c.image)}" alt="${esc(c.name+' · '+c.set+' · '+c.number)}"><span>View artwork ↗</span></button>
   <div class="target-copy"><span class="kicker">PSA 10 UPSIDE · ${c.language==='ja'?'JAPANESE':'ENGLISH'}</span><h3>${esc(c.name)}</h3><p class="target-printing">${esc(c.set+' · '+c.number+' · '+c.printing)}</p><p class="target-summary">Profit shown if this card earns PSA 10. The seller lists the card as Raw. Its grade and the condition of the copy are unknown.</p><p class="target-date">Entry and grading checked ${date(checkedAt)}</p></div>
-  <div class="target-outcomes"><dl class="target-upside-figures">${figures}</dl><p class="target-context">PSA 10 sale on ${date(c.soldOn)}, excluding the buyer fee. Profit excludes grading postage and selling costs.${c.returnPostageFromMinor>c.psa10Minor-cost?' The dealer’s minimum return postage of '+money(c.returnPostageFromMinor)+' exceeds this margin.':''}</p><details><summary>Prices &amp; sources</summary><ul><li><a href="${esc(c.rawUrl)}">Raw listing</a></li><li><a href="${esc(c.gradingUrl)}">PSA Value fee and return postage</a></li><li><a href="${esc(c.saleUrl)}">UK PSA 10 sold listing</a></li><li><a href="${esc(c.imageSourceUrl)}">Card artwork via TCGdex</a></li></ul></details></div>
+  <div class="target-outcomes"><dl class="target-upside-figures">${figures}</dl><p class="target-context">PSA 10 sale on ${date(c.soldOn)}, excluding the buyer fee. Profit excludes grading postage and selling costs.${postageNote}</p><details><summary>Prices &amp; sources</summary><ul><li><a href="${esc(c.rawUrl)}">Raw listing</a></li><li><a href="${esc(c.gradingUrl)}">PSA ${tier} fee and return postage</a></li><li><a href="${esc(c.saleUrl)}">UK PSA 10 sold listing</a></li><li><a href="${esc(c.imageSourceUrl)}">Card artwork via TCGdex</a></li></ul></details></div>
  </article>`;
 }
 function validCard(c,now){
