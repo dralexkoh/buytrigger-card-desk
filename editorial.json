@@ -973,6 +973,35 @@
   ],
   "wire": [
     {
+      "id": "red-rgb-mew-black-label-live-auction-2026-11-05",
+      "eventKey": "ebay-800860034263-red-rgb-mew-black-label",
+      "date": "2026-11-05",
+      "displayDate": "5 Nov · Live bid snapshot",
+      "category": "Price action",
+      "kind": "Live auction",
+      "title": "Red RGB Mew draws a US$91,100 live bid",
+      "summary": "The Card Science spotted the auction for a red 30th Celebration RGB Mew listed as BGS 10 Black Label. When we checked eBay on 5 November, bidding was at US$91,100 after 84 bids, with the auction still open. The final price is unknown.",
+      "sourceLabel": "eBay",
+      "url": "https://www.ebay.com/itm/800860034263",
+      "checkedAt": "2026-11-05T13:32:25.512697+00:00",
+      "sourcePublishedAt": "2026-11-05",
+      "visual": "briefing-graphic",
+      "image": "assets/wire-20261105/red-rgb-mew-live-auction.webp",
+      "imageAlt": "Original Mew illustration with the eBay auction snapshot of US$91,100 and 84 bids, still open on 5 November.",
+      "imageCredit": "Original editorial illustration: BuyTrigger.Cards. Tip: The Card Science.",
+      "imageSourceUrl": "https://buytrigger.cards/assets/wire-20261105/red-rgb-mew-live-auction.webp",
+      "ctaUrl": null,
+      "ctaLabel": null,
+      "author": {
+        "id": "elliot-reed",
+        "name": "Elliot Reed",
+        "type": "named_ai_correspondent",
+        "label": "Correspondent",
+        "beat": "Markets & auctions"
+      },
+      "newsRevision": 1
+    },
+    {
       "id": "gold-rayquaza-ebay-prerelease-november-2026",
       "eventKey": "delta-reign-gold-rayquaza-ebay-2026-11-05",
       "date": "2026-11-05",
