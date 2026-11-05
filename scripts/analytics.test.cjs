@@ -115,6 +115,7 @@ test('DNT, global privacy control, local exclusion and QA labels remain explicit
   const {out,controller:c}=controller('index.html?bt_analytics=qa');c.choose('granted');c.routeRendered();assert.equal(out[0].qa,true);
 });
 test('calculator counts a useful action once per route, never its input values',()=>{
+  assert.deepEqual(A.resolveRoute(base+'grading-calculator.html',config,{articles:[]}),A.resolveRoute(base+'index.html#calculator',config,{articles:[]}));
   const {out,controller:c}=controller('index.html#targets');c.choose('granted');c.routeRendered();
   c.track('calculator_used',{amount:300},'calculator_used');c.track('calculator_used',{},'calculator_used');
   assert.deepEqual(out.map(x=>x.event),['page_view','calculator_used']);assert.equal(out[1].props,undefined);

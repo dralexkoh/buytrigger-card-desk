@@ -9,7 +9,7 @@ test('route notification follows successful rendering and skips redirect-only ro
   const nodes={'#main':{innerHTML:''},'#site-nav':{classList:{remove(){}}},'.mobile-menu':{setAttribute(){}}};
   const rendered=[],redirects=[],document={body:{dataset:{}},title:''},location={hash:'#home',search:'',replace:url=>redirects.push(url)};
   const window={scrollTo(){},BTAnalytics:{routeRendered(){rendered.push({html:nodes['#main'].innerHTML,title:document.title});}}};
-  const context={window,document,location,$:s=>nodes[s],$$:()=>[],setupWire(){},imageErrors(){},calculate(){},article:()=>null,read:()=>'',home:()=>'<h1>Rendered home</h1>'};
+  const context={window,document,location,$:s=>nodes[s],$$:()=>[],setupWire(){},imageErrors(){},article:()=>null,read:()=>'',home:()=>'<h1>Rendered home</h1>'};
   for(const name of ['drops','desk','journal','calculator','targets','japan','top50','method','funding','advertise','privacy'])context[name]=()=>name;
   vm.runInNewContext(code+';render();',context);
   assert.equal(rendered.length,1);assert.match(rendered[0].html,/Rendered home/);assert.match(rendered[0].title,/BuyTrigger.Cards/);
@@ -47,7 +47,7 @@ test('undervalued route is separate from the working calculator',()=>{
   const code=src.slice(src.indexOf('function render(){'),src.indexOf("document.addEventListener('click'"));
   const nodes={'#main':{innerHTML:''},'#site-nav':{classList:{remove(){}}},'.mobile-menu':{setAttribute(){}}};
   let calculations=0;
-  const context={document:{body:{dataset:{}},title:''},location:{hash:'#targets'},window:{scrollTo(){}},$:s=>nodes[s],$$:()=>[],setupWire(){},imageErrors(){},calculate(){calculations++;},article:()=>null,read:()=>'',home:()=>''};
+  const context={document:{body:{dataset:{}},title:''},location:{hash:'#targets'},window:{scrollTo(){},BTGradingCalculator:{mount(){calculations++;}}},$:s=>nodes[s],$$:()=>[],setupWire(){},imageErrors(){},article:()=>null,read:()=>'',home:()=>''};
   for(const name of ['drops','desk','journal','targets','calculator','japan','top50','method','funding','advertise','privacy'])context[name]=()=>name;
   vm.runInNewContext(code+';render();',context);
   assert.equal(nodes['#main'].innerHTML,'targets');assert.equal(calculations,0);assert.match(context.document.title,/Undervalued Cards/);

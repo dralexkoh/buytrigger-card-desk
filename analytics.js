@@ -46,10 +46,10 @@
     if (path === 'tcg-modern-index.html') return {id:'modern', url:'/tcg-modern-index', title:'TCG Modern Index', index:'modern'};
     if (path === 'top-50.html') return {id:'top50', url:'/top-50', title:'Top 50', index:'top50'};
     const storyPath = /^stories\/([a-z0-9-]+)\/(?:index\.html)?$/.exec(path);
-    if (path !== '' && path !== 'index.html' && path !== 'drops.html' && !storyPath) return null;
+    if (path !== '' && path !== 'index.html' && path !== 'drops.html' && path !== 'grading-calculator.html' && !storyPath) return null;
     const hash = url.hash.slice(1);
     // These pages render hashes before body.data-route; mirror that rule.
-    const requested = hash || bodyRoute || (path === 'drops.html' ? 'drops' : '') || (storyPath ? 'read/' + storyPath[1] : 'home');
+    const requested = hash || bodyRoute || (path === 'drops.html' ? 'drops' : path === 'grading-calculator.html' ? 'calculator' : '') || (storyPath ? 'read/' + storyPath[1] : 'home');
     const parts = requested.split('/');
     if (parts[0] === 'top50') return null; // Renderer redirects; destination owns the view.
     if (parts[0] === 'read' || parts[0] === 'about') {
@@ -275,11 +275,8 @@
           }
         }
       });
-      doc.addEventListener('input',event => {
-        if (!event.target?.matches?.('.calculator input') || !controller.route || controller.route.id !== 'targets') return;
-        const fields = Array.from(doc.querySelectorAll('.calculator input[type="number"]'));
-        const valid = fields.length > 0 && fields.every(input => input.value.trim() !== '' && Number.isFinite(Number(input.value)) && Number(input.value) >= 0 && Number(input.value) <= 100000) && Number(doc.querySelector('#calc-selling')?.value) <= 100;
-        if (valid) controller.track('calculator_used',{},'calculator_used');
+      doc.addEventListener('bt:calculator-result', event => {
+        if (event.target?.matches?.('.grading-tool')) controller.track('calculator_used', {}, 'calculator_used');
       });
       let activeId = '', visibleMs = 0, lastTick = Date.now(); const engaged = new Set();
       if (controller.consent === 'granted') { try { JSON.parse(read(storageFor(win,'sessionStorage'),'buytrigger.cards.analytics.engaged.v1') || '[]').filter(safeSlug).forEach(id => engaged.add(id)); } catch (_) {} }
