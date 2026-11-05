@@ -1,1 +1,12 @@
-{"schemaVersion":1,"enabled":false,"endpoint":null}
+{
+  "schemaVersion": 1,
+  "enabled": false,
+  "endpoint": null,
+  "review": {
+    "checkedAt": "2026-11-05",
+    "listingsChecked": {
+      "en": 6,
+      "ja": 4
+    }
+  }
+}

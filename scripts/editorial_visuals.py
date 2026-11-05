@@ -1,12 +1,37 @@
 """Fail publication when an article lacks deliberate, traceable visual coverage."""
 from pathlib import Path
-import json
+from urllib.parse import urlsplit
+import json,re
 from bs4 import BeautifulSoup
 
 STYLES={'editorial-ink-v1','family-anime-v1','brand-graphic-v1','japan-editorial-v1','source-media-v1'}
+WIRE_MEDIA=('image','imageAlt','imageCredit','imageSourceUrl')
+WIRE_MEDIA_PATH=re.compile(r'assets/(?:[a-zA-Z0-9_-]+/)*[a-zA-Z0-9_.-]+\.(?:avif|jpg|jpeg|png|webp)')
+
+def validate_wire_media(wire,root):
+    fields=(*WIRE_MEDIA,'imageLicenseUrl')
+    if not any(field in wire for field in fields):
+        return
+    story=wire.get('id','wire story')
+    if any(not isinstance(wire.get(field),str) or not wire[field].strip() for field in WIRE_MEDIA):
+        raise ValueError(f'{story}: wire picture needs alt text, credit and its public source')
+    path=wire['image']
+    if not WIRE_MEDIA_PATH.fullmatch(path) or not (root/path).resolve().is_relative_to(root/'assets') or not (root/path).is_file():
+        raise ValueError(f'{story}: missing or unsafe wire picture')
+    for field in ('imageSourceUrl','imageLicenseUrl'):
+        if field not in wire:
+            continue
+        value=wire[field]
+        if not isinstance(value,str) or not value or '\\' in value or any(c.isspace() for c in value):
+            raise ValueError(f'{story}: invalid {field}')
+        parsed=urlsplit(value)
+        if parsed.scheme!='https' or not parsed.hostname or '.' not in parsed.hostname or parsed.username or parsed.password:
+            raise ValueError(f'{story}: {field} must be a public HTTPS reference')
 
 def validate_editorial_visuals(editorial,root):
     root=Path(root).resolve()
+    for wire in editorial.get('wire',[]):
+        validate_wire_media(wire,root)
     for article in editorial['articles']:
         slug=article.get('slug','unnamed')
         for field in ('image','imageAlt','imageCredit','visualStyle'):
@@ -43,4 +68,4 @@ def validate_editorial_visuals(editorial,root):
 if __name__=='__main__':
     root=Path(__file__).resolve().parents[1]
     count=validate_editorial_visuals(json.loads((root/'editorial.json').read_text()),root)
-    print(f'PASS: all {count} articles have classified artwork, alt text and credit; assets exist.')
+    print(f'PASS: all {count} articles have classified artwork; article and wire image assets and credits verified.')

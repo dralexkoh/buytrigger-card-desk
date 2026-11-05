@@ -9,7 +9,12 @@ const date=x=>new Date(x).toLocaleDateString('en-GB',{day:'numeric',month:'short
 const object=x=>x&&typeof x==='object'&&!Array.isArray(x);
 const exactKeys=(x,keys)=>object(x)&&Object.keys(x).length===keys.length&&keys.every(k=>Object.hasOwn(x,k));
 const timestamp=x=>typeof x==='string'&&/(Z|[+-]\d\d:\d\d)$/.test(x)&&Number.isFinite(Date.parse(x));
-function validateConfig(c){if(!exactKeys(c,['schemaVersion','enabled','endpoint'])||c.schemaVersion!==1||typeof c.enabled!=='boolean'||(c.enabled?c.endpoint!==APPROVED_ENDPOINT:c.endpoint!==null))throw Error('Invalid public feed setup');return c;}
+function validateConfig(c){
+ const fields=['schemaVersion','enabled','endpoint'];if(c?.review!==undefined)fields.push('review');
+ if(!exactKeys(c,fields)||c.schemaVersion!==1||typeof c.enabled!=='boolean'||(c.enabled?c.endpoint!==APPROVED_ENDPOINT:c.endpoint!==null))throw Error('Invalid public feed setup');
+ if(c.review!==undefined){const r=c.review,d=r?.checkedAt,ms=Date.parse(d);if(!exactKeys(r,['checkedAt','listingsChecked'])||typeof d!=='string'||!/^\d{4}-\d\d-\d\d$/.test(d)||!Number.isFinite(ms)||new Date(ms).toISOString().slice(0,10)!==d||ms>Date.now()||!exactKeys(r.listingsChecked,['en','ja'])||Object.values(r.listingsChecked).some(n=>!Number.isSafeInteger(n)||n<1||n>500))throw Error('Invalid dated review');}
+ return c;
+}
 function validCard(c,now){
  if(!exactKeys(c,FIELDS))return false;
  if(!['id','name','set','number','parallel','language','image','currency','checkedAt','validUntil','summary'].every(k=>typeof c[k]==='string'&&c[k].length<=600))return false;
@@ -49,7 +54,7 @@ function mount(language){
   try{
    if(!config)config=validateConfig(await json('public-targets-config.json'));
    if(!active)return;
-   if(!config.enabled){state('Not published yet','The first reviewed shortlist is being prepared. Card pictures, entry prices and Raw / PSA 9 / PSA 10 references will appear together here.');return;}
+   if(!config.enabled){const r=config.review,label=language==='ja'?'Japanese':'English';state('No verified picks',r?`${r.listingsChecked[language]} ${label} listings checked on ${date(r.checkedAt)}. No card in this review passed every check.`:'No current reviewed cards in this language.');return;}
    const url=new URL(config.endpoint);if(url.protocol!=='https:'||url.username||url.password||url.search||url.hash||!/^\/functions\/v1\/public-card-targets$/.test(url.pathname))throw Error('Invalid feed endpoint');url.searchParams.set('language',language);
    const data=await json(url.href),cards=validateFeed(data,language);if(!active)return;items=cards;feedExpiresAt=Date.parse(data.generatedAt)+300000;
    if(cards.length){status.textContent=cards.length+' reviewed card'+(cards.length===1?'':'s');host.innerHTML=cards.map(card).join('');host.querySelectorAll('img').forEach(img=>img.addEventListener('error',()=>{const b=img.closest('button');b.disabled=true;b.innerHTML='<span>Picture temporarily unavailable</span>';},{once:true}));}

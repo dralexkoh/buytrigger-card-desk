@@ -5,9 +5,23 @@ from bs4 import BeautifulSoup
 p=Path(__file__).resolve().parents[1];d=Path(os.environ.get('BT_CARD_DESK_ARTIFACT_DIR',p/'dist'));fail=[]
 PUBLIC_BASE='https://buytrigger.cards/'
 shared=json.loads((d/'shared-market-config.json').read_text())
-assert shared=={'schemaVersion':1,'enabled':False,'endpoint':None}, 'Shared market activation requires its reviewed eligibility/privacy release'
+assert set(shared)=={'schemaVersion','enabled','endpoint'} and shared['schemaVersion']==1 and isinstance(shared['enabled'],bool)
+APPROVED_MARKET='https://ukblxmvsqihnnyysvxes.supabase.co/functions/v1/card-market-view'
+set_release=json.loads((d/'thirtieth-release.json').read_text())
+assert set_release['constituentCount']==set_release['imageReviewCount']==191 and set_release['sourceSystem']=='shared-cards-market'
+assert set_release['grade']=='Raw' and set_release['measure']=='tcgcsv_market' and set_release['baselineDate']=='2026-10-08'
+assert set_release['providerTerms']=='https://tcgcsv.com/faq'
+if shared['enabled']:
+ assert shared['endpoint']==APPROVED_MARKET and set_release['status']=='live' and set_release['publicReadVerified'] is True
+ assert re.fullmatch('[a-f0-9]{64}',set_release['sourceVersion'])
+else:assert shared['endpoint'] is None
+
 targets=json.loads((d/'public-targets-config.json').read_text())
-assert targets=={'schemaVersion':1,'enabled':False,'endpoint':None}, 'Public Targets activation requires its reviewed evidence/privacy release'
+assert set(targets)=={'schemaVersion','enabled','endpoint','review'}
+assert targets['schemaVersion']==1 and targets['enabled'] is False and targets['endpoint'] is None, 'Enable the feed only after the reviewed shared Cards release'
+review=targets['review']
+assert set(review)=={'checkedAt','listingsChecked'} and re.fullmatch(r'\d{4}-\d{2}-\d{2}',review['checkedAt'])
+assert set(review['listingsChecked'])=={'en','ja'} and all(type(v) is int and 0<v<=500 for v in review['listingsChecked'].values())
 APPROVED_TARGET_READER='https://ukblxmvsqihnnyysvxes.supabase.co/functions/v1/public-card-targets'
 assert (d/'CNAME').read_text()=='buytrigger.cards\n', 'Wrong public domain contract'
 APPROVED_COLLECTOR='https://brzawmbpwkdundruicca.supabase.co/functions/v1/cards-traffic-ingest'
@@ -28,6 +42,8 @@ for f in d.rglob('*'):
  s=f.read_text()
  if f.name=='public-targets.js':
   s=s.replace(APPROVED_TARGET_READER,'https://approved-public-target-reader.invalid')
+ if f.name=='shared-market-config.json':
+  s=s.replace(APPROVED_MARKET,'https://approved-public-market.invalid')
  if f.name in ['analytics.js','analytics-config.json']:
   s=re.sub(re.escape(APPROVED_COLLECTOR)+r'''(?=['"\s<>]|$)''','https://approved-public-card-traffic-collector.invalid',s)
  for pattern in [r'/Users/',r'/var/folders/',r'ACQI?-\d{6}',r'CT-\d{6}',r'TGT-\d{6}',r'eyJ[a-zA-Z0-9_-]{30}',r'gh[pousr]_[a-zA-Z0-9]{20}',r'supabase\.co\b',r'(?i)service_role',r'(?i)unpublished draft',r'(?i)local full-site preview']:

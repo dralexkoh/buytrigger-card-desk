@@ -53,6 +53,10 @@ def apply_output(output, stage, failed):
         for p in sorted((output/'data/refresh').rglob('*.json')):
             copy_one(p,stage/p.relative_to(output))
             selected.append(str(p.relative_to(output)))
+    shared = output/'data/market-cache/thirtieth-current.json'
+    if not failed and shared.exists():
+        copy_one(shared, stage/'data/market-cache/thirtieth-current.json')
+        selected.append('data/market-cache/thirtieth-current.json')
     return selected
 
 
