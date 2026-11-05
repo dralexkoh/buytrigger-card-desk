@@ -102,6 +102,13 @@ for article in editorial['articles']:
   assert page.select_one('.person-byline')
   for author_id in ids:assert page.select_one('#author-'+author_id)
  else:assert schema['author']['@type']=='Organization'
+bluechip=json.loads((d/'bluechip-data.js').read_text().split('=',1)[1].strip().rstrip(';'))
+assert bluechip['rankingGrade']=='PSA 10' and bluechip['constituentCount']==50
+bluechip_page=BeautifulSoup((d/'top-50.html').read_text(),'html.parser')
+assert bluechip_page.body['data-route']=='bluechip'
+assert not bluechip_page.select_one('#card-gallery')
+assert (d/'bluechip-raw-archive.html').is_file()
+if bluechip['status']!='released':assert bluechip['cards']==[]
 toptext=(d/'top50-data.js').read_text();top=json.loads(toptext.split('=',1)[1].strip().rstrip(';'))
 assert len(top['cards'])==50
 assert len({(c['productId'],c['printing']) for c in top['cards']})==50
@@ -144,4 +151,4 @@ assert status['schemaVersion']==1 and status['status'] in ['current','partial','
 assert status['sourceDate']==release['sourceDate']==top['release']['sourceDate']
 assert not (d/'data/refresh/state.json').exists()
 if fail:raise SystemExit('\n'.join(fail))
-print('PASS: public-only artifact; Modern100 + Top50 exact identities and real images, complete declared archive retrieval, explicit price gaps, no private records/secrets/graded dataset; all declared article paths, dates and authors present.')
+print('PASS: public-only artifact; Modern100 + preserved Raw50 archive; PSA10 publication gate, explicit withheld artwork, complete declared archive retrieval, explicit price gaps, no private records/secrets/graded dataset; all declared article paths, dates and authors present.')

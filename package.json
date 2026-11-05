@@ -1,10 +1,10 @@
 {
   "name": "buytrigger-card-desk",
-  "version": "1.9.2",
+  "version": "1.9.3",
   "private": true,
   "scripts": {
     "build": "python3 scripts/build.py",
-    "typecheck": "node --check card-art.js && node --check analytics.js && node --check site.js && node --check modern.js && node --check social.js && node --check catalogue.js && node --check editorial.js && node --check market-engine.js && node --check market-history.js && node --check top50.js && node --check top50-data.js && node --check top50-feature.js && node --check refresh-status.js && python3 -m py_compile scripts/daily_refresh.py scripts/run_daily_pipeline.py scripts/commit_refresh.py scripts/verify_public_release.py && node --check commerce.js && python3 -m py_compile scripts/drops_offers.py && node --check article-authors.js && node --check scripts/render_article_authors.cjs && node --check shared-market-engine.js && node --check shared-market.js",
+    "typecheck": "node --check card-art.js && node --check analytics.js && node --check site.js && node --check modern.js && node --check social.js && node --check catalogue.js && node --check editorial.js && node --check market-engine.js && node --check market-history.js && node --check top50.js && node --check top50-data.js && node --check top50-feature.js && node --check refresh-status.js && python3 -m py_compile scripts/daily_refresh.py scripts/run_daily_pipeline.py scripts/commit_refresh.py scripts/verify_public_release.py && node --check commerce.js && python3 -m py_compile scripts/drops_offers.py && node --check article-authors.js && node --check scripts/render_article_authors.cjs && node --check shared-market-engine.js && node --check shared-market.js && node --check bluechip-engine.js && node --check bluechip.js",
     "test": "node --test scripts/*.test.cjs && python3 -m unittest discover -s scripts -p \"test_*.py\"",
     "check:artifact": "python3 scripts/check_artifact.py",
     "check:brand": "python3 scripts/editorial_visuals.py"

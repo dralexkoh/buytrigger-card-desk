@@ -15,6 +15,8 @@ NAMES = list(dict.fromkeys(NAMES))
 
 NAMES += ['market.html','30th-anniversary-index.html','shared-market.js','shared-market-engine.js','shared-market.css','shared-market-config.json','assets/30th-mewtwo-151-128.jpg']
 
+NAMES += ['bluechip-raw-archive.html','bluechip-engine.js','bluechip.js','bluechip.css','bluechip-release.json','bluechip-data.js']
+
 def verify(dist,url=PRIMARY_URL,attempts=9,delay=10):
     pending={n:hashlib.sha256((dist/n).read_bytes()).hexdigest() for n in NAMES}
     primary=urlsplit(PRIMARY_URL)
