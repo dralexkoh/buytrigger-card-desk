@@ -21,7 +21,7 @@ function validateConfig(c){
   if(r.findings!==undefined&&(!exactKeys(r.findings,['en','ja'])||Object.values(r.findings).some(lines=>
    !Array.isArray(lines)||lines.length<1||lines.length>3||lines.some(line=>typeof line!=='string'||!line.trim()||line.length>280)
   )))throw Error('Invalid review findings');
-  if(r.psaUpside!==undefined&&(!Array.isArray(r.psaUpside)||r.psaUpside.length>20||
+  if(r.psaUpside!==undefined&&(!Array.isArray(r.psaUpside)||r.psaUpside.length>100||
    !r.psaUpside.every(c=>validUpside(c,d))||new Set(r.psaUpside.map(c=>c.id)).size!==r.psaUpside.length
   ))throw Error('Invalid PSA upside examples');
  }
@@ -42,7 +42,7 @@ function upsideCard(c,checkedAt){
  const cost=c.rawMinor+c.gradingMinor;
  const margin=c.psa10Minor-cost;
  const tier=c.gradingTier??'Value';
- const artCredit=c.imageSourceUrl.startsWith('https://assets.pokemon.com/')?'Official Pokémon card artwork':'Card artwork via TCGdex';
+ const artCredit=c.imageSourceUrl.startsWith('https://assets.tcgdex.net/')?'Card artwork via TCGdex':'Official Pokémon card artwork';
  const rows=[['Raw delivered',c.rawMinor],['PSA '+tier+' grading',c.gradingMinor],['Card + grading',cost],['UK PSA 10 sale',c.psa10Minor],['Profit if PSA 10',margin]];
  const postage=c.returnPostageFromMinor;
  let postageNote='';
