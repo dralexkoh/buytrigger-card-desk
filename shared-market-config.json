@@ -1,1 +1,5 @@
-{"schemaVersion":1,"enabled":false,"endpoint":null}
+{
+  "schemaVersion": 1,
+  "enabled": true,
+  "endpoint": "https://ukblxmvsqihnnyysvxes.supabase.co/functions/v1/card-market-view"
+}
