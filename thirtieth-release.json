@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "status": "prepared",
+  "sourceSystem": "shared-cards-market",
+  "constituentCount": 191,
+  "imageReviewCount": 191,
+  "grade": "Raw",
+  "measure": "tcgcsv_market",
+  "baselineDate": "2026-10-08",
+  "providerTerms": "https://tcgcsv.com/faq",
+  "publicReadVerified": false,
+  "sourceVersion": null
+}

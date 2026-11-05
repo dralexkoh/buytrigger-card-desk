@@ -450,6 +450,18 @@ def run(args):
     history = read_js(site / "market-history.js", "window.BT_HISTORY")
     top = read_js(site / "top50-data.js", "window.BT_TOP50")
     identities = validate_baseline(modern, history, top)
+    shared_path = site / "thirtieth-catalogue.json"
+    shared_catalogue = read_json(shared_path) if shared_path.exists() else None
+    collection_identities = dict(identities)
+    if shared_catalogue:
+        from shared_set_cache import identities as set_identities
+        for card_key, card in set_identities(shared_catalogue).items():
+            collection_identities.setdefault(card_key, card)
+        shared_cache = site / "data/market-cache/thirtieth-current.json"
+        if shared_cache.exists():
+            destination = output / "data/market-cache/thirtieth-current.json"
+            destination.parent.mkdir(parents=True, exist_ok=True)
+            shutil.copy2(shared_cache, destination)
     sources = {"modern": read_json(site / "market-sources.json"), "top50": read_json(site / "top50-sources.json")}
     datasets = [(modern, history), (top, top["history"])]
     named = [("modern", modern, history), ("top50", top, top["history"])]
@@ -492,7 +504,7 @@ def run(args):
                 raise RefreshError("This source-date revision is already retained and awaiting explicit review; no repeated source download")
             if state["processedBuilds"] and build <= max(timestamp(b) for b in state["processedBuilds"]):
                 raise RefreshError("Provider build did not advance monotonically")
-            groups, resources = provider.live(identities, build)
+            groups, resources = provider.live(collection_identities, build)
             pending.append((source_date, "live", iso(build), groups, resources))
         # Recover genuine post-baseline gaps, not intentionally sampled older months.
         first = (dt.date.fromisoformat(state["baselineEndDate"]) + dt.timedelta(days=1)).isoformat()
@@ -518,6 +530,12 @@ def run(args):
         pending.sort(key=lambda item: (item[0], item[1]))
         for day, kind, build_at, groups, resources in pending:
             rows = collect_observations(day, groups, identities, datasets)
+            if kind == "live" and shared_catalogue:
+                from shared_set_cache import build_cache
+                cache_file = output / "data/market-cache/thirtieth-current.json"
+                prior_cache = read_json(cache_file) if cache_file.exists() else None
+                shared_result = build_cache(shared_catalogue, groups, resources, build, prior_cache, suspicion)
+                write_json(cache_file, shared_result)
             observation_id = f"raw-{day}-" + (build_key if kind == "live" else "archive")
             observation = {"schemaVersion": SCHEMA, "id": observation_id, "kind": kind,
                            "sourceDate": day, "sourceBuildAt": build_at, "retrievedAt": now,
