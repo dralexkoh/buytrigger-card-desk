@@ -985,7 +985,7 @@
       "url": "https://www.ebay.com/itm/800860034263",
       "checkedAt": "2026-11-05T13:32:25.512697+00:00",
       "sourcePublishedAt": "2026-11-05",
-      "visual": "editorial-ink",
+      "visual": "auction",
       "ctaUrl": null,
       "ctaLabel": null,
       "author": {
@@ -995,11 +995,11 @@
         "label": "Correspondent",
         "beat": "Markets & auctions"
       },
-      "newsRevision": 3,
-      "image": "assets/wire-20261105/red-mew-auction-editorial.webp",
-      "imageAlt": "Ink illustration of a dark auction gavel framed by a red foil spotlight.",
-      "imageCredit": "Editorial illustration by BuyTrigger.Cards.",
-      "imageSourceUrl": "https://buytrigger.cards/assets/wire-20261105/red-mew-auction-editorial.webp"
+      "newsRevision": 4,
+      "image": "assets/wire-20261105/red-rgb-mew-0021982285.webp",
+      "imageAlt": "The auctioned English Red RGB Mew R/RGB in its Beckett Pristine 10 Black Label slab, certificate 0021982285.",
+      "imageCredit": "Auction lot photograph: Ryan’s Cardhouse.",
+      "imageSourceUrl": "https://www.ebay.com/itm/800860034263"
     },
     {
       "id": "gold-rayquaza-ebay-prerelease-november-2026",
@@ -1016,7 +1016,7 @@
       "sourcePublishedAt": "2026-11-05",
       "ctaUrl": "https://senseiset.com/cards/me6-141.html",
       "ctaLabel": "See the exact Gold Rayquaza 141/103 card ↗",
-      "visual": "editorial-ink",
+      "visual": "card-reference",
       "author": {
         "id": "elliot-reed",
         "name": "Elliot Reed",
@@ -1024,11 +1024,11 @@
         "label": "Correspondent",
         "beat": "Markets & auctions"
       },
-      "newsRevision": 5,
-      "image": "assets/wire-20261105/gold-rayquaza-editorial.webp",
-      "imageAlt": "Ink illustration of a golden Mega Rayquaza sweeping through dark storm clouds.",
-      "imageCredit": "Editorial illustration by BuyTrigger.Cards.",
-      "imageSourceUrl": "https://buytrigger.cards/assets/wire-20261105/gold-rayquaza-editorial.webp"
+      "newsRevision": 6,
+      "image": "assets/wire-20261105/gold-rayquaza-141-103.webp",
+      "imageAlt": "English Delta Reign Gold Mega Rayquaza ex 141/103, Mega Hyper Rare.",
+      "imageCredit": "Catalogue image via Senseiset. Card artwork © Pokémon.",
+      "imageSourceUrl": "https://senseiset.com/cards/me6-141.html"
     },
     {
       "id": "tacoma-card-shop-break-in-november-2026",
