@@ -38,7 +38,7 @@
   }
   function catalogue(win) {
     const articles = (win.BT_EDITORIAL?.articles || []).filter(a => safeSlug(a.slug));
-    return {articles, modern:win.MODERN_PREVIEW_DATA?.cards || [], top50:win.BT_TOP50?.cards || []};
+    return {articles, modern:win.MODERN_PREVIEW_DATA?.cards || [], top50:win.BT_TOP50?.cards || [],commerce:win.BT_COMMERCE};
   }
   function resolveRoute(href, config, data, bodyRoute = '') {
     const site = permittedSite(config, href); if (!site) return null;
@@ -121,6 +121,9 @@
         clean.article = props.article;
         if (name === 'share_caption_copy') { if (!['x','threads','instagram'].includes(props.platform)) return null; clean.platform = props.platform; }
         break;
+      case 'ad_served': case 'ad_impression': case 'ad_click':
+        if(!data.commerce?.ebay?.enabled||props.campaign_id!=='ebay-'+data.commerce.ebay.campaignId||!['HOME-01','DROPS-01'].includes(props.slot_id)||!data.commerce.placements?.[props.slot_id==='HOME-01'?'home':'drops']||!(/^[A-Za-z0-9_-]{1,80}$/).test(props.creative_id||'')||!(/^[A-Za-z0-9_-]{1,100}$/).test(props.destination_id||''))return null;
+        for(const key of ['campaign_id','slot_id','creative_id','destination_id'])clean[key]=props[key];break;
       case 'cta_click':
         if (!['modern','top50','targets','journal','desk','japan','private_collection'].includes(props.destination)) return null;
         clean.destination = props.destination; break;
@@ -191,7 +194,7 @@
     const doc = win.document, source = doc.currentScript?.src;
     if (!source) return;
     let config, controller, openDialog;
-    const api = {routeRendered:() => controller?.routeRendered(),track:(name,props) => controller?.track(name,props),
+    const api = {routeRendered:() => controller?.routeRendered(),track:(name,props) => controller?.track(name,props),allowed:() => Boolean(controller?.allowed()),
       openPreferences:() => openDialog?.(), excludeThisBrowser:value => controller?.excludeThisBrowser(value),
       status:() => ({enabled:Boolean(controller?.enabled),consent:controller?.consent || 'unset',excluded:Boolean(controller?.excluded()),collectorConfigured:Boolean(controller?.enabled)})};
     win.BTAnalytics = api;
@@ -208,7 +211,7 @@
       doc.head.append(style);
       const dialog = doc.createElement('dialog'); dialog.className = 'bt-analytics-dialog'; dialog.setAttribute('aria-labelledby','bt-analytics-title');
       const h = doc.createElement('h2'); h.id = 'bt-analytics-title'; h.textContent = 'Optional visitor statistics'; dialog.append(h);
-      const p = doc.createElement('p'); p.textContent = 'May we count which public pages and tools readers use, and which sources bring visits and the approximate countries connections come from? Our own BuyTrigger counter uses a daily changing visitor estimate from connection and browser information, without advertising cookies. Country is estimated on our server using a local country database; visitor IP addresses are not sent to a geolocation API or stored in our analytics tables. We send no names, search text, calculator amounts or private collection data.'; dialog.append(p);
+      const p = doc.createElement('p'); p.textContent = 'May we count which public pages and tools readers use, which sources bring visits, approximate connection countries and hours, and labelled ad impressions and clicks? Our own BuyTrigger counter uses a daily changing visitor estimate from connection and browser information, without advertising cookies. Country is estimated on our server using a local country database; visitor IP addresses are not sent to a geolocation API or stored in our analytics tables. We send no names, search text, calculator amounts or private collection data.'; dialog.append(p);
       const retention = doc.createElement('p'); retention.textContent = 'Detailed analytics older than 180 days are removed in a daily cleanup. Your choice is remembered on this browser for six months. You can change it at any time. Declining leaves all site features available.'; dialog.append(retention);
       const link = doc.createElement('a'); link.href = new URL('index.html#privacy',source).href; link.textContent = 'Privacy details'; link.addEventListener('click',() => dialog.close()); dialog.append(link);
       const status = doc.createElement('p'); status.setAttribute('aria-live','polite'); dialog.append(status);
@@ -232,7 +235,7 @@
       if (controller.consent === 'unset' && !controller.excluded()) {
         banner = doc.createElement('section'); banner.className = 'bt-analytics-banner';
         banner.setAttribute('role','region'); banner.setAttribute('aria-label','Optional visitor statistics');
-        const message = doc.createElement('p'); message.textContent = 'Optional page, traffic-source and approximate-country statistics. Nothing is sent until you allow.'; banner.append(message);
+        const message = doc.createElement('p'); message.textContent = 'Optional page, source, country and ad impression/click statistics. Nothing is sent until you allow.'; banner.append(message);
         const choices = doc.createElement('div'); choices.className = 'bt-analytics-banner-choices';
         [['Decline','denied'],['Allow','granted']].forEach(([label,choice]) => {
           const button = doc.createElement('button'); button.type = 'button'; button.textContent = label;

@@ -3,7 +3,7 @@
   "enabled": true,
   "provider": "buytrigger-crm",
   "privacyReviewed": true,
-  "consentVersion": "2026-11-04-v2",
+  "consentVersion": "2026-11-05-v3",
   "origins": [
     {
       "origin": "https://buytrigger.cards",
