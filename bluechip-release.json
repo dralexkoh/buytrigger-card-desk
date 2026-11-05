@@ -1,0 +1,11 @@
+{
+  "status": "under-review",
+  "asOf": "2026-11-05",
+  "sourceSystem": "shared-cards-market",
+  "constituentCount": 50,
+  "rankingGrade": "PSA 10",
+  "rankingBasis": "comparable-market-value",
+  "weightingMethod": "market-value",
+  "performanceStatus": "Supply measure and graded history not approved",
+  "cards": []
+}
