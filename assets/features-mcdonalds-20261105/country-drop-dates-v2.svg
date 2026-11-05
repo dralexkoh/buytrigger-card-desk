@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 810" role="img" aria-labelledby="title desc" style="max-width:100%;height:auto">
+<title id="title">Country drop dates: Canada 3 November, Australia 5 November, United States 10 November 2026</title>
+<desc id="desc">Three launch points share a horizontal November 2026 date axis from 1 to 14 November. Canada 3 November and Australia 5 November are dates reported by PokéBeach after store checks. The United States 10 November date is official from McDonald’s. Checked 4 November 2026. Points indicate launch days, not promotion durations or guaranteed stock.</desc>
+<metadata>Original editable BuyTrigger.Cards data graphic. Input: ../country-drop-dates-v2.csv. Target first publication: 2026-11-05; not a publication receipt. Evidence checked 2026-11-04. Date axis origin 1 November 2026, end 14 November; shared scale x=60+(day-1)*40. Original date reporting: https://www.pokebeach.com/2026/10/mcdonalds-pokemon-tcg-promotion-starts-november-10th-features-mini-happy-meal-box-toys-and-15-cards . Official USA confirmation: https://corporate.mcdonalds.com/corpmcd/our-stories/article/USmenuspotter.html . No remote media used or edited.</metadata>
+<rect width="640" height="810" fill="#FAF8F3"/>
+<rect width="640" height="8" fill="#DF242B"/>
+<g fill="#171719" font-family="IBM Plex Sans,Arial,sans-serif">
+<text x="28" y="63" font-family="Georgia,serif" font-size="36" font-weight="700">Three dates to know</text>
+<text x="28" y="104" font-size="28">Pokémon Happy Meal · November 2026</text>
+</g>
+<g font-family="IBM Plex Sans,Arial,sans-serif" fill="#171719" aria-label="Canada, 3 November 2026, Reported"><text x="28" y="161" font-size="31" font-weight="700">Canada · 3 November</text><text x="28" y="198" font-size="27">Reported · PokéBeach</text><line x1="60" y1="235" x2="580" y2="235" stroke="#CCC7BE" stroke-width="3"/><circle cx="140" cy="235" r="11" fill="#DF242B" stroke="#FAF8F3" stroke-width="3"/></g>
+<g font-family="IBM Plex Sans,Arial,sans-serif" fill="#171719" aria-label="Australia, 5 November 2026, Reported"><text x="28" y="306" font-size="31" font-weight="700">Australia · 5 November</text><text x="28" y="343" font-size="27">Reported · PokéBeach</text><line x1="60" y1="380" x2="580" y2="380" stroke="#CCC7BE" stroke-width="3"/><circle cx="220" cy="380" r="11" fill="#DF242B" stroke="#FAF8F3" stroke-width="3"/></g>
+<g font-family="IBM Plex Sans,Arial,sans-serif" fill="#171719" aria-label="United States, 10 November 2026, Official"><text x="28" y="451" font-size="31" font-weight="700">United States · 10 November</text><text x="28" y="488" font-size="27">Official · McDonald’s</text><line x1="60" y1="525" x2="580" y2="525" stroke="#CCC7BE" stroke-width="3"/><circle cx="420" cy="525" r="11" fill="#171719" stroke="#FAF8F3" stroke-width="3"/></g>
+<g font-family="IBM Plex Sans,Arial,sans-serif" fill="#171719"><line x1="60" y1="602" x2="580" y2="602" stroke="#171719" stroke-width="2"/>
+<line x1="60" y1="602" x2="60" y2="611" stroke="#171719" stroke-width="2"/><text x="60" y="645" text-anchor="middle" font-size="27">1</text>
+<line x1="140" y1="602" x2="140" y2="611" stroke="#171719" stroke-width="2"/><text x="140" y="645" text-anchor="middle" font-size="27">3</text>
+<line x1="220" y1="602" x2="220" y2="611" stroke="#171719" stroke-width="2"/><text x="220" y="645" text-anchor="middle" font-size="27">5</text>
+<line x1="300" y1="602" x2="300" y2="611" stroke="#171719" stroke-width="2"/><text x="300" y="645" text-anchor="middle" font-size="27">7</text>
+<line x1="420" y1="602" x2="420" y2="611" stroke="#171719" stroke-width="2"/><text x="420" y="645" text-anchor="middle" font-size="27">10</text>
+<line x1="580" y1="602" x2="580" y2="611" stroke="#171719" stroke-width="2"/><text x="580" y="645" text-anchor="middle" font-size="27">14</text>
+<text x="320" y="684" text-anchor="middle" font-size="27">Day in November 2026</text>
+<rect x="28" y="711" width="8" height="60" fill="#F5D331"/>
+<text x="48" y="736" font-size="26">Start days, not stock guarantees.</text>
+<text x="48" y="773" font-size="26">Checked 4 November 2026.</text>
+</g></svg>

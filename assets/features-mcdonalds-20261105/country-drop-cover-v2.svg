@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+<title id="title">Pokémon Happy Meal country drop dates: Canada 3 November, Australia 5 November, United States 10 November</title>
+<desc id="desc">Original BuyTrigger.Cards date graphic. Three large calendar panels show Canada 3 November and Australia 5 November as reported dates from PokéBeach, and United States 10 November as an official date from McDonald’s. All dates are in November 2026.</desc>
+<metadata>Original editable BuyTrigger.Cards Feature hero and 16:9 thumbnail. No remote image used or edited. Date inputs: ../country-drop-dates-v2.csv. Evidence checked 2026-11-04. Planned first publication 2026-11-05; not a publication receipt. Canada 2026-11-03 and Australia 2026-11-05: original PokéBeach multiple-store reporting, https://www.pokebeach.com/2026/10/mcdonalds-pokemon-tcg-promotion-starts-november-10th-features-mini-happy-meal-box-toys-and-15-cards . United States 2026-11-10: official McDonald’s, https://corporate.mcdonalds.com/corpmcd/our-stories/article/USmenuspotter.html .</metadata>
+<rect width="1600" height="900" fill="#FAF8F3"/>
+<rect width="1600" height="26" fill="#DF242B"/>
+<path d="M1420 26h180v180z" fill="#F5D331"/>
+<g font-family="IBM Plex Sans,Arial,sans-serif" fill="#171719">
+<text x="60" y="124" font-family="Georgia,serif" font-size="74" font-weight="700">Pokémon Happy Meal</text>
+<text x="60" y="232" font-family="Barlow Condensed,Arial,sans-serif" font-size="100" font-weight="800" letter-spacing="1">COUNTRY DROP DATES</text>
+<text x="62" y="300" font-size="48" font-weight="600">NOVEMBER 2026</text>
+<g aria-label="CANADA: 3 NOV 2026, REPORTED">
+<rect x="60" y="360" width="460" height="365" rx="9" fill="#FFFFFF" stroke="#171719" stroke-width="5"/>
+<path d="M69 360h442q9 0 9 9v74h-460v-74q0-9 9-9z" fill="#171719"/>
+<rect x="137" y="340" width="16" height="48" rx="8" fill="#DF242B"/>
+<rect x="427" y="340" width="16" height="48" rx="8" fill="#DF242B"/>
+<text x="290" y="418" text-anchor="middle" fill="#FFFFFF" font-family="Barlow Condensed,Arial Narrow,Arial,sans-serif" font-size="54" font-weight="700" textLength="360" lengthAdjust="spacingAndGlyphs">CANADA</text>
+<text x="290" y="590" text-anchor="middle" fill="#DF242B" font-family="Barlow Condensed,Arial Narrow,Arial,sans-serif" font-size="126" font-weight="800" textLength="390" lengthAdjust="spacingAndGlyphs">3 NOV</text>
+<rect x="94" y="634" width="392" height="63" fill="#F0ECE4"/>
+<text x="290" y="682" text-anchor="middle" font-family="Barlow Condensed,Arial,sans-serif" font-size="48" font-weight="700">REPORTED</text>
+</g>
+<g aria-label="AUSTRALIA: 5 NOV 2026, REPORTED">
+<rect x="570" y="360" width="460" height="365" rx="9" fill="#FFFFFF" stroke="#171719" stroke-width="5"/>
+<path d="M579 360h442q9 0 9 9v74h-460v-74q0-9 9-9z" fill="#171719"/>
+<rect x="647" y="340" width="16" height="48" rx="8" fill="#DF242B"/>
+<rect x="937" y="340" width="16" height="48" rx="8" fill="#DF242B"/>
+<text x="800" y="418" text-anchor="middle" fill="#FFFFFF" font-family="Barlow Condensed,Arial Narrow,Arial,sans-serif" font-size="54" font-weight="700" textLength="360" lengthAdjust="spacingAndGlyphs">AUSTRALIA</text>
+<text x="800" y="590" text-anchor="middle" fill="#DF242B" font-family="Barlow Condensed,Arial Narrow,Arial,sans-serif" font-size="126" font-weight="800" textLength="390" lengthAdjust="spacingAndGlyphs">5 NOV</text>
+<rect x="604" y="634" width="392" height="63" fill="#F0ECE4"/>
+<text x="800" y="682" text-anchor="middle" font-family="Barlow Condensed,Arial,sans-serif" font-size="48" font-weight="700">REPORTED</text>
+</g>
+<g aria-label="UNITED STATES: 10 NOV 2026, OFFICIAL">
+<rect x="1080" y="360" width="460" height="365" rx="9" fill="#FFFFFF" stroke="#171719" stroke-width="5"/>
+<path d="M1089 360h442q9 0 9 9v74h-460v-74q0-9 9-9z" fill="#171719"/>
+<rect x="1157" y="340" width="16" height="48" rx="8" fill="#DF242B"/>
+<rect x="1447" y="340" width="16" height="48" rx="8" fill="#DF242B"/>
+<text x="1310" y="418" text-anchor="middle" fill="#FFFFFF" font-family="Barlow Condensed,Arial Narrow,Arial,sans-serif" font-size="54" font-weight="700" textLength="410" lengthAdjust="spacingAndGlyphs">UNITED STATES</text>
+<text x="1310" y="590" text-anchor="middle" fill="#DF242B" font-family="Barlow Condensed,Arial Narrow,Arial,sans-serif" font-size="126" font-weight="800" textLength="390" lengthAdjust="spacingAndGlyphs">10 NOV</text>
+<rect x="1114" y="634" width="392" height="63" fill="#F5D331"/>
+<text x="1310" y="682" text-anchor="middle" font-family="Barlow Condensed,Arial,sans-serif" font-size="48" font-weight="700">OFFICIAL</text>
+</g>
+<line x1="60" y1="770" x2="1540" y2="770" stroke="#171719" stroke-width="3"/>
+<text x="60" y="826" font-size="39" font-weight="600">Reported: PokéBeach</text>
+<text x="840" y="826" font-size="39" font-weight="600">Official: McDonald’s</text>
+<text x="60" y="878" font-size="39">Graphic: BuyTrigger.Cards</text>
+</g></svg>

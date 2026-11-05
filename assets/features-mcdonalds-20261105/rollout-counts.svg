@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 720" role="img" aria-labelledby="title desc" style="max-width:100%;height:auto">
+<title id="title">McDonald’s Pokémon launch waves: 7 markets in November, 36 in December, 21 in January, 2 in February</title>
+<desc id="desc">The current official schedule, checked 4 November 2026, lists 66 markets across four months. November 2026: 7; December 2026: 36; January 2027: 21; February 2027: 2, Ireland and the United Kingdom. Bar lengths use a shared zero baseline. These are month-level launch announcements, not a count of restaurants or a guarantee of stock.</desc>
+<metadata>Original BuyTrigger.Cards data graphic. Inputs: ../release-calendar.json and ../release-calendar.csv. Official source: https://www.pokemon.com/us/news/pokemon-happy-meals-are-coming-to-mcdonalds-in-an-exciting-new-way-. Checked 2026-11-04. Units: markets listed.</metadata>
+<rect width="640" height="720" fill="#FAF8F3"/>
+<rect width="640" height="8" fill="#DF242B"/>
+<g font-family="IBM Plex Sans,Arial,sans-serif" fill="#171719">
+<text x="28" y="61" font-family="Georgia,serif" font-size="33" font-weight="700">Four months. 66 markets.</text>
+<text x="28" y="96" font-size="23">The announced Pokémon Happy Meal rollout</text>
+<g aria-label="November 2026: 7 markets"><text x="28" y="156" font-size="27" font-weight="600">November 2026</text><text x="610" y="156" text-anchor="end" font-size="32" font-weight="700">7</text><rect x="28" y="176" width="510" height="26" fill="#E9E5DD"/><rect x="28" y="176" width="99.167" height="26" fill="#DF242B"/></g>
+<g aria-label="December 2026: 36 markets"><text x="28" y="269" font-size="27" font-weight="600">December 2026</text><text x="610" y="269" text-anchor="end" font-size="32" font-weight="700">36</text><rect x="28" y="289" width="510" height="26" fill="#E9E5DD"/><rect x="28" y="289" width="510.0" height="26" fill="#DF242B"/></g>
+<g aria-label="January 2027: 21 markets"><text x="28" y="382" font-size="27" font-weight="600">January 2027</text><text x="610" y="382" text-anchor="end" font-size="32" font-weight="700">21</text><rect x="28" y="402" width="510" height="26" fill="#E9E5DD"/><rect x="28" y="402" width="297.5" height="26" fill="#DF242B"/></g>
+<g aria-label="February 2027: 2 markets"><text x="28" y="495" font-size="27" font-weight="600">February 2027</text><text x="610" y="495" text-anchor="end" font-size="32" font-weight="700">2</text><rect x="28" y="515" width="510" height="26" fill="#E9E5DD"/><rect x="28" y="515" width="28.333" height="26" fill="#171719"/></g>
+<rect x="28" y="560" width="8" height="33" fill="#F5D331"/>
+<text x="48" y="584" font-size="23" font-weight="600">February: Ireland + United Kingdom</text>
+<text x="28" y="628" font-size="22">Markets listed, not restaurants or stock.</text>
+<text x="28" y="659" font-size="22">Month does not establish an exact start day.</text>
+<a href="https://www.pokemon.com/us/news/pokemon-happy-meals-are-coming-to-mcdonalds-in-an-exciting-new-way-" target="_blank"><text x="28" y="697" font-size="20" text-decoration="underline">Source: Pokémon · checked 4 Nov 2026</text></a>
+</g></svg>
