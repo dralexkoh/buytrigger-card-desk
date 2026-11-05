@@ -903,7 +903,11 @@
         "label": "Correspondent",
         "beat": "UK & Europe desk"
       },
-      "newsRevision": 1
+      "newsRevision": 2,
+      "image": "assets/features-20261104-visual-v3/release-queue-alex-oscar.webp",
+      "imageAlt": "Alex and Oscar in an illustrated card-shop queue; a conceptual scene, not Trident customers.",
+      "imageCredit": "Illustration: BuyTrigger.Cards. Conceptual card-shop queue.",
+      "imageSourceUrl": "https://buytrigger.cards/assets/features-20261104-visual-v3/release-queue-alex-oscar.webp"
     },
     {
       "id": "mega-golisopod-ex-spotlight-2026-11-04",
@@ -928,7 +932,11 @@
         "label": "Correspondent",
         "beat": "Global news desk"
       },
-      "newsRevision": 1
+      "newsRevision": 2,
+      "image": "assets/newswire-20261105/mega-golisopod-official.jpg",
+      "imageAlt": "Official Mega Golisopod ex 011/103 reveal, showing 340 HP and Quadruple Hold.",
+      "imageCredit": "Official card spotlight © The Pokémon Company, 4 November 2026. Original image, unchanged.",
+      "imageSourceUrl": "https://www.instagram.com/pokemontcg/p/DfVNIr4jMzB/"
     },
     {
       "id": "alt-expedition-poliwrath-psa10-20261029",
@@ -953,7 +961,11 @@
         "label": "Correspondent",
         "beat": "Markets & auctions"
       },
-      "newsRevision": 1
+      "newsRevision": 2,
+      "image": "assets/newswire-20261105/poliwrath-15703076.webp",
+      "imageAlt": "Alt lot photograph of Expedition holo Poliwrath #24 in PSA 10 slab, certificate 15703076.",
+      "imageCredit": "Lot photograph: Alt. The reported auction card, PSA certificate 15703076. Original image, unchanged.",
+      "imageSourceUrl": "https://alt.xyz/itm/167897ae-cd01-452d-b6bd-db9b39ecb75d"
     },
     {
       "id": "chiba-junior-additional-entry-2026-10-30",
@@ -978,7 +990,12 @@
         "label": "Correspondent",
         "beat": "Japan desk"
       },
-      "newsRevision": 1
+      "newsRevision": 2,
+      "image": "assets/newswire-20261105/makuhari-messe-2004.jpg",
+      "imageAlt": "Makuhari Messe halls 1–8 in a 2004 venue photograph; not the November 2026 competition.",
+      "imageCredit": "Makuhari Messe file photograph: Sugar, 26 September 2004, via Wikimedia Commons. CC BY-SA 3.0. Original image, unchanged.",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Makuhari_messe_1-8hall.jpg",
+      "imageLicenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/"
     },
     {
       "id": "cardlabo-mito-hadou-seeker-lottery-2026-11-04",

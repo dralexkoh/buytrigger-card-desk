@@ -122,3 +122,15 @@
  .editorial-page .wire-scroll .compact-wire-card h3{font-size:21px;line-height:1.14}
  .wire-scroll .wire-byline{font-size:11px;line-height:1.35}
 }
+
+/* Story pictures stay visible in the compact rail; credits belong to the full brief. */
+.wire-scroll .compact-wire-card .wire-card-top .wire-visual{width:104px;height:78px;min-height:78px;flex:0 0 104px;background:#f0f0eb}
+.wire-visual.story-source-media img{object-fit:contain;background:#f0f0eb}
+.editorial-page .illustrated-wire .wire-media-credit{font-size:12px;line-height:1.45;color:#626269;margin:10px 0}
+@media(max-width:650px){
+ .wire-scroll .compact-wire-card{display:flex;flex-direction:column;gap:7px;padding:10px}
+ .wire-scroll .compact-wire-card .wire-card-top{display:flex;gap:10px}
+ .wire-scroll .compact-wire-card .wire-card-top .wire-visual{width:96px;height:72px;min-height:72px;flex:0 0 96px}
+ .editorial-page .wire-scroll .compact-wire-card .wire-meta{flex-direction:column;align-items:start;gap:4px}
+ .wire-scroll .compact-wire-card .news-card-copy{gap:5px}
+}

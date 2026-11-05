@@ -43,3 +43,15 @@ class EditorialVisualTest(unittest.TestCase):
     def test_inline_source_caption_cannot_disappear(self):
         a=self.quick_read();a['sections'][0]['html']=a['sections'][0]['html'].replace('<figcaption>Product reference, publisher credited.</figcaption>','')
         with self.assertRaises(ValueError):validate_editorial_visuals(self.data,self.root)
+    def test_wire_media_is_complete_local_and_credited(self):
+        (self.root/'assets/card.jpg').write_bytes(b'fixture')
+        wire={'id':'reviewed-wire','image':'assets/card.jpg','imageAlt':'Exact auction card',
+              'imageCredit':'Auction house photograph','imageSourceUrl':'https://example.com/lot'}
+        self.data['wire']=[wire,{'id':'legacy-wire'}]
+        self.assertEqual(validate_editorial_visuals(self.data,self.root),1)
+        for field,value in [('image','assets/../outside.jpg'),('image','assets/missing.jpg'),
+                            ('imageCredit',''),('imageSourceUrl','javascript:alert(1)'),
+                            ('imageLicenseUrl','https://user:pass@example.com/licence')]:
+            with self.subTest(field=field,value=value):
+                self.data['wire'][0]=dict(wire,**{field:value})
+                with self.assertRaises(ValueError):validate_editorial_visuals(self.data,self.root)
