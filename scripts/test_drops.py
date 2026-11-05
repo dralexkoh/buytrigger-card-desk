@@ -7,8 +7,8 @@ class DropsContract(unittest.TestCase):
     def setUp(self): self.data=json.loads((ROOT/'drops.json').read_text())
     def test_reviewed_seed_and_regional_identity(self):
         self.assertTrue(validate_drops(self.data,ROOT))
-        self.assertEqual({i['country'] for i in self.data['items']},{'United Kingdom','United States','Japan'})
-        self.assertEqual(len(self.data['items']),4)
+        self.assertEqual({i['country'] for i in self.data['items']},{'United Kingdom','United States','Japan','Hong Kong','Singapore','Philippines','Taiwan'})
+        self.assertEqual(len(self.data['items']),9)
     def test_duplicate_region_and_vague_asia_rejected(self):
         self.data['items'].append(copy.deepcopy(self.data['items'][0]))
         with self.assertRaises(AssertionError): validate_drops(self.data,ROOT)
