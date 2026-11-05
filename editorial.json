@@ -981,15 +981,11 @@
       "kind": "Live auction",
       "title": "Red RGB Mew draws a US$91,100 live bid",
       "summary": "The Card Science spotted the auction for a red 30th Celebration RGB Mew listed as BGS 10 Black Label. When we checked eBay on 5 November, bidding was at US$91,100 after 84 bids, with the auction still open. The final price is unknown.",
-      "sourceLabel": "eBay",
+      "sourceLabel": "eBay auction and lot photos",
       "url": "https://www.ebay.com/itm/800860034263",
       "checkedAt": "2026-11-05T13:32:25.512697+00:00",
       "sourcePublishedAt": "2026-11-05",
-      "visual": "briefing-graphic",
-      "image": "assets/wire-20261105/red-rgb-mew-live-auction.webp",
-      "imageAlt": "Original Mew illustration with the eBay auction snapshot of US$91,100 and 84 bids, still open on 5 November.",
-      "imageCredit": "Original editorial illustration: BuyTrigger.Cards. Tip: The Card Science.",
-      "imageSourceUrl": "https://buytrigger.cards/assets/wire-20261105/red-rgb-mew-live-auction.webp",
+      "visual": "text",
       "ctaUrl": null,
       "ctaLabel": null,
       "author": {
@@ -999,7 +995,7 @@
         "label": "Correspondent",
         "beat": "Markets & auctions"
       },
-      "newsRevision": 1
+      "newsRevision": 2
     },
     {
       "id": "gold-rayquaza-ebay-prerelease-november-2026",
@@ -1015,7 +1011,7 @@
       "checkedAt": "2026-11-05T13:13:30.742029+00:00",
       "sourcePublishedAt": "2026-11-05",
       "ctaUrl": "https://turnzerohq.com/pokemon/cards/me6-141",
-      "ctaLabel": "See the English 141/103 card ↗",
+      "ctaLabel": "See the exact Gold Rayquaza 141/103 card ↗",
       "visual": "text",
       "author": {
         "id": "elliot-reed",
@@ -1024,7 +1020,7 @@
         "label": "Correspondent",
         "beat": "Markets & auctions"
       },
-      "newsRevision": 2
+      "newsRevision": 3
     },
     {
       "id": "tacoma-card-shop-break-in-november-2026",
