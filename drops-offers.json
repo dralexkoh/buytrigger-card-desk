@@ -1,7 +1,33 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-05T00:08:27.833785+00:00",
+  "updatedAt": "2026-11-05T09:27:36.763004+00:00",
   "items": [
+    {
+      "id": "ebay-880083401301-uk",
+      "productKey": "mega-evolution-delta-reign-standard-elite-trainer-box-english",
+      "title": "Delta Reign Elite Trainer Box · English",
+      "summary": "This sealed English Elite Trainer Box was listed for immediate purchase by a private eBay seller. Check the listing for current availability and delivery terms.",
+      "region": "UK",
+      "country": "United Kingdom",
+      "language": "English",
+      "retailer": "eBay",
+      "seller": "tpjw04",
+      "fulfilment": "UK delivery shown; confirm postage and dates on the listing",
+      "event": "Available",
+      "availability": "In stock",
+      "productUrl": "https://www.ebay.co.uk/itm/880083401301",
+      "sourceUrl": "https://www.ebay.co.uk/itm/880083401301",
+      "checkedAt": "2026-11-05T09:26:44.414Z",
+      "expiresAt": "2026-11-05T09:41:44.414000+00:00",
+      "affiliateProvider": "ebay",
+      "price": {
+        "amount": 83.0,
+        "currency": "GBP",
+        "basis": "Item price; delivery shown by seller"
+      },
+      "revision": 1,
+      "affiliateUrl": "https://www.ebay.co.uk/itm/880083401301?mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339239680&toolid=10001&customid=ebay-880083401301-uk"
+    },
     {
       "id": "ebay-365081400866-uk",
       "productKey": "vault-x-slim-exotec-ring-binder-forest-green-5060570203169",
