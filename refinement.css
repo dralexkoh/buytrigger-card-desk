@@ -134,3 +134,9 @@
  .editorial-page .wire-scroll .compact-wire-card .wire-meta{flex-direction:column;align-items:start;gap:4px}
  .wire-scroll .compact-wire-card .news-card-copy{gap:5px}
 }
+
+.illustrated-wire.wire-graphic>.wire-visual{height:auto;aspect-ratio:4/3}
+@media(max-width:650px){
+ .illustrated-wire.wire-graphic{grid-template-columns:minmax(0,1fr)}
+ .illustrated-wire.wire-graphic>.wire-visual{width:min(100%,360px)}
+}
