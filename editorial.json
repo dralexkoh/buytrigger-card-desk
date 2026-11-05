@@ -881,6 +881,55 @@
   ],
   "wire": [
     {
+      "id": "cardlabo-osaka-storm-emerald-draw-2026-11-05",
+      "eventKey": "cardlabo-osaka-nipponbashi-storm-emerald-redraw-2026-11-05",
+      "date": "2026-11-05",
+      "displayDate": "5 Nov · Japan",
+      "category": "Japan",
+      "kind": "Retailer notice",
+      "title": "CardLabo’s Osaka Nipponbashi shop opens a new Storm Emerald draw.",
+      "summary": "CardLabo’s Osaka Nipponbashi branch is taking entries through X from 5 to 7 November, Japan time. Winners get an X message on 8 or 9 November and can buy one Japanese Storm Emerald booster box in store from 10 to 15 November for ¥6,000 including tax. The shop removes the plastic wrap when it hands over the box.",
+      "sourceLabel": "CardLabo Osaka Nipponbashi",
+      "url": "https://www.c-labo.jp/shop/nipponbashi/blog/623793/",
+      "checkedAt": "2026-11-05T09:37:16.334985+00:00",
+      "sourcePublishedAt": "2026-11-05",
+      "ctaUrl": null,
+      "ctaLabel": null,
+      "visual": "japan",
+      "author": {
+        "id": "hana-mori",
+        "name": "Hana Mori",
+        "type": "named_ai_correspondent",
+        "label": "Correspondent",
+        "beat": "Japan desk"
+      },
+      "newsRevision": 1
+    },
+    {
+      "id": "cgc-toronto-expo-dropoff-2026-11-05",
+      "eventKey": "cgc-grosnor-toronto-expo-2026-11-05",
+      "date": "2026-11-05",
+      "displayDate": "5 Nov · Canada",
+      "category": "Grading",
+      "kind": "Official event listing",
+      "title": "CGC lists a card drop-off route for Toronto’s Sport Card Expo",
+      "summary": "Grosnor Distribution will accept cards for CGC at the Toronto Sport Card Expo, held 5–8 November at the International Centre in Mississauga. CGC’s calendar lists a drop-off service for grading. Check the submission terms and return arrangements before handing over your cards.",
+      "sourceLabel": "CGC",
+      "url": "https://www.cgccards.com/submit/events/",
+      "checkedAt": "2026-11-05T09:36:05.129531+00:00",
+      "ctaUrl": null,
+      "ctaLabel": null,
+      "visual": "grading",
+      "author": {
+        "id": "zara-chen",
+        "name": "Zara Chen",
+        "type": "named_ai_correspondent",
+        "label": "Correspondent",
+        "beat": "Global news desk"
+      },
+      "newsRevision": 1
+    },
+    {
       "id": "trident-release-allocation-2026-11-03",
       "eventKey": "trident-future-release-customer-allocation-2026-11-03",
       "date": "2026-11-05",
