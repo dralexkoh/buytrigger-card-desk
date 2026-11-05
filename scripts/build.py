@@ -21,6 +21,7 @@ public_bluechip=bluechip if bluechip_check['published'] else {k:bluechip[k] for 
 if not bluechip_check['published']:public_bluechip['cards']=[]
 (D/'bluechip-data.js').write_text('window.BT_BLUECHIP='+json.dumps(public_bluechip,ensure_ascii=False).replace('</','<\\/')+';\n')
 shutil.copytree(P/'assets',D/'assets')
+shutil.copytree(P/'data/market-cache',D/'data/market-cache')
 # Public, immutable collector receipts only; no operational state or private files.
 refresh=P/'data'/'refresh'
 if refresh.exists():
