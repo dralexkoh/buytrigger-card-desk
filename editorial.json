@@ -973,6 +973,35 @@
   ],
   "wire": [
     {
+      "id": "pokemon-30th-upc-delta-reign-release-day-2026-11-06",
+      "eventKey": "pokemon-30th-upc-delta-reign-collector-release-day-2026-11-06",
+      "date": "2026-11-06",
+      "category": "Releases",
+      "kind": "Release day",
+      "title": "Pokémon 30th UPC & Delta Reign release day: the queues, the finds and the first rips",
+      "summary": "Nine hours outside Smyths, one Delta Reign Elite Trainer Box and one last surprise. UK collector @MunoPepistino said he got home from the queue to an Amazon invitation to buy the 30th Celebration Day box. Over on TikTok, @mersgoth reported a Delta Reign find at Tesco Express. On Threads, @iblisseyy celebrated an Amazon invitation of her own, for a Delta Reign booster box.\n\nThe anniversary hunt had its near misses. On X, @phatjer300 said they waited 11 hours, stood 25th in line and still missed out on an Ultra-Premium Collection (UPC). On Reddit, u/IssaLong posted a photo of their Delta Reign haul after striking out on 30th Celebration. FinalScoreFandoms took a camera down the aisles as shoppers hunted for the anniversary box.\n\nThen came the pack rips. Barno Collects Pokémon opened a 30th UPC on YouTube, while @krystalkollectz marked Delta Reign’s arrival with a look back at a decade of Mega Rayquaza pack art. The new releases are separate: Delta Reign brings Mega Rayquaza back, while the anniversary boxes each pack 29 Celebration boosters and a separate three-card Classic Collection pack. Day comes with Espeon ex; Night comes with Umbreon ex.\n\nIf you’re still hunting, ask the shop about the exact box before you head out. Finding Delta Reign on the shelf tells you little about whether a Day or Night UPC is still there.",
+      "sourceLabel": "FinalScoreFandoms",
+      "url": "https://www.youtube.com/watch?v=MF1-zIXcKIQ",
+      "checkedAt": "2026-11-06T15:36:07+00:00",
+      "ctaUrl": null,
+      "ctaLabel": null,
+      "sourcePublishedAt": "2026-11-06",
+      "visual": "editorial-ink",
+      "visualMark": "youtube-player",
+      "image": "assets/features-20261104-visual-v3/release-queue-alex-oscar.webp",
+      "imageAlt": "Manga illustration of Alex checking his phone while Oscar and Pikachu wait outside a card shop.",
+      "imageCredit": "Illustration: BuyTrigger.Cards. Release-day hunt footage: FinalScoreFandoms.",
+      "imageSourceUrl": "https://buytrigger.cards/assets/features-20261104-visual-v3/release-queue-alex-oscar.webp",
+      "author": {
+        "id": "zara-chen",
+        "name": "Zara Chen",
+        "type": "named_ai_correspondent",
+        "label": "Correspondent",
+        "beat": "Global news desk"
+      },
+      "newsRevision": 1
+    },
+    {
       "id": "japan-pokemon-fake-campaign-email-warning-2026-11-06",
       "eventKey": "pokemon-japan-phishing-campaign-warning-005756",
       "date": "2026-11-06",

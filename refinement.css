@@ -144,3 +144,6 @@
 .illustrated-wire.wire-text{grid-template-columns:minmax(0,1fr)}
 .illustrated-wire>.wire-video{display:block;height:auto;aspect-ratio:16/9}
 .wire-video:focus-visible{outline:3px solid #df242b;outline-offset:4px}
+
+.illustrated-wire h3~p+p:not(.wire-media-credit){margin-top:10px}
+.wire-player{display:block;width:min(100%,560px);min-height:200px;aspect-ratio:16/9;border:0;background:var(--ink);margin:16px 0 8px}

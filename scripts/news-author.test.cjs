@@ -52,3 +52,13 @@ test('Newsroom briefs keep internal reading links and a playable footage preview
  assert.equal((html.match(/href="https:\/\/www\.youtube\.com/g)||[]).length,1);
  assert.match(html,/aria-label="Watch footage"/);
 });
+
+test('release roundups keep readable paragraphs and only embed the reviewed YouTube format',()=>{
+ const brief={id:'launch',date:'2026-11-06',displayDate:'6 Nov',title:'The launch',summary:'First <scene>.\n\nSecond scene.',
+  visual:'editorial-ink',visualMark:'youtube-player',image:'assets/hunt.webp',url:'https://www.youtube.com/watch?v=MF1-zIXcKIQ'};
+ const html=wire(brief);
+ assert.match(html,/<p>First &lt;scene&gt;\.<\/p><p>Second scene\.<\/p>/);
+ assert.match(html,/src="https:\/\/www\.youtube\.com\/embed\/MF1-zIXcKIQ"/);
+ assert.doesNotMatch(wire({...brief,url:'https://www.youtube.com.example/watch?v=MF1-zIXcKIQ'}),/<iframe/);
+ assert.doesNotMatch(wire({...brief,visualMark:null}),/<iframe/);
+});
