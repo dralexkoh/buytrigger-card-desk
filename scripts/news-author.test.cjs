@@ -24,7 +24,7 @@ test('unsigned news does not acquire a fictional author and names remain escaped
 });
 
 const wireRenderer=source.slice(source.indexOf('function wire(w)'),source.indexOf('function homeWire('));
-const wire=vm.runInNewContext(esc+'\n'+wireRenderer+'\nwire',{URL});
+const wire=vm.runInNewContext(esc+'\n'+wireRenderer+'\nwire',{URL,E:{}});
 
 test('Newsroom briefs omit source lines and external reading links while retaining attribution',()=>{
  const html=wire({
@@ -61,4 +61,18 @@ test('release roundups keep readable paragraphs and only embed the reviewed YouT
  assert.match(html,/src="https:\/\/www\.youtube\.com\/embed\/MF1-zIXcKIQ"/);
  assert.doesNotMatch(wire({...brief,url:'https://www.youtube.com.example/watch?v=MF1-zIXcKIQ'}),/<iframe/);
  assert.doesNotMatch(wire({...brief,visualMark:null}),/<iframe/);
+});
+
+test('photo stories render only scoped original X posts and escape editorial captions',()=>{
+ const review=[
+  {label:'Rainy queue',caption:'Best Buy <queue>',url:'https://x.com/Luckstruck9/status/2118696257661042759'},
+  {label:'Wrong host',caption:'Reject',url:'https://x.com.example/account/status/2118696257661042759'}
+ ];
+ const renderWire=vm.runInNewContext(esc+'\n'+wireRenderer+'\nwire',{URL,E:{wirePhotoStories:{launch:review}}});
+ const brief={id:'launch',date:'2026-11-06',displayDate:'6 Nov',summary:'The release day'};
+ assert.match(renderWire(brief),/Release day in photos/);
+ assert.match(renderWire(brief),/Best Buy &lt;queue&gt;/);
+ assert.match(renderWire(brief),/data-dnt="true"/);
+ assert.doesNotMatch(renderWire(brief),/Wrong host|x\.com\.example/);
+ assert.doesNotMatch(renderWire({...brief,id:'other'}),/twitter-tweet/);
 });
