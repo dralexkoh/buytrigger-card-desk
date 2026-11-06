@@ -20,12 +20,12 @@
         "id": "alex-koh",
         "name": "Alex Koh"
       },
-      "image": "assets/features-mcdonalds-20261105/country-drop-cover-v2.png",
-      "thumbnail": "assets/features-mcdonalds-20261105/country-drop-cover-v2.png",
-      "imageAlt": "Country drop dates for the 2026 Pokémon Happy Meal: Canada 3 November reported, Australia 5 November reported, US 10 November official.",
-      "imageCredit": "Graphic: BuyTrigger.Cards. Canada/Australia dates: PokéBeach store reporting; US: McDonald’s.",
-      "imageCaption": "Three sourced launch dates with official and reported evidence kept distinct.",
-      "visualStyle": "brand-graphic-v1",
+      "image": "assets/editorial-art-20261106/happy-meal.webp",
+      "thumbnail": "assets/editorial-art-20261106/happy-meal.webp",
+      "imageAlt": "Manga-style illustration of Pikachu peeking around a red Happy Meal box.",
+      "imageCredit": "Editorial illustration: BuyTrigger.Cards.",
+      "imageCaption": "BuyTrigger.Cards illustration of the Pokémon Happy Meal promotion.",
+      "visualStyle": "editorial-ink-v1",
       "editorialFormat": "visual-quick-read-v1",
       "sections": [
         {
@@ -1014,7 +1014,7 @@
       "url": "https://www.pokemon-card.com/info/005756.html",
       "checkedAt": "2026-11-06T13:06:00+00:00",
       "sourcePublishedAt": "2026-11-06",
-      "visual": "text",
+      "visual": "editorial-ink",
       "author": {
         "id": "hana-mori",
         "name": "Hana Mori",
@@ -1022,7 +1022,11 @@
         "label": "Correspondent",
         "beat": "Japan desk"
       },
-      "newsRevision": 1
+      "newsRevision": 2,
+      "image": "assets/editorial-art-20261106/campaign-email.webp",
+      "imageAlt": "Manga-style illustration of a phone displaying an envelope and a warning symbol.",
+      "imageCredit": "Editorial illustration: BuyTrigger.Cards.",
+      "imageSourceUrl": "https://buytrigger.cards/assets/editorial-art-20261106/campaign-email.webp"
     },
     {
       "id": "japan-pokemon-booster-price-rise-2027",
@@ -1039,11 +1043,11 @@
       "ctaLabel": null,
       "displayDate": "6 Nov · Japan",
       "sourcePublishedAt": "2026-11-06",
-      "visual": "briefing-graphic",
-      "image": "assets/wire-20261106/japan-booster-price-2027.webp",
-      "imageAlt": "Suggested retail price including tax for five-card Pokémon boosters in Japan. Packs released through April 2027 show ¥200 and packs released from May 2027 show ¥230, a 15% rise. Some packs may differ.",
-      "imageCredit": "BuyTrigger.Cards graphic using Pokémon Card Game Japan’s announced prices.",
-      "imageSourceUrl": "https://buytrigger.cards/assets/wire-20261106/japan-booster-price-2027.webp",
+      "visual": "editorial-ink",
+      "image": "assets/editorial-art-20261106/booster-price.webp",
+      "imageAlt": "Manga-style illustration of a foil booster wrapper with a yellow price tag and a rising arrow.",
+      "imageCredit": "Editorial illustration: BuyTrigger.Cards.",
+      "imageSourceUrl": "https://buytrigger.cards/assets/editorial-art-20261106/booster-price.webp",
       "author": {
         "id": "hana-mori",
         "name": "Hana Mori",
@@ -1051,7 +1055,7 @@
         "label": "Correspondent",
         "beat": "Japan desk"
       },
-      "newsRevision": 1
+      "newsRevision": 2
     },
     {
       "id": "delta-reign-uk-payment-deadline-2026-11-06",
@@ -1068,11 +1072,11 @@
       "sourcePublishedAt": "2026-11-05",
       "ctaUrl": "/stories/delta-reign-friday-uk-upc-release-check/",
       "ctaLabel": "Read the UK Delta Reign and UPC guide",
-      "image": "assets/wire-20261106/delta-reign-uk-dates.webp",
-      "imageAlt": "Delta Reign UK dates: 6 November tabletop launch, 11 November payment deadline for customers emailed on or after 5 November, mid-November Pokémon Center shipping estimate.",
-      "imageCredit": "BuyTrigger.Cards graphic. Dates from Pokémon and Pokémon Center UK.",
-      "imageSourceUrl": "https://buytrigger.cards/assets/wire-20261106/delta-reign-uk-dates.webp",
-      "visual": "briefing-graphic",
+      "image": "assets/editorial-art-20261106/delta-uk.webp",
+      "imageAlt": "Manga-style illustration of a parcel with a clock on its shipping tag.",
+      "imageCredit": "Editorial illustration: BuyTrigger.Cards.",
+      "imageSourceUrl": "https://buytrigger.cards/assets/editorial-art-20261106/delta-uk.webp",
+      "visual": "editorial-ink",
       "author": {
         "id": "theo-brooks",
         "name": "Theo Brooks",
@@ -1080,7 +1084,7 @@
         "label": "Correspondent",
         "beat": "UK & Europe desk"
       },
-      "newsRevision": 1
+      "newsRevision": 2
     },
     {
       "id": "red-rgb-mew-black-label-live-auction-2026-11-05",
