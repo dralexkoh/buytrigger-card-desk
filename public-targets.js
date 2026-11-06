@@ -9,15 +9,16 @@ const date=x=>new Date(x).toLocaleDateString('en-GB',{day:'numeric',month:'short
 const object=x=>x&&typeof x==='object'&&!Array.isArray(x);
 const exactKeys=(x,keys)=>object(x)&&Object.keys(x).length===keys.length&&keys.every(k=>Object.hasOwn(x,k));
 const timestamp=x=>typeof x==='string'&&/(Z|[+-]\d\d:\d\d)$/.test(x)&&Number.isFinite(Date.parse(x));
+const calendarDay=x=>typeof x==='string'&&/^\d{4}-\d\d-\d\d$/.test(x)&&Number.isFinite(Date.parse(x))&&new Date(x).toISOString().slice(0,10)===x;
 function validateConfig(c){
  const fields=['schemaVersion','enabled','endpoint'];if(c?.review!==undefined)fields.push('review');
  if(!exactKeys(c,fields)||c.schemaVersion!==1||typeof c.enabled!=='boolean'||(c.enabled?c.endpoint!==APPROVED_ENDPOINT:c.endpoint!==null))throw Error('Invalid public feed setup');
  if(c.review!==undefined){
-  const r=c.review,d=r?.checkedAt,ms=Date.parse(d);
+  const r=c.review,d=r?.checkedAt;
   const keys=['checkedAt','listingsChecked'];
   if(r?.findings!==undefined)keys.push('findings');
   if(r?.psaUpside!==undefined)keys.push('psaUpside');
-  if(!exactKeys(r,keys)||typeof d!=='string'||!/^\d{4}-\d\d-\d\d$/.test(d)||!Number.isFinite(ms)||new Date(ms).toISOString().slice(0,10)!==d||ms>Date.now()||!exactKeys(r.listingsChecked,['en','ja'])||Object.values(r.listingsChecked).some(n=>!Number.isSafeInteger(n)||n<1||n>500))throw Error('Invalid dated review');
+  if(!exactKeys(r,keys)||!calendarDay(d)||Date.parse(d)>Date.now()||!exactKeys(r.listingsChecked,['en','ja'])||Object.values(r.listingsChecked).some(n=>!Number.isSafeInteger(n)||n<1||n>500))throw Error('Invalid dated review');
   if(r.findings!==undefined&&(!exactKeys(r.findings,['en','ja'])||Object.values(r.findings).some(lines=>
    !Array.isArray(lines)||lines.length<1||lines.length>3||lines.some(line=>typeof line!=='string'||!line.trim()||line.length>280)
   )))throw Error('Invalid review findings');
@@ -27,15 +28,17 @@ function validateConfig(c){
  }
  return c;
 }
-function validUpside(c,checkedAt){
+function validUpside(c,reviewDay){
  const fields=['id','name','set','number','printing','language','image','rawMinor','gradingMinor','psa10Minor','returnPostageFromMinor','soldOn','rawUrl','gradingUrl','saleUrl','imageSourceUrl'];
  if(c?.gradingTier!==undefined)fields.push('gradingTier');
+ if(c?.checkedAt!==undefined)fields.push('checkedAt');
  if(!exactKeys(c,fields)||!['en','ja'].includes(c.language)||typeof c.id!=='string'||!/^[a-z0-9-]{1,100}$/.test(c.id))return false;
  if(c.gradingTier!==undefined&&!['Value','Standard'].includes(c.gradingTier))return false;
  if(!['name','set','number','printing'].every(k=>typeof c[k]==='string'&&c[k].trim()&&c[k].length<=120))return false;
  if(typeof c.image!=='string'||!/^assets\/public-targets\/[a-z0-9_-]+\.(jpg|png|webp)$/.test(c.image))return false;
  if(!['rawMinor','gradingMinor','psa10Minor','returnPostageFromMinor'].every(k=>Number.isSafeInteger(c[k])&&c[k]>0&&c[k]<=100_000_000)||c.psa10Minor<=c.rawMinor+c.gradingMinor)return false;
- if(typeof c.soldOn!=='string'||!/^\d{4}-\d\d-\d\d$/.test(c.soldOn)||!Number.isFinite(Date.parse(c.soldOn))||new Date(c.soldOn).toISOString().slice(0,10)!==c.soldOn||c.soldOn>checkedAt)return false;
+ const checkedAt=c.checkedAt===undefined?reviewDay:c.checkedAt;
+ if(!calendarDay(checkedAt)||Date.parse(checkedAt)>Date.now()||!calendarDay(c.soldOn)||c.soldOn>checkedAt)return false;
  return ['rawUrl','gradingUrl','saleUrl','imageSourceUrl'].every(k=>typeof c[k]==='string'&&/^https:\/\/[a-z0-9.-]+\/[^\s@#]+$/.test(c[k])&&c[k].length<=500);
 }
 function upsideCard(c,checkedAt){
@@ -100,7 +103,7 @@ function mount(language){
     if(examples.length){
      status.textContent=examples.length===1?'1 PSA 10 scenario':examples.length+' PSA 10 scenarios';
      const findings=review.findings?.[language]??[];
-     host.innerHTML=examples.map(c=>upsideCard(c,review.checkedAt)).join('')+
+     host.innerHTML=examples.map(c=>upsideCard(c,c.checkedAt??review.checkedAt)).join('')+
       `<details class="target-review-history"><summary>Earlier downside review · ${date(review.checkedAt)}</summary><p>${review.listingsChecked[language]} listings checked. None passed the PSA 9 cost recovery and other checks.</p><ul>${findings.map(line=>`<li>${esc(line)}</li>`).join('')}</ul></details>`;
      return;
     }
