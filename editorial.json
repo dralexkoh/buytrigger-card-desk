@@ -973,6 +973,35 @@
   ],
   "wire": [
     {
+      "id": "japan-pokemon-booster-price-rise-2027",
+      "eventKey": "pokemon-japan-five-card-booster-msrp-may-2027",
+      "date": "2026-11-06",
+      "category": "Price action",
+      "kind": "Retail price announcement",
+      "title": "Pokémon raises Japan’s five-card booster pack price to ¥230 from May 2027",
+      "summary": "Pokémon says the suggested price of standard five-card expansion packs released in Japan from May 2027 will rise from ¥200 to ¥230 including tax, up ¥30 or 15%. It cites higher raw material costs among the reasons and says some packs may be priced differently. Hadou Seeker, due 27 November 2026, still lists ¥200.",
+      "sourceLabel": "Pokémon Card Game Japan",
+      "url": "https://www.pokemon-card.com/info/005755.html",
+      "checkedAt": "2026-11-06T12:54:41.154283+00:00",
+      "ctaUrl": null,
+      "ctaLabel": null,
+      "displayDate": "6 Nov · Japan",
+      "sourcePublishedAt": "2026-11-06",
+      "visual": "briefing-graphic",
+      "image": "assets/wire-20261106/japan-booster-price-2027.webp",
+      "imageAlt": "Suggested retail price including tax for five-card Pokémon boosters in Japan. Packs released through April 2027 show ¥200 and packs released from May 2027 show ¥230, a 15% rise. Some packs may differ.",
+      "imageCredit": "BuyTrigger.Cards graphic using Pokémon Card Game Japan’s announced prices.",
+      "imageSourceUrl": "https://buytrigger.cards/assets/wire-20261106/japan-booster-price-2027.webp",
+      "author": {
+        "id": "hana-mori",
+        "name": "Hana Mori",
+        "type": "named_ai_correspondent",
+        "label": "Correspondent",
+        "beat": "Japan desk"
+      },
+      "newsRevision": 1
+    },
+    {
       "id": "delta-reign-uk-payment-deadline-2026-11-06",
       "eventKey": "pokemon-center-uk-delta-reign-reauthorisation-deadline-2026-11-05",
       "date": "2026-11-06",
