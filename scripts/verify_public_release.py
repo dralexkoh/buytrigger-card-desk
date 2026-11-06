@@ -18,6 +18,7 @@ NAMES += ['market.html','30th-anniversary-index.html','shared-market.js','shared
 
 NAMES += ['bluechip-raw-archive.html','bluechip-engine.js','bluechip.js','bluechip.css','bluechip-release.json','bluechip-data.js']
 NAMES += ['bluechip-collection-data.js','bluechip-collection-sources.json']
+NAMES += ['undervalued.html','undervalued-japanese.html','public-targets.js','public-targets.css','public-targets-config.json']
 
 def verify(dist,url=PRIMARY_URL,attempts=9,delay=10):
     pending={n:hashlib.sha256((dist/n).read_bytes()).hexdigest() for n in NAMES}
