@@ -16,9 +16,11 @@ if shared['enabled']:
  assert re.fullmatch('[a-f0-9]{64}',set_release['sourceVersion'])
 else:assert shared['endpoint'] is None
 
+APPROVED_TARGET_READER='https://ukblxmvsqihnnyysvxes.supabase.co/functions/v1/public-card-targets'
 targets=json.loads((d/'public-targets-config.json').read_text())
 assert set(targets)=={'schemaVersion','enabled','endpoint','review'}
-assert targets['schemaVersion']==1 and targets['enabled'] is False and targets['endpoint'] is None, 'Enable the feed only after the reviewed shared Cards release'
+assert targets['schemaVersion']==1 and type(targets['enabled']) is bool
+assert targets['endpoint']==(APPROVED_TARGET_READER if targets['enabled'] else None), 'Use only the reviewed shared Cards reader'
 review=targets['review']
 assert set(review)=={'checkedAt','listingsChecked','findings','psaUpside'} and re.fullmatch(r'\d{4}-\d{2}-\d{2}',review['checkedAt'])
 assert set(review['findings'])=={'en','ja'} and all(
@@ -30,7 +32,6 @@ assert set(review['listingsChecked'])=={'en','ja'} and all(type(v) is int and 0<
 for card in review['psaUpside']:
  assert re.fullmatch(r'assets/public-targets/[a-z0-9_-]+\.webp',card['image']) and (d/card['image']).is_file()
  assert card['psa10Minor']>card['rawMinor']+card['gradingMinor']>0
-APPROVED_TARGET_READER='https://ukblxmvsqihnnyysvxes.supabase.co/functions/v1/public-card-targets'
 assert (d/'CNAME').read_text()=='buytrigger.cards\n', 'Wrong public domain contract'
 APPROVED_COLLECTOR='https://brzawmbpwkdundruicca.supabase.co/functions/v1/cards-traffic-ingest'
 analytics=json.loads((d/'analytics-config.json').read_text())
@@ -48,7 +49,7 @@ for f in d.rglob('*'):
  if any(x in f.name.lower() for x in ['owner','backup','research.json','.env','.map','traffic-preview']):fail.append(str(f))
  if f.suffix not in ['.html','.js','.css','.json','.xml','.txt','.svg']:continue
  s=f.read_text()
- if f.name=='public-targets.js':
+ if f.name in {'public-targets.js','public-targets-config.json'}:
   s=s.replace(APPROVED_TARGET_READER,'https://approved-public-target-reader.invalid')
  if f.name=='shared-market-config.json':
   s=s.replace(APPROVED_MARKET,'https://approved-public-market.invalid')
