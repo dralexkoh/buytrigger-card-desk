@@ -1,7 +1,33 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-06T13:40:55.376727+00:00",
+  "updatedAt": "2026-11-06T18:07:54.392548+00:00",
   "items": [
+    {
+      "id": "ebay-960162231533-uk",
+      "productKey": "mega-evolution-delta-reign-loose-single-booster-pack-10-cards-english",
+      "title": "Delta Reign Booster Pack · English",
+      "summary": "The listing is for one loose English Delta Reign booster pack, listed as factory sealed. The UK delivery option showed 91p postage when checked.",
+      "region": "UK",
+      "language": "English",
+      "retailer": "eBay",
+      "checkedAt": "2026-11-06T18:06:54.346Z",
+      "availability": "In stock",
+      "country": "United Kingdom",
+      "seller": "kieranb842",
+      "fulfilment": "UK Royal Mail delivery shown on the listing",
+      "event": "Available",
+      "productUrl": "https://www.ebay.co.uk/itm/960162231533",
+      "sourceUrl": "https://www.ebay.co.uk/itm/960162231533",
+      "expiresAt": "2026-11-06T18:21:54.346000+00:00",
+      "affiliateProvider": "ebay",
+      "revision": 1,
+      "price": {
+        "amount": 6.52,
+        "currency": "GBP",
+        "basis": "Item price; delivery shown by seller"
+      },
+      "affiliateUrl": "https://www.ebay.co.uk/itm/960162231533?mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339239680&toolid=10001&customid=ebay-960162231533-uk"
+    },
     {
       "id": "ebay-267834560605-uk",
       "productKey": "mega-evolution-ascended-heroes-focused-fighters-premium-collection-english",
