@@ -1,32 +1,27 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-05T09:27:36.763004+00:00",
+  "updatedAt": "2026-11-06T13:02:59.783430+00:00",
   "items": [
     {
-      "id": "ebay-880083401301-uk",
+      "id": "ebay-147668021587-uk",
       "productKey": "mega-evolution-delta-reign-standard-elite-trainer-box-english",
       "title": "Delta Reign Elite Trainer Box · English",
-      "summary": "This sealed English Elite Trainer Box was listed for immediate purchase by a private eBay seller. Check the listing for current availability and delivery terms.",
+      "summary": "A private UK eBay seller has listed the sealed standard English box for immediate purchase. See the listing for the latest availability and delivery.",
       "region": "UK",
-      "country": "United Kingdom",
       "language": "English",
       "retailer": "eBay",
-      "seller": "tpjw04",
-      "fulfilment": "UK delivery shown; confirm postage and dates on the listing",
-      "event": "Available",
+      "checkedAt": "2026-11-06T13:00:30.640Z",
       "availability": "In stock",
-      "productUrl": "https://www.ebay.co.uk/itm/880083401301",
-      "sourceUrl": "https://www.ebay.co.uk/itm/880083401301",
-      "checkedAt": "2026-11-05T09:26:44.414Z",
-      "expiresAt": "2026-11-05T09:41:44.414000+00:00",
+      "country": "United Kingdom",
+      "seller": "mitel811",
+      "fulfilment": "UK tracked delivery shown on the listing",
+      "event": "Available",
+      "productUrl": "https://www.ebay.co.uk/itm/147668021587",
+      "sourceUrl": "https://www.ebay.co.uk/itm/147668021587",
+      "expiresAt": "2026-11-06T13:15:30.640000+00:00",
       "affiliateProvider": "ebay",
-      "price": {
-        "amount": 83.0,
-        "currency": "GBP",
-        "basis": "Item price; delivery shown by seller"
-      },
       "revision": 1,
-      "affiliateUrl": "https://www.ebay.co.uk/itm/880083401301?mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339239680&toolid=10001&customid=ebay-880083401301-uk"
+      "affiliateUrl": "https://www.ebay.co.uk/itm/147668021587?mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339239680&toolid=10001&customid=ebay-147668021587-uk"
     },
     {
       "id": "ebay-365081400866-uk",
