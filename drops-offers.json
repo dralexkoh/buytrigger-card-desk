@@ -1,7 +1,33 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-06T13:02:59.783430+00:00",
+  "updatedAt": "2026-11-06T13:40:55.376727+00:00",
   "items": [
+    {
+      "id": "ebay-267834560605-uk",
+      "productKey": "mega-evolution-ascended-heroes-focused-fighters-premium-collection-english",
+      "title": "Ascended Heroes Focused Fighters Premium Collection · English",
+      "summary": "A UK eBay seller lists the sealed English collection with 14 Ascended Heroes booster packs. The listing shows tracked delivery.",
+      "region": "UK",
+      "language": "English",
+      "retailer": "eBay",
+      "checkedAt": "2026-11-06T13:39:13.976Z",
+      "availability": "In stock",
+      "country": "United Kingdom",
+      "seller": "lollylulu1",
+      "fulfilment": "UK standard tracked delivery shown on the listing",
+      "event": "Available",
+      "productUrl": "https://www.ebay.co.uk/itm/267834560605",
+      "sourceUrl": "https://www.ebay.co.uk/itm/267834560605",
+      "expiresAt": "2026-11-06T13:54:13.976000+00:00",
+      "affiliateProvider": "ebay",
+      "revision": 1,
+      "price": {
+        "amount": 207.66,
+        "currency": "GBP",
+        "basis": "Item price; delivery shown by seller"
+      },
+      "affiliateUrl": "https://www.ebay.co.uk/itm/267834560605?mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339239680&toolid=10001&customid=ebay-267834560605-uk"
+    },
     {
       "id": "ebay-147668021587-uk",
       "productKey": "mega-evolution-delta-reign-standard-elite-trainer-box-english",
