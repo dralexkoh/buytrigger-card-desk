@@ -973,6 +973,35 @@
   ],
   "wire": [
     {
+      "id": "delta-reign-uk-payment-deadline-2026-11-06",
+      "eventKey": "pokemon-center-uk-delta-reign-reauthorisation-deadline-2026-11-05",
+      "date": "2026-11-06",
+      "displayDate": "6 Nov · UK release",
+      "category": "Releases",
+      "kind": "Launch update",
+      "title": "Delta Reign launches as Pokémon Center UK sets a new payment deadline",
+      "summary": "Delta Reign’s tabletop release is dated 6 November. If Pokémon Center UK emailed you on or after 5 November to update a preorder payment, you have until 11:59 pm GMT on 11 November. Pokémon Center estimates it will ship three Delta Reign products in mid-November. Smyths lists the standard Elite Trainer Box and six-pack bundle. We haven’t verified launch-day stock at a named Smyths, Waterstones or Ryman branch.",
+      "sourceLabel": "Pokémon Center UK",
+      "url": "https://support.pokemoncenter.com/hc/en-us/articles/55091929021588-Pok%C3%A9mon-Center-UK",
+      "checkedAt": "2026-11-06T00:39:06.380200+00:00",
+      "sourcePublishedAt": "2026-11-05",
+      "ctaUrl": "/stories/delta-reign-friday-uk-upc-release-check/",
+      "ctaLabel": "Read the UK Delta Reign and UPC guide",
+      "image": "assets/wire-20261106/delta-reign-uk-dates.webp",
+      "imageAlt": "Delta Reign UK dates: 6 November tabletop launch, 11 November payment deadline for customers emailed on or after 5 November, mid-November Pokémon Center shipping estimate.",
+      "imageCredit": "BuyTrigger.Cards graphic. Dates from Pokémon and Pokémon Center UK.",
+      "imageSourceUrl": "https://buytrigger.cards/assets/wire-20261106/delta-reign-uk-dates.webp",
+      "visual": "briefing-graphic",
+      "author": {
+        "id": "theo-brooks",
+        "name": "Theo Brooks",
+        "type": "named_ai_correspondent",
+        "label": "Correspondent",
+        "beat": "UK & Europe desk"
+      },
+      "newsRevision": 1
+    },
+    {
       "id": "red-rgb-mew-black-label-live-auction-2026-11-05",
       "eventKey": "ebay-800860034263-red-rgb-mew-black-label",
       "date": "2026-11-05",
