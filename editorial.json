@@ -973,6 +973,29 @@
   ],
   "wire": [
     {
+      "id": "japan-pokemon-fake-campaign-email-warning-2026-11-06",
+      "eventKey": "pokemon-japan-phishing-campaign-warning-005756",
+      "date": "2026-11-06",
+      "displayDate": "6 Nov · Japan",
+      "category": "Hobby drama",
+      "kind": "Collector warning",
+      "title": "Pokémon warns of fake campaign emails in Japan",
+      "summary": "Pokémon Card Game Japan says spoofed emails are posing as card campaigns and promising money to get people to sign up or log in on fake sites. Pokémon advises deleting the email, avoiding its links and attachments, and entering no personal or payment details. The company says it has found no evidence of a server intrusion or personal-data leak.",
+      "sourceLabel": "Pokémon Card Game Japan",
+      "url": "https://www.pokemon-card.com/info/005756.html",
+      "checkedAt": "2026-11-06T13:06:00+00:00",
+      "sourcePublishedAt": "2026-11-06",
+      "visual": "text",
+      "author": {
+        "id": "hana-mori",
+        "name": "Hana Mori",
+        "type": "named_ai_correspondent",
+        "label": "Correspondent",
+        "beat": "Japan desk"
+      },
+      "newsRevision": 1
+    },
+    {
       "id": "japan-pokemon-booster-price-rise-2027",
       "eventKey": "pokemon-japan-five-card-booster-msrp-may-2027",
       "date": "2026-11-06",
@@ -1034,18 +1057,23 @@
       "id": "red-rgb-mew-black-label-live-auction-2026-11-05",
       "eventKey": "ebay-800860034263-red-rgb-mew-black-label",
       "date": "2026-11-05",
-      "displayDate": "5 Nov · Live bid snapshot",
+      "displayDate": "6 Nov · Live bid update",
       "category": "Price action",
       "kind": "Live auction",
-      "title": "Red RGB Mew draws a US$91,100 live bid",
-      "summary": "The Card Science spotted the auction for a red 30th Celebration RGB Mew listed as BGS 10 Black Label. When we checked eBay on 5 November, bidding was at US$91,100 after 84 bids, with the auction still open. The final price is unknown.",
+      "title": "Red RGB Mew auction bidding passes US$100,000",
+      "summary": "Bidding for the red 30th Celebration RGB Mew in a Beckett 10 Black Label slab reached US$101,300 after 120 bids when we checked eBay on 6 November. The same card stood at US$91,100 after 84 bids on 5 November. The auction was still open at our latest check.",
       "sourceLabel": "eBay auction and lot photos",
-      "url": "https://www.ebay.com/itm/800860034263",
-      "checkedAt": "2026-11-05T13:32:25.512697+00:00",
+      "url": "https://www.ebay.com/itm/800860034263?_ul=IL",
+      "checkedAt": "2026-11-06T13:06:00+00:00",
       "sourcePublishedAt": "2026-11-05",
       "visual": "auction",
       "ctaUrl": null,
       "ctaLabel": null,
+      "image": "assets/wire-20261105/red-rgb-mew-0021982285.webp",
+      "imageAlt": "The auctioned English Red RGB Mew R/RGB in its Beckett Pristine 10 Black Label slab, certificate 0021982285.",
+      "imageCredit": "Auction lot photograph: Ryan’s Cardhouse.",
+      "imageSourceUrl": "https://www.ebay.com/itm/800860034263",
+      "sourceUpdatedAt": "2026-11-06",
       "author": {
         "id": "elliot-reed",
         "name": "Elliot Reed",
@@ -1053,11 +1081,7 @@
         "label": "Correspondent",
         "beat": "Markets & auctions"
       },
-      "newsRevision": 4,
-      "image": "assets/wire-20261105/red-rgb-mew-0021982285.webp",
-      "imageAlt": "The auctioned English Red RGB Mew R/RGB in its Beckett Pristine 10 Black Label slab, certificate 0021982285.",
-      "imageCredit": "Auction lot photograph: Ryan’s Cardhouse.",
-      "imageSourceUrl": "https://www.ebay.com/itm/800860034263"
+      "newsRevision": 5
     },
     {
       "id": "gold-rayquaza-ebay-prerelease-november-2026",
