@@ -47,3 +47,8 @@
 .vaultx-memory figcaption,.vaultx-product figcaption{font-size:12px;line-height:1.55;margin-top:10px;color:#464649}
 .vaultx-table{overflow-x:auto;margin:24px 0}.vaultx-table table{width:100%;border-collapse:collapse;font-size:14px;line-height:1.5}.vaultx-table th,.vaultx-table td{padding:12px;text-align:left;border-bottom:1px solid #dedad1;vertical-align:top}.vaultx-table th{background:#171719;color:#fff}.vaultx-table td:first-child{min-width:125px}
 @media(max-width:600px){.vaultx-memory-pair{gap:10px}.article-body .vaultx-memory{min-width:0;flex-basis:46%;padding:6px}.article-body .vaultx-memory img{height:190px}.vaultx-table th,.vaultx-table td{padding:9px}.vaultx-table table{font-size:13px}}
+
+/* Photo-led Feature covers preserve the complete composition at every width. */
+.editorial-page .reading-image .story-cover.full-image{height:auto;min-height:0;padding:0;display:block;background:#f6f3ec}
+.editorial-page .reading-image .story-cover.full-image img{position:static;display:block;width:100%;height:auto!important;max-width:100%;padding:0;object-fit:contain!important;object-position:center}
+.editorial-page .reading-image .story-cover.full-image:after{display:none}
