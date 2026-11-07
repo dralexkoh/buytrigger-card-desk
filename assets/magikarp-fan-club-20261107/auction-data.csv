@@ -1,0 +1,6 @@
+metric,amount_usd,date,status,cert,basis,source
+highest_bid,942579,2026-11-05,displayed_bid,19421750,Observed in Alt bid history,https://alt.xyz/itm/91ab1cab-66af-425c-9e19-dbc48b939f0f/sold
+buyer_premium,188515.8,2026-11-05,calculated,19421750,20% times 942579; not an invoice,https://support.alt.xyz/en/articles/9462646-auction-fees
+calculated_total,1131094.8,2026-11-05,calculated,19421750,Bid plus calculated premium,https://alt.xyz/itm/91ab1cab-66af-425c-9e19-dbc48b939f0f/sold
+displayed_total,1131095,2026-11-05,pending_checked_2026-11-07,19421750,Rounded total displayed on lot page,https://alt.xyz/itm/91ab1cab-66af-425c-9e19-dbc48b939f0f/sold
+earlier_different_copy,49200,2024-07-19,sold,77121318,Includes buyer premium; original Fanatics date,https://www.fanaticscollect.com/premier/b92f9aee-2d79-11ef-af14-0abb755d2d71
