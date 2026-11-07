@@ -37,3 +37,13 @@
 .release-table th,.release-table td{padding:12px;text-align:left;border-bottom:1px solid #dedad1}
 .release-table th{background:#171719;color:white}
 @media(max-width:600px){.release-photo-pair{grid-template-columns:1fr}.release-photo{padding:10px}.release-quote p{font-size:25px}.release-table table{font-size:13px}.release-table th,.release-table td{padding:9px}}
+
+/* S79 Vault X review: product-led imagery and compact owner evidence. */
+.vaultx-product{margin:26px 0;padding:14px;background:#f6f3ec;border:1px solid #dedad1}
+.article-body .vaultx-product img{display:block;width:100%;height:auto;max-height:510px;object-fit:contain;background:#fff}
+.vaultx-memory-pair{display:flex;gap:24px;align-items:start;justify-content:center;margin:24px 0}
+.article-body .vaultx-memory{flex:0 1 230px;max-width:230px;margin:0;padding:9px;background:#f6f3ec;border:1px solid #dedad1}
+.article-body .vaultx-memory img{display:block;width:100%;height:265px;object-fit:contain;background:#fff}
+.vaultx-memory figcaption,.vaultx-product figcaption{font-size:12px;line-height:1.55;margin-top:10px;color:#464649}
+.vaultx-table{overflow-x:auto;margin:24px 0}.vaultx-table table{width:100%;border-collapse:collapse;font-size:14px;line-height:1.5}.vaultx-table th,.vaultx-table td{padding:12px;text-align:left;border-bottom:1px solid #dedad1;vertical-align:top}.vaultx-table th{background:#171719;color:#fff}.vaultx-table td:first-child{min-width:125px}
+@media(max-width:600px){.vaultx-memory-pair{gap:10px}.article-body .vaultx-memory{min-width:0;flex-basis:46%;padding:6px}.article-body .vaultx-memory img{height:190px}.vaultx-table th,.vaultx-table td{padding:9px}.vaultx-table table{font-size:13px}}
