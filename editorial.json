@@ -1419,26 +1419,26 @@
       "newsRevision": 2
     },
     {
-      "id": "red-rgb-mew-black-label-live-auction-2026-11-05",
-      "eventKey": "ebay-800860034263-red-rgb-mew-black-label",
-      "date": "2026-11-05",
-      "displayDate": "7 Nov · Live bid update",
       "category": "Price action",
-      "kind": "Live auction",
-      "title": "Red RGB Mew auction bidding reaches US$170,100",
-      "summary": "Bidding for the English red 30th Celebration RGB Mew in a Beckett Pristine 10 Black Label slab reached US$170,100 after 157 bids on 7 November. The same lot stood at US$101,300 after 120 bids on 6 November. The auction remains open: this is a bid, not a completed sale, and excludes shipping and taxes.",
-      "sourceLabel": "eBay auction and lot photos",
-      "url": "https://www.ebay.com/itm/800860034263?_ul=IL",
-      "checkedAt": "2026-11-07T13:03:10.914251+00:00",
-      "sourcePublishedAt": "2026-11-05",
-      "visual": "auction",
-      "ctaUrl": null,
+      "checkedAt": "2026-11-07T18:09:08.335618+00:00",
       "ctaLabel": null,
+      "ctaUrl": null,
+      "date": "2026-11-05",
+      "displayDate": "7 Nov · Evening bid update",
+      "eventKey": "ebay-800860034263-red-rgb-mew-black-label",
+      "id": "red-rgb-mew-black-label-live-auction-2026-11-05",
       "image": "assets/wire-20261105/red-rgb-mew-0021982285.webp",
       "imageAlt": "The auctioned English Red RGB Mew R/RGB in its Beckett Pristine 10 Black Label slab, certificate 0021982285.",
       "imageCredit": "Auction lot photograph: Ryan’s Cardhouse.",
       "imageSourceUrl": "https://www.ebay.com/itm/800860034263",
+      "kind": "Live auction",
+      "sourceLabel": "eBay auction and lot photos",
+      "sourcePublishedAt": "2026-11-05",
       "sourceUpdatedAt": "2026-11-07",
+      "summary": "The English red 30th Celebration Mew R/RGB in Beckett Pristine 10 Black Label slab 0021982285 displayed US$151,100 and 130 bids at our 7 November evening check. Our earlier check showed US$170,100 and 157 bids. The auction remains open, and the reason for the lower displayed total is unverified. These are live-bid snapshots, excluding shipping and taxes—not completed sales.",
+      "title": "Red RGB Mew auction now displays US$151,100",
+      "url": "https://www.ebay.com/itm/800860034263",
+      "visual": "auction",
       "author": {
         "id": "elliot-reed",
         "name": "Elliot Reed",
@@ -1446,7 +1446,7 @@
         "label": "Correspondent",
         "beat": "Markets & auctions"
       },
-      "newsRevision": 6
+      "newsRevision": 7
     },
     {
       "id": "gold-rayquaza-ebay-prerelease-november-2026",
