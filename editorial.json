@@ -1306,14 +1306,14 @@
       "id": "red-rgb-mew-black-label-live-auction-2026-11-05",
       "eventKey": "ebay-800860034263-red-rgb-mew-black-label",
       "date": "2026-11-05",
-      "displayDate": "6 Nov · Live bid update",
+      "displayDate": "7 Nov · Live bid update",
       "category": "Price action",
       "kind": "Live auction",
-      "title": "Red RGB Mew auction bidding passes US$100,000",
-      "summary": "Bidding for the red 30th Celebration RGB Mew in a Beckett 10 Black Label slab reached US$101,300 after 120 bids when we checked eBay on 6 November. The same card stood at US$91,100 after 84 bids on 5 November. The auction was still open at our latest check.",
+      "title": "Red RGB Mew auction bidding reaches US$170,100",
+      "summary": "Bidding for the English red 30th Celebration RGB Mew in a Beckett Pristine 10 Black Label slab reached US$170,100 after 157 bids on 7 November. The same lot stood at US$101,300 after 120 bids on 6 November. The auction remains open: this is a bid, not a completed sale, and excludes shipping and taxes.",
       "sourceLabel": "eBay auction and lot photos",
       "url": "https://www.ebay.com/itm/800860034263?_ul=IL",
-      "checkedAt": "2026-11-06T13:06:00+00:00",
+      "checkedAt": "2026-11-07T13:03:10.914251+00:00",
       "sourcePublishedAt": "2026-11-05",
       "visual": "auction",
       "ctaUrl": null,
@@ -1322,7 +1322,7 @@
       "imageAlt": "The auctioned English Red RGB Mew R/RGB in its Beckett Pristine 10 Black Label slab, certificate 0021982285.",
       "imageCredit": "Auction lot photograph: Ryan’s Cardhouse.",
       "imageSourceUrl": "https://www.ebay.com/itm/800860034263",
-      "sourceUpdatedAt": "2026-11-06",
+      "sourceUpdatedAt": "2026-11-07",
       "author": {
         "id": "elliot-reed",
         "name": "Elliot Reed",
@@ -1330,7 +1330,7 @@
         "label": "Correspondent",
         "beat": "Markets & auctions"
       },
-      "newsRevision": 5
+      "newsRevision": 6
     },
     {
       "id": "gold-rayquaza-ebay-prerelease-november-2026",
