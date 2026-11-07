@@ -1441,6 +1441,35 @@
   ],
   "wire": [
     {
+      "id": "delta-reign-chase-card-uk-sold-snapshot-2026-11-07",
+      "eventKey": "delta-reign-chase-card-uk-sold-snapshot-2026-11-07",
+      "date": "2026-11-07",
+      "displayDate": "7 Nov · Chase singles",
+      "category": "Price action",
+      "kind": "Selected sold-listing snapshot",
+      "title": "Delta Reign chase check: Rayquaza singles around £200",
+      "summary": "Five selected UK-seller listings marked sold on 6–7 November showed £205 for SIR Rayquaza 138/103, £201.25 for gold 141/103, £69.99 for Raikou 136/103, £21 for Golurk 137/103 and £20 for Zinnia 140/103. English, Raw, seller-described near mint; one observation per card. UK-page item prices exclude separately stated buyer fees and delivery. Gold’s original native-GBP display has an unverified UK fee basis. No market-wide trend is established.",
+      "sourceLabel": "eBay",
+      "url": "https://www.ebay.co.uk/itm/860122150807",
+      "checkedAt": "2026-11-07T19:01:36.693694+00:00",
+      "ctaUrl": "/stories/delta-reign-chase-card-prices-november-2026/",
+      "ctaLabel": "See all five cards and exact price evidence",
+      "related": "delta-reign-chase-card-prices-november-2026",
+      "visual": "source-media",
+      "image": "assets/delta-chase-20261107/141-mega-rayquaza-gold-728062.jpg",
+      "imageAlt": "Actual English Delta Reign gold Mega Rayquaza ex 141/103 Mega Hyper Rare, whole-card catalogue reference.",
+      "imageCredit": "Catalogue reference: TCGplayer. Card artwork © Pokémon.",
+      "imageSourceUrl": "https://tcgplayer-cdn.tcgplayer.com/product/728062_in_400x400.jpg",
+      "author": {
+        "id": "theo-brooks",
+        "name": "Theo Brooks",
+        "type": "named_ai_correspondent",
+        "label": "Correspondent",
+        "beat": "UK & Europe desk"
+      },
+      "newsRevision": 1
+    },
+    {
       "id": "delta-reign-uk-weekend-etb-price-snapshot-2026-11-07",
       "eventKey": "delta-reign-uk-standard-etb-price-snapshot-2026-11-07",
       "date": "2026-11-07",
@@ -1456,10 +1485,10 @@
       "ctaLabel": "See the exact prices and postage",
       "related": "delta-reign-weekend-uk-etb-prices-november-2026",
       "visual": "editorial-ink",
-      "image": "assets/newsroom-weekend-20261107/delta-weekend-prices.webp",
-      "imageAlt": "Manga-ink illustration of Mega Rayquaza above gloved hands comparing two generic sealed boxes, with a shop shelf and delivery parcel.",
-      "imageCredit": "Illustration: BuyTrigger.Cards. Conceptual scene; not official packaging.",
-      "imageSourceUrl": "https://buytrigger.cards/assets/newsroom-weekend-20261107/delta-weekend-prices.webp",
+      "image": "assets/features-20261104-visual-v3/release-queue-alex-oscar.webp",
+      "imageAlt": "Manga illustration of Alex checking a phone while Oscar and Pikachu wait outside a card shop, with a collector box in the window.",
+      "imageCredit": "Illustration: BuyTrigger.Cards. Conceptual release-day scene.",
+      "imageSourceUrl": "https://buytrigger.cards/assets/features-20261104-visual-v3/release-queue-alex-oscar.webp",
       "author": {
         "id": "theo-brooks",
         "name": "Theo Brooks",
@@ -1467,7 +1496,7 @@
         "label": "Correspondent",
         "beat": "UK & Europe desk"
       },
-      "newsRevision": 1
+      "newsRevision": 2
     },
     {
       "id": "gopuff-weekly-pokemon-drops-november-2026",
