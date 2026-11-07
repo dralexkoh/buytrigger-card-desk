@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-07T09:57:47.405260+00:00",
+  "updatedAt": "2026-11-07T13:01:39.192382+00:00",
   "items": [
     {
       "id": "ebay-960162231533-uk",
@@ -10,7 +10,7 @@
       "region": "UK",
       "language": "English",
       "retailer": "eBay",
-      "checkedAt": "2026-11-07T09:56:58.923Z",
+      "checkedAt": "2026-11-07T13:00:00Z",
       "availability": "In stock",
       "country": "United Kingdom",
       "seller": "kieranb842",
@@ -18,9 +18,9 @@
       "event": "Available",
       "productUrl": "https://www.ebay.co.uk/itm/960162231533",
       "sourceUrl": "https://www.ebay.co.uk/itm/960162231533",
-      "expiresAt": "2026-11-07T10:11:58.923000+00:00",
+      "expiresAt": "2026-11-07T13:15:00Z",
       "affiliateProvider": "ebay",
-      "revision": 2,
+      "revision": 3,
       "price": {
         "amount": 6.52,
         "currency": "GBP",
