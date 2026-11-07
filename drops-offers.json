@@ -1,16 +1,16 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-06T18:07:54.392548+00:00",
+  "updatedAt": "2026-11-07T09:57:47.405260+00:00",
   "items": [
     {
       "id": "ebay-960162231533-uk",
       "productKey": "mega-evolution-delta-reign-loose-single-booster-pack-10-cards-english",
       "title": "Delta Reign Booster Pack · English",
-      "summary": "The listing is for one loose English Delta Reign booster pack, listed as factory sealed. The UK delivery option showed 91p postage when checked.",
+      "summary": "One loose English Delta Reign booster, listed as factory sealed by a private eBay seller. The photos and title identify the pack; some seller category fields mislabel the set. UK Royal Mail delivery shown.",
       "region": "UK",
       "language": "English",
       "retailer": "eBay",
-      "checkedAt": "2026-11-06T18:06:54.346Z",
+      "checkedAt": "2026-11-07T09:56:58.923Z",
       "availability": "In stock",
       "country": "United Kingdom",
       "seller": "kieranb842",
@@ -18,9 +18,9 @@
       "event": "Available",
       "productUrl": "https://www.ebay.co.uk/itm/960162231533",
       "sourceUrl": "https://www.ebay.co.uk/itm/960162231533",
-      "expiresAt": "2026-11-06T18:21:54.346000+00:00",
+      "expiresAt": "2026-11-07T10:11:58.923000+00:00",
       "affiliateProvider": "ebay",
-      "revision": 1,
+      "revision": 2,
       "price": {
         "amount": 6.52,
         "currency": "GBP",
