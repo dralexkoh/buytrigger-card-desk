@@ -98,3 +98,28 @@ body:has(dialog[open]){overflow:hidden}
  .editorial-page[data-page="home"] .market-hero .modern-home-note{display:none}
  .editorial-page[data-page="home"] .market-hero .btn{margin-top:14px}
 }
+
+/* Owner's Vault X review campaign: one shallow, internal house promotion. */
+.home-review-promo{max-width:1440px;margin:0 auto;padding:0 4vw 10px}
+.home-review-promo-label{margin:0 0 7px;font:600 11px/1.4 'IBM Plex Sans',sans-serif;letter-spacing:.06em;text-transform:uppercase;color:#625e58}
+.home-review-promo-card{display:grid;grid-template-columns:104px minmax(0,1fr) auto;gap:20px;align-items:center;padding:12px 20px 12px 12px;border:1px solid #d9d2c7;border-left:5px solid #df242b;border-radius:6px;background:#f5f0e7;color:#171719;text-decoration:none}
+.home-review-promo-card:hover{border-color:#df242b}
+.home-review-promo-card:focus-visible{outline:3px solid #171719;outline-offset:4px}
+.home-review-promo-card>img{display:block;width:104px;height:104px;object-fit:contain;background:#fff;border-radius:3px}
+.home-review-promo-copy .kicker{font-size:11px;line-height:1.3;color:#ba1d23}
+.home-review-promo-copy h2{margin:3px 0 5px;font:700 32px/1.05 'Barlow Condensed',sans-serif;letter-spacing:0;text-transform:none}
+.home-review-promo-copy p{margin:0;font:400 14px/1.4 'IBM Plex Sans',sans-serif}
+.home-review-promo-cta{display:flex;align-items:center;justify-content:center;gap:10px;min-height:44px;padding:0 18px;background:#df242b;color:#fff;border-radius:4px;white-space:nowrap;font:600 15px/1.2 'IBM Plex Sans',sans-serif}
+@media(max-width:980px){
+ .home-review-promo-card{grid-template-columns:88px minmax(0,1fr);gap:7px 12px;padding:10px 12px 10px 8px}
+ .home-review-promo-card>img{grid-row:1 / span 2;width:88px;height:104px}
+ .home-review-promo-copy .kicker,.home-review-promo-copy p{display:none}
+ .home-review-promo-copy h2{margin:0;font-size:25px;line-height:1.02}
+ .home-review-promo-cta{grid-column:2;padding:0 10px;font-size:14px;justify-self:start;min-width:148px}
+}
+@media(max-width:350px){
+ .home-review-promo-card{grid-template-columns:74px minmax(0,1fr);gap:6px 10px}
+ .home-review-promo-card>img{width:74px;height:98px}
+ .home-review-promo-copy h2{font-size:23px}
+ .home-review-promo-cta{min-width:0;width:100%;font-size:13px;gap:6px;padding:0 8px}
+}
