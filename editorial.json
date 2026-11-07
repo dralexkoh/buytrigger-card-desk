@@ -1189,6 +1189,35 @@
   ],
   "wire": [
     {
+      "id": "pokemon-tcg-national-toy-hall-of-fame-2026",
+      "eventKey": "strong-pokemon-tcg-toy-hall-of-fame-2026-11-05",
+      "date": "2026-11-07",
+      "displayDate": "7 Nov · Culture",
+      "category": "Culture",
+      "kind": "Museum honour",
+      "title": "Pokémon cards enter the National Toy Hall of Fame",
+      "summary": "The Pokémon Trading Card Game joined the National Toy Hall of Fame on 5 November, alongside bingo, Care Bears and the playground slide. The four winners came from 12 finalists and are now on view at The Strong National Museum of Play in Rochester, New York. The museum celebrates toys that stay popular across generations and inspire creative play.",
+      "sourceLabel": "The Strong National Museum of Play",
+      "url": "https://www.museumofplay.org/press-release/2026-national-toy-hall-of-fame-inductees-announced-today-bingo-care-bears-the-pokemon-trading-card-game-and-slide/",
+      "checkedAt": "2026-11-07T13:27:44Z",
+      "sourcePublishedAt": "2026-11-05",
+      "visual": "editorial-ink",
+      "ctaUrl": null,
+      "ctaLabel": null,
+      "image": "assets/newsroom-20261107/toy-hall-of-fame.webp",
+      "imageAlt": "Manga-ink illustration of decorative trading cards and an award cup in a glass museum display.",
+      "imageCredit": "Editorial illustration: BuyTrigger.Cards. Conceptual museum display.",
+      "imageSourceUrl": "https://buytrigger.cards/assets/newsroom-20261107/toy-hall-of-fame.webp",
+      "author": {
+        "id": "zara-chen",
+        "name": "Zara Chen",
+        "type": "named_ai_correspondent",
+        "label": "Correspondent",
+        "beat": "Global news desk"
+      },
+      "newsRevision": 1
+    },
+    {
       "id": "pokemon-30th-upc-delta-reign-release-day-2026-11-06",
       "eventKey": "pokemon-30th-upc-delta-reign-collector-release-day-2026-11-06",
       "date": "2026-11-06",
