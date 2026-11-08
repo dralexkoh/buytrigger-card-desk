@@ -1692,11 +1692,11 @@
     },
     {
       "category": "Price action",
-      "checkedAt": "2026-11-07T18:09:08.335618+00:00",
+      "checkedAt": "2026-11-08T17:41:46Z",
       "ctaLabel": null,
       "ctaUrl": null,
       "date": "2026-11-05",
-      "displayDate": "7 Nov · Evening bid update",
+      "displayDate": "8 Nov · Bid update",
       "eventKey": "ebay-800860034263-red-rgb-mew-black-label",
       "id": "red-rgb-mew-black-label-live-auction-2026-11-05",
       "image": "assets/wire-20261105/red-rgb-mew-0021982285.webp",
@@ -1706,9 +1706,9 @@
       "kind": "Live auction",
       "sourceLabel": "eBay auction and lot photos",
       "sourcePublishedAt": "2026-11-05",
-      "sourceUpdatedAt": "2026-11-07",
-      "summary": "The English red 30th Celebration Mew R/RGB in Beckett Pristine 10 Black Label slab 0021982285 displayed US$151,100 and 130 bids at our 7 November evening check. Our earlier check showed US$170,100 and 157 bids. The auction remains open, and the reason for the lower displayed total is unverified. These are live-bid snapshots, excluding shipping and taxes—not completed sales.",
-      "title": "Red RGB Mew auction now displays US$151,100",
+      "sourceUpdatedAt": "2026-11-08",
+      "summary": "The English red 30th Celebration Mew R/RGB in Beckett Pristine 10 Black Label slab 0021982285 displayed US$170,200 and 140 bids at our 8 November, 17:41 UTC check. It remains open. Earlier checks on 7 November showed US$170,100/157 bids, then US$151,100/130 bids. These are one lot’s live-bid snapshots before shipping and taxes. The reason for the changing displays is unverified.",
+      "title": "Red RGB Mew auction displays US$170,200 before its close",
       "url": "https://www.ebay.com/itm/800860034263",
       "visual": "auction",
       "author": {
@@ -1718,7 +1718,7 @@
         "label": "Correspondent",
         "beat": "Markets & auctions"
       },
-      "newsRevision": 7
+      "newsRevision": 8
     },
     {
       "id": "gold-rayquaza-ebay-prerelease-november-2026",
