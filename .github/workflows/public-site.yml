@@ -69,6 +69,7 @@ jobs:
         uses: actions/deploy-pages@d6db90164ac5ed86f2b6aed7e0febac5b3c0c03e # v4
         with:
           artifact_name: ${{ env.PAGES_ARTIFACT_NAME }}
+          timeout: 900000
       - name: Verify primary domain, prices and status
         env:
           PUBLIC_URL: https://buytrigger.cards/
