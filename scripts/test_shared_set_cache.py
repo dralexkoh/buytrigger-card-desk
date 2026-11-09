@@ -5,7 +5,7 @@ from pathlib import Path
 import shutil
 import unittest
 import test_daily_refresh as refresh_fixture
-from shared_set_cache import build_cache, identities
+from shared_set_cache import build_cache, identities, PROMOS
 D, SITE = refresh_fixture.D, refresh_fixture.SITE
 
 
@@ -15,7 +15,10 @@ class SharedSetTests(unittest.TestCase):
         self.fixture.setUp()
         self.addCleanup(self.fixture.tearDown)
         self.catalogue = D.read_json(SITE / 'thirtieth-catalogue.json')
-        shutil.copy2(SITE / 'thirtieth-catalogue.json', self.fixture.site)
+        if len(self.catalogue['cards'])==191:
+            for pid,(number,name) in PROMOS.items():
+                self.catalogue['cards'].append(dict(productId=pid,groupId=24451,key=f'en-30th-{pid}-holofoil',name=name,number=number,set='ME: Mega Evolution Promo',language='English',printing='Holofoil',image=f'assets/thirtieth/{pid}.jpg'))
+        D.write_json(self.fixture.site / 'thirtieth-catalogue.json',self.catalogue)
         self.prior = D.read_json(SITE / 'data/market-cache/thirtieth-current.json')
         for card in self.prior['cards']:
             card['points'] = [{**card['points'][-1], 'day':'2026-11-02', 'usd':100, 'status':'ok'}]
@@ -26,7 +29,7 @@ class SharedSetTests(unittest.TestCase):
 
     def source(self, overrides=None):
         self.fixture.fixture_day('2026-11-03')
-        for group_id in (24722, 24837):
+        for group_id in (24722, 24837, 24451):
             file = self.fixture.fixture / f'tcgplayer/3/{group_id}/prices'
             body = D.read_json(file) if file.exists() else dict(success=True, errors=[], results=[])
             existing = {f"{r['productId']}|{r['subTypeName']}": r for r in body['results']}
@@ -42,19 +45,43 @@ class SharedSetTests(unittest.TestCase):
         self.source()
         status, code, out = self.fixture.run_refresh()
         self.assertEqual(code, 0, status)
-        groups = {c['groupId'] for c in self.fixture.identities.values()} | {24722, 24837}
+        groups = {c['groupId'] for c in self.fixture.identities.values()} | {24722, 24837, 24451}
         self.assertEqual(status['requestCount'], len(groups) + 2)
         cache = D.read_json(out / 'data/market-cache/thirtieth-current.json')
-        self.assertEqual(len(cache['cards']), 191)
+        self.assertEqual(len(cache['cards']), 195)
         self.assertEqual(sum(c['groupId'] == 24837 for c in cache['cards']), 30)
         self.assertTrue(all(c['points'][0]['source'].endswith(f"/{c['groupId']}/prices") for c in cache['cards']))
         self.assertTrue(all(len(c['recentGood']) <= 7 for c in cache['cards']))
-        self.assertTrue(all([p['day']for p in c['points']]==['2026-11-02','2026-11-03']for c in cache['cards']))
+        self.assertTrue(all([p['day']for p in c['points']]==(['2026-11-03'] if c['groupId']==24451 else ['2026-11-02','2026-11-03'])for c in cache['cards']))
         shutil.copy2(self.fixture.site / 'thirtieth-catalogue.json', out)
         status, code, out2 = self.fixture.run_refresh(site=out)
         self.assertEqual(code, 0, status)
         self.assertEqual(status['requestCount'], 1)
         self.assertEqual((out / 'data/market-cache/thirtieth-current.json').read_bytes(), (out2 / 'data/market-cache/thirtieth-current.json').read_bytes())
+
+    def test_same_build_membership_change_collects_promos_without_replaying_market_receipts(self):
+        self.source()
+        status, code, out = self.fixture.run_refresh()
+        self.assertEqual(code, 0, status)
+        shutil.copy2(self.fixture.site / 'thirtieth-catalogue.json', out)
+        path=out / 'data/market-cache/thirtieth-current.json'
+        cache=D.read_json(path)
+        cache['cards']=[c for c in cache['cards'] if c['groupId']!=24451]
+        D.write_json(path,cache)
+        state_before=(out/'data/refresh/state.json').read_bytes()
+        status, code, repaired=self.fixture.run_refresh(site=out)
+        self.assertEqual(code,0,status)
+        result=D.read_json(repaired/'data/market-cache/thirtieth-current.json')
+        self.assertEqual(len(result['cards']),195)
+        self.assertEqual((repaired/'data/refresh/state.json').read_bytes(),state_before)
+        self.assertTrue(all(c['points']==cache['cards'][next(i for i,p in enumerate(cache['cards']) if p['productId']==c['productId'])]['points'] for c in result['cards'] if c['groupId']!=24451))
+
+    def test_only_four_exact_english_promos_are_admitted(self):
+        for field,value in [('number','043'),('name','Japanese Espeon'),('productId',999999),('set','ME: 30th Celebration'),('groupId',12345)]:
+            bad=copy.deepcopy(self.catalogue)
+            promo=next(c for c in bad['cards'] if c['groupId']==24451)
+            promo[field]=value
+            with self.subTest(field=field),self.assertRaises(ValueError):identities(bad)
 
     def test_missing_and_factor_two_hold_preserve_reported_value_and_good_history(self):
         other = next(c for c in self.catalogue['cards'] if c['groupId'] == 24837 and c != self.target)

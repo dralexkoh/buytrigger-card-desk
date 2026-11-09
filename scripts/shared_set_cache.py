@@ -8,12 +8,18 @@ import math
 
 def positive(n):return isinstance(n,(int,float))and not isinstance(n,bool)and math.isfinite(n)and n>0
 
+PROMOS = {713257:('107','Pikachu ex - 107 (30th Celebration)'),713258:('108','Espeon ex - 108 (30th Celebration)'),713256:('109','Pikachu ex - 109 (30th Celebration)'),713259:('110','Umbreon ex - 110 (30th Celebration)')}
+
 def identities(catalogue):
     if catalogue.get('schemaVersion')!=1 or catalogue.get('index')!='thirtieth-anniversary':raise ValueError('Unexpected set catalogue')
     cards=catalogue['cards']
-    if len(cards)!=191 or len({(c['productId'],c['printing'])for c in cards})!=191:raise ValueError('Expected 191 exact printings')
+    if len(cards) not in (191,195) or len({(c['productId'],c['printing'])for c in cards})!=len(cards):raise ValueError('Expected 191 or 195 exact printings')
     if sum(c['groupId']==24722 for c in cards)!=161 or sum(c['groupId']==24837 for c in cards)!=30:raise ValueError('Incorrect set partition')
+    promos = [c for c in cards if c['groupId']==24451]
+    if len(promos)!=len(cards)-191 or {c['productId'] for c in promos} not in (set(),set(PROMOS)):raise ValueError('Incorrect four-promo membership')
     for c in cards:
+        if c['groupId'] not in (24722,24837,24451):raise ValueError('Unreviewed source group')
+        if c['groupId']==24451 and (c['number'],c['name'],c['set']) != (*PROMOS[c['productId']],'ME: Mega Evolution Promo'):raise ValueError('Promo identity changed')
         if c['language']!='English'or c['printing']!='Holofoil'or c['image']!=f"assets/thirtieth/{c['productId']}.jpg":raise ValueError('Unreviewed printing')
     return {str(c['productId'])+'|'+c['printing']:c for c in cards}
 

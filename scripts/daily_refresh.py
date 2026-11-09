@@ -502,6 +502,15 @@ def run(args):
         if source_date < baseline_end:
             raise RefreshError("Provider build is older than the accepted public baseline")
         pending = []
+        if shared_catalogue and iso(build) in state['processedBuilds']:
+            from shared_set_cache import build_cache
+            cache_file = output / 'data/market-cache/thirtieth-current.json'
+            prior_cache = read_json(cache_file) if cache_file.exists() else None
+            expected = {(c['productId'],c['printing']) for c in shared_catalogue['cards']}
+            captured = {(c['productId'],c['printing']) for c in (prior_cache or {}).get('cards',[])}
+            if captured != expected:
+                groups, resources = provider.live(collection_identities, build)
+                write_json(cache_file,build_cache(shared_catalogue,groups,resources,build,prior_cache,suspicion))
         # A baseline matching the same source day already has reviewed archive provenance.
         # Record marker verification without downloading/replacing that day's data.
         build_key = build.strftime("%Y%m%dT%H%M%SZ")

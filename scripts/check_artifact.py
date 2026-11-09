@@ -8,7 +8,11 @@ shared=json.loads((d/'shared-market-config.json').read_text())
 assert set(shared)=={'schemaVersion','enabled','endpoint'} and shared['schemaVersion']==1 and isinstance(shared['enabled'],bool)
 APPROVED_MARKET='https://ukblxmvsqihnnyysvxes.supabase.co/functions/v1/card-market-view'
 set_release=json.loads((d/'thirtieth-release.json').read_text())
-assert set_release['constituentCount']==set_release['imageReviewCount']==191 and set_release['sourceSystem']=='shared-cards-market'
+assert set_release['constituentCount']==set_release['imageReviewCount'] and set_release['constituentCount'] in (191,195) and set_release['sourceSystem']=='shared-cards-market'
+from shared_set_cache import identities as exact_set_identities
+set_cards=exact_set_identities(json.loads((d/'thirtieth-catalogue.json').read_text()))
+assert len(set_cards)==set_release['constituentCount'], 'Catalogue and verified release membership differ'
+assert all((d/c['image']).is_file() for c in set_cards.values()), 'Exact catalogue picture missing'
 assert set_release['grade']=='Raw' and set_release['measure']=='tcgcsv_market' and set_release['baselineDate']=='2026-10-08'
 assert set_release['providerTerms']=='https://tcgcsv.com/faq'
 if shared['enabled']:

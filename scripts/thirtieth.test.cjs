@@ -50,3 +50,23 @@ test('focused Raw charts share the fixed baseline and keep gaps within their own
  assert.equal(E.basket(data,rgb).points.at(-1).value,null);
  assert.equal(E.basket(data,chases).points.at(-1).usd.toFixed(2),'804.83');
 });
+function withPromos(){
+ const data=fixture();data.baseline.usd=null;
+ for(const [id,number,name]of [[713257,'107','Pikachu ex'],[713258,'108','Espeon ex'],[713256,'109','Pikachu ex'],[713259,'110','Umbreon ex']]){
+  const key='en-30th-'+id+'-holofoil';
+  data.cards.push({key,name:name+' - '+number+' (30th Celebration)',set:'ME: Mega Evolution Promo',number,language:'English',printing:'Holofoil',image:'assets/thirtieth/'+id+'.jpg'});
+  data.points[key]=[[data.sourceDate,50,'ok']];
+ }
+ return data;
+}
+test('four exact related promos preserve all three existing chart baskets and have no invented baseline',()=>{
+ const before=fixture(),data=E.validate(withPromos(),now);
+ assert.equal(data.cards.length,195);assert.equal(E.focus(data).promos.length,4);
+ for(const group of ['chases','pikachu','rgb'])assert.deepEqual(E.basket(before,E.focus(before)[group]),E.basket(data,E.focus(data)[group]));
+ assert.equal(E.basket(data).points.find(p=>p.date==='2026-10-08').value,null);
+});
+test('partial, Japanese or substituted MEP promo membership is rejected',()=>{
+ for(const change of [d=>d.cards.pop(),d=>d.cards.at(-1).number='043',d=>d.cards.at(-1).language='Japanese',d=>d.cards.at(-1).image='assets/thirtieth/999999.jpg',d=>d.cards.at(-1).key='en-30th-999999-holofoil']){
+  const data=withPromos();change(data);assert.throws(()=>E.validate(data,now));
+ }
+});
