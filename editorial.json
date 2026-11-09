@@ -4,6 +4,97 @@
   "status": "published",
   "articles": [
     {
+      "slug": "pokemon-30th-psa10-comedown-november-2026",
+      "title": "Pokémon 30th’s PSA 10 comedown",
+      "eyebrow": "THE 30TH MARKET WATCH",
+      "summary": "Lugia, Mew, Sylveon and Gengar in the 8 November market watch. Reported PSA 10 sales show why the grading maths needs a fresh look.",
+      "minutes": 6,
+      "kind": "News",
+      "date": "8 November 2026",
+      "preparedAt": "2026-11-08",
+      "publishedAt": "2026-11-09",
+      "sourcePublishedAt": "2026-11-08",
+      "eventDate": "2026-11-08",
+      "updatedAt": "2026-11-09",
+      "status": "published",
+      "author": {
+        "type": "person",
+        "id": "alex-koh",
+        "name": "Alex Koh"
+      },
+      "image": "assets/30th-comedown-20261109/hero.jpg",
+      "thumbnail": "assets/30th-comedown-20261109/hero.jpg",
+      "imageAlt": "Conceptual manga ink illustration of Lugia descending above empty slabs, with Mew nearby.",
+      "imageCredit": "House illustration · BuyTrigger.Cards. A conceptual scene; exact catalogue card pictures appear below.",
+      "visualStyle": "editorial-ink-v1",
+      "editorialFormat": "visual-quick-read-v1",
+      "sections": [
+        {
+          "heading": "The quick take",
+          "html": "<p class=\"feature-source\"><strong>8 November 2026 market watch · Published 9 November.</strong> Prices below preserve that dated capture; this is a reported-sale sample, not a live quotation service.</p><p>Lugia and Mew’s 8 November PSA 10 sale samples put the grading calculation under pressure. The resale price available when a card comes back can decide whether grading pays.</p>\n<aside class=\"quick-verdict\"><p><strong>Quick take:</strong> Mew ex 152/128 has a US$560 median across 30 title-matched PSA 10 sale records in the 8 November capture. Lugia 149/147 is at US$510 across 27. These are international samples, with different date windows. They show where recent deals were reported; they do not establish a bottom for the whole 30th set.</p>\n</aside><p>The card can look just as good while the grading bet gets worse.</p>\n<p>Purchase, postage and grading are paid before the final grade and resale price are known. If the market moves down during that wait, the expected margin can shrink even when the card earns a 10.</p>\n<figure class=\"feature-reference\" style=\"max-width:420px;margin-left:auto;margin-right:auto\"><a href=\"assets/30th-comedown-20261109/mew-152-128-catalogue.jpg\" target=\"_blank\" rel=\"noopener\" aria-label=\"Open the whole catalogue card\"><img src=\"assets/30th-comedown-20261109/mew-152-128-catalogue.jpg\" alt=\"2026 Mew ex 152/128 catalogue reference\" loading=\"lazy\" decoding=\"async\"></a><figcaption>English Mew ex 152/128, with the 30th stamp. Kuroimori artwork; card image © Pokémon / Nintendo / Creatures / GAME FREAK, via TCGplayer and <a href=\"https://holohawk.uk/cards/30th-celebration/mew-ex-152\">HoloHawk</a>. Printing reference, not a photograph of a sold copy.</figcaption></figure>"
+        },
+        {
+          "heading": "Mew shows how quickly prices can move",
+          "html": "<figure class=\"feature-chart\"><a href=\"assets/30th-comedown-20261109/mew-psa10-sale-samples.png\" target=\"_blank\" rel=\"noopener\" aria-label=\"Open larger Mew sale sample chart\"><img src=\"assets/30th-comedown-20261109/mew-psa10-sale-samples.png\" alt=\"Mew ex 152/128 PSA 10 reported sale samples: 5 November four records, daily median 820 US dollars; 6 November six records, 710 dollars; 7 November seven records, 545 dollars; 8 November thirteen records, 550 dollars.\"></a><figcaption>Original BuyTrigger.Cards chart from 30 PriceCharting-reported records, captured 8 November 2026. Dots are records; bars and bold values are daily sample medians. International amounts displayed in USD, before additional costs. <a href=\"assets/30th-comedown-20261109/mew-daily-samples.csv\" download>Daily data CSV</a> · <a href=\"assets/30th-comedown-20261109/mew-psa10-sale-samples.svg\" download>Editable SVG</a>.</figcaption></figure><div class=\"table-scroll\" role=\"region\" tabindex=\"0\" aria-label=\"Dated sale sample table\"><table class=\"archive-table\">\n<thead>\n<tr>\n  <th>Date</th>\n  <th style=\"text-align:right;\">Records</th>\n  <th style=\"text-align:right;\">Median USD</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n  <td>5 Nov</td>\n  <td style=\"text-align:right;\">4</td>\n  <td style=\"text-align:right;\">$820</td>\n</tr>\n<tr>\n  <td>6 Nov</td>\n  <td style=\"text-align:right;\">6</td>\n  <td style=\"text-align:right;\">$710</td>\n</tr>\n<tr>\n  <td>7 Nov</td>\n  <td style=\"text-align:right;\">7</td>\n  <td style=\"text-align:right;\">$545</td>\n</tr>\n<tr>\n  <td>8 Nov</td>\n  <td style=\"text-align:right;\">13</td>\n  <td style=\"text-align:right;\">$550</td>\n</tr>\n</tbody>\n</table>\n</div><p>The split in Mew’s visible feed is striking: all 20 records dated 7–8 November sit below all ten from 5–6 November. That gives the fall a clearer basis than a single unusually high sale. <a href=\"https://www.pricecharting.com/game/pokemon-30th-celebration/mew-ex-152\">Mew sale records</a></p>\n<p>That is a sharp change within this short feed. Several transactions occurred on the same days, and the records do not establish how many independent buyers were involved. A daily sample median is not a return for the entire market. <a href=\"https://www.pricecharting.com/game/pokemon-30th-celebration/mew-ex-152\">Mew sale records</a></p>\n"
+        },
+        {
+          "heading": "Four chases in the 8 November watch",
+          "html": "<div class=\"table-scroll\" role=\"region\" tabindex=\"0\" aria-label=\"Dated sale sample table\"><table class=\"archive-table\">\n<thead>\n<tr>\n  <th>English card</th>\n  <th style=\"text-align:right;\">PSA 10 median</th>\n  <th>Records and dates</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n  <td><a href=\"https://www.pricecharting.com/game/pokemon-30th-celebration/lugia-149\">Lugia 149/147</a></td>\n  <td style=\"text-align:right;\">$510</td>\n  <td>27 · 7–8 Nov</td>\n</tr>\n<tr>\n  <td><a href=\"https://www.pricecharting.com/game/pokemon-30th-celebration/mew-ex-152\">Mew ex 152/128</a></td>\n  <td style=\"text-align:right;\">$560</td>\n  <td>30 · 5–8 Nov</td>\n</tr>\n<tr>\n  <td><a href=\"https://www.pricecharting.com/game/pokemon-30th-celebration/sylveon-ex-153\">Sylveon ex 153/128</a></td>\n  <td style=\"text-align:right;\">$322.99</td>\n  <td>5 · 3–8 Nov</td>\n</tr>\n<tr>\n  <td><a href=\"https://www.pricecharting.com/game/pokemon-30th-celebration/gengar-94\">Gengar 94/102</a></td>\n  <td style=\"text-align:right;\">$510</td>\n  <td>5 · 2–7 Nov</td>\n</tr>\n</tbody>\n</table>\n</div><p><em>Amounts displayed in USD by PriceCharting. Different sample windows; no set-wide price index or weekly return. These figures are before any additional shipping, taxes and selling costs.</em></p>\n<p>Gengar’s five recent records range from US$465 to US$700.96. A US$910 record on 1 November provides earlier context, although one sale cannot establish a prior-week benchmark. Sylveon’s five-record sample is too small to support a confident trend on its own. <a href=\"https://www.pricecharting.com/game/pokemon-30th-celebration/gengar-94\">Gengar records</a> · <a href=\"https://www.pricecharting.com/game/pokemon-30th-celebration/sylveon-ex-153\">Sylveon records</a></p>\n"
+        },
+        {
+          "heading": "The UK warning is narrower",
+          "html": "<figure class=\"feature-reference\" style=\"max-width:420px;margin-left:auto;margin-right:auto\"><a href=\"assets/30th-comedown-20261109/lugia-149-147-catalogue.jpg\" target=\"_blank\" rel=\"noopener\" aria-label=\"Open the whole catalogue card\"><img src=\"assets/30th-comedown-20261109/lugia-149-147-catalogue.jpg\" alt=\"2026 Lugia 149/147 catalogue reference\" loading=\"lazy\" decoding=\"async\"></a><figcaption>The 2026 Classic Collection Lugia 149/147. Its 30th stamp distinguishes the reprint from the earlier card. Naoyo Kimura artwork; card image © Pokémon / Nintendo / Creatures / GAME FREAK, via TCGplayer and <a href=\"https://holohawk.uk/cards/30th-celebration/lugia-149\">HoloHawk</a>.</figcaption></figure><p>HoloHawk observed 85 new UK Lugia listings over 2–6 November, against 77 over 26–30 October. Over those same five-weekday periods, auctions it tracked closing with a winning bid fell from 12 to seven. That combination is consistent with pressure on sellers. It measures a monitored subset: new listings are a flow, and winning auctions cover only one route to a sale. <a href=\"https://holohawk.uk/cards/30th-celebration/lugia-149\">Lugia UK activity</a></p>\n<p>Sylveon’s five UK raw records visible in the 8 November capture have a £28.78 median. Two have no seller-stated condition and are treated as Near Mint by the tracker. They offer a local price reference, with no assurance about any particular copy’s grading prospects. Comparing that GBP raw sample with an international PSA 10 sample would leave geography, currency and costs unresolved. <a href=\"https://sleeveup.app/cards/30th-celebration-153\">Sylveon UK records</a></p>\n"
+        },
+        {
+          "heading": "What the fall changes",
+          "html": "<p>An older PSA 10 headline can make grading look more attractive than today’s resale evidence supports. The relevant calculation includes the raw card, the grading route, all postage and selling costs, and the outcome if the card earns a lower grade. It also needs room for prices to move while the card is away.</p>\n<p>More graded copies reaching sale, weaker buying interest and sellers competing on price are possible explanations. This watch does not distinguish their contributions; a verified population history would help test the supply argument.</p>\n"
+        },
+        {
+          "heading": "Verdict",
+          "html": "<div class=\"closing-call\"><p><strong>Recent PSA 10 exits put the grading margin under pressure. A grading decision needs current sale evidence, every cost and an affordable lower-grade outcome.</strong> A durable bottom would need repeated, comparable sale periods showing prices holding while transactions continue. That evidence is still missing.</p>\n<p>The anniversary’s appeal can last longer than its early resale prices. A grading plan needs current exits and a lower-grade outcome that the owner can afford.</p>\n</div>"
+        },
+        {
+          "heading": "How the samples were checked",
+          "html": "<p>Recent records were matched to the stated 2026 English printing and PSA 10 in their listing titles. Three ambiguous two-price Lugia records and two Sylveon records were excluded. Vintage Gengar and other graders were kept outside the samples. Provider records were re-read and medians recalculated; payment completion, cancellations and repeat physical copies were not independently audited. Counts describe the accessible sample, with no claim of complete market coverage.</p>\n<p><a href=\"assets/30th-comedown-20261109/sale-records.csv\">Auditable 67 record sale sample</a></p>\n"
+        }
+      ],
+      "sources": [
+        {
+          "label": "PriceCharting: Lugia 149, reported graded sales",
+          "url": "https://www.pricecharting.com/game/pokemon-30th-celebration/lugia-149"
+        },
+        {
+          "label": "PriceCharting: Mew ex 152, reported graded sales",
+          "url": "https://www.pricecharting.com/game/pokemon-30th-celebration/mew-ex-152"
+        },
+        {
+          "label": "PriceCharting: Sylveon ex 153, reported graded sales",
+          "url": "https://www.pricecharting.com/game/pokemon-30th-celebration/sylveon-ex-153"
+        },
+        {
+          "label": "PriceCharting: Gengar 94, reported graded sales",
+          "url": "https://www.pricecharting.com/game/pokemon-30th-celebration/gengar-94"
+        },
+        {
+          "label": "HoloHawk: monitored UK Lugia listing and winning-auction flow",
+          "url": "https://holohawk.uk/cards/30th-celebration/lugia-149"
+        },
+        {
+          "label": "SleeveUp: exact English Sylveon 153/128 UK raw records",
+          "url": "https://sleeveup.app/cards/30th-celebration-153"
+        }
+      ],
+      "related": [
+        "psa10-is-not-profit",
+        "psa-backlog-november-2026-collector-guide",
+        "delta-reign-chase-card-prices-november-2026"
+      ],
+      "cta": {
+        "label": "Try the grading maths",
+        "href": "grading-calculator.html"
+      }
+    },
+    {
       "slug": "next-1000-dollar-pokemon-card-bubble-mew-test",
       "title": "The next $1,000 Pokémon card? Five contenders face the Bubble Mew test",
       "eyebrow": "THE BUBBLE MEW TEST",
