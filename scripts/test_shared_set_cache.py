@@ -1,4 +1,4 @@
-"""The 191-card feed reuses one collector and its existing anomaly policy."""
+"""The 195-card feed reuses one collector and preserves its 191-card history."""
 import copy
 import json
 from pathlib import Path
@@ -20,6 +20,8 @@ class SharedSetTests(unittest.TestCase):
                 self.catalogue['cards'].append(dict(productId=pid,groupId=24451,key=f'en-30th-{pid}-holofoil',name=name,number=number,set='ME: Mega Evolution Promo',language='English',printing='Holofoil',image=f'assets/thirtieth/{pid}.jpg'))
         D.write_json(self.fixture.site / 'thirtieth-catalogue.json',self.catalogue)
         self.prior = D.read_json(SITE / 'data/market-cache/thirtieth-current.json')
+        self.prior['cards']=[c for c in self.prior['cards'] if c['groupId']!=24451]
+        self.assertEqual(len(self.prior['cards']),191)
         for card in self.prior['cards']:
             card['points'] = [{**card['points'][-1], 'day':'2026-11-02', 'usd':100, 'status':'ok'}]
             card['lastGoodUsd'], card['lastGoodDay'] = 100, '2026-11-02'

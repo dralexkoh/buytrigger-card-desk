@@ -46,6 +46,10 @@ function validate(v,now=Date.now()){
 }
 function series(v,key){return v?.points?.[key]||[];}
 function latest(v,key){return series(v,key).at(-1)||null;}
+function rankedRaw(v){
+ return v.cards.filter(c=>{const p=latest(v,c.key);return p?.[0]===v.sourceDate&&p[2]==='ok'&&positive(p[1]);})
+  .sort((a,b)=>latest(v,b.key)[1]-latest(v,a.key)[1]||a.key.localeCompare(b.key));
+}
 function basket(v,cards=v.cards){
  const byCard=cards.map(c=>new Map(series(v,c.key).map(p=>[p[0],p])));
  const dates=[...new Set(byCard.flatMap(rows=>[...rows.keys()]))].sort();
@@ -62,5 +66,5 @@ function basket(v,cards=v.cards){
  return {baseDate,points:rows.map(p=>({...p,value:positive(baseUsd)&&positive(p.usd)&&p.date>=baseDate?p.usd/baseUsd*100:null}))};
 }
 function segments(points,value=p=>p.value,date=p=>p.date){let all=[],part=[],last=null;for(const p of points){const time=Date.parse(date(p));if(!positive(value(p))||last!==null&&time-last!==86400000){if(part.length)all.push(part);part=[];}if(positive(value(p)))part.push(p);last=time;}if(part.length)all.push(part);return all;}
-return {positive,day,validate,series,latest,focus,basket,segments};
+return {positive,day,validate,series,latest,focus,rankedRaw,basket,segments};
 });

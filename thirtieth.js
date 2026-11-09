@@ -1,7 +1,7 @@
 (()=>{'use strict';
 const E=window.BTThirtiethEngine,esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const money=n=>new Intl.NumberFormat('en-US',{style:'currency',currency:'USD'}).format(n),date=s=>new Date(s+'T12:00:00Z').toLocaleDateString('en-GB',{day:'numeric',month:'short',year:'numeric',timeZone:'UTC'});
-let epoch=0,data=null,controller=null,timer=null,expiry=null,active=false,search='',collection='all',period='All',basketMode='chases',sort='default',returnFocus=null;
+let epoch=0,data=null,controller=null,timer=null,expiry=null,active=false,search='',collection=new URLSearchParams(location.search).get('view')==='top20'?'top20':'all',period='All',basketMode='chases',sort='default',returnFocus=null;
 const groups={chases:'Chase cards',pikachu:'The 30 Pikachu',rgb:'RGB Mew'};
 const galleryGroups={...groups,promos:'Day & Night promos'};
 function page(){
@@ -37,9 +37,10 @@ function page(){
   <header class="set-list-head"><div><span class="kicker">EXACT ENGLISH PRINTINGS</span><h2>Find your card.</h2></div><span id="set-count" aria-live="polite"></span></header>
   <div class="set-tools">
    <label>Find a card<input type="search" id="set-search" placeholder="Name or card number" autocomplete="off"></label>
-   <label>Collection<select id="set-collection"><option value="all">All selected cards</option>${Object.entries(galleryGroups).map(([id,label])=>`<option value="${id}">${label}</option>`).join('')}</select></label>
+   <label>Collection<select id="set-collection"><option value="all">All selected cards</option><option value="top20">Top 20 by Raw</option>${Object.entries(galleryGroups).map(([id,label])=>`<option value="${id}">${label}</option>`).join('')}</select></label>
    <label>Sort<select id="set-sort"><option value="default">Collection order</option><option value="price">Raw price: high to low</option><option value="number">Card number</option><option value="name">Name</option></select></label>
   </div>
+  <p class="set-chart-note" id="set-ranking-note" hidden></p>
   <div class="set-grid" id="set-grid"></div>
   <p class="set-credit">Catalogue artwork: TCGplayer. Card names and artwork © Pokémon.</p>
  </section>
@@ -67,7 +68,7 @@ function draw(){
 function rawPrice(point){
  return `<div class="set-price-bars"><div><span>Raw USD</span><b>${point?.[2]==='ok'?money(point[1]):'—'}</b></div></div>`;
 }
-function cardMarkup(c,group){
+function cardMarkup(c,group,rank){
  const point=E.latest(data,c.key);
  const issue=group==='pikachu'?'Pikachu '+(parseInt(c.number,10)-22)+' of 30':
   c.set==='ME: Mega Evolution Promo'?'MEP promo':c.set.endsWith('Classic Collection')?'Classic Collection':'Main set';
@@ -75,7 +76,7 @@ function cardMarkup(c,group){
  return `<article class="set-card">
   <button class="set-card-art" data-set-card="${c.key}" aria-label="Open ${esc(c.name.includes(c.number)?c.name:c.name+' '+c.number)}"><img src="${c.image}" alt="${imageLabel}" loading="lazy" width="200" height="280"></button>
   <div class="set-card-info">
-   <span class="set-issue">${issue} · ${esc(c.number)}</span>
+   <span class="set-issue">${rank?'#'+rank+' · ':''}${issue} · ${esc(c.set==='ME: Mega Evolution Promo'?'MEP'+c.number:c.number)}</span>
    <h3>${esc(c.name.replace(/ - .*$/,''))}</h3><p>English · Holofoil</p>
    ${rawPrice(point)}
    <small>${point?date(point[0]):'No observations'} · ${point?.[2]==='ok'?'Raw guide':'Price unavailable'}</small>
@@ -86,6 +87,8 @@ function cardMarkup(c,group){
 function drawCards(){
  if(!data)return;
  const focus=E.focus(data);
+ const ranked=E.rankedRaw(data);focus.top20=ranked.slice(0,20);
+ const labels={...galleryGroups,top20:'Top 20 by Raw'};
  const selected=collection==='all'?Object.keys(galleryGroups):[collection];
  const query=search.trim().toLowerCase();
  let count=0,total=0;
@@ -95,18 +98,20 @@ function drawCards(){
   count+=cards.length;
   if(!cards.length)return '';
   if(sort==='name')cards.sort((a,b)=>a.name.localeCompare(b.name,undefined,{numeric:true}));
-  else if(sort==='number'||sort==='default'&&group==='pikachu')cards.sort((a,b)=>a.number.localeCompare(b.number,undefined,{numeric:true}));
+  else if(sort==='number'||sort==='default'&&(group==='pikachu'||group==='promos'))cards.sort((a,b)=>a.number.localeCompare(b.number,undefined,{numeric:true}));
   else if(sort==='price'||sort==='default'&&group==='chases')cards.sort((a,b)=>(E.latest(data,b.key)?.[1]||0)-(E.latest(data,a.key)?.[1]||0));
-  return `<h3 class="set-group-title">${galleryGroups[group]} <small>${cards.length} / ${focus[group].length}</small></h3>`+
-   cards.map(c=>cardMarkup(c,group)).join('');
+  return `<h3 class="set-group-title">${labels[group]} <small>${cards.length} / ${focus[group].length}</small></h3>`+
+   cards.map(c=>cardMarkup(c,group,group==='top20'?focus.top20.indexOf(c)+1:null)).join('');
  }).join('');
  document.getElementById('set-count').textContent=`${count} of ${total} cards`;
+ const note=document.getElementById('set-ranking-note');note.hidden=collection!=='top20';
+ note.textContent=`Ranked by Raw USD from ${ranked.length} of ${data.cards.length} printings priced on ${date(data.sourceDate)}. Includes Classic Collection, RGB Mews and the four related MEP promos. Missing prices stay unranked.`;
  document.getElementById('set-grid').innerHTML=html||'<p class="set-status">No matching cards. Try another name or number.</p>';
 }
 function openCard(key,button){const c=data?.cards.find(c=>c.key===key);if(!c)return;returnFocus=button;const rows=E.series(data,key),p=rows.at(-1);document.getElementById('set-dialog-body').innerHTML=`<div class="set-dialog-card"><img src="${c.image}" alt="${esc(c.name+' · '+c.number+' · English '+c.printing)}"><div><span class="kicker">${esc(c.number)} / ENGLISH</span><h2>${esc(c.name)}</h2><p>${esc(c.set)} · Holofoil</p>${rawPrice(p)}<p>Raw market guide, ${p?date(p[0]):'unavailable'}.</p><a href="https://www.tcgplayer.com/product/${c.image.match(/([0-9]+)\.jpg$/)[1]}" target="_blank" rel="noopener">Exact catalogue issue ↗</a></div></div><div class="set-popup-tabs" role="tablist" aria-label="Card details">${[['overview','Overview'],['evidence','Prices & sources'],['method','Method']].map(([id,label])=>`<button role="tab" id="set-tab-${id}" aria-controls="set-panel-${id}" aria-selected="${id==='overview'}" tabindex="${id==='overview'?0:-1}" data-set-tab="${id}">${label}</button>`).join('')}</div><section id="set-panel-overview" role="tabpanel" aria-labelledby="set-tab-overview"><div class="set-dialog-chart">${chart(rows.map(p=>({date:p[0],usd:p[2]==='ok'?p[1]:null})),p=>p.usd,'Dated Raw market guide in USD')}</div></section><section id="set-panel-evidence" role="tabpanel" aria-labelledby="set-tab-evidence" hidden><details class="set-observations" open><summary>All prices, dates and sources</summary><div><table><thead><tr><th>Date</th><th>Raw USD</th><th>Source / status</th></tr></thead><tbody>${[...rows].reverse().map(p=>`<tr><td>${date(p[0])}</td><td>${p[2]==='ok'?money(p[1]):'—'}</td><td>${esc(p[2]==='ok'?'TCGCSV market guide':p[2].replaceAll('_',' '))}${data.sources.filter(s=>s.day===p[0]&&(s.url.includes('/archive/')||s.url.endsWith('/3/'+(c.set==='ME: Mega Evolution Promo'?'24451':c.set.endsWith('Classic Collection')?'24837':'24722')+'/prices'))).map(s=>` <a href="${esc(s.url)}" target="_blank" rel="noopener">Source ↗</a>`).join('')}</td></tr>`).join('')}</tbody></table></div></details></section><section id="set-panel-method" role="tabpanel" aria-labelledby="set-tab-method" hidden><h3>One printing. One price series.</h3><p>English · ${esc(c.set)} · ${esc(c.number)} · Holofoil. Raw observations are TCGplayer mixed-condition market guides supplied by TCGCSV. They are separate from Near Mint guides and completed-sale prices.</p><p>Missing values and reviewed anomalies are unpriced. Earlier source values describe this printing retrospectively; they are not a condition assessment, a grading outcome or a guaranteed resale price.</p><p class="set-credit">Catalogue reference: TCGplayer. Artwork © Pokémon.</p></section>`;document.getElementById('set-dialog').showModal();}
 function unavailable(message){clearTimeout(expiry);data=null;document.getElementById('thirtieth-summary').innerHTML=`<p class="set-status">${esc(message)} <button data-set-retry>Try again</button></p>`;document.getElementById('thirtieth-chart').replaceChildren();document.getElementById('set-grid').replaceChildren();document.getElementById('set-count').textContent='';document.getElementById('set-dialog')?.close();}
 async function load(){if(!active)return;const token=++epoch;controller?.abort();controller=new AbortController();const timeout=setTimeout(()=>controller.abort(),12000);if(data&&Date.parse(data.expiresAt)<=Date.now())unavailable('Refreshing the shared market data…');try{const res=await fetch('shared-market-config.json',{cache:'no-store',signal:controller.signal});if(!res.ok)throw Error();const config=await res.json();if(!config.enabled||!config.endpoint)throw Error();const url=new URL(config.endpoint,location.href);if(url.protocol!=='https:'&&!(location.hostname==='127.0.0.1'&&url.origin===location.origin))throw Error();url.search=new URLSearchParams({index:'thirtieth-anniversary',days:'366'});const r=await fetch(url,{credentials:'omit',cache:'no-store',signal:controller.signal});if(!r.ok)throw Error();const text=await r.text();if(text.length>3000000)throw Error();const value=E.validate(JSON.parse(text));if(!active||token!==epoch)return;if(!value){unavailable('The set data is temporarily unavailable.');return;}data=value;draw();drawCards();clearTimeout(expiry);expiry=setTimeout(()=>{if(active){unavailable('Refreshing the shared market data…');load();}},Math.max(0,Date.parse(data.expiresAt)-Date.now()));}catch(e){if(active&&token===epoch)unavailable('The shared market data could not be checked.');}finally{clearTimeout(timeout);}}
-function mount(){active=true;const host=document.querySelector('.thirtieth-market');if(!host)return;document.getElementById('set-search').oninput=e=>{search=e.target.value;drawCards();};document.getElementById('set-collection').onchange=e=>{collection=e.target.value;drawCards();};document.getElementById('set-sort').onchange=e=>{sort=e.target.value;drawCards();};const root=document.getElementById('main');root.onclick=e=>{const tab=e.target.closest('[data-set-tab]');if(tab){root.querySelectorAll('[data-set-tab]').forEach(b=>{const on=b===tab;b.setAttribute('aria-selected',String(on));b.tabIndex=on?0:-1;document.getElementById('set-panel-'+b.dataset.setTab).hidden=!on;});return;}const g=e.target.closest('[data-set-basket]'),p=e.target.closest('[data-set-period]'),card=e.target.closest('[data-set-card]');if(g){basketMode=g.dataset.setBasket;root.querySelectorAll('[data-set-basket]').forEach(b=>b.setAttribute('aria-pressed',String(b===g)));draw();}else if(p){period=p.dataset.setPeriod;root.querySelectorAll('[data-set-period]').forEach(b=>b.setAttribute('aria-pressed',String(b===p)));draw();}else if(card)openCard(card.dataset.setCard,card);else if(e.target.closest('[data-set-retry]'))load();else if(e.target.closest('[data-set-scroll]')){e.preventDefault();document.getElementById('thirtieth-cards').scrollIntoView({block:'start'});}};const dialog=document.getElementById('set-dialog');dialog.querySelector('.set-dialog-close').onclick=()=>dialog.close();dialog.addEventListener('close',()=>returnFocus?.focus());dialog.addEventListener('keydown',e=>{const tab=e.target.closest('[data-set-tab]');if(!tab||!['ArrowLeft','ArrowRight','Home','End'].includes(e.key))return;e.preventDefault();const tabs=[...dialog.querySelectorAll('[data-set-tab]')],i=tabs.indexOf(tab),next=e.key==='Home'?0:e.key==='End'?2:(i+(e.key==='ArrowRight'?1:2))%3;tabs[next].click();tabs[next].focus();});load();timer=setInterval(load,300000);}
+function mount(){active=true;const host=document.querySelector('.thirtieth-market');if(!host)return;document.getElementById('set-search').oninput=e=>{search=e.target.value;drawCards();};document.getElementById('set-collection').value=collection;document.getElementById('set-collection').onchange=e=>{collection=e.target.value;drawCards();};document.getElementById('set-sort').onchange=e=>{sort=e.target.value;drawCards();};const root=document.getElementById('main');root.onclick=e=>{const tab=e.target.closest('[data-set-tab]');if(tab){root.querySelectorAll('[data-set-tab]').forEach(b=>{const on=b===tab;b.setAttribute('aria-selected',String(on));b.tabIndex=on?0:-1;document.getElementById('set-panel-'+b.dataset.setTab).hidden=!on;});return;}const g=e.target.closest('[data-set-basket]'),p=e.target.closest('[data-set-period]'),card=e.target.closest('[data-set-card]');if(g){basketMode=g.dataset.setBasket;root.querySelectorAll('[data-set-basket]').forEach(b=>b.setAttribute('aria-pressed',String(b===g)));draw();}else if(p){period=p.dataset.setPeriod;root.querySelectorAll('[data-set-period]').forEach(b=>b.setAttribute('aria-pressed',String(b===p)));draw();}else if(card)openCard(card.dataset.setCard,card);else if(e.target.closest('[data-set-retry]'))load();else if(e.target.closest('[data-set-scroll]')){e.preventDefault();document.getElementById('thirtieth-cards').scrollIntoView({block:'start'});}};const dialog=document.getElementById('set-dialog');dialog.querySelector('.set-dialog-close').onclick=()=>dialog.close();dialog.addEventListener('close',()=>returnFocus?.focus());dialog.addEventListener('keydown',e=>{const tab=e.target.closest('[data-set-tab]');if(!tab||!['ArrowLeft','ArrowRight','Home','End'].includes(e.key))return;e.preventDefault();const tabs=[...dialog.querySelectorAll('[data-set-tab]')],i=tabs.indexOf(tab),next=e.key==='Home'?0:e.key==='End'?2:(i+(e.key==='ArrowRight'?1:2))%3;tabs[next].click();tabs[next].focus();});load();timer=setInterval(load,300000);}
 function unmount(){epoch++;active=false;controller?.abort();clearInterval(timer);clearTimeout(expiry);data=null;returnFocus=null;const main=document.getElementById('main');if(main)main.onclick=null;}
 window.BTThirtieth={page,mount,unmount};
 })();

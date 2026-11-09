@@ -70,3 +70,7 @@ test('partial, Japanese or substituted MEP promo membership is rejected',()=>{
   const data=withPromos();change(data);assert.throws(()=>E.validate(data,now));
  }
 });
+test('Raw ranking excludes stale, missing and held prices and breaks ties consistently',()=>{
+ const data={sourceDate:'2026-11-09',cards:['b','a','c','stale','held','missing'].map(key=>({key})),points:{b:[['2026-11-09',100,'ok']],a:[['2026-11-09',100,'ok']],c:[['2026-11-09',50,'ok']],stale:[['2026-11-08',1000,'ok']],held:[['2026-11-09',null,'source_anomaly']],missing:[]}};
+ assert.deepEqual(E.rankedRaw(data).map(c=>c.key),['a','b','c']);
+});

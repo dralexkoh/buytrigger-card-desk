@@ -2,12 +2,12 @@
   "schemaVersion": 1,
   "status": "live",
   "sourceSystem": "shared-cards-market",
-  "constituentCount": 191,
-  "imageReviewCount": 191,
+  "constituentCount": 195,
+  "imageReviewCount": 195,
   "grade": "Raw",
   "measure": "tcgcsv_market",
   "baselineDate": "2026-10-08",
   "providerTerms": "https://tcgcsv.com/faq",
   "publicReadVerified": true,
-  "sourceVersion": "f91ac75d06d110a4bc9813b9b047080b0ef60fca028a8bb80511937b91da0e51"
+  "sourceVersion": "ba4cffac9c8c69baf3cf55cb0f8a9a885e7b264787c229951f84e53544eff7d3"
 }
