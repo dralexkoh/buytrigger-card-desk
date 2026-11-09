@@ -1599,6 +1599,35 @@
   ],
   "wire": [
     {
+      "id": "charleston-child-card-queue-police-2026-11-06",
+      "eventKey": "charleston-target-pokemon-queue-child-police-2026-11-06",
+      "date": "2026-11-09",
+      "displayDate": "9 Nov · Police report",
+      "category": "Hobby drama",
+      "kind": "Police report",
+      "title": "Father charged after child left in Pokémon card queue",
+      "summary": "Charleston police said in a 6 November notice that a father left his six-year-old daughter alone outside a Target store to hold his place for a Pokémon card release. Officers responded around 2:30am. Police said the child was unharmed and taken into the care of social services. The father was charged with unlawful conduct toward a child; a charge is not a conviction.",
+      "sourceLabel": "Charleston Police Department",
+      "url": "https://www.charleston-sc.gov/m/newsflash/home/detail/1761",
+      "checkedAt": "2026-11-09T13:06:03.841285+00:00",
+      "sourcePublishedAt": "2026-11-06",
+      "visual": "editorial-ink",
+      "ctaUrl": null,
+      "ctaLabel": null,
+      "image": "assets/newsroom-20261109/charleston-queue-illustration.webp",
+      "imageAlt": "Conceptual manga-ink illustration of empty folding chairs, a pillow and a blanket outside a generic shop at night; no people are shown.",
+      "imageCredit": "Editorial illustration: BuyTrigger.Cards. Conceptual scene, not the actual incident.",
+      "imageSourceUrl": "https://buytrigger.cards/assets/newsroom-20261109/charleston-queue-illustration.webp",
+      "author": {
+        "id": "zara-chen",
+        "name": "Zara Chen",
+        "type": "named_ai_correspondent",
+        "label": "Correspondent",
+        "beat": "Global news desk"
+      },
+      "newsRevision": 1
+    },
+    {
       "id": "delta-reign-chase-card-uk-sold-snapshot-2026-11-07",
       "eventKey": "delta-reign-chase-card-uk-sold-snapshot-2026-11-07",
       "date": "2026-11-07",
