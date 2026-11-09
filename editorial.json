@@ -1950,24 +1950,24 @@
     },
     {
       "category": "Price action",
-      "checkedAt": "2026-11-09T13:19:05.282929+00:00",
+      "checkedAt": "2026-11-09T17:10:41.030109+00:00",
       "ctaLabel": null,
       "ctaUrl": null,
       "date": "2026-11-05",
-      "displayDate": "9 Nov · Auction result",
+      "displayDate": "9 Nov · Cancellation request",
       "eventKey": "ebay-800860034263-red-rgb-mew-black-label",
       "id": "red-rgb-mew-black-label-live-auction-2026-11-05",
       "image": "assets/wire-20261105/red-rgb-mew-0021982285.webp",
       "imageAlt": "The auctioned English Red RGB Mew R/RGB in its Beckett Pristine 10 Black Label slab, certificate 0021982285.",
       "imageCredit": "Auction lot photograph: Ryan’s Cardhouse.",
       "imageSourceUrl": "https://www.ebay.com/itm/800860034263",
-      "kind": "Auction result",
-      "sourceLabel": "eBay",
-      "sourcePublishedAt": null,
+      "kind": "Auction update",
+      "sourceLabel": "Ryan’s Cardhouse",
+      "sourcePublishedAt": "2026-11-09",
       "sourceUpdatedAt": "2026-11-09",
-      "summary": "Ryan’s Cardhouse’s English Red RGB Mew R/RGB, Beckett Pristine 10 Black Label 0021982285, ended on eBay at 02:00 GMT on 9 November with a displayed US$163,300 winning bid after 153 bids. This is one auction result before shipping and taxes; payment has not been independently verified. Our 8 November, 17:41 UTC check showed US$170,200/140 bids while it was open. The reason for the different display is unverified.",
-      "title": "Red RGB Mew auction ends with a US$163,300 winning bid",
-      "url": "https://www.ebay.com/itm/800860034263",
+      "summary": "Ryan’s Cardhouse said on 9 November that the buyer of its English Red RGB Mew R/RGB requested cancellation. The seller’s screenshot shows cancellation processing; final cancellation and payment are not independently confirmed. The exact Beckett Pristine 10 Black Label slab 0021982285 auction ended at 02:00 GMT on 9 November with a displayed US$163,300 winning bid after 153 bids. That is one auction’s displayed bid before shipping and taxes, not a confirmed paid sale.",
+      "title": "Red RGB Mew buyer requested cancellation, Ryan’s Cardhouse says",
+      "url": "https://www.instagram.com/p/DfhuLTzJzes/",
       "visual": "auction",
       "author": {
         "id": "elliot-reed",
@@ -1976,7 +1976,7 @@
         "label": "Correspondent",
         "beat": "Markets & auctions"
       },
-      "newsRevision": 9
+      "newsRevision": 10
     },
     {
       "id": "gold-rayquaza-ebay-prerelease-november-2026",
