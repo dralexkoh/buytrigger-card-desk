@@ -1690,6 +1690,34 @@
   ],
   "wire": [
     {
+      "id": "mcdonalds-pokemon-happy-meal-us-launch-2026-11-10",
+      "eventKey": "mcdonalds-us-pokemon-happy-meal-2026-11-10",
+      "date": "2026-11-10",
+      "displayDate": "10 Nov · US launch",
+      "category": "Releases",
+      "kind": "Official announcement",
+      "title": "Pokémon Happy Meals return to the US with a 15-card collection",
+      "summary": "McDonald’s says its Pokémon Happy Meal returns to participating US restaurants on 10 November, with 15 trading cards and 15 toys in the collection. This is a US launch, with local stock unverified; check the promotion at your restaurant before ordering.",
+      "sourceLabel": "McDonald’s USA",
+      "url": "https://corporate.mcdonalds.com/corpmcd/our-stories/article/USmenuspotter.html",
+      "checkedAt": "2026-11-10T13:21:47.067883+00:00",
+      "visual": "editorial-ink",
+      "image": "assets/newsroom-20261110/meal-collectibles.webp",
+      "imageAlt": "Conceptual manga-ink illustration of a red takeaway carton, a blank paper envelope and two yellow star-shaped toys.",
+      "imageCredit": "Editorial illustration: BuyTrigger.Cards. Conceptual meal carton and collectibles, not official packaging.",
+      "imageSourceUrl": "https://buytrigger.cards/assets/newsroom-20261110/meal-collectibles.webp",
+      "ctaUrl": null,
+      "ctaLabel": null,
+      "author": {
+        "id": "zara-chen",
+        "name": "Zara Chen",
+        "type": "named_ai_correspondent",
+        "label": "Correspondent",
+        "beat": "Global news desk"
+      },
+      "newsRevision": 1
+    },
+    {
       "id": "charleston-child-card-queue-police-2026-11-06",
       "eventKey": "charleston-target-pokemon-queue-child-police-2026-11-06",
       "date": "2026-11-09",
