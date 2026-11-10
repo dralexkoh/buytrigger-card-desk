@@ -10,7 +10,7 @@
   const EXCLUSION_KEY = 'buytrigger.cards.analytics.exclude.v1';
   const CONSENT_DAYS = 180;
   const COLLECTOR = 'https://brzawmbpwkdundruicca.supabase.co/functions/v1/cards-traffic-ingest';
-  const PAGES = Object.freeze({home:'Home',desk:'Newsroom',journal:'Features',targets:'Undervalued & calculator',japan:'Japanese cards',method:'Sources and methods',funding:'Funding',privacy:'Privacy'});
+  const PAGES = Object.freeze({home:'Home',desk:'Newsroom',journal:'Features',targets:'Undervalued cards',japan:'Japanese cards',method:'Sources and methods',funding:'Funding',privacy:'Privacy',drops:'Drops',calculator:'Grading calculator',market:'All indices',thirtieth:'30th Anniversary Index',advertise:'Advertise'});
   const SOURCES = Object.freeze({
     'google.com':'google', 'www.google.com':'google', 'www.google.co.uk':'google',
     'bing.com':'bing', 'www.bing.com':'bing', 'duckduckgo.com':'duckduckgo',
@@ -38,16 +38,18 @@
   }
   function catalogue(win) {
     const articles = (win.BT_EDITORIAL?.articles || []).filter(a => safeSlug(a.slug));
-    return {articles, modern:win.MODERN_PREVIEW_DATA?.cards || [], top50:win.BT_TOP50?.cards || [],commerce:win.BT_COMMERCE};
+    return {articles, wire:(win.BT_EDITORIAL?.wire || []).filter(a => safeSlug(a.id)), retailerLinks:win.BT_TRAFFIC_CATALOGUE?.retailerLinks || [], modern:win.MODERN_PREVIEW_DATA?.cards || [], top50:win.BT_TOP50?.cards || [],commerce:win.BT_COMMERCE};
   }
   function resolveRoute(href, config, data, bodyRoute = '') {
     const site = permittedSite(config, href); if (!site) return null;
     const url = new URL(href), path = url.pathname.slice(site.basePath.length);
     if (path === 'tcg-modern-index.html') return {id:'modern', url:'/tcg-modern-index', title:'TCG Modern Index', index:'modern'};
     if (path === 'top-50.html') return {id:'top50', url:'/top-50', title:'Top 50', index:'top50'};
+    const standalone = {'market.html':'market','30th-anniversary-index.html':'thirtieth','grading-calculator.html':'calculator','drops.html':'drops','undervalued.html':'targets','undervalued-japanese.html':'japan','bluechip-raw-archive.html':'bluechip-archive'};
+    if (standalone[path] && !url.hash) { const id=standalone[path]; return {id,url:'/'+id,title:PAGES[id] || 'BlueChip Raw archive'}; }
     const storyPath = /^stories\/([a-z0-9-]+)\/(?:index\.html)?$/.exec(path);
-    if (path !== '' && path !== 'index.html' && path !== 'drops.html' && path !== 'grading-calculator.html' && !storyPath) return null;
-    const hash = url.hash.slice(1);
+    if (path !== '' && path !== 'index.html' && path !== 'drops.html' && path !== 'grading-calculator.html' && !Object.hasOwn(standalone,path) && !storyPath) return null;
+    const hash = /^#author-(alex-koh|oscar)$/.test(url.hash) && bodyRoute.startsWith('read/') ? '' : url.hash.slice(1);
     // These pages render hashes before body.data-route; mirror that rule.
     const requested = hash || bodyRoute || (path === 'drops.html' ? 'drops' : path === 'grading-calculator.html' ? 'calculator' : '') || (storyPath ? 'read/' + storyPath[1] : 'home');
     const parts = requested.split('/');
@@ -57,8 +59,12 @@
       const article = data.articles.find(a => a.slug === slug);
       return article ? {id:'article:' + slug, url:'/stories/' + slug + '/', title:'Story: ' + slug, article:slug} : {id:'story-not-found',url:'/story-not-found',title:'Story not found'};
     }
-    // Keep advertiser visits in the existing funding report category.
-    const route = parts[0] === 'drops' ? 'desk' : parts[0] === 'advertise' ? 'funding' : parts[0] === 'calculator' ? 'targets' : Object.hasOwn(PAGES, parts[0]) ? parts[0] : 'home';
+    if (parts[0] === 'desk' && parts[1]) {
+      const brief=data.wire?.find(a => a.id===parts[1]);
+      if (brief) return {id:'news:'+brief.id,url:'/news/'+brief.id+'/',title:brief.title};
+    }
+    // Keep canonical identities for tools, indices and editorial pages.
+    const route = Object.hasOwn(PAGES, parts[0]) ? parts[0] : 'home';
     return {id:route, url:route === 'home' ? '/' : '/' + route, title:PAGES[route]};
   }
   function campaign(href, config, data) {
@@ -103,6 +109,12 @@
     ['tcgcsv.com','www.tcgcsv.com','api.tcgdex.net','tcgdex.net','www.psacard.com','press.pokemon.com','www.pokemon.com','pokemon.com','www.cgccards.com','www.cgccomics.com','www.ha.com','comics.ha.com','www.tcgplayer.com'].forEach(host => hosts.add(host));
     return hosts;
   }
+  function retailerLink(href,data,article) {
+    if (!article) return null;
+    let u; try {u=new URL(href);} catch (_) {return null;}
+    if (u.protocol!=='https:' || u.username || u.password) return null;
+    return (data.retailerLinks || []).find(l => l.host===u.hostname && l.path===u.pathname && l.articles.includes(article)) || null;
+  }
   function sanitizeEvent(name, props, route, data, hosts) {
     if (!route || !props || typeof props !== 'object') return null;
     const clean = {};
@@ -114,7 +126,7 @@
         if (!card || !Number.isSafeInteger(Number(card.id)) || Number(card.id) < 1) return null;
         clean.index = props.index; clean.card = String(card.id); break;
       }
-      case 'calculator_used': if (route.id !== 'targets') return null; break;
+      case 'calculator_used': if (!['calculator','targets'].includes(route.id)) return null; break;
       case 'source_outbound': if (!hosts.has(props.source)) return null; clean.source = props.source; break;
       case 'share_open': case 'share_caption_copy': case 'article_engaged':
         if (!data.articles.some(a => a.slug === props.article)) return null;
@@ -122,8 +134,14 @@
         if (name === 'share_caption_copy') { if (!['x','threads','instagram'].includes(props.platform)) return null; clean.platform = props.platform; }
         break;
       case 'ad_served': case 'ad_impression': case 'ad_click':
+        if (props.campaign_id==='vaultx-house-review' && route.id==='home' && props.slot_id==='HOME-01' && props.creative_id==='vaultx-binder-v1' && props.destination_id==='vaultx-review') {
+          for (const key of ['campaign_id','slot_id','creative_id','destination_id']) clean[key]=props[key]; break;
+        }
         if(!data.commerce?.ebay?.enabled||props.campaign_id!=='ebay-'+data.commerce.ebay.campaignId||!['HOME-01','DROPS-01'].includes(props.slot_id)||!data.commerce.placements?.[props.slot_id==='HOME-01'?'home':'drops']||!(/^[A-Za-z0-9_-]{1,80}$/).test(props.creative_id||'')||!(/^[A-Za-z0-9_-]{1,100}$/).test(props.destination_id||''))return null;
         for(const key of ['campaign_id','slot_id','creative_id','destination_id'])clean[key]=props[key];break;
+      case 'retailer_click':
+        if (props.retailer!=='amazon' || !route.article || !data.retailerLinks.some(l => l.id===props.link_id && l.articles.includes(route.article))) return null;
+        clean.retailer='amazon'; clean.link_id=props.link_id; break;
       case 'cta_click':
         if (!['modern','top50','targets','journal','desk','japan','private_collection'].includes(props.destination)) return null;
         clean.destination = props.destination; break;
@@ -211,7 +229,7 @@
       doc.head.append(style);
       const dialog = doc.createElement('dialog'); dialog.className = 'bt-analytics-dialog'; dialog.setAttribute('aria-labelledby','bt-analytics-title');
       const h = doc.createElement('h2'); h.id = 'bt-analytics-title'; h.textContent = 'Optional visitor statistics'; dialog.append(h);
-      const p = doc.createElement('p'); p.textContent = 'May we count which public pages and tools readers use, which sources bring visits, approximate connection countries and hours, and labelled ad impressions and clicks? Our own BuyTrigger counter uses a daily changing visitor estimate from connection and browser information, without advertising cookies. Country is estimated on our server using a local country database; visitor IP addresses are not sent to a geolocation API or stored in our analytics tables. We send no names, search text, calculator amounts or private collection data.'; dialog.append(p);
+      const p = doc.createElement('p'); p.textContent = 'May we count which public pages and tools readers use, which sources bring visits, approximate connection countries and hours, and labelled ad impressions, ad clicks and retailer-link clicks? Our own BuyTrigger counter uses a daily changing visitor estimate from connection and browser information, without advertising cookies. Country is estimated on our server using a local country database; visitor IP addresses are not sent to a geolocation API or stored in our analytics tables. We send no names, search text, calculator amounts or private collection data.'; dialog.append(p);
       const retention = doc.createElement('p'); retention.textContent = 'Detailed analytics older than 180 days are removed in a daily cleanup. Your choice is remembered on this browser for six months. You can change it at any time. Declining leaves all site features available.'; dialog.append(retention);
       const link = doc.createElement('a'); link.href = new URL('index.html#privacy',source).href; link.textContent = 'Privacy details'; link.addEventListener('click',() => dialog.close()); dialog.append(link);
       const status = doc.createElement('p'); status.setAttribute('aria-live','polite'); dialog.append(status);
@@ -256,7 +274,8 @@
       // Existing render listeners execute first. A duplicate explicit hook is deduplicated.
       win.addEventListener('hashchange',() => win.requestAnimationFrame(api.routeRendered));
       win.addEventListener('pageshow',api.routeRendered);
-      doc.addEventListener('click',event => {
+      const onLinkClick = event => {
+        if (event.defaultPrevented || event.type==='auxclick' && event.button!==1) return;
         const target = event.target?.closest ? event.target : event.target?.parentElement; if (!target) return;
         const card = target.closest('[data-card]');
         if (card && controller.route?.index && doc.querySelector('#card-dialog[open]')) controller.track('card_research_open',{index:controller.route.index,card:card.dataset.card});
@@ -266,7 +285,11 @@
         let url; try { url = new URL(anchor.href,win.location.href); } catch (_) { return; }
         if (url.protocol !== 'https:' && url.protocol !== 'http:') return;
         if (url.hostname === 'cards.alexkoh.me') controller.track('cta_click',{destination:'private_collection'});
-        else if (url.origin !== win.location.origin) controller.track('source_outbound',{source:url.hostname});
+        else if (url.origin !== win.location.origin) {
+          const link=retailerLink(url.href,catalogue(win),controller.route?.article);
+          if (link) controller.track('retailer_click',{retailer:'amazon',link_id:link.id});
+          else controller.track('source_outbound',{source:url.hostname});
+        }
         else {
           const destination = resolveRoute(url.href,config,catalogue(win));
           if (destination) {
@@ -274,7 +297,8 @@
             controller.track('cta_click',{destination:destination.id});
           }
         }
-      });
+      };
+      doc.addEventListener('click',onLinkClick); doc.addEventListener('auxclick',onLinkClick);
       doc.addEventListener('bt:calculator-result', event => {
         if (event.target?.matches?.('.grading-tool')) controller.track('calculator_used', {}, 'calculator_used');
       });
@@ -304,5 +328,5 @@
     }).catch(() => { /* No configuration means no analytics, no fallback provider. */ });
     return api;
   }
-  return {boot,validConfig,permittedSite,resolveRoute,campaign,taggedDestination,referrer,sourceChannel,sanitizeEvent,approvedSourceHosts,createController,PREFERENCE_KEY,EXCLUSION_KEY};
+  return {retailerLink,boot,validConfig,permittedSite,resolveRoute,campaign,taggedDestination,referrer,sourceChannel,sanitizeEvent,approvedSourceHosts,createController,PREFERENCE_KEY,EXCLUSION_KEY};
 });

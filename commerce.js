@@ -95,5 +95,5 @@ doc.addEventListener('click',e=>{
 },true);
 doc.addEventListener('click',e=>{const filter=e.target.closest('[data-drop-region]');if(filter){renderOffers(filter.dataset.dropRegion);mountPlacement('drops');}});
 root.addEventListener('hashchange',mount);doc.addEventListener('visibilitychange',expireVisible);root.setInterval(expireVisible,10000);mount();
-const measurementTracker=createPlacementTracker(root);root.setInterval(()=>measurementTracker.tick(),250);doc.addEventListener('click',measurementTracker.click);doc.addEventListener('visibilitychange',measurementTracker.hidden);
+const measurementTracker=createPlacementTracker(root);root.setInterval(()=>measurementTracker.tick(),250);doc.addEventListener('click',measurementTracker.click);doc.addEventListener('auxclick',e=>{if(e.button===1)measurementTracker.click(e);});doc.addEventListener('visibilitychange',measurementTracker.hidden);
 })(typeof window!=='undefined'?window:null);

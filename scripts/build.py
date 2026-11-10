@@ -42,6 +42,10 @@ validate_offers(offers,commerce)
 (D/'commerce-data.js').write_text('window.BT_COMMERCE='+json.dumps(commerce,ensure_ascii=False)+';\nwindow.BT_DROPS_OFFERS='+json.dumps(offers,ensure_ascii=False)+';\n')
 e=json.loads((P/'editorial.json').read_text())
 validate_editorial_visuals(e,P)
+from build_tracking_catalogue import create_catalogue
+traffic_catalogue=create_catalogue(e)
+(D/'traffic-catalogue.json').write_text(json.dumps(traffic_catalogue,ensure_ascii=False)+'\n')
+(D/'tracking-catalogue.js').write_text('window.BT_TRAFFIC_CATALOGUE='+json.dumps(traffic_catalogue,ensure_ascii=False).replace('</','<\\/')+';\n')
 authors=json.loads(subprocess.check_output(['node',str(P/'scripts/render_article_authors.cjs')],input=json.dumps(e['articles']).encode()))
 featured=next(a for a in e['articles'] if a['slug']==e.get('featuredArticle','psa-value-returns'))
 assert featured.get('image') and (P/featured['image']).is_file(), 'Featured story needs real editorial artwork'

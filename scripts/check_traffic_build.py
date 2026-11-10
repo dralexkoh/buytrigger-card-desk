@@ -17,12 +17,14 @@ parser.add_argument('--expect-enabled',action='store_true',help='Use only after 
 args=parser.parse_args()
 assert config['enabled'] is args.expect_enabled and config['privacyReviewed'] is args.expect_enabled
 assert config['collectorEndpoint']==EXPECTED
-documents=[DIST/'index.html',DIST/'tcg-modern-index.html',DIST/'top-50.html',*sorted((DIST/'stories').glob('*/index.html'))]
+documents=[p for p in DIST.rglob('*.html') if p.name!='404.html']
 for path in documents:
  soup=BeautifulSoup(path.read_text(),'html.parser')
  tags=[t for t in soup.select('script[src]') if t['src'].split('?',1)[0]=='analytics.js']
  assert len(tags)==1 and tags[0].has_attr('defer'),str(path)
  assert '?v=' in tags[0]['src'],str(path)
+ directory=[t for t in soup.select('script[src]') if t['src'].split('?',1)[0]=='tracking-catalogue.js']
+ assert len(directory)==1 and directory[0].has_attr('defer') and '?v=' in directory[0]['src'],str(path)
 assert not list(DIST.rglob('*traffic-preview*'))
 cases=[
  ('another project endpoint',lambda folder:(folder/'analytics-config.json').write_text((folder/'analytics-config.json').read_text().replace('brzawmbpwkdundruicca','ukblxmvsqihnnyysvxes'))),
