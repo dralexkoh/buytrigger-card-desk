@@ -37,6 +37,10 @@ for card in review['psaUpside']:
  assert re.fullmatch(r'assets/public-targets/[a-z0-9_-]+\.webp',card['image']) and (d/card['image']).is_file()
  assert card['psa10Minor']>card['rawMinor']+card['gradingMinor']>0
 assert (d/'CNAME').read_text()=='buytrigger.cards\n', 'Wrong public domain contract'
+from build_tracking_catalogue import create_catalogue
+traffic_catalogue=json.loads((d/'traffic-catalogue.json').read_text())
+assert traffic_catalogue==create_catalogue(json.loads((p/'editorial.json').read_text())), 'Every current article/link must be in the public tracking directory'
+assert (d/'tracking-catalogue.js').read_text()=='window.BT_TRAFFIC_CATALOGUE='+json.dumps(traffic_catalogue,ensure_ascii=False).replace('</','<\\/')+';\n', 'Browser and receiver tracking directories differ'
 APPROVED_COLLECTOR='https://brzawmbpwkdundruicca.supabase.co/functions/v1/cards-traffic-ingest'
 analytics=json.loads((d/'analytics-config.json').read_text())
 assert set(analytics)=={'schemaVersion','enabled','provider','collectorEndpoint','privacyReviewed','consentVersion','origins','campaigns','campaignSources','campaignMediums','campaignContent'}

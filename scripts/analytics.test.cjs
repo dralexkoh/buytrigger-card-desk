@@ -17,10 +17,10 @@ test('coarse referral categories recognise mobile apps and other websites withou
     const w=windowAt(),out=[];w.document.referrer=url;const c=A.createController(w,config,e=>out.push(e));c.choose('granted');c.routeRendered();assert.equal(out[0].referrer_channel,source);assert.ok(!JSON.stringify(out).includes('SECRET'));
   }
 });
-test('Drops direct and hash routes use the existing Newsroom reporting category',()=>{
+test('Drops direct and hash routes have their own reporting category',()=>{
   const data={articles:[]};
   for(const suffix of ['drops.html','index.html#drops']){
-    assert.deepEqual(A.resolveRoute(base+suffix,config,data),{id:'desk',url:'/desk',title:'Newsroom'});
+    assert.deepEqual(A.resolveRoute(base+suffix,config,data),{id:'drops',url:'/drops',title:'Drops'});
   }
 });
 function storage() { const items=new Map(); return {writes:0,getItem:k=>items.get(k)||null,setItem(k,v){this.writes++;items.set(k,v);}}; }
@@ -150,9 +150,9 @@ test('decline removes the banner and remains silent; full preferences require an
   elements.find(x=>x.textContent==='Allow statistics').listeners.click();assert.equal(calls.length,2);assert.equal(win.BTAnalytics.status().consent,'granted');
 });
 
-// The new display route retains the collector's established page contract.
-test('advertising enquiries retain the existing funding category without leaking email or query',()=>{
+// Canonical route identities exclude private query content.
+test('advertising enquiries have their own category without leaking email or query',()=>{
  const {win,out,controller:c}=controller('index.html?email=PRIVATE#advertise');
  c.routeRendered();assert.equal(out.length,0);c.choose('granted');c.routeRendered();
- assert.equal(out.length,1);assert.equal(out[0].page,'/funding');assert.ok(!JSON.stringify(out).includes('PRIVATE'));
+ assert.equal(out.length,1);assert.equal(out[0].page,'/advertise');assert.ok(!JSON.stringify(out).includes('PRIVATE'));
 });
