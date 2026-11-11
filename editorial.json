@@ -1690,6 +1690,34 @@
   ],
   "wire": [
     {
+      "id": "psa-additional-parcels-october-theft-2026-11-10",
+      "eventKey": "psa-fedex-oct13-theft-nov10-additional-parcels",
+      "date": "2026-11-11",
+      "displayDate": "11 Nov · PSA update 10 Nov",
+      "category": "Grading",
+      "kind": "Official update",
+      "title": "PSA finds more parcels affected by October card theft",
+      "summary": "PSA says a shipment audit has identified additional parcels affected by the 13 October theft from a FedEx truck after pickup at its Santa Ana facility. In a 10 November update, it says the items were insured and affected owners are being contacted. Compensation is based on fair market value, capped at the declared Maximum Insured Value—the insurance ceiling for each item. The affected cards’ PSA certification numbers have been deactivated, with more numbers to be shared as the investigation allows. PSA has not stated how many extra parcels or items are involved. Collectors with affected orders submitted through a dealer should contact that dealer.",
+      "sourceLabel": "PSA",
+      "url": "https://www.psacard.com/articles/articleview/15778/psa-theft-update",
+      "checkedAt": "2026-11-11T12:59:37.209650+00:00",
+      "ctaUrl": null,
+      "ctaLabel": null,
+      "visual": "editorial-ink",
+      "image": "assets/newsroom-20261111/psa-parcel-audit.webp",
+      "imageAlt": "Conceptual manga-ink illustration of a sealed plain parcel, a clipboard, envelopes and a red pencil. This is an illustration of a shipment-record audit, not evidence of the theft.",
+      "imageCredit": "Editorial illustration: BuyTrigger.Cards. Conceptual shipment audit; not a photograph of the incident.",
+      "imageSourceUrl": "https://buytrigger.cards/assets/newsroom-20261111/psa-parcel-audit.webp",
+      "author": {
+        "id": "zara-chen",
+        "name": "Zara Chen",
+        "type": "named_ai_correspondent",
+        "label": "Correspondent",
+        "beat": "Global news desk"
+      },
+      "newsRevision": 1
+    },
+    {
       "id": "mcdonalds-pokemon-happy-meal-us-launch-2026-11-10",
       "eventKey": "mcdonalds-us-pokemon-happy-meal-2026-11-10",
       "date": "2026-11-10",
