@@ -1690,6 +1690,34 @@
   ],
   "wire": [
     {
+      "id": "psa-premium-crossover-evaluation-fee-2026-11-11",
+      "eventKey": "psa-premium-crossover-dual-fee-2026-11-11",
+      "date": "2026-11-12",
+      "category": "Grading",
+      "kind": "News",
+      "title": "PSA cuts failed Premium crossover fees to US$599",
+      "summary": "From 11 November, new PSA Premium crossover submissions carry a US$599 evaluation fee. A crossover asks PSA to assess a card still sealed in another company’s holder against the minimum PSA grade you choose.\n\nIf it falls short, the card stays in its original holder and no success fee is charged. For standard Premium 1, covering up to US$25,000 Maximum Insured Value, a successful crossover adds US$400: US$999 in grading fees. An unsuccessful one costs US$599, down from US$999.\n\nShipping and other applicable fees are extra. Express, Super Express and Premier retain their existing crossover pricing.",
+      "sourceLabel": "PSA",
+      "url": "https://www.psacard.com/articles/articleview/15786/crossover-service-updates",
+      "checkedAt": "2026-11-12T01:12:13.472090+00:00",
+      "ctaUrl": null,
+      "ctaLabel": null,
+      "visual": "editorial-ink",
+      "image": "assets/newsroom-20261111/psa-premium-crossover.webp",
+      "imageAlt": "Conceptual ink illustration of a sealed generic card holder above two branching paper paths, one leading to another holder and one to an empty display. No real card or grade is shown.",
+      "imageCredit": "Editorial illustration: BuyTrigger Cards. Conceptual crossover evaluation, not a photograph or grade evidence.",
+      "imageSourceUrl": "https://buytrigger.cards/assets/newsroom-20261111/psa-premium-crossover.webp",
+      "displayDate": "12 Nov · rule starts 11 Nov",
+      "author": {
+        "id": "zara-chen",
+        "name": "Zara Chen",
+        "type": "named_ai_correspondent",
+        "label": "Correspondent",
+        "beat": "Global news desk"
+      },
+      "newsRevision": 1
+    },
+    {
       "id": "psa-additional-parcels-october-theft-2026-11-10",
       "eventKey": "psa-fedex-oct13-theft-nov10-additional-parcels",
       "date": "2026-11-11",
