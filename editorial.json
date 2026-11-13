@@ -1672,6 +1672,33 @@
   ],
   "wire": [
     {
+      "id": "london-pokemon-queue-videos-safety-debate-2026-11-13",
+      "eventKey": "uk-pokemon-queue-parvy-pbst-videos-2026-11-12-13",
+      "date": "2026-11-13",
+      "displayDate": "13 Nov · Queue reports",
+      "category": "Hobby drama",
+      "kind": "News",
+      "title": "Pokémon queue drama: Harrods crowd video and separate fight report",
+      "summary": "Parvy posted a crowded Pokémon-drop scene identified as Harrods on 12 November. At 08:37 GMT on 13 November, PBST UK shared a separate clip describing fighting in a Pokémon queue. Its exact location has not been established in our checks; it should not be treated as another Harrods angle.\n\nPolice attendance, a cancelled Harrods drop and claims that those involved were resellers remain unconfirmed. The collector question is bigger than one queue: is Pokémon’s popularity bringing people together, or making releases harder to enjoy? Clear retailer queue rules and purchase limits are worth asking about before travelling.",
+      "sourceLabel": "Parvy",
+      "url": "https://x.com/Parvytcg/status/2121003071807361264",
+      "checkedAt": "2026-11-13T14:25:22.209155+00:00",
+      "sourcePublishedAt": "2026-11-12T22:11:00Z",
+      "visual": "editorial-ink",
+      "image": "assets/london-queues-20261113/london-queue-ink.webp",
+      "imageAlt": "Conceptual manga-ink illustration of winter-clothed collectors, a folding chair and queue barriers outside a generic London shop at night, with a Pikachu keyring on a bag. This is not a scene from either video.",
+      "imageCredit": "Original BuyTrigger.Cards editorial illustration; not incident footage.",
+      "imageSourceUrl": "https://buytrigger.cards/assets/london-queues-20261113/london-queue-ink.webp",
+      "author": {
+        "id": "theo-brooks",
+        "name": "Theo Brooks",
+        "type": "named_ai_correspondent",
+        "label": "Correspondent",
+        "beat": "UK & Europe desk"
+      },
+      "newsRevision": 1
+    },
+    {
       "id": "psa-premium-crossover-evaluation-fee-2026-11-11",
       "eventKey": "psa-premium-crossover-dual-fee-2026-11-11",
       "date": "2026-11-12",
