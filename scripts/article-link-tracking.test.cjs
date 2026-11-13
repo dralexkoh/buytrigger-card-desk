@@ -21,3 +21,17 @@ test('Vault X measurement is a narrowly identified house promotion; consent, QA 
  const c=A.createController(win,config,p=>out.push(p)),props={campaign_id:'vaultx-house-review',slot_id:'HOME-01',creative_id:'vaultx-binder-v1',destination_id:'vaultx-review'};
  c.routeRendered();assert.equal(c.track('ad_click',props),false);c.choose('granted');c.routeRendered();assert.equal(c.track('ad_click',props),true);assert.ok(out.every(r=>r.qa));assert.equal(c.track('ad_click',{...props,destination_id:'fake'}),false);c.choose('denied');assert.equal(c.track('ad_click',props),false);
 });
+
+test('published affiliate CTAs preserve exact destinations and sponsorship on hydrated article links',()=>{
+ const vm=require('node:vm'),src=fs.readFileSync('site.js','utf8');
+ const readFunction=src.split('\n').find(line=>line.startsWith('function read('));
+ const context={article:slug=>e.articles.find(a=>a.slug===slug),esc:value=>String(value??'').replace(/&/g,'&amp;').replace(/"/g,'&quot;'),href:slug=>'stories/'+slug+'/',byline:()=>'',art:()=>'',routeLink:value=>value,heading:()=>'',post:()=>'',window:{BT_ARTICLE_AUTHORS:{profile:()=>''}}};
+ vm.createContext(context);vm.runInContext(readFunction,context);
+ const rendered=vm.runInContext("read('best-binder-for-pokemon-cards')",context);
+ const links=[...rendered.matchAll(/<a\b[^>]*href="([^"]+)"[^>]*>/g)].filter(m=>m[1].startsWith('https://www.amazon.co.uk/'));
+ assert.equal(links.length,6);
+ for(const m of links){assert.equal(new URL(m[1]).searchParams.get('tag'),'buytrigger-21');assert.match(m[0],/rel="sponsored noopener noreferrer"/);}
+ const ordinary=vm.runInContext("read('welcome')",context);
+ assert.ok(!ordinary.includes('rel="sponsored'));
+ assert.equal(e.articles.filter(a=>a.cta?.sponsored===true).length,1);
+});
