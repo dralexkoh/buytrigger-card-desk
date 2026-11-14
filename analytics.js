@@ -49,6 +49,7 @@
     if (standalone[path] && !url.hash) { const id=standalone[path]; return {id,url:'/'+id,title:PAGES[id] || 'BlueChip Raw archive'}; }
     const storyPath = /^stories\/([a-z0-9-]+)\/(?:index\.html)?$/.exec(path);
     const newsPath = /^news\/([a-z0-9-]+)\/(?:index\.html)?$/.exec(path);
+    if (path === 'advertise/' || path === 'advertise/index.html') return {id:'advertise', url:'/advertise', title:PAGES.advertise};
     if (path !== '' && path !== 'index.html' && path !== 'drops.html' && path !== 'grading-calculator.html' && !Object.hasOwn(standalone,path) && !storyPath && !newsPath) return null;
     const hash = /^#author-(alex-koh|oscar)$/.test(url.hash) && bodyRoute.startsWith('read/') ? '' : url.hash.slice(1);
     // These pages render hashes before body.data-route; mirror that rule.

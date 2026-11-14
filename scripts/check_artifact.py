@@ -69,14 +69,14 @@ for f in d.rglob('*'):
   if re.search(pattern,s):fail.append(f'{f.relative_to(d)}: {pattern}')
  if f.suffix=='.html':
   if f.name==verification_name:continue
-  soup=BeautifulSoup(s,'html.parser');base=(f.parent/'../../').resolve()if soup.select_one('base') else f.parent
+  soup=BeautifulSoup(s,'html.parser');base_tag=soup.select_one('base[href]');base=(f.parent/base_tag['href']).resolve() if base_tag else f.parent
   for t in soup.select('script[src],link[href],img[src]'):
    v=t.get('src')or t.get('href')
    if not v or v.startswith(('http:','https:','data:','#')):continue
    if not (base/v.split('#')[0].split('?')[0]).exists():fail.append(f'{f.relative_to(d)}: missing {v}')
   if not soup.title:fail.append(f'{f}: missing title')
   if f.name!='404.html':
-   relative=str(f.relative_to(d));route='' if relative=='index.html' else relative.removesuffix('index.html') if relative.startswith(('stories/','news/','prices/')) else relative
+   relative=str(f.relative_to(d));route='' if relative=='index.html' else relative.removesuffix('index.html') if relative.startswith(('stories/','news/','prices/','advertise/')) else relative
    expected=PUBLIC_BASE+route
    canonical=soup.select_one('link[rel=canonical]');og=soup.select_one('meta[property="og:url"]');picture=soup.select_one('meta[property="og:image"]')
    if not canonical or canonical.get('href')!=expected:fail.append(f'{relative}: wrong canonical URL')
@@ -140,10 +140,20 @@ for c in data['cards']:
  assert all(v is None or isinstance(v,(int,float)) and not isinstance(v,bool) and math.isfinite(v) and v>0 for v in values)
 editorial=json.loads((p/'editorial.json').read_text())
 assert {f.parent.name for f in (d/'stories').glob('*/index.html')}=={a['slug'] for a in editorial['articles']}
+def assert_digest_signup(path, campaign):
+ html=path.read_text()
+ body=html.find('class="article-body"');signup=html.find('digest-signup')
+ assert 0<=body<signup, f'{path}: sign-up is not after the article body'
+ page=BeautifulSoup(html,'html.parser');block=page.select_one('section.digest-signup')
+ assert block and block.select_one('iframe')['src']=='https://buytriggercards.substack.com/embed'
+ assert block.select_one('h2').get_text('',strip=True).startswith('Get BuyTrigger.Cards Weekly')
+ assert 'Free and weekly, covering verified Pokémon card news and prices.' in block.get_text(' ',strip=True)
+ assert block.select_one('.digest-fallback a')['href']=='https://buytriggercards.substack.com/subscribe?utm_source=site&utm_medium=signup&utm_campaign='+campaign
 from site_seo import validate_news_article, schema_main_entity_url, BASE as SEO_BASE, collect_news_entries, article_url, news_url, MIN_IMAGE_WIDTH
 def _schema_type(tag):
  data=json.loads(tag.string); types=data.get('@type'); types=types if isinstance(types,list) else [types]; return data,types
 for article in editorial['articles']:
+ assert_digest_signup(d/'stories'/article['slug']/'index.html', article['slug'])
  page=BeautifulSoup((d/'stories'/article['slug']/'index.html').read_text(),'html.parser')
  schema=next(data for data,types in (_schema_type(t) for t in page.select('script[type="application/ld+json"]')) if 'NewsArticle' in types)
  published=article.get('publishedAt',editorial['publishedAt'])
@@ -164,6 +174,7 @@ for article in editorial['articles']:
  else:assert schema['author']['@type']=='Organization'
 assert {f.parent.name for f in (d/'news').glob('*/index.html')}=={w['id'] for w in editorial.get('wire',[])}
 for brief in editorial.get('wire',[]):
+ assert_digest_signup(d/'news'/brief['id']/'index.html', brief['id'])
  page=BeautifulSoup((d/'news'/brief['id']/'index.html').read_text(),'html.parser')
  schema=next(data for data,types in (_schema_type(t) for t in page.select('script[type="application/ld+json"]')) if 'NewsArticle' in types)
  problems=validate_news_article(schema,url=news_url(brief['id']))
@@ -193,6 +204,22 @@ for link in price_page.select('a[href*="tcgplayer.com"]'):
  assert 'nofollow' in rel and 'noopener' in rel
 home=BeautifulSoup((d/'index.html').read_text(),'html.parser')
 assert home.select_one('footer a[href="prices/thirtieth-anniversary/"]')
+assert PUBLIC_BASE+'advertise/' in locs
+assert home.select_one('a.advertise-link')['href']=='advertise/'
+assert all('advertise' not in (a.get('href') or '') for a in home.select('#site-nav a'))
+assert 'utm_campaign' not in home.select_one('#digest-signup .digest-fallback a')['href']
+ad=BeautifulSoup((d/'advertise'/'index.html').read_text(),'html.parser')
+assert ad.select_one('link[rel=canonical]')['href']==PUBLIC_BASE+'advertise/'
+assert ad.body.get('data-route')=='advertise'
+assert 'Audience figures coming soon' in ad.get_text(' ',strip=True)
+assert ad.select_one('#audience-figures')
+mailto=ad.select_one('a[href^="mailto:hello@buytrigger.cards"]')
+assert mailto and mailto['href']=='mailto:hello@buytrigger.cards?subject=Advertising%20enquiry'
+for option in ['Sponsored Feature placement','BuyTrigger.Cards Weekly','Newsletter or site banner','Drops partnerships','All sponsored content is labelled']:
+ assert option in ad.get_text(' ',strip=True)
+assert not re.search(r'\d[\d,]*\s+(readers|subscribers|visits|page\s*views|pageviews|followers)', ad.get_text(' ',strip=True), re.I)
+assert ad.select_one('a.advertise-link')['href']=='advertise/'
+assert all('advertise' not in (a.get('href') or '') for a in ad.select('#site-nav a'))
 bluechip=json.loads((d/'bluechip-data.js').read_text().split('=',1)[1].strip().rstrip(';'))
 assert bluechip['rankingGrade']=='PSA 10' and bluechip['constituentCount']==50
 bluechip_page=BeautifulSoup((d/'top-50.html').read_text(),'html.parser')

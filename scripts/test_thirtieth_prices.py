@@ -99,8 +99,8 @@ class PageTests(unittest.TestCase):
         self.assertEqual(block.select_one('iframe')['src'], 'https://buytriggercards.substack.com/embed')
         self.assertEqual(block.select_one('.digest-fallback a')['href'], SUBSCRIBE)
         plain = digest_signup.digest_signup_html('story-slug')
-        self.assertIn('utm_source=site&amp;utm_medium=signup"', plain)
-        self.assertNotIn('utm_campaign', plain)
+        self.assertIn('utm_source=site&amp;utm_medium=signup&amp;utm_campaign=story-slug', plain)
+        self.assertIn('Get BuyTrigger.Cards Weekly', plain)
 
     def test_sort_and_filter_controls_are_present(self):
         self.assertEqual(self.page.select_one('#price-sort option[selected]')['value'], 'price-desc')

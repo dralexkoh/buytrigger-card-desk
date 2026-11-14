@@ -9,6 +9,26 @@ import site_seo as seo
 from digest_signup import digest_signup_html
 from thirtieth_prices import publish_price_page, PRICE_PAGE_URL
 
+def advertise_main_html():
+ return (
+  '<section class="page-intro"><span class="kicker red-text">ADVERTISE / SPONSOR</span>'
+  '<h1>Put your brand<br>among the cards<span class="red-text">.</span></h1>'
+  '<p>BuyTrigger.Cards is read by Pokémon TCG collectors in the UK and worldwide. They come for verified news and market prices.</p>'
+  '<a class="btn red" href="mailto:hello@buytrigger.cards?subject=Advertising%20enquiry">Email the desk ↗</a>'
+  '<p class="advertise-email">hello@buytrigger.cards</p></section>'
+  '<section class="section"><div class="method-grid">'
+  '<article class="method-card"><h3>Who reads the site</h3><p>UK and worldwide Pokémon TCG collectors interested in news and market prices.</p></article>'
+  '<article class="method-card"><h3>Ways to take part</h3><ul class="advertise-options">'
+  '<li>Sponsored Feature placement</li>'
+  '<li>A sponsor slot in the weekly Substack digest, BuyTrigger.Cards Weekly</li>'
+  '<li>Newsletter or site banner</li>'
+  '<li>Drops partnerships</li>'
+  '</ul></article>'
+  '<article class="method-card"><h3>Sponsored content is labelled</h3><p>All sponsored content is labelled. Sponsors do not set our card rankings or editorial conclusions.</p></article>'
+  '<article class="method-card" id="audience-figures"><span class="kicker red-text">Placeholder</span><h3>Audience figures coming soon</h3><p>This placeholder stands in for traffic, subscriber and audience numbers. None are stated on this page.</p></article>'
+  '</div><a class="text-link" href="index.html#funding">Advertising and affiliate disclosures →</a></section>'
+ )
+
 P=Path(__file__).resolve().parents[1];D=P/'dist';BASE='https://buytrigger.cards/'
 # Existing item IDs remain stable across the custom-domain move.
 FEED_GUID_BASE='https://dralexkoh.github.io/buytrigger-card-desk/'
@@ -144,7 +164,16 @@ for w in e.get('wire',[]):
  main.append(BeautifulSoup(content,'html.parser'));folder=D/'news'/w['id'];folder.mkdir(parents=True);(folder/'index.html').write_text(str(soup))
 
 publish_price_page(P, D)
-static_urls=[BASE,BASE+'grading-calculator.html',BASE+'undervalued.html',BASE+'undervalued-japanese.html',BASE+'market.html',BASE+'30th-anniversary-index.html',BASE+'drops.html',BASE+'tcg-modern-index.html',BASE+'top-50.html',BASE+'bluechip-raw-archive.html']
+advertise_description='Advertising and sponsorship on BuyTrigger.Cards for shops and brands serving Pokémon TCG collectors. Audience figures coming soon.'
+soup=BeautifulSoup((P/'index.html').read_text(),'html.parser');soup.body['data-route']='advertise';soup.head.insert(0,soup.new_tag('base',href='../'))
+soup.title.string='Advertise / Sponsor · '+BRAND;url=BASE+'advertise/'
+soup.select_one('link[rel=canonical]')['href']=url
+for key,val in [('og:title','Advertise / Sponsor · '+BRAND),('og:description',advertise_description),('og:url',url),('og:type','website')]:soup.select_one('meta[property="'+key+'"]')['content']=val
+soup.select_one('meta[name=description]')['content']=advertise_description
+main=soup.select_one('main');main.clear();main.append(BeautifulSoup(advertise_main_html(),'html.parser'))
+folder=D/'advertise';folder.mkdir(parents=True);(folder/'index.html').write_text(str(soup))
+
+static_urls=[BASE,BASE+'grading-calculator.html',BASE+'undervalued.html',BASE+'undervalued-japanese.html',BASE+'market.html',BASE+'30th-anniversary-index.html',BASE+'drops.html',BASE+'tcg-modern-index.html',BASE+'top-50.html',BASE+'bluechip-raw-archive.html',BASE+'advertise/']
 sitemap_entries=seo.collect_sitemap_entries(e,static_urls)
 sitemap_entries.append({'url':PRICE_PAGE_URL,'lastmod':'2026-11-13'})
 (D/'sitemap.xml').write_text(seo.urlset_xml(sitemap_entries))
@@ -173,7 +202,7 @@ for document in D.rglob('*.html'):
   if not soup.select_one('meta[name="twitter:card"]'):
    seo.upsert_meta(soup,attr='name',key='twitter:card',content='summary_large_image')
   seo.apply_verification_meta(soup,verification)
- base=(document.parent/'../../').resolve() if soup.select_one('base') else document.parent
+ base_tag=soup.select_one('base[href]');base=(document.parent/base_tag['href']).resolve() if base_tag else document.parent
  for tag in soup.select('script[src],link[rel=stylesheet][href]'):
   attribute='src' if tag.name=='script' else 'href'
   value=tag[attribute]

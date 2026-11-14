@@ -10,6 +10,8 @@ test('every built Feature and individual Newsroom brief resolves to a unique app
 test('all direct tools and index pages receive canonical identities; private routes stay excluded',()=>{
  for(const[file,route]of[['30th-anniversary-index.html','/thirtieth'],['market.html','/market'],['grading-calculator.html','/calculator'],['undervalued.html','/targets'],['undervalued-japanese.html','/japan']])assert.equal(A.resolveRoute('https://buytrigger.cards/'+file,config,data).url,route);
  assert.equal(A.resolveRoute('https://cards.alexkoh.me/',config,data),null);
+ assert.equal(A.resolveRoute('https://buytrigger.cards/advertise/',config,data).url,'/advertise');
+ assert.equal(A.resolveRoute('https://buytrigger.cards/advertise/index.html',config,data).url,'/advertise');
 });
 test('Amazon product and review links match the exact published host/path/article and never send queries',()=>{
  const article='best-binder-for-pokemon-cards';for(const asin of ['B0BNW3DFYR','B071V91LGC','B08G8JKMJ1'])assert.ok(data.retailerLinks.some(l=>l.kind==='product'&&l.asin===asin));
@@ -35,4 +37,29 @@ test('published affiliate CTAs preserve exact destinations and sponsorship on hy
  const ordinary=vm.runInContext("read('welcome')",context);
  assert.ok(!ordinary.includes('rel="sponsored'));
  assert.equal(e.articles.filter(a=>a.cta?.sponsored===true).length,1);
+});
+
+test('story pages hydrate the shared sign-up with a per-story campaign and the homepage block stays untagged',()=>{
+ const vm=require('node:vm'),src=fs.readFileSync('site.js','utf8');
+ const lines=src.split('\n').filter(line=>line.startsWith('function digestSignup(')||line.startsWith('function read('));
+ const context={article:slug=>e.articles.find(a=>a.slug===slug),esc:value=>String(value??'').replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;'),href:slug=>'stories/'+slug+'/',byline:()=>'',art:()=>'',routeLink:value=>value,heading:()=>'',post:()=>'',location:{pathname:'/'},window:{BT_ARTICLE_AUTHORS:{profile:()=>''}}};
+ vm.createContext(context);vm.runInContext(lines.join('\n'),context);
+ const home=vm.runInContext("digestSignup('home')",context);
+ assert.ok(home.includes('The week’s cards, in one email'));
+ assert.ok(home.includes('Verified news, prices and Features, once a week. Free, and easy to leave.'));
+ assert.equal((home.match(/utm_campaign/g)||[]).length,0);
+ assert.ok(!home.includes('Get BuyTrigger.Cards Weekly'));
+ for(const a of e.articles){
+  context.location.pathname='/stories/'+a.slug+'/';
+  const html=vm.runInContext('read('+JSON.stringify(a.slug)+')',context);
+  assert.ok(html.indexOf('article-body')>=0&&html.indexOf('digest-signup-article')>html.indexOf('article-body'),a.slug);
+  assert.ok(html.includes('Get BuyTrigger.Cards Weekly'),a.slug);
+  assert.ok(html.includes('Free and weekly, covering verified Pokémon card news and prices.'),a.slug);
+  assert.ok(html.includes('https://buytriggercards.substack.com/embed'),a.slug);
+  assert.ok(html.includes('utm_source=site&amp;utm_medium=signup&amp;utm_campaign='+a.slug),a.slug);
+ }
+ const brief=e.wire[0];
+ context.location.pathname='/news/'+brief.id+'/';
+ const block=vm.runInContext('digestSignup("article",'+JSON.stringify(brief.id)+')',context);
+ assert.ok(block.includes('utm_campaign='+brief.id));
 });
