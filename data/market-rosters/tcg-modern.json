@@ -1,0 +1,1008 @@
+{
+ "schemaVersion": 1,
+ "index": "tcg-modern",
+ "approvedBy": "Alex Koh, 14 Nov 2026 12:22 Europe/London (\"Use the TCG Modern 100-card list from the public site\")",
+ "sourceList": "catalogue.js MODERN_PREVIEW_DATA (selection 2026-11-02)",
+ "excluded": [
+  {
+   "productId": 85203,
+   "groupId": 1382,
+   "name": "Empoleon (117 Secret Rare)",
+   "number": "117/116",
+   "printing": "Holofoil",
+   "reason": "TCGCSV has no price row for this product (no subtype); public site uses a dated EUR guide. Not substituted."
+  }
+ ],
+ "cards": [
+  {
+   "productId": "183899",
+   "groupId": "2377",
+   "name": "Latias & Latios GX (Alternate Full Art)",
+   "set": "SM - Team Up",
+   "number": "170/181",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/tcg-modern/183899.jpg"
+  },
+  {
+   "productId": "717607",
+   "groupId": "24722",
+   "name": "Mew - R/RGB",
+   "set": "ME: 30th Celebration",
+   "number": "R/RGB",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/thirtieth/717607.jpg"
+  },
+  {
+   "productId": "717609",
+   "groupId": "24722",
+   "name": "Mew - B/RGB",
+   "set": "ME: 30th Celebration",
+   "number": "B/RGB",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/thirtieth/717609.jpg"
+  },
+  {
+   "productId": "717608",
+   "groupId": "24722",
+   "name": "Mew - G/RGB",
+   "set": "ME: 30th Celebration",
+   "number": "G/RGB",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/thirtieth/717608.jpg"
+  },
+  {
+   "productId": "86916",
+   "groupId": "1413",
+   "name": "Lugia EX (Team Plasma) (134 Full Art)",
+   "set": "Plasma Storm",
+   "number": "134/135",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/tcg-modern/86916.jpg"
+  },
+  {
+   "productId": "246723",
+   "groupId": "2848",
+   "name": "Umbreon VMAX (Alternate Art Secret)",
+   "set": "SWSH07: Evolving Skies",
+   "number": "215/203",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/tcg-modern/246723.jpg"
+  },
+  {
+   "productId": "183830",
+   "groupId": "2377",
+   "name": "Gengar & Mimikyu GX (Alternate Full Art)",
+   "set": "SM - Team Up",
+   "number": "165/181",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/tcg-modern/183830.jpg"
+  },
+  {
+   "productId": "91246",
+   "groupId": "1464",
+   "name": "M Charizard EX (X) (Secret)",
+   "set": "XY - Flashfire",
+   "number": "108/106",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/tcg-modern/91246.jpg"
+  },
+  {
+   "productId": "88630",
+   "groupId": "1394",
+   "name": "Rayquaza",
+   "set": "Dragons Exalted",
+   "number": "128/124",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/tcg-modern/88630.jpg"
+  },
+  {
+   "productId": "246733",
+   "groupId": "2848",
+   "name": "Rayquaza VMAX (Alternate Art Secret)",
+   "set": "SWSH07: Evolving Skies",
+   "number": "218/203",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/tcg-modern/246733.jpg"
+  },
+  {
+   "productId": "90135",
+   "groupId": "1382",
+   "name": "Ultra Ball",
+   "set": "Plasma Freeze",
+   "number": "122/116",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/tcg-modern/90135.jpg"
+  },
+  {
+   "productId": "610516",
+   "groupId": "23821",
+   "name": "Umbreon ex - 161/131",
+   "set": "SV: Prismatic Evolutions",
+   "number": "161/131",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/tcg-modern/610516.jpg"
+  },
+  {
+   "productId": "101520",
+   "groupId": "1576",
+   "name": "M Rayquaza EX (Shiny Full Art)",
+   "set": "XY - Ancient Origins",
+   "number": "98/98",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/tcg-modern/101520.jpg"
+  },
+  {
+   "productId": "253266",
+   "groupId": "2906",
+   "name": "Gengar VMAX (Alternate Art Secret)",
+   "set": "SWSH08: Fusion Strike",
+   "number": "271/264",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/tcg-modern/253266.jpg"
+  },
+  {
+   "productId": "94689",
+   "groupId": "1494",
+   "name": "Dialga EX (122 Secret Rare)",
+   "set": "XY - Phantom Forces",
+   "number": "122/119",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/tcg-modern/94689.jpg"
+  },
+  {
+   "productId": "85638",
+   "groupId": "1386",
+   "name": "Gardevoir",
+   "set": "Dark Explorers",
+   "number": "109/108",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/tcg-modern/85638.jpg"
+  },
+  {
+   "productId": "183964",
+   "groupId": "2377",
+   "name": "Magikarp & Wailord GX (Alternate Full Art)",
+   "set": "SM - Team Up",
+   "number": "161/181",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/tcg-modern/183964.jpg"
+  },
+  {
+   "productId": "83857",
+   "groupId": "1408",
+   "name": "Black Kyurem EX (145 Full Art)",
+   "set": "Boundaries Crossed",
+   "number": "145/149",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/tcg-modern/83857.jpg"
+  },
+  {
+   "productId": "85626",
+   "groupId": "1382",
+   "name": "Garchomp (120 Secret Rare)",
+   "set": "Plasma Freeze",
+   "number": "120/116",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/tcg-modern/85626.jpg"
+  },
+  {
+   "productId": "284137",
+   "groupId": "3118",
+   "name": "Giratina V (Alternate Full Art)",
+   "set": "SWSH11: Lost Origin",
+   "number": "186/196",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/tcg-modern/284137.jpg"
+  },
+  {
+   "productId": "534919",
+   "groupId": "23353",
+   "name": "Mew ex - 232/091",
+   "set": "SV: Paldean Fates",
+   "number": "232/091",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/tcg-modern/534919.jpg"
+  },
+  {
+   "productId": "138497",
+   "groupId": "1957",
+   "name": "Charizard GX (Secret)",
+   "set": "SM - Burning Shadows",
+   "number": "150/147",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/tcg-modern/138497.jpg"
+  },
+  {
+   "productId": "84777",
+   "groupId": "1382",
+   "name": "Deoxys EX (Team Plasma) (Full Art)",
+   "set": "Plasma Freeze",
+   "number": "111/116",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/tcg-modern/84777.jpg"
+  },
+  {
+   "productId": "146698",
+   "groupId": "2054",
+   "name": "Mewtwo GX (Secret Shining)",
+   "set": "Shining Legends",
+   "number": "78/73",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/tcg-modern/146698.jpg"
+  },
+  {
+   "productId": "84709",
+   "groupId": "1386",
+   "name": "Darkrai EX (107 Full Art)",
+   "set": "Dark Explorers",
+   "number": "107/108",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/tcg-modern/84709.jpg"
+  },
+  {
+   "productId": "94683",
+   "groupId": "1494",
+   "name": "Gengar EX (114 Full Art)",
+   "set": "XY - Phantom Forces",
+   "number": "114/119",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/tcg-modern/94683.jpg"
+  },
+  {
+   "productId": "197780",
+   "groupId": "2594",
+   "name": "Charizard GX",
+   "set": "Hidden Fates: Shiny Vault",
+   "number": "SV49/SV94",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/tcg-modern/197780.jpg"
+  },
+  {
+   "productId": "676096",
+   "groupId": "24541",
+   "name": "Mega Gengar ex - 284/217",
+   "set": "ME: Ascended Heroes",
+   "number": "284/217",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/tcg-modern/676096.jpg"
+  },
+  {
+   "productId": "189316",
+   "groupId": "2420",
+   "name": "Gardevoir & Sylveon GX (205) (Alternate Full Art)",
+   "set": "SM - Unbroken Bonds",
+   "number": "205/214",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/tcg-modern/189316.jpg"
+  },
+  {
+   "productId": "84193",
+   "groupId": "1413",
+   "name": "Charizard",
+   "set": "Plasma Storm",
+   "number": "136/135",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/tcg-modern/84193.jpg"
+  },
+  {
+   "productId": "97052",
+   "groupId": "1525",
+   "name": "Team Aqua's Kyogre EX",
+   "set": "Double Crisis",
+   "number": "6/34",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/tcg-modern/97052.jpg"
+  },
+  {
+   "productId": "676088",
+   "groupId": "24541",
+   "name": "Pikachu ex - 276/217",
+   "set": "ME: Ascended Heroes",
+   "number": "276/217",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/tcg-modern/676088.jpg"
+  },
+  {
+   "productId": "642546",
+   "groupId": "24325",
+   "name": "Victini - 171/086",
+   "set": "SV: Black Bolt",
+   "number": "171/086",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/tcg-modern/642546.jpg"
+  },
+  {
+   "productId": "85741",
+   "groupId": "1394",
+   "name": "Giratina EX (124 Full Art)",
+   "set": "Dragons Exalted",
+   "number": "124/124",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/tcg-modern/85741.jpg"
+  },
+  {
+   "productId": "642623",
+   "groupId": "24325",
+   "name": "Zekrom ex - 172/086",
+   "set": "SV: Black Bolt",
+   "number": "172/086",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/tcg-modern/642623.jpg"
+  },
+  {
+   "productId": "662184",
+   "groupId": "24448",
+   "name": "Mega Charizard X ex - 125/094",
+   "set": "ME02: Phantasmal Flames",
+   "number": "125/094",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/tcg-modern/662184.jpg"
+  },
+  {
+   "productId": "201338",
+   "groupId": "2534",
+   "name": "Arceus & Dialga & Palkia GX (Alternate Full Art)",
+   "set": "SM - Cosmic Eclipse",
+   "number": "221/236",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/tcg-modern/201338.jpg"
+  },
+  {
+   "productId": "98141",
+   "groupId": "1534",
+   "name": "M Rayquaza EX (105 Full Art)",
+   "set": "XY - Roaring Skies",
+   "number": "105/108",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/tcg-modern/98141.jpg"
+  },
+  {
+   "productId": "183831",
+   "groupId": "2377",
+   "name": "Gengar & Mimikyu GX (Secret)",
+   "set": "SM - Team Up",
+   "number": "186/181",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/tcg-modern/183831.jpg"
+  },
+  {
+   "productId": "90592",
+   "groupId": "1408",
+   "name": "White Kyurem EX (146 Full Art)",
+   "set": "Boundaries Crossed",
+   "number": "146/149",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/tcg-modern/90592.jpg"
+  },
+  {
+   "productId": "644350",
+   "groupId": "24326",
+   "name": "Victini - 172/086",
+   "set": "SV: White Flare",
+   "number": "172/086",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/tcg-modern/644350.jpg"
+  },
+  {
+   "productId": "87916",
+   "groupId": "1370",
+   "name": "Palkia EX (Team Plasma) (100 Full Art)",
+   "set": "Plasma Blast",
+   "number": "100/101",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/tcg-modern/87916.jpg"
+  },
+  {
+   "productId": "90739",
+   "groupId": "1409",
+   "name": "Zekrom (115 Full Art Secret Rare)",
+   "set": "Legendary Treasures",
+   "number": "115/113",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/tcg-modern/90739.jpg"
+  },
+  {
+   "productId": "94688",
+   "groupId": "1494",
+   "name": "M Gengar EX (121 Secret Rare)",
+   "set": "XY - Phantom Forces",
+   "number": "121/119",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/tcg-modern/94688.jpg"
+  },
+  {
+   "productId": "201334",
+   "groupId": "2534",
+   "name": "Blastoise & Piplup GX (Alternate Full Art)",
+   "set": "SM - Cosmic Eclipse",
+   "number": "215/236",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/tcg-modern/201334.jpg"
+  },
+  {
+   "productId": "83897",
+   "groupId": "1413",
+   "name": "Blastoise",
+   "set": "Plasma Storm",
+   "number": "137/135",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/tcg-modern/83897.jpg"
+  },
+  {
+   "productId": "157767",
+   "groupId": "2178",
+   "name": "Lillie (Full Art)",
+   "set": "SM - Ultra Prism",
+   "number": "151/156",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/tcg-modern/157767.jpg"
+  },
+  {
+   "productId": "451834",
+   "groupId": "3170",
+   "name": "Lugia V (Alternate Full Art)",
+   "set": "SWSH12: Silver Tempest",
+   "number": "186/195",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/tcg-modern/451834.jpg"
+  },
+  {
+   "productId": "97061",
+   "groupId": "1525",
+   "name": "Team Magma's Groudon EX",
+   "set": "Double Crisis",
+   "number": "15/34",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/tcg-modern/97061.jpg"
+  },
+  {
+   "productId": "642289",
+   "groupId": "24326",
+   "name": "Reshiram ex - 173/086",
+   "set": "SV: White Flare",
+   "number": "173/086",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/tcg-modern/642289.jpg"
+  },
+  {
+   "productId": "84809",
+   "groupId": "1370",
+   "name": "Dialga EX (Team Plasma) (99 Full Art)",
+   "set": "Plasma Blast",
+   "number": "99/101",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/tcg-modern/84809.jpg"
+  },
+  {
+   "productId": "246728",
+   "groupId": "2848",
+   "name": "Rayquaza V (Alternate Full Art)",
+   "set": "SWSH07: Evolving Skies",
+   "number": "194/203",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/tcg-modern/246728.jpg"
+  },
+  {
+   "productId": "246758",
+   "groupId": "2848",
+   "name": "Dragonite V (Alternate Full Art)",
+   "set": "SWSH07: Evolving Skies",
+   "number": "192/203",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/tcg-modern/246758.jpg"
+  },
+  {
+   "productId": "83657",
+   "groupId": "1413",
+   "name": "Articuno EX (Team Plasma) (132 Full Art)",
+   "set": "Plasma Storm",
+   "number": "132/135",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/tcg-modern/83657.jpg"
+  },
+  {
+   "productId": "88716",
+   "groupId": "1412",
+   "name": "Reshiram EX (95 Full Art)",
+   "set": "Next Destinies",
+   "number": "95/99",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/tcg-modern/88716.jpg"
+  },
+  {
+   "productId": "96047",
+   "groupId": "1509",
+   "name": "Primal Kyogre EX (Alpha - 149 Full Art)",
+   "set": "XY - Primal Clash",
+   "number": "149/160",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/tcg-modern/96047.jpg"
+  },
+  {
+   "productId": "676102",
+   "groupId": "24541",
+   "name": "Mega Dragonite ex - 290/217",
+   "set": "ME: Ascended Heroes",
+   "number": "290/217",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/tcg-modern/676102.jpg"
+  },
+  {
+   "productId": "194999",
+   "groupId": "2464",
+   "name": "Mewtwo & Mew GX (Secret)",
+   "set": "SM - Unified Minds",
+   "number": "242/236",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/tcg-modern/194999.jpg"
+  },
+  {
+   "productId": "85933",
+   "groupId": "1386",
+   "name": "Groudon EX (106 Full Art)",
+   "set": "Dark Explorers",
+   "number": "106/108",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/tcg-modern/85933.jpg"
+  },
+  {
+   "productId": "87412",
+   "groupId": "1394",
+   "name": "Mew EX (120 Full Art)",
+   "set": "Dragons Exalted",
+   "number": "120/124",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/tcg-modern/87412.jpg"
+  },
+  {
+   "productId": "183829",
+   "groupId": "2377",
+   "name": "Gengar & Mimikyu GX (Full Art)",
+   "set": "SM - Team Up",
+   "number": "164/181",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/tcg-modern/183829.jpg"
+  },
+  {
+   "productId": "201339",
+   "groupId": "2534",
+   "name": "Reshiram & Zekrom GX (Full Art)",
+   "set": "SM - Cosmic Eclipse",
+   "number": "222/236",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/tcg-modern/201339.jpg"
+  },
+  {
+   "productId": "90753",
+   "groupId": "1412",
+   "name": "Zoroark",
+   "set": "Next Destinies",
+   "number": "102/99",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/tcg-modern/90753.jpg"
+  },
+  {
+   "productId": "195290",
+   "groupId": "2464",
+   "name": "Mega Sableye & Tyranitar GX (Alternate Full Art)",
+   "set": "SM - Unified Minds",
+   "number": "226/236",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/tcg-modern/195290.jpg"
+  },
+  {
+   "productId": "183909",
+   "groupId": "2377",
+   "name": "Eevee & Snorlax GX (Secret)",
+   "set": "SM - Team Up",
+   "number": "191/181",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/tcg-modern/183909.jpg"
+  },
+  {
+   "productId": "610511",
+   "groupId": "23821",
+   "name": "Sylveon ex - 156/131",
+   "set": "SV: Prismatic Evolutions",
+   "number": "156/131",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/tcg-modern/610511.jpg"
+  },
+  {
+   "productId": "183828",
+   "groupId": "2377",
+   "name": "Gengar & Mimikyu GX",
+   "set": "SM - Team Up",
+   "number": "53/181",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/tcg-modern/183828.jpg"
+  },
+  {
+   "productId": "194979",
+   "groupId": "2464",
+   "name": "Raichu & Alolan Raichu GX (Alternate Full Art)",
+   "set": "SM - Unified Minds",
+   "number": "221/236",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/tcg-modern/194979.jpg"
+  },
+  {
+   "productId": "194955",
+   "groupId": "2464",
+   "name": "Slowpoke & Psyduck GX (Alternate Full Art)",
+   "set": "SM - Unified Minds",
+   "number": "218/236",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/tcg-modern/194955.jpg"
+  },
+  {
+   "productId": "241673",
+   "groupId": "2807",
+   "name": "Blaziken VMAX (Alternate Art Secret)",
+   "set": "SWSH06: Chilling Reign",
+   "number": "201/198",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/tcg-modern/241673.jpg"
+  },
+  {
+   "productId": "246696",
+   "groupId": "2848",
+   "name": "Leafeon VMAX (Alternate Art Secret)",
+   "set": "SWSH07: Evolving Skies",
+   "number": "205/203",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/tcg-modern/246696.jpg"
+  },
+  {
+   "productId": "246719",
+   "groupId": "2848",
+   "name": "Umbreon V (Alternate Full Art)",
+   "set": "SWSH07: Evolving Skies",
+   "number": "189/203",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/tcg-modern/246719.jpg"
+  },
+  {
+   "productId": "195296",
+   "groupId": "2464",
+   "name": "Misty's Favor (Full Art)",
+   "set": "SM - Unified Minds",
+   "number": "235/236",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/tcg-modern/195296.jpg"
+  },
+  {
+   "productId": "178982",
+   "groupId": "2328",
+   "name": "Lugia GX (Secret)",
+   "set": "SM - Lost Thunder",
+   "number": "227/214",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/tcg-modern/178982.jpg"
+  },
+  {
+   "productId": "88711",
+   "groupId": "1409",
+   "name": "Reshiram (114 Full Art Secret Rare)",
+   "set": "Legendary Treasures",
+   "number": "114/113",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/tcg-modern/88711.jpg"
+  },
+  {
+   "productId": "101518",
+   "groupId": "1576",
+   "name": "Primal Kyogre EX (Shiny Full Art)",
+   "set": "XY - Ancient Origins",
+   "number": "96/98",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/tcg-modern/101518.jpg"
+  },
+  {
+   "productId": "246704",
+   "groupId": "2848",
+   "name": "Sylveon VMAX (Alternate Art Secret)",
+   "set": "SWSH07: Evolving Skies",
+   "number": "212/203",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/tcg-modern/246704.jpg"
+  },
+  {
+   "productId": "189310",
+   "groupId": "2420",
+   "name": "Greninja & Zoroark GX (201) (Alternate Full Art)",
+   "set": "SM - Unbroken Bonds",
+   "number": "201/214",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/tcg-modern/189310.jpg"
+  },
+  {
+   "productId": "253265",
+   "groupId": "2906",
+   "name": "Espeon VMAX (Alternate Art Secret)",
+   "set": "SWSH08: Fusion Strike",
+   "number": "270/264",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/tcg-modern/253265.jpg"
+  },
+  {
+   "productId": "633031",
+   "groupId": "24269",
+   "name": "Team Rocket's Mewtwo ex - 231/182",
+   "set": "SV10: Destined Rivals",
+   "number": "231/182",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/tcg-modern/633031.jpg"
+  },
+  {
+   "productId": "101519",
+   "groupId": "1576",
+   "name": "Primal Groudon EX (Shiny Full Art)",
+   "set": "XY - Ancient Origins",
+   "number": "97/98",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/tcg-modern/101519.jpg"
+  },
+  {
+   "productId": "88542",
+   "groupId": "1386",
+   "name": "Raikou EX (105 Full Art)",
+   "set": "Dark Explorers",
+   "number": "105/108",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/tcg-modern/88542.jpg"
+  },
+  {
+   "productId": "201250",
+   "groupId": "2534",
+   "name": "Solgaleo & Lunala GX (Full Art)",
+   "set": "SM - Cosmic Eclipse",
+   "number": "216/236",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/tcg-modern/201250.jpg"
+  },
+  {
+   "productId": "86560",
+   "groupId": "1386",
+   "name": "Kyogre EX (104 Full Art)",
+   "set": "Dark Explorers",
+   "number": "104/108",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/tcg-modern/86560.jpg"
+  },
+  {
+   "productId": "197823",
+   "groupId": "2594",
+   "name": "Umbreon GX",
+   "set": "Hidden Fates: Shiny Vault",
+   "number": "SV69/SV94",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/tcg-modern/197823.jpg"
+  },
+  {
+   "productId": "91245",
+   "groupId": "1464",
+   "name": "M Charizard EX (Y) (Secret)",
+   "set": "XY - Flashfire",
+   "number": "107/106",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/tcg-modern/91245.jpg"
+  },
+  {
+   "productId": "178970",
+   "groupId": "2328",
+   "name": "Mimikyu GX (Secret)",
+   "set": "SM - Lost Thunder",
+   "number": "226/214",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/tcg-modern/178970.jpg"
+  },
+  {
+   "productId": "497606",
+   "groupId": "23120",
+   "name": "Magikarp - 203/193",
+   "set": "SV02: Paldea Evolved",
+   "number": "203/193",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/tcg-modern/497606.jpg"
+  },
+  {
+   "productId": "83521",
+   "groupId": "1408",
+   "name": "Altaria",
+   "set": "Boundaries Crossed",
+   "number": "152/149",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/tcg-modern/83521.jpg"
+  },
+  {
+   "productId": "517045",
+   "groupId": "23237",
+   "name": "Charizard ex - 199/165",
+   "set": "SV: Scarlet & Violet 151",
+   "number": "199/165",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/tcg-modern/517045.jpg"
+  },
+  {
+   "productId": "590027",
+   "groupId": "23651",
+   "name": "Pikachu ex - 238/191",
+   "set": "SV08: Surging Sparks",
+   "number": "238/191",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/tcg-modern/590027.jpg"
+  },
+  {
+   "productId": "676093",
+   "groupId": "24541",
+   "name": "Team Rocket's Mewtwo ex - 281/217",
+   "set": "ME: Ascended Heroes",
+   "number": "281/217",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/tcg-modern/676093.jpg"
+  },
+  {
+   "productId": "676092",
+   "groupId": "24541",
+   "name": "Lillie's Clefairy ex - 280/217",
+   "set": "ME: Ascended Heroes",
+   "number": "280/217",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/tcg-modern/676092.jpg"
+  },
+  {
+   "productId": "676089",
+   "groupId": "24541",
+   "name": "Pikachu ex - 277/217",
+   "set": "ME: Ascended Heroes",
+   "number": "277/217",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/tcg-modern/676089.jpg"
+  },
+  {
+   "productId": "676038",
+   "groupId": "24541",
+   "name": "Psyduck - 226/217",
+   "set": "ME: Ascended Heroes",
+   "number": "226/217",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/tcg-modern/676038.jpg"
+  },
+  {
+   "productId": "676106",
+   "groupId": "24541",
+   "name": "Mega Charizard Y ex - 294/217",
+   "set": "ME: Ascended Heroes",
+   "number": "294/217",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/tcg-modern/676106.jpg"
+  },
+  {
+   "productId": "676107",
+   "groupId": "24541",
+   "name": "Mega Dragonite ex - 295/217",
+   "set": "ME: Ascended Heroes",
+   "number": "295/217",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/tcg-modern/676107.jpg"
+  },
+  {
+   "productId": "676081",
+   "groupId": "24541",
+   "name": "Mega Gengar ex - 269/217",
+   "set": "ME: Ascended Heroes",
+   "number": "269/217",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/tcg-modern/676081.jpg"
+  },
+  {
+   "productId": "550258",
+   "groupId": "23473",
+   "name": "Greninja ex - 214/167",
+   "set": "SV06: Twilight Masquerade",
+   "number": "214/167",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/tcg-modern/550258.jpg"
+  }
+ ]
+}

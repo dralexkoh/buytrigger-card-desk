@@ -74,6 +74,9 @@ class PublicPipelineTests(unittest.TestCase):
 
     def test_source_failure_promotes_status_only_and_preserves_prices(self):
         original = {name: (self.site / name).read_bytes() for name in D.FILES}
+        roster = self.site / "data/market-rosters"
+        roster.mkdir(parents=True)
+        (roster / "tcg-modern.json").write_text('{"schemaVersion":1,"index":"tcg-modern","cards":[{"productId":"1","groupId":"1","name":"X","set":"Y","number":"1","language":"English","printing":"Holofoil","image":"assets/tcg-modern/1.jpg"}]}\n')
         with mock.patch.object(P, "execute", side_effect=self.fake_execute):
             receipt, args = self.pipeline()
         self.assertTrue(receipt["sourceFailed"])
