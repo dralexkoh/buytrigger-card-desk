@@ -176,4 +176,7 @@ for document in D.rglob('*.html'):
   if not resource.is_file():raise ValueError('Missing public script/style: '+relative)
   tag[attribute]=relative+'?v='+hashlib.sha256(resource.read_bytes()).hexdigest()[:16]
  document.write_text(str(soup))
+# Google requires the ownership-verification file to retain its exact bytes.
+# Copy it after HTML processing so it receives no markup or metadata.
+shutil.copy2(P/'google794a81691b44d31d.html',D/'google794a81691b44d31d.html')
 print(f'Built {len(list(D.rglob("*")))} public files/directories. {len(e["articles"])} articles, {len(e.get("wire",[]))} news briefs, RSS, sitemap and news sitemap.')

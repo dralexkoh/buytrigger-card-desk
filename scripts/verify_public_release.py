@@ -14,6 +14,7 @@ NAMES += ['assets/archive-refresh-20261104/santa-cruz-boards.webp', 'assets/arch
 NAMES += ['grading-calculator.html', 'grading-calculator.js', 'grading-calculator.css']
 NAMES += ['traffic-catalogue.json','tracking-catalogue.js']
 NAMES = list(dict.fromkeys(NAMES))
+NAMES += ['google794a81691b44d31d.html']
 
 NAMES += ['market.html','30th-anniversary-index.html','shared-market.js','shared-market-engine.js','shared-market.css','shared-market-config.json','assets/30th-mewtwo-151-128.jpg']
 

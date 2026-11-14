@@ -4,6 +4,8 @@ import re,json,math,hashlib,os
 from bs4 import BeautifulSoup
 p=Path(__file__).resolve().parents[1];d=Path(os.environ.get('BT_CARD_DESK_ARTIFACT_DIR',p/'dist'));fail=[]
 PUBLIC_BASE='https://buytrigger.cards/'
+verification_name='google794a81691b44d31d.html'
+assert (d/verification_name).read_bytes()==b'google-site-verification: google794a81691b44d31d.html', 'Google ownership verification must retain the supplied filename and bytes'
 shared=json.loads((d/'shared-market-config.json').read_text())
 assert set(shared)=={'schemaVersion','enabled','endpoint'} and shared['schemaVersion']==1 and isinstance(shared['enabled'],bool)
 APPROVED_MARKET='https://ukblxmvsqihnnyysvxes.supabase.co/functions/v1/card-market-view'
@@ -66,6 +68,7 @@ for f in d.rglob('*'):
  for pattern in [r'/Users/',r'/var/folders/',r'ACQI?-\d{6}',r'CT-\d{6}',r'TGT-\d{6}',r'eyJ[a-zA-Z0-9_-]{30}',r'gh[pousr]_[a-zA-Z0-9]{20}',r'supabase\.co\b',r'(?i)service_role',r'(?i)unpublished draft',r'(?i)local full-site preview']:
   if re.search(pattern,s):fail.append(f'{f.relative_to(d)}: {pattern}')
  if f.suffix=='.html':
+  if f.name==verification_name:continue
   soup=BeautifulSoup(s,'html.parser');base=(f.parent/'../../').resolve()if soup.select_one('base') else f.parent
   for t in soup.select('script[src],link[href],img[src]'):
    v=t.get('src')or t.get('href')
