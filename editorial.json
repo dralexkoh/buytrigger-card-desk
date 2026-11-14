@@ -1936,6 +1936,33 @@
   ],
   "wire": [
     {
+      "id": "thirtieth-celebration-chase-cards-week-prices-2026-11-13",
+      "eventKey": "tcgplayer-market-30th-celebration-chase-cards-2026-11-06-to-2026-11-13",
+      "date": "2026-11-13",
+      "displayDate": "13 Nov · Price check",
+      "category": "Price action",
+      "kind": "Market price guide",
+      "title": "30th Celebration chase cards fall up to 27% in a week, with the Classic Collection Charizard down to about US$111",
+      "summary": "The most wanted cards in Pokémon’s 30th Celebration set had a rough week. On TCGplayer’s market price, a guide TCGplayer calculates from recent sales of raw (ungraded) English copies, the Classic Collection reprint of Base Set Charizard (4/102) fell from US$138.50 on 6 November to US$111.43 on 13 November, a drop of 19.5%.\n\nIt wasn’t alone. Mew ex 158/128 lost the most of the big names, down 27.5% from US$36.99 to US$26.83. In the Classic Collection, Pikachu (58/102) fell 26.6% to US$12.83, Gengar Prime (94/102) 22.7% to US$38.95 and Pikachu & Zekrom GX (33/181) 21.4% to US$20.09. Among the special illustration rares, Mewtwo ex (151/128) dropped 17.9% to US$31.20, Gengar ex (154/128) 15.7% to US$44.16, Pikachu ex (150/128) 15.3% to US$35.08 and Mew ex (152/128) 14.1% to US$54.42.\n\nThe slide was broad. Of the 29 cards across the main set and the Classic Collection that were priced above US$10 a week ago, 26 are lower now. The set as a whole held up better: add up the market prices of all 191 cards and the total is down only about 2%, because the most expensive cards barely moved. The Classic Collection on its own fell about 17%.\n\nTwo caveats. Market price is a guide, not a single sale, and TCGplayer doesn’t say how many sales sit behind each figure. A week is also a short window. Check recent sold listings for your exact card and condition before you price a copy. Prices for every card in the set are on our 30th Anniversary price page.",
+      "sourceLabel": "TCGplayer market price",
+      "url": "https://www.tcgplayer.com/product/714372/pokemon-me-30th-celebration-classic-collection-charizard",
+      "checkedAt": "2026-11-14T19:40:00Z",
+      "sourcePublishedAt": "2026-11-13",
+      "visual": "briefing-graphic",
+      "image": "assets/newsroom-20261114/thirtieth-celebration-week-prices-chart.webp",
+      "imageAlt": "BuyTrigger.Cards bar chart of one-week changes in TCGplayer market price for ten 30th Celebration cards, 6 to 13 November 2026, from Mew ex 158/128 down 27.5% to Mew ex 152/128 down 14.1%.",
+      "imageCredit": "Graphic: BuyTrigger.Cards. Data: TCGplayer market price via TCGCSV.",
+      "imageSourceUrl": "https://buytrigger.cards/assets/newsroom-20261114/thirtieth-celebration-week-prices-chart.webp",
+      "author": {
+        "id": "elliot-reed",
+        "name": "Elliot Reed",
+        "type": "named_ai_correspondent",
+        "label": "Correspondent",
+        "beat": "Markets & auctions"
+      },
+      "newsRevision": 1
+    },
+    {
       "id": "prismatic-umbreon-ex-psa10-fanatics-4000-2026-11-13",
       "eventKey": "fanatics-prismatic-evolutions-umbreon-ex-161-psa10-119948667-2026-11-13",
       "date": "2026-11-13",
