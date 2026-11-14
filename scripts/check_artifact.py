@@ -76,7 +76,7 @@ for f in d.rglob('*'):
    if not (base/v.split('#')[0].split('?')[0]).exists():fail.append(f'{f.relative_to(d)}: missing {v}')
   if not soup.title:fail.append(f'{f}: missing title')
   if f.name!='404.html':
-   relative=str(f.relative_to(d));route='' if relative=='index.html' else relative.removesuffix('index.html') if relative.startswith(('stories/','news/','advertise/')) else relative
+   relative=str(f.relative_to(d));route='' if relative=='index.html' else relative.removesuffix('index.html') if relative.startswith(('stories/','news/','prices/','advertise/')) else relative
    expected=PUBLIC_BASE+route
    canonical=soup.select_one('link[rel=canonical]');og=soup.select_one('meta[property="og:url"]');picture=soup.select_one('meta[property="og:image"]')
    if not canonical or canonical.get('href')!=expected:fail.append(f'{relative}: wrong canonical URL')
@@ -188,8 +188,23 @@ assert news_locs=={item['url'] for item in collect_news_entries(editorial)}
 locs={node.text for node in ET.fromstring((d/'sitemap.xml').read_text()).iter('{http://www.sitemaps.org/schemas/sitemap/0.9}loc')}
 assert all(article_url(a['slug']) in locs for a in editorial['articles'])
 assert all(news_url(w['id']) in locs for w in editorial.get('wire',[]))
-assert PUBLIC_BASE+'advertise/' in locs
+price_url=PUBLIC_BASE+'prices/thirtieth-anniversary/'
+assert price_url in locs, '30th Anniversary price page missing from sitemap'
+price_html=(d/'prices'/'thirtieth-anniversary'/'index.html').read_text()
+price_page=BeautifulSoup(price_html,'html.parser')
+assert len(price_page.select('#price-table tbody tr'))==195, '30th Anniversary price page must list all 195 cards'
+assert 'PSA' not in price_html, 'Price page must not mention PSA'
+assert 'Raw (ungraded) prices, source: TCGCSV market price, as of 13 Nov 2026' in price_page.get_text(' ')
+assert not re.search(r'\b(buy|sell|accumulate|invest)\b', price_page.get_text(' '), re.I)
+for link in price_page.select('a[href*="tcgplayer.com"]'):
+ href=link.get('href','')
+ assert href.startswith('https://www.tcgplayer.com/product/') and '?' not in href and '#' not in href
+ rel=link.get('rel') or []
+ rel=rel if isinstance(rel,list) else rel.split()
+ assert 'nofollow' in rel and 'noopener' in rel
 home=BeautifulSoup((d/'index.html').read_text(),'html.parser')
+assert home.select_one('footer a[href="prices/thirtieth-anniversary/"]')
+assert PUBLIC_BASE+'advertise/' in locs
 assert home.select_one('a.advertise-link')['href']=='advertise/'
 assert all('advertise' not in (a.get('href') or '') for a in home.select('#site-nav a'))
 assert 'utm_campaign' not in home.select_one('#digest-signup .digest-fallback a')['href']

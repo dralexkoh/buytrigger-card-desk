@@ -1,28 +1,13 @@
 from pathlib import Path
 from bs4 import BeautifulSoup
 import json, html, shutil, hashlib, subprocess
-from urllib.parse import quote
 from datetime import datetime, timezone
 from email.utils import format_datetime
 from editorial_visuals import validate_editorial_visuals
 from xml.sax.saxutils import escape
 import site_seo as seo
-
-def digest_signup_html(form_id):
- title_id='digest-title-'+form_id
- campaign=quote(str(form_id), safe='')
- fallback='https://buytriggercards.substack.com/subscribe?utm_source=site&amp;utm_medium=signup&amp;utm_campaign='+html.escape(campaign, quote=True)
- return (
-  '<section class="digest-signup digest-signup-article" aria-labelledby="'+title_id+'">'
-  '<span class="kicker red-text">FREE WEEKLY DIGEST</span>'
-  '<h2 id="'+title_id+'">Get BuyTrigger.Cards Weekly<span class="red-text">.</span></h2>'
-  '<p>Free and weekly, covering verified Pokémon card news and prices.</p>'
-  '<div class="digest-embed"><iframe src="https://buytriggercards.substack.com/embed" title="Subscribe to BuyTrigger.Cards Weekly" loading="lazy" width="480" height="320" frameborder="0" scrolling="no"></iframe></div>'
-  '<p class="digest-consent">By signing up you agree to receive the weekly BuyTrigger.Cards digest by email. You can unsubscribe at any time.</p>'
-  '<p class="digest-privacy">Substack sends the confirmation email and applies its <a href="https://substack.com/privacy" target="_blank" rel="noopener noreferrer">privacy policy</a>. We never see your password. See our <a href="index.html#privacy">privacy note</a>.</p>'
-  '<p class="digest-fallback">If the form doesn’t appear, <a href="'+fallback+'" target="_blank" rel="noopener noreferrer">subscribe on Substack</a>.</p>'
-  '</section>'
- )
+from digest_signup import digest_signup_html
+from thirtieth_prices import publish_price_page, PRICE_PAGE_URL
 
 def advertise_main_html():
  return (
@@ -55,6 +40,7 @@ FILES+=['bluechip-raw-archive.html','bluechip-engine.js','bluechip.js','bluechip
 FILES+=['bluechip-collection-data.js','bluechip-collection-sources.json']
 FILES+=['grading-calculator.js','grading-calculator.css']
 FILES+=['thirtieth-engine.js','thirtieth.js','thirtieth.css','thirtieth-catalogue.json','thirtieth-release.json']
+FILES+=['prices-thirtieth.js','prices-thirtieth.css']
 for name in FILES:shutil.copy2(P/name,D/name)
 bluechip=json.loads((P/'bluechip-release.json').read_text())
 bluechip_check=json.loads(subprocess.check_output(['node','-e',"const fs=require('node:fs'),B=require('./bluechip-engine.js');const d=JSON.parse(fs.readFileSync('bluechip-release.json'));process.stdout.write(JSON.stringify(B.review(d)));"],cwd=P))
@@ -177,6 +163,7 @@ for w in e.get('wire',[]):
  content=f'<header class="reading-head"><a class="back-link" href="index.html#desk">← Back to the newsroom</a><span class="kicker red-text">{html.escape(w.get("category") or "Newsroom")}</span><h1>{html.escape(w["title"])}</h1><p>{html.escape(w.get("summary") or "")}</p><p class="news-credit"><span class="news-author">{byline}</span> · {html.escape(w.get("kind") or "Newsroom")} · {html.escape(w.get("displayDate") or published)}</p></header>{img}<div class="reading-layout"><article class="article-body">{paragraphs}{source}<p class="small">This brief is also listed on the <a href="index.html#desk/{html.escape(w["id"])}">Card Desk</a>.</p><a class="btn red" href="index.html#desk">More from the newsroom →</a></article></div>'+digest_signup_html(w['id'])
  main.append(BeautifulSoup(content,'html.parser'));folder=D/'news'/w['id'];folder.mkdir(parents=True);(folder/'index.html').write_text(str(soup))
 
+publish_price_page(P, D)
 advertise_description='Advertising and sponsorship on BuyTrigger.Cards for shops and brands serving Pokémon TCG collectors. Audience figures coming soon.'
 soup=BeautifulSoup((P/'index.html').read_text(),'html.parser');soup.body['data-route']='advertise';soup.head.insert(0,soup.new_tag('base',href='../'))
 soup.title.string='Advertise / Sponsor · '+BRAND;url=BASE+'advertise/'
@@ -187,7 +174,9 @@ main=soup.select_one('main');main.clear();main.append(BeautifulSoup(advertise_ma
 folder=D/'advertise';folder.mkdir(parents=True);(folder/'index.html').write_text(str(soup))
 
 static_urls=[BASE,BASE+'grading-calculator.html',BASE+'undervalued.html',BASE+'undervalued-japanese.html',BASE+'market.html',BASE+'30th-anniversary-index.html',BASE+'drops.html',BASE+'tcg-modern-index.html',BASE+'top-50.html',BASE+'bluechip-raw-archive.html',BASE+'advertise/']
-(D/'sitemap.xml').write_text(seo.urlset_xml(seo.collect_sitemap_entries(e,static_urls)))
+sitemap_entries=seo.collect_sitemap_entries(e,static_urls)
+sitemap_entries.append({'url':PRICE_PAGE_URL,'lastmod':'2026-11-13'})
+(D/'sitemap.xml').write_text(seo.urlset_xml(sitemap_entries))
 (D/'news-sitemap.xml').write_text(seo.news_sitemap_xml(seo.collect_news_entries(e)))
 (D/'robots.txt').write_text(seo.robots_txt())
 items=''.join('<item><title>'+escape(a['title'])+'</title><link>'+BASE+'stories/'+a['slug']+'/</link><guid>'+FEED_GUID_BASE+'stories/'+a['slug']+'/</guid><pubDate>'+format_datetime(datetime.fromisoformat(a.get('publishedAt',e['publishedAt'])).replace(tzinfo=timezone.utc),usegmt=True)+'</pubDate><description>'+escape(a['summary'])+'</description></item>'for a in e['articles'])
