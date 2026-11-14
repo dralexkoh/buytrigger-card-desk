@@ -6,6 +6,24 @@ from email.utils import format_datetime
 from editorial_visuals import validate_editorial_visuals
 from xml.sax.saxutils import escape
 import site_seo as seo
+
+def digest_signup_html(form_id):
+ email_id='digest-email-'+form_id
+ return (
+  '<section class="digest-signup digest-signup-article" aria-labelledby="digest-title-'+form_id+'">'
+  '<span class="kicker red-text">FREE WEEKLY DIGEST</span>'
+  '<h2 id="digest-title-'+form_id+'">The week’s cards, in one email<span class="red-text">.</span></h2>'
+  '<p>Verified news, prices and Features, once a week. Free, and easy to leave.</p>'
+  '<form class="digest-form" method="post" action="https://app.kit.com/forms/REPLACE_ME/subscriptions" data-provider="kit" data-status="awaiting-account">'
+  '<label class="visually-hidden" for="'+email_id+'">Email address</label>'
+  '<input id="'+email_id+'" name="email_address" type="email" autocomplete="email" required placeholder="Your email">'
+  '<button type="submit" class="btn red">Subscribe</button>'
+  '<label class="digest-consent"><input type="checkbox" name="consent" value="weekly-digest" required> I agree to receive the weekly BuyTrigger.Cards digest by email. I can unsubscribe at any time.</label>'
+  '</form>'
+  '<p class="digest-privacy">We’ll only use your email for this digest. See the <a href="index.html#privacy">privacy note</a>. The list is not open yet; this form will go live once the mailing account is connected.</p>'
+  '</section>'
+ )
+
 P=Path(__file__).resolve().parents[1];D=P/'dist';BASE='https://buytrigger.cards/'
 # Existing item IDs remain stable across the custom-domain move.
 FEED_GUID_BASE='https://dralexkoh.github.io/buytrigger-card-desk/'
@@ -70,7 +88,7 @@ for a in e['articles']:
  content+=f'<figure class="reading-image"><div class="{cover_class}"><img src="{picture}" style="object-fit:contain;background:#fff" alt="{html.escape(a["imageAlt"])}"></div><figcaption>{html.escape(a["imageCredit"])}</figcaption></figure><div class="reading-layout"><article class="article-body">'
  for sec in a['sections']:content+=f'<section><h2>{html.escape(sec["heading"])}</h2>{sec["html"]}</section>'
  content+=authors[a['slug']]['profile']
- content+='<div class="source-box"><h3>Sources &amp; reading notes</h3>'+''.join(f'<a href="{html.escape(s["url"])}" rel="noopener noreferrer">{html.escape(s["label"])} ↗</a>' for s in a['sources'])+'</div><a class="btn red" href="index.html#journal">More features →</a></article></div>'
+ content+='<div class="source-box"><h3>Sources &amp; reading notes</h3>'+''.join(f'<a href="{html.escape(s["url"])}" rel="noopener noreferrer">{html.escape(s["label"])} ↗</a>' for s in a['sources'])+'</div><a class="btn red" href="index.html#journal">More features →</a></article></div>'+digest_signup_html(a['slug'])
  main.append(BeautifulSoup(content,'html.parser'));folder=D/'stories'/a['slug'];folder.mkdir(parents=True);(folder/'index.html').write_text(str(soup))
 soup=BeautifulSoup((P/'index.html').read_text(),'html.parser');soup.body['data-route']='drops';soup.title.string='Drops · Release Calendar · BuyTrigger.Cards'
 soup.select_one('link[rel=canonical]')['href']=BASE+'drops.html';soup.select_one('meta[property="og:url"]')['content']=BASE+'drops.html'
@@ -136,7 +154,7 @@ for w in e.get('wire',[]):
  img=''
  if picture and not str(picture).startswith(('http://','https://','//')) and (P/picture).is_file():
   img=f'<figure class="reading-image"><div class="story-cover full-image"><img src="{html.escape(picture)}" alt="{html.escape(w.get("imageAlt") or w["title"])}" style="object-fit:contain;background:#fff"></div><figcaption>{html.escape(w.get("imageCredit") or "")}</figcaption></figure>'
- content=f'<header class="reading-head"><a class="back-link" href="index.html#desk">← Back to the newsroom</a><span class="kicker red-text">{html.escape(w.get("category") or "Newsroom")}</span><h1>{html.escape(w["title"])}</h1><p>{html.escape(w.get("summary") or "")}</p><p class="news-credit"><span class="news-author">{byline}</span> · {html.escape(w.get("kind") or "Newsroom")} · {html.escape(w.get("displayDate") or published)}</p></header>{img}<div class="reading-layout"><article class="article-body">{paragraphs}{source}<p class="small">This brief is also listed on the <a href="index.html#desk/{html.escape(w["id"])}">Card Desk</a>.</p><a class="btn red" href="index.html#desk">More from the newsroom →</a></article></div>'
+ content=f'<header class="reading-head"><a class="back-link" href="index.html#desk">← Back to the newsroom</a><span class="kicker red-text">{html.escape(w.get("category") or "Newsroom")}</span><h1>{html.escape(w["title"])}</h1><p>{html.escape(w.get("summary") or "")}</p><p class="news-credit"><span class="news-author">{byline}</span> · {html.escape(w.get("kind") or "Newsroom")} · {html.escape(w.get("displayDate") or published)}</p></header>{img}<div class="reading-layout"><article class="article-body">{paragraphs}{source}<p class="small">This brief is also listed on the <a href="index.html#desk/{html.escape(w["id"])}">Card Desk</a>.</p><a class="btn red" href="index.html#desk">More from the newsroom →</a></article></div>'+digest_signup_html(w['id'])
  main.append(BeautifulSoup(content,'html.parser'));folder=D/'news'/w['id'];folder.mkdir(parents=True);(folder/'index.html').write_text(str(soup))
 
 static_urls=[BASE,BASE+'grading-calculator.html',BASE+'undervalued.html',BASE+'undervalued-japanese.html',BASE+'market.html',BASE+'30th-anniversary-index.html',BASE+'drops.html',BASE+'tcg-modern-index.html',BASE+'top-50.html',BASE+'bluechip-raw-archive.html']
