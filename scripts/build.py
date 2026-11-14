@@ -1,6 +1,7 @@
 from pathlib import Path
 from bs4 import BeautifulSoup
 import json, html, shutil, hashlib, subprocess
+from urllib.parse import quote
 from datetime import datetime, timezone
 from email.utils import format_datetime
 from editorial_visuals import validate_editorial_visuals
@@ -9,16 +10,38 @@ import site_seo as seo
 
 def digest_signup_html(form_id):
  title_id='digest-title-'+form_id
+ campaign=quote(str(form_id), safe='')
+ fallback='https://buytriggercards.substack.com/subscribe?utm_source=site&amp;utm_medium=signup&amp;utm_campaign='+html.escape(campaign, quote=True)
  return (
   '<section class="digest-signup digest-signup-article" aria-labelledby="'+title_id+'">'
   '<span class="kicker red-text">FREE WEEKLY DIGEST</span>'
-  '<h2 id="'+title_id+'">The week’s cards, in one email<span class="red-text">.</span></h2>'
-  '<p>Verified news, prices and Features, once a week. Free, and easy to leave.</p>'
+  '<h2 id="'+title_id+'">Get BuyTrigger.Cards Weekly<span class="red-text">.</span></h2>'
+  '<p>Free and weekly, covering verified Pokémon card news and prices.</p>'
   '<div class="digest-embed"><iframe src="https://buytriggercards.substack.com/embed" title="Subscribe to BuyTrigger.Cards Weekly" loading="lazy" width="480" height="320" frameborder="0" scrolling="no"></iframe></div>'
   '<p class="digest-consent">By signing up you agree to receive the weekly BuyTrigger.Cards digest by email. You can unsubscribe at any time.</p>'
   '<p class="digest-privacy">Substack sends the confirmation email and applies its <a href="https://substack.com/privacy" target="_blank" rel="noopener noreferrer">privacy policy</a>. We never see your password. See our <a href="index.html#privacy">privacy note</a>.</p>'
-  '<p class="digest-fallback">If the form doesn’t appear, <a href="https://buytriggercards.substack.com/subscribe?utm_source=site&amp;utm_medium=signup" target="_blank" rel="noopener noreferrer">subscribe on Substack</a>.</p>'
+  '<p class="digest-fallback">If the form doesn’t appear, <a href="'+fallback+'" target="_blank" rel="noopener noreferrer">subscribe on Substack</a>.</p>'
   '</section>'
+ )
+
+def advertise_main_html():
+ return (
+  '<section class="page-intro"><span class="kicker red-text">ADVERTISE / SPONSOR</span>'
+  '<h1>Put your brand<br>among the cards<span class="red-text">.</span></h1>'
+  '<p>BuyTrigger.Cards is read by Pokémon TCG collectors in the UK and worldwide. They come for verified news and market prices.</p>'
+  '<a class="btn red" href="mailto:hello@buytrigger.cards?subject=Advertising%20enquiry">Email the desk ↗</a>'
+  '<p class="advertise-email">hello@buytrigger.cards</p></section>'
+  '<section class="section"><div class="method-grid">'
+  '<article class="method-card"><h3>Who reads the site</h3><p>UK and worldwide Pokémon TCG collectors interested in news and market prices.</p></article>'
+  '<article class="method-card"><h3>Ways to take part</h3><ul class="advertise-options">'
+  '<li>Sponsored Feature placement</li>'
+  '<li>A sponsor slot in the weekly Substack digest, BuyTrigger.Cards Weekly</li>'
+  '<li>Newsletter or site banner</li>'
+  '<li>Drops partnerships</li>'
+  '</ul></article>'
+  '<article class="method-card"><h3>Sponsored content is labelled</h3><p>All sponsored content is labelled. Sponsors do not set our card rankings or editorial conclusions.</p></article>'
+  '<article class="method-card" id="audience-figures"><span class="kicker red-text">Placeholder</span><h3>Audience figures coming soon</h3><p>This placeholder stands in for traffic, subscriber and audience numbers. None are stated on this page.</p></article>'
+  '</div><a class="text-link" href="index.html#funding">Advertising and affiliate disclosures →</a></section>'
  )
 
 P=Path(__file__).resolve().parents[1];D=P/'dist';BASE='https://buytrigger.cards/'
@@ -154,7 +177,16 @@ for w in e.get('wire',[]):
  content=f'<header class="reading-head"><a class="back-link" href="index.html#desk">← Back to the newsroom</a><span class="kicker red-text">{html.escape(w.get("category") or "Newsroom")}</span><h1>{html.escape(w["title"])}</h1><p>{html.escape(w.get("summary") or "")}</p><p class="news-credit"><span class="news-author">{byline}</span> · {html.escape(w.get("kind") or "Newsroom")} · {html.escape(w.get("displayDate") or published)}</p></header>{img}<div class="reading-layout"><article class="article-body">{paragraphs}{source}<p class="small">This brief is also listed on the <a href="index.html#desk/{html.escape(w["id"])}">Card Desk</a>.</p><a class="btn red" href="index.html#desk">More from the newsroom →</a></article></div>'+digest_signup_html(w['id'])
  main.append(BeautifulSoup(content,'html.parser'));folder=D/'news'/w['id'];folder.mkdir(parents=True);(folder/'index.html').write_text(str(soup))
 
-static_urls=[BASE,BASE+'grading-calculator.html',BASE+'undervalued.html',BASE+'undervalued-japanese.html',BASE+'market.html',BASE+'30th-anniversary-index.html',BASE+'drops.html',BASE+'tcg-modern-index.html',BASE+'top-50.html',BASE+'bluechip-raw-archive.html']
+advertise_description='Advertising and sponsorship on BuyTrigger.Cards for shops and brands serving Pokémon TCG collectors. Audience figures coming soon.'
+soup=BeautifulSoup((P/'index.html').read_text(),'html.parser');soup.body['data-route']='advertise';soup.head.insert(0,soup.new_tag('base',href='../'))
+soup.title.string='Advertise / Sponsor · '+BRAND;url=BASE+'advertise/'
+soup.select_one('link[rel=canonical]')['href']=url
+for key,val in [('og:title','Advertise / Sponsor · '+BRAND),('og:description',advertise_description),('og:url',url),('og:type','website')]:soup.select_one('meta[property="'+key+'"]')['content']=val
+soup.select_one('meta[name=description]')['content']=advertise_description
+main=soup.select_one('main');main.clear();main.append(BeautifulSoup(advertise_main_html(),'html.parser'))
+folder=D/'advertise';folder.mkdir(parents=True);(folder/'index.html').write_text(str(soup))
+
+static_urls=[BASE,BASE+'grading-calculator.html',BASE+'undervalued.html',BASE+'undervalued-japanese.html',BASE+'market.html',BASE+'30th-anniversary-index.html',BASE+'drops.html',BASE+'tcg-modern-index.html',BASE+'top-50.html',BASE+'bluechip-raw-archive.html',BASE+'advertise/']
 (D/'sitemap.xml').write_text(seo.urlset_xml(seo.collect_sitemap_entries(e,static_urls)))
 (D/'news-sitemap.xml').write_text(seo.news_sitemap_xml(seo.collect_news_entries(e)))
 (D/'robots.txt').write_text(seo.robots_txt())
@@ -181,7 +213,7 @@ for document in D.rglob('*.html'):
   if not soup.select_one('meta[name="twitter:card"]'):
    seo.upsert_meta(soup,attr='name',key='twitter:card',content='summary_large_image')
   seo.apply_verification_meta(soup,verification)
- base=(document.parent/'../../').resolve() if soup.select_one('base') else document.parent
+ base_tag=soup.select_one('base[href]');base=(document.parent/base_tag['href']).resolve() if base_tag else document.parent
  for tag in soup.select('script[src],link[rel=stylesheet][href]'):
   attribute='src' if tag.name=='script' else 'href'
   value=tag[attribute]
