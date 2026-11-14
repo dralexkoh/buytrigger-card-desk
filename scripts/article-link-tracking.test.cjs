@@ -4,6 +4,7 @@ const manifest=JSON.parse(require('node:child_process').execFileSync('python3',[
 test('every built Feature and individual Newsroom brief resolves to a unique approved route',()=>{
  const seen=new Set();for(const a of e.articles){const route=A.resolveRoute('https://buytrigger.cards/stories/'+a.slug+'/',config,data);assert.equal(route.article,a.slug);assert.ok(!seen.has(route.url));seen.add(route.url);assert.equal(A.resolveRoute('https://buytrigger.cards/index.html#read/'+a.slug,config,data).url,route.url);}
  for(const n of e.wire)assert.equal(A.resolveRoute('https://buytrigger.cards/#desk/'+n.id,config,data).url,'/news/'+n.id+'/');
+ for(const n of e.wire)assert.equal(A.resolveRoute('https://buytrigger.cards/news/'+n.id+'/',config,data).url,'/news/'+n.id+'/');
  assert.equal(A.resolveRoute('https://buytrigger.cards/stories/welcome/#author-alex-koh',config,data,'read/welcome').article,'welcome');
 });
 test('all direct tools and index pages receive canonical identities; private routes stay excluded',()=>{

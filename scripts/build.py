@@ -5,6 +5,7 @@ from datetime import datetime, timezone
 from email.utils import format_datetime
 from editorial_visuals import validate_editorial_visuals
 from xml.sax.saxutils import escape
+import site_seo as seo
 P=Path(__file__).resolve().parents[1];D=P/'dist';BASE='https://buytrigger.cards/'
 # Existing item IDs remain stable across the custom-domain move.
 FEED_GUID_BASE='https://dralexkoh.github.io/buytrigger-card-desk/'
@@ -57,10 +58,12 @@ for a in e['articles']:
  soup.select_one('meta[name=description]')['content']=a['summary']
  published=a.get('publishedAt',e['publishedAt']);modified=a.get('updatedAt',published)
  persons=[{'@type':'Person','name':person['name'],'url':url+'#author-'+person['id']} for person in authors[a['slug']]['people']]
- author=persons[0] if len(persons)==1 else persons if persons else {'@type':'Organization','name':BYLINE}
+ author=persons[0] if len(persons)==1 else persons if persons else {'@type':'Organization','name':BRAND}
  picture=a['image']
- soup.select_one('meta[property="og:image"]')['content']=BASE+picture
- schema=soup.new_tag('script',type='application/ld+json');schema.string=json.dumps({'@context':'https://schema.org','@type':'Article','headline':a['title'],'description':a['summary'],'datePublished':published,'dateModified':modified,'author':author,'publisher':{'@type':'Organization','name':BRAND},'mainEntityOfPage':url,'image':BASE+picture},ensure_ascii=False).replace('</','<\\/');soup.head.append(schema)
+ image_schema,share_path,share_size=seo.schema_image(P,D,picture,kind='stories',slug=a['slug'],fallback_to_family=a['slug']=='welcome')
+ seo.apply_share_tags(soup,url=url,title=a['title'],description=a['summary'],image=BASE+share_path,og_type='article')
+ schema=seo.news_article_schema(headline=a['title'],url=url,date_published=published,date_modified=modified,image=image_schema,author=author,description=a['summary'])
+ seo.set_json_ld(soup,schema)
  main=soup.select_one('main');main.clear()
  content=f'<header class="reading-head"><a class="back-link" href="index.html#journal">← Back to features</a><span class="kicker red-text">{html.escape(a["eyebrow"])}</span><h1>{html.escape(a["title"])}</h1><p>{html.escape(a["summary"])}</p>'+(authors[a['slug']]['byline'] or '<p>BuyTrigger Cards · Published '+html.escape(published)+(' · Source story '+html.escape(a['sourcePublishedAt']) if a.get('sourcePublishedAt') else '')+'</p>')+'</header>'
  cover_class = "story-cover full-image" if a.get("visualStyle") == "source-media-v1" else "story-cover"
@@ -109,18 +112,60 @@ for route,filename,language,code in [('targets','undervalued.html','English','en
                 ''.join(f'<li>{html.escape(line)}</li>' for line in findings)+'</ul>') if findings else ''
  soup.select_one('main').clear();soup.select_one('main').append(BeautifulSoup(f'<section class="page-intro"><h1>{title}</h1><h2>Dated PSA 10 scenarios</h2>{overview}<details><summary>Earlier downside review</summary><p>{n} listings checked on <time datetime="{day}">{day}</time>. No card passed that review.</p>{findings_html}</details><nav aria-label="Undervalued card language"><a href="undervalued.html">English cards</a> · <a href="undervalued-japanese.html">Japanese cards</a></nav></section>','html.parser'))
  (D/filename).write_text(str(soup))
-urls=[BASE,BASE+'grading-calculator.html',BASE+'undervalued.html',BASE+'undervalued-japanese.html',BASE+'market.html',BASE+'30th-anniversary-index.html',BASE+'drops.html',BASE+'tcg-modern-index.html',BASE+'top-50.html',BASE+'bluechip-raw-archive.html']+[BASE+'stories/'+a['slug']+'/' for a in e['articles']]
-lastmods={BASE+'stories/'+a['slug']+'/':a.get('updatedAt',a.get('publishedAt',e['publishedAt'])) for a in e['articles']}
-(D/'sitemap.xml').write_text('<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'+''.join('<url><loc>'+escape(u)+'</loc><lastmod>'+lastmods.get(u,'2026-11-04')+'</lastmod></url>'for u in urls)+'</urlset>')
-(D/'robots.txt').write_text('User-agent: *\nAllow: /\nSitemap: '+BASE+'sitemap.xml\n')
+
+# Indexable Card Desk / Newsroom pages. Hash URLs (#desk/<id>) keep working.
+for w in e.get('wire',[]):
+ if not seo.ID_RE.fullmatch(w['id']):raise ValueError('Unusable wire id for /news/ URL: '+w['id'])
+ soup=BeautifulSoup((P/'index.html').read_text(),'html.parser');soup.body['data-route']='news/'+w['id'];soup.head.insert(0,soup.new_tag('base',href='../../'))
+ url=seo.news_url(w['id'])
+ published=w.get('date') or w.get('sourcePublishedAt') or e['publishedAt']
+ modified=w.get('checkedAt') or published
+ picture=w.get('image')
+ image_schema,share_path,share_size=seo.schema_image(P,D,picture,kind='news',slug=w['id'])
+ author_name=(w.get('author') or {}).get('name')
+ author={ '@type':'Person','name':author_name } if author_name else { '@type':'Organization','name':BRAND }
+ seo.apply_share_tags(soup,url=url,title=w['title'],description=w.get('summary') or w['title'],image=BASE+share_path,og_type='article')
+ schema=seo.news_article_schema(headline=w['title'],url=url,date_published=published,date_modified=modified,image=image_schema,author=author,description=w.get('summary') or w['title'])
+ seo.set_json_ld(soup,schema)
+ main=soup.select_one('main');main.clear()
+ byline=html.escape(author_name) if author_name else 'BuyTrigger.Cards'
+ source=''
+ if w.get('url') and w.get('sourceLabel'):
+  source='<p class="news-source"><a href="'+html.escape(w['url'])+'" rel="noopener noreferrer">Source: '+html.escape(w['sourceLabel'])+' ↗</a></p>'
+ paragraphs=''.join('<p>'+html.escape(part)+'</p>' for part in (w.get('summary') or '').split('\n\n') if part.strip())
+ img=''
+ if picture and not str(picture).startswith(('http://','https://','//')) and (P/picture).is_file():
+  img=f'<figure class="reading-image"><div class="story-cover full-image"><img src="{html.escape(picture)}" alt="{html.escape(w.get("imageAlt") or w["title"])}" style="object-fit:contain;background:#fff"></div><figcaption>{html.escape(w.get("imageCredit") or "")}</figcaption></figure>'
+ content=f'<header class="reading-head"><a class="back-link" href="index.html#desk">← Back to the newsroom</a><span class="kicker red-text">{html.escape(w.get("category") or "Newsroom")}</span><h1>{html.escape(w["title"])}</h1><p>{html.escape(w.get("summary") or "")}</p><p class="news-credit"><span class="news-author">{byline}</span> · {html.escape(w.get("kind") or "Newsroom")} · {html.escape(w.get("displayDate") or published)}</p></header>{img}<div class="reading-layout"><article class="article-body">{paragraphs}{source}<p class="small">This brief is also listed on the <a href="index.html#desk/{html.escape(w["id"])}">Card Desk</a>.</p><a class="btn red" href="index.html#desk">More from the newsroom →</a></article></div>'
+ main.append(BeautifulSoup(content,'html.parser'));folder=D/'news'/w['id'];folder.mkdir(parents=True);(folder/'index.html').write_text(str(soup))
+
+static_urls=[BASE,BASE+'grading-calculator.html',BASE+'undervalued.html',BASE+'undervalued-japanese.html',BASE+'market.html',BASE+'30th-anniversary-index.html',BASE+'drops.html',BASE+'tcg-modern-index.html',BASE+'top-50.html',BASE+'bluechip-raw-archive.html']
+(D/'sitemap.xml').write_text(seo.urlset_xml(seo.collect_sitemap_entries(e,static_urls)))
+(D/'news-sitemap.xml').write_text(seo.news_sitemap_xml(seo.collect_news_entries(e)))
+(D/'robots.txt').write_text(seo.robots_txt())
 items=''.join('<item><title>'+escape(a['title'])+'</title><link>'+BASE+'stories/'+a['slug']+'/</link><guid>'+FEED_GUID_BASE+'stories/'+a['slug']+'/</guid><pubDate>'+format_datetime(datetime.fromisoformat(a.get('publishedAt',e['publishedAt'])).replace(tzinfo=timezone.utc),usegmt=True)+'</pubDate><description>'+escape(a['summary'])+'</description></item>'for a in e['articles'])
 (D/'rss.xml').write_text('<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"><channel><title>BuyTrigger.Cards — Newsroom</title><link>'+BASE+'</link><description>Free news and practical card collecting research.</description><language>en-gb</language>'+items+'</channel></rss>')
 (D/'404.html').write_text('<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Page not found · BuyTrigger.Cards</title><body style="background:#f7f5ef;color:#171719;font-family:Arial;padding:10vw"><h1>That card slipped out of the binder.</h1><p>This page could not be found.</p><a style="color:#c01922" href="'+BASE+'">Back to BuyTrigger.Cards →</a></body></html>')
 (D/'.nojekyll').write_text('')
 # Content fingerprints prevent a cached old script/style from pairing with a
 # newer daily price edition. Source HTML remains readable and build-independent.
+verification=seo.verification_token(P)
 for document in D.rglob('*.html'):
  soup=BeautifulSoup(document.read_text(),'html.parser')
+ if soup.head:
+  seo.ensure_robots_preview(soup)
+  og_title=soup.select_one('meta[property="og:title"]')
+  og_description=soup.select_one('meta[property="og:description"]')
+  og_image=soup.select_one('meta[property="og:image"]')
+  if og_title and not soup.select_one('meta[name="twitter:title"]'):
+   seo.upsert_meta(soup,attr='name',key='twitter:title',content=og_title.get('content',''))
+  if og_description and not soup.select_one('meta[name="twitter:description"]'):
+   seo.upsert_meta(soup,attr='name',key='twitter:description',content=og_description.get('content',''))
+  if og_image and not soup.select_one('meta[name="twitter:image"]'):
+   seo.upsert_meta(soup,attr='name',key='twitter:image',content=og_image.get('content',''))
+  if not soup.select_one('meta[name="twitter:card"]'):
+   seo.upsert_meta(soup,attr='name',key='twitter:card',content='summary_large_image')
+  seo.apply_verification_meta(soup,verification)
  base=(document.parent/'../../').resolve() if soup.select_one('base') else document.parent
  for tag in soup.select('script[src],link[rel=stylesheet][href]'):
   attribute='src' if tag.name=='script' else 'href'
@@ -131,4 +176,4 @@ for document in D.rglob('*.html'):
   if not resource.is_file():raise ValueError('Missing public script/style: '+relative)
   tag[attribute]=relative+'?v='+hashlib.sha256(resource.read_bytes()).hexdigest()[:16]
  document.write_text(str(soup))
-print(f'Built {len(list(D.rglob("*")))} public files/directories. {len(e["articles"])} articles, RSS, sitemap and research page.')
+print(f'Built {len(list(D.rglob("*")))} public files/directories. {len(e["articles"])} articles, {len(e.get("wire",[]))} news briefs, RSS, sitemap and news sitemap.')

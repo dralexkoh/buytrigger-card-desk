@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
 Sitemap: https://buytrigger.cards/sitemap.xml
+Sitemap: https://buytrigger.cards/news-sitemap.xml

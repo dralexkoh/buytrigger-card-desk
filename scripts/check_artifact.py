@@ -73,7 +73,7 @@ for f in d.rglob('*'):
    if not (base/v.split('#')[0].split('?')[0]).exists():fail.append(f'{f.relative_to(d)}: missing {v}')
   if not soup.title:fail.append(f'{f}: missing title')
   if f.name!='404.html':
-   relative=str(f.relative_to(d));route='' if relative=='index.html' else relative.removesuffix('index.html') if relative.startswith('stories/') else relative
+   relative=str(f.relative_to(d));route='' if relative=='index.html' else relative.removesuffix('index.html') if relative.startswith(('stories/','news/')) else relative
    expected=PUBLIC_BASE+route
    canonical=soup.select_one('link[rel=canonical]');og=soup.select_one('meta[property="og:url"]');picture=soup.select_one('meta[property="og:image"]')
    if not canonical or canonical.get('href')!=expected:fail.append(f'{relative}: wrong canonical URL')
@@ -82,8 +82,14 @@ for f in d.rglob('*'):
    if 'https://dralexkoh.github.io/buytrigger-card-desk/' in s:fail.append(f'{relative}: old public domain in page')
    for tag in soup.select('script[type="application/ld+json"]'):
     structured=json.loads(tag.string)
-    if structured.get('@type')=='Article' and (structured.get('mainEntityOfPage')!=expected or not structured.get('image','').startswith(PUBLIC_BASE)):
-     fail.append(f'{relative}: wrong article metadata domain')
+    types=structured.get('@type')
+    types=types if isinstance(types,list) else [types]
+    if {'Article','NewsArticle'} & set(types):
+     from site_seo import schema_main_entity_url
+     image=structured.get('image')
+     image_url=image if isinstance(image,str) else (image or {}).get('url','')
+     if schema_main_entity_url(structured)!=expected or not str(image_url).startswith(PUBLIC_BASE):
+      fail.append(f'{relative}: wrong article metadata domain')
   analytics_tags=[tag for tag in soup.select('script[src]') if tag['src'].split('?',1)[0]=='analytics.js']
   if f.name!='404.html' and len(analytics_tags)!=1:fail.append(f'{f.relative_to(d)}: expected exactly one optional analytics client')
 site_map=ET.fromstring((d/'sitemap.xml').read_text())
@@ -92,7 +98,10 @@ feed=ET.fromstring((d/'rss.xml').read_text())
 assert all(node.text.startswith(PUBLIC_BASE) for node in feed.iter('link'))
 # Stable legacy GUIDs identify existing feed items; they are not current links.
 assert all(node.text.startswith('https://dralexkoh.github.io/buytrigger-card-desk/stories/') for node in feed.iter('guid'))
-assert 'Sitemap: '+PUBLIC_BASE+'sitemap.xml' in (d/'robots.txt').read_text()
+robots=(d/'robots.txt').read_text()
+assert 'Sitemap: '+PUBLIC_BASE+'sitemap.xml' in robots
+assert 'Sitemap: '+PUBLIC_BASE+'news-sitemap.xml' in robots
+assert (d/'news-sitemap.xml').is_file()
 assert PUBLIC_BASE in (d/'404.html').read_text()
 cat=(d/'catalogue.js').read_text();data=json.loads(cat[cat.index('=')+1:].strip().rstrip(';'))
 assert len(data['cards'])==100
@@ -128,10 +137,20 @@ for c in data['cards']:
  assert all(v is None or isinstance(v,(int,float)) and not isinstance(v,bool) and math.isfinite(v) and v>0 for v in values)
 editorial=json.loads((p/'editorial.json').read_text())
 assert {f.parent.name for f in (d/'stories').glob('*/index.html')}=={a['slug'] for a in editorial['articles']}
+from site_seo import validate_news_article, schema_main_entity_url, BASE as SEO_BASE, collect_news_entries, article_url, news_url, MIN_IMAGE_WIDTH
+def _schema_type(tag):
+ data=json.loads(tag.string); types=data.get('@type'); types=types if isinstance(types,list) else [types]; return data,types
 for article in editorial['articles']:
  page=BeautifulSoup((d/'stories'/article['slug']/'index.html').read_text(),'html.parser')
- schema=next(json.loads(t.string) for t in page.select('script[type="application/ld+json"]') if json.loads(t.string).get('@type')=='Article')
- assert schema['datePublished']==article.get('publishedAt',editorial['publishedAt'])
+ schema=next(data for data,types in (_schema_type(t) for t in page.select('script[type="application/ld+json"]')) if 'NewsArticle' in types)
+ published=article.get('publishedAt',editorial['publishedAt'])
+ # datePublished may be date-only or a full timestamp of the same day
+ assert schema['datePublished'][:10]==published[:10]
+ problems=validate_news_article(schema,url=article_url(article['slug']))
+ assert not problems, article['slug']+': '+'; '.join(problems)
+ assert page.select_one('meta[name="robots"]')['content'].find('max-image-preview:large')>=0
+ assert page.select_one('meta[name="twitter:card"]')
+ assert page.select_one('meta[name="twitter:image"]')
  if article.get('author',{}).get('type') in ('person','family'):
   declared=article['author'];ids=declared['members'] if declared['type']=='family' else [declared['id']]
   expected=[{'alex-koh':'Alex Koh','oscar':'Oscar'}[i] for i in ids]
@@ -140,6 +159,21 @@ for article in editorial['articles']:
   assert page.select_one('.person-byline')
   for author_id in ids:assert page.select_one('#author-'+author_id)
  else:assert schema['author']['@type']=='Organization'
+assert {f.parent.name for f in (d/'news').glob('*/index.html')}=={w['id'] for w in editorial.get('wire',[])}
+for brief in editorial.get('wire',[]):
+ page=BeautifulSoup((d/'news'/brief['id']/'index.html').read_text(),'html.parser')
+ schema=next(data for data,types in (_schema_type(t) for t in page.select('script[type="application/ld+json"]')) if 'NewsArticle' in types)
+ problems=validate_news_article(schema,url=news_url(brief['id']))
+ assert not problems, brief['id']+': '+'; '.join(problems)
+ assert page.select_one('a[href="index.html#desk/'+brief['id']+'"]') or page.select_one('a[href="index.html#desk"]')
+news_map=ET.fromstring((d/'news-sitemap.xml').read_text())
+assert all(node.text.startswith(PUBLIC_BASE) for node in news_map.iter('{http://www.sitemaps.org/schemas/sitemap/0.9}loc'))
+news_locs={node.text for node in news_map.iter('{http://www.sitemaps.org/schemas/sitemap/0.9}loc')}
+assert news_locs=={item['url'] for item in collect_news_entries(editorial)}
+# Every story and brief URL belongs in the full sitemap.
+locs={node.text for node in ET.fromstring((d/'sitemap.xml').read_text()).iter('{http://www.sitemaps.org/schemas/sitemap/0.9}loc')}
+assert all(article_url(a['slug']) in locs for a in editorial['articles'])
+assert all(news_url(w['id']) in locs for w in editorial.get('wire',[]))
 bluechip=json.loads((d/'bluechip-data.js').read_text().split('=',1)[1].strip().rstrip(';'))
 assert bluechip['rankingGrade']=='PSA 10' and bluechip['constituentCount']==50
 bluechip_page=BeautifulSoup((d/'top-50.html').read_text(),'html.parser')

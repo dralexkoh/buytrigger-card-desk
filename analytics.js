@@ -48,10 +48,11 @@
     const standalone = {'market.html':'market','30th-anniversary-index.html':'thirtieth','grading-calculator.html':'calculator','drops.html':'drops','undervalued.html':'targets','undervalued-japanese.html':'japan','bluechip-raw-archive.html':'bluechip-archive'};
     if (standalone[path] && !url.hash) { const id=standalone[path]; return {id,url:'/'+id,title:PAGES[id] || 'BlueChip Raw archive'}; }
     const storyPath = /^stories\/([a-z0-9-]+)\/(?:index\.html)?$/.exec(path);
-    if (path !== '' && path !== 'index.html' && path !== 'drops.html' && path !== 'grading-calculator.html' && !Object.hasOwn(standalone,path) && !storyPath) return null;
+    const newsPath = /^news\/([a-z0-9-]+)\/(?:index\.html)?$/.exec(path);
+    if (path !== '' && path !== 'index.html' && path !== 'drops.html' && path !== 'grading-calculator.html' && !Object.hasOwn(standalone,path) && !storyPath && !newsPath) return null;
     const hash = /^#author-(alex-koh|oscar)$/.test(url.hash) && bodyRoute.startsWith('read/') ? '' : url.hash.slice(1);
     // These pages render hashes before body.data-route; mirror that rule.
-    const requested = hash || bodyRoute || (path === 'drops.html' ? 'drops' : path === 'grading-calculator.html' ? 'calculator' : '') || (storyPath ? 'read/' + storyPath[1] : 'home');
+    const requested = hash || bodyRoute || (path === 'drops.html' ? 'drops' : path === 'grading-calculator.html' ? 'calculator' : '') || (storyPath ? 'read/' + storyPath[1] : newsPath ? 'news/' + newsPath[1] : 'home');
     const parts = requested.split('/');
     if (parts[0] === 'top50') return null; // Renderer redirects; destination owns the view.
     if (parts[0] === 'read' || parts[0] === 'about') {
@@ -59,7 +60,7 @@
       const article = data.articles.find(a => a.slug === slug);
       return article ? {id:'article:' + slug, url:'/stories/' + slug + '/', title:'Story: ' + slug, article:slug} : {id:'story-not-found',url:'/story-not-found',title:'Story not found'};
     }
-    if (parts[0] === 'desk' && parts[1]) {
+    if ((parts[0] === 'desk' || parts[0] === 'news') && parts[1]) {
       const brief=data.wire?.find(a => a.id===parts[1]);
       if (brief) return {id:'news:'+brief.id,url:'/news/'+brief.id+'/',title:brief.title};
     }
