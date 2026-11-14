@@ -44,3 +44,6 @@
   .digest-signup-article{padding:22px 18px;margin:22px 0}
   .digest-embed iframe{height:360px}
 }
+.advertise-options{margin:0;padding-left:1.15em;color:var(--muted);font-size:16px;line-height:1.55}
+.advertise-options li+li{margin-top:8px}
+.method-card>.kicker{margin-bottom:8px}
