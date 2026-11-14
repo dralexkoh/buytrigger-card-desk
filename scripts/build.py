@@ -8,19 +8,16 @@ from xml.sax.saxutils import escape
 import site_seo as seo
 
 def digest_signup_html(form_id):
- email_id='digest-email-'+form_id
+ title_id='digest-title-'+form_id
  return (
-  '<section class="digest-signup digest-signup-article" aria-labelledby="digest-title-'+form_id+'">'
+  '<section class="digest-signup digest-signup-article" aria-labelledby="'+title_id+'">'
   '<span class="kicker red-text">FREE WEEKLY DIGEST</span>'
-  '<h2 id="digest-title-'+form_id+'">The week’s cards, in one email<span class="red-text">.</span></h2>'
+  '<h2 id="'+title_id+'">The week’s cards, in one email<span class="red-text">.</span></h2>'
   '<p>Verified news, prices and Features, once a week. Free, and easy to leave.</p>'
-  '<form class="digest-form" method="post" action="https://app.kit.com/forms/REPLACE_ME/subscriptions" data-provider="kit" data-status="awaiting-account">'
-  '<label class="visually-hidden" for="'+email_id+'">Email address</label>'
-  '<input id="'+email_id+'" name="email_address" type="email" autocomplete="email" required placeholder="Your email">'
-  '<button type="submit" class="btn red">Subscribe</button>'
-  '<label class="digest-consent"><input type="checkbox" name="consent" value="weekly-digest" required> I agree to receive the weekly BuyTrigger.Cards digest by email. I can unsubscribe at any time.</label>'
-  '</form>'
-  '<p class="digest-privacy">We’ll only use your email for this digest. See the <a href="index.html#privacy">privacy note</a>. The list is not open yet; this form will go live once the mailing account is connected.</p>'
+  '<div class="digest-embed"><iframe src="https://buytriggercards.substack.com/embed" title="Subscribe to BuyTrigger.Cards Weekly" loading="lazy" width="480" height="320" frameborder="0" scrolling="no"></iframe></div>'
+  '<p class="digest-consent">By signing up you agree to receive the weekly BuyTrigger.Cards digest by email. You can unsubscribe at any time.</p>'
+  '<p class="digest-privacy">Substack sends the confirmation email and applies its <a href="https://substack.com/privacy" target="_blank" rel="noopener noreferrer">privacy policy</a>. We never see your password. See our <a href="index.html#privacy">privacy note</a>.</p>'
+  '<p class="digest-fallback">If the form doesn’t appear, <a href="https://buytriggercards.substack.com/subscribe?utm_source=site&amp;utm_medium=signup" target="_blank" rel="noopener noreferrer">subscribe on Substack</a>.</p>'
   '</section>'
  )
 
