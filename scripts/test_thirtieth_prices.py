@@ -69,10 +69,32 @@ class PageTests(unittest.TestCase):
         self.assertEqual(self.page.select_one('meta[property="og:url"]')['content'], prices.PRICE_PAGE_URL)
         self.assertIn('index, follow', self.page.select_one('meta[name=robots]')['content'])
         self.assertEqual(self.page.select_one('base')['href'], '../../')
-        footer = self.page.select_one('footer a[href="prices/thirtieth-anniversary/"]')
+        footer = self.page.select_one('footer a[href="/prices/thirtieth-anniversary/"]')
         self.assertEqual(footer.get_text(), '30th Anniversary prices')
         self.assertEqual(footer.get('aria-current'), 'page')
+        modern = self.page.select_one('footer a[href="/prices/tcg-modern/"]')
+        self.assertEqual(modern.get_text(), 'TCG Modern prices')
+        self.assertIsNone(modern.get('aria-current'))
+        self.assertEqual(self.page.select_one('header a.brand')['href'], '/index.html#home')
+        self.assertEqual(self.page.select_one('#site-nav a[data-nav="journal"]')['href'], '/index.html#journal')
+        self.assertEqual(self.page.select_one('#site-nav a[data-nav="drops"]')['href'], '/drops.html')
+        self.assertEqual(self.page.select_one('a.private-link')['href'], 'https://cards.alexkoh.me/')
+        self.assertEqual(self.page.select_one('a.skip')['href'], '#main')
         self.assertIsNone(self.page.select_one('script[src="site.js"]'))
+
+    def test_homepage_links_stay_document_relative(self):
+        home = BeautifulSoup((ROOT / 'index.html').read_text(), 'html.parser')
+        self.assertIsNone(home.select_one('base'))
+        self.assertEqual(home.select_one('#site-nav a[data-nav="journal"]')['href'], '#journal')
+        self.assertEqual(home.select_one('#site-nav a[data-nav="drops"]')['href'], 'drops.html')
+        self.assertEqual(home.select_one('footer a[href="prices/thirtieth-anniversary/"]').get_text(), '30th Anniversary prices')
+        self.assertEqual(home.select_one('footer a[href="prices/tcg-modern/"]').get_text(), 'TCG Modern prices')
+        self.assertEqual(home.select_one('main h1').get_text(), 'BuyTrigger.Cards')
+        for link in home.select('header a[href], footer a[href]'):
+            href = link.get('href') or ''
+            if href.startswith(('http://', 'https://', 'mailto:', '//')):
+                continue
+            self.assertFalse(href.startswith('/'), href)
 
     def test_rows_use_local_images_and_plain_tcgplayer_links(self):
         images = self.page.select('#price-table img')
