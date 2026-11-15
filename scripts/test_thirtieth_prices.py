@@ -13,7 +13,6 @@ import digest_signup
 import thirtieth_prices as prices
 
 ROOT = Path(__file__).resolve().parents[1]
-SUBSCRIBE = 'https://buytriggercards.substack.com/subscribe?utm_source=site&utm_medium=signup&utm_campaign=thirtieth-anniversary-prices'
 SOURCE = 'Raw (ungraded) prices, source: TCGCSV market price, as of 13 Nov 2026'
 
 
@@ -93,14 +92,24 @@ class PageTests(unittest.TestCase):
         self.assertEqual(len(ids), 195)
         self.assertEqual(self.page.select_one('#price-table tbody tr .price-number').get_text(), self.page.select_one('#price-table tbody tr')['data-number'])
 
-    def test_reuses_the_digest_with_the_price_page_campaign(self):
+    def test_reuses_the_shared_digest_band(self):
         block = self.page.select_one('.digest-signup')
         self.assertIsNotNone(block)
-        self.assertEqual(block.select_one('iframe')['src'], 'https://buytriggercards.substack.com/embed')
-        self.assertEqual(block.select_one('.digest-fallback a')['href'], SUBSCRIBE)
+        self.assertIsNone(block.select_one('iframe'))
+        form = block.select_one('form.digest-form')
+        self.assertEqual(form['action'], 'https://buytriggercards.substack.com/subscribe')
+        self.assertEqual(form.get('method'), 'get')
+        self.assertEqual(form.get('target'), '_blank')
+        email = form.select_one('input[name=email]')
+        self.assertEqual(email['type'], 'email')
+        self.assertTrue(email.has_attr('required'))
+        self.assertEqual(block.select_one('label')['for'], email['id'])
+        self.assertEqual(form.select_one('input[name=utm_campaign]')['value'], 'digest-band')
+        self.assertIn('Free, weekly, unsubscribe anytime. Handled by Substack.', block.get_text(' ', strip=True))
         plain = digest_signup.digest_signup_html('story-slug')
-        self.assertIn('utm_source=site&amp;utm_medium=signup&amp;utm_campaign=story-slug', plain)
-        self.assertIn('Get BuyTrigger.Cards Weekly', plain)
+        self.assertIn('name="utm_campaign" value="digest-band"', plain)
+        self.assertIn('The week’s cards, in one email.', plain)
+        self.assertNotIn('iframe', plain)
 
     def test_sort_and_filter_controls_are_present(self):
         self.assertEqual(self.page.select_one('#price-sort option[selected]')['value'], 'price-desc')

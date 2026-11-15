@@ -145,10 +145,19 @@ def assert_digest_signup(path, campaign):
  body=html.find('class="article-body"');signup=html.find('digest-signup')
  assert 0<=body<signup, f'{path}: sign-up is not after the article body'
  page=BeautifulSoup(html,'html.parser');block=page.select_one('section.digest-signup')
- assert block and block.select_one('iframe')['src']=='https://buytriggercards.substack.com/embed'
- assert block.select_one('h2').get_text('',strip=True).startswith('Get BuyTrigger.Cards Weekly')
- assert 'Free and weekly, covering verified Pokémon card news and prices.' in block.get_text(' ',strip=True)
- assert block.select_one('.digest-fallback a')['href']=='https://buytriggercards.substack.com/subscribe?utm_source=site&utm_medium=signup&utm_campaign='+campaign
+ assert block and block.select_one('iframe') is None
+ assert block.select_one('h2').get_text('',strip=True)=='The week’s cards, in one email.'
+ assert 'Verified news, prices and Features, once a week.' in block.get_text(' ',strip=True)
+ assert 'Free, weekly, unsubscribe anytime. Handled by Substack.' in block.get_text(' ',strip=True)
+ form=block.select_one('form.digest-form')
+ assert form['action']=='https://buytriggercards.substack.com/subscribe' and form['method']=='get' and form['target']=='_blank'
+ email=form.select_one('input[name=email]')
+ assert email['type']=='email' and email.has_attr('required') and block.select_one('label')['for']==email['id']
+ assert form.select_one('input[name=utm_source]')['value']=='site'
+ assert form.select_one('input[name=utm_medium]')['value']=='signup'
+ assert form.select_one('input[name=utm_campaign]')['value']=='digest-band'
+ assert block.select_one('.digest-note a')['href']=='index.html#privacy'
+ assert campaign
 from site_seo import validate_news_article, schema_main_entity_url, BASE as SEO_BASE, collect_news_entries, article_url, news_url, MIN_IMAGE_WIDTH
 def _schema_type(tag):
  data=json.loads(tag.string); types=data.get('@type'); types=types if isinstance(types,list) else [types]; return data,types
@@ -207,7 +216,11 @@ assert home.select_one('footer a[href="prices/thirtieth-anniversary/"]')
 assert PUBLIC_BASE+'advertise/' in locs
 assert home.select_one('a.advertise-link')['href']=='advertise/'
 assert all('advertise' not in (a.get('href') or '') for a in home.select('#site-nav a'))
-assert 'utm_campaign' not in home.select_one('#digest-signup .digest-fallback a')['href']
+home_form=home.select_one('#digest-signup form.digest-form')
+assert home_form['action']=='https://buytriggercards.substack.com/subscribe'
+assert home_form.select_one('input[name=utm_campaign]')['value']=='digest-band'
+assert home.select_one('#digest-signup iframe') is None
+assert home.select_one('#digest-signup .digest-note a')['href']=='#privacy'
 ad=BeautifulSoup((d/'advertise'/'index.html').read_text(),'html.parser')
 assert ad.select_one('link[rel=canonical]')['href']==PUBLIC_BASE+'advertise/'
 assert ad.body.get('data-route')=='advertise'
