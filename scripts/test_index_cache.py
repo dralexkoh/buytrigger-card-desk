@@ -1,8 +1,10 @@
 """TCG Modern cache reuses the collector already run for the public refresh."""
+import io
 import json
 import shutil
 import tempfile
 import unittest
+from contextlib import redirect_stdout
 from datetime import datetime, timedelta
 from pathlib import Path
 
@@ -139,7 +141,8 @@ class IndexCacheTests(unittest.TestCase):
         shared = {**CARD, 'productId': '717607', 'groupId': '24722', 'name': 'Mew - R/RGB',
                   'set': 'ME: 30th Celebration', 'number': 'R/RGB', 'image': 'assets/thirtieth/717607.jpg'}
         points = [{'day': '2026-11-13', 'usd': 10.5, 'status': 'ok', 'source': 'https://tcgcsv.com/tcgplayer/3/24722/prices', 'sourceSha256': SHA}]
-        prior = {'cards': [{'productId': 717607, 'points': points}]}
+        prior = {'cards': [{'productId': 717607, 'set': shared['set'], 'number': shared['number'],
+                            'language': shared['language'], 'printing': shared['printing'], 'points': points}]}
         original = json.dumps(prior, sort_keys=True)
         self.seed([('2026-11-13', [row(shared, 'accepted', 1)])], cards=(shared,), prior=prior)
         (self.root / 'data/market-cache/thirtieth-current.json').write_text(original)
@@ -149,6 +152,23 @@ class IndexCacheTests(unittest.TestCase):
         cache = json.loads((self.root / 'data/market-cache/tcg-modern-current.json').read_text())
         self.assertEqual(cache['cards'][0]['points'], points)
         self.assertEqual(cache['grade'], 'Raw')
+
+    def test_product_id_match_with_a_different_printing_does_not_copy_thirtieth_history(self):
+        shared = {**CARD, 'productId': '717607', 'groupId': '24722', 'name': 'Mew - R/RGB',
+                  'set': 'ME: 30th Celebration', 'number': '999/999', 'image': 'assets/thirtieth/717607.jpg'}
+        copied = [{'day': '2026-11-13', 'usd': 10.5, 'status': 'ok', 'source': 'https://tcgcsv.com/tcgplayer/3/24722/prices', 'sourceSha256': SHA}]
+        prior = {'cards': [{'productId': 717607, 'set': 'ME: 30th Celebration', 'number': 'R/RGB',
+                            'language': 'English', 'printing': 'Holofoil', 'points': copied}]}
+        self.seed([('2026-11-13', [row(shared, 'accepted', 4.25)])], cards=(shared,), prior=prior)
+        log = io.StringIO()
+        with redirect_stdout(log):
+            cache = index_cache.build(self.root, roster(shared))
+        self.assertIn('index cache warning: product 717607', log.getvalue())
+        self.assertIn('not copying that history', log.getvalue())
+        point = cache['cards'][0]['points'][0]
+        self.assertEqual(point['usd'], 4.25)
+        self.assertEqual(point['status'], 'ok')
+        self.assertNotEqual(cache['cards'][0]['points'], copied)
 
     def test_failure_skips_the_cache_and_never_overwrites_thirtieth(self):
         prior = self.root / 'data/market-cache/thirtieth-current.json'
@@ -164,7 +184,9 @@ class IndexCacheTests(unittest.TestCase):
 
     def test_non_positive_shared_price_is_not_published(self):
         shared = {**CARD, 'productId': '717607', 'groupId': '24722', 'image': 'assets/thirtieth/717607.jpg'}
-        prior = {'cards': [{'productId': 717607, 'points': [{'day': '2026-11-13', 'usd': 0, 'status': 'ok',
+        prior = {'cards': [{'productId': 717607, 'set': shared['set'], 'number': shared['number'],
+                 'language': shared['language'], 'printing': shared['printing'],
+                 'points': [{'day': '2026-11-13', 'usd': 0, 'status': 'ok',
                  'source': 'https://tcgcsv.com/tcgplayer/3/24722/prices', 'sourceSha256': SHA}]}]}
         self.seed([('2026-11-13', [row(shared, 'accepted', 10)])], cards=(shared,), prior=prior)
         self.assertEqual(index_cache.write_all(self.root), [])
@@ -195,6 +217,8 @@ class IndexCacheTests(unittest.TestCase):
     def test_commit_allowlist_accepts_index_caches_and_existing_outputs_only(self):
         self.assertTrue(promoted_path_allowed('data/market-cache/tcg-modern-current.json'))
         self.assertTrue(promoted_path_allowed('data/market-cache/thirtieth-current.json'))
+        self.assertFalse(promoted_path_allowed('data/market-cache/other-current.json'))
+        self.assertFalse(promoted_path_allowed('data/market-cache/thirtieth-anniversary-current.json'))
         self.assertTrue(promoted_path_allowed('catalogue.js'))
         self.assertTrue(promoted_path_allowed('data/refresh/observations/2026-11-13/raw.json'))
         self.assertFalse(promoted_path_allowed('data/market-cache/tcg-modern-current.json.bak'))

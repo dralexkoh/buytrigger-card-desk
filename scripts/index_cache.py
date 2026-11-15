@@ -1,10 +1,11 @@
 """Per-index shared-DB caches built from the existing collector's committed observations.
 
 No network calls. Reuses data/refresh/observations + receipts written by daily_refresh.py
-(the same TCGCSV fetch), so this is not a second collector. Cards that are also in the
-30th roster copy their points from thirtieth-current.json so both indices carry identical
-observations. A missing or non-positive source is null for that day; earlier positive
-points keep their own day. Zero is never written.
+(the same TCGCSV fetch), so this is not a second collector. A card copies points from
+thirtieth-current.json only when the product ID and the set, number, language and
+printing all match. A product-ID hit with a different printing is not copied. A missing
+or non-positive source is null for that day; earlier positive points keep their own day.
+Zero is never written.
 
 Output: data/market-cache/<index>-current.json, the file card_market_tcgcsv_refresh()
 fetches at 14:30 Europe/London. The object matches the 30th cache contract: schemaVersion
@@ -26,6 +27,9 @@ IMAGE = re.compile(r'^assets/[a-z0-9][a-z0-9-]{1,80}/[0-9]+\.jpg$')
 DIGITS = re.compile(r'^[0-9]{1,9}$')
 
 def _positive(n): return isinstance(n,(int,float)) and not isinstance(n,bool) and math.isfinite(n) and n>0
+
+def _same_printing(card, shared):
+    return all(card.get(field)==shared.get(field) for field in ('set','number','language','printing'))
 
 def _days(root):
     out=[]
@@ -91,10 +95,12 @@ def build(root, roster):
     for c in cards:
         ident={k:c[k] for k in ['productId','groupId','name','set','number','language','printing','image']}
         shared=t30.get(int(c['productId'])) or t30.get(str(c['productId']))
-        if shared:
+        if shared and _same_printing(c, shared):
             pts=shared['points']
             if any(p.get('usd') is not None and not _positive(p.get('usd')) for p in pts): raise ValueError(f"Non-positive shared price for {c['productId']}")
             out.append({**ident,'points':pts}); continue
+        if shared:
+            print(f"index cache warning: product {c['productId']} matches a 30th product but set, number, language or printing differ; not copying that history")
         url=f"https://tcgcsv.com/tcgplayer/3/{c['groupId']}/prices"; key=f"{c['productId']}|{c['printing']}"; pts=[]
         for day,obs,src,_ in days:
             o=obs.get(key); sha=src.get(url)

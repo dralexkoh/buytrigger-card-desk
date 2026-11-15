@@ -11,11 +11,16 @@ def git(*args,check=True):
 ALLOWED={'catalogue.js','market-history.js','market-release.json','market-sources.json',
          'top50-data.js','top50-release.json','top50-sources.json','refresh-status.json','data/market-cache/thirtieth-current.json',
          'bluechip-collection-data.js','bluechip-collection-sources.json'}
+# Per-index caches the publisher may commit. thirtieth-current.json stays on the
+# explicit list above and is not accepted through this name check.
+INDEX_CACHES={'tcg-modern'}
 
 
-def promoted_path_allowed(name, allowed=ALLOWED):
+def promoted_path_allowed(name, allowed=ALLOWED, index_caches=INDEX_CACHES):
     p=Path(name)
-    index_cache=len(p.parts)==3 and p.parts[:2]==('data','market-cache') and p.name.endswith('-current.json')
+    suffix='-current.json'
+    index_name=p.name[:-len(suffix)] if p.name.endswith(suffix) else ''
+    index_cache=len(p.parts)==3 and p.parts[:2]==('data','market-cache') and index_name in index_caches
     return not (p.is_absolute() or '..' in p.parts or not (name in allowed or index_cache or name.startswith('data/refresh/') and p.suffix=='.json'))
 
 
