@@ -6,6 +6,29 @@ from email.utils import format_datetime
 from editorial_visuals import validate_editorial_visuals
 from xml.sax.saxutils import escape
 import site_seo as seo
+from digest_signup import digest_signup_html
+from thirtieth_prices import publish_price_page, PRICE_PAGE_URL
+
+def advertise_main_html():
+ return (
+  '<section class="page-intro"><span class="kicker red-text">ADVERTISE / SPONSOR</span>'
+  '<h1>Put your brand<br>among the cards<span class="red-text">.</span></h1>'
+  '<p>BuyTrigger.Cards is read by Pokémon TCG collectors in the UK and worldwide. They come for verified news and market prices.</p>'
+  '<a class="btn red" href="mailto:hello@buytrigger.cards?subject=Advertising%20enquiry">Email the desk ↗</a>'
+  '<p class="advertise-email">hello@buytrigger.cards</p></section>'
+  '<section class="section"><div class="method-grid">'
+  '<article class="method-card"><h3>Who reads the site</h3><p>UK and worldwide Pokémon TCG collectors interested in news and market prices.</p></article>'
+  '<article class="method-card"><h3>Ways to take part</h3><ul class="advertise-options">'
+  '<li>Sponsored Feature placement</li>'
+  '<li>A sponsor slot in the weekly Substack digest, BuyTrigger.Cards Weekly</li>'
+  '<li>Newsletter or site banner</li>'
+  '<li>Drops partnerships</li>'
+  '</ul></article>'
+  '<article class="method-card"><h3>Sponsored content is labelled</h3><p>All sponsored content is labelled. Sponsors do not set our card rankings or editorial conclusions.</p></article>'
+  '<article class="method-card" id="audience-figures"><span class="kicker red-text">Placeholder</span><h3>Audience figures coming soon</h3><p>This placeholder stands in for traffic, subscriber and audience numbers. None are stated on this page.</p></article>'
+  '</div><a class="text-link" href="index.html#funding">Advertising and affiliate disclosures →</a></section>'
+ )
+
 P=Path(__file__).resolve().parents[1];D=P/'dist';BASE='https://buytrigger.cards/'
 # Existing item IDs remain stable across the custom-domain move.
 FEED_GUID_BASE='https://dralexkoh.github.io/buytrigger-card-desk/'
@@ -17,6 +40,7 @@ FILES+=['bluechip-raw-archive.html','bluechip-engine.js','bluechip.js','bluechip
 FILES+=['bluechip-collection-data.js','bluechip-collection-sources.json']
 FILES+=['grading-calculator.js','grading-calculator.css']
 FILES+=['thirtieth-engine.js','thirtieth.js','thirtieth.css','thirtieth-catalogue.json','thirtieth-release.json']
+FILES+=['prices-thirtieth.js','prices-thirtieth.css']
 for name in FILES:shutil.copy2(P/name,D/name)
 bluechip=json.loads((P/'bluechip-release.json').read_text())
 bluechip_check=json.loads(subprocess.check_output(['node','-e',"const fs=require('node:fs'),B=require('./bluechip-engine.js');const d=JSON.parse(fs.readFileSync('bluechip-release.json'));process.stdout.write(JSON.stringify(B.review(d)));"],cwd=P))
@@ -70,7 +94,7 @@ for a in e['articles']:
  content+=f'<figure class="reading-image"><div class="{cover_class}"><img src="{picture}" style="object-fit:contain;background:#fff" alt="{html.escape(a["imageAlt"])}"></div><figcaption>{html.escape(a["imageCredit"])}</figcaption></figure><div class="reading-layout"><article class="article-body">'
  for sec in a['sections']:content+=f'<section><h2>{html.escape(sec["heading"])}</h2>{sec["html"]}</section>'
  content+=authors[a['slug']]['profile']
- content+='<div class="source-box"><h3>Sources &amp; reading notes</h3>'+''.join(f'<a href="{html.escape(s["url"])}" rel="noopener noreferrer">{html.escape(s["label"])} ↗</a>' for s in a['sources'])+'</div><a class="btn red" href="index.html#journal">More features →</a></article></div>'
+ content+='<div class="source-box"><h3>Sources &amp; reading notes</h3>'+''.join(f'<a href="{html.escape(s["url"])}" rel="noopener noreferrer">{html.escape(s["label"])} ↗</a>' for s in a['sources'])+'</div><a class="btn red" href="index.html#journal">More features →</a></article></div>'+digest_signup_html(a['slug'])
  main.append(BeautifulSoup(content,'html.parser'));folder=D/'stories'/a['slug'];folder.mkdir(parents=True);(folder/'index.html').write_text(str(soup))
 soup=BeautifulSoup((P/'index.html').read_text(),'html.parser');soup.body['data-route']='drops';soup.title.string='Drops · Release Calendar · BuyTrigger.Cards'
 soup.select_one('link[rel=canonical]')['href']=BASE+'drops.html';soup.select_one('meta[property="og:url"]')['content']=BASE+'drops.html'
@@ -136,11 +160,23 @@ for w in e.get('wire',[]):
  img=''
  if picture and not str(picture).startswith(('http://','https://','//')) and (P/picture).is_file():
   img=f'<figure class="reading-image"><div class="story-cover full-image"><img src="{html.escape(picture)}" alt="{html.escape(w.get("imageAlt") or w["title"])}" style="object-fit:contain;background:#fff"></div><figcaption>{html.escape(w.get("imageCredit") or "")}</figcaption></figure>'
- content=f'<header class="reading-head"><a class="back-link" href="index.html#desk">← Back to the newsroom</a><span class="kicker red-text">{html.escape(w.get("category") or "Newsroom")}</span><h1>{html.escape(w["title"])}</h1><p>{html.escape(w.get("summary") or "")}</p><p class="news-credit"><span class="news-author">{byline}</span> · {html.escape(w.get("kind") or "Newsroom")} · {html.escape(w.get("displayDate") or published)}</p></header>{img}<div class="reading-layout"><article class="article-body">{paragraphs}{source}<p class="small">This brief is also listed on the <a href="index.html#desk/{html.escape(w["id"])}">Card Desk</a>.</p><a class="btn red" href="index.html#desk">More from the newsroom →</a></article></div>'
+ content=f'<header class="reading-head"><a class="back-link" href="index.html#desk">← Back to the newsroom</a><span class="kicker red-text">{html.escape(w.get("category") or "Newsroom")}</span><h1>{html.escape(w["title"])}</h1><p>{html.escape(w.get("summary") or "")}</p><p class="news-credit"><span class="news-author">{byline}</span> · {html.escape(w.get("kind") or "Newsroom")} · {html.escape(w.get("displayDate") or published)}</p></header>{img}<div class="reading-layout"><article class="article-body">{paragraphs}{source}<p class="small">This brief is also listed on the <a href="index.html#desk/{html.escape(w["id"])}">Card Desk</a>.</p><a class="btn red" href="index.html#desk">More from the newsroom →</a></article></div>'+digest_signup_html(w['id'])
  main.append(BeautifulSoup(content,'html.parser'));folder=D/'news'/w['id'];folder.mkdir(parents=True);(folder/'index.html').write_text(str(soup))
 
-static_urls=[BASE,BASE+'grading-calculator.html',BASE+'undervalued.html',BASE+'undervalued-japanese.html',BASE+'market.html',BASE+'30th-anniversary-index.html',BASE+'drops.html',BASE+'tcg-modern-index.html',BASE+'top-50.html',BASE+'bluechip-raw-archive.html']
-(D/'sitemap.xml').write_text(seo.urlset_xml(seo.collect_sitemap_entries(e,static_urls)))
+publish_price_page(P, D)
+advertise_description='Advertising and sponsorship on BuyTrigger.Cards for shops and brands serving Pokémon TCG collectors. Audience figures coming soon.'
+soup=BeautifulSoup((P/'index.html').read_text(),'html.parser');soup.body['data-route']='advertise';soup.head.insert(0,soup.new_tag('base',href='../'))
+soup.title.string='Advertise / Sponsor · '+BRAND;url=BASE+'advertise/'
+soup.select_one('link[rel=canonical]')['href']=url
+for key,val in [('og:title','Advertise / Sponsor · '+BRAND),('og:description',advertise_description),('og:url',url),('og:type','website')]:soup.select_one('meta[property="'+key+'"]')['content']=val
+soup.select_one('meta[name=description]')['content']=advertise_description
+main=soup.select_one('main');main.clear();main.append(BeautifulSoup(advertise_main_html(),'html.parser'))
+folder=D/'advertise';folder.mkdir(parents=True);(folder/'index.html').write_text(str(soup))
+
+static_urls=[BASE,BASE+'grading-calculator.html',BASE+'undervalued.html',BASE+'undervalued-japanese.html',BASE+'market.html',BASE+'30th-anniversary-index.html',BASE+'drops.html',BASE+'tcg-modern-index.html',BASE+'top-50.html',BASE+'bluechip-raw-archive.html',BASE+'advertise/']
+sitemap_entries=seo.collect_sitemap_entries(e,static_urls)
+sitemap_entries.append({'url':PRICE_PAGE_URL,'lastmod':'2026-11-13'})
+(D/'sitemap.xml').write_text(seo.urlset_xml(sitemap_entries))
 (D/'news-sitemap.xml').write_text(seo.news_sitemap_xml(seo.collect_news_entries(e)))
 (D/'robots.txt').write_text(seo.robots_txt())
 items=''.join('<item><title>'+escape(a['title'])+'</title><link>'+BASE+'stories/'+a['slug']+'/</link><guid>'+FEED_GUID_BASE+'stories/'+a['slug']+'/</guid><pubDate>'+format_datetime(datetime.fromisoformat(a.get('publishedAt',e['publishedAt'])).replace(tzinfo=timezone.utc),usegmt=True)+'</pubDate><description>'+escape(a['summary'])+'</description></item>'for a in e['articles'])
@@ -166,7 +202,7 @@ for document in D.rglob('*.html'):
   if not soup.select_one('meta[name="twitter:card"]'):
    seo.upsert_meta(soup,attr='name',key='twitter:card',content='summary_large_image')
   seo.apply_verification_meta(soup,verification)
- base=(document.parent/'../../').resolve() if soup.select_one('base') else document.parent
+ base_tag=soup.select_one('base[href]');base=(document.parent/base_tag['href']).resolve() if base_tag else document.parent
  for tag in soup.select('script[src],link[rel=stylesheet][href]'):
   attribute='src' if tag.name=='script' else 'href'
   value=tag[attribute]

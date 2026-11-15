@@ -27,3 +27,23 @@
 .public-top50-feature{display:flex;flex-direction:column;padding:30px;min-height:535px}.public-top50-feature h2{font-size:50px;line-height:1.05;letter-spacing:-2px}.public-top50-feature .index-stats{justify-content:space-between;margin:0 0 18px}.public-top50-feature .btn{display:block;width:100%;text-align:center}.market-hero .public-modern-fan{min-height:210px;height:210px;flex:0 0 210px;margin:8px auto 0}.public-top50-feature .modern-home-note{font-size:10px}
 @media(max-width:800px){.market-hero .public-modern-fan{flex:1;min-height:230px;height:230px}.public-top50-feature h2{font-size:44px}}
 @media(max-width:460px){.market-hero .public-modern-fan{min-height:185px;height:185px;flex:0 0 185px}.public-top50-feature{padding:24px}.public-top50-feature h2{font-size:40px}}
+
+/* Weekly digest signup — Substack official embed, wrapped in the house style. */
+.digest-signup{max-width:1248px;margin:0 auto;padding:36px 56px;background:#fff;border-top:4px solid #df242b;box-sizing:border-box}
+.digest-signup h2{margin:10px 0 12px;letter-spacing:-1.5px}
+.digest-signup>p{color:#626269;font-size:16px;max-width:640px;margin:0 0 18px}
+.digest-embed{width:100%;max-width:480px}
+.digest-embed iframe{display:block;width:100%;max-width:100%;height:320px;border:1px solid #deded9;background:#fff}
+.digest-consent{font-size:13px;line-height:1.5;color:#171719;max-width:640px;margin:16px 0 0}
+.digest-privacy,.digest-fallback{font-size:12px;color:#626269;margin:8px 0 0;max-width:640px}
+.digest-signup-article{margin:28px 0 10px;padding:28px 32px;border:1px solid #deded9;border-top:4px solid #df242b}
+.digest-signup-article h2{font-size:28px;letter-spacing:-.8px}
+.digest-signup-article>p{font-size:14px;margin-bottom:16px}
+@media(max-width:650px){
+  .digest-signup{padding:28px 20px;margin:0}
+  .digest-signup-article{padding:22px 18px;margin:22px 0}
+  .digest-embed iframe{height:360px}
+}
+.advertise-options{margin:0;padding-left:1.15em;color:var(--muted);font-size:16px;line-height:1.55}
+.advertise-options li+li{margin-top:8px}
+.method-card>.kicker{margin-bottom:8px}
