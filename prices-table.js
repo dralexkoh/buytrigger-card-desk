@@ -1,4 +1,4 @@
-/* Sort and filter for the public 30th Anniversary raw-price table. */
+/* Sort and filter for the public raw price tables. */
 (function (root, factory) {
   'use strict';
   const api = factory();
@@ -38,6 +38,7 @@
       return {
         name: row.dataset.name || '',
         number: row.dataset.number || '',
+        set: row.dataset.set || row.dataset.subset || '',
         price: Number.isFinite(price) && price > 0 ? price : null,
         id: row.dataset.id || '',
         search: row.dataset.search || '',
@@ -47,6 +48,7 @@
     return {
       name: row.name || '',
       number: row.number || '',
+      set: row.set || row.subset || '',
       price: Number.isFinite(price) && price > 0 ? price : null,
       id: row.id || '',
       search: row.search || '',
@@ -74,6 +76,10 @@
     if (kind === 'number') {
       const number = compareNumber(left.number, right.number);
       return (direction === 'desc' ? -number : number) || tie(a, b);
+    }
+    if (kind === 'set') {
+      const set = left.set.localeCompare(right.set, 'en', {sensitivity: 'base', numeric: true});
+      return (direction === 'desc' ? -set : set) || tie(a, b);
     }
     const missing = (left.price == null) - (right.price == null);
     if (missing) return missing;

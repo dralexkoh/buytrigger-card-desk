@@ -73,7 +73,9 @@ for f in d.rglob('*'):
   for t in soup.select('script[src],link[href],img[src]'):
    v=t.get('src')or t.get('href')
    if not v or v.startswith(('http:','https:','data:','#')):continue
-   if not (base/v.split('#')[0].split('?')[0]).exists():fail.append(f'{f.relative_to(d)}: missing {v}')
+   path=v.split('#')[0].split('?')[0]
+   target=(d/path[1:]) if path.startswith('/') and not path.startswith('//') else (base/path)
+   if not target.exists():fail.append(f'{f.relative_to(d)}: missing {v}')
   if not soup.title:fail.append(f'{f}: missing title')
   if f.name!='404.html':
    relative=str(f.relative_to(d));route='' if relative=='index.html' else relative.removesuffix('index.html') if relative.startswith(('stories/','news/','prices/','advertise/')) else relative
@@ -148,7 +150,7 @@ for c in data['cards']:
  assert all(v is None or isinstance(v,(int,float)) and not isinstance(v,bool) and math.isfinite(v) and v>0 for v in values)
 editorial=json.loads((p/'editorial.json').read_text())
 assert {f.parent.name for f in (d/'stories').glob('*/index.html')}=={a['slug'] for a in editorial['articles']}
-def assert_digest_signup(path, campaign):
+def assert_digest_signup(path, campaign, privacy_href='index.html#privacy'):
  html=path.read_text()
  body=html.find('class="article-body"');signup=html.find('digest-signup')
  assert 0<=body<signup, f'{path}: sign-up is not after the article body'
@@ -164,7 +166,7 @@ def assert_digest_signup(path, campaign):
  assert form.select_one('input[name=utm_source]')['value']=='site'
  assert form.select_one('input[name=utm_medium]')['value']=='signup'
  assert form.select_one('input[name=utm_campaign]')['value']=='digest-band'
- assert block.select_one('.digest-note a')['href']=='index.html#privacy'
+ assert block.select_one('.digest-note a')['href']==privacy_href
  assert campaign
 from site_seo import validate_news_article, schema_main_entity_url, BASE as SEO_BASE, collect_news_entries, article_url, news_url, MIN_IMAGE_WIDTH
 def _schema_type(tag):
@@ -189,14 +191,27 @@ for article in editorial['articles']:
   assert page.select_one('.person-byline')
   for author_id in ids:assert page.select_one('#author-'+author_id)
  else:assert schema['author']['@type']=='Organization'
+def assert_story_internal_hrefs(page, label):
+ """Every internal href on a built /news/<slug>/ page is root-absolute and names a real file or route."""
+ for tag in page.select('a[href], link[rel=alternate][href]'):
+  href=tag.get('href') or ''
+  if href.startswith(('http://','https://','mailto:','tel:','//')):continue
+  if href.startswith('#'):
+   assert page.find(id=href[1:]), label+' fragment does not exist on the page: '+href
+   continue
+  assert href.startswith('/'), label+' document-relative href '+href
+  path=href.split('#',1)[0].split('?',1)[0].lstrip('/')
+  target=d/path
+  assert target.is_file() or (target/'index.html').is_file(), label+' unresolved href '+href
 assert {f.parent.name for f in (d/'news').glob('*/index.html')}=={w['id'] for w in editorial.get('wire',[])}
 for brief in editorial.get('wire',[]):
- assert_digest_signup(d/'news'/brief['id']/'index.html', brief['id'])
+ assert_digest_signup(d/'news'/brief['id']/'index.html', brief['id'], '/index.html#privacy')
  page=BeautifulSoup((d/'news'/brief['id']/'index.html').read_text(),'html.parser')
  schema=next(data for data,types in (_schema_type(t) for t in page.select('script[type="application/ld+json"]')) if 'NewsArticle' in types)
  problems=validate_news_article(schema,url=news_url(brief['id']))
  assert not problems, brief['id']+': '+'; '.join(problems)
- assert page.select_one('a[href="index.html#desk/'+brief['id']+'"]') or page.select_one('a[href="index.html#desk"]')
+ assert page.select_one('a[href="/index.html#desk/'+brief['id']+'"]') or page.select_one('a[href="/index.html#desk"]')
+ assert_story_internal_hrefs(page, 'news/'+brief['id'])
 news_map=ET.fromstring((d/'news-sitemap.xml').read_text())
 assert all(node.text.startswith(PUBLIC_BASE) for node in news_map.iter('{http://www.sitemaps.org/schemas/sitemap/0.9}loc'))
 news_locs={node.text for node in news_map.iter('{http://www.sitemaps.org/schemas/sitemap/0.9}loc')}
@@ -205,22 +220,72 @@ assert news_locs=={item['url'] for item in collect_news_entries(editorial)}
 locs={node.text for node in ET.fromstring((d/'sitemap.xml').read_text()).iter('{http://www.sitemaps.org/schemas/sitemap/0.9}loc')}
 assert all(article_url(a['slug']) in locs for a in editorial['articles'])
 assert all(news_url(w['id']) in locs for w in editorial.get('wire',[]))
-price_url=PUBLIC_BASE+'prices/thirtieth-anniversary/'
-assert price_url in locs, '30th Anniversary price page missing from sitemap'
-price_html=(d/'prices'/'thirtieth-anniversary'/'index.html').read_text()
-price_page=BeautifulSoup(price_html,'html.parser')
-assert len(price_page.select('#price-table tbody tr'))==195, '30th Anniversary price page must list all 195 cards'
-assert 'PSA' not in price_html, 'Price page must not mention PSA'
-assert 'Raw (ungraded) prices, source: TCGCSV market price, as of 13 Nov 2026' in price_page.get_text(' ')
-assert not re.search(r'\b(buy|sell|accumulate|invest)\b', price_page.get_text(' '), re.I)
-for link in price_page.select('a[href*="tcgplayer.com"]'):
- href=link.get('href','')
- assert href.startswith('https://www.tcgplayer.com/product/') and '?' not in href and '#' not in href
- rel=link.get('rel') or []
- rel=rel if isinstance(rel,list) else rel.split()
- assert 'nofollow' in rel and 'noopener' in rel
+from raw_price_page import display_price, format_source_date, load_snapshot
+NAV_HREFS=(
+ '/index.html#home','/market.html','/index.html#desk','/index.html#journal','/index.html#targets','/drops.html',
+ '/index.html#about','/prices/thirtieth-anniversary/','/prices/tcg-modern/','/advertise/',
+ '/index.html#method','/index.html#privacy','/rss.xml',
+)
+def assert_root_nav(page, label):
+ found={a.get('href') for a in page.select('header a[href], footer a[href]')}
+ for href in NAV_HREFS:
+  assert href in found, label+' missing '+href
+ for href in found:
+  if href.startswith(('http://','https://','mailto:','//')): continue
+  assert href.startswith('/'), label+' relative nav href '+href
+def assert_price_guide(slug, lead):
+ snapshot=load_snapshot(p/'data'/'prices'/f'{slug}.json')
+ url=PUBLIC_BASE+f'prices/{slug}/'
+ assert url in locs, slug+' price page missing from sitemap'
+ ns='{http://www.sitemaps.org/schemas/sitemap/0.9}'
+ lastmods={}
+ for url_node in ET.fromstring((d/'sitemap.xml').read_text()).findall(ns+'url'):
+  lastmods[url_node.find(ns+'loc').text]=url_node.find(ns+'lastmod').text
+ assert lastmods.get(url)==snapshot['source_date'], slug+' sitemap lastmod must follow source_date'
+ html=(d/'prices'/slug/'index.html').read_text()
+ page=BeautifulSoup(html,'html.parser')
+ rows=page.select('#price-table tbody tr')
+ assert len(rows)==len(snapshot['cards']), slug+' row count must follow the snapshot'
+ text=page.get_text(' ')
+ assert f'{lead}, as of {format_source_date(snapshot["source_date"])}' in text
+ assert 'PSA' not in html, slug+' price page must not mention PSA'
+ assert not re.search(r'\b(buy|sell|accumulate|invest)\b', text, re.I)
+ by_id={str(card['tcgplayer_product_id']): card for card in snapshot['cards']}
+ assert {row['data-id'] for row in rows}==set(by_id)
+ for row in rows:
+  card=by_id[row['data-id']]
+  attr, shown=display_price(card.get('raw_price_usd'))
+  assert row['data-price']==attr, slug+' '+row['data-id']
+  assert row.select_one('.price-usd').get_text()==shown
+  assert row.select_one('.price-name').get_text()==str(card['name']).strip()
+  assert row.select_one('.price-number').get_text()==str(card['number']).strip()
+  link=row.select_one('a')
+  assert link['href']=='https://www.tcgplayer.com/product/'+row['data-id']
+  assert '?' not in link['href'] and '#' not in link['href']
+  rel=link.get('rel') or []
+  rel=rel if isinstance(rel,list) else str(rel).split()
+  assert 'nofollow' in rel and 'noopener' in rel and 'sponsored' not in rel
+  image=row.select_one('img')
+  path=card.get('image_path') or ''
+  if path and (d/path).is_file():
+   assert image is not None and image.get('src')==path
+  else:
+   assert image is None
+ assert_root_nav(page, slug)
+assert_price_guide('thirtieth-anniversary', 'Raw (ungraded) prices, source: TCGCSV market price')
+assert_price_guide('tcg-modern', 'Raw (ungraded) market guide prices, source: TCGCSV market price')
+modern_text=BeautifulSoup((d/'prices'/'tcg-modern'/'index.html').read_text(),'html.parser').get_text(' ')
+assert 'US-market references in USD, not sales or offers.' in modern_text
+assert not re.search(r'sale', re.sub(r'not sales or offers', '', modern_text, flags=re.I), re.I)
 home=BeautifulSoup((d/'index.html').read_text(),'html.parser')
 assert home.select_one('footer a[href="prices/thirtieth-anniversary/"]')
+assert home.select_one('footer a[href="prices/tcg-modern/"]')
+assert home.select_one('#site-nav a[href="#journal"]')
+assert home.select_one('#site-nav a[href="drops.html"]')
+for link in home.select('header a[href], footer a[href]'):
+ href=link.get('href') or ''
+ if href.startswith(('http://','https://','mailto:','//')): continue
+ assert not href.startswith('/'), 'Homepage nav changed: '+href
 assert PUBLIC_BASE+'advertise/' in locs
 assert home.select_one('a.advertise-link')['href']=='advertise/'
 assert all('advertise' not in (a.get('href') or '') for a in home.select('#site-nav a'))
@@ -239,7 +304,8 @@ assert mailto and mailto['href']=='mailto:hello@buytrigger.cards?subject=Adverti
 for option in ['Sponsored Feature placement','BuyTrigger.Cards Weekly','Newsletter or site banner','Drops partnerships','All sponsored content is labelled']:
  assert option in ad.get_text(' ',strip=True)
 assert not re.search(r'\d[\d,]*\s+(readers|subscribers|visits|page\s*views|pageviews|followers)', ad.get_text(' ',strip=True), re.I)
-assert ad.select_one('a.advertise-link')['href']=='advertise/'
+assert ad.select_one('a.advertise-link')['href']=='/advertise/'
+assert_root_nav(ad, 'advertise')
 assert all('advertise' not in (a.get('href') or '') for a in ad.select('#site-nav a'))
 bluechip=json.loads((d/'bluechip-data.js').read_text().split('=',1)[1].strip().rstrip(';'))
 assert bluechip['rankingGrade']=='PSA 10' and bluechip['constituentCount']==50

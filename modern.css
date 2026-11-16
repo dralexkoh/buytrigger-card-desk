@@ -33,3 +33,11 @@
 @media(max-width:700px){#modern-preview .price-triplet{display:block}#modern-preview .price-triplet>div{display:flex;justify-content:space-between;align-items:baseline;gap:8px;padding:3px 0}}
 .currency-note{font-size:10px;line-height:1.5;color:#675925;background:#fbf7e3;padding:7px;margin-top:8px;display:block;white-space:normal}.card-data-table .currency-note{max-width:150px;text-align:left}.movers-grid>.empty-state{grid-column:1/-1}
 #modern-preview .dialog-main .scenario-row{grid-template-columns:8.75rem minmax(0,1fr) auto}#modern-preview .dialog-main .scenario-row>span{min-width:0;white-space:normal;overflow-wrap:anywhere;line-height:1.25}#modern-preview .dialog-main .scenario-row:nth-child(2) .scenario-track span{background:var(--red)}
+
+/* Keep the catalogue rank on its own line, clear of the artwork. Image heights stay the same. */
+body[data-index="modern"] .card-gallery .catalog-art{align-items:flex-start;height:226px;padding:36px 14px 8px}
+body[data-index="modern"] .card-gallery .catalog-rank{z-index:2}
+@media(max-width:1100px){body[data-index="modern"] .card-gallery .catalog-art{height:211px}}
+@media(max-width:850px){body[data-index="modern"] .card-gallery .catalog-art{height:219px}}
+@media(max-width:600px){body[data-index="modern"] .card-gallery .catalog-art{height:194px;padding:36px 10px 8px}}
+@media(max-width:360px){body[data-index="modern"] .card-gallery .catalog-art{height:176px}}

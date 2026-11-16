@@ -1,4 +1,4 @@
-/* Public 30th Anniversary raw-price page. Brand red is #df242b. */
+/* Public raw price pages. Brand red is #df242b. */
 .price-page .publication-strip{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:8px max(24px,calc((100vw - 1248px)/2));background:#171719;color:#fff;font-size:12px;letter-spacing:.8px}
 .price-page .publication-strip b{color:#f5d331;font-weight:600;margin-right:8px}
 .price-page .publication-strip>span:last-child{color:#ddd;letter-spacing:0;font-size:13px}
@@ -23,7 +23,7 @@
 .price-page .price-usd,.price-page .price-usd-col,.price-page .price-usd-col button{text-align:right;font-variant-numeric:tabular-nums}
 .price-page .price-usd{font-weight:800;white-space:nowrap}
 .price-page .price-name{font-weight:700}
-.price-page .price-number,.price-page .price-subset{color:#171719}
+.price-page .price-number,.price-page .price-subset,.price-page .price-set{color:#171719}
 .price-page .price-card img{width:52px;height:auto;display:block;background:#fff;border-radius:4px}
 .price-page .price-card-fallback{display:block;width:72px;font-size:11px;line-height:1.3;color:#626269}
 .price-page .price-link a{color:#df242b;font-weight:800;white-space:nowrap}
@@ -47,6 +47,6 @@
  .price-page .price-table .price-card img{width:72px}
  .price-page .price-table .price-usd{font-size:18px}
  .price-page .price-table .price-link a{min-height:44px;display:inline-flex;align-items:center}
- .price-page .price-subset{font-size:13px;color:#626269}
+ .price-page .price-subset,.price-page .price-set{font-size:13px;color:#626269}
 }
 @media (prefers-reduced-motion:reduce){.price-page .price-table-wrap{scroll-behavior:auto}}
