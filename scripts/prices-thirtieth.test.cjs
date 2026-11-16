@@ -1,6 +1,6 @@
 const test = require('node:test');
 const assert = require('node:assert/strict');
-const {compareNumber, compareRows} = require('../prices-thirtieth.js');
+const {compareNumber, compareRows} = require('../prices-table.js');
 
 test('card numbers sort by the numeric parts, then the stored text', () => {
   const numbers = ['10/128', '2/128', '001/128', '107', 'B/RGB', '4/102', 'R/RGB'];
@@ -29,4 +29,15 @@ test('name and number sorts can reverse', () => {
   const byNumber = [...rows].sort((a, b) => compareRows(a, b, 'number-asc')).map(row => row.number);
   assert.deepEqual(byName, ['Alolan Exeggutor', 'Volbeat']);
   assert.deepEqual(byNumber, ['2/128', '10/128']);
+});
+
+test('set sort is alphabetical and reversible', () => {
+  const rows = [
+    {name: 'Lugia', number: '134/135', set: 'Plasma Storm', price: 1, id: '1'},
+    {name: 'Gardevoir', number: '109/108', set: 'Dark Explorers', price: 9, id: '2'},
+  ];
+  const ascending = [...rows].sort((a, b) => compareRows(a, b, 'set-asc')).map(row => row.set);
+  const descending = [...rows].sort((a, b) => compareRows(a, b, 'set-desc')).map(row => row.set);
+  assert.deepEqual(ascending, ['Dark Explorers', 'Plasma Storm']);
+  assert.deepEqual(descending, ['Plasma Storm', 'Dark Explorers']);
 });

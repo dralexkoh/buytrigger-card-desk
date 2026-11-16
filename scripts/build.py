@@ -7,7 +7,9 @@ from editorial_visuals import validate_editorial_visuals
 from xml.sax.saxutils import escape
 import site_seo as seo
 from digest_signup import digest_signup_html
-from thirtieth_prices import publish_price_page, PRICE_PAGE_URL
+from thirtieth_prices import publish_price_page as publish_thirtieth_prices, PRICE_PAGE_URL as THIRTIETH_PRICE_URL, source_date as thirtieth_source_date
+from tcg_modern_prices import publish_price_page as publish_modern_prices, PRICE_PAGE_URL as MODERN_PRICE_URL, source_date as modern_source_date
+from raw_price_page import absolutize_document_nav
 
 def advertise_main_html():
  return (
@@ -40,7 +42,7 @@ FILES+=['bluechip-raw-archive.html','bluechip-engine.js','bluechip.js','bluechip
 FILES+=['bluechip-collection-data.js','bluechip-collection-sources.json']
 FILES+=['grading-calculator.js','grading-calculator.css']
 FILES+=['thirtieth-engine.js','thirtieth.js','thirtieth.css','thirtieth-catalogue.json','thirtieth-release.json']
-FILES+=['prices-thirtieth.js','prices-thirtieth.css']
+FILES+=['prices-table.js','prices-table.css']
 for name in FILES:shutil.copy2(P/name,D/name)
 bluechip=json.loads((P/'bluechip-release.json').read_text())
 bluechip_check=json.loads(subprocess.check_output(['node','-e',"const fs=require('node:fs'),B=require('./bluechip-engine.js');const d=JSON.parse(fs.readFileSync('bluechip-release.json'));process.stdout.write(JSON.stringify(B.review(d)));"],cwd=P))
@@ -163,7 +165,8 @@ for w in e.get('wire',[]):
  content=f'<header class="reading-head"><a class="back-link" href="index.html#desk">← Back to the newsroom</a><span class="kicker red-text">{html.escape(w.get("category") or "Newsroom")}</span><h1>{html.escape(w["title"])}</h1><p>{html.escape(w.get("summary") or "")}</p><p class="news-credit"><span class="news-author">{byline}</span> · {html.escape(w.get("kind") or "Newsroom")} · {html.escape(w.get("displayDate") or published)}</p></header>{img}<div class="reading-layout"><article class="article-body">{paragraphs}{source}<p class="small">This brief is also listed on the <a href="index.html#desk/{html.escape(w["id"])}">Card Desk</a>.</p><a class="btn red" href="index.html#desk">More from the newsroom →</a></article></div>'+digest_signup_html(w['id'])
  main.append(BeautifulSoup(content,'html.parser'));folder=D/'news'/w['id'];folder.mkdir(parents=True);(folder/'index.html').write_text(str(soup))
 
-publish_price_page(P, D)
+publish_thirtieth_prices(P, D)
+publish_modern_prices(P, D)
 advertise_description='Advertising and sponsorship on BuyTrigger.Cards for shops and brands serving Pokémon TCG collectors. Audience figures coming soon.'
 soup=BeautifulSoup((P/'index.html').read_text(),'html.parser');soup.body['data-route']='advertise';soup.head.insert(0,soup.new_tag('base',href='../'))
 soup.title.string='Advertise / Sponsor · '+BRAND;url=BASE+'advertise/'
@@ -171,11 +174,13 @@ soup.select_one('link[rel=canonical]')['href']=url
 for key,val in [('og:title','Advertise / Sponsor · '+BRAND),('og:description',advertise_description),('og:url',url),('og:type','website')]:soup.select_one('meta[property="'+key+'"]')['content']=val
 soup.select_one('meta[name=description]')['content']=advertise_description
 main=soup.select_one('main');main.clear();main.append(BeautifulSoup(advertise_main_html(),'html.parser'))
+absolutize_document_nav(soup)
 folder=D/'advertise';folder.mkdir(parents=True);(folder/'index.html').write_text(str(soup))
 
 static_urls=[BASE,BASE+'grading-calculator.html',BASE+'undervalued.html',BASE+'undervalued-japanese.html',BASE+'market.html',BASE+'30th-anniversary-index.html',BASE+'drops.html',BASE+'tcg-modern-index.html',BASE+'top-50.html',BASE+'bluechip-raw-archive.html',BASE+'advertise/']
 sitemap_entries=seo.collect_sitemap_entries(e,static_urls)
-sitemap_entries.append({'url':PRICE_PAGE_URL,'lastmod':'2026-11-13'})
+sitemap_entries.append({'url':THIRTIETH_PRICE_URL,'lastmod':thirtieth_source_date(P)})
+sitemap_entries.append({'url':MODERN_PRICE_URL,'lastmod':modern_source_date(P)})
 (D/'sitemap.xml').write_text(seo.urlset_xml(sitemap_entries))
 (D/'news-sitemap.xml').write_text(seo.news_sitemap_xml(seo.collect_news_entries(e)))
 (D/'robots.txt').write_text(seo.robots_txt())
