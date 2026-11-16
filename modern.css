@@ -28,4 +28,5 @@
 
 .three-bars .scenario-row:first-child>b{font-size:22px;letter-spacing:-.5px}.dialog-main .dialog-tabs{margin:12px 0}.individual-history{margin-top:16px}
 
+.price-pending{color:var(--muted);font-weight:650;font-size:inherit;letter-spacing:.15px;line-height:1.3}.price-filter{display:flex;flex-direction:column;align-items:flex-end;gap:3px;max-width:100%}#priced-only-label.is-disabled,#priced-only:disabled{cursor:not-allowed}.filter-hint{color:var(--muted);font-size:inherit;font-weight:650;letter-spacing:.1px;line-height:1.35}@media(max-width:600px){.price-filter{align-items:flex-start}}
 .currency-note{font-size:10px;line-height:1.5;color:#675925;background:#fbf7e3;padding:7px;margin-top:8px;display:block;white-space:normal}.card-data-table .currency-note{max-width:150px;text-align:left}.movers-grid>.empty-state{grid-column:1/-1}
