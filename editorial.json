@@ -2043,6 +2043,33 @@
   ],
   "wire": [
     {
+      "id": "legendary-collection-reverse-holo-moltres-psa10-32300-2026-11-15",
+      "eventKey": "fanatics-legendary-collection-reverse-holo-moltres-30-psa10-88237363-2026-11-15",
+      "date": "2026-11-15",
+      "displayDate": "15 Nov · Sale result",
+      "category": "Price action",
+      "kind": "Marketplace sales record",
+      "title": "PSA 10 Legendary Collection reverse holo Moltres sells for US$32,300, far below September’s six-figure prices",
+      "summary": "A PSA 10 copy of the reverse holo Moltres (30/110) from 2002’s Legendary Collection sold for US$32,300 on Fanatics Collect’s Buy Now marketplace late on 15 November, Pacific time, which was early Monday morning in the UK. Fanatics’ public sales record marks it as paid. The slab is PSA cert 88237363.\n\nThat same slab sold for US$30,600, including buyer’s premium, in Fanatics’ weekly auction of 25 October, and that sale is marked paid too. So it changed hands twice in three weeks and came out about US$1,700 higher.\n\nThe weekly auction that closed on 15 November had two more PSA 10 copies. Their winning bids were US$33,600 and US$38,400, not yet marked paid. Another PSA 10 made US$38,400, paid, on 18 October.\n\nThe bigger picture is a card that jumped and then cooled. In June and July, paid PSA 10 sales on Fanatics ran from US$11,700 to US$15,000. Then in September two copies sold for US$156,000 and US$114,000 in back-to-back weekly auctions, and both are marked paid. Since October every paid PSA 10 sale we found sits between US$30,600 and US$38,400. That is roughly double the summer level, but a long way below those September prices.\n\nLegendary Collection reverse holos are known for the shimmering firework-style foil that covers the whole card, and it shows scratches and print lines easily, which makes a clean PSA 10 hard to find.\n\nAll of these figures come from one marketplace, and a handful of sales can swing a thin market like this one. Treat them as data points rather than a valuation, and check the cert and payment status of any comparison you use.",
+      "sourceLabel": "Fanatics Collect",
+      "url": "https://www.fanaticscollect.com/buy-now/9f18ab0b-ed27-488b-866f-75f18bde04ed",
+      "checkedAt": "2026-11-16T08:37:00Z",
+      "sourcePublishedAt": "2026-11-15",
+      "visual": "auction",
+      "image": "assets/newsroom-20261116/legendary-collection-moltres-reverse-psa10-88237363.webp",
+      "imageAlt": "The PSA 10 Gem Mint 2002 Legendary Collection reverse holo Moltres 30/110 slab, certificate 88237363, from its Fanatics Collect listing.",
+      "imageCredit": "Marketplace listing photograph: Fanatics Collect.",
+      "imageSourceUrl": "https://www.fanaticscollect.com/buy-now/9f18ab0b-ed27-488b-866f-75f18bde04ed",
+      "author": {
+        "id": "elliot-reed",
+        "name": "Elliot Reed",
+        "type": "named_ai_correspondent",
+        "label": "Correspondent",
+        "beat": "Markets & auctions"
+      },
+      "newsRevision": 1
+    },
+    {
       "id": "thirtieth-celebration-chase-cards-week-prices-2026-11-13",
       "eventKey": "tcgplayer-market-30th-celebration-chase-cards-2026-11-06-to-2026-11-13",
       "date": "2026-11-13",
