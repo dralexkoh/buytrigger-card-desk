@@ -39,27 +39,33 @@ test('published affiliate CTAs preserve exact destinations and sponsorship on hy
  assert.equal(e.articles.filter(a=>a.cta?.sponsored===true).length,1);
 });
 
-test('story pages hydrate the shared sign-up with a per-story campaign and the homepage block stays untagged',()=>{
+test('story pages and the homepage share one digest band that opens Substack with the email',()=>{
  const vm=require('node:vm'),src=fs.readFileSync('site.js','utf8');
  const lines=src.split('\n').filter(line=>line.startsWith('function digestSignup(')||line.startsWith('function read('));
  const context={article:slug=>e.articles.find(a=>a.slug===slug),esc:value=>String(value??'').replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;'),href:slug=>'stories/'+slug+'/',byline:()=>'',art:()=>'',routeLink:value=>value,heading:()=>'',post:()=>'',location:{pathname:'/'},window:{BT_ARTICLE_AUTHORS:{profile:()=>''}}};
  vm.createContext(context);vm.runInContext(lines.join('\n'),context);
  const home=vm.runInContext("digestSignup('home')",context);
- assert.ok(home.includes('The week’s cards, in one email'));
- assert.ok(home.includes('Verified news, prices and Features, once a week. Free, and easy to leave.'));
- assert.equal((home.match(/utm_campaign/g)||[]).length,0);
- assert.ok(!home.includes('Get BuyTrigger.Cards Weekly'));
+ assert.ok(home.includes('The week’s cards, in one email.'));
+ assert.ok(home.includes('Verified news, prices and Features, once a week.'));
+ assert.ok(home.includes('Free, weekly, unsubscribe anytime. Handled by Substack.'));
+ assert.ok(home.includes('action="https://buytriggercards.substack.com/subscribe"'));
+ assert.ok(home.includes('type="email"'));
+ assert.ok(home.includes('required'));
+ assert.ok(home.includes('name="utm_campaign" value="digest-band"'));
+ assert.ok(home.includes('href="#privacy"'));
+ assert.ok(!home.includes('iframe'));
  for(const a of e.articles){
   context.location.pathname='/stories/'+a.slug+'/';
   const html=vm.runInContext('read('+JSON.stringify(a.slug)+')',context);
   assert.ok(html.indexOf('article-body')>=0&&html.indexOf('digest-signup-article')>html.indexOf('article-body'),a.slug);
-  assert.ok(html.includes('Get BuyTrigger.Cards Weekly'),a.slug);
-  assert.ok(html.includes('Free and weekly, covering verified Pokémon card news and prices.'),a.slug);
-  assert.ok(html.includes('https://buytriggercards.substack.com/embed'),a.slug);
-  assert.ok(html.includes('utm_source=site&amp;utm_medium=signup&amp;utm_campaign='+a.slug),a.slug);
+  assert.ok(html.includes('The week’s cards, in one email.'),a.slug);
+  assert.ok(html.includes('name="utm_campaign" value="digest-band"'),a.slug);
+  assert.ok(html.includes('href="index.html#privacy"'),a.slug);
+  assert.ok(!html.includes('substack.com/embed'),a.slug);
  }
  const brief=e.wire[0];
  context.location.pathname='/news/'+brief.id+'/';
  const block=vm.runInContext('digestSignup("article",'+JSON.stringify(brief.id)+')',context);
- assert.ok(block.includes('utm_campaign='+brief.id));
+ assert.ok(block.includes('name="utm_campaign" value="digest-band"'));
+ assert.ok(block.includes('href="index.html#privacy"'));
 });
