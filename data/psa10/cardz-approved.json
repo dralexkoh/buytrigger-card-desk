@@ -1,0 +1,402 @@
+[
+  {
+    "publicId": 6,
+    "seriesKey": "en-tcg-modern-246723-holofoil",
+    "cmcId": "a9fb6241a0ce36d4018868fb",
+    "approvedOn": "2026-11-16",
+    "confidence": "high",
+    "review": "pricing/reviews/2026-11-16-cardz-public-outliers"
+  },
+  {
+    "publicId": 7,
+    "seriesKey": "en-tcg-modern-183830-holofoil",
+    "cmcId": "c2c7ff594451ea80d1d366c8",
+    "approvedOn": "2026-11-16",
+    "confidence": "medium",
+    "review": "pricing/reviews/2026-11-16-cardz-public-outliers"
+  },
+  {
+    "publicId": 10,
+    "seriesKey": "en-tcg-modern-246733-holofoil",
+    "cmcId": "e1b082260ba341e5970220ef",
+    "approvedOn": "2026-11-16",
+    "confidence": "high",
+    "review": "pricing/reviews/2026-11-16-cardz-public-outliers"
+  },
+  {
+    "publicId": 12,
+    "seriesKey": "en-tcg-modern-610516-holofoil",
+    "cmcId": "b200127b616e5e652bfc8da4",
+    "approvedOn": "2026-11-16",
+    "confidence": "high",
+    "review": "pricing/reviews/2026-11-16-cardz-public-outliers"
+  },
+  {
+    "publicId": 14,
+    "seriesKey": "en-tcg-modern-253266-holofoil",
+    "cmcId": "b5f9138fc42cc32443a1fe92",
+    "approvedOn": "2026-11-16",
+    "confidence": "high",
+    "review": "pricing/reviews/2026-11-16-cardz-public-outliers"
+  },
+  {
+    "publicId": 17,
+    "seriesKey": "en-tcg-modern-183964-holofoil",
+    "cmcId": "73ccbb6f1cbcf23c59d99d74",
+    "approvedOn": "2026-11-16",
+    "confidence": "medium",
+    "review": "pricing/reviews/2026-11-16-cardz-public-outliers"
+  },
+  {
+    "publicId": 20,
+    "seriesKey": "en-tcg-modern-284137-holofoil",
+    "cmcId": "e037210827a9bdb594dff089",
+    "approvedOn": "2026-11-16",
+    "confidence": "high",
+    "review": "pricing/reviews/2026-11-16-cardz-public-outliers"
+  },
+  {
+    "publicId": 21,
+    "seriesKey": "en-tcg-modern-534919-holofoil",
+    "cmcId": "7ae74978b59e0803cd648452",
+    "approvedOn": "2026-11-16",
+    "confidence": "high",
+    "review": "pricing/reviews/2026-11-16-cardz-public-outliers"
+  },
+  {
+    "publicId": 24,
+    "seriesKey": "en-tcg-modern-146698-holofoil",
+    "cmcId": "735ae8ccb34ac2b25af3ef5e",
+    "approvedOn": "2026-11-16",
+    "confidence": "medium",
+    "review": "pricing/reviews/2026-11-16-cardz-public-outliers"
+  },
+  {
+    "publicId": 27,
+    "seriesKey": "en-tcg-modern-197780-holofoil",
+    "cmcId": "19727069ac175f158769c2f6",
+    "approvedOn": "2026-11-16",
+    "confidence": "medium",
+    "review": "pricing/reviews/2026-11-16-cardz-public-outliers"
+  },
+  {
+    "publicId": 28,
+    "seriesKey": "en-tcg-modern-676096-holofoil",
+    "cmcId": "c79b22a1999c646bcd072de9",
+    "approvedOn": "2026-11-16",
+    "confidence": "medium",
+    "review": "pricing/reviews/2026-11-16-cardz-public-outliers"
+  },
+  {
+    "publicId": 29,
+    "seriesKey": "en-tcg-modern-189316-holofoil",
+    "cmcId": "1c78fa0ffe168e6c3c2a3cab",
+    "approvedOn": "2026-11-16",
+    "confidence": "medium",
+    "review": "pricing/reviews/2026-11-16-cardz-public-outliers"
+  },
+  {
+    "publicId": 32,
+    "seriesKey": "en-tcg-modern-676088-holofoil",
+    "cmcId": "bd82ab7b9fea3249f960096b",
+    "approvedOn": "2026-11-16",
+    "confidence": "medium",
+    "review": "pricing/reviews/2026-11-16-cardz-public-outliers"
+  },
+  {
+    "publicId": 33,
+    "seriesKey": "en-tcg-modern-642546-holofoil",
+    "cmcId": "839a834b8dfab81b47607e86",
+    "approvedOn": "2026-11-16",
+    "confidence": "medium",
+    "review": "pricing/reviews/2026-11-16-cardz-public-outliers"
+  },
+  {
+    "publicId": 35,
+    "seriesKey": "en-tcg-modern-642623-holofoil",
+    "cmcId": "1e406c202ec10cfd409e1ef0",
+    "approvedOn": "2026-11-16",
+    "confidence": "high",
+    "review": "pricing/reviews/2026-11-16-cardz-public-outliers"
+  },
+  {
+    "publicId": 36,
+    "seriesKey": "en-tcg-modern-662184-holofoil",
+    "cmcId": "dcd1e3c85ae09c85de08ac6e",
+    "approvedOn": "2026-11-16",
+    "confidence": "high",
+    "review": "pricing/reviews/2026-11-16-cardz-public-outliers"
+  },
+  {
+    "publicId": 37,
+    "seriesKey": "en-tcg-modern-201338-holofoil",
+    "cmcId": "6f64cbe455fddbe858fe2699",
+    "approvedOn": "2026-11-16",
+    "confidence": "medium",
+    "review": "pricing/reviews/2026-11-16-cardz-public-outliers"
+  },
+  {
+    "publicId": 41,
+    "seriesKey": "en-tcg-modern-644350-holofoil",
+    "cmcId": "1eacbe0d7167b93a1fb58f73",
+    "approvedOn": "2026-11-16",
+    "confidence": "medium",
+    "review": "pricing/reviews/2026-11-16-cardz-public-outliers"
+  },
+  {
+    "publicId": 46,
+    "seriesKey": "en-tcg-modern-201334-holofoil",
+    "cmcId": "6d7812d71f4ccc3b87da357d",
+    "approvedOn": "2026-11-16",
+    "confidence": "medium",
+    "review": "pricing/reviews/2026-11-16-cardz-public-outliers"
+  },
+  {
+    "publicId": 48,
+    "seriesKey": "en-tcg-modern-157767-holofoil",
+    "cmcId": "641841452edd3fb9f5b92d26",
+    "approvedOn": "2026-11-16",
+    "confidence": "medium",
+    "review": "pricing/reviews/2026-11-16-cardz-public-outliers"
+  },
+  {
+    "publicId": 49,
+    "seriesKey": "en-tcg-modern-451834-holofoil",
+    "cmcId": "4354d944805d3f3bf01558a8",
+    "approvedOn": "2026-11-16",
+    "confidence": "high",
+    "review": "pricing/reviews/2026-11-16-cardz-public-outliers"
+  },
+  {
+    "publicId": 51,
+    "seriesKey": "en-tcg-modern-642289-holofoil",
+    "cmcId": "eb74914f1ea1de9de4a62ea2",
+    "approvedOn": "2026-11-16",
+    "confidence": "high",
+    "review": "pricing/reviews/2026-11-16-cardz-public-outliers"
+  },
+  {
+    "publicId": 53,
+    "seriesKey": "en-tcg-modern-246728-holofoil",
+    "cmcId": "97f128a7b06c68be843fc0c8",
+    "approvedOn": "2026-11-16",
+    "confidence": "high",
+    "review": "pricing/reviews/2026-11-16-cardz-public-outliers"
+  },
+  {
+    "publicId": 54,
+    "seriesKey": "en-tcg-modern-246758-holofoil",
+    "cmcId": "64ba6185644dcf2c60bb7382",
+    "approvedOn": "2026-11-16",
+    "confidence": "high",
+    "review": "pricing/reviews/2026-11-16-cardz-public-outliers"
+  },
+  {
+    "publicId": 58,
+    "seriesKey": "en-tcg-modern-676102-holofoil",
+    "cmcId": "f9b20c2ba421559a8933a20e",
+    "approvedOn": "2026-11-16",
+    "confidence": "medium",
+    "review": "pricing/reviews/2026-11-16-cardz-public-outliers"
+  },
+  {
+    "publicId": 59,
+    "seriesKey": "en-tcg-modern-194999-holofoil",
+    "cmcId": "950016e0b5b41e8f07d51a83",
+    "approvedOn": "2026-11-16",
+    "confidence": "medium",
+    "review": "pricing/reviews/2026-11-16-cardz-public-outliers"
+  },
+  {
+    "publicId": 62,
+    "seriesKey": "en-tcg-modern-183829-holofoil",
+    "cmcId": "42f99a7ccbfa6cc80c9af5d8",
+    "approvedOn": "2026-11-16",
+    "confidence": "medium",
+    "review": "pricing/reviews/2026-11-16-cardz-public-outliers"
+  },
+  {
+    "publicId": 63,
+    "seriesKey": "en-tcg-modern-201339-holofoil",
+    "cmcId": "87ceb18608f440f4de77af71",
+    "approvedOn": "2026-11-16",
+    "confidence": "medium",
+    "review": "pricing/reviews/2026-11-16-cardz-public-outliers"
+  },
+  {
+    "publicId": 65,
+    "seriesKey": "en-tcg-modern-195290-holofoil",
+    "cmcId": "4a1542502b9bc527dbf4812a",
+    "approvedOn": "2026-11-16",
+    "confidence": "medium",
+    "review": "pricing/reviews/2026-11-16-cardz-public-outliers"
+  },
+  {
+    "publicId": 67,
+    "seriesKey": "en-tcg-modern-610511-holofoil",
+    "cmcId": "12e2063ede006deb10ea995e",
+    "approvedOn": "2026-11-16",
+    "confidence": "high",
+    "review": "pricing/reviews/2026-11-16-cardz-public-outliers"
+  },
+  {
+    "publicId": 68,
+    "seriesKey": "en-tcg-modern-183828-holofoil",
+    "cmcId": "a72157a0ed01c03fdd56623f",
+    "approvedOn": "2026-11-16",
+    "confidence": "medium",
+    "review": "pricing/reviews/2026-11-16-cardz-public-outliers"
+  },
+  {
+    "publicId": 69,
+    "seriesKey": "en-tcg-modern-194979-holofoil",
+    "cmcId": "ec633af3dadd54c2846dc281",
+    "approvedOn": "2026-11-16",
+    "confidence": "medium",
+    "review": "pricing/reviews/2026-11-16-cardz-public-outliers"
+  },
+  {
+    "publicId": 70,
+    "seriesKey": "en-tcg-modern-194955-holofoil",
+    "cmcId": "3848d89f66207e5a3484dd02",
+    "approvedOn": "2026-11-16",
+    "confidence": "medium",
+    "review": "pricing/reviews/2026-11-16-cardz-public-outliers"
+  },
+  {
+    "publicId": 71,
+    "seriesKey": "en-tcg-modern-241673-holofoil",
+    "cmcId": "6e38606e08a70e5283df0dee",
+    "approvedOn": "2026-11-16",
+    "confidence": "medium",
+    "review": "pricing/reviews/2026-11-16-cardz-public-outliers"
+  },
+  {
+    "publicId": 72,
+    "seriesKey": "en-tcg-modern-246696-holofoil",
+    "cmcId": "5f6de27ac43183dc5b69af09",
+    "approvedOn": "2026-11-16",
+    "confidence": "high",
+    "review": "pricing/reviews/2026-11-16-cardz-public-outliers"
+  },
+  {
+    "publicId": 73,
+    "seriesKey": "en-tcg-modern-246719-holofoil",
+    "cmcId": "c85719a085b6cd42b106ed83",
+    "approvedOn": "2026-11-16",
+    "confidence": "medium",
+    "review": "pricing/reviews/2026-11-16-cardz-public-outliers"
+  },
+  {
+    "publicId": 74,
+    "seriesKey": "en-tcg-modern-195296-holofoil",
+    "cmcId": "f5946ce8585f77fc9c7cdf12",
+    "approvedOn": "2026-11-16",
+    "confidence": "medium",
+    "review": "pricing/reviews/2026-11-16-cardz-public-outliers"
+  },
+  {
+    "publicId": 78,
+    "seriesKey": "en-tcg-modern-246704-holofoil",
+    "cmcId": "f57ddd5286d756b158416ab2",
+    "approvedOn": "2026-11-16",
+    "confidence": "high",
+    "review": "pricing/reviews/2026-11-16-cardz-public-outliers"
+  },
+  {
+    "publicId": 79,
+    "seriesKey": "en-tcg-modern-189310-holofoil",
+    "cmcId": "24173363a108f867dcac4982",
+    "approvedOn": "2026-11-16",
+    "confidence": "medium",
+    "review": "pricing/reviews/2026-11-16-cardz-public-outliers"
+  },
+  {
+    "publicId": 80,
+    "seriesKey": "en-tcg-modern-253265-holofoil",
+    "cmcId": "b375d458ffda0ff8a03c70aa",
+    "approvedOn": "2026-11-16",
+    "confidence": "high",
+    "review": "pricing/reviews/2026-11-16-cardz-public-outliers"
+  },
+  {
+    "publicId": 81,
+    "seriesKey": "en-tcg-modern-633031-holofoil",
+    "cmcId": "ee623df83c2ee3bbd131276b",
+    "approvedOn": "2026-11-16",
+    "confidence": "high",
+    "review": "pricing/reviews/2026-11-16-cardz-public-outliers"
+  },
+  {
+    "publicId": 84,
+    "seriesKey": "en-tcg-modern-201250-holofoil",
+    "cmcId": "4845bd3f027e1ca57bc0532b",
+    "approvedOn": "2026-11-16",
+    "confidence": "medium",
+    "review": "pricing/reviews/2026-11-16-cardz-public-outliers"
+  },
+  {
+    "publicId": 86,
+    "seriesKey": "en-tcg-modern-197823-holofoil",
+    "cmcId": "b3cf9c1574336abcb1c155cc",
+    "approvedOn": "2026-11-16",
+    "confidence": "medium",
+    "review": "pricing/reviews/2026-11-16-cardz-public-outliers"
+  },
+  {
+    "publicId": 89,
+    "seriesKey": "en-tcg-modern-497606-holofoil",
+    "cmcId": "7dfda19a20c0544df9c8d85b",
+    "approvedOn": "2026-11-16",
+    "confidence": "medium",
+    "review": "pricing/reviews/2026-11-16-cardz-public-outliers"
+  },
+  {
+    "publicId": 91,
+    "seriesKey": "en-tcg-modern-517045-holofoil",
+    "cmcId": "79786e43f51b8ed3f1713478",
+    "approvedOn": "2026-11-16",
+    "confidence": "high",
+    "review": "pricing/reviews/2026-11-16-cardz-public-outliers"
+  },
+  {
+    "publicId": 92,
+    "seriesKey": "en-tcg-modern-590027-holofoil",
+    "cmcId": "ba4607efae8fc5f44a176622",
+    "approvedOn": "2026-11-16",
+    "confidence": "high",
+    "review": "pricing/reviews/2026-11-16-cardz-public-outliers"
+  },
+  {
+    "publicId": 93,
+    "seriesKey": "en-tcg-modern-676093-holofoil",
+    "cmcId": "1dd38ba22bcfad01ccba0cf2",
+    "approvedOn": "2026-11-16",
+    "confidence": "medium",
+    "review": "pricing/reviews/2026-11-16-cardz-public-outliers"
+  },
+  {
+    "publicId": 95,
+    "seriesKey": "en-tcg-modern-676089-holofoil",
+    "cmcId": "3941000f071d443503d2b6db",
+    "approvedOn": "2026-11-16",
+    "confidence": "medium",
+    "review": "pricing/reviews/2026-11-16-cardz-public-outliers"
+  },
+  {
+    "publicId": 99,
+    "seriesKey": "en-tcg-modern-676081-holofoil",
+    "cmcId": "d51f8d6f5f6936a230b66f27",
+    "approvedOn": "2026-11-16",
+    "confidence": "medium",
+    "review": "pricing/reviews/2026-11-16-cardz-public-outliers"
+  },
+  {
+    "publicId": 100,
+    "seriesKey": "en-tcg-modern-550258-holofoil",
+    "cmcId": "d7932b36b15c779de6c7d7d3",
+    "approvedOn": "2026-11-16",
+    "confidence": "high",
+    "review": "pricing/reviews/2026-11-16-cardz-public-outliers"
+  }
+]

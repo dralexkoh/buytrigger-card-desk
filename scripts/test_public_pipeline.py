@@ -24,6 +24,7 @@ class PublicPipelineTests(unittest.TestCase):
         self.site = self.helper.site
         (self.site / "scripts").mkdir()
         shutil.copy2(Path(__file__).with_name("daily_refresh.py"), self.site / "scripts/daily_refresh.py")
+        shutil.copy2(Path(__file__).with_name("modern_psa10.py"), self.site / "scripts/modern_psa10.py")
         (self.site / "index.html").write_text("<title>Public fixture</title>")
         (self.site / "package.json").write_text('{"scripts":{}}')
         self.build_calls = []
