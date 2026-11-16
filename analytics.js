@@ -225,9 +225,9 @@
         mode:'cors',credentials:'omit',referrerPolicy:'no-referrer',headers:{'content-type':'text/plain'}}).catch(() => {}); } catch (_) {}
     }
     function preferences() {
-      let banner = null, bannerSpace = null;
+      let banner = null;
       const style = doc.createElement('style');
-      style.textContent = '.bt-analytics-dialog{max-width:34rem;width:calc(100% - 2rem);padding:1.5rem;border:2px solid #111;border-radius:12px;background:#fff;color:#111;font:16px/1.5 system-ui,sans-serif}.bt-analytics-dialog::backdrop{background:#0008}.bt-analytics-dialog h2{margin:0 0 .8rem;font-size:1.5rem}.bt-analytics-dialog p{margin:.7rem 0}.bt-analytics-actions{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1rem}.bt-analytics-dialog button,.bt-analytics-settings{font:inherit;padding:.65rem 1rem;border:2px solid #111;border-radius:6px;background:#fff;color:#111;cursor:pointer}.bt-analytics-dialog button:focus-visible,.bt-analytics-settings:focus-visible{outline:3px solid #B70000;outline-offset:3px}.bt-analytics-settings{font-size:.875rem;margin:.8rem;min-height:44px}.bt-analytics-banner{position:fixed;z-index:500;left:12px;right:12px;bottom:max(12px,env(safe-area-inset-bottom));box-sizing:border-box;max-width:52rem;margin:0 auto;padding:10px 14px;border:1px solid #111;border-top:3px solid #B70000;border-radius:8px;background:#fff;color:#111;box-shadow:0 3px 18px #0002;font:14px/1.35 system-ui,sans-serif;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:4px 16px;max-height:40svh;overflow:auto}.bt-analytics-banner p{margin:0;align-self:center}.bt-analytics-banner-choices{display:flex;gap:8px;grid-column:2;grid-row:1 / span 2}.bt-analytics-banner button{font:inherit;min-height:44px;padding:8px 16px;border:1px solid #111;border-radius:5px;background:#fff;color:#111;cursor:pointer}.bt-analytics-banner button:focus-visible,.bt-analytics-banner a:focus-visible{outline:3px solid #B70000;outline-offset:3px}.bt-analytics-banner-choices button{min-width:84px;flex:1}.bt-analytics-banner-links{display:flex;gap:16px;align-items:center;font-size:12px}.bt-analytics-banner-links a,.bt-analytics-banner-links button{color:#111;text-decoration:underline}.bt-analytics-banner-links button{min-height:0;padding:0;border:0;border-radius:0;background:none}.bt-analytics-banner-space{height:104px}@media(max-width:560px){.bt-analytics-banner{grid-template-columns:minmax(0,1fr);gap:6px;padding:10px 12px}.bt-analytics-banner-choices{grid-column:1;grid-row:auto}.bt-analytics-banner-links{justify-content:center}.bt-analytics-banner-space{height:164px}}';
+      style.textContent = '.bt-analytics-dialog{max-width:34rem;width:calc(100% - 2rem);padding:1.5rem;border:2px solid #111;border-radius:12px;background:#fff;color:#111;font:16px/1.5 system-ui,sans-serif}.bt-analytics-dialog::backdrop{background:#0008}.bt-analytics-dialog h2{margin:0 0 .8rem;font-size:1.5rem}.bt-analytics-dialog p{margin:.7rem 0}.bt-analytics-actions{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1rem}.bt-analytics-dialog button,.bt-analytics-settings{font:inherit;padding:.65rem 1rem;border:2px solid #111;border-radius:6px;background:#fff;color:#111;cursor:pointer}.bt-analytics-dialog button:focus-visible,.bt-analytics-settings:focus-visible{outline:3px solid #B70000;outline-offset:3px}.bt-analytics-settings{font-size:.875rem;margin:.8rem;min-height:44px}.bt-analytics-banner{position:fixed;z-index:500;left:0;right:0;bottom:0;box-sizing:border-box;width:100%;margin:0;padding:2px max(16px,calc((100vw - 1248px)/2)) max(2px,env(safe-area-inset-bottom));border:0;border-top:3px solid #df242b;border-radius:0;background:#fff;color:#171719;box-shadow:none;font:13px/1.3 \'IBM Plex Sans\',Arial,sans-serif;display:flex;align-items:center;gap:10px 16px}.bt-analytics-banner p{margin:0;flex:1 1 auto;min-width:0;max-width:none;color:#171719}.bt-analytics-banner-links{display:flex;flex:0 0 auto;gap:14px;align-items:center;white-space:nowrap;font-size:13px}.bt-analytics-banner-links a,.bt-analytics-banner-links button{color:#171719;text-decoration:underline;text-underline-offset:3px}.bt-analytics-banner-choices{display:flex;flex:0 0 auto;gap:8px}.bt-analytics-banner button{font:600 13px/1.2 \'IBM Plex Sans\',Arial,sans-serif;min-height:28px;padding:4px 14px;border:1px solid #171719;border-radius:5px;background:#fff;color:#171719;cursor:pointer}.bt-analytics-banner button:focus-visible,.bt-analytics-banner a:focus-visible{outline:3px solid #B70000;outline-offset:2px}.bt-analytics-banner-choices button{min-width:5.75rem;flex:1 1 0}.bt-analytics-banner-links button{min-height:0;padding:2px 0;border:0;border-radius:0;background:transparent;font:13px/1.3 \'IBM Plex Sans\',Arial,sans-serif}body:has(.bt-analytics-banner){padding-bottom:40px}@media(max-width:720px){.bt-analytics-banner{display:grid;grid-template-columns:minmax(0,1fr) auto;grid-template-areas:\'copy copy\' \'links choices\';align-items:center;gap:2px 8px;padding:2px 12px max(2px,env(safe-area-inset-bottom))}.bt-analytics-banner p{grid-area:copy;font-size:12px;line-height:1.2}.bt-analytics-banner-links{grid-area:links;gap:10px;font-size:12px}.bt-analytics-banner-choices{grid-area:choices}.bt-analytics-banner-choices button{min-height:30px;min-width:4.5rem;padding:4px 10px;font-size:13px}body:has(.bt-analytics-banner){padding-bottom:72px}}';
       doc.head.append(style);
       const dialog = doc.createElement('dialog'); dialog.className = 'bt-analytics-dialog'; dialog.setAttribute('aria-labelledby','bt-analytics-title');
       const h = doc.createElement('h2'); h.id = 'bt-analytics-title'; h.textContent = 'Optional visitor statistics'; dialog.append(h);
@@ -236,10 +236,25 @@
       const link = doc.createElement('a'); link.href = new URL('index.html#privacy',source).href; link.textContent = 'Privacy details'; link.addEventListener('click',() => dialog.close()); dialog.append(link);
       const status = doc.createElement('p'); status.setAttribute('aria-live','polite'); dialog.append(status);
       const actions = doc.createElement('div'); actions.className = 'bt-analytics-actions';
+      function measuredBannerOffset() {
+        if (!banner) return '';
+        const measured = banner.getBoundingClientRect?.().height || banner.offsetHeight || 0;
+        return measured ? Math.ceil(measured) + 'px' : '';
+      }
+      function syncBannerOffset() {
+        const offset = measuredBannerOffset();
+        if (doc.body?.style) doc.body.style.paddingBottom = offset;
+        if (doc.documentElement?.style) doc.documentElement.style.scrollPaddingBottom = offset;
+      }
+      function releaseBannerOffset() {
+        if (doc.body?.style) doc.body.style.paddingBottom = '';
+        if (doc.documentElement?.style) doc.documentElement.style.scrollPaddingBottom = '';
+      }
       function choose(choice) {
         controller.choose(choice);
         if (banner) { banner.remove(); banner = null; }
-        if (bannerSpace) { bannerSpace.remove(); bannerSpace = null; }
+        win.removeEventListener?.('resize', syncBannerOffset);
+        releaseBannerOffset();
         dialog.close();
         if (choice === 'granted') controller.routeRendered();
       }
@@ -265,10 +280,14 @@
         const links = doc.createElement('div'); links.className = 'bt-analytics-banner-links';
         const privacy = doc.createElement('a'); privacy.href = link.href; privacy.textContent = 'Privacy details'; links.append(privacy);
         const preferences = doc.createElement('button'); preferences.type = 'button'; preferences.textContent = 'Preferences'; preferences.addEventListener('click',openDialog); links.append(preferences); banner.append(links);
-        // A normal-flow spacer lets the final footer/CTA scroll clear of the small fixed banner.
+        // Match body padding to the fixed bar so the footer can scroll clear, then drop it with the bar.
         // No focus move, modal opening, backdrop, inert state or page-scroll lock on first visit.
-        bannerSpace = doc.createElement('div'); bannerSpace.className = 'bt-analytics-banner-space'; bannerSpace.setAttribute('aria-hidden','true');
-        doc.body.append(bannerSpace,banner);
+        doc.body.append(banner);
+        syncBannerOffset();
+        win.addEventListener?.('resize', syncBannerOffset);
+        if (typeof win.requestAnimationFrame === 'function') win.requestAnimationFrame(syncBannerOffset);
+        const fontsReady = doc.fonts && doc.fonts.ready;
+        if (fontsReady && typeof fontsReady.then === 'function') fontsReady.then(syncBannerOffset).catch(() => {});
       }
     }
     function bindEvents() {
