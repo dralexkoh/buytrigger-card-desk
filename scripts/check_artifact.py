@@ -73,7 +73,9 @@ for f in d.rglob('*'):
   for t in soup.select('script[src],link[href],img[src]'):
    v=t.get('src')or t.get('href')
    if not v or v.startswith(('http:','https:','data:','#')):continue
-   if not (base/v.split('#')[0].split('?')[0]).exists():fail.append(f'{f.relative_to(d)}: missing {v}')
+   path=v.split('#')[0].split('?')[0]
+   target=(d/path[1:]) if path.startswith('/') and not path.startswith('//') else (base/path)
+   if not target.exists():fail.append(f'{f.relative_to(d)}: missing {v}')
   if not soup.title:fail.append(f'{f}: missing title')
   if f.name!='404.html':
    relative=str(f.relative_to(d));route='' if relative=='index.html' else relative.removesuffix('index.html') if relative.startswith(('stories/','news/','prices/','advertise/')) else relative
@@ -140,7 +142,7 @@ for c in data['cards']:
  assert all(v is None or isinstance(v,(int,float)) and not isinstance(v,bool) and math.isfinite(v) and v>0 for v in values)
 editorial=json.loads((p/'editorial.json').read_text())
 assert {f.parent.name for f in (d/'stories').glob('*/index.html')}=={a['slug'] for a in editorial['articles']}
-def assert_digest_signup(path, campaign):
+def assert_digest_signup(path, campaign, privacy_href='index.html#privacy'):
  html=path.read_text()
  body=html.find('class="article-body"');signup=html.find('digest-signup')
  assert 0<=body<signup, f'{path}: sign-up is not after the article body'
@@ -156,7 +158,7 @@ def assert_digest_signup(path, campaign):
  assert form.select_one('input[name=utm_source]')['value']=='site'
  assert form.select_one('input[name=utm_medium]')['value']=='signup'
  assert form.select_one('input[name=utm_campaign]')['value']=='digest-band'
- assert block.select_one('.digest-note a')['href']=='index.html#privacy'
+ assert block.select_one('.digest-note a')['href']==privacy_href
  assert campaign
 from site_seo import validate_news_article, schema_main_entity_url, BASE as SEO_BASE, collect_news_entries, article_url, news_url, MIN_IMAGE_WIDTH
 def _schema_type(tag):
@@ -181,14 +183,27 @@ for article in editorial['articles']:
   assert page.select_one('.person-byline')
   for author_id in ids:assert page.select_one('#author-'+author_id)
  else:assert schema['author']['@type']=='Organization'
+def assert_story_internal_hrefs(page, label):
+ """Every internal href on a built /news/<slug>/ page is root-absolute and names a real file or route."""
+ for tag in page.select('a[href], link[rel=alternate][href]'):
+  href=tag.get('href') or ''
+  if href.startswith(('http://','https://','mailto:','tel:','//')):continue
+  if href.startswith('#'):
+   assert page.find(id=href[1:]), label+' fragment does not exist on the page: '+href
+   continue
+  assert href.startswith('/'), label+' document-relative href '+href
+  path=href.split('#',1)[0].split('?',1)[0].lstrip('/')
+  target=d/path
+  assert target.is_file() or (target/'index.html').is_file(), label+' unresolved href '+href
 assert {f.parent.name for f in (d/'news').glob('*/index.html')}=={w['id'] for w in editorial.get('wire',[])}
 for brief in editorial.get('wire',[]):
- assert_digest_signup(d/'news'/brief['id']/'index.html', brief['id'])
+ assert_digest_signup(d/'news'/brief['id']/'index.html', brief['id'], '/index.html#privacy')
  page=BeautifulSoup((d/'news'/brief['id']/'index.html').read_text(),'html.parser')
  schema=next(data for data,types in (_schema_type(t) for t in page.select('script[type="application/ld+json"]')) if 'NewsArticle' in types)
  problems=validate_news_article(schema,url=news_url(brief['id']))
  assert not problems, brief['id']+': '+'; '.join(problems)
- assert page.select_one('a[href="index.html#desk/'+brief['id']+'"]') or page.select_one('a[href="index.html#desk"]')
+ assert page.select_one('a[href="/index.html#desk/'+brief['id']+'"]') or page.select_one('a[href="/index.html#desk"]')
+ assert_story_internal_hrefs(page, 'news/'+brief['id'])
 news_map=ET.fromstring((d/'news-sitemap.xml').read_text())
 assert all(node.text.startswith(PUBLIC_BASE) for node in news_map.iter('{http://www.sitemaps.org/schemas/sitemap/0.9}loc'))
 news_locs={node.text for node in news_map.iter('{http://www.sitemaps.org/schemas/sitemap/0.9}loc')}

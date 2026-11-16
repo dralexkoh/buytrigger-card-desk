@@ -9,7 +9,17 @@ import site_seo as seo
 from digest_signup import digest_signup_html
 from thirtieth_prices import publish_price_page as publish_thirtieth_prices, PRICE_PAGE_URL as THIRTIETH_PRICE_URL, source_date as thirtieth_source_date
 from tcg_modern_prices import publish_price_page as publish_modern_prices, PRICE_PAGE_URL as MODERN_PRICE_URL, source_date as modern_source_date
-from raw_price_page import absolutize_document_nav
+from raw_price_page import absolutize_document_nav, root_absolute_href
+
+def absolutize_story_links(page):
+ """Root-absolute internal links, so a nested story does not depend on its directory or <base>."""
+ local={tag.get('id') for tag in page.find_all(id=True)}
+ for link in page.select('a[href]'):
+  href=link.get('href') or ''
+  if href.startswith('#') and href[1:] in local:continue
+  link['href']=root_absolute_href(href)
+ for link in page.select('link[rel=alternate][href]'):
+  link['href']=root_absolute_href(link.get('href') or '')
 
 def advertise_main_html():
  return (
@@ -163,7 +173,7 @@ for w in e.get('wire',[]):
  if picture and not str(picture).startswith(('http://','https://','//')) and (P/picture).is_file():
   img=f'<figure class="reading-image"><div class="story-cover full-image"><img src="{html.escape(picture)}" alt="{html.escape(w.get("imageAlt") or w["title"])}" style="object-fit:contain;background:#fff"></div><figcaption>{html.escape(w.get("imageCredit") or "")}</figcaption></figure>'
  content=f'<header class="reading-head"><a class="back-link" href="index.html#desk">← Back to the newsroom</a><span class="kicker red-text">{html.escape(w.get("category") or "Newsroom")}</span><h1>{html.escape(w["title"])}</h1><p>{html.escape(w.get("summary") or "")}</p><p class="news-credit"><span class="news-author">{byline}</span> · {html.escape(w.get("kind") or "Newsroom")} · {html.escape(w.get("displayDate") or published)}</p></header>{img}<div class="reading-layout"><article class="article-body">{paragraphs}{source}<p class="small">This brief is also listed on the <a href="index.html#desk/{html.escape(w["id"])}">Card Desk</a>.</p><a class="btn red" href="index.html#desk">More from the newsroom →</a></article></div>'+digest_signup_html(w['id'])
- main.append(BeautifulSoup(content,'html.parser'));folder=D/'news'/w['id'];folder.mkdir(parents=True);(folder/'index.html').write_text(str(soup))
+ main.append(BeautifulSoup(content,'html.parser'));absolutize_story_links(soup);folder=D/'news'/w['id'];folder.mkdir(parents=True);(folder/'index.html').write_text(str(soup))
 
 publish_thirtieth_prices(P, D)
 publish_modern_prices(P, D)
