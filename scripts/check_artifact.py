@@ -110,7 +110,15 @@ assert (d/'news-sitemap.xml').is_file()
 assert PUBLIC_BASE in (d/'404.html').read_text()
 cat=(d/'catalogue.js').read_text();data=json.loads(cat[cat.index('=')+1:].strip().rstrip(';'))
 assert len(data['cards'])==100
-assert all(set(c['quotes'])<= {'Raw'} for c in data['cards'])
+assert all(set(c['quotes'])<= {'Raw','PSA 10'} for c in data['cards'])
+assert 'PSA 9' not in data.get('coverage',{})
+assert 'pokemonpricetracker' not in cat.lower()
+for c in data['cards']:
+ assert 'PSA 9' not in c['quotes'] and 'PSA 9' not in c.get('sources',{})
+ q=c['quotes'].get('PSA 10')
+ if not q: continue
+ assert isinstance(q['price'],(int,float)) and not isinstance(q['price'],bool) and math.isfinite(q['price']) and q['price']>0
+ assert q['currency']=='USD' and q['source']=='CardZ' and q.get('url','').startswith('https://cardzmarketcap.com/card/cmc_')
 assert all((d/c['image']).exists() for c in data['cards'])
 assert all((d/c['imageLarge']).exists() for c in data['cards'])
 assert len({c['productId'] for c in data['cards']})==100

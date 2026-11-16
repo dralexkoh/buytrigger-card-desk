@@ -29,7 +29,10 @@
 .three-bars .scenario-row:first-child>b{font-size:22px;letter-spacing:-.5px}.dialog-main .dialog-tabs{margin:12px 0}.individual-history{margin-top:16px}
 
 .price-pending{color:var(--muted);font-weight:650;font-size:inherit;letter-spacing:.15px;line-height:1.3}.price-filter{display:flex;flex-direction:column;align-items:flex-end;gap:3px;max-width:100%}#priced-only-label.is-disabled,#priced-only:disabled{cursor:not-allowed}.filter-hint{color:var(--muted);font-size:inherit;font-weight:650;letter-spacing:.1px;line-height:1.35}@media(max-width:600px){.price-filter{align-items:flex-start}}
+#modern-preview .price-triplet{grid-template-columns:repeat(2,minmax(0,1fr))}#modern-preview .price-triplet>div>span{white-space:normal;line-height:1.25}#modern-preview .price-triplet b,#modern-preview .price-triplet b span{white-space:nowrap}#modern-preview .price-triplet a,#modern-preview .psa-card-link{color:inherit}#modern-preview .psa-credit{margin:16px 0 0;color:var(--muted);font-size:12px;line-height:1.45}#modern-preview .psa-credit a{color:inherit}
+@media(max-width:700px){#modern-preview .price-triplet{display:block}#modern-preview .price-triplet>div{display:flex;justify-content:space-between;align-items:baseline;gap:8px;padding:3px 0}}
 .currency-note{font-size:10px;line-height:1.5;color:#675925;background:#fbf7e3;padding:7px;margin-top:8px;display:block;white-space:normal}.card-data-table .currency-note{max-width:150px;text-align:left}.movers-grid>.empty-state{grid-column:1/-1}
+#modern-preview .dialog-main .scenario-row{grid-template-columns:8.75rem minmax(0,1fr) auto}#modern-preview .dialog-main .scenario-row>span{min-width:0;white-space:normal;overflow-wrap:anywhere;line-height:1.25}#modern-preview .dialog-main .scenario-row:nth-child(2) .scenario-track span{background:var(--red)}
 
 /* Keep the catalogue rank on its own line, clear of the artwork. Image heights stay the same. */
 body[data-index="modern"] .card-gallery .catalog-art{align-items:flex-start;height:226px;padding:36px 14px 8px}

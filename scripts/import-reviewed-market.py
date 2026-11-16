@@ -37,12 +37,16 @@ for c in roster:
     if amount:
         q['Raw']={'price':amount,'currency':'USD','date':dates[-1],'source':c['source'],
             'provider':'TCGplayer market via TCGCSV','method':'Exact English catalogue issue and Holofoil printing. Combined-condition market guide; not a Near Mint-only sale, available offer or net profit.','count':None}
+    carried=previous.get(c['id'],{}).get('quotes',{}).get('PSA 10')
+    if carried:q['PSA 10']=carried
+    sources={k:v for k,v in previous.get(c['id'],{}).get('sources',{}).items() if k!='PSA 9'}
+    sources['Raw']=c['source']
     card={'id':c['id'],'name':c['name'],'set':c['set'],'number':c['number'],'language':'English','rarity':c['rarity'],
         'releaseDate':c['release_date'],'productId':c['product_id'],'groupId':c['group_id'],'printing':'Holofoil',
         'image':'assets/'+a['files']['low']['file'],'imageLarge':'assets/'+a['files']['high']['file'],
         'imageProvider':a['image_provider'],'imageSource':a['source_metadata_url'],
         'origin':c['origin'],'membershipReason':c['membership_reason'].replace('owner-selected original90','original curated 90'),'quotes':q,
-        'sources':previous.get(c['id'],{}).get('sources',{}) | {'Raw':c['source']}}
+        'sources':sources}
     cards.append(card)
 # The one unpriced USD issue has a separately identified European guide. Never feed it to the USD index.
 alt=json.loads((review/'source-catalogue/empoleon-tcgdex.json').read_text())
@@ -63,10 +67,10 @@ release={'version':'modern100-raw-v1','published':'2026-11-03','sourceDate':date
     'rawReferences':sum('Raw' in c['quotes'] for c in cards),'images':100,
     'historyStart':dates[0],'historyEnd':dates[-1],'archiveDays':history['complete_archive_days'],
     'expectedDays':len(dates),'incompleteArchiveDates':history['missing_archive_dates'],
-    'gradedStatus':'Pending by owner direction, 3 November 2026',
+    'gradedStatus':'PSA 10: CardZ last sale (CC BY 4.0), reviewed 16 Nov 2026. PSA 9 not tracked (PSA 10 only).',
     'basis':'Retrospective research of the current selected basket; not a fund, buy list or point-in-time trading strategy.'}
 payload={'cards':cards,'logo':'assets/logo.png','family':'assets/family.png','captured':captured,
-    'coverage':{'Raw':release['rawReferences'],'PSA 9':0,'PSA 10':0},'release':release}
+    'coverage':{'Raw':release['rawReferences'],'PSA 10':sum('PSA 10' in c['quotes'] for c in cards)},'release':release}
 (root/'catalogue.js').write_text('window.MODERN_PREVIEW_DATA='+json.dumps(payload,separators=(',',':'),ensure_ascii=False)+';\n')
 cohorts={'january':{'id':'bt-public-modern100-raw-v1-complete-year','rule':'Every daily USD observation present for 1 January to 2 November 2026; retrospectively selected and fixed.','members':[c['id'] for c in cards if c['releaseDate']<=dates[0] and all(prices[str(c['id'])])]},'current':{'id':'bt-public-modern100-raw-v1-nov','members':[c['id'] for c in cards if c['quotes'].get('Raw',{}).get('currency')=='USD' and prices[str(c['id'])][-1]]}}
 release['cohorts']=cohorts

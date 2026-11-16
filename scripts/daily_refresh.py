@@ -2,12 +2,15 @@
 """Incremental, public-only TCGCSV Raw collector (Python standard library).
 
 Always writes to a separate --output-dir; the caller validates and promotes the
-allowlisted outputs as one release. No private inputs, database, trading, image
-or graded-price access. This is a guide feed, not verified individual sales.
+allowlisted outputs as one release. No private inputs, database, trading or image
+access. Raw stays a guide feed. PSA 10, when the public route agrees with the
+committed allow-list, is one CardZ last sale.
 
 Output: catalogue.js, market-history.js, market-release.json, market-sources.json,
 top50-data.js, top50-release.json, top50-sources.json, refresh-status.json, and
 append-only data/refresh/{observations,receipts,review}/ plus state.json.
+PSA 10 last sales are read once from the public CardZ route (no key) and locked
+to data/psa10/cardz-approved.json. A route failure keeps the last PSA 10 quote.
 The data/refresh directory must be committed durably with each published update.
 Cache responses are optional accelerators, never the only copy of provenance.
 
@@ -44,12 +47,15 @@ import time
 import urllib.error
 import urllib.request
 
+import modern_psa10
+
 SCHEMA = 1
 BASE = "https://tcgcsv.com"
 USER_AGENT = "BuyTrigger.Cards/1.1 (+https://buytrigger.cards/)"
 FILES = ("catalogue.js", "market-history.js", "market-release.json", "market-sources.json",
          "top50-data.js", "top50-release.json", "top50-sources.json")
 COLLECTION_FILES = ("bluechip-collection-data.js", "bluechip-collection-sources.json")
+PSA10_FILES = ("data/psa10/cardz-approved.json",)
 PUBLIC_OUTPUTS = (*FILES, "refresh-status.json", "data/refresh")
 POLICY = {"id": "daily-factor-two-review-v1", "factor": 2,
           "minimumPreviousObservations": 3, "recentWindow": 7,
@@ -430,6 +436,9 @@ def release_metadata(data, hist, source_date, now, status, name, source_manifest
         release["rawReferences"] = status["coverage"][name]["references"]
         data["captured"] = now
         data["coverage"]["Raw"] = release["rawReferences"]
+        imported = data.pop("_psa10Import", None)
+        if imported:
+            modern_psa10.annotate_release(data, imported["counts"], imported.get("effectiveDay"))
         q = release.setdefault("historyQuality", {})
         q["reportedPrices"] = sum(positive(v) for values in hist["prices"].values() for v in values)
         q["sourceAnomaliesHeld"] = len(hist.get("exclusions", []))
@@ -453,6 +462,12 @@ def run(args):
         shutil.copy2(site / file, output / file)
     if (site / "data/refresh").exists():
         shutil.copytree(site / "data/refresh", output / "data/refresh")
+    for relative in PSA10_FILES:
+        source_file = site / relative
+        if source_file.is_file():
+            destination = output / relative
+            destination.parent.mkdir(parents=True, exist_ok=True)
+            shutil.copy2(source_file, destination)
     prior_status = read_json(site / "refresh-status.json") if (site / "refresh-status.json").exists() else {}
     modern = read_js(site / "catalogue.js", "window.MODERN_PREVIEW_DATA")
     history = read_js(site / "market-history.js", "window.BT_HISTORY")
@@ -602,6 +617,8 @@ def run(args):
         status["gaps"] = sorted(gaps)
         state["gaps"] = status["gaps"]
         status["coverage"] = {name: coverage_and_quotes(data, hist, source_date) for name, data, hist in named}
+        modern_psa10.refresh_modern(
+            modern, site / PSA10_FILES[0], output / "data/refresh/psa10-holds", now[:10])
         status["missingCount"] = sum(v["missing"] for v in status["coverage"].values())
         status["heldCount"] = sum(v["held"] for v in status["coverage"].values())
         delayed = timestamp(now) - build > dt.timedelta(hours=30)

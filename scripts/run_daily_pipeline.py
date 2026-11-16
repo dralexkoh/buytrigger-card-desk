@@ -13,7 +13,7 @@ import subprocess
 import sys
 import tempfile
 
-from daily_refresh import COLLECTION_FILES, FILES
+from daily_refresh import COLLECTION_FILES, FILES, PSA10_FILES
 
 
 def execute(argv, cwd):
@@ -55,6 +55,11 @@ def apply_output(output, stage, failed):
         for p in sorted((output/'data/refresh').rglob('*.json')):
             copy_one(p,stage/p.relative_to(output))
             selected.append(str(p.relative_to(output)))
+    if not failed:
+        for name in PSA10_FILES:
+            if (output/name).is_file():
+                copy_one(output/name, stage/name)
+                selected.append(name)
     shared = output/'data/market-cache/thirtieth-current.json'
     if not failed and shared.exists():
         copy_one(shared, stage/'data/market-cache/thirtieth-current.json')
