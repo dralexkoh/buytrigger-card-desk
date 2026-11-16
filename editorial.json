@@ -2043,6 +2043,35 @@
   ],
   "wire": [
     {
+      "id": "thirtieth-celebration-chase-cards-raw-since-launch-2026-11-16",
+      "eventKey": "tcgplayer-market-ebay-sold-30th-celebration-top10-raw-2026-09-16-to-2026-11-14",
+      "date": "2026-11-16",
+      "displayDate": "16 Nov · Price check",
+      "category": "Price action",
+      "kind": "Market price guide",
+      "title": "Raw 30th Celebration Mew ex and Gengar ex are down by two-thirds since launch week, with Lugia off 44%",
+      "summary": "A raw Mew ex Special Illustration Rare from 30th Celebration had a TCGplayer market price of US$170.26 on 16 September, the day TCGplayer lists the set as released. On 14 November it was US$54.96, down 67.7%. Gengar ex SIR fell from US$134.86 to US$46.03, down 65.9%. The Classic Collection Lugia (149/147), the dearest card in the set once you leave out the three Mew RGB Rares, slid from US$210.79 to US$118.93, a drop of 43.6%.\n\nThose are guide prices, so we checked them against eBay sales listed on PriceCharting. Raw Lugia copies sold for a median of US$258.99 across 13 sales in the second half of September, and US$145 across 32 sales from 9 to 15 November. That's 44% lower, close to the guide. Mew ex sales point the same way, but we found only two from launch fortnight, so treat that comparison lightly.\n\nThe Classic Collection Charizard (4/102) is where the two sources split. Its guide is down 42.2%, but eBay sold prices are down about a quarter, from a US$183.49 median (18 sales, 17–29 September) to US$140 (32 sales, 9–15 November).\n\nIn the UK, the PokeDeal Finder tracker puts raw Lugia at £115.10, the median of its last five eBay UK sales, on 16 November.\n\nAll ten of the set’s top chase cards by raw price cost less than in launch week. Leaving aside Magikarp, whose launch-day guide looks out of line, falls range from 42% to 72%. Whether PSA 10 prices follow is the open question. Every card’s latest raw price is on our 30th Anniversary price index.\n\nGuide prices are TCGplayer market prices for raw, mixed-condition English cards, via TCGCSV. Sold medians come from the sample of eBay sales PriceCharting shows, not every sale. This isn’t buying or selling advice.",
+      "sourceLabel": "TCGplayer market price via TCGCSV; eBay sold via PriceCharting",
+      "url": "https://www.pricecharting.com/game/pokemon-30th-celebration/lugia-149",
+      "checkedAt": "2026-11-16T14:05:00Z",
+      "sourcePublishedAt": "2026-11-16",
+      "visual": "briefing-graphic",
+      "image": "assets/newsroom-20261116/thirtieth-celebration-raw-since-launch-chart.webp",
+      "imageAlt": "BuyTrigger.Cards bar chart of TCGplayer market price changes for the top ten 30th Celebration chase cards, raw, 16 September to 14 November 2026, from Magikarp down 25% (marked as a launch-day outlier) to Sylveon ex down 72%, coloured by main set and Classic Collection.",
+      "imageCredit": "Graphic: BuyTrigger.Cards. Data: TCGplayer market price via TCGCSV.",
+      "imageSourceUrl": "https://buytrigger.cards/assets/newsroom-20261116/thirtieth-celebration-raw-since-launch-chart.webp",
+      "ctaUrl": "https://buytrigger.cards/prices/thirtieth-anniversary/?utm_source=site&utm_medium=story&utm_campaign=30th-psa10-premium",
+      "ctaLabel": "See every 30th Anniversary card’s price →",
+      "author": {
+        "id": "elliot-reed",
+        "name": "Elliot Reed",
+        "type": "named_ai_correspondent",
+        "label": "Correspondent",
+        "beat": "Markets & auctions"
+      },
+      "newsRevision": 1
+    },
+    {
       "id": "legendary-collection-reverse-holo-moltres-psa10-32300-2026-11-15",
       "eventKey": "fanatics-legendary-collection-reverse-holo-moltres-30-psa10-88237363-2026-11-15",
       "date": "2026-11-15",
