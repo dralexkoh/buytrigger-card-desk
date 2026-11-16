@@ -123,7 +123,7 @@ test('calculator counts a useful action once per route, never its input values',
 async function bootDOM(){
   const win=windowAt(),calls=[],elements=[];
   const element=tag=>({tag,children:[],listeners:{},attributes:{},modalOpens:0,append(...children){this.children.push(...children);},setAttribute(k,v){this.attributes[k]=v;},addEventListener(event,fn){this.listeners[event]=fn;},showModal(){this.open=true;this.modalOpens++;},close(){this.open=false;},remove(){this.removed=true;}});
-  const doc=win.document;doc.currentScript={src:base+'analytics.js'};doc.head=element('head');doc.body=Object.assign(element('body'),{dataset:{}});doc.createElement=tag=>{const e=element(tag);elements.push(e);return e;};doc.querySelector=()=>null;doc.addEventListener=()=>{};
+  const doc=win.document;doc.currentScript={src:base+'analytics.js'};doc.head=element('head');doc.body=Object.assign(element('body'),{dataset:{},style:{}});doc.createElement=tag=>{const e=element(tag);e.getBoundingClientRect=()=>({height:e.className==='bt-analytics-banner'?48:0,width:0,top:0,left:0,right:0,bottom:0});elements.push(e);return e;};doc.querySelector=()=>null;doc.addEventListener=()=>{};
   win.addEventListener=()=>{};win.setInterval=()=>{};win.fetch=async(url,opts)=>{calls.push({url,opts});return {ok:true,json:async()=>config};};
   A.boot(win);await new Promise(resolve=>setImmediate(resolve));
   return {win,calls,elements,dialog:elements.find(x=>x.tag==='dialog'),banner:elements.find(x=>x.className==='bt-analytics-banner')};
@@ -132,20 +132,24 @@ test('first visit shows a non-modal banner, preserves browsing, and sends nothin
   const {win,calls,elements,dialog,banner}=await bootDOM();
   assert.equal(calls.length,1);assert.equal(calls[0].url,base+'analytics-config.json');assert.equal(win.localStorage.writes,0);assert.equal(elements.filter(x=>x.tag==='script').length,0);
   assert.ok(banner);assert.equal(banner.attributes.role,'region');assert.equal(dialog.modalOpens,0);assert.ok(!dialog.open);
+  assert.equal(win.document.body.style.paddingBottom,'48px');
+  const css=elements.find(x=>x.tag==='style').textContent;
+  assert.match(css,/\.bt-analytics-banner\{[^}]*position:fixed/);assert.match(css,/bottom:0/);
+  assert.match(css,/body:has\(\.bt-analytics-banner\)/);assert.doesNotMatch(css,/bt-analytics-banner-space/);
   win.location=new URL('index.html#journal',base);win.BTAnalytics.routeRendered();assert.equal(calls.length,1);assert.equal(win.localStorage.writes,0);assert.equal(dialog.modalOpens,0);
   const choices=elements.find(x=>x.className==='bt-analytics-banner-choices').children;
   assert.deepEqual(choices.map(x=>x.textContent),['Decline','Allow']);assert.ok(choices.every(x=>x.tag==='button'&&!x.className));
   const accept=choices.find(x=>x.textContent==='Allow');accept.listeners.click();
   assert.equal(calls.length,2);assert.equal(calls[1].opts.credentials,'omit');assert.equal(calls[1].opts.referrerPolicy,'no-referrer');
   assert.equal(JSON.parse(calls[1].opts.body).event,'page_view');assert.equal(JSON.parse(calls[1].opts.body).page,'/journal');
-  assert.equal(banner.removed,true);assert.equal(elements.find(x=>x.className==='bt-analytics-banner-space').removed,true);
+  assert.equal(banner.removed,true);assert.equal(win.document.body.style.paddingBottom,'');
 });
 test('decline removes the banner and remains silent; full preferences require an explicit action',async()=>{
   const {win,calls,elements,dialog,banner}=await bootDOM();
   const prefs=elements.find(x=>x.textContent==='Preferences');prefs.listeners.click();assert.equal(dialog.modalOpens,1);assert.equal(calls.length,1);
   elements.find(x=>x.textContent==='Close').listeners.click();assert.ok(!dialog.open);assert.ok(!banner.removed);
   elements.find(x=>x.className==='bt-analytics-banner-choices').children[0].listeners.click();
-  assert.equal(banner.removed,true);assert.equal(calls.length,1);assert.equal(win.BTAnalytics.status().consent,'denied');
+  assert.equal(banner.removed,true);assert.equal(win.document.body.style.paddingBottom,'');assert.equal(calls.length,1);assert.equal(win.BTAnalytics.status().consent,'denied');
   const footer=elements.find(x=>x.textContent==='Visitor statistics preferences');footer.listeners.click();assert.equal(dialog.modalOpens,2);
   elements.find(x=>x.textContent==='Allow statistics').listeners.click();assert.equal(calls.length,2);assert.equal(win.BTAnalytics.status().consent,'granted');
 });
