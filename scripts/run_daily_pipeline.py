@@ -59,6 +59,11 @@ def apply_output(output, stage, failed):
     if not failed and shared.exists():
         copy_one(shared, stage/'data/market-cache/thirtieth-current.json')
         selected.append('data/market-cache/thirtieth-current.json')
+    if not failed and (stage/'data/market-rosters').exists():
+        # Per-index caches for the shared Cards DB; rebuilt from the observations
+        # this run already collected (no extra fetch). Approved rosters only.
+        from index_cache import write_all
+        selected.extend(write_all(stage))
     return selected
 
 

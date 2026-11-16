@@ -29,15 +29,15 @@
 .price-page .price-link a{color:#df242b;font-weight:800;white-space:nowrap}
 .price-page #price-empty{margin:14px 0 0;font-weight:700}
 .price-page .visually-hidden{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
-.price-page .digest-signup{margin:28px 56px 36px}
+.price-page .digest-signup{margin:28px 0 36px}
 @media (min-width:721px){.price-page .price-table{min-width:760px}}
-@media (max-width:900px){.price-page .price-sheet,.price-page .digest-signup{padding-left:34px;padding-right:34px}.price-page .digest-signup{margin-left:34px;margin-right:34px}}
+@media (max-width:900px){.price-page .price-sheet{padding-left:34px;padding-right:34px}}
 @media (max-width:720px){
  .price-page .publication-strip>span:last-child{display:none}
  .price-page .price-sheet{padding:4px 20px 28px}
  .price-page .price-tools{display:grid;grid-template-columns:1fr}
  .price-page .price-tools input,.price-page .price-tools select{width:100%}
- .price-page .digest-signup{margin:20px 20px 28px}
+ .price-page .digest-signup{margin:20px 0 28px}
  .price-page .price-table{min-width:0}
  .price-page .price-table thead{display:none}
  .price-page .price-table,.price-page .price-table tbody,.price-page .price-table tr,.price-page .price-table td{display:block}

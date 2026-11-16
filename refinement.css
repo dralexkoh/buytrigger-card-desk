@@ -156,3 +156,55 @@
 .editorial-page .wire-photo-grid figcaption p{font-size:14px;line-height:1.4}
 .wire-photo-grid blockquote{margin:8px 0}
 @media(max-width:680px){.wire-photo-grid{grid-template-columns:minmax(0,1fr)}}
+
+/* Shared story-card headline. One size on the news list, homepage rail, Features and category pages. */
+.editorial-page .news-card h3.card-title,
+.editorial-page .wire-scroll .news-card h3.card-title,
+.editorial-page .wire-scroll .compact-wire-card h3.card-title,
+.editorial-page .wire-row h3.card-title,
+.editorial-page .illustrated-wire h3.card-title,
+.editorial-page .post-copy h3.card-title,
+.editorial-page .home-stories .post-copy h3.card-title{
+ font-family:'Barlow Condensed','Arial Narrow',Arial,sans-serif;
+ font-weight:700;
+ font-size:28px;
+ line-height:1.2;
+ letter-spacing:0;
+ margin:0 0 8px;
+}
+.editorial-page .wire-row h3.card-title a,
+.editorial-page .illustrated-wire h3.card-title a,
+.editorial-page .news-card h3.card-title a,
+.editorial-page .wire-scroll .news-card h3.card-title a,
+.editorial-page .post-copy h3.card-title a,
+.editorial-page .home-stories .post-copy h3.card-title a{
+ display:inline;
+ margin:0;
+ font-family:inherit;
+ font-size:inherit;
+ font-weight:inherit;
+ line-height:inherit;
+ letter-spacing:inherit;
+ color:inherit;
+ text-decoration:none;
+}
+.editorial-page .wire-row h3.card-title a:hover,
+.editorial-page .wire-row h3.card-title a:focus-visible,
+.editorial-page .illustrated-wire h3.card-title a:hover,
+.editorial-page .illustrated-wire h3.card-title a:focus-visible,
+.editorial-page .news-card h3.card-title a:hover,
+.editorial-page .news-card h3.card-title a:focus-visible,
+.editorial-page .post-copy h3.card-title a:hover,
+.editorial-page .post-copy h3.card-title a:focus-visible{
+ text-decoration:underline;
+ text-underline-offset:3px;
+}
+@media(max-width:650px){
+ .editorial-page .news-card h3.card-title,
+ .editorial-page .wire-scroll .news-card h3.card-title,
+ .editorial-page .wire-scroll .compact-wire-card h3.card-title,
+ .editorial-page .wire-row h3.card-title,
+ .editorial-page .illustrated-wire h3.card-title,
+ .editorial-page .post-copy h3.card-title,
+ .editorial-page .home-stories .post-copy h3.card-title{font-size:22px;line-height:1.2}
+}

@@ -13,7 +13,6 @@ import digest_signup
 import tcg_modern_prices as prices
 
 ROOT = Path(__file__).resolve().parents[1]
-SUBSCRIBE = 'https://buytriggercards.substack.com/subscribe?utm_source=site&utm_medium=signup&utm_campaign=tcg-modern-prices'
 
 
 class SnapshotTests(unittest.TestCase):
@@ -126,13 +125,24 @@ class PageTests(unittest.TestCase):
         self.assertEqual(ids, {card['product_id'] for card in self.cards})
         self.assertNotIn('tcg-modern-index', self.html)
 
-    def test_reuses_the_digest_with_the_price_page_campaign(self):
+    def test_reuses_the_shared_digest_band(self):
         block = self.page.select_one('.digest-signup')
         self.assertIsNotNone(block)
-        self.assertEqual(block.select_one('iframe')['src'], 'https://buytriggercards.substack.com/embed')
-        self.assertEqual(block.select_one('.digest-fallback a')['href'], SUBSCRIBE)
+        self.assertIsNone(block.select_one('iframe'))
+        form = block.select_one('form.digest-form')
+        self.assertEqual(form['action'], 'https://buytriggercards.substack.com/subscribe')
+        self.assertEqual(form.get('method'), 'get')
+        self.assertEqual(form.get('target'), '_blank')
+        email = form.select_one('input[name=email]')
+        self.assertEqual(email['type'], 'email')
+        self.assertTrue(email.has_attr('required'))
+        self.assertEqual(block.select_one('label')['for'], email['id'])
+        self.assertEqual(form.select_one('input[name=utm_campaign]')['value'], 'digest-band')
+        self.assertIn('Free, weekly, unsubscribe anytime. Handled by Substack.', block.get_text(' ', strip=True))
         plain = digest_signup.digest_signup_html('story-slug')
-        self.assertIn('utm_source=site&amp;utm_medium=signup&amp;utm_campaign=story-slug', plain)
+        self.assertIn('name="utm_campaign" value="digest-band"', plain)
+        self.assertIn('The week’s cards, in one email.', plain)
+        self.assertNotIn('iframe', plain)
 
     def test_sort_and_filter_controls_are_price_name_and_set(self):
         self.assertEqual(self.page.select_one('#price-sort option[selected]')['value'], 'price-desc')

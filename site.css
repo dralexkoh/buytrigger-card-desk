@@ -28,21 +28,27 @@
 @media(max-width:800px){.market-hero .public-modern-fan{flex:1;min-height:230px;height:230px}.public-top50-feature h2{font-size:44px}}
 @media(max-width:460px){.market-hero .public-modern-fan{min-height:185px;height:185px;flex:0 0 185px}.public-top50-feature{padding:24px}.public-top50-feature h2{font-size:40px}}
 
-/* Weekly digest signup — Substack official embed, wrapped in the house style. */
-.digest-signup{max-width:1248px;margin:0 auto;padding:36px 56px;background:#fff;border-top:4px solid #df242b;box-sizing:border-box}
-.digest-signup h2{margin:10px 0 12px;letter-spacing:-1.5px}
-.digest-signup>p{color:#626269;font-size:16px;max-width:640px;margin:0 0 18px}
-.digest-embed{width:100%;max-width:480px}
-.digest-embed iframe{display:block;width:100%;max-width:100%;height:320px;border:1px solid #deded9;background:#fff}
-.digest-consent{font-size:13px;line-height:1.5;color:#171719;max-width:640px;margin:16px 0 0}
-.digest-privacy,.digest-fallback{font-size:12px;color:#626269;margin:8px 0 0;max-width:640px}
-.digest-signup-article{margin:28px 0 10px;padding:28px 32px;border:1px solid #deded9;border-top:4px solid #df242b}
-.digest-signup-article h2{font-size:28px;letter-spacing:-.8px}
-.digest-signup-article>p{font-size:14px;margin-bottom:16px}
-@media(max-width:650px){
-  .digest-signup{padding:28px 20px;margin:0}
-  .digest-signup-article{padding:22px 18px;margin:22px 0}
-  .digest-embed iframe{height:360px}
+/* Weekly digest band. One full-width row; the same block on every page. */
+.digest-signup{width:100%;margin:28px 0;padding:32px 56px 28px;background:#fff;border-top:4px solid #df242b;box-sizing:border-box}
+.digest-band{display:grid;grid-template-columns:minmax(0,1fr) minmax(280px,440px);gap:8px 40px;align-items:center;max-width:1248px;margin:0 auto}
+.digest-signup .kicker{font-family:'Barlow Condensed','Arial Narrow',Arial,sans-serif;font-weight:600;font-size:14px;letter-spacing:1.5px;line-height:1.2}
+.digest-signup h2{margin:2px 0 4px;font-family:'Barlow Condensed','Arial Narrow',Arial,sans-serif;font-weight:700;font-size:32px;line-height:1.05;letter-spacing:0}
+.digest-sub{margin:0;max-width:46ch;color:#626269;font-family:'IBM Plex Sans',Arial,sans-serif;font-size:15px;line-height:1.35}
+.digest-form{display:flex;flex-direction:column;gap:6px;min-width:0}
+.digest-form label{font-family:'IBM Plex Sans',Arial,sans-serif;font-size:12px;font-weight:600;line-height:1.3;color:#171719}
+.digest-controls{display:flex;gap:8px;align-items:stretch;min-width:0}
+.digest-controls input{flex:1 1 auto;min-width:0;width:100%;min-height:44px;padding:8px 12px;border:1px solid #deded9;border-radius:5px;background:#fff;font-family:'IBM Plex Sans',Arial,sans-serif;font-size:16px}
+.digest-controls button{flex:0 0 auto;min-height:44px;padding:0 18px;border:0;border-radius:5px;background:#df242b;color:#fff;font-family:'IBM Plex Sans',Arial,sans-serif;font-weight:600;font-size:15px}
+.digest-controls button:hover{background:#c41f26}
+.digest-note{max-width:1248px;margin:10px auto 0;font-family:'IBM Plex Sans',Arial,sans-serif;font-size:12px;line-height:1.4;color:#626269}
+.digest-note a{color:#171719;font-weight:600}
+.digest-signup input:focus-visible,.digest-signup button:focus-visible,.digest-signup a:focus-visible{outline:3px solid #171719;outline-offset:3px}
+@media(max-width:720px){
+ .digest-signup{margin:20px 0;padding:18px 20px 14px}
+ .digest-band{grid-template-columns:minmax(0,1fr);gap:14px}
+ .digest-signup h2{font-size:28px}
+ .digest-controls{flex-wrap:wrap}
+ .digest-controls button{flex:1 1 auto}
 }
 .advertise-options{margin:0;padding-left:1.15em;color:var(--muted);font-size:16px;line-height:1.55}
 .advertise-options li+li{margin-top:8px}
