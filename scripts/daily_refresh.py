@@ -14,6 +14,10 @@ to data/psa10/cardz-approved.json. A route failure keeps the last PSA 10 quote.
 The data/refresh directory must be committed durably with each published update.
 Cache responses are optional accelerators, never the only copy of provenance.
 
+data/market-rosters adds its groups to that same live fetch. Each roster printing
+is recorded with the public accept/hold rules and the group's URL and SHA go on
+the run receipt. Those cards do not join validate_baseline or the public baskets.
+
 Factor-of-two daily changes trigger REVIEW, not a declaration of a bad price.
 Existing historical exclusions and accepted sharp changes remain untouched.
 A held source amount stays in the immutable observation and history array, with
@@ -321,7 +325,61 @@ def suspicion(amount, previous, date):
     return None
 
 
-def collect_observations(date, groups, identities, datasets):
+def load_roster_identities(site):
+    """Exact printings from data/market-rosters. Not part of public basket validation."""
+    folder = site / "data/market-rosters"
+    found = {}
+    if not folder.is_dir():
+        return found
+    for path in sorted(folder.glob("*.json")):
+        roster = read_json(path)
+        index = roster.get("index")
+        if roster.get("schemaVersion") != 1 or not isinstance(index, str) or index in {"thirtieth", "thirtieth-anniversary"}:
+            continue
+        for card in roster.get("cards") or []:
+            printing = card.get("printing")
+            if card.get("language") != "English" or not isinstance(printing, str) or not printing:
+                raise RefreshError(f"Unreviewed roster identity: {index}")
+            try:
+                product_id = int(card["productId"])
+                group_id = int(card["groupId"])
+            except (KeyError, TypeError, ValueError) as exc:
+                raise RefreshError(f"Unreviewed roster identity: {index}") from exc
+            if product_id <= 0 or group_id <= 0:
+                raise RefreshError(f"Unreviewed roster identity: {index}")
+            card_key = f"{product_id}|{printing}"
+            identity = {"productId": product_id, "groupId": group_id, "printing": printing, "language": "English", "currency": "USD"}
+            prior = found.get(card_key)
+            if prior and prior["groupId"] != group_id:
+                raise RefreshError("Overlapping rosters disagree about group identity")
+            found.setdefault(card_key, identity)
+    return found
+
+
+def earlier_accepted(root):
+    """Accepted amounts already stored for printings outside the public baskets."""
+    by_day = {}
+    folder = root / "data/refresh/observations"
+    if folder.is_dir():
+        for day_dir in sorted(path for path in folder.iterdir() if path.is_dir()):
+            files = sorted(day_dir.glob("raw-*.json"))
+            if not files:
+                continue
+            payload = read_json(files[-1])
+            by_day[day_dir.name] = {row["key"]: row for row in payload.get("observations", []) if isinstance(row, dict) and isinstance(row.get("key"), str)}
+    def lookup(card_key, date):
+        found = []
+        for day in sorted(by_day):
+            if day >= date:
+                continue
+            row = by_day[day].get(card_key)
+            if row and row.get("status") == "accepted" and positive(row.get("amount")):
+                found.append((day, row["amount"]))
+        return found[-POLICY["recentWindow"]:]
+    return lookup
+
+
+def collect_observations(date, groups, identities, datasets, basket_keys=None, earlier=None):
     rows = []
     for card_key, identity in sorted(identities.items()):
         raw = groups[identity["groupId"]].get(card_key)
@@ -333,11 +391,59 @@ def collect_observations(date, groups, identities, datasets):
             reason = "Exact product and printing absent from source"
         elif not positive(amount):
             reason = "Null, nonpositive or invalid source marketPrice"
-        review = suspicion(amount, prior_values(card_key, date, datasets), date) if not reason else None
+        previous = prior_values(card_key, date, datasets)
+        if earlier and basket_keys is not None and card_key not in basket_keys:
+            previous = earlier(card_key, date)
+        review = suspicion(amount, previous, date) if not reason else None
         rows.append({"key": card_key, **identity, "amount": amount if positive(amount) else None,
                      "status": "missing" if reason else "held" if review else "accepted",
                      "reason": reason, "review": review, "sourceRow": raw})
     return rows
+
+
+def merge_resources(existing, extra):
+    by_url = {item["url"]: item for item in existing}
+    for item in extra:
+        by_url.setdefault(item["url"], item)
+    return list(by_url.values())
+
+
+def attach_missing_roster_observations(output, provider, build, roster_ids, basket_keys, datasets, earlier, now):
+    """Add roster printings missing from an already accepted live observation.
+
+    The original file stays immutable. A later file for the same source day keeps
+    every existing row and adds the roster rows, with each group's URL and SHA
+    on that run receipt. Public basket history is not rewritten.
+    """
+    if not roster_ids:
+        return None
+    source_date = build.date().isoformat()
+    folder = output / "data/refresh/observations" / source_date
+    files = sorted(folder.glob("raw-*.json")) if folder.is_dir() else []
+    if not files:
+        return None
+    current = read_json(files[-1])
+    if current.get("kind") != "live" or current.get("sourceDate") != source_date:
+        return None
+    have = {row.get("key") for row in current.get("observations", [])}
+    missing = {key: card for key, card in roster_ids.items() if key not in have}
+    if not missing:
+        return None
+    groups, resources = provider.live(missing, build)
+    rows = collect_observations(source_date, groups, missing, datasets, basket_keys, earlier)
+    observation_id = current["id"] + ".rosters"
+    sources = merge_resources(current.get("sources", []), resources)
+    observation = dict(current)
+    observation.update({"id": observation_id, "retrievedAt": now, "sources": sources,
+                        "observations": list(current["observations"]) + rows})
+    immutable_json(folder / f"{observation_id}.json", observation)
+    counts = {status: sum(row["status"] == status for row in observation["observations"]) for status in ("accepted", "missing", "held")}
+    receipt = {"schemaVersion": SCHEMA, "id": observation_id, "sourceDate": source_date,
+               "sourceBuildAt": current.get("sourceBuildAt"), "retrievedAt": now, "kind": "live",
+               "observationSha256": sha(canonical(observation)), "sources": sources,
+               "counts": counts, "uniqueExactPrintings": len(observation["observations"])}
+    immutable_json(output / "data/refresh/receipts" / f"{observation_id}.json", receipt)
+    return observation_id
 
 
 def add_date(hist, date):
@@ -474,6 +580,7 @@ def run(args):
     top = read_js(site / "top50-data.js", "window.BT_TOP50")
     collection = read_js(site / COLLECTION_FILES[0], "window.BT_TOP50") if COLLECTION_FILES[0] in files else None
     identities = validate_baseline(modern, history, top, collection)
+    roster_ids = load_roster_identities(site)
     shared_path = site / "thirtieth-catalogue.json"
     shared_catalogue = read_json(shared_path) if shared_path.exists() else None
     collection_identities = dict(identities)
@@ -486,6 +593,15 @@ def run(args):
             destination = output / "data/market-cache/thirtieth-current.json"
             destination.parent.mkdir(parents=True, exist_ok=True)
             shutil.copy2(shared_cache, destination)
+    for card_key, card in roster_ids.items():
+        prior = collection_identities.get(card_key)
+        if prior and prior["groupId"] != card["groupId"]:
+            raise RefreshError("Overlapping rosters disagree about group identity")
+        collection_identities.setdefault(card_key, card)
+    observed = dict(identities)
+    for card_key, card in roster_ids.items():
+        observed.setdefault(card_key, card)
+    basket_keys = set(identities)
     sources = {"modern": read_json(site / "market-sources.json"), "top50": read_json(site / "top50-sources.json")}
     datasets = [(modern, history), (top, top["history"])]
     named = [("modern", modern, history), ("top50", top, top["history"])]
@@ -498,6 +614,7 @@ def run(args):
     baseline_end = min(hist["dates"][-1] for _, hist in datasets)
     state = read_json(state_path) if state_path.exists() else {"schemaVersion": SCHEMA, "baselineEndDate": baseline_end, "processedBuilds": [], "observedArchiveDates": [], "gaps": []}
     provider = Provider(args.cache_dir.resolve(), args.fixture_dir)
+    earlier = earlier_accepted(output)
     status = {"schemaVersion": SCHEMA, "runKind": args.run_kind, "checkedAt": now,
               "lastSuccessfulCheck": prior_status.get("lastSuccessfulCheck"), "sourceDate": baseline_end,
               "sourceBuildAt": prior_status.get("sourceBuildAt"),
@@ -566,7 +683,8 @@ def run(args):
                 recovery_errors.append(str(exc))
         pending.sort(key=lambda item: (item[0], item[1]))
         for day, kind, build_at, groups, resources in pending:
-            rows = collect_observations(day, groups, identities, datasets)
+            target = observed if kind == "live" else identities
+            rows = collect_observations(day, groups, target, datasets, basket_keys if kind == "live" else None, earlier if kind == "live" else None)
             if kind == "live" and shared_catalogue:
                 from shared_set_cache import build_cache
                 cache_file = output / "data/market-cache/thirtieth-current.json"
@@ -595,7 +713,8 @@ def run(args):
                        "observationSha256": sha(canonical(observation)), "sources": resources,
                        "counts": counts, "uniqueExactPrintings": len(rows)}
             immutable_json(output / f"data/refresh/receipts/{observation_id}.json", receipt)
-            status["changedCount"] += sum(r["status"] == "accepted" and (not prior_values(r["key"], day, datasets) or prior_values(r["key"], day, datasets)[-1][1] != r["amount"]) for r in rows)
+            counted = [row for row in rows if row["key"] in basket_keys]
+            status["changedCount"] += sum(row["status"] == "accepted" and (not prior_values(row["key"], day, datasets) or prior_values(row["key"], day, datasets)[-1][1] != row["amount"]) for row in counted)
             status["newObservationDates"].append(day)
             if kind == "live":
                 state["processedBuilds"].append(build_at)
@@ -605,6 +724,7 @@ def run(args):
                 sources[name].setdefault("dailyReceipts", []).append({"date": day, "id": observation_id, "sourceBuildAt": build_at, "receipt": f"data/refresh/receipts/{observation_id}.json", "observationSha256": receipt["observationSha256"]})
                 if kind == "archive":
                     sources[name].setdefault("archives", []).append({"date": day, **resources[0]})
+        attach_missing_roster_observations(output, provider, build, roster_ids, basket_keys, datasets, earlier, now)
         # Insert explicit daily gaps so charts cannot bridge unsupported observations.
         for day in date_range(first, source_date):
             for _, _, hist in named:
