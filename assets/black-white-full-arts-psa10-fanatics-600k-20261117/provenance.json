@@ -1,0 +1,343 @@
+{
+  "slug": "black-white-full-arts-psa10-fanatics-600k",
+  "kind": "correction",
+  "prepared": "2026-11-17",
+  "timezone": "Europe/London (GMT, UTC+0)",
+  "reviewer": "Vault Newsroom",
+  "reviewDate": "2026-11-17",
+  "tool": "Pillow, make_correction.py (same layout as make_graphics.py / build_bw_feature.py)",
+  "generation_prompt": null,
+  "fonts": {
+    "wordmark": "Gelasio Bold (Georgia metric-compatible fallback; Georgia is not installed on the box)",
+    "headlines": "Barlow Condensed Bold",
+    "body_labels_credits": "IBM Plex Sans (Regular / SemiBold)"
+  },
+  "crops_checked": [
+    "full size",
+    "390px phone width",
+    "72x64 desktop rail",
+    "48x40 phone rail",
+    "80x88 homepage missed-stories"
+  ],
+  "rights_basis": "Official/lot photography from Fanatics Collect, used as credited editorial reference. Brand badge and wordmark used unchanged. No generated franchise characters.",
+  "credit_line": "Slab photo: Fanatics Collect, used as credited editorial reference. Layout: BuyTrigger.Cards.",
+  "no_generated_pokemon_art": true,
+  "homepage_slot": "unchanged; featuredArticle remains next-1000-dollar-pokemon-card-bubble-mew-test",
+  "fact_check": {
+    "source": "https://sales-history-api.services.fanaticscollect.com/api/v1/pub/sales/item/{WEEKLY id}",
+    "checkedAt": "2026-11-17T20:55:00Z",
+    "results": [
+      {
+        "id": "WEEKLY6779316",
+        "card": "Registeel EX cert 29091574",
+        "paymentStatus": "Paid",
+        "isComplete": true,
+        "purchasePrice": "204000.00",
+        "updatedAt": "2026-11-10T06:34:20.000 PST"
+      },
+      {
+        "id": "WEEKLY6791689",
+        "card": "Dialga EX cert 23016515",
+        "paymentStatus": "Paid",
+        "isComplete": true,
+        "purchasePrice": "168000.00",
+        "updatedAt": "2026-11-17T06:59:40.000 PST"
+      },
+      {
+        "id": "WEEKLY6772367",
+        "card": "Giratina BW74 cert 28942608",
+        "paymentStatus": "Paid",
+        "isComplete": true,
+        "purchasePrice": "120000.00",
+        "updatedAt": "2026-11-17T06:59:38.000 PST"
+      },
+      {
+        "id": "WEEKLY6773541",
+        "card": "Deoxys EX cert 23534423",
+        "paymentStatus": "Paid",
+        "isComplete": true,
+        "purchasePrice": "108000.00",
+        "updatedAt": "2026-11-17T06:59:35.000 PST"
+      }
+    ],
+    "also_rechecked_not_in_this_feature": [
+      {
+        "id": "WEEKLY6757717",
+        "card": "Shadowless Charizard",
+        "paymentStatus": "Paid"
+      },
+      {
+        "id": "WEEKLY6819624",
+        "card": "Legendary Collection Pikachu",
+        "paymentStatus": "Paid"
+      }
+    ]
+  },
+  "changes": [
+    "Hero headline: \"Only one sale is marked paid.\" → \"All four sales are marked paid.\" Date line 17 Nov 2026. All four tiles PAID, red top rule, ink prices.",
+    "Thumbnail band: \"PAID  ·  1 OF 4\" → \"PAID  ·  4 OF 4\". Layout otherwise unchanged.",
+    "Four-sales chart (desktop + mobile) and Giratina chart: UNPAID bars/labels → PAID, ink fill, date 17 Nov 2026.",
+    "slab-fronts, lot-screenshots, giratina-three and dialga-same-cert captions UNPAID → PAID. Screenshot capture date 14 Nov kept. Payment status dated 17 Nov.",
+    "CSV payment_status_as_of_2026-11-17 = Paid for all four rows.",
+    "Cache-bust: new asset folder ...-20261117. Old ...-20261114 folder left in place, unreferenced by the Feature."
+  ],
+  "outputs": [
+    {
+      "path": "assets/black-white-full-arts-psa10-fanatics-600k-20261117/chart-four-sales-mobile.png",
+      "bytes": 40595,
+      "sha256": "ea089dae279fa94935795c64f5f78261ed577425dbbc61ff511da6f95f173d36"
+    },
+    {
+      "path": "assets/black-white-full-arts-psa10-fanatics-600k-20261117/chart-four-sales.csv",
+      "bytes": 848,
+      "sha256": "19823f3f564dfc40f962c4568363b858867ed3fbcc413a57a49d688e3f4027ed"
+    },
+    {
+      "path": "assets/black-white-full-arts-psa10-fanatics-600k-20261117/chart-four-sales.png",
+      "bytes": 43422,
+      "sha256": "6ed4d1ae970180600b9512f0ceab8ef01ad218235d95c3466f1cf5bff1a621de"
+    },
+    {
+      "path": "assets/black-white-full-arts-psa10-fanatics-600k-20261117/chart-giratina-three.png",
+      "bytes": 43047,
+      "sha256": "6fdca33fbe5667dd71c95a23f200489c7be6b5ea547c10721f35ffba6de6d98a"
+    },
+    {
+      "path": "assets/black-white-full-arts-psa10-fanatics-600k-20261117/dialga-same-cert.png",
+      "bytes": 353933,
+      "sha256": "a0eefd5137eef13ff4576c968b07a6e5d0b2ebbd040fddbd93981d38c868e61d"
+    },
+    {
+      "path": "assets/black-white-full-arts-psa10-fanatics-600k-20261117/giratina-three.jpg",
+      "bytes": 717771,
+      "sha256": "554cf08dcf1a81037998d630316e9cdd3bdb6af5879fa79fb3f683e693f6f442"
+    },
+    {
+      "path": "assets/black-white-full-arts-psa10-fanatics-600k-20261117/hero.jpg",
+      "bytes": 311525,
+      "sha256": "411f58f3c60ca1167eaf8727832dd5f4e27de7ba18b564d357d51bd0743ab899"
+    },
+    {
+      "path": "assets/black-white-full-arts-psa10-fanatics-600k-20261117/lot-screenshots.png",
+      "bytes": 605987,
+      "sha256": "0901f4d2f4a47b6cbbf0e0ad3bec501064a7f8d422a79741e60507e526df1d49"
+    },
+    {
+      "path": "assets/black-white-full-arts-psa10-fanatics-600k-20261117/registeel-two.jpg",
+      "bytes": 500924,
+      "sha256": "7aa6694385effddb7e6b426b0dfc966e451df42e82a96cfbac2c3297ade93995"
+    },
+    {
+      "path": "assets/black-white-full-arts-psa10-fanatics-600k-20261117/slab-backs.jpg",
+      "bytes": 846679,
+      "sha256": "5f789da5df2544a626d218ab932972d23d821e8897a3bdff5a1abd156723a432"
+    },
+    {
+      "path": "assets/black-white-full-arts-psa10-fanatics-600k-20261117/slab-fronts.jpg",
+      "bytes": 979586,
+      "sha256": "646ab8cd7c0df825fb9fb32e79eb923afecddb50f09919ce9f816b8b1084f3ea"
+    },
+    {
+      "path": "assets/black-white-full-arts-psa10-fanatics-600k-20261117/thumb.jpg",
+      "bytes": 168663,
+      "sha256": "4988d3b18fac3a71a3cb2a8c8210a825c741ad034e874213e265b9b550d3de06"
+    }
+  ],
+  "inputs": [
+    {
+      "path": "/home/box/private/buytrigger/full/BuyTrigger-Cards-Grok-Handover-2026-11-10/workspace/brand/buytrigger-cards/skill/assets/buytrigger-badge-gengar-vaporeon-master.png",
+      "sha256": "3b2ea7958da46b596737fa7f377cfa7018ee43cf015ee6745274b7022b5d528a",
+      "class": "brand-asset",
+      "role": "badge (uncropped)"
+    },
+    {
+      "path": "/home/box/private/buytrigger/features/drafts/black-white-full-arts-psa10-fanatics-600k/img/fanatics-deo-nov-1.jpg",
+      "sha256": "f641a97b4595f9bed4fc50cbd0b987704cb54a15bbc4631aac13cc2e910f41b1",
+      "class": "permitted-media",
+      "role": "Fanatics Collect lot slab photo",
+      "rights_basis": "editorial fair-dealing / credited lot photograph"
+    },
+    {
+      "path": "/home/box/private/buytrigger/features/drafts/black-white-full-arts-psa10-fanatics-600k/img/fanatics-deo-nov-2.jpg",
+      "sha256": "1ea152170a2a5a417dadaa5a696d4c3d5a64b0554349f77864bc3b0a55a03a3b",
+      "class": "permitted-media",
+      "role": "Fanatics Collect lot slab photo",
+      "rights_basis": "editorial fair-dealing / credited lot photograph"
+    },
+    {
+      "path": "/home/box/private/buytrigger/features/drafts/black-white-full-arts-psa10-fanatics-600k/img/fanatics-dia-nov-1.jpg",
+      "sha256": "2f3e04f5b1e4b353757da9f018f3e14f748668649b480cf30e4f6f0f95fe380a",
+      "class": "permitted-media",
+      "role": "Fanatics Collect lot slab photo",
+      "rights_basis": "editorial fair-dealing / credited lot photograph"
+    },
+    {
+      "path": "/home/box/private/buytrigger/features/drafts/black-white-full-arts-psa10-fanatics-600k/img/fanatics-dia-nov-2.jpg",
+      "sha256": "5618b28234bcc7a9b3a6c1c6bf6b5edcf3ee97dcb988fcbdb4b834f1f6be0019",
+      "class": "permitted-media",
+      "role": "Fanatics Collect lot slab photo",
+      "rights_basis": "editorial fair-dealing / credited lot photograph"
+    },
+    {
+      "path": "/home/box/private/buytrigger/features/drafts/black-white-full-arts-psa10-fanatics-600k/img/fanatics-dia-oct-1.jpg",
+      "sha256": "101c47add3acba5fcbe97ffb35da6761b6f4898c57540691aa80411f596aa13b",
+      "class": "permitted-media",
+      "role": "Fanatics Collect lot slab photo",
+      "rights_basis": "editorial fair-dealing / credited lot photograph"
+    },
+    {
+      "path": "/home/box/private/buytrigger/features/drafts/black-white-full-arts-psa10-fanatics-600k/img/fanatics-dia-oct-2.jpg",
+      "sha256": "61f2d0be5aa0ed203d5f80d4f7247a90ae3a7ff97da0ad52a4de8e83033f5567",
+      "class": "permitted-media",
+      "role": "Fanatics Collect lot slab photo",
+      "rights_basis": "editorial fair-dealing / credited lot photograph"
+    },
+    {
+      "path": "/home/box/private/buytrigger/features/drafts/black-white-full-arts-psa10-fanatics-600k/img/fanatics-dia-sep60k-1.jpg",
+      "sha256": "2f3e04f5b1e4b353757da9f018f3e14f748668649b480cf30e4f6f0f95fe380a",
+      "class": "permitted-media",
+      "role": "Fanatics Collect lot slab photo",
+      "rights_basis": "editorial fair-dealing / credited lot photograph"
+    },
+    {
+      "path": "/home/box/private/buytrigger/features/drafts/black-white-full-arts-psa10-fanatics-600k/img/fanatics-dia-sep60k-2.jpg",
+      "sha256": "5618b28234bcc7a9b3a6c1c6bf6b5edcf3ee97dcb988fcbdb4b834f1f6be0019",
+      "class": "permitted-media",
+      "role": "Fanatics Collect lot slab photo",
+      "rights_basis": "editorial fair-dealing / credited lot photograph"
+    },
+    {
+      "path": "/home/box/private/buytrigger/features/drafts/black-white-full-arts-psa10-fanatics-600k/img/fanatics-gir-nov-1.jpg",
+      "sha256": "c3c26e0bfa9eaec3367d79b52ca1247fad24ac63170b12129c2a8f494fcea20c",
+      "class": "permitted-media",
+      "role": "Fanatics Collect lot slab photo",
+      "rights_basis": "editorial fair-dealing / credited lot photograph"
+    },
+    {
+      "path": "/home/box/private/buytrigger/features/drafts/black-white-full-arts-psa10-fanatics-600k/img/fanatics-gir-nov-2.jpg",
+      "sha256": "1297c7bfd666a337730884b75ab10467de4c6b71a7dd19ed0e56d4a35c88cb90",
+      "class": "permitted-media",
+      "role": "Fanatics Collect lot slab photo",
+      "rights_basis": "editorial fair-dealing / credited lot photograph"
+    },
+    {
+      "path": "/home/box/private/buytrigger/features/drafts/black-white-full-arts-psa10-fanatics-600k/img/fanatics-gir-oct-1.jpg",
+      "sha256": "0f83b6f8c5461c5f221a4dbfbdb7ac693ac8a98d14ffe1e79d3ef868e39a45e1",
+      "class": "permitted-media",
+      "role": "Fanatics Collect lot slab photo",
+      "rights_basis": "editorial fair-dealing / credited lot photograph"
+    },
+    {
+      "path": "/home/box/private/buytrigger/features/drafts/black-white-full-arts-psa10-fanatics-600k/img/fanatics-gir-oct-2.jpg",
+      "sha256": "0f6218e7f6f7e3a2d8e0572c29517e1ac312677b48d67572247da1c26277cf24",
+      "class": "permitted-media",
+      "role": "Fanatics Collect lot slab photo",
+      "rights_basis": "editorial fair-dealing / credited lot photograph"
+    },
+    {
+      "path": "/home/box/private/buytrigger/features/drafts/black-white-full-arts-psa10-fanatics-600k/img/fanatics-gir-sep-1.jpg",
+      "sha256": "95a900e6f2c673291c0c037524ffaed14c2b6596291713ca34a3f238c03d6256",
+      "class": "permitted-media",
+      "role": "Fanatics Collect lot slab photo",
+      "rights_basis": "editorial fair-dealing / credited lot photograph"
+    },
+    {
+      "path": "/home/box/private/buytrigger/features/drafts/black-white-full-arts-psa10-fanatics-600k/img/fanatics-gir-sep-2.jpg",
+      "sha256": "9c45dbc3441017b10b6a2ded359cd17b55ba8737b5c5dc58abfedb317c5b6c79",
+      "class": "permitted-media",
+      "role": "Fanatics Collect lot slab photo",
+      "rights_basis": "editorial fair-dealing / credited lot photograph"
+    },
+    {
+      "path": "/home/box/private/buytrigger/features/drafts/black-white-full-arts-psa10-fanatics-600k/img/fanatics-reg-nov-1.jpg",
+      "sha256": "b65a93fce9394e4558749e1f7ba6739016d27c748a5be6f3dc2fc51e9cd3bd82",
+      "class": "permitted-media",
+      "role": "Fanatics Collect lot slab photo",
+      "rights_basis": "editorial fair-dealing / credited lot photograph"
+    },
+    {
+      "path": "/home/box/private/buytrigger/features/drafts/black-white-full-arts-psa10-fanatics-600k/img/fanatics-reg-nov-2.jpg",
+      "sha256": "c70ffd5a9fcc89764f384243037bd463ffc351ec0cec834a08cdceda641b4c15",
+      "class": "permitted-media",
+      "role": "Fanatics Collect lot slab photo",
+      "rights_basis": "editorial fair-dealing / credited lot photograph"
+    },
+    {
+      "path": "/home/box/private/buytrigger/features/drafts/black-white-full-arts-psa10-fanatics-600k/img/fanatics-reg-oct-1.jpg",
+      "sha256": "ee6afa887797210a62700d1989c41943eeef2acf9550eeece250f01baaeb5952",
+      "class": "permitted-media",
+      "role": "Fanatics Collect lot slab photo",
+      "rights_basis": "editorial fair-dealing / credited lot photograph"
+    },
+    {
+      "path": "/home/box/private/buytrigger/features/drafts/black-white-full-arts-psa10-fanatics-600k/img/fanatics-reg-oct-2.jpg",
+      "sha256": "4dcd255cc961ef60a4a2edb45fbc8bc05353c2432040471c2aebb6cdf829eaee",
+      "class": "permitted-media",
+      "role": "Fanatics Collect lot slab photo",
+      "rights_basis": "editorial fair-dealing / credited lot photograph"
+    },
+    {
+      "path": "/home/box/private/buytrigger/features/drafts/black-white-full-arts-psa10-fanatics-600k/shots/lot-deo-nov-panel.png",
+      "sha256": "faf2ec768fbeddb5a1354aac7070ce9c42d37b3073d963d0547110a8d5ed5c35",
+      "class": "permitted-media",
+      "role": "Fanatics Collect lot page screenshot, captured 14 Nov 2026 08:05 GMT",
+      "rights_basis": "editorial fair-dealing / credited screenshot"
+    },
+    {
+      "path": "/home/box/private/buytrigger/features/drafts/black-white-full-arts-psa10-fanatics-600k/shots/lot-dia-nov-panel.png",
+      "sha256": "4e2098665cfa3eef7a9435034f4fffe33df5dd8fa01df3386ad353e0a779ce80",
+      "class": "permitted-media",
+      "role": "Fanatics Collect lot page screenshot, captured 14 Nov 2026 08:05 GMT",
+      "rights_basis": "editorial fair-dealing / credited screenshot"
+    },
+    {
+      "path": "/home/box/private/buytrigger/features/drafts/black-white-full-arts-psa10-fanatics-600k/shots/lot-dia-oct-panel.png",
+      "sha256": "05d627980b2f922561f2978f471cbe46a898569a311df538f2d8fed7fb38c0f4",
+      "class": "permitted-media",
+      "role": "Fanatics Collect lot page screenshot, captured 14 Nov 2026 08:05 GMT",
+      "rights_basis": "editorial fair-dealing / credited screenshot"
+    },
+    {
+      "path": "/home/box/private/buytrigger/features/drafts/black-white-full-arts-psa10-fanatics-600k/shots/lot-dia-sep60k-panel.png",
+      "sha256": "e28a0b1f3b115adea708e0421436181eea36de02f70b006020b1df90e9249927",
+      "class": "permitted-media",
+      "role": "Fanatics Collect lot page screenshot, captured 14 Nov 2026 08:05 GMT",
+      "rights_basis": "editorial fair-dealing / credited screenshot"
+    },
+    {
+      "path": "/home/box/private/buytrigger/features/drafts/black-white-full-arts-psa10-fanatics-600k/shots/lot-gir-nov-panel.png",
+      "sha256": "22d25cfb0b60e614586237c3bcb598bd19fce1085ac2a4986fd8a2ee02d9606f",
+      "class": "permitted-media",
+      "role": "Fanatics Collect lot page screenshot, captured 14 Nov 2026 08:05 GMT",
+      "rights_basis": "editorial fair-dealing / credited screenshot"
+    },
+    {
+      "path": "/home/box/private/buytrigger/features/drafts/black-white-full-arts-psa10-fanatics-600k/shots/lot-gir-oct-panel.png",
+      "sha256": "0d8cc3cc2ff6294bd18d9bf6c8c70409af739fcf39a219c4ef15b3ad31f0d7e5",
+      "class": "permitted-media",
+      "role": "Fanatics Collect lot page screenshot, captured 14 Nov 2026 08:05 GMT",
+      "rights_basis": "editorial fair-dealing / credited screenshot"
+    },
+    {
+      "path": "/home/box/private/buytrigger/features/drafts/black-white-full-arts-psa10-fanatics-600k/shots/lot-gir-sep-panel.png",
+      "sha256": "aeba1239758fdb95c50e356e4d758815866683c893491b840cb20a06c87dfdea",
+      "class": "permitted-media",
+      "role": "Fanatics Collect lot page screenshot, captured 14 Nov 2026 08:05 GMT",
+      "rights_basis": "editorial fair-dealing / credited screenshot"
+    },
+    {
+      "path": "/home/box/private/buytrigger/features/drafts/black-white-full-arts-psa10-fanatics-600k/shots/lot-reg-nov-panel.png",
+      "sha256": "f28e9ac46f0be0c1f3b83107f8bfdbea8a8790df0185ecda382ddf2721626feb",
+      "class": "permitted-media",
+      "role": "Fanatics Collect lot page screenshot, captured 14 Nov 2026 08:05 GMT",
+      "rights_basis": "editorial fair-dealing / credited screenshot"
+    },
+    {
+      "path": "/home/box/private/buytrigger/features/drafts/black-white-full-arts-psa10-fanatics-600k/shots/lot-reg-oct-panel.png",
+      "sha256": "a4ff3346214473fc72e717eb3fdbd01523d2c30c7c350058720867a9a58d8663",
+      "class": "permitted-media",
+      "role": "Fanatics Collect lot page screenshot, captured 14 Nov 2026 08:05 GMT",
+      "rights_basis": "editorial fair-dealing / credited screenshot"
+    }
+  ]
+}
