@@ -1,12 +1,12 @@
 {
   "reviewer": "Vault Newsroom",
   "review_date": "2026-11-17",
-  "rights_basis": "Official Pokémon Card Game Japan product-page promotional art and card images, reused as permitted official media with credit, consistent with prior Newsroom official-source briefs.",
-  "credit_line": "Promotional image / Card image: The Pokémon Company / pokemon-card.com",
+  "rights_basis": "Official Pokémon Card Game Japan product-page pack, card and promotional images, composed on the owner-locked BuyTrigger.Cards brand canvas (paper, red rule, badge + wordmark). Official media reused with credit; no generated or redrawn franchise characters. Individual official pack/card crops from the 17 Nov 08:14 edition are retained; the 08:20 revision adds curated 1600×900 story heroes.",
+  "credit_line": "Card image: The Pokémon Company / pokemon-card.com  ·  Graphic: BuyTrigger.Cards",
   "crops_checked": [
-    "full-size",
-    "approx 393px phone width",
-    "site rail thumbnail"
+    "full-size 1600x900",
+    "390px phone width",
+    "site rail thumbnail 104x78, 72x64 and 48x40"
   ],
   "outputs": [
     {
@@ -58,15 +58,27 @@
         907
       ],
       "class": "permitted-media"
+    },
+    {
+      "path": "assets/newsroom-20261117/hadou-seeker-hero-pack-and-chase-cards.webp",
+      "sha256": "581b75ebaa0c9b515c27c96ee9d0da6b7a7f0b1c0b6b9ce5b4b3cd50a9871d2b",
+      "size_px": [
+        1600,
+        900
+      ],
+      "class": "permitted-media + brand-asset composition"
+    },
+    {
+      "path": "assets/newsroom-20261117/flowing-fists-rumour-hero-japanese-lucario.webp",
+      "sha256": "0ea604e37046bb65d0968d6e6355e7c5c2720f72acd3b3d5fb30284683289f0b",
+      "size_px": [
+        1600,
+        900
+      ],
+      "class": "permitted-media + brand-asset composition"
     }
   ],
   "inputs": [
-    {
-      "path": "/tmp/flowing-fist-src/img/hero_bg_eiksq.webp",
-      "source_url": "https://www.pokemon-card.com/ex/m7/assets/images/hero_bg_eiksq.webp",
-      "sha256": "d79cfa0a12453bd26a48541ed99d8c2cd2ae62e9a48ce605f09e249553416d69",
-      "class": "permitted-media"
-    },
     {
       "path": "/tmp/flowing-fist-src/img/product_pack_kmqoi.webp",
       "source_url": "https://www.pokemon-card.com/ex/m7/assets/images/product_pack_kmqoi.webp",
@@ -90,9 +102,27 @@
       "source_url": "https://www.pokemon-card.com/ex/m7/assets/images/modal_card_be3fz.webp",
       "sha256": "eab5d8b2715f6f3872486360069009cf0ace7f3ff5e5450972f1edc855f95afa",
       "class": "permitted-media"
+    },
+    {
+      "path": "/workspace/nr20261117-heroes/assets/publisher-logo-600x60.png",
+      "source_url": null,
+      "sha256": "ae4ac346e762dfc13bb5a5b11211a6fc9d05f6117a3588e55a2b8ea2283d6aac",
+      "class": "brand-asset"
+    },
+    {
+      "path": "/home/box/private/buytrigger/full/BuyTrigger-Cards-Grok-Handover-2026-11-10/workspace/brand/buytrigger-cards/skill/assets/buytrigger-badge-gengar-vaporeon-web.png",
+      "source_url": null,
+      "sha256": "303e7a82ef8ebe755375d864029ab623c55b6272c44cec15462539cc5c25a4fa",
+      "class": "brand-asset"
+    },
+    {
+      "path": "/tmp/flowing-fist-src/img/hero_bg_eiksq.webp",
+      "source_url": "https://www.pokemon-card.com/ex/m7/assets/images/hero_bg_eiksq.webp",
+      "sha256": "d79cfa0a12453bd26a48541ed99d8c2cd2ae62e9a48ce605f09e249553416d69",
+      "class": "permitted-media"
     }
   ],
   "generation_prompt": null,
-  "tool": "Pillow, resize only, paper #F4F4F1 behind transparent assets, no generation, no drawing of franchise characters",
+  "tool": "Pillow composition only: official pack/card images placed on the brand paper canvas, official wordmark PNG and badge resized but not cropped or recoloured. No drawing or generation of Pokémon.",
   "reference_files": []
 }
