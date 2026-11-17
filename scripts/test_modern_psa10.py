@@ -290,19 +290,29 @@ class ModernPsa10Tests(unittest.TestCase):
         self.assertNotIn("quoteMoney", script)
 
     def test_10_published_cards_match_the_reviewed_sample(self):
+        """Named cards keep their roles. Amounts and the sale day follow the published release."""
         data = load_catalogue()
         mewtwo = next(c for c in data["cards"] if c["id"] == 24)
         magikarp = next(c for c in data["cards"] if c["id"] == 89)
         latias = next(c for c in data["cards"] if c["id"] == 1)
         self.assertEqual(mewtwo["name"], "Mewtwo GX")
-        self.assertEqual(mewtwo["quotes"]["PSA 10"]["price"], 7052)
-        self.assertEqual(mewtwo["quotes"]["PSA 10"]["as_of"], "2026-11-16")
         self.assertEqual(magikarp["number"], "203/193")
-        self.assertEqual(magikarp["quotes"]["PSA 10"]["price"], 3200)
         self.assertNotIn("PSA 10", latias["quotes"])
-        shown = sum(1 for c in data["cards"] if P._classify(c["quotes"].get("PSA 10"), RUN) == "priced")
-        self.assertEqual(shown, 50)
-        self.assertEqual(data["coverage"]["PSA 10"], 50)
+        day = data["release"]["psa10"]["effectiveDay"]
+        for card in (mewtwo, magikarp):
+            quote = card["quotes"]["PSA 10"]
+            self.assertTrue(P._valid_price(quote["price"]))
+            self.assertEqual(quote["currency"], "USD")
+            self.assertRegex(quote["as_of"], r"^\d{4}-\d{2}-\d{2}$")
+            self.assertLessEqual(quote["as_of"], day)
+            self.assertRegex(quote["url"], r"^https://cardzmarketcap\.com/card/cmc_[0-9a-f]{24}$")
+            self.assertIn(P._classify(quote, day), {"priced", "stale"})
+        shown = sum(1 for c in data["cards"] if P._classify(c["quotes"].get("PSA 10"), day) == "priced")
+        stale = sum(1 for c in data["cards"] if P._classify(c["quotes"].get("PSA 10"), day) == "stale")
+        self.assertEqual(shown, data["release"]["psa10"]["priced"])
+        self.assertEqual(stale, data["release"]["psa10"]["stale"])
+        self.assertEqual(data["coverage"]["PSA 10"], shown + stale)
+        self.assertGreater(shown + stale, 0)
 
 
 if __name__ == "__main__":
