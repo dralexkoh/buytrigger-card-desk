@@ -4,6 +4,7 @@ import json, html, shutil, hashlib, subprocess
 from datetime import datetime, timezone
 from email.utils import format_datetime
 from editorial_visuals import validate_editorial_visuals
+from chase_cards import render_chase_cards
 from xml.sax.saxutils import escape
 import site_seo as seo
 from digest_signup import digest_signup_html
@@ -107,7 +108,7 @@ for a in e['articles']:
  main=soup.select_one('main');main.clear()
  content=f'<header class="reading-head"><a class="back-link" href="index.html#journal">← Back to features</a><span class="kicker red-text">{html.escape(a["eyebrow"])}</span><h1>{html.escape(a["title"])}</h1><p>{html.escape(a["summary"])}</p>'+(authors[a['slug']]['byline'] or '<p>BuyTrigger Cards · Published '+html.escape(published)+(' · Source story '+html.escape(a['sourcePublishedAt']) if a.get('sourcePublishedAt') else '')+'</p>')+'</header>'
  cover_class = "story-cover full-image" if a.get("visualStyle") == "source-media-v1" else "story-cover"
- content+=f'<figure class="reading-image"><div class="{cover_class}"><img src="{picture}" style="object-fit:contain;background:#fff" alt="{html.escape(a["imageAlt"])}"></div><figcaption>{html.escape(a["imageCredit"])}</figcaption></figure><div class="reading-layout"><article class="article-body">'
+ content+=f'<figure class="reading-image"><div class="{cover_class}"><img src="{picture}" style="object-fit:contain;background:#fff" alt="{html.escape(a["imageAlt"])}"></div><figcaption>{html.escape(a["imageCredit"])}</figcaption></figure>{render_chase_cards(a)}<div class="reading-layout"><article class="article-body">'
  for sec in a['sections']:content+=f'<section><h2>{html.escape(sec["heading"])}</h2>{sec["html"]}</section>'
  content+=authors[a['slug']]['profile']
  content+='<div class="source-box"><h3>Sources &amp; reading notes</h3>'+''.join(f'<a href="{html.escape(s["url"])}" rel="noopener noreferrer">{html.escape(s["label"])} ↗</a>' for s in a['sources'])+'</div><a class="btn red" href="index.html#journal">More features →</a></article></div>'+digest_signup_html(a['slug'])
@@ -176,7 +177,7 @@ for w in e.get('wire',[]):
  img=''
  if picture and not str(picture).startswith(('http://','https://','//')) and (P/picture).is_file():
   img=f'<figure class="reading-image"><div class="story-cover full-image"><img src="{html.escape(picture)}" alt="{html.escape(w.get("imageAlt") or w["title"])}" style="object-fit:contain;background:#fff"></div><figcaption>{html.escape(w.get("imageCredit") or "")}</figcaption></figure>'
- content=f'<header class="reading-head"><a class="back-link" href="index.html#desk">← Back to the newsroom</a><span class="kicker red-text">{html.escape(w.get("category") or "Newsroom")}</span><h1>{html.escape(w["title"])}</h1><p>{html.escape(w.get("summary") or "")}</p><p class="news-credit"><span class="news-author">{byline}</span> · {html.escape(w.get("kind") or "Newsroom")} · {html.escape(w.get("displayDate") or published)}</p></header>{img}<div class="reading-layout"><article class="article-body">{paragraphs}{source}<p class="small">This brief is also listed on the <a href="index.html#desk/{html.escape(w["id"])}">Card Desk</a>.</p><a class="btn red" href="index.html#desk">More from the newsroom →</a></article></div>'+digest_signup_html(w['id'])
+ content=f'<header class="reading-head"><a class="back-link" href="index.html#desk">← Back to the newsroom</a><span class="kicker red-text">{html.escape(w.get("category") or "Newsroom")}</span><h1>{html.escape(w["title"])}</h1><p>{html.escape(w.get("summary") or "")}</p><p class="news-credit"><span class="news-author">{byline}</span> · {html.escape(w.get("kind") or "Newsroom")} · {html.escape(w.get("displayDate") or published)}</p></header>{img}{render_chase_cards(w)}<div class="reading-layout"><article class="article-body">{paragraphs}{source}<p class="small">This brief is also listed on the <a href="index.html#desk/{html.escape(w["id"])}">Card Desk</a>.</p><a class="btn red" href="index.html#desk">More from the newsroom →</a></article></div>'+digest_signup_html(w['id'])
  main.append(BeautifulSoup(content,'html.parser'));absolutize_story_links(soup);folder=D/'news'/w['id'];folder.mkdir(parents=True);(folder/'index.html').write_text(str(soup))
 
 publish_thirtieth_prices(P, D)

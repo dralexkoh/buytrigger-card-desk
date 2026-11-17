@@ -757,6 +757,44 @@
       "thumbnail": "assets/delta-chase-20261107/delta-reign-chase-cards.webp",
       "imageAlt": "The actual English Delta Reign gold Mega Rayquaza ex141/103, SIR Mega Rayquaza ex138/103 and Raikou ex136/103, shown whole in an ivory, red and ink frame.",
       "imageCredit": "Catalogue references: TCGplayer. Card artwork © Pokémon. Layout: BuyTrigger.Cards.",
+      "chase_cards": [
+        {
+          "name": "Gold Mega Rayquaza ex",
+          "image": "assets/delta-chase-20261107/141-mega-rayquaza-gold-728062.jpg",
+          "alt": "Exact English Delta Reign Mega Rayquaza ex 141/103 Mega Hyper Rare Holofoil catalogue reference.",
+          "set": "Delta Reign",
+          "number": "141/103"
+        },
+        {
+          "name": "SIR Mega Rayquaza ex",
+          "image": "assets/delta-chase-20261107/138-mega-rayquaza-sir-728061.jpg",
+          "alt": "Exact English Delta Reign Mega Rayquaza ex 138/103 Special Illustration Rare Holofoil catalogue reference.",
+          "set": "Delta Reign",
+          "number": "138/103"
+        },
+        {
+          "name": "Raikou ex",
+          "image": "assets/delta-chase-20261107/136-raikou-sir-726574.jpg",
+          "alt": "Exact English Delta Reign Raikou ex 136/103 Special Illustration Rare Holofoil catalogue reference.",
+          "set": "Delta Reign",
+          "number": "136/103"
+        },
+        {
+          "name": "Mega Golurk ex",
+          "image": "assets/delta-chase-20261107/137-mega-golurk-sir-728060.jpg",
+          "alt": "Exact English Delta Reign Mega Golurk ex 137/103 Special Illustration Rare Holofoil catalogue reference.",
+          "set": "Delta Reign",
+          "number": "137/103"
+        },
+        {
+          "name": "Zinnia’s Trust",
+          "image": "assets/delta-chase-20261107/140-zinnia-trust-sir-726576.jpg",
+          "alt": "Exact English Delta Reign Zinnia’s Trust 140/103 Special Illustration Rare Holofoil catalogue reference.",
+          "set": "Delta Reign",
+          "number": "140/103"
+        }
+      ],
+      "chase_cards_credit": "Card image: TCGplayer. Card artwork © Pokémon.",
       "imageCaption": "Three different chase printings, shown exactly. Catalogue images identify the cards; they are not photographs of the selected sold copies.",
       "visualStyle": "source-media-v1",
       "editorialFormat": "visual-quick-read-v1",

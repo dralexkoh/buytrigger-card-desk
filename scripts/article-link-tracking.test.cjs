@@ -27,7 +27,7 @@ test('Vault X measurement is a narrowly identified house promotion; consent, QA 
 
 test('published affiliate CTAs preserve exact destinations and sponsorship on hydrated article links',()=>{
  const vm=require('node:vm'),src=fs.readFileSync('site.js','utf8');
- const readFunction=src.split('\n').find(line=>line.startsWith('function read('));
+ const readFunction=src.split('\n').filter(line=>line.startsWith('function chaseStrip(')||line.startsWith('function read(')).join('\n');
  const context={article:slug=>e.articles.find(a=>a.slug===slug),esc:value=>String(value??'').replace(/&/g,'&amp;').replace(/"/g,'&quot;'),href:slug=>'stories/'+slug+'/',byline:()=>'',art:()=>'',routeLink:value=>value,heading:()=>'',post:()=>'',window:{BT_ARTICLE_AUTHORS:{profile:()=>''}}};
  vm.createContext(context);vm.runInContext(readFunction,context);
  const rendered=vm.runInContext("read('best-binder-for-pokemon-cards')",context);
@@ -41,7 +41,7 @@ test('published affiliate CTAs preserve exact destinations and sponsorship on hy
 
 test('story pages and the homepage share one digest band that opens Substack with the email',()=>{
  const vm=require('node:vm'),src=fs.readFileSync('site.js','utf8');
- const lines=src.split('\n').filter(line=>line.startsWith('function digestSignup(')||line.startsWith('function read('));
+ const lines=src.split('\n').filter(line=>line.startsWith('function digestSignup(')||line.startsWith('function chaseStrip(')||line.startsWith('function read('));
  const context={article:slug=>e.articles.find(a=>a.slug===slug),esc:value=>String(value??'').replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;'),href:slug=>'stories/'+slug+'/',byline:()=>'',art:()=>'',routeLink:value=>value,heading:()=>'',post:()=>'',location:{pathname:'/'},window:{BT_ARTICLE_AUTHORS:{profile:()=>''}}};
  vm.createContext(context);vm.runInContext(lines.join('\n'),context);
  const home=vm.runInContext("digestSignup('home')",context);
