@@ -273,6 +273,140 @@ class CollectorTests(unittest.TestCase):
         # Existing accepted large source changes remain in historical arrays, unmodified.
         self.assertEqual(D.POLICY["historicalApplication"], "None: existing reviewed observations and exclusions are preserved.")
 
+    def write_roster(self, index, cards):
+        folder = self.site / "data/market-rosters"
+        folder.mkdir(parents=True, exist_ok=True)
+        D.write_json(folder / f"{index}.json", {"schemaVersion": 1, "index": index, "cards": cards})
+
+    def add_group_price(self, group, product, printing, price, date="2026-11-03"):
+        folder = self.fixture / "tcgplayer/3" / str(group)
+        folder.mkdir(parents=True, exist_ok=True)
+        path = folder / "prices"
+        payload = D.read_json(path) if path.exists() else {"success": True, "errors": [], "results": []}
+        payload["results"].append({"productId": product, "subTypeName": printing, "marketPrice": price,
+                                   "lowPrice": None, "midPrice": price, "highPrice": price, "directLowPrice": None})
+        D.write_json(path, payload)
+        if not path.with_name("prices.headers.json").exists():
+            stamp = D.timestamp(date + "T20:02:00Z")
+            D.write_json(path.with_name("prices.headers.json"), {"last-modified": stamp.strftime("%a, %d %b %Y %H:%M:%S GMT")})
+
+    def test_roster_groups_are_observed_without_joining_public_baskets(self):
+        self.fixture_day("2026-11-03")
+        cards = [
+            {"productId": "726510", "groupId": "24831", "name": "Masquerain - 003/103", "set": "ME06: Delta Reign",
+             "number": "003/103", "language": "English", "printing": "Normal", "image": "assets/delta-reign/726510.jpg"},
+            {"productId": "502548", "groupId": "23237", "name": "Squirtle - 007/165", "set": "SV: Scarlet & Violet 151",
+             "number": "007/165", "language": "English", "printing": "Normal", "image": "assets/sv-151/502548.jpg"},
+            {"productId": "610509", "groupId": "23821", "name": "Iron Hands ex - 154/131", "set": "SV: Prismatic Evolutions",
+             "number": "154/131", "language": "English", "printing": "Holofoil", "image": "assets/prismatic-evolutions/610509.jpg"},
+        ]
+        self.write_roster("delta-reign", [cards[0]])
+        self.write_roster("sv-151", [cards[1]])
+        self.write_roster("prismatic-evolutions", [cards[2]])
+        self.add_group_price(24831, 726510, "Normal", 0.08)
+        self.add_group_price(23237, 502548, "Normal", 0.15)
+        self.add_group_price(23821, 610509, "Holofoil", 1.25)
+        before = (len(self.modern["cards"]), len(self.top["cards"]), len(self.identities))
+        status, code, out = self.run_refresh()
+        self.assertEqual(code, 0, status)
+        modern = D.read_js(out / "catalogue.js", "window.MODERN_PREVIEW_DATA")
+        top = D.read_js(out / "top50-data.js", "window.BT_TOP50")
+        self.assertEqual((len(modern["cards"]), len(top["cards"]), status["uniqueExactPrintings"]), before)
+        self.assertEqual(D.validate_baseline(modern, D.read_js(out / "market-history.js", "window.BT_HISTORY"), top), self.identities)
+        self.assertEqual(status["coverage"]["modern"]["total"], 100)
+        self.assertEqual(status["coverage"]["top50"]["total"], 50)
+        groups = {c["groupId"] for c in self.identities.values()}
+        self.assertNotIn(24831, groups)
+        self.assertEqual(status["requestCount"], len(groups) + 3)
+        observation = D.read_json(next((out / "data/refresh/observations").rglob("*.json")))
+        by_key = {row["key"]: row for row in observation["observations"]}
+        self.assertEqual(len(by_key), len(self.identities) + 3)
+        self.assertTrue(set(self.identities) <= set(by_key))
+        self.assertEqual(by_key["726510|Normal"]["status"], "accepted")
+        self.assertEqual(by_key["726510|Normal"]["amount"], 0.08)
+        self.assertEqual(by_key["502548|Normal"]["amount"], 0.15)
+        self.assertEqual(by_key["610509|Holofoil"]["amount"], 1.25)
+        urls = {source["url"]: source["sha256"] for source in observation["sources"]}
+        for group in (24831, 23237, 23821):
+            self.assertIn(f"https://tcgcsv.com/tcgplayer/3/{group}/prices", urls)
+            self.assertEqual(len(urls[f"https://tcgcsv.com/tcgplayer/3/{group}/prices"]), 64)
+        shutil.copytree(self.site / "data/market-rosters", out / "data/market-rosters")
+        second, code, _out2 = self.run_refresh(site=out, now="2026-11-03T23:00:00Z")
+        self.assertEqual(code, 0, second)
+        self.assertEqual(second["requestCount"], 1)
+        self.assertEqual(second["newObservationDates"], [])
+        self.assertEqual(second["coverage"]["modern"]["total"], 100)
+
+    def test_roster_hold_and_missing_keep_no_invented_price(self):
+        self.fixture_day("2026-11-03")
+        card = {"productId": "726511", "groupId": "24831", "name": "Virizion", "set": "ME06: Delta Reign",
+                "number": "009/103", "language": "English", "printing": "Normal", "image": "assets/delta-reign/726511.jpg"}
+        absent = {"productId": "726512", "groupId": "24831", "name": "Mega Golisopod ex - 011/103", "set": "ME06: Delta Reign",
+                  "number": "011/103", "language": "English", "printing": "Holofoil", "image": "assets/delta-reign/726512.jpg"}
+        self.write_roster("delta-reign", [card, absent])
+        for day in ("2026-10-30", "2026-10-31", "2026-11-01"):
+            folder = self.site / "data/refresh/observations" / day
+            folder.mkdir(parents=True)
+            D.write_json(folder / f"raw-{day}-prior.json", {"id": f"raw-{day}-prior", "sourceDate": day,
+                         "observations": [{"key": "726511|Normal", "status": "accepted", "amount": 10}]})
+        self.add_group_price(24831, 726511, "Normal", 100)
+        self.add_group_price(24831, 726512, "Holofoil", None)
+        status, code, out = self.run_refresh()
+        self.assertEqual(code, 0, status)
+        observation = D.read_json(next(path for path in (out / "data/refresh/observations").rglob("*.json") if "2026-11-03" in str(path)))
+        by_key = {row["key"]: row for row in observation["observations"]}
+        held = by_key["726511|Normal"]
+        missing = by_key["726512|Holofoil"]
+        self.assertEqual(held["status"], "held")
+        self.assertEqual(held["amount"], 100)
+        self.assertNotEqual(held["amount"], 0)
+        self.assertEqual(missing["status"], "missing")
+        self.assertIsNone(missing["amount"])
+        self.assertEqual(status["coverage"]["modern"]["total"], 100)
+        self.assertEqual(status["uniqueExactPrintings"], len(self.identities))
+
+    def test_already_processed_build_records_roster_groups_on_a_later_receipt(self):
+        self.fixture_day("2026-11-03")
+        status, code, out = self.run_refresh()
+        self.assertEqual(code, 0, status)
+        original = next((out / "data/refresh/observations").rglob("*.json")).read_bytes()
+        cards = [
+            {"productId": "726510", "groupId": "24831", "name": "Masquerain - 003/103", "set": "ME06: Delta Reign",
+             "number": "003/103", "language": "English", "printing": "Normal", "image": "assets/delta-reign/726510.jpg"},
+            {"productId": "502548", "groupId": "23237", "name": "Squirtle - 007/165", "set": "SV: Scarlet & Violet 151",
+             "number": "007/165", "language": "English", "printing": "Normal", "image": "assets/sv-151/502548.jpg"},
+            {"productId": "610509", "groupId": "23821", "name": "Iron Hands ex - 154/131", "set": "SV: Prismatic Evolutions",
+             "number": "154/131", "language": "English", "printing": "Holofoil", "image": "assets/prismatic-evolutions/610509.jpg"},
+        ]
+        roster_root = out / "data/market-rosters"
+        for index, card in zip(("delta-reign", "sv-151", "prismatic-evolutions"), cards):
+            D.write_json(roster_root / f"{index}.json", {"schemaVersion": 1, "index": index, "cards": [card]})
+        self.add_group_price(24831, 726510, "Normal", 0.08)
+        self.add_group_price(23237, 502548, "Normal", 0.15)
+        self.add_group_price(23821, 610509, "Holofoil", 1.25)
+        shutil.rmtree(self.cache)
+        second, code, repaired = self.run_refresh(site=out)
+        self.assertEqual(code, 0, second)
+        self.assertEqual(second["newObservationDates"], [])
+        self.assertEqual(second["requestCount"], 5)
+        self.assertEqual(second["coverage"]["modern"]["total"], 100)
+        files = sorted((repaired / "data/refresh/observations").rglob("*.json"))
+        self.assertEqual(len(files), 2)
+        self.assertEqual(files[0].read_bytes(), original)
+        self.assertTrue(files[1].name.endswith(".rosters.json"))
+        added = D.read_json(files[1])
+        by_key = {row["key"]: row for row in added["observations"]}
+        self.assertEqual(by_key["726510|Normal"]["amount"], 0.08)
+        self.assertEqual(by_key["502548|Normal"]["status"], "accepted")
+        self.assertEqual(by_key["610509|Holofoil"]["status"], "accepted")
+        self.assertGreater(len(by_key), len(self.identities))
+        receipt = D.read_json(repaired / "data/refresh/receipts" / f"{added['id']}.json")
+        urls = {source["url"] for source in receipt["sources"]}
+        for group in (24831, 23237, 23821):
+            self.assertIn(f"https://tcgcsv.com/tcgplayer/3/{group}/prices", urls)
+        history = D.read_js(repaired / "market-history.js", "window.BT_HISTORY")
+        self.assertEqual(len(history["dates"]), len(D.read_js(out / "market-history.js", "window.BT_HISTORY")["dates"]))
+
 
 if __name__ == "__main__":
     unittest.main()

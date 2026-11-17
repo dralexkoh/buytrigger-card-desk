@@ -244,6 +244,8 @@ class IndexCacheTests(unittest.TestCase):
             'top50-data.js', 'top50-release.json', 'top50-sources.json', 'refresh-status.json',
             'data/market-cache/thirtieth-current.json', 'data/market-cache/tcg-modern-current.json',
             'data/market-cache/delta-reign-current.json',
+            'data/market-cache/sv-151-current.json',
+            'data/market-cache/prismatic-evolutions-current.json',
             'bluechip-collection-data.js', 'bluechip-collection-sources.json',
             'data/refresh/state.json', 'data/refresh/psa10-holds/2026-11-17.json',
             'data/psa10/cardz-approved.json',
@@ -280,20 +282,61 @@ class IndexCacheTests(unittest.TestCase):
         self.assertNotEqual(failed.returncode, 0)
         self.assertIn('Unexpected pipeline commit path', failed.stderr)
 
-    def test_delta_reign_roster_cache_matches_identity_fields(self):
-        card = json.loads((SITE / 'data/market-rosters/delta-reign.json').read_text())['cards'][0]
-        approved = self.seed([('2026-11-16', [row(card, 'accepted', 0.08)])], cards=(card,), index='delta-reign')
-        cache = index_cache.build(self.root, approved)
-        self.assertEqual(cache['index'], 'delta-reign')
-        self.assertEqual(cache['grade'], 'Raw')
-        self.assertEqual(cache['sourceDate'], '2026-11-16')
-        self.assertEqual(len(cache['cards']), 1)
-        published = cache['cards'][0]
-        for field in ('productId', 'groupId', 'name', 'set', 'number', 'language', 'printing', 'image'):
-            self.assertEqual(str(published[field]), str(card[field]))
-        self.assertEqual(published['points'][0]['usd'], 0.08)
-        self.assertEqual(published['points'][0]['status'], 'ok')
-        self.assertEqual(published['points'][0]['source'], 'https://tcgcsv.com/tcgplayer/3/24831/prices')
+    def test_roster_caches_match_identity_bytes_for_each_new_group(self):
+        identity_fields = ('productId', 'groupId', 'name', 'set', 'number', 'language', 'printing', 'image')
+        shared_images = {
+            ('sv-151', '517045'),
+            ('prismatic-evolutions', '610511'),
+            ('prismatic-evolutions', '610516'),
+        }
+        chosen = []
+        for index, group, product in (
+            ('delta-reign', '24831', None),
+            ('sv-151', '23237', '517045'),
+            ('prismatic-evolutions', '23821', '610516'),
+        ):
+            document = json.loads((SITE / 'data/market-rosters' / f'{index}.json').read_text())
+            for shared_index, shared_id in shared_images:
+                if shared_index != index:
+                    continue
+                shared = next(card for card in document['cards'] if card['productId'] == shared_id)
+                self.assertEqual(shared['image'], f'assets/tcg-modern/{shared_id}.jpg')
+            card = next(item for item in document['cards'] if item['productId'] == product) if product else document['cards'][0]
+            self.assertEqual(str(card['groupId']), group)
+            chosen.append((index, card))
+        day = '2026-11-16'
+        obs = observation(day, [row(card, 'accepted', 1.25) for _, card in chosen])
+        folder = self.root / 'data/refresh/observations' / day
+        folder.mkdir(parents=True)
+        (folder / f"{obs['id']}.json").write_text(json.dumps(obs))
+        sources = [{'url': f"https://tcgcsv.com/tcgplayer/3/{card['groupId']}/prices", 'sha256': SHA} for _, card in chosen]
+        receipt = {'id': obs['id'], 'sourceDate': day, 'sourceBuildAt': obs['sourceBuildAt'], 'sources': sources}
+        rec = self.root / 'data/refresh/receipts'
+        rec.mkdir(parents=True)
+        (rec / f"{obs['id']}.json").write_text(json.dumps(receipt))
+        roster_dir = self.root / 'data/market-rosters'
+        roster_dir.mkdir(parents=True)
+        for index, card in chosen:
+            D.write_json(roster_dir / f'{index}.json', roster(card, index=index))
+        written = index_cache.write_all(self.root)
+        self.assertEqual(written, [
+            'data/market-cache/delta-reign-current.json',
+            'data/market-cache/prismatic-evolutions-current.json',
+            'data/market-cache/sv-151-current.json',
+        ])
+        for index, card in chosen:
+            raw = (self.root / 'data/market-cache' / f'{index}-current.json').read_bytes()
+            published = json.loads(raw)['cards'][0]
+            ident = {field: card[field] for field in identity_fields}
+            published_ident = {field: published[field] for field in identity_fields}
+            self.assertEqual(
+                json.dumps(published_ident, separators=(',', ':'), sort_keys=True, ensure_ascii=False).encode(),
+                json.dumps(ident, separators=(',', ':'), sort_keys=True, ensure_ascii=False).encode(),
+            )
+            self.assertIn(json.dumps(ident['image']).encode(), raw)
+            self.assertEqual(published['points'][0]['usd'], 1.25)
+            self.assertNotEqual(published['points'][0]['usd'], 0)
+            self.assertEqual(published['points'][0]['source'], f"https://tcgcsv.com/tcgplayer/3/{card['groupId']}/prices")
 
 
 if __name__ == '__main__':
