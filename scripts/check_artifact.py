@@ -223,7 +223,7 @@ assert all(news_url(w['id']) in locs for w in editorial.get('wire',[]))
 from raw_price_page import display_price, format_source_date, load_snapshot
 NAV_HREFS=(
  '/index.html#home','/market.html','/index.html#desk','/index.html#journal','/index.html#targets','/drops.html',
- '/index.html#about','/prices/thirtieth-anniversary/','/prices/tcg-modern/','/advertise/',
+ '/index.html#about','/prices/thirtieth-anniversary/','/prices/tcg-modern/','/prices/delta-reign/','/prices/sv-151/','/prices/prismatic-evolutions/','/advertise/',
  '/index.html#method','/index.html#privacy','/rss.xml',
 )
 def assert_root_nav(page, label):
@@ -274,12 +274,18 @@ def assert_price_guide(slug, lead):
  assert_root_nav(page, slug)
 assert_price_guide('thirtieth-anniversary', 'Raw (ungraded) prices, source: TCGCSV market price')
 assert_price_guide('tcg-modern', 'Raw (ungraded) market guide prices, source: TCGCSV market price')
+assert_price_guide('delta-reign', 'Raw (ungraded) market guide prices, source: TCGCSV market price')
+assert_price_guide('sv-151', 'Raw (ungraded) market guide prices, source: TCGCSV market price')
+assert_price_guide('prismatic-evolutions', 'Raw (ungraded) market guide prices, source: TCGCSV market price')
 modern_text=BeautifulSoup((d/'prices'/'tcg-modern'/'index.html').read_text(),'html.parser').get_text(' ')
 assert 'US-market references in USD, not sales or offers.' in modern_text
 assert not re.search(r'sale', re.sub(r'not sales or offers', '', modern_text, flags=re.I), re.I)
 home=BeautifulSoup((d/'index.html').read_text(),'html.parser')
 assert home.select_one('footer a[href="prices/thirtieth-anniversary/"]')
 assert home.select_one('footer a[href="prices/tcg-modern/"]')
+assert home.select_one('footer a[href="prices/delta-reign/"]')
+assert home.select_one('footer a[href="prices/sv-151/"]')
+assert home.select_one('footer a[href="prices/prismatic-evolutions/"]')
 assert home.select_one('#site-nav a[href="#journal"]')
 assert home.select_one('#site-nav a[href="drops.html"]')
 for link in home.select('header a[href], footer a[href]'):

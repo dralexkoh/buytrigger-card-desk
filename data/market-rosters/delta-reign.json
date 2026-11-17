@@ -1,0 +1,1419 @@
+{
+ "schemaVersion": 1,
+ "index": "delta-reign",
+ "approvedBy": "Alex Koh, 17 Nov 2026 00:38 Europe/London (\"Bring Delta Reign on ... build it to a similar spec ... The other one you can create is the 151 Prismatic\")",
+ "sourceList": "TCGCSV group 24831 ME06: Delta Reign products, 2026-11-16 build (DB index loaded 17 Nov 2026, write-16/17/18)",
+ "excluded": [],
+ "cards": [
+  {
+   "productId": "726510",
+   "groupId": "24831",
+   "name": "Masquerain - 003/103",
+   "set": "ME06: Delta Reign",
+   "number": "003/103",
+   "language": "English",
+   "printing": "Normal",
+   "image": "assets/delta-reign/726510.jpg"
+  },
+  {
+   "productId": "726511",
+   "groupId": "24831",
+   "name": "Virizion",
+   "set": "ME06: Delta Reign",
+   "number": "009/103",
+   "language": "English",
+   "printing": "Normal",
+   "image": "assets/delta-reign/726511.jpg"
+  },
+  {
+   "productId": "726512",
+   "groupId": "24831",
+   "name": "Mega Golisopod ex - 011/103",
+   "set": "ME06: Delta Reign",
+   "number": "011/103",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/delta-reign/726512.jpg"
+  },
+  {
+   "productId": "726513",
+   "groupId": "24831",
+   "name": "Sprigatito - 012/103",
+   "set": "ME06: Delta Reign",
+   "number": "012/103",
+   "language": "English",
+   "printing": "Normal",
+   "image": "assets/delta-reign/726513.jpg"
+  },
+  {
+   "productId": "726514",
+   "groupId": "24831",
+   "name": "Floragato",
+   "set": "ME06: Delta Reign",
+   "number": "013/103",
+   "language": "English",
+   "printing": "Normal",
+   "image": "assets/delta-reign/726514.jpg"
+  },
+  {
+   "productId": "726515",
+   "groupId": "24831",
+   "name": "Meowscarada ex",
+   "set": "ME06: Delta Reign",
+   "number": "014/103",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/delta-reign/726515.jpg"
+  },
+  {
+   "productId": "726516",
+   "groupId": "24831",
+   "name": "Growlithe - 018/103",
+   "set": "ME06: Delta Reign",
+   "number": "018/103",
+   "language": "English",
+   "printing": "Normal",
+   "image": "assets/delta-reign/726516.jpg"
+  },
+  {
+   "productId": "726517",
+   "groupId": "24831",
+   "name": "Arcanine",
+   "set": "ME06: Delta Reign",
+   "number": "019/103",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/delta-reign/726517.jpg"
+  },
+  {
+   "productId": "726518",
+   "groupId": "24831",
+   "name": "Heat Rotom ex - 023/103",
+   "set": "ME06: Delta Reign",
+   "number": "023/103",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/delta-reign/726518.jpg"
+  },
+  {
+   "productId": "726519",
+   "groupId": "24831",
+   "name": "Kyogre",
+   "set": "ME06: Delta Reign",
+   "number": "026/103",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/delta-reign/726519.jpg"
+  },
+  {
+   "productId": "726520",
+   "groupId": "24831",
+   "name": "Wishiwashi ex - 029/103",
+   "set": "ME06: Delta Reign",
+   "number": "029/103",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/delta-reign/726520.jpg"
+  },
+  {
+   "productId": "726521",
+   "groupId": "24831",
+   "name": "Electivire - 031/103",
+   "set": "ME06: Delta Reign",
+   "number": "031/103",
+   "language": "English",
+   "printing": "Normal",
+   "image": "assets/delta-reign/726521.jpg"
+  },
+  {
+   "productId": "726522",
+   "groupId": "24831",
+   "name": "Jolteon",
+   "set": "ME06: Delta Reign",
+   "number": "032/103",
+   "language": "English",
+   "printing": "Normal",
+   "image": "assets/delta-reign/726522.jpg"
+  },
+  {
+   "productId": "726523",
+   "groupId": "24831",
+   "name": "Raikou ex - 033/103",
+   "set": "ME06: Delta Reign",
+   "number": "033/103",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/delta-reign/726523.jpg"
+  },
+  {
+   "productId": "726524",
+   "groupId": "24831",
+   "name": "Thundurus",
+   "set": "ME06: Delta Reign",
+   "number": "035/103",
+   "language": "English",
+   "printing": "Normal",
+   "image": "assets/delta-reign/726524.jpg"
+  },
+  {
+   "productId": "726525",
+   "groupId": "24831",
+   "name": "Pincurchin - 036/103",
+   "set": "ME06: Delta Reign",
+   "number": "036/103",
+   "language": "English",
+   "printing": "Normal",
+   "image": "assets/delta-reign/726525.jpg"
+  },
+  {
+   "productId": "726526",
+   "groupId": "24831",
+   "name": "Hypno",
+   "set": "ME06: Delta Reign",
+   "number": "044/103",
+   "language": "English",
+   "printing": "Normal",
+   "image": "assets/delta-reign/726526.jpg"
+  },
+  {
+   "productId": "726527",
+   "groupId": "24831",
+   "name": "Giratina",
+   "set": "ME06: Delta Reign",
+   "number": "045/103",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/delta-reign/726527.jpg"
+  },
+  {
+   "productId": "726528",
+   "groupId": "24831",
+   "name": "Mega Golurk ex - 047/103",
+   "set": "ME06: Delta Reign",
+   "number": "047/103",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/delta-reign/726528.jpg"
+  },
+  {
+   "productId": "726529",
+   "groupId": "24831",
+   "name": "Groudon",
+   "set": "ME06: Delta Reign",
+   "number": "053/103",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/delta-reign/726529.jpg"
+  },
+  {
+   "productId": "726530",
+   "groupId": "24831",
+   "name": "Landorus",
+   "set": "ME06: Delta Reign",
+   "number": "054/103",
+   "language": "English",
+   "printing": "Normal",
+   "image": "assets/delta-reign/726530.jpg"
+  },
+  {
+   "productId": "726531",
+   "groupId": "24831",
+   "name": "Nidoran F",
+   "set": "ME06: Delta Reign",
+   "number": "055/103",
+   "language": "English",
+   "printing": "Normal",
+   "image": "assets/delta-reign/726531.jpg"
+  },
+  {
+   "productId": "726532",
+   "groupId": "24831",
+   "name": "Spinarak",
+   "set": "ME06: Delta Reign",
+   "number": "058/103",
+   "language": "English",
+   "printing": "Normal",
+   "image": "assets/delta-reign/726532.jpg"
+  },
+  {
+   "productId": "726533",
+   "groupId": "24831",
+   "name": "Sableye",
+   "set": "ME06: Delta Reign",
+   "number": "060/103",
+   "language": "English",
+   "printing": "Normal",
+   "image": "assets/delta-reign/726533.jpg"
+  },
+  {
+   "productId": "726534",
+   "groupId": "24831",
+   "name": "Mega Malamar ex - 069/103",
+   "set": "ME06: Delta Reign",
+   "number": "069/103",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/delta-reign/726534.jpg"
+  },
+  {
+   "productId": "726535",
+   "groupId": "24831",
+   "name": "Morpeko",
+   "set": "ME06: Delta Reign",
+   "number": "070/103",
+   "language": "English",
+   "printing": "Normal",
+   "image": "assets/delta-reign/726535.jpg"
+  },
+  {
+   "productId": "726536",
+   "groupId": "24831",
+   "name": "Zarude",
+   "set": "ME06: Delta Reign",
+   "number": "071/103",
+   "language": "English",
+   "printing": "Normal",
+   "image": "assets/delta-reign/726536.jpg"
+  },
+  {
+   "productId": "726537",
+   "groupId": "24831",
+   "name": "Druddigon",
+   "set": "ME06: Delta Reign",
+   "number": "072/103",
+   "language": "English",
+   "printing": "Normal",
+   "image": "assets/delta-reign/726537.jpg"
+  },
+  {
+   "productId": "726538",
+   "groupId": "24831",
+   "name": "Kommo-o",
+   "set": "ME06: Delta Reign",
+   "number": "075/103",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/delta-reign/726538.jpg"
+  },
+  {
+   "productId": "726539",
+   "groupId": "24831",
+   "name": "Eevee",
+   "set": "ME06: Delta Reign",
+   "number": "078/103",
+   "language": "English",
+   "printing": "Normal",
+   "image": "assets/delta-reign/726539.jpg"
+  },
+  {
+   "productId": "726540",
+   "groupId": "24831",
+   "name": "Delibird",
+   "set": "ME06: Delta Reign",
+   "number": "079/103",
+   "language": "English",
+   "printing": "Normal",
+   "image": "assets/delta-reign/726540.jpg"
+  },
+  {
+   "productId": "726541",
+   "groupId": "24831",
+   "name": "Azurill",
+   "set": "ME06: Delta Reign",
+   "number": "080/103",
+   "language": "English",
+   "printing": "Normal",
+   "image": "assets/delta-reign/726541.jpg"
+  },
+  {
+   "productId": "726542",
+   "groupId": "24831",
+   "name": "Kecleon",
+   "set": "ME06: Delta Reign",
+   "number": "083/103",
+   "language": "English",
+   "printing": "Normal",
+   "image": "assets/delta-reign/726542.jpg"
+  },
+  {
+   "productId": "726543",
+   "groupId": "24831",
+   "name": "Mega Rayquaza ex",
+   "set": "ME06: Delta Reign",
+   "number": "084/103",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/delta-reign/726543.jpg"
+  },
+  {
+   "productId": "726544",
+   "groupId": "24831",
+   "name": "Tornadus",
+   "set": "ME06: Delta Reign",
+   "number": "085/103",
+   "language": "English",
+   "printing": "Normal",
+   "image": "assets/delta-reign/726544.jpg"
+  },
+  {
+   "productId": "726545",
+   "groupId": "24831",
+   "name": "Aarune - 089/103",
+   "set": "ME06: Delta Reign",
+   "number": "089/103",
+   "language": "English",
+   "printing": "Normal",
+   "image": "assets/delta-reign/726545.jpg"
+  },
+  {
+   "productId": "726546",
+   "groupId": "24831",
+   "name": "Adventure Lantern",
+   "set": "ME06: Delta Reign",
+   "number": "090/103",
+   "language": "English",
+   "printing": "Normal",
+   "image": "assets/delta-reign/726546.jpg"
+  },
+  {
+   "productId": "726547",
+   "groupId": "24831",
+   "name": "Custom Vest",
+   "set": "ME06: Delta Reign",
+   "number": "091/103",
+   "language": "English",
+   "printing": "Normal",
+   "image": "assets/delta-reign/726547.jpg"
+  },
+  {
+   "productId": "726548",
+   "groupId": "24831",
+   "name": "Emcee's Hype",
+   "set": "ME06: Delta Reign",
+   "number": "092/103",
+   "language": "English",
+   "printing": "Normal",
+   "image": "assets/delta-reign/726548.jpg"
+  },
+  {
+   "productId": "726549",
+   "groupId": "24831",
+   "name": "Grisham",
+   "set": "ME06: Delta Reign",
+   "number": "093/103",
+   "language": "English",
+   "printing": "Normal",
+   "image": "assets/delta-reign/726549.jpg"
+  },
+  {
+   "productId": "726550",
+   "groupId": "24831",
+   "name": "Legendary Pyroduct - 094/103 (Left)",
+   "set": "ME06: Delta Reign",
+   "number": "094/103",
+   "language": "English",
+   "printing": "Normal",
+   "image": "assets/delta-reign/726550.jpg"
+  },
+  {
+   "productId": "726551",
+   "groupId": "24831",
+   "name": "Legendary Summit - 096/103 (Left)",
+   "set": "ME06: Delta Reign",
+   "number": "096/103",
+   "language": "English",
+   "printing": "Normal",
+   "image": "assets/delta-reign/726551.jpg"
+  },
+  {
+   "productId": "726552",
+   "groupId": "24831",
+   "name": "Legendary Trench - 099/103 (Right)",
+   "set": "ME06: Delta Reign",
+   "number": "099/103",
+   "language": "English",
+   "printing": "Normal",
+   "image": "assets/delta-reign/726552.jpg"
+  },
+  {
+   "productId": "726553",
+   "groupId": "24831",
+   "name": "Mega Rayquaza Cap",
+   "set": "ME06: Delta Reign",
+   "number": "100/103",
+   "language": "English",
+   "printing": "Normal",
+   "image": "assets/delta-reign/726553.jpg"
+  },
+  {
+   "productId": "726554",
+   "groupId": "24831",
+   "name": "Tasty Rice Ball",
+   "set": "ME06: Delta Reign",
+   "number": "101/103",
+   "language": "English",
+   "printing": "Normal",
+   "image": "assets/delta-reign/726554.jpg"
+  },
+  {
+   "productId": "726555",
+   "groupId": "24831",
+   "name": "Tate & Liza's Training",
+   "set": "ME06: Delta Reign",
+   "number": "102/103",
+   "language": "English",
+   "printing": "Normal",
+   "image": "assets/delta-reign/726555.jpg"
+  },
+  {
+   "productId": "726556",
+   "groupId": "24831",
+   "name": "Zinnia's Trust - 103/103",
+   "set": "ME06: Delta Reign",
+   "number": "103/103",
+   "language": "English",
+   "printing": "Normal",
+   "image": "assets/delta-reign/726556.jpg"
+  },
+  {
+   "productId": "726557",
+   "groupId": "24831",
+   "name": "Masquerain - 104/103",
+   "set": "ME06: Delta Reign",
+   "number": "104/103",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/delta-reign/726557.jpg"
+  },
+  {
+   "productId": "726558",
+   "groupId": "24831",
+   "name": "Sprigatito - 105/103",
+   "set": "ME06: Delta Reign",
+   "number": "105/103",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/delta-reign/726558.jpg"
+  },
+  {
+   "productId": "726559",
+   "groupId": "24831",
+   "name": "Growlithe - 106/103",
+   "set": "ME06: Delta Reign",
+   "number": "106/103",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/delta-reign/726559.jpg"
+  },
+  {
+   "productId": "726560",
+   "groupId": "24831",
+   "name": "Magmortar - 107/103",
+   "set": "ME06: Delta Reign",
+   "number": "107/103",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/delta-reign/726560.jpg"
+  },
+  {
+   "productId": "726561",
+   "groupId": "24831",
+   "name": "Pincurchin - 109/103",
+   "set": "ME06: Delta Reign",
+   "number": "109/103",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/delta-reign/726561.jpg"
+  },
+  {
+   "productId": "726562",
+   "groupId": "24831",
+   "name": "Enamorus - 110/103",
+   "set": "ME06: Delta Reign",
+   "number": "110/103",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/delta-reign/726562.jpg"
+  },
+  {
+   "productId": "726563",
+   "groupId": "24831",
+   "name": "Groudon - 111/103",
+   "set": "ME06: Delta Reign",
+   "number": "111/103",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/delta-reign/726563.jpg"
+  },
+  {
+   "productId": "726564",
+   "groupId": "24831",
+   "name": "Zorua - 112/103",
+   "set": "ME06: Delta Reign",
+   "number": "112/103",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/delta-reign/726564.jpg"
+  },
+  {
+   "productId": "726565",
+   "groupId": "24831",
+   "name": "Eevee - 114/103",
+   "set": "ME06: Delta Reign",
+   "number": "114/103",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/delta-reign/726565.jpg"
+  },
+  {
+   "productId": "726566",
+   "groupId": "24831",
+   "name": "Azurill - 115/103",
+   "set": "ME06: Delta Reign",
+   "number": "115/103",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/delta-reign/726566.jpg"
+  },
+  {
+   "productId": "726567",
+   "groupId": "24831",
+   "name": "Kecleon - 117/103",
+   "set": "ME06: Delta Reign",
+   "number": "117/103",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/delta-reign/726567.jpg"
+  },
+  {
+   "productId": "726568",
+   "groupId": "24831",
+   "name": "Aarune - 125/103",
+   "set": "ME06: Delta Reign",
+   "number": "125/103",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/delta-reign/726568.jpg"
+  },
+  {
+   "productId": "726569",
+   "groupId": "24831",
+   "name": "Adventure Lantern - 126/103",
+   "set": "ME06: Delta Reign",
+   "number": "126/103",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/delta-reign/726569.jpg"
+  },
+  {
+   "productId": "726570",
+   "groupId": "24831",
+   "name": "Custom Vest - 127/103",
+   "set": "ME06: Delta Reign",
+   "number": "127/103",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/delta-reign/726570.jpg"
+  },
+  {
+   "productId": "726571",
+   "groupId": "24831",
+   "name": "Emcee's Hype - 128/103",
+   "set": "ME06: Delta Reign",
+   "number": "128/103",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/delta-reign/726571.jpg"
+  },
+  {
+   "productId": "726572",
+   "groupId": "24831",
+   "name": "Tate & Liza's Training - 130/103",
+   "set": "ME06: Delta Reign",
+   "number": "130/103",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/delta-reign/726572.jpg"
+  },
+  {
+   "productId": "726573",
+   "groupId": "24831",
+   "name": "Zinnia's Trust - 131/103",
+   "set": "ME06: Delta Reign",
+   "number": "131/103",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/delta-reign/726573.jpg"
+  },
+  {
+   "productId": "726574",
+   "groupId": "24831",
+   "name": "Raikou ex",
+   "set": "ME06: Delta Reign",
+   "number": "136/103",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/delta-reign/726574.jpg"
+  },
+  {
+   "productId": "726575",
+   "groupId": "24831",
+   "name": "Aarune - 139/103",
+   "set": "ME06: Delta Reign",
+   "number": "139/103",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/delta-reign/726575.jpg"
+  },
+  {
+   "productId": "726576",
+   "groupId": "24831",
+   "name": "Zinnia's Trust - 140/103",
+   "set": "ME06: Delta Reign",
+   "number": "140/103",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/delta-reign/726576.jpg"
+  },
+  {
+   "productId": "726721",
+   "groupId": "24831",
+   "name": "Legendary Summit - 097/103 (Right)",
+   "set": "ME06: Delta Reign",
+   "number": "097/103",
+   "language": "English",
+   "printing": "Normal",
+   "image": "assets/delta-reign/726721.jpg"
+  },
+  {
+   "productId": "726722",
+   "groupId": "24831",
+   "name": "Legendary Pyroduct - 095/103 (Right)",
+   "set": "ME06: Delta Reign",
+   "number": "095/103",
+   "language": "English",
+   "printing": "Normal",
+   "image": "assets/delta-reign/726722.jpg"
+  },
+  {
+   "productId": "726786",
+   "groupId": "24831",
+   "name": "Legendary Trench - 098/103 (Left)",
+   "set": "ME06: Delta Reign",
+   "number": "098/103",
+   "language": "English",
+   "printing": "Normal",
+   "image": "assets/delta-reign/726786.jpg"
+  },
+  {
+   "productId": "727563",
+   "groupId": "24831",
+   "name": "Heracross",
+   "set": "ME06: Delta Reign",
+   "number": "001/103",
+   "language": "English",
+   "printing": "Normal",
+   "image": "assets/delta-reign/727563.jpg"
+  },
+  {
+   "productId": "727564",
+   "groupId": "24831",
+   "name": "Surskit",
+   "set": "ME06: Delta Reign",
+   "number": "002/103",
+   "language": "English",
+   "printing": "Normal",
+   "image": "assets/delta-reign/727564.jpg"
+  },
+  {
+   "productId": "727565",
+   "groupId": "24831",
+   "name": "Cacnea",
+   "set": "ME06: Delta Reign",
+   "number": "004/103",
+   "language": "English",
+   "printing": "Normal",
+   "image": "assets/delta-reign/727565.jpg"
+  },
+  {
+   "productId": "727566",
+   "groupId": "24831",
+   "name": "Cacturne",
+   "set": "ME06: Delta Reign",
+   "number": "005/103",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/delta-reign/727566.jpg"
+  },
+  {
+   "productId": "727567",
+   "groupId": "24831",
+   "name": "Combee",
+   "set": "ME06: Delta Reign",
+   "number": "006/103",
+   "language": "English",
+   "printing": "Normal",
+   "image": "assets/delta-reign/727567.jpg"
+  },
+  {
+   "productId": "727568",
+   "groupId": "24831",
+   "name": "Vespiquen",
+   "set": "ME06: Delta Reign",
+   "number": "007/103",
+   "language": "English",
+   "printing": "Normal",
+   "image": "assets/delta-reign/727568.jpg"
+  },
+  {
+   "productId": "727569",
+   "groupId": "24831",
+   "name": "Shaymin",
+   "set": "ME06: Delta Reign",
+   "number": "008/103",
+   "language": "English",
+   "printing": "Normal",
+   "image": "assets/delta-reign/727569.jpg"
+  },
+  {
+   "productId": "727570",
+   "groupId": "24831",
+   "name": "Wimpod",
+   "set": "ME06: Delta Reign",
+   "number": "010/103",
+   "language": "English",
+   "printing": "Normal",
+   "image": "assets/delta-reign/727570.jpg"
+  },
+  {
+   "productId": "727571",
+   "groupId": "24831",
+   "name": "Smoliv",
+   "set": "ME06: Delta Reign",
+   "number": "015/103",
+   "language": "English",
+   "printing": "Normal",
+   "image": "assets/delta-reign/727571.jpg"
+  },
+  {
+   "productId": "727572",
+   "groupId": "24831",
+   "name": "Dolliv",
+   "set": "ME06: Delta Reign",
+   "number": "016/103",
+   "language": "English",
+   "printing": "Normal",
+   "image": "assets/delta-reign/727572.jpg"
+  },
+  {
+   "productId": "727573",
+   "groupId": "24831",
+   "name": "Arboliva",
+   "set": "ME06: Delta Reign",
+   "number": "017/103",
+   "language": "English",
+   "printing": "Normal",
+   "image": "assets/delta-reign/727573.jpg"
+  },
+  {
+   "productId": "727574",
+   "groupId": "24831",
+   "name": "Magmar",
+   "set": "ME06: Delta Reign",
+   "number": "020/103",
+   "language": "English",
+   "printing": "Normal",
+   "image": "assets/delta-reign/727574.jpg"
+  },
+  {
+   "productId": "727575",
+   "groupId": "24831",
+   "name": "Magmortar",
+   "set": "ME06: Delta Reign",
+   "number": "021/103",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/delta-reign/727575.jpg"
+  },
+  {
+   "productId": "727576",
+   "groupId": "24831",
+   "name": "Torkoal",
+   "set": "ME06: Delta Reign",
+   "number": "022/103",
+   "language": "English",
+   "printing": "Normal",
+   "image": "assets/delta-reign/727576.jpg"
+  },
+  {
+   "productId": "727577",
+   "groupId": "24831",
+   "name": "Heatmor",
+   "set": "ME06: Delta Reign",
+   "number": "024/103",
+   "language": "English",
+   "printing": "Normal",
+   "image": "assets/delta-reign/727577.jpg"
+  },
+  {
+   "productId": "727578",
+   "groupId": "24831",
+   "name": "Mantine",
+   "set": "ME06: Delta Reign",
+   "number": "025/103",
+   "language": "English",
+   "printing": "Normal",
+   "image": "assets/delta-reign/727578.jpg"
+  },
+  {
+   "productId": "727579",
+   "groupId": "24831",
+   "name": "Frillish",
+   "set": "ME06: Delta Reign",
+   "number": "027/103",
+   "language": "English",
+   "printing": "Normal",
+   "image": "assets/delta-reign/727579.jpg"
+  },
+  {
+   "productId": "727580",
+   "groupId": "24831",
+   "name": "Jellicent",
+   "set": "ME06: Delta Reign",
+   "number": "028/103",
+   "language": "English",
+   "printing": "Normal",
+   "image": "assets/delta-reign/727580.jpg"
+  },
+  {
+   "productId": "727581",
+   "groupId": "24831",
+   "name": "Electabuzz",
+   "set": "ME06: Delta Reign",
+   "number": "030/103",
+   "language": "English",
+   "printing": "Normal",
+   "image": "assets/delta-reign/727581.jpg"
+  },
+  {
+   "productId": "727582",
+   "groupId": "24831",
+   "name": "Rotom",
+   "set": "ME06: Delta Reign",
+   "number": "034/103",
+   "language": "English",
+   "printing": "Normal",
+   "image": "assets/delta-reign/727582.jpg"
+  },
+  {
+   "productId": "727583",
+   "groupId": "24831",
+   "name": "Pawmi",
+   "set": "ME06: Delta Reign",
+   "number": "037/103",
+   "language": "English",
+   "printing": "Normal",
+   "image": "assets/delta-reign/727583.jpg"
+  },
+  {
+   "productId": "727584",
+   "groupId": "24831",
+   "name": "Pawmo",
+   "set": "ME06: Delta Reign",
+   "number": "038/103",
+   "language": "English",
+   "printing": "Normal",
+   "image": "assets/delta-reign/727584.jpg"
+  },
+  {
+   "productId": "727585",
+   "groupId": "24831",
+   "name": "Pawmot",
+   "set": "ME06: Delta Reign",
+   "number": "039/103",
+   "language": "English",
+   "printing": "Normal",
+   "image": "assets/delta-reign/727585.jpg"
+  },
+  {
+   "productId": "727586",
+   "groupId": "24831",
+   "name": "Wattrel",
+   "set": "ME06: Delta Reign",
+   "number": "040/103",
+   "language": "English",
+   "printing": "Normal",
+   "image": "assets/delta-reign/727586.jpg"
+  },
+  {
+   "productId": "727587",
+   "groupId": "24831",
+   "name": "Electivire",
+   "set": "ME06: Delta Reign",
+   "number": "108/103",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/delta-reign/727587.jpg"
+  },
+  {
+   "productId": "727588",
+   "groupId": "24831",
+   "name": "Mega Golisopod ex - 118/103",
+   "set": "ME06: Delta Reign",
+   "number": "118/103",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/delta-reign/727588.jpg"
+  },
+  {
+   "productId": "727589",
+   "groupId": "24831",
+   "name": "Heat Rotom ex",
+   "set": "ME06: Delta Reign",
+   "number": "119/103",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/delta-reign/727589.jpg"
+  },
+  {
+   "productId": "727590",
+   "groupId": "24831",
+   "name": "Wishiwashi ex",
+   "set": "ME06: Delta Reign",
+   "number": "120/103",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/delta-reign/727590.jpg"
+  },
+  {
+   "productId": "727591",
+   "groupId": "24831",
+   "name": "Raikou ex - 121/103",
+   "set": "ME06: Delta Reign",
+   "number": "121/103",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/delta-reign/727591.jpg"
+  },
+  {
+   "productId": "727592",
+   "groupId": "24831",
+   "name": "Mega Golisopod ex - 135/103",
+   "set": "ME06: Delta Reign",
+   "number": "135/103",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/delta-reign/727592.jpg"
+  },
+  {
+   "productId": "728021",
+   "groupId": "24831",
+   "name": "Kilowattrel",
+   "set": "ME06: Delta Reign",
+   "number": "041/103",
+   "language": "English",
+   "printing": "Normal",
+   "image": "assets/delta-reign/728021.jpg"
+  },
+  {
+   "productId": "728022",
+   "groupId": "24831",
+   "name": "Miraidon",
+   "set": "ME06: Delta Reign",
+   "number": "042/103",
+   "language": "English",
+   "printing": "Normal",
+   "image": "assets/delta-reign/728022.jpg"
+  },
+  {
+   "productId": "728023",
+   "groupId": "24831",
+   "name": "Drowzee",
+   "set": "ME06: Delta Reign",
+   "number": "043/103",
+   "language": "English",
+   "printing": "Normal",
+   "image": "assets/delta-reign/728023.jpg"
+  },
+  {
+   "productId": "728024",
+   "groupId": "24831",
+   "name": "Golett",
+   "set": "ME06: Delta Reign",
+   "number": "046/103",
+   "language": "English",
+   "printing": "Normal",
+   "image": "assets/delta-reign/728024.jpg"
+  },
+  {
+   "productId": "728025",
+   "groupId": "24831",
+   "name": "Enamorus",
+   "set": "ME06: Delta Reign",
+   "number": "048/103",
+   "language": "English",
+   "printing": "Normal",
+   "image": "assets/delta-reign/728025.jpg"
+  },
+  {
+   "productId": "728026",
+   "groupId": "24831",
+   "name": "Sandshrew",
+   "set": "ME06: Delta Reign",
+   "number": "049/103",
+   "language": "English",
+   "printing": "Normal",
+   "image": "assets/delta-reign/728026.jpg"
+  },
+  {
+   "productId": "728027",
+   "groupId": "24831",
+   "name": "Sandslash",
+   "set": "ME06: Delta Reign",
+   "number": "050/103",
+   "language": "English",
+   "printing": "Normal",
+   "image": "assets/delta-reign/728027.jpg"
+  },
+  {
+   "productId": "728028",
+   "groupId": "24831",
+   "name": "Onix",
+   "set": "ME06: Delta Reign",
+   "number": "051/103",
+   "language": "English",
+   "printing": "Normal",
+   "image": "assets/delta-reign/728028.jpg"
+  },
+  {
+   "productId": "728029",
+   "groupId": "24831",
+   "name": "Steelix",
+   "set": "ME06: Delta Reign",
+   "number": "052/103",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/delta-reign/728029.jpg"
+  },
+  {
+   "productId": "728031",
+   "groupId": "24831",
+   "name": "Nidorina",
+   "set": "ME06: Delta Reign",
+   "number": "056/103",
+   "language": "English",
+   "printing": "Normal",
+   "image": "assets/delta-reign/728031.jpg"
+  },
+  {
+   "productId": "728032",
+   "groupId": "24831",
+   "name": "Nidoqueen",
+   "set": "ME06: Delta Reign",
+   "number": "057/103",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/delta-reign/728032.jpg"
+  },
+  {
+   "productId": "728033",
+   "groupId": "24831",
+   "name": "Ariados",
+   "set": "ME06: Delta Reign",
+   "number": "059/103",
+   "language": "English",
+   "printing": "Normal",
+   "image": "assets/delta-reign/728033.jpg"
+  },
+  {
+   "productId": "728034",
+   "groupId": "24831",
+   "name": "Carvanha",
+   "set": "ME06: Delta Reign",
+   "number": "061/103",
+   "language": "English",
+   "printing": "Normal",
+   "image": "assets/delta-reign/728034.jpg"
+  },
+  {
+   "productId": "728035",
+   "groupId": "24831",
+   "name": "Sharpedo",
+   "set": "ME06: Delta Reign",
+   "number": "062/103",
+   "language": "English",
+   "printing": "Normal",
+   "image": "assets/delta-reign/728035.jpg"
+  },
+  {
+   "productId": "728036",
+   "groupId": "24831",
+   "name": "Darkrai",
+   "set": "ME06: Delta Reign",
+   "number": "063/103",
+   "language": "English",
+   "printing": "Normal",
+   "image": "assets/delta-reign/728036.jpg"
+  },
+  {
+   "productId": "728037",
+   "groupId": "24831",
+   "name": "Purrloin",
+   "set": "ME06: Delta Reign",
+   "number": "064/103",
+   "language": "English",
+   "printing": "Normal",
+   "image": "assets/delta-reign/728037.jpg"
+  },
+  {
+   "productId": "728038",
+   "groupId": "24831",
+   "name": "Liepard",
+   "set": "ME06: Delta Reign",
+   "number": "065/103",
+   "language": "English",
+   "printing": "Normal",
+   "image": "assets/delta-reign/728038.jpg"
+  },
+  {
+   "productId": "728039",
+   "groupId": "24831",
+   "name": "Zorua",
+   "set": "ME06: Delta Reign",
+   "number": "066/103",
+   "language": "English",
+   "printing": "Normal",
+   "image": "assets/delta-reign/728039.jpg"
+  },
+  {
+   "productId": "728040",
+   "groupId": "24831",
+   "name": "Zoroark ex",
+   "set": "ME06: Delta Reign",
+   "number": "067/103",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/delta-reign/728040.jpg"
+  },
+  {
+   "productId": "728041",
+   "groupId": "24831",
+   "name": "Inkay - 068/103",
+   "set": "ME06: Delta Reign",
+   "number": "068/103",
+   "language": "English",
+   "printing": "Normal",
+   "image": "assets/delta-reign/728041.jpg"
+  },
+  {
+   "productId": "728042",
+   "groupId": "24831",
+   "name": "Jangmo-o",
+   "set": "ME06: Delta Reign",
+   "number": "073/103",
+   "language": "English",
+   "printing": "Normal",
+   "image": "assets/delta-reign/728042.jpg"
+  },
+  {
+   "productId": "728043",
+   "groupId": "24831",
+   "name": "Hakamo-o",
+   "set": "ME06: Delta Reign",
+   "number": "074/103",
+   "language": "English",
+   "printing": "Normal",
+   "image": "assets/delta-reign/728043.jpg"
+  },
+  {
+   "productId": "728044",
+   "groupId": "24831",
+   "name": "Cyclizar",
+   "set": "ME06: Delta Reign",
+   "number": "076/103",
+   "language": "English",
+   "printing": "Normal",
+   "image": "assets/delta-reign/728044.jpg"
+  },
+  {
+   "productId": "728045",
+   "groupId": "24831",
+   "name": "Tauros",
+   "set": "ME06: Delta Reign",
+   "number": "077/103",
+   "language": "English",
+   "printing": "Normal",
+   "image": "assets/delta-reign/728045.jpg"
+  },
+  {
+   "productId": "728046",
+   "groupId": "24831",
+   "name": "Swablu",
+   "set": "ME06: Delta Reign",
+   "number": "081/103",
+   "language": "English",
+   "printing": "Normal",
+   "image": "assets/delta-reign/728046.jpg"
+  },
+  {
+   "productId": "728047",
+   "groupId": "24831",
+   "name": "Altaria - 082/103",
+   "set": "ME06: Delta Reign",
+   "number": "082/103",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/delta-reign/728047.jpg"
+  },
+  {
+   "productId": "728048",
+   "groupId": "24831",
+   "name": "Fletchling",
+   "set": "ME06: Delta Reign",
+   "number": "086/103",
+   "language": "English",
+   "printing": "Normal",
+   "image": "assets/delta-reign/728048.jpg"
+  },
+  {
+   "productId": "728049",
+   "groupId": "24831",
+   "name": "Fletchinder",
+   "set": "ME06: Delta Reign",
+   "number": "087/103",
+   "language": "English",
+   "printing": "Normal",
+   "image": "assets/delta-reign/728049.jpg"
+  },
+  {
+   "productId": "728050",
+   "groupId": "24831",
+   "name": "Talonflame ex - 088/103",
+   "set": "ME06: Delta Reign",
+   "number": "088/103",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/delta-reign/728050.jpg"
+  },
+  {
+   "productId": "728051",
+   "groupId": "24831",
+   "name": "Inkay - 113/103",
+   "set": "ME06: Delta Reign",
+   "number": "113/103",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/delta-reign/728051.jpg"
+  },
+  {
+   "productId": "728052",
+   "groupId": "24831",
+   "name": "Altaria - 116/103",
+   "set": "ME06: Delta Reign",
+   "number": "116/103",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/delta-reign/728052.jpg"
+  },
+  {
+   "productId": "728053",
+   "groupId": "24831",
+   "name": "Mega Golurk ex - 122/103",
+   "set": "ME06: Delta Reign",
+   "number": "122/103",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/delta-reign/728053.jpg"
+  },
+  {
+   "productId": "728054",
+   "groupId": "24831",
+   "name": "Mega Malamar ex",
+   "set": "ME06: Delta Reign",
+   "number": "123/103",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/delta-reign/728054.jpg"
+  },
+  {
+   "productId": "728055",
+   "groupId": "24831",
+   "name": "Talonflame ex - 124/103",
+   "set": "ME06: Delta Reign",
+   "number": "124/103",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/delta-reign/728055.jpg"
+  },
+  {
+   "productId": "728056",
+   "groupId": "24831",
+   "name": "Pokemon Catcher",
+   "set": "ME06: Delta Reign",
+   "number": "129/103",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/delta-reign/728056.jpg"
+  },
+  {
+   "productId": "728057",
+   "groupId": "24831",
+   "name": "Bubbly W Energy",
+   "set": "ME06: Delta Reign",
+   "number": "132/103",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/delta-reign/728057.jpg"
+  },
+  {
+   "productId": "728058",
+   "groupId": "24831",
+   "name": "Growing G Energy",
+   "set": "ME06: Delta Reign",
+   "number": "133/103",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/delta-reign/728058.jpg"
+  },
+  {
+   "productId": "728059",
+   "groupId": "24831",
+   "name": "Nitro R Energy",
+   "set": "ME06: Delta Reign",
+   "number": "134/103",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/delta-reign/728059.jpg"
+  },
+  {
+   "productId": "728060",
+   "groupId": "24831",
+   "name": "Mega Golurk ex - 137/103",
+   "set": "ME06: Delta Reign",
+   "number": "137/103",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/delta-reign/728060.jpg"
+  },
+  {
+   "productId": "728061",
+   "groupId": "24831",
+   "name": "Mega Rayquaza ex - 138/103",
+   "set": "ME06: Delta Reign",
+   "number": "138/103",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/delta-reign/728061.jpg"
+  },
+  {
+   "productId": "728062",
+   "groupId": "24831",
+   "name": "Mega Rayquaza ex - 141/103",
+   "set": "ME06: Delta Reign",
+   "number": "141/103",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/delta-reign/728062.jpg"
+  }
+ ]
+}

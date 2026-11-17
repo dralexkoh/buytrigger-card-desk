@@ -1,0 +1,4011 @@
+{
+  "schemaVersion": 2,
+  "available": true,
+  "index": "prismatic-evolutions",
+  "sourceSystem": "shared-cards-market",
+  "grade": "Raw",
+  "currency": "USD",
+  "measure": "tcgcsv_market",
+  "cards": [
+    {
+      "key": "en-prismatic-evolutions-610356-normal",
+      "name": "Exeggcute - 001/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "001/131",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/prismatic-evolutions/610356.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-prismatic-evolutions-610357-normal",
+      "name": "Exeggutor - 002/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "002/131",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/prismatic-evolutions/610357.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-prismatic-evolutions-610358-normal",
+      "name": "Pinsir - 003/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "003/131",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/prismatic-evolutions/610358.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-prismatic-evolutions-610359-normal",
+      "name": "Budew - 004/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "004/131",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/prismatic-evolutions/610359.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-prismatic-evolutions-610360-holofoil",
+      "name": "Leafeon - 005/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "005/131",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/prismatic-evolutions/610360.jpg",
+      "rarity": "Rare"
+    },
+    {
+      "key": "en-prismatic-evolutions-610361-holofoil",
+      "name": "Leafeon ex - 006/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "006/131",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/prismatic-evolutions/610361.jpg",
+      "rarity": "Double Rare"
+    },
+    {
+      "key": "en-prismatic-evolutions-610362-normal",
+      "name": "Cottonee - 007/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "007/131",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/prismatic-evolutions/610362.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-prismatic-evolutions-610363-holofoil",
+      "name": "Whimsicott - 008/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "008/131",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/prismatic-evolutions/610363.jpg",
+      "rarity": "Rare"
+    },
+    {
+      "key": "en-prismatic-evolutions-610364-normal",
+      "name": "Applin - 009/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "009/131",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/prismatic-evolutions/610364.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-prismatic-evolutions-610365-normal",
+      "name": "Dipplin - 010/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "010/131",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/prismatic-evolutions/610365.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-prismatic-evolutions-610366-holofoil",
+      "name": "Hydrapple ex - 011/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "011/131",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/prismatic-evolutions/610366.jpg",
+      "rarity": "Double Rare"
+    },
+    {
+      "key": "en-prismatic-evolutions-610367-holofoil",
+      "name": "Teal Mask Ogerpon ex - 012/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "012/131",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/prismatic-evolutions/610367.jpg",
+      "rarity": "Double Rare"
+    },
+    {
+      "key": "en-prismatic-evolutions-610368-holofoil",
+      "name": "Flareon - 013/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "013/131",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/prismatic-evolutions/610368.jpg",
+      "rarity": "Rare"
+    },
+    {
+      "key": "en-prismatic-evolutions-610369-holofoil",
+      "name": "Flareon ex - 014/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "014/131",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/prismatic-evolutions/610369.jpg",
+      "rarity": "Double Rare"
+    },
+    {
+      "key": "en-prismatic-evolutions-610370-normal",
+      "name": "Litleo - 015/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "015/131",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/prismatic-evolutions/610370.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-prismatic-evolutions-610371-normal",
+      "name": "Pyroar - 016/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "016/131",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/prismatic-evolutions/610371.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-prismatic-evolutions-610372-holofoil",
+      "name": "Hearthflame Mask Ogerpon ex - 017/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "017/131",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/prismatic-evolutions/610372.jpg",
+      "rarity": "Double Rare"
+    },
+    {
+      "key": "en-prismatic-evolutions-610373-normal",
+      "name": "Slowpoke - 018/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "018/131",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/prismatic-evolutions/610373.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-prismatic-evolutions-610374-normal",
+      "name": "Slowking - 019/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "019/131",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/prismatic-evolutions/610374.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-prismatic-evolutions-610375-normal",
+      "name": "Goldeen - 020/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "020/131",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/prismatic-evolutions/610375.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-prismatic-evolutions-610376-normal",
+      "name": "Seaking - 021/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "021/131",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/prismatic-evolutions/610376.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-prismatic-evolutions-610377-holofoil",
+      "name": "Vaporeon - 022/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "022/131",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/prismatic-evolutions/610377.jpg",
+      "rarity": "Rare"
+    },
+    {
+      "key": "en-prismatic-evolutions-610378-holofoil",
+      "name": "Vaporeon ex - 023/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "023/131",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/prismatic-evolutions/610378.jpg",
+      "rarity": "Double Rare"
+    },
+    {
+      "key": "en-prismatic-evolutions-610379-normal",
+      "name": "Suicune - 024/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "024/131",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/prismatic-evolutions/610379.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-prismatic-evolutions-610380-holofoil",
+      "name": "Glaceon - 025/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "025/131",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/prismatic-evolutions/610380.jpg",
+      "rarity": "Rare"
+    },
+    {
+      "key": "en-prismatic-evolutions-610381-holofoil",
+      "name": "Glaceon ex - 026/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "026/131",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/prismatic-evolutions/610381.jpg",
+      "rarity": "Double Rare"
+    },
+    {
+      "key": "en-prismatic-evolutions-610382-holofoil",
+      "name": "Wellspring Mask Ogerpon ex - 027/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "027/131",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/prismatic-evolutions/610382.jpg",
+      "rarity": "Double Rare"
+    },
+    {
+      "key": "en-prismatic-evolutions-610383-holofoil",
+      "name": "Pikachu ex - 028/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "028/131",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/prismatic-evolutions/610383.jpg",
+      "rarity": "Double Rare"
+    },
+    {
+      "key": "en-prismatic-evolutions-610384-holofoil",
+      "name": "Jolteon - 029/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "029/131",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/prismatic-evolutions/610384.jpg",
+      "rarity": "Rare"
+    },
+    {
+      "key": "en-prismatic-evolutions-610385-holofoil",
+      "name": "Jolteon ex - 030/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "030/131",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/prismatic-evolutions/610385.jpg",
+      "rarity": "Double Rare"
+    },
+    {
+      "key": "en-prismatic-evolutions-610386-holofoil",
+      "name": "Iron Hands ex - 031/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "031/131",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/prismatic-evolutions/610386.jpg",
+      "rarity": "Double Rare"
+    },
+    {
+      "key": "en-prismatic-evolutions-610387-holofoil",
+      "name": "Iron Thorns ex - 032/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "032/131",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/prismatic-evolutions/610387.jpg",
+      "rarity": "Double Rare"
+    },
+    {
+      "key": "en-prismatic-evolutions-610388-holofoil",
+      "name": "Espeon - 033/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "033/131",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/prismatic-evolutions/610388.jpg",
+      "rarity": "Rare"
+    },
+    {
+      "key": "en-prismatic-evolutions-610389-holofoil",
+      "name": "Espeon ex - 034/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "034/131",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/prismatic-evolutions/610389.jpg",
+      "rarity": "Double Rare"
+    },
+    {
+      "key": "en-prismatic-evolutions-610390-normal",
+      "name": "Duskull - 035/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "035/131",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/prismatic-evolutions/610390.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-prismatic-evolutions-610391-normal",
+      "name": "Dusclops - 036/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "036/131",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/prismatic-evolutions/610391.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-prismatic-evolutions-610392-holofoil",
+      "name": "Dusknoir - 037/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "037/131",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/prismatic-evolutions/610392.jpg",
+      "rarity": "Rare"
+    },
+    {
+      "key": "en-prismatic-evolutions-610393-normal",
+      "name": "Spritzee - 038/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "038/131",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/prismatic-evolutions/610393.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-prismatic-evolutions-610394-normal",
+      "name": "Aromatisse - 039/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "039/131",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/prismatic-evolutions/610394.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-prismatic-evolutions-610395-holofoil",
+      "name": "Sylveon - 040/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "040/131",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/prismatic-evolutions/610395.jpg",
+      "rarity": "Rare"
+    },
+    {
+      "key": "en-prismatic-evolutions-610396-holofoil",
+      "name": "Sylveon ex - 041/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "041/131",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/prismatic-evolutions/610396.jpg",
+      "rarity": "Double Rare"
+    },
+    {
+      "key": "en-prismatic-evolutions-610397-normal",
+      "name": "Scream Tail - 042/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "042/131",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/prismatic-evolutions/610397.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-prismatic-evolutions-610398-holofoil",
+      "name": "Flutter Mane - 043/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "043/131",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/prismatic-evolutions/610398.jpg",
+      "rarity": "Rare"
+    },
+    {
+      "key": "en-prismatic-evolutions-610399-holofoil",
+      "name": "Munkidori - 044/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "044/131",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/prismatic-evolutions/610399.jpg",
+      "rarity": "Rare"
+    },
+    {
+      "key": "en-prismatic-evolutions-610400-holofoil",
+      "name": "Fezandipiti - 045/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "045/131",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/prismatic-evolutions/610400.jpg",
+      "rarity": "Rare"
+    },
+    {
+      "key": "en-prismatic-evolutions-610401-holofoil",
+      "name": "Iron Boulder - 046/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "046/131",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/prismatic-evolutions/610401.jpg",
+      "rarity": "Rare"
+    },
+    {
+      "key": "en-prismatic-evolutions-610402-normal",
+      "name": "Larvitar - 047/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "047/131",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/prismatic-evolutions/610402.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-prismatic-evolutions-610403-normal",
+      "name": "Pupitar - 048/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "048/131",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/prismatic-evolutions/610403.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-prismatic-evolutions-610404-holofoil",
+      "name": "Groudon - 049/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "049/131",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/prismatic-evolutions/610404.jpg",
+      "rarity": "Rare"
+    },
+    {
+      "key": "en-prismatic-evolutions-610405-normal",
+      "name": "Riolu - 050/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "050/131",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/prismatic-evolutions/610405.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-prismatic-evolutions-610406-holofoil",
+      "name": "Lucario ex - 051/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "051/131",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/prismatic-evolutions/610406.jpg",
+      "rarity": "Double Rare"
+    },
+    {
+      "key": "en-prismatic-evolutions-610407-normal",
+      "name": "Hippopotas - 052/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "052/131",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/prismatic-evolutions/610407.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-prismatic-evolutions-610408-normal",
+      "name": "Hippowdon - 053/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "053/131",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/prismatic-evolutions/610408.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-prismatic-evolutions-610409-holofoil",
+      "name": "Bloodmoon Ursaluna - 054/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "054/131",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/prismatic-evolutions/610409.jpg",
+      "rarity": "Rare"
+    },
+    {
+      "key": "en-prismatic-evolutions-610410-normal",
+      "name": "Great Tusk - 055/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "055/131",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/prismatic-evolutions/610410.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-prismatic-evolutions-610411-holofoil",
+      "name": "Sandy Shocks ex - 056/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "056/131",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/prismatic-evolutions/610411.jpg",
+      "rarity": "Double Rare"
+    },
+    {
+      "key": "en-prismatic-evolutions-610412-holofoil",
+      "name": "Okidogi - 057/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "057/131",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/prismatic-evolutions/610412.jpg",
+      "rarity": "Rare"
+    },
+    {
+      "key": "en-prismatic-evolutions-610413-holofoil",
+      "name": "Cornerstone Mask Ogerpon ex - 058/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "058/131",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/prismatic-evolutions/610413.jpg",
+      "rarity": "Double Rare"
+    },
+    {
+      "key": "en-prismatic-evolutions-610414-holofoil",
+      "name": "Umbreon - 059/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "059/131",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/prismatic-evolutions/610414.jpg",
+      "rarity": "Rare"
+    },
+    {
+      "key": "en-prismatic-evolutions-610415-holofoil",
+      "name": "Umbreon ex - 060/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "060/131",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/prismatic-evolutions/610415.jpg",
+      "rarity": "Double Rare"
+    },
+    {
+      "key": "en-prismatic-evolutions-610416-normal",
+      "name": "Sneasel - 061/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "061/131",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/prismatic-evolutions/610416.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-prismatic-evolutions-610417-normal",
+      "name": "Houndour - 062/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "062/131",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/prismatic-evolutions/610417.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-prismatic-evolutions-610418-normal",
+      "name": "Houndoom - 063/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "063/131",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/prismatic-evolutions/610418.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-prismatic-evolutions-610419-holofoil",
+      "name": "Tyranitar ex - 064/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "064/131",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/prismatic-evolutions/610419.jpg",
+      "rarity": "Double Rare"
+    },
+    {
+      "key": "en-prismatic-evolutions-610420-holofoil",
+      "name": "Roaring Moon - 065/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "065/131",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/prismatic-evolutions/610420.jpg",
+      "rarity": "Rare"
+    },
+    {
+      "key": "en-prismatic-evolutions-610421-normal",
+      "name": "Bronzor - 066/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "066/131",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/prismatic-evolutions/610421.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-prismatic-evolutions-610422-normal",
+      "name": "Bronzong - 067/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "067/131",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/prismatic-evolutions/610422.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-prismatic-evolutions-610423-normal",
+      "name": "Heatran - 068/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "068/131",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/prismatic-evolutions/610423.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-prismatic-evolutions-610424-normal",
+      "name": "Duraludon - 069/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "069/131",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/prismatic-evolutions/610424.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-prismatic-evolutions-610425-holofoil",
+      "name": "Archaludon - 070/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "070/131",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/prismatic-evolutions/610425.jpg",
+      "rarity": "Rare"
+    },
+    {
+      "key": "en-prismatic-evolutions-610426-normal",
+      "name": "Dreepy - 071/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "071/131",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/prismatic-evolutions/610426.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-prismatic-evolutions-610427-normal",
+      "name": "Drakloak - 072/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "072/131",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/prismatic-evolutions/610427.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-prismatic-evolutions-610428-holofoil",
+      "name": "Dragapult ex - 073/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "073/131",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/prismatic-evolutions/610428.jpg",
+      "rarity": "Double Rare"
+    },
+    {
+      "key": "en-prismatic-evolutions-610429-normal",
+      "name": "Eevee - 074/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "074/131",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/prismatic-evolutions/610429.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-prismatic-evolutions-610430-holofoil",
+      "name": "Eevee ex - 075/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "075/131",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/prismatic-evolutions/610430.jpg",
+      "rarity": "Double Rare"
+    },
+    {
+      "key": "en-prismatic-evolutions-610431-holofoil",
+      "name": "Snorlax ex - 076/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "076/131",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/prismatic-evolutions/610431.jpg",
+      "rarity": "Double Rare"
+    },
+    {
+      "key": "en-prismatic-evolutions-610432-normal",
+      "name": "Hoothoot - 077/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "077/131",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/prismatic-evolutions/610432.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-prismatic-evolutions-610433-holofoil",
+      "name": "Noctowl - 078/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "078/131",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/prismatic-evolutions/610433.jpg",
+      "rarity": "Rare"
+    },
+    {
+      "key": "en-prismatic-evolutions-610434-normal",
+      "name": "Dunsparce - 079/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "079/131",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/prismatic-evolutions/610434.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-prismatic-evolutions-610435-holofoil",
+      "name": "Dudunsparce - 080/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "080/131",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/prismatic-evolutions/610435.jpg",
+      "rarity": "Rare"
+    },
+    {
+      "key": "en-prismatic-evolutions-610436-normal",
+      "name": "Miltank - 081/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "081/131",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/prismatic-evolutions/610436.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-prismatic-evolutions-610437-holofoil",
+      "name": "Lugia ex - 082/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "082/131",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/prismatic-evolutions/610437.jpg",
+      "rarity": "Double Rare"
+    },
+    {
+      "key": "en-prismatic-evolutions-610438-normal",
+      "name": "Buneary - 083/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "083/131",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/prismatic-evolutions/610438.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-prismatic-evolutions-610439-normal",
+      "name": "Lopunny - 084/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "084/131",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/prismatic-evolutions/610439.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-prismatic-evolutions-610440-normal",
+      "name": "Fan Rotom - 085/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "085/131",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/prismatic-evolutions/610440.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-prismatic-evolutions-610441-normal",
+      "name": "Regigigas - 086/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "086/131",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/prismatic-evolutions/610441.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-prismatic-evolutions-610442-normal",
+      "name": "Shaymin - 087/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "087/131",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/prismatic-evolutions/610442.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-prismatic-evolutions-610443-normal",
+      "name": "Furfrou - 088/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "088/131",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/prismatic-evolutions/610443.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-prismatic-evolutions-610444-normal",
+      "name": "Hawlucha - 089/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "089/131",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/prismatic-evolutions/610444.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-prismatic-evolutions-610445-normal",
+      "name": "Noibat - 090/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "090/131",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/prismatic-evolutions/610445.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-prismatic-evolutions-610446-holofoil",
+      "name": "Noivern ex - 091/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "091/131",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/prismatic-evolutions/610446.jpg",
+      "rarity": "Double Rare"
+    },
+    {
+      "key": "en-prismatic-evolutions-610447-holofoil",
+      "name": "Terapagos ex - 092/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "092/131",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/prismatic-evolutions/610447.jpg",
+      "rarity": "Double Rare"
+    },
+    {
+      "key": "en-prismatic-evolutions-610448-normal",
+      "name": "Amarys - 093/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "093/131",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/prismatic-evolutions/610448.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-prismatic-evolutions-610449-normal",
+      "name": "Area Zero Underdepths - 094/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "094/131",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/prismatic-evolutions/610449.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-prismatic-evolutions-610450-normal",
+      "name": "Binding Mochi - 095/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "095/131",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/prismatic-evolutions/610450.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-prismatic-evolutions-610451-normal",
+      "name": "Black Belt's Training - 096/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "096/131",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/prismatic-evolutions/610451.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-prismatic-evolutions-610452-normal",
+      "name": "Black Belt's Training - 097/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "097/131",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/prismatic-evolutions/610452.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-prismatic-evolutions-610453-normal",
+      "name": "Black Belt's Training - 098/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "098/131",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/prismatic-evolutions/610453.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-prismatic-evolutions-610454-normal",
+      "name": "Black Belt's Training - 099/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "099/131",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/prismatic-evolutions/610454.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-prismatic-evolutions-610455-normal",
+      "name": "Briar - 100/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "100/131",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/prismatic-evolutions/610455.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-prismatic-evolutions-610456-normal",
+      "name": "Buddy-Buddy Poffin - 101/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "101/131",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/prismatic-evolutions/610456.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-prismatic-evolutions-610457-normal",
+      "name": "Bug Catching Set - 102/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "102/131",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/prismatic-evolutions/610457.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-prismatic-evolutions-610458-normal",
+      "name": "Carmine - 103/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "103/131",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/prismatic-evolutions/610458.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-prismatic-evolutions-610459-normal",
+      "name": "Ciphermaniac's Codebreaking - 104/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "104/131",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/prismatic-evolutions/610459.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-prismatic-evolutions-610460-normal",
+      "name": "Crispin - 105/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "105/131",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/prismatic-evolutions/610460.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-prismatic-evolutions-610461-normal",
+      "name": "Earthen Vessel - 106/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "106/131",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/prismatic-evolutions/610461.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-prismatic-evolutions-610462-normal",
+      "name": "Explorer's Guidance - 107/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "107/131",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/prismatic-evolutions/610462.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-prismatic-evolutions-610463-normal",
+      "name": "Festival Grounds - 108/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "108/131",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/prismatic-evolutions/610463.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-prismatic-evolutions-610464-normal",
+      "name": "Friends in Paldea - 109/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "109/131",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/prismatic-evolutions/610464.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-prismatic-evolutions-610465-normal",
+      "name": "Glass Trumpet - 110/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "110/131",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/prismatic-evolutions/610465.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-prismatic-evolutions-610466-normal",
+      "name": "Haban Berry - 111/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "111/131",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/prismatic-evolutions/610466.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-prismatic-evolutions-610467-normal",
+      "name": "Janine's Secret Art - 112/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "112/131",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/prismatic-evolutions/610467.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-prismatic-evolutions-610468-normal",
+      "name": "Kieran - 113/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "113/131",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/prismatic-evolutions/610468.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-prismatic-evolutions-610469-normal",
+      "name": "Lacey - 114/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "114/131",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/prismatic-evolutions/610469.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-prismatic-evolutions-610470-normal",
+      "name": "Larry's Skill - 115/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "115/131",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/prismatic-evolutions/610470.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-prismatic-evolutions-610471-holofoil",
+      "name": "Max Rod - 116/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "116/131",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/prismatic-evolutions/610471.jpg",
+      "rarity": "ACE SPEC Rare"
+    },
+    {
+      "key": "en-prismatic-evolutions-610472-holofoil",
+      "name": "Maximum Belt - 117/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "117/131",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/prismatic-evolutions/610472.jpg",
+      "rarity": "ACE SPEC Rare"
+    },
+    {
+      "key": "en-prismatic-evolutions-610473-normal",
+      "name": "Ogre's Mask - 118/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "118/131",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/prismatic-evolutions/610473.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-prismatic-evolutions-610474-holofoil",
+      "name": "Prime Catcher - 119/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "119/131",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/prismatic-evolutions/610474.jpg",
+      "rarity": "ACE SPEC Rare"
+    },
+    {
+      "key": "en-prismatic-evolutions-610475-normal",
+      "name": "Professor Sada's Vitality - 120/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "120/131",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/prismatic-evolutions/610475.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-prismatic-evolutions-610476-normal",
+      "name": "Professor Turo's Scenario - 121/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "121/131",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/prismatic-evolutions/610476.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-prismatic-evolutions-610477-normal",
+      "name": "Professor's Research [Professor Oak] - 122/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "122/131",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/prismatic-evolutions/610477.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-prismatic-evolutions-610478-normal",
+      "name": "Professor's Research [Professor Elm] - 123/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "123/131",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/prismatic-evolutions/610478.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-prismatic-evolutions-610479-normal",
+      "name": "Professor's Research [Professor Rowan] - 124/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "124/131",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/prismatic-evolutions/610479.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-prismatic-evolutions-610480-normal",
+      "name": "Professor's Research [Professor Sycamore] - 125/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "125/131",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/prismatic-evolutions/610480.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-prismatic-evolutions-610481-normal",
+      "name": "Rescue Board - 126/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "126/131",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/prismatic-evolutions/610481.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-prismatic-evolutions-610482-normal",
+      "name": "Roto-Stick - 127/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "127/131",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/prismatic-evolutions/610482.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-prismatic-evolutions-610483-holofoil",
+      "name": "Scoop Up Cyclone - 128/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "128/131",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/prismatic-evolutions/610483.jpg",
+      "rarity": "ACE SPEC Rare"
+    },
+    {
+      "key": "en-prismatic-evolutions-610484-holofoil",
+      "name": "Sparkling Crystal - 129/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "129/131",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/prismatic-evolutions/610484.jpg",
+      "rarity": "ACE SPEC Rare"
+    },
+    {
+      "key": "en-prismatic-evolutions-610485-normal",
+      "name": "Techno Radar - 130/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "130/131",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/prismatic-evolutions/610485.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-prismatic-evolutions-610486-holofoil",
+      "name": "Treasure Tracker - 131/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "131/131",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/prismatic-evolutions/610486.jpg",
+      "rarity": "ACE SPEC Rare"
+    },
+    {
+      "key": "en-prismatic-evolutions-610487-holofoil",
+      "name": "Amarys - 132/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "132/131",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/prismatic-evolutions/610487.jpg",
+      "rarity": "Ultra Rare"
+    },
+    {
+      "key": "en-prismatic-evolutions-610488-holofoil",
+      "name": "Atticus - 133/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "133/131",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/prismatic-evolutions/610488.jpg",
+      "rarity": "Ultra Rare"
+    },
+    {
+      "key": "en-prismatic-evolutions-610489-holofoil",
+      "name": "Atticus - 134/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "134/131",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/prismatic-evolutions/610489.jpg",
+      "rarity": "Ultra Rare"
+    },
+    {
+      "key": "en-prismatic-evolutions-610490-holofoil",
+      "name": "Brassius - 135/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "135/131",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/prismatic-evolutions/610490.jpg",
+      "rarity": "Ultra Rare"
+    },
+    {
+      "key": "en-prismatic-evolutions-610491-holofoil",
+      "name": "Eri - 136/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "136/131",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/prismatic-evolutions/610491.jpg",
+      "rarity": "Ultra Rare"
+    },
+    {
+      "key": "en-prismatic-evolutions-610492-holofoil",
+      "name": "Friends in Paldea - 137/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "137/131",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/prismatic-evolutions/610492.jpg",
+      "rarity": "Ultra Rare"
+    },
+    {
+      "key": "en-prismatic-evolutions-610493-holofoil",
+      "name": "Giacomo - 138/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "138/131",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/prismatic-evolutions/610493.jpg",
+      "rarity": "Ultra Rare"
+    },
+    {
+      "key": "en-prismatic-evolutions-610494-holofoil",
+      "name": "Larry's Skill - 139/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "139/131",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/prismatic-evolutions/610494.jpg",
+      "rarity": "Ultra Rare"
+    },
+    {
+      "key": "en-prismatic-evolutions-610495-holofoil",
+      "name": "Mela - 140/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "140/131",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/prismatic-evolutions/610495.jpg",
+      "rarity": "Ultra Rare"
+    },
+    {
+      "key": "en-prismatic-evolutions-610496-holofoil",
+      "name": "Ortega - 141/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "141/131",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/prismatic-evolutions/610496.jpg",
+      "rarity": "Ultra Rare"
+    },
+    {
+      "key": "en-prismatic-evolutions-610497-holofoil",
+      "name": "Raifort - 142/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "142/131",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/prismatic-evolutions/610497.jpg",
+      "rarity": "Ultra Rare"
+    },
+    {
+      "key": "en-prismatic-evolutions-610498-holofoil",
+      "name": "Tyme - 143/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "143/131",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/prismatic-evolutions/610498.jpg",
+      "rarity": "Ultra Rare"
+    },
+    {
+      "key": "en-prismatic-evolutions-610499-holofoil",
+      "name": "Leafeon ex - 144/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "144/131",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/prismatic-evolutions/610499.jpg",
+      "rarity": "Special Illustration Rare"
+    },
+    {
+      "key": "en-prismatic-evolutions-610500-holofoil",
+      "name": "Teal Mask Ogerpon ex - 145/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "145/131",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/prismatic-evolutions/610500.jpg",
+      "rarity": "Special Illustration Rare"
+    },
+    {
+      "key": "en-prismatic-evolutions-610501-holofoil",
+      "name": "Flareon ex - 146/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "146/131",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/prismatic-evolutions/610501.jpg",
+      "rarity": "Special Illustration Rare"
+    },
+    {
+      "key": "en-prismatic-evolutions-610502-holofoil",
+      "name": "Ceruledge ex - 147/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "147/131",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/prismatic-evolutions/610502.jpg",
+      "rarity": "Special Illustration Rare"
+    },
+    {
+      "key": "en-prismatic-evolutions-610503-holofoil",
+      "name": "Hearthflame Mask Ogerpon ex - 148/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "148/131",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/prismatic-evolutions/610503.jpg",
+      "rarity": "Special Illustration Rare"
+    },
+    {
+      "key": "en-prismatic-evolutions-610504-holofoil",
+      "name": "Vaporeon ex - 149/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "149/131",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/prismatic-evolutions/610504.jpg",
+      "rarity": "Special Illustration Rare"
+    },
+    {
+      "key": "en-prismatic-evolutions-610505-holofoil",
+      "name": "Glaceon ex - 150/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "150/131",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/prismatic-evolutions/610505.jpg",
+      "rarity": "Special Illustration Rare"
+    },
+    {
+      "key": "en-prismatic-evolutions-610506-holofoil",
+      "name": "Palafin ex - 151/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "151/131",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/prismatic-evolutions/610506.jpg",
+      "rarity": "Special Illustration Rare"
+    },
+    {
+      "key": "en-prismatic-evolutions-610507-holofoil",
+      "name": "Wellspring Mask Ogerpon ex - 152/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "152/131",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/prismatic-evolutions/610507.jpg",
+      "rarity": "Special Illustration Rare"
+    },
+    {
+      "key": "en-prismatic-evolutions-610508-holofoil",
+      "name": "Jolteon ex - 153/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "153/131",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/prismatic-evolutions/610508.jpg",
+      "rarity": "Special Illustration Rare"
+    },
+    {
+      "key": "en-prismatic-evolutions-610509-holofoil",
+      "name": "Iron Hands ex - 154/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "154/131",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/prismatic-evolutions/610509.jpg",
+      "rarity": "Special Illustration Rare"
+    },
+    {
+      "key": "en-prismatic-evolutions-610510-holofoil",
+      "name": "Espeon ex - 155/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "155/131",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/prismatic-evolutions/610510.jpg",
+      "rarity": "Special Illustration Rare"
+    },
+    {
+      "key": "en-prismatic-evolutions-610511-holofoil",
+      "name": "Sylveon ex - 156/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "156/131",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/prismatic-evolutions/610511.jpg",
+      "rarity": "Special Illustration Rare"
+    },
+    {
+      "key": "en-prismatic-evolutions-610512-holofoil",
+      "name": "Iron Valiant ex - 157/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "157/131",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/prismatic-evolutions/610512.jpg",
+      "rarity": "Special Illustration Rare"
+    },
+    {
+      "key": "en-prismatic-evolutions-610513-holofoil",
+      "name": "Iron Crown ex - 158/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "158/131",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/prismatic-evolutions/610513.jpg",
+      "rarity": "Special Illustration Rare"
+    },
+    {
+      "key": "en-prismatic-evolutions-610514-holofoil",
+      "name": "Sandy Shocks ex - 159/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "159/131",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/prismatic-evolutions/610514.jpg",
+      "rarity": "Special Illustration Rare"
+    },
+    {
+      "key": "en-prismatic-evolutions-610515-holofoil",
+      "name": "Cornerstone Mask Ogerpon ex - 160/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "160/131",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/prismatic-evolutions/610515.jpg",
+      "rarity": "Special Illustration Rare"
+    },
+    {
+      "key": "en-prismatic-evolutions-610516-holofoil",
+      "name": "Umbreon ex - 161/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "161/131",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/prismatic-evolutions/610516.jpg",
+      "rarity": "Special Illustration Rare"
+    },
+    {
+      "key": "en-prismatic-evolutions-610517-holofoil",
+      "name": "Roaring Moon ex - 162/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "162/131",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/prismatic-evolutions/610517.jpg",
+      "rarity": "Special Illustration Rare"
+    },
+    {
+      "key": "en-prismatic-evolutions-610518-holofoil",
+      "name": "Pecharunt ex - 163/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "163/131",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/prismatic-evolutions/610518.jpg",
+      "rarity": "Special Illustration Rare"
+    },
+    {
+      "key": "en-prismatic-evolutions-610519-holofoil",
+      "name": "Gholdengo ex - 164/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "164/131",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/prismatic-evolutions/610519.jpg",
+      "rarity": "Special Illustration Rare"
+    },
+    {
+      "key": "en-prismatic-evolutions-610520-holofoil",
+      "name": "Dragapult ex - 165/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "165/131",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/prismatic-evolutions/610520.jpg",
+      "rarity": "Special Illustration Rare"
+    },
+    {
+      "key": "en-prismatic-evolutions-610521-holofoil",
+      "name": "Raging Bolt ex - 166/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "166/131",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/prismatic-evolutions/610521.jpg",
+      "rarity": "Special Illustration Rare"
+    },
+    {
+      "key": "en-prismatic-evolutions-610522-holofoil",
+      "name": "Eevee ex - 167/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "167/131",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/prismatic-evolutions/610522.jpg",
+      "rarity": "Special Illustration Rare"
+    },
+    {
+      "key": "en-prismatic-evolutions-610523-holofoil",
+      "name": "Bloodmoon Ursaluna ex - 168/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "168/131",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/prismatic-evolutions/610523.jpg",
+      "rarity": "Special Illustration Rare"
+    },
+    {
+      "key": "en-prismatic-evolutions-610524-holofoil",
+      "name": "Terapagos ex - 169/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "169/131",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/prismatic-evolutions/610524.jpg",
+      "rarity": "Special Illustration Rare"
+    },
+    {
+      "key": "en-prismatic-evolutions-610525-holofoil",
+      "name": "Amarys - 170/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "170/131",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/prismatic-evolutions/610525.jpg",
+      "rarity": "Special Illustration Rare"
+    },
+    {
+      "key": "en-prismatic-evolutions-610526-holofoil",
+      "name": "Crispin - 171/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "171/131",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/prismatic-evolutions/610526.jpg",
+      "rarity": "Special Illustration Rare"
+    },
+    {
+      "key": "en-prismatic-evolutions-610527-holofoil",
+      "name": "Drayton - 172/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "172/131",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/prismatic-evolutions/610527.jpg",
+      "rarity": "Special Illustration Rare"
+    },
+    {
+      "key": "en-prismatic-evolutions-610528-holofoil",
+      "name": "Janine's Secret Art - 173/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "173/131",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/prismatic-evolutions/610528.jpg",
+      "rarity": "Special Illustration Rare"
+    },
+    {
+      "key": "en-prismatic-evolutions-610529-holofoil",
+      "name": "Kieran - 174/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "174/131",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/prismatic-evolutions/610529.jpg",
+      "rarity": "Special Illustration Rare"
+    },
+    {
+      "key": "en-prismatic-evolutions-610530-holofoil",
+      "name": "Lacey - 175/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "175/131",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/prismatic-evolutions/610530.jpg",
+      "rarity": "Special Illustration Rare"
+    },
+    {
+      "key": "en-prismatic-evolutions-610531-holofoil",
+      "name": "Iron Leaves ex - 176/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "176/131",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/prismatic-evolutions/610531.jpg",
+      "rarity": "Hyper Rare"
+    },
+    {
+      "key": "en-prismatic-evolutions-610532-holofoil",
+      "name": "Teal Mask Ogerpon ex - 177/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "177/131",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/prismatic-evolutions/610532.jpg",
+      "rarity": "Hyper Rare"
+    },
+    {
+      "key": "en-prismatic-evolutions-610533-holofoil",
+      "name": "Walking Wake ex - 178/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "178/131",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/prismatic-evolutions/610533.jpg",
+      "rarity": "Hyper Rare"
+    },
+    {
+      "key": "en-prismatic-evolutions-610534-holofoil",
+      "name": "Pikachu ex - 179/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "179/131",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/prismatic-evolutions/610534.jpg",
+      "rarity": "Hyper Rare"
+    },
+    {
+      "key": "en-prismatic-evolutions-610535-holofoil",
+      "name": "Terapagos ex - 180/131",
+      "set": "SV: Prismatic Evolutions",
+      "number": "180/131",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/prismatic-evolutions/610535.jpg",
+      "rarity": "Hyper Rare"
+    }
+  ],
+  "points": {
+    "en-prismatic-evolutions-610356-normal": [
+      [
+        "2025-01-31",
+        0.05,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.06,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610357-normal": [
+      [
+        "2025-01-31",
+        0.05,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.09,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610358-normal": [
+      [
+        "2025-01-31",
+        0.05,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.08,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610359-normal": [
+      [
+        "2025-01-31",
+        1.35,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.19,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610360-holofoil": [
+      [
+        "2025-01-31",
+        0.24,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.33,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610361-holofoil": [
+      [
+        "2025-01-31",
+        6.64,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        2.88,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610362-normal": [
+      [
+        "2025-01-31",
+        0.04,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.07,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610363-holofoil": [
+      [
+        "2025-01-31",
+        0.06,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.16,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610364-normal": [
+      [
+        "2025-01-31",
+        0.04,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.15,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610365-normal": [
+      [
+        "2025-01-31",
+        0.05,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.2,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610366-holofoil": [
+      [
+        "2025-01-31",
+        0.97,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.95,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610367-holofoil": [
+      [
+        "2025-01-31",
+        2.48,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        2.98,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610368-holofoil": [
+      [
+        "2025-01-31",
+        0.21,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.35,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610369-holofoil": [
+      [
+        "2025-01-31",
+        12.3,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        4.49,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610370-normal": [
+      [
+        "2025-01-31",
+        0.06,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.05,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610371-normal": [
+      [
+        "2025-01-31",
+        0.07,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.07,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610372-holofoil": [
+      [
+        "2025-01-31",
+        0.67,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.59,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610373-normal": [
+      [
+        "2025-01-31",
+        0.07,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.13,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610374-normal": [
+      [
+        "2025-01-31",
+        0.08,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.12,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610375-normal": [
+      [
+        "2025-01-31",
+        0.06,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.12,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610376-normal": [
+      [
+        "2025-01-31",
+        0.09,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.15,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610377-holofoil": [
+      [
+        "2025-01-31",
+        0.28,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.31,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610378-holofoil": [
+      [
+        "2025-01-31",
+        6.37,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        2.76,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610379-normal": [
+      [
+        "2025-01-31",
+        0.09,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.12,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610380-holofoil": [
+      [
+        "2025-01-31",
+        0.26,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.27,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610381-holofoil": [
+      [
+        "2025-01-31",
+        4.96,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        1.88,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610382-holofoil": [
+      [
+        "2025-01-31",
+        0.77,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.64,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610383-holofoil": [
+      [
+        "2025-01-31",
+        2.05,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        1.55,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610384-holofoil": [
+      [
+        "2025-01-31",
+        0.25,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.3,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610385-holofoil": [
+      [
+        "2025-01-31",
+        7.02,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        2.54,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610386-holofoil": [
+      [
+        "2025-01-31",
+        2.12,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.72,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610387-holofoil": [
+      [
+        "2025-01-31",
+        2.18,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.76,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610388-holofoil": [
+      [
+        "2025-01-31",
+        0.37,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.36,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610389-holofoil": [
+      [
+        "2025-01-31",
+        5.16,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        3.01,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610390-normal": [
+      [
+        "2025-01-31",
+        0.09,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.15,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610391-normal": [
+      [
+        "2025-01-31",
+        0.09,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.14,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610392-holofoil": [
+      [
+        "2025-01-31",
+        0.23,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.23,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610393-normal": [
+      [
+        "2025-01-31",
+        0.04,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.07,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610394-normal": [
+      [
+        "2025-01-31",
+        0.04,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.09,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610395-holofoil": [
+      [
+        "2025-01-31",
+        0.28,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.39,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610396-holofoil": [
+      [
+        "2025-01-31",
+        4.51,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        2.72,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610397-normal": [
+      [
+        "2025-01-31",
+        0.07,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.13,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610398-holofoil": [
+      [
+        "2025-01-31",
+        0.11,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.14,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610399-holofoil": [
+      [
+        "2025-01-31",
+        0.13,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.25,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610400-holofoil": [
+      [
+        "2025-01-31",
+        0.09,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.15,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610401-holofoil": [
+      [
+        "2025-01-31",
+        0.11,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.16,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610402-normal": [
+      [
+        "2025-01-31",
+        0.07,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.1,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610403-normal": [
+      [
+        "2025-01-31",
+        0.05,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.08,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610404-holofoil": [
+      [
+        "2025-01-31",
+        0.1,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.13,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610405-normal": [
+      [
+        "2025-01-31",
+        0.06,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.16,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610406-holofoil": [
+      [
+        "2025-01-31",
+        1.07,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.79,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610407-normal": [
+      [
+        "2025-01-31",
+        0.05,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.06,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610408-normal": [
+      [
+        "2025-01-31",
+        0.07,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.05,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610409-holofoil": [
+      [
+        "2025-01-31",
+        0.1,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.19,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610410-normal": [
+      [
+        "2025-01-31",
+        0.06,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.1,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610411-holofoil": [
+      [
+        "2025-01-31",
+        0.68,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.56,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610412-holofoil": [
+      [
+        "2025-01-31",
+        0.08,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.13,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610413-holofoil": [
+      [
+        "2025-01-31",
+        0.89,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.68,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610414-holofoil": [
+      [
+        "2025-01-31",
+        0.46,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.37,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610415-holofoil": [
+      [
+        "2025-01-31",
+        14.49,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        6.41,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610416-normal": [
+      [
+        "2025-01-31",
+        0.06,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.1,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610417-normal": [
+      [
+        "2025-01-31",
+        0.07,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.09,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610418-normal": [
+      [
+        "2025-01-31",
+        0.09,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.12,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610419-holofoil": [
+      [
+        "2025-01-31",
+        1.03,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.66,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610420-holofoil": [
+      [
+        "2025-01-31",
+        0.13,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.2,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610421-normal": [
+      [
+        "2025-01-31",
+        0.04,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.08,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610422-normal": [
+      [
+        "2025-01-31",
+        0.06,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.05,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610423-normal": [
+      [
+        "2025-01-31",
+        0.06,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.05,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610424-normal": [
+      [
+        "2025-01-31",
+        0.07,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.11,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610425-holofoil": [
+      [
+        "2025-01-31",
+        0.13,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.11,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610426-normal": [
+      [
+        "2025-01-31",
+        0.09,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.17,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610427-normal": [
+      [
+        "2025-01-31",
+        0.12,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.17,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610428-holofoil": [
+      [
+        "2025-01-31",
+        3.11,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        1.05,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610429-normal": [
+      [
+        "2025-01-31",
+        0.18,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.23,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610430-holofoil": [
+      [
+        "2025-01-31",
+        11.34,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        5.19,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610431-holofoil": [
+      [
+        "2025-01-31",
+        2.28,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        1.53,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610432-normal": [
+      [
+        "2025-01-31",
+        0.07,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.09,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610433-holofoil": [
+      [
+        "2025-01-31",
+        0.15,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.16,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610434-normal": [
+      [
+        "2025-01-31",
+        0.06,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.2,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610435-holofoil": [
+      [
+        "2025-01-31",
+        0.08,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.44,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610436-normal": [
+      [
+        "2025-01-31",
+        0.06,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.15,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610437-holofoil": [
+      [
+        "2025-01-31",
+        1.75,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        1.17,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610438-normal": [
+      [
+        "2025-01-31",
+        0.05,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.1,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610439-normal": [
+      [
+        "2025-01-31",
+        0.05,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.09,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610440-normal": [
+      [
+        "2025-01-31",
+        0.07,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.21,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610441-normal": [
+      [
+        "2025-01-31",
+        0.23,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.11,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610442-normal": [
+      [
+        "2025-01-31",
+        0.06,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.08,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610443-normal": [
+      [
+        "2025-01-31",
+        0.06,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.09,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610444-normal": [
+      [
+        "2025-01-31",
+        0.05,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.09,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610445-normal": [
+      [
+        "2025-01-31",
+        0.05,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.1,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610446-holofoil": [
+      [
+        "2025-01-31",
+        0.57,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.58,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610447-holofoil": [
+      [
+        "2025-01-31",
+        2.69,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.78,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610448-normal": [
+      [
+        "2025-01-31",
+        0.08,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.06,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610449-normal": [
+      [
+        "2025-01-31",
+        0.11,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.12,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610450-normal": [
+      [
+        "2025-01-31",
+        0.07,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.21,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610451-normal": [
+      [
+        "2025-01-31",
+        0.1,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.14,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610452-normal": [
+      [
+        "2025-01-31",
+        0.09,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.11,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610453-normal": [
+      [
+        "2025-01-31",
+        0.1,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.1,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610454-normal": [
+      [
+        "2025-01-31",
+        0.09,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.09,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610455-normal": [
+      [
+        "2025-01-31",
+        0.06,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.16,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610456-normal": [
+      [
+        "2025-01-31",
+        0.25,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.17,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610457-normal": [
+      [
+        "2025-01-31",
+        0.06,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.22,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610458-normal": [
+      [
+        "2025-01-31",
+        0.07,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.17,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610459-normal": [
+      [
+        "2025-01-31",
+        0.05,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.19,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610460-normal": [
+      [
+        "2025-01-31",
+        0.11,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.18,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610461-normal": [
+      [
+        "2025-01-31",
+        0.41,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.17,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610462-normal": [
+      [
+        "2025-01-31",
+        0.06,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.11,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610463-normal": [
+      [
+        "2025-01-31",
+        0.06,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.15,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610464-normal": [
+      [
+        "2025-01-31",
+        0.09,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.1,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610465-normal": [
+      [
+        "2025-01-31",
+        0.09,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.12,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610466-normal": [
+      [
+        "2025-01-31",
+        0.07,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.04,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610467-normal": [
+      [
+        "2025-01-31",
+        0.05,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.17,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610468-normal": [
+      [
+        "2025-01-31",
+        0.07,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.18,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610469-normal": [
+      [
+        "2025-01-31",
+        0.05,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.07,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610470-normal": [
+      [
+        "2025-01-31",
+        0.12,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.19,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610471-holofoil": [
+      [
+        "2025-01-31",
+        2.54,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.47,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610472-holofoil": [
+      [
+        "2025-01-31",
+        0.67,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.44,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610473-normal": [
+      [
+        "2025-01-31",
+        0.05,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.07,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610474-holofoil": [
+      [
+        "2025-01-31",
+        3.45,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.54,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610475-normal": [
+      [
+        "2025-01-31",
+        0.09,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.11,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610476-normal": [
+      [
+        "2025-01-31",
+        0.12,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.08,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610477-normal": [
+      [
+        "2025-01-31",
+        0.09,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.09,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610478-normal": [
+      [
+        "2025-01-31",
+        0.14,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.1,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610479-normal": [
+      [
+        "2025-01-31",
+        0.1,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.13,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610480-normal": [
+      [
+        "2025-01-31",
+        0.09,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.14,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610481-normal": [
+      [
+        "2025-01-31",
+        0.07,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.12,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610482-normal": [
+      [
+        "2025-01-31",
+        0.12,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.12,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610483-holofoil": [
+      [
+        "2025-01-31",
+        0.55,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.37,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610484-holofoil": [
+      [
+        "2025-01-31",
+        0.78,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.31,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610485-normal": [
+      [
+        "2025-01-31",
+        0.07,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.04,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610486-holofoil": [
+      [
+        "2025-01-31",
+        1.13,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.32,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610487-holofoil": [
+      [
+        "2025-01-31",
+        1.65,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.76,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610488-holofoil": [
+      [
+        "2025-01-31",
+        1.79,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.78,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610489-holofoil": [
+      [
+        "2025-01-31",
+        1.39,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.64,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610490-holofoil": [
+      [
+        "2025-01-31",
+        1.43,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.74,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610491-holofoil": [
+      [
+        "2025-01-31",
+        6.51,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.98,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610492-holofoil": [
+      [
+        "2025-01-31",
+        3.82,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.81,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610493-holofoil": [
+      [
+        "2025-01-31",
+        1.54,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.64,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610494-holofoil": [
+      [
+        "2025-01-31",
+        1.57,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.75,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610495-holofoil": [
+      [
+        "2025-01-31",
+        3.49,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.78,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610496-holofoil": [
+      [
+        "2025-01-31",
+        1.41,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.64,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610497-holofoil": [
+      [
+        "2025-01-31",
+        2.95,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.88,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610498-holofoil": [
+      [
+        "2025-01-31",
+        0.92,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.56,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610499-holofoil": [
+      [
+        "2025-01-31",
+        374.18,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        259.02,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610500-holofoil": [
+      [
+        "2025-01-31",
+        35.58,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        15.1,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610501-holofoil": [
+      [
+        "2025-01-31",
+        268.43,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        162.74,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610502-holofoil": [
+      [
+        "2025-01-31",
+        173.08,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        82.67,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610503-holofoil": [
+      [
+        "2025-01-31",
+        28.48,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        15.57,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610504-holofoil": [
+      [
+        "2025-01-31",
+        311.02,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        203.29,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610505-holofoil": [
+      [
+        "2025-01-31",
+        305.31,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        225.86,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610506-holofoil": [
+      [
+        "2025-01-31",
+        79.96,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        38.09,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610507-holofoil": [
+      [
+        "2025-01-31",
+        25.85,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        17.26,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610508-holofoil": [
+      [
+        "2025-01-31",
+        254.94,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        154.09,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610509-holofoil": [
+      [
+        "2025-01-31",
+        53.78,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        22.19,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610510-holofoil": [
+      [
+        "2025-01-31",
+        373.51,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        226.1,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610511-holofoil": [
+      [
+        "2026-11-09",
+        375.7,
+        "ok"
+      ],
+      [
+        "2026-11-15",
+        376.22,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        376.22,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610512-holofoil": [
+      [
+        "2025-01-31",
+        54.53,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        44.54,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610513-holofoil": [
+      [
+        "2025-01-31",
+        48.64,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        26.9,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610514-holofoil": [
+      [
+        "2025-01-31",
+        40.22,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        20.61,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610515-holofoil": [
+      [
+        "2025-01-31",
+        32.49,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        13.86,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610516-holofoil": [
+      [
+        "2026-11-09",
+        1186.84,
+        "ok"
+      ],
+      [
+        "2026-11-15",
+        1186.84,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        1186.84,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610517-holofoil": [
+      [
+        "2025-01-31",
+        178.75,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        141.18,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610518-holofoil": [
+      [
+        "2025-01-31",
+        34.14,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        28.33,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610519-holofoil": [
+      [
+        "2025-01-31",
+        65.91,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        39.06,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610520-holofoil": [
+      [
+        "2025-01-31",
+        127.68,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        76.67,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610521-holofoil": [
+      [
+        "2025-01-31",
+        112.11,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        57.99,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610522-holofoil": [
+      [
+        "2025-01-31",
+        229.5,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        152.98,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610523-holofoil": [
+      [
+        "2025-01-31",
+        71.29,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        39.18,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610524-holofoil": [
+      [
+        "2025-01-31",
+        62.26,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        26.94,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610525-holofoil": [
+      [
+        "2025-01-31",
+        25.6,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        10.98,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610526-holofoil": [
+      [
+        "2025-01-31",
+        41.77,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        20.08,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610527-holofoil": [
+      [
+        "2025-01-31",
+        29.87,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        11.32,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610528-holofoil": [
+      [
+        "2025-01-31",
+        44.69,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        16.8,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610529-holofoil": [
+      [
+        "2025-01-31",
+        43.52,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        15.22,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610530-holofoil": [
+      [
+        "2025-01-31",
+        63.69,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        19.28,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610531-holofoil": [
+      [
+        "2025-01-31",
+        15.44,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        5.19,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610532-holofoil": [
+      [
+        "2025-01-31",
+        18.92,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        7.44,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610533-holofoil": [
+      [
+        "2025-01-31",
+        18.81,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        6.57,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610534-holofoil": [
+      [
+        "2025-01-31",
+        118.5,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        43.22,
+        "ok"
+      ]
+    ],
+    "en-prismatic-evolutions-610535-holofoil": [
+      [
+        "2025-01-31",
+        25.46,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        7.06,
+        "ok"
+      ]
+    ]
+  },
+  "sourceDate": "2026-11-16",
+  "source": "https://tcgcsv.com/faq",
+  "sources": [
+    {
+      "day": "2025-01-31",
+      "url": "https://tcgcsv.com/archive/tcgplayer/prices-2025-01-31.ppmd.7z"
+    },
+    {
+      "day": "2026-11-09",
+      "url": "https://tcgcsv.com/archive/tcgplayer/prices-2026-11-09.ppmd.7z"
+    },
+    {
+      "day": "2026-11-15",
+      "url": "https://tcgcsv.com/archive/tcgplayer/prices-2026-11-15.ppmd.7z"
+    },
+    {
+      "day": "2026-11-16",
+      "url": "https://tcgcsv.com/tcgplayer/3/23821/prices"
+    }
+  ],
+  "baseline": {
+    "date": "2025-01-17",
+    "usd": null,
+    "proposed": false
+  },
+  "preview": true,
+  "previewNote": "Snapshot from the 17 Nov 2026 public-safe handoff. Live public read is not switched on. The index start date is 17 Jan 2025 (English launch day). The dated guides in this snapshot are the earliest point in the handoff (31 Jan 2025 for 178 of 180 cards; Sylveon ex 156/131 and Umbreon ex 161/131 from 9 Nov 2026) and the current guides dated 16 Nov 2026. Those two TCG Modern overlap cards are dated 15 Nov 2026 in the handoff; this snapshot reuses those guides for 16 Nov so the set has a complete current day. The roster is 180 English base printings, leaving out 167 Pok\u00e9 Ball and Master Ball pattern versions. Daily refresh for this set is not switched on yet.",
+  "sourceVersion": "74eea3672ea7bfedafd1f72c31cd0d4955c5af406a7e2aa3064a068f68eae6e9"
+}

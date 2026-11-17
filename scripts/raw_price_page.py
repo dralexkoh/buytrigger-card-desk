@@ -266,6 +266,9 @@ def render_page(root: Path, spec: dict, snapshot: dict | None = None) -> str:
     title = spec['title']
     rows = ''.join(_row(card, spec) for card in cards)
     digest = digest_signup_html(spec['form_id'], campaign=spec['campaign'])
+    credit = ''
+    if spec.get('image_credit'):
+        credit = '<p class="price-image-credit">' + html.escape(spec['image_credit']) + '</p>'
     main = f'''
 <section class="page-intro">
 <span class="kicker red-text">{html.escape(spec['kicker'])}</span>
@@ -291,6 +294,7 @@ def render_page(root: Path, spec: dict, snapshot: dict | None = None) -> str:
 </div>
 <p id="price-empty" hidden>No cards match that filter.</p>
 </section>
+{credit}
 {digest}
 '''
     page = BeautifulSoup((root / 'index.html').read_text(), 'html.parser')

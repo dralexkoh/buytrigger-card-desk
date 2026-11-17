@@ -1,0 +1,3135 @@
+{
+  "schemaVersion": 2,
+  "available": true,
+  "index": "delta-reign",
+  "sourceSystem": "shared-cards-market",
+  "grade": "Raw",
+  "currency": "USD",
+  "measure": "tcgcsv_market",
+  "cards": [
+    {
+      "key": "en-delta-reign-727563-normal",
+      "name": "Heracross",
+      "set": "ME06: Delta Reign",
+      "number": "001/103",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/delta-reign/727563.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-delta-reign-727564-normal",
+      "name": "Surskit",
+      "set": "ME06: Delta Reign",
+      "number": "002/103",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/delta-reign/727564.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-delta-reign-726510-normal",
+      "name": "Masquerain - 003/103",
+      "set": "ME06: Delta Reign",
+      "number": "003/103",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/delta-reign/726510.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-delta-reign-727565-normal",
+      "name": "Cacnea",
+      "set": "ME06: Delta Reign",
+      "number": "004/103",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/delta-reign/727565.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-delta-reign-727566-holofoil",
+      "name": "Cacturne",
+      "set": "ME06: Delta Reign",
+      "number": "005/103",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/delta-reign/727566.jpg",
+      "rarity": "Rare"
+    },
+    {
+      "key": "en-delta-reign-727567-normal",
+      "name": "Combee",
+      "set": "ME06: Delta Reign",
+      "number": "006/103",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/delta-reign/727567.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-delta-reign-727568-normal",
+      "name": "Vespiquen",
+      "set": "ME06: Delta Reign",
+      "number": "007/103",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/delta-reign/727568.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-delta-reign-727569-normal",
+      "name": "Shaymin",
+      "set": "ME06: Delta Reign",
+      "number": "008/103",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/delta-reign/727569.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-delta-reign-726511-normal",
+      "name": "Virizion",
+      "set": "ME06: Delta Reign",
+      "number": "009/103",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/delta-reign/726511.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-delta-reign-727570-normal",
+      "name": "Wimpod",
+      "set": "ME06: Delta Reign",
+      "number": "010/103",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/delta-reign/727570.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-delta-reign-726512-holofoil",
+      "name": "Mega Golisopod ex - 011/103",
+      "set": "ME06: Delta Reign",
+      "number": "011/103",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/delta-reign/726512.jpg",
+      "rarity": "Double Rare"
+    },
+    {
+      "key": "en-delta-reign-726513-normal",
+      "name": "Sprigatito - 012/103",
+      "set": "ME06: Delta Reign",
+      "number": "012/103",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/delta-reign/726513.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-delta-reign-726514-normal",
+      "name": "Floragato",
+      "set": "ME06: Delta Reign",
+      "number": "013/103",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/delta-reign/726514.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-delta-reign-726515-holofoil",
+      "name": "Meowscarada ex",
+      "set": "ME06: Delta Reign",
+      "number": "014/103",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/delta-reign/726515.jpg",
+      "rarity": "Double Rare"
+    },
+    {
+      "key": "en-delta-reign-727571-normal",
+      "name": "Smoliv",
+      "set": "ME06: Delta Reign",
+      "number": "015/103",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/delta-reign/727571.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-delta-reign-727572-normal",
+      "name": "Dolliv",
+      "set": "ME06: Delta Reign",
+      "number": "016/103",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/delta-reign/727572.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-delta-reign-727573-normal",
+      "name": "Arboliva",
+      "set": "ME06: Delta Reign",
+      "number": "017/103",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/delta-reign/727573.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-delta-reign-726516-normal",
+      "name": "Growlithe - 018/103",
+      "set": "ME06: Delta Reign",
+      "number": "018/103",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/delta-reign/726516.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-delta-reign-726517-holofoil",
+      "name": "Arcanine",
+      "set": "ME06: Delta Reign",
+      "number": "019/103",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/delta-reign/726517.jpg",
+      "rarity": "Rare"
+    },
+    {
+      "key": "en-delta-reign-727574-normal",
+      "name": "Magmar",
+      "set": "ME06: Delta Reign",
+      "number": "020/103",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/delta-reign/727574.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-delta-reign-727575-holofoil",
+      "name": "Magmortar",
+      "set": "ME06: Delta Reign",
+      "number": "021/103",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/delta-reign/727575.jpg",
+      "rarity": "Rare"
+    },
+    {
+      "key": "en-delta-reign-727576-normal",
+      "name": "Torkoal",
+      "set": "ME06: Delta Reign",
+      "number": "022/103",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/delta-reign/727576.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-delta-reign-726518-holofoil",
+      "name": "Heat Rotom ex - 023/103",
+      "set": "ME06: Delta Reign",
+      "number": "023/103",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/delta-reign/726518.jpg",
+      "rarity": "Double Rare"
+    },
+    {
+      "key": "en-delta-reign-727577-normal",
+      "name": "Heatmor",
+      "set": "ME06: Delta Reign",
+      "number": "024/103",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/delta-reign/727577.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-delta-reign-727578-normal",
+      "name": "Mantine",
+      "set": "ME06: Delta Reign",
+      "number": "025/103",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/delta-reign/727578.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-delta-reign-726519-holofoil",
+      "name": "Kyogre",
+      "set": "ME06: Delta Reign",
+      "number": "026/103",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/delta-reign/726519.jpg",
+      "rarity": "Rare"
+    },
+    {
+      "key": "en-delta-reign-727579-normal",
+      "name": "Frillish",
+      "set": "ME06: Delta Reign",
+      "number": "027/103",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/delta-reign/727579.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-delta-reign-727580-normal",
+      "name": "Jellicent",
+      "set": "ME06: Delta Reign",
+      "number": "028/103",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/delta-reign/727580.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-delta-reign-726520-holofoil",
+      "name": "Wishiwashi ex - 029/103",
+      "set": "ME06: Delta Reign",
+      "number": "029/103",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/delta-reign/726520.jpg",
+      "rarity": "Double Rare"
+    },
+    {
+      "key": "en-delta-reign-727581-normal",
+      "name": "Electabuzz",
+      "set": "ME06: Delta Reign",
+      "number": "030/103",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/delta-reign/727581.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-delta-reign-726521-normal",
+      "name": "Electivire - 031/103",
+      "set": "ME06: Delta Reign",
+      "number": "031/103",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/delta-reign/726521.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-delta-reign-726522-normal",
+      "name": "Jolteon",
+      "set": "ME06: Delta Reign",
+      "number": "032/103",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/delta-reign/726522.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-delta-reign-726523-holofoil",
+      "name": "Raikou ex - 033/103",
+      "set": "ME06: Delta Reign",
+      "number": "033/103",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/delta-reign/726523.jpg",
+      "rarity": "Double Rare"
+    },
+    {
+      "key": "en-delta-reign-727582-normal",
+      "name": "Rotom",
+      "set": "ME06: Delta Reign",
+      "number": "034/103",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/delta-reign/727582.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-delta-reign-726524-normal",
+      "name": "Thundurus",
+      "set": "ME06: Delta Reign",
+      "number": "035/103",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/delta-reign/726524.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-delta-reign-726525-normal",
+      "name": "Pincurchin - 036/103",
+      "set": "ME06: Delta Reign",
+      "number": "036/103",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/delta-reign/726525.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-delta-reign-727583-normal",
+      "name": "Pawmi",
+      "set": "ME06: Delta Reign",
+      "number": "037/103",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/delta-reign/727583.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-delta-reign-727584-normal",
+      "name": "Pawmo",
+      "set": "ME06: Delta Reign",
+      "number": "038/103",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/delta-reign/727584.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-delta-reign-727585-normal",
+      "name": "Pawmot",
+      "set": "ME06: Delta Reign",
+      "number": "039/103",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/delta-reign/727585.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-delta-reign-727586-normal",
+      "name": "Wattrel",
+      "set": "ME06: Delta Reign",
+      "number": "040/103",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/delta-reign/727586.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-delta-reign-728021-normal",
+      "name": "Kilowattrel",
+      "set": "ME06: Delta Reign",
+      "number": "041/103",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/delta-reign/728021.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-delta-reign-728022-normal",
+      "name": "Miraidon",
+      "set": "ME06: Delta Reign",
+      "number": "042/103",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/delta-reign/728022.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-delta-reign-728023-normal",
+      "name": "Drowzee",
+      "set": "ME06: Delta Reign",
+      "number": "043/103",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/delta-reign/728023.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-delta-reign-726526-normal",
+      "name": "Hypno",
+      "set": "ME06: Delta Reign",
+      "number": "044/103",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/delta-reign/726526.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-delta-reign-726527-holofoil",
+      "name": "Giratina",
+      "set": "ME06: Delta Reign",
+      "number": "045/103",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/delta-reign/726527.jpg",
+      "rarity": "Rare"
+    },
+    {
+      "key": "en-delta-reign-728024-normal",
+      "name": "Golett",
+      "set": "ME06: Delta Reign",
+      "number": "046/103",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/delta-reign/728024.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-delta-reign-726528-holofoil",
+      "name": "Mega Golurk ex - 047/103",
+      "set": "ME06: Delta Reign",
+      "number": "047/103",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/delta-reign/726528.jpg",
+      "rarity": "Double Rare"
+    },
+    {
+      "key": "en-delta-reign-728025-normal",
+      "name": "Enamorus",
+      "set": "ME06: Delta Reign",
+      "number": "048/103",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/delta-reign/728025.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-delta-reign-728026-normal",
+      "name": "Sandshrew",
+      "set": "ME06: Delta Reign",
+      "number": "049/103",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/delta-reign/728026.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-delta-reign-728027-normal",
+      "name": "Sandslash",
+      "set": "ME06: Delta Reign",
+      "number": "050/103",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/delta-reign/728027.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-delta-reign-728028-normal",
+      "name": "Onix",
+      "set": "ME06: Delta Reign",
+      "number": "051/103",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/delta-reign/728028.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-delta-reign-728029-holofoil",
+      "name": "Steelix",
+      "set": "ME06: Delta Reign",
+      "number": "052/103",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/delta-reign/728029.jpg",
+      "rarity": "Rare"
+    },
+    {
+      "key": "en-delta-reign-726529-holofoil",
+      "name": "Groudon",
+      "set": "ME06: Delta Reign",
+      "number": "053/103",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/delta-reign/726529.jpg",
+      "rarity": "Rare"
+    },
+    {
+      "key": "en-delta-reign-726530-normal",
+      "name": "Landorus",
+      "set": "ME06: Delta Reign",
+      "number": "054/103",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/delta-reign/726530.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-delta-reign-726531-normal",
+      "name": "Nidoran F",
+      "set": "ME06: Delta Reign",
+      "number": "055/103",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/delta-reign/726531.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-delta-reign-728031-normal",
+      "name": "Nidorina",
+      "set": "ME06: Delta Reign",
+      "number": "056/103",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/delta-reign/728031.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-delta-reign-728032-holofoil",
+      "name": "Nidoqueen",
+      "set": "ME06: Delta Reign",
+      "number": "057/103",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/delta-reign/728032.jpg",
+      "rarity": "Rare"
+    },
+    {
+      "key": "en-delta-reign-726532-normal",
+      "name": "Spinarak",
+      "set": "ME06: Delta Reign",
+      "number": "058/103",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/delta-reign/726532.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-delta-reign-728033-normal",
+      "name": "Ariados",
+      "set": "ME06: Delta Reign",
+      "number": "059/103",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/delta-reign/728033.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-delta-reign-726533-normal",
+      "name": "Sableye",
+      "set": "ME06: Delta Reign",
+      "number": "060/103",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/delta-reign/726533.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-delta-reign-728034-normal",
+      "name": "Carvanha",
+      "set": "ME06: Delta Reign",
+      "number": "061/103",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/delta-reign/728034.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-delta-reign-728035-normal",
+      "name": "Sharpedo",
+      "set": "ME06: Delta Reign",
+      "number": "062/103",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/delta-reign/728035.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-delta-reign-728036-normal",
+      "name": "Darkrai",
+      "set": "ME06: Delta Reign",
+      "number": "063/103",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/delta-reign/728036.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-delta-reign-728037-normal",
+      "name": "Purrloin",
+      "set": "ME06: Delta Reign",
+      "number": "064/103",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/delta-reign/728037.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-delta-reign-728038-normal",
+      "name": "Liepard",
+      "set": "ME06: Delta Reign",
+      "number": "065/103",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/delta-reign/728038.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-delta-reign-728039-normal",
+      "name": "Zorua",
+      "set": "ME06: Delta Reign",
+      "number": "066/103",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/delta-reign/728039.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-delta-reign-728040-holofoil",
+      "name": "Zoroark ex",
+      "set": "ME06: Delta Reign",
+      "number": "067/103",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/delta-reign/728040.jpg",
+      "rarity": "Double Rare"
+    },
+    {
+      "key": "en-delta-reign-728041-normal",
+      "name": "Inkay - 068/103",
+      "set": "ME06: Delta Reign",
+      "number": "068/103",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/delta-reign/728041.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-delta-reign-726534-holofoil",
+      "name": "Mega Malamar ex - 069/103",
+      "set": "ME06: Delta Reign",
+      "number": "069/103",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/delta-reign/726534.jpg",
+      "rarity": "Double Rare"
+    },
+    {
+      "key": "en-delta-reign-726535-normal",
+      "name": "Morpeko",
+      "set": "ME06: Delta Reign",
+      "number": "070/103",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/delta-reign/726535.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-delta-reign-726536-normal",
+      "name": "Zarude",
+      "set": "ME06: Delta Reign",
+      "number": "071/103",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/delta-reign/726536.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-delta-reign-726537-normal",
+      "name": "Druddigon",
+      "set": "ME06: Delta Reign",
+      "number": "072/103",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/delta-reign/726537.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-delta-reign-728042-normal",
+      "name": "Jangmo-o",
+      "set": "ME06: Delta Reign",
+      "number": "073/103",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/delta-reign/728042.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-delta-reign-728043-normal",
+      "name": "Hakamo-o",
+      "set": "ME06: Delta Reign",
+      "number": "074/103",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/delta-reign/728043.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-delta-reign-726538-holofoil",
+      "name": "Kommo-o",
+      "set": "ME06: Delta Reign",
+      "number": "075/103",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/delta-reign/726538.jpg",
+      "rarity": "Rare"
+    },
+    {
+      "key": "en-delta-reign-728044-normal",
+      "name": "Cyclizar",
+      "set": "ME06: Delta Reign",
+      "number": "076/103",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/delta-reign/728044.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-delta-reign-728045-normal",
+      "name": "Tauros",
+      "set": "ME06: Delta Reign",
+      "number": "077/103",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/delta-reign/728045.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-delta-reign-726539-normal",
+      "name": "Eevee",
+      "set": "ME06: Delta Reign",
+      "number": "078/103",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/delta-reign/726539.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-delta-reign-726540-normal",
+      "name": "Delibird",
+      "set": "ME06: Delta Reign",
+      "number": "079/103",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/delta-reign/726540.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-delta-reign-726541-normal",
+      "name": "Azurill",
+      "set": "ME06: Delta Reign",
+      "number": "080/103",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/delta-reign/726541.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-delta-reign-728046-normal",
+      "name": "Swablu",
+      "set": "ME06: Delta Reign",
+      "number": "081/103",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/delta-reign/728046.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-delta-reign-728047-holofoil",
+      "name": "Altaria - 082/103",
+      "set": "ME06: Delta Reign",
+      "number": "082/103",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/delta-reign/728047.jpg",
+      "rarity": "Rare"
+    },
+    {
+      "key": "en-delta-reign-726542-normal",
+      "name": "Kecleon",
+      "set": "ME06: Delta Reign",
+      "number": "083/103",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/delta-reign/726542.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-delta-reign-726543-holofoil",
+      "name": "Mega Rayquaza ex",
+      "set": "ME06: Delta Reign",
+      "number": "084/103",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/delta-reign/726543.jpg",
+      "rarity": "Double Rare"
+    },
+    {
+      "key": "en-delta-reign-726544-normal",
+      "name": "Tornadus",
+      "set": "ME06: Delta Reign",
+      "number": "085/103",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/delta-reign/726544.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-delta-reign-728048-normal",
+      "name": "Fletchling",
+      "set": "ME06: Delta Reign",
+      "number": "086/103",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/delta-reign/728048.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-delta-reign-728049-normal",
+      "name": "Fletchinder",
+      "set": "ME06: Delta Reign",
+      "number": "087/103",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/delta-reign/728049.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-delta-reign-728050-holofoil",
+      "name": "Talonflame ex - 088/103",
+      "set": "ME06: Delta Reign",
+      "number": "088/103",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/delta-reign/728050.jpg",
+      "rarity": "Double Rare"
+    },
+    {
+      "key": "en-delta-reign-726545-normal",
+      "name": "Aarune - 089/103",
+      "set": "ME06: Delta Reign",
+      "number": "089/103",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/delta-reign/726545.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-delta-reign-726546-normal",
+      "name": "Adventure Lantern",
+      "set": "ME06: Delta Reign",
+      "number": "090/103",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/delta-reign/726546.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-delta-reign-726547-normal",
+      "name": "Custom Vest",
+      "set": "ME06: Delta Reign",
+      "number": "091/103",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/delta-reign/726547.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-delta-reign-726548-normal",
+      "name": "Emcee's Hype",
+      "set": "ME06: Delta Reign",
+      "number": "092/103",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/delta-reign/726548.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-delta-reign-726549-normal",
+      "name": "Grisham",
+      "set": "ME06: Delta Reign",
+      "number": "093/103",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/delta-reign/726549.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-delta-reign-726550-normal",
+      "name": "Legendary Pyroduct - 094/103 (Left)",
+      "set": "ME06: Delta Reign",
+      "number": "094/103",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/delta-reign/726550.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-delta-reign-726722-normal",
+      "name": "Legendary Pyroduct - 095/103 (Right)",
+      "set": "ME06: Delta Reign",
+      "number": "095/103",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/delta-reign/726722.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-delta-reign-726551-normal",
+      "name": "Legendary Summit - 096/103 (Left)",
+      "set": "ME06: Delta Reign",
+      "number": "096/103",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/delta-reign/726551.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-delta-reign-726721-normal",
+      "name": "Legendary Summit - 097/103 (Right)",
+      "set": "ME06: Delta Reign",
+      "number": "097/103",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/delta-reign/726721.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-delta-reign-726786-normal",
+      "name": "Legendary Trench - 098/103 (Left)",
+      "set": "ME06: Delta Reign",
+      "number": "098/103",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/delta-reign/726786.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-delta-reign-726552-normal",
+      "name": "Legendary Trench - 099/103 (Right)",
+      "set": "ME06: Delta Reign",
+      "number": "099/103",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/delta-reign/726552.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-delta-reign-726553-normal",
+      "name": "Mega Rayquaza Cap",
+      "set": "ME06: Delta Reign",
+      "number": "100/103",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/delta-reign/726553.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-delta-reign-726554-normal",
+      "name": "Tasty Rice Ball",
+      "set": "ME06: Delta Reign",
+      "number": "101/103",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/delta-reign/726554.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-delta-reign-726555-normal",
+      "name": "Tate & Liza's Training",
+      "set": "ME06: Delta Reign",
+      "number": "102/103",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/delta-reign/726555.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-delta-reign-726556-normal",
+      "name": "Zinnia's Trust - 103/103",
+      "set": "ME06: Delta Reign",
+      "number": "103/103",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/delta-reign/726556.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-delta-reign-726557-holofoil",
+      "name": "Masquerain - 104/103",
+      "set": "ME06: Delta Reign",
+      "number": "104/103",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/delta-reign/726557.jpg",
+      "rarity": "Illustration Rare"
+    },
+    {
+      "key": "en-delta-reign-726558-holofoil",
+      "name": "Sprigatito - 105/103",
+      "set": "ME06: Delta Reign",
+      "number": "105/103",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/delta-reign/726558.jpg",
+      "rarity": "Illustration Rare"
+    },
+    {
+      "key": "en-delta-reign-726559-holofoil",
+      "name": "Growlithe - 106/103",
+      "set": "ME06: Delta Reign",
+      "number": "106/103",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/delta-reign/726559.jpg",
+      "rarity": "Illustration Rare"
+    },
+    {
+      "key": "en-delta-reign-726560-holofoil",
+      "name": "Magmortar - 107/103",
+      "set": "ME06: Delta Reign",
+      "number": "107/103",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/delta-reign/726560.jpg",
+      "rarity": "Illustration Rare"
+    },
+    {
+      "key": "en-delta-reign-727587-holofoil",
+      "name": "Electivire",
+      "set": "ME06: Delta Reign",
+      "number": "108/103",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/delta-reign/727587.jpg",
+      "rarity": "Illustration Rare"
+    },
+    {
+      "key": "en-delta-reign-726561-holofoil",
+      "name": "Pincurchin - 109/103",
+      "set": "ME06: Delta Reign",
+      "number": "109/103",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/delta-reign/726561.jpg",
+      "rarity": "Illustration Rare"
+    },
+    {
+      "key": "en-delta-reign-726562-holofoil",
+      "name": "Enamorus - 110/103",
+      "set": "ME06: Delta Reign",
+      "number": "110/103",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/delta-reign/726562.jpg",
+      "rarity": "Illustration Rare"
+    },
+    {
+      "key": "en-delta-reign-726563-holofoil",
+      "name": "Groudon - 111/103",
+      "set": "ME06: Delta Reign",
+      "number": "111/103",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/delta-reign/726563.jpg",
+      "rarity": "Illustration Rare"
+    },
+    {
+      "key": "en-delta-reign-726564-holofoil",
+      "name": "Zorua - 112/103",
+      "set": "ME06: Delta Reign",
+      "number": "112/103",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/delta-reign/726564.jpg",
+      "rarity": "Illustration Rare"
+    },
+    {
+      "key": "en-delta-reign-728051-holofoil",
+      "name": "Inkay - 113/103",
+      "set": "ME06: Delta Reign",
+      "number": "113/103",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/delta-reign/728051.jpg",
+      "rarity": "Illustration Rare"
+    },
+    {
+      "key": "en-delta-reign-726565-holofoil",
+      "name": "Eevee - 114/103",
+      "set": "ME06: Delta Reign",
+      "number": "114/103",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/delta-reign/726565.jpg",
+      "rarity": "Illustration Rare"
+    },
+    {
+      "key": "en-delta-reign-726566-holofoil",
+      "name": "Azurill - 115/103",
+      "set": "ME06: Delta Reign",
+      "number": "115/103",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/delta-reign/726566.jpg",
+      "rarity": "Illustration Rare"
+    },
+    {
+      "key": "en-delta-reign-728052-holofoil",
+      "name": "Altaria - 116/103",
+      "set": "ME06: Delta Reign",
+      "number": "116/103",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/delta-reign/728052.jpg",
+      "rarity": "Illustration Rare"
+    },
+    {
+      "key": "en-delta-reign-726567-holofoil",
+      "name": "Kecleon - 117/103",
+      "set": "ME06: Delta Reign",
+      "number": "117/103",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/delta-reign/726567.jpg",
+      "rarity": "Illustration Rare"
+    },
+    {
+      "key": "en-delta-reign-727588-holofoil",
+      "name": "Mega Golisopod ex - 118/103",
+      "set": "ME06: Delta Reign",
+      "number": "118/103",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/delta-reign/727588.jpg",
+      "rarity": "Ultra Rare"
+    },
+    {
+      "key": "en-delta-reign-727589-holofoil",
+      "name": "Heat Rotom ex",
+      "set": "ME06: Delta Reign",
+      "number": "119/103",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/delta-reign/727589.jpg",
+      "rarity": "Ultra Rare"
+    },
+    {
+      "key": "en-delta-reign-727590-holofoil",
+      "name": "Wishiwashi ex",
+      "set": "ME06: Delta Reign",
+      "number": "120/103",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/delta-reign/727590.jpg",
+      "rarity": "Ultra Rare"
+    },
+    {
+      "key": "en-delta-reign-727591-holofoil",
+      "name": "Raikou ex - 121/103",
+      "set": "ME06: Delta Reign",
+      "number": "121/103",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/delta-reign/727591.jpg",
+      "rarity": "Ultra Rare"
+    },
+    {
+      "key": "en-delta-reign-728053-holofoil",
+      "name": "Mega Golurk ex - 122/103",
+      "set": "ME06: Delta Reign",
+      "number": "122/103",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/delta-reign/728053.jpg",
+      "rarity": "Ultra Rare"
+    },
+    {
+      "key": "en-delta-reign-728054-holofoil",
+      "name": "Mega Malamar ex",
+      "set": "ME06: Delta Reign",
+      "number": "123/103",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/delta-reign/728054.jpg",
+      "rarity": "Ultra Rare"
+    },
+    {
+      "key": "en-delta-reign-728055-holofoil",
+      "name": "Talonflame ex - 124/103",
+      "set": "ME06: Delta Reign",
+      "number": "124/103",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/delta-reign/728055.jpg",
+      "rarity": "Ultra Rare"
+    },
+    {
+      "key": "en-delta-reign-726568-holofoil",
+      "name": "Aarune - 125/103",
+      "set": "ME06: Delta Reign",
+      "number": "125/103",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/delta-reign/726568.jpg",
+      "rarity": "Ultra Rare"
+    },
+    {
+      "key": "en-delta-reign-726569-holofoil",
+      "name": "Adventure Lantern - 126/103",
+      "set": "ME06: Delta Reign",
+      "number": "126/103",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/delta-reign/726569.jpg",
+      "rarity": "Ultra Rare"
+    },
+    {
+      "key": "en-delta-reign-726570-holofoil",
+      "name": "Custom Vest - 127/103",
+      "set": "ME06: Delta Reign",
+      "number": "127/103",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/delta-reign/726570.jpg",
+      "rarity": "Ultra Rare"
+    },
+    {
+      "key": "en-delta-reign-726571-holofoil",
+      "name": "Emcee's Hype - 128/103",
+      "set": "ME06: Delta Reign",
+      "number": "128/103",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/delta-reign/726571.jpg",
+      "rarity": "Ultra Rare"
+    },
+    {
+      "key": "en-delta-reign-728056-holofoil",
+      "name": "Pokemon Catcher",
+      "set": "ME06: Delta Reign",
+      "number": "129/103",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/delta-reign/728056.jpg",
+      "rarity": "Ultra Rare"
+    },
+    {
+      "key": "en-delta-reign-726572-holofoil",
+      "name": "Tate & Liza's Training - 130/103",
+      "set": "ME06: Delta Reign",
+      "number": "130/103",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/delta-reign/726572.jpg",
+      "rarity": "Ultra Rare"
+    },
+    {
+      "key": "en-delta-reign-726573-holofoil",
+      "name": "Zinnia's Trust - 131/103",
+      "set": "ME06: Delta Reign",
+      "number": "131/103",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/delta-reign/726573.jpg",
+      "rarity": "Ultra Rare"
+    },
+    {
+      "key": "en-delta-reign-728057-holofoil",
+      "name": "Bubbly W Energy",
+      "set": "ME06: Delta Reign",
+      "number": "132/103",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/delta-reign/728057.jpg",
+      "rarity": "Ultra Rare"
+    },
+    {
+      "key": "en-delta-reign-728058-holofoil",
+      "name": "Growing G Energy",
+      "set": "ME06: Delta Reign",
+      "number": "133/103",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/delta-reign/728058.jpg",
+      "rarity": "Ultra Rare"
+    },
+    {
+      "key": "en-delta-reign-728059-holofoil",
+      "name": "Nitro R Energy",
+      "set": "ME06: Delta Reign",
+      "number": "134/103",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/delta-reign/728059.jpg",
+      "rarity": "Ultra Rare"
+    },
+    {
+      "key": "en-delta-reign-727592-holofoil",
+      "name": "Mega Golisopod ex - 135/103",
+      "set": "ME06: Delta Reign",
+      "number": "135/103",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/delta-reign/727592.jpg",
+      "rarity": "Special Illustration Rare"
+    },
+    {
+      "key": "en-delta-reign-726574-holofoil",
+      "name": "Raikou ex",
+      "set": "ME06: Delta Reign",
+      "number": "136/103",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/delta-reign/726574.jpg",
+      "rarity": "Special Illustration Rare"
+    },
+    {
+      "key": "en-delta-reign-728060-holofoil",
+      "name": "Mega Golurk ex - 137/103",
+      "set": "ME06: Delta Reign",
+      "number": "137/103",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/delta-reign/728060.jpg",
+      "rarity": "Special Illustration Rare"
+    },
+    {
+      "key": "en-delta-reign-728061-holofoil",
+      "name": "Mega Rayquaza ex - 138/103",
+      "set": "ME06: Delta Reign",
+      "number": "138/103",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/delta-reign/728061.jpg",
+      "rarity": "Special Illustration Rare"
+    },
+    {
+      "key": "en-delta-reign-726575-holofoil",
+      "name": "Aarune - 139/103",
+      "set": "ME06: Delta Reign",
+      "number": "139/103",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/delta-reign/726575.jpg",
+      "rarity": "Special Illustration Rare"
+    },
+    {
+      "key": "en-delta-reign-726576-holofoil",
+      "name": "Zinnia's Trust - 140/103",
+      "set": "ME06: Delta Reign",
+      "number": "140/103",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/delta-reign/726576.jpg",
+      "rarity": "Special Illustration Rare"
+    },
+    {
+      "key": "en-delta-reign-728062-holofoil",
+      "name": "Mega Rayquaza ex - 141/103",
+      "set": "ME06: Delta Reign",
+      "number": "141/103",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/delta-reign/728062.jpg",
+      "rarity": "Mega Hyper Rare"
+    }
+  ],
+  "points": {
+    "en-delta-reign-727563-normal": [
+      [
+        "2026-11-06",
+        0.13,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.08,
+        "ok"
+      ]
+    ],
+    "en-delta-reign-727564-normal": [
+      [
+        "2026-11-06",
+        0.13,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.1,
+        "ok"
+      ]
+    ],
+    "en-delta-reign-726510-normal": [
+      [
+        "2026-11-06",
+        0.14,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.1,
+        "ok"
+      ]
+    ],
+    "en-delta-reign-727565-normal": [
+      [
+        "2026-11-06",
+        0.17,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.16,
+        "ok"
+      ]
+    ],
+    "en-delta-reign-727566-holofoil": [
+      [
+        "2026-11-06",
+        0.15,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.17,
+        "ok"
+      ]
+    ],
+    "en-delta-reign-727567-normal": [
+      [
+        "2026-11-06",
+        0.19,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.11,
+        "ok"
+      ]
+    ],
+    "en-delta-reign-727568-normal": [
+      [
+        "2026-11-06",
+        0.08,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.13,
+        "ok"
+      ]
+    ],
+    "en-delta-reign-727569-normal": [
+      [
+        "2026-11-06",
+        0.11,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.06,
+        "ok"
+      ]
+    ],
+    "en-delta-reign-726511-normal": [
+      [
+        "2026-11-06",
+        0.11,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.1,
+        "ok"
+      ]
+    ],
+    "en-delta-reign-727570-normal": [
+      [
+        "2026-11-06",
+        0.19,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.13,
+        "ok"
+      ]
+    ],
+    "en-delta-reign-726512-holofoil": [
+      [
+        "2026-11-06",
+        0.99,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.88,
+        "ok"
+      ]
+    ],
+    "en-delta-reign-726513-normal": [
+      [
+        "2026-11-06",
+        0.15,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.21,
+        "ok"
+      ]
+    ],
+    "en-delta-reign-726514-normal": [
+      [
+        "2026-11-06",
+        0.11,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.16,
+        "ok"
+      ]
+    ],
+    "en-delta-reign-726515-holofoil": [
+      [
+        "2026-11-06",
+        0.39,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.54,
+        "ok"
+      ]
+    ],
+    "en-delta-reign-727571-normal": [
+      [
+        "2026-11-06",
+        0.16,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.1,
+        "ok"
+      ]
+    ],
+    "en-delta-reign-727572-normal": [
+      [
+        "2026-11-06",
+        0.15,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.12,
+        "ok"
+      ]
+    ],
+    "en-delta-reign-727573-normal": [
+      [
+        "2026-11-06",
+        0.13,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.11,
+        "ok"
+      ]
+    ],
+    "en-delta-reign-726516-normal": [
+      [
+        "2026-11-06",
+        0.16,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.12,
+        "ok"
+      ]
+    ],
+    "en-delta-reign-726517-holofoil": [
+      [
+        "2026-11-06",
+        0.16,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.14,
+        "ok"
+      ]
+    ],
+    "en-delta-reign-727574-normal": [
+      [
+        "2026-11-06",
+        0.12,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.11,
+        "ok"
+      ]
+    ],
+    "en-delta-reign-727575-holofoil": [
+      [
+        "2026-11-06",
+        0.22,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.11,
+        "ok"
+      ]
+    ],
+    "en-delta-reign-727576-normal": [
+      [
+        "2026-11-06",
+        0.11,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.11,
+        "ok"
+      ]
+    ],
+    "en-delta-reign-726518-holofoil": [
+      [
+        "2026-11-06",
+        0.47,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.44,
+        "ok"
+      ]
+    ],
+    "en-delta-reign-727577-normal": [
+      [
+        "2026-11-06",
+        0.14,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.09,
+        "ok"
+      ]
+    ],
+    "en-delta-reign-727578-normal": [
+      [
+        "2026-11-06",
+        0.1,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.11,
+        "ok"
+      ]
+    ],
+    "en-delta-reign-726519-holofoil": [
+      [
+        "2026-11-06",
+        0.25,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.12,
+        "ok"
+      ]
+    ],
+    "en-delta-reign-727579-normal": [
+      [
+        "2026-11-06",
+        0.19,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.09,
+        "ok"
+      ]
+    ],
+    "en-delta-reign-727580-normal": [
+      [
+        "2026-11-06",
+        0.18,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.12,
+        "ok"
+      ]
+    ],
+    "en-delta-reign-726520-holofoil": [
+      [
+        "2026-11-06",
+        0.6,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.55,
+        "ok"
+      ]
+    ],
+    "en-delta-reign-727581-normal": [
+      [
+        "2026-11-06",
+        0.13,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.1,
+        "ok"
+      ]
+    ],
+    "en-delta-reign-726521-normal": [
+      [
+        "2026-11-06",
+        0.14,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.08,
+        "ok"
+      ]
+    ],
+    "en-delta-reign-726522-normal": [
+      [
+        "2026-11-06",
+        0.19,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.16,
+        "ok"
+      ]
+    ],
+    "en-delta-reign-726523-holofoil": [
+      [
+        "2026-11-06",
+        0.71,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.69,
+        "ok"
+      ]
+    ],
+    "en-delta-reign-727582-normal": [
+      [
+        "2026-11-06",
+        0.14,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.07,
+        "ok"
+      ]
+    ],
+    "en-delta-reign-726524-normal": [
+      [
+        "2026-11-06",
+        0.12,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.08,
+        "ok"
+      ]
+    ],
+    "en-delta-reign-726525-normal": [
+      [
+        "2026-11-06",
+        0.16,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.08,
+        "ok"
+      ]
+    ],
+    "en-delta-reign-727583-normal": [
+      [
+        "2026-11-06",
+        0.14,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.1,
+        "ok"
+      ]
+    ],
+    "en-delta-reign-727584-normal": [
+      [
+        "2026-11-06",
+        0.15,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.1,
+        "ok"
+      ]
+    ],
+    "en-delta-reign-727585-normal": [
+      [
+        "2026-11-06",
+        0.15,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.07,
+        "ok"
+      ]
+    ],
+    "en-delta-reign-727586-normal": [
+      [
+        "2026-11-06",
+        0.14,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.06,
+        "ok"
+      ]
+    ],
+    "en-delta-reign-728021-normal": [
+      [
+        "2026-11-06",
+        0.13,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.06,
+        "ok"
+      ]
+    ],
+    "en-delta-reign-728022-normal": [
+      [
+        "2026-11-06",
+        0.1,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.1,
+        "ok"
+      ]
+    ],
+    "en-delta-reign-728023-normal": [
+      [
+        "2026-11-06",
+        0.1,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.08,
+        "ok"
+      ]
+    ],
+    "en-delta-reign-726526-normal": [
+      [
+        "2026-11-06",
+        0.09,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.1,
+        "ok"
+      ]
+    ],
+    "en-delta-reign-726527-holofoil": [
+      [
+        "2026-11-06",
+        0.3,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.2,
+        "ok"
+      ]
+    ],
+    "en-delta-reign-728024-normal": [
+      [
+        "2026-11-06",
+        0.17,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.24,
+        "ok"
+      ]
+    ],
+    "en-delta-reign-726528-holofoil": [
+      [
+        "2026-11-06",
+        0.82,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.75,
+        "ok"
+      ]
+    ],
+    "en-delta-reign-728025-normal": [
+      [
+        "2026-11-06",
+        0.14,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.09,
+        "ok"
+      ]
+    ],
+    "en-delta-reign-728026-normal": [
+      [
+        "2026-11-06",
+        0.13,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.12,
+        "ok"
+      ]
+    ],
+    "en-delta-reign-728027-normal": [
+      [
+        "2026-11-06",
+        0.13,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.12,
+        "ok"
+      ]
+    ],
+    "en-delta-reign-728028-normal": [
+      [
+        "2026-11-06",
+        0.13,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.11,
+        "ok"
+      ]
+    ],
+    "en-delta-reign-728029-holofoil": [
+      [
+        "2026-11-06",
+        0.19,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.16,
+        "ok"
+      ]
+    ],
+    "en-delta-reign-726529-holofoil": [
+      [
+        "2026-11-06",
+        0.23,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.18,
+        "ok"
+      ]
+    ],
+    "en-delta-reign-726530-normal": [
+      [
+        "2026-11-06",
+        0.14,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.06,
+        "ok"
+      ]
+    ],
+    "en-delta-reign-726531-normal": [
+      [
+        "2026-11-06",
+        0.15,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.13,
+        "ok"
+      ]
+    ],
+    "en-delta-reign-728031-normal": [
+      [
+        "2026-11-06",
+        0.12,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.09,
+        "ok"
+      ]
+    ],
+    "en-delta-reign-728032-holofoil": [
+      [
+        "2026-11-06",
+        0.2,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.14,
+        "ok"
+      ]
+    ],
+    "en-delta-reign-726532-normal": [
+      [
+        "2026-11-06",
+        0.09,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.08,
+        "ok"
+      ]
+    ],
+    "en-delta-reign-728033-normal": [
+      [
+        "2026-11-06",
+        0.13,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.13,
+        "ok"
+      ]
+    ],
+    "en-delta-reign-726533-normal": [
+      [
+        "2026-11-06",
+        0.16,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.15,
+        "ok"
+      ]
+    ],
+    "en-delta-reign-728034-normal": [
+      [
+        "2026-11-06",
+        0.16,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.11,
+        "ok"
+      ]
+    ],
+    "en-delta-reign-728035-normal": [
+      [
+        "2026-11-06",
+        0.18,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.12,
+        "ok"
+      ]
+    ],
+    "en-delta-reign-728036-normal": [
+      [
+        "2026-11-06",
+        0.18,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.1,
+        "ok"
+      ]
+    ],
+    "en-delta-reign-728037-normal": [
+      [
+        "2026-11-06",
+        0.15,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.12,
+        "ok"
+      ]
+    ],
+    "en-delta-reign-728038-normal": [
+      [
+        "2026-11-06",
+        0.11,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.14,
+        "ok"
+      ]
+    ],
+    "en-delta-reign-728039-normal": [
+      [
+        "2026-11-06",
+        0.14,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.09,
+        "ok"
+      ]
+    ],
+    "en-delta-reign-728040-holofoil": [
+      [
+        "2026-11-06",
+        0.53,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.43,
+        "ok"
+      ]
+    ],
+    "en-delta-reign-728041-normal": [
+      [
+        "2026-11-06",
+        0.21,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.14,
+        "ok"
+      ]
+    ],
+    "en-delta-reign-726534-holofoil": [
+      [
+        "2026-11-06",
+        1.04,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.59,
+        "ok"
+      ]
+    ],
+    "en-delta-reign-726535-normal": [
+      [
+        "2026-11-06",
+        0.13,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.14,
+        "ok"
+      ]
+    ],
+    "en-delta-reign-726536-normal": [
+      [
+        "2026-11-06",
+        0.13,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.1,
+        "ok"
+      ]
+    ],
+    "en-delta-reign-726537-normal": [
+      [
+        "2026-11-06",
+        0.09,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.06,
+        "ok"
+      ]
+    ],
+    "en-delta-reign-728042-normal": [
+      [
+        "2026-11-06",
+        0.09,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.07,
+        "ok"
+      ]
+    ],
+    "en-delta-reign-728043-normal": [
+      [
+        "2026-11-06",
+        0.09,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.1,
+        "ok"
+      ]
+    ],
+    "en-delta-reign-726538-holofoil": [
+      [
+        "2026-11-06",
+        0.17,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.16,
+        "ok"
+      ]
+    ],
+    "en-delta-reign-728044-normal": [
+      [
+        "2026-11-06",
+        0.13,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.12,
+        "ok"
+      ]
+    ],
+    "en-delta-reign-728045-normal": [
+      [
+        "2026-11-06",
+        0.08,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.1,
+        "ok"
+      ]
+    ],
+    "en-delta-reign-726539-normal": [
+      [
+        "2026-11-06",
+        0.15,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.18,
+        "ok"
+      ]
+    ],
+    "en-delta-reign-726540-normal": [
+      [
+        "2026-11-06",
+        0.1,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.1,
+        "ok"
+      ]
+    ],
+    "en-delta-reign-726541-normal": [
+      [
+        "2026-11-06",
+        0.12,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.2,
+        "ok"
+      ]
+    ],
+    "en-delta-reign-728046-normal": [
+      [
+        "2026-11-06",
+        0.17,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.15,
+        "ok"
+      ]
+    ],
+    "en-delta-reign-728047-holofoil": [
+      [
+        "2026-11-06",
+        0.2,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.15,
+        "ok"
+      ]
+    ],
+    "en-delta-reign-726542-normal": [
+      [
+        "2026-11-06",
+        0.15,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.09,
+        "ok"
+      ]
+    ],
+    "en-delta-reign-726543-holofoil": [
+      [
+        "2026-11-06",
+        6.94,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        5.91,
+        "ok"
+      ]
+    ],
+    "en-delta-reign-726544-normal": [
+      [
+        "2026-11-06",
+        0.14,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.09,
+        "ok"
+      ]
+    ],
+    "en-delta-reign-728048-normal": [
+      [
+        "2026-11-06",
+        0.12,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.07,
+        "ok"
+      ]
+    ],
+    "en-delta-reign-728049-normal": [
+      [
+        "2026-11-06",
+        0.12,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.08,
+        "ok"
+      ]
+    ],
+    "en-delta-reign-728050-holofoil": [
+      [
+        "2026-11-06",
+        6.69,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        4.49,
+        "ok"
+      ]
+    ],
+    "en-delta-reign-726545-normal": [
+      [
+        "2026-11-06",
+        0.26,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.14,
+        "ok"
+      ]
+    ],
+    "en-delta-reign-726546-normal": [
+      [
+        "2026-11-06",
+        0.19,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.15,
+        "ok"
+      ]
+    ],
+    "en-delta-reign-726547-normal": [
+      [
+        "2026-11-06",
+        0.18,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.15,
+        "ok"
+      ]
+    ],
+    "en-delta-reign-726548-normal": [
+      [
+        "2026-11-06",
+        0.15,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.17,
+        "ok"
+      ]
+    ],
+    "en-delta-reign-726549-normal": [
+      [
+        "2026-11-06",
+        0.15,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.09,
+        "ok"
+      ]
+    ],
+    "en-delta-reign-726550-normal": [
+      [
+        "2026-11-06",
+        0.99,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.85,
+        "ok"
+      ]
+    ],
+    "en-delta-reign-726722-normal": [
+      [
+        "2026-11-06",
+        0.86,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.78,
+        "ok"
+      ]
+    ],
+    "en-delta-reign-726551-normal": [
+      [
+        "2026-11-06",
+        0.25,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.25,
+        "ok"
+      ]
+    ],
+    "en-delta-reign-726721-normal": [
+      [
+        "2026-11-06",
+        0.23,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.24,
+        "ok"
+      ]
+    ],
+    "en-delta-reign-726786-normal": [
+      [
+        "2026-11-06",
+        0.47,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.22,
+        "ok"
+      ]
+    ],
+    "en-delta-reign-726552-normal": [
+      [
+        "2026-11-06",
+        0.47,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.22,
+        "ok"
+      ]
+    ],
+    "en-delta-reign-726553-normal": [
+      [
+        "2026-11-06",
+        0.19,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.15,
+        "ok"
+      ]
+    ],
+    "en-delta-reign-726554-normal": [
+      [
+        "2026-11-06",
+        0.18,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.2,
+        "ok"
+      ]
+    ],
+    "en-delta-reign-726555-normal": [
+      [
+        "2026-11-06",
+        0.15,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.09,
+        "ok"
+      ]
+    ],
+    "en-delta-reign-726556-normal": [
+      [
+        "2026-11-06",
+        0.21,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.16,
+        "ok"
+      ]
+    ],
+    "en-delta-reign-726557-holofoil": [
+      [
+        "2026-11-06",
+        4.77,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        1.9,
+        "ok"
+      ]
+    ],
+    "en-delta-reign-726558-holofoil": [
+      [
+        "2026-11-06",
+        9.61,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        9.07,
+        "ok"
+      ]
+    ],
+    "en-delta-reign-726559-holofoil": [
+      [
+        "2026-11-06",
+        15.91,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        16.08,
+        "ok"
+      ]
+    ],
+    "en-delta-reign-726560-holofoil": [
+      [
+        "2026-11-06",
+        3.23,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        5.86,
+        "ok"
+      ]
+    ],
+    "en-delta-reign-727587-holofoil": [
+      [
+        "2026-11-06",
+        3.31,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        3.56,
+        "ok"
+      ]
+    ],
+    "en-delta-reign-726561-holofoil": [
+      [
+        "2026-11-06",
+        4.25,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        3.21,
+        "ok"
+      ]
+    ],
+    "en-delta-reign-726562-holofoil": [
+      [
+        "2026-11-06",
+        2.6,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        3.62,
+        "ok"
+      ]
+    ],
+    "en-delta-reign-726563-holofoil": [
+      [
+        "2026-11-06",
+        15.56,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        18.63,
+        "ok"
+      ]
+    ],
+    "en-delta-reign-726564-holofoil": [
+      [
+        "2026-11-06",
+        6.78,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        6.52,
+        "ok"
+      ]
+    ],
+    "en-delta-reign-728051-holofoil": [
+      [
+        "2026-11-06",
+        3.7,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        3.83,
+        "ok"
+      ]
+    ],
+    "en-delta-reign-726565-holofoil": [
+      [
+        "2026-11-06",
+        20.6,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        24.18,
+        "ok"
+      ]
+    ],
+    "en-delta-reign-726566-holofoil": [
+      [
+        "2026-11-06",
+        5.17,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        7.29,
+        "ok"
+      ]
+    ],
+    "en-delta-reign-728052-holofoil": [
+      [
+        "2026-11-06",
+        6.39,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        5.01,
+        "ok"
+      ]
+    ],
+    "en-delta-reign-726567-holofoil": [
+      [
+        "2026-11-06",
+        14.57,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        32.68,
+        "ok"
+      ]
+    ],
+    "en-delta-reign-727588-holofoil": [
+      [
+        "2026-11-06",
+        3.52,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        4.1,
+        "ok"
+      ]
+    ],
+    "en-delta-reign-727589-holofoil": [
+      [
+        "2026-11-06",
+        1.18,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        1.41,
+        "ok"
+      ]
+    ],
+    "en-delta-reign-727590-holofoil": [
+      [
+        "2026-11-06",
+        5.93,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        2.77,
+        "ok"
+      ]
+    ],
+    "en-delta-reign-727591-holofoil": [
+      [
+        "2026-11-06",
+        1.73,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        4.05,
+        "ok"
+      ]
+    ],
+    "en-delta-reign-728053-holofoil": [
+      [
+        "2026-11-06",
+        3.72,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        2.38,
+        "ok"
+      ]
+    ],
+    "en-delta-reign-728054-holofoil": [
+      [
+        "2026-11-06",
+        3.4,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        3.75,
+        "ok"
+      ]
+    ],
+    "en-delta-reign-728055-holofoil": [
+      [
+        "2026-11-06",
+        12.27,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        10.43,
+        "ok"
+      ]
+    ],
+    "en-delta-reign-726568-holofoil": [
+      [
+        "2026-11-06",
+        3.68,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        2.25,
+        "ok"
+      ]
+    ],
+    "en-delta-reign-726569-holofoil": [
+      [
+        "2026-11-06",
+        5.8,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        3.48,
+        "ok"
+      ]
+    ],
+    "en-delta-reign-726570-holofoil": [
+      [
+        "2026-11-06",
+        1.43,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        1.32,
+        "ok"
+      ]
+    ],
+    "en-delta-reign-726571-holofoil": [
+      [
+        "2026-11-06",
+        3.39,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        1.72,
+        "ok"
+      ]
+    ],
+    "en-delta-reign-728056-holofoil": [
+      [
+        "2026-11-06",
+        3.84,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        2.34,
+        "ok"
+      ]
+    ],
+    "en-delta-reign-726572-holofoil": [
+      [
+        "2026-11-06",
+        5.26,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        2.13,
+        "ok"
+      ]
+    ],
+    "en-delta-reign-726573-holofoil": [
+      [
+        "2026-11-06",
+        7.22,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        4.91,
+        "ok"
+      ]
+    ],
+    "en-delta-reign-728057-holofoil": [
+      [
+        "2026-11-06",
+        2.05,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        2.75,
+        "ok"
+      ]
+    ],
+    "en-delta-reign-728058-holofoil": [
+      [
+        "2026-11-06",
+        3.72,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        2.7,
+        "ok"
+      ]
+    ],
+    "en-delta-reign-728059-holofoil": [
+      [
+        "2026-11-06",
+        9.0,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        2.24,
+        "ok"
+      ]
+    ],
+    "en-delta-reign-727592-holofoil": [
+      [
+        "2026-11-06",
+        21.12,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        24.68,
+        "ok"
+      ]
+    ],
+    "en-delta-reign-726574-holofoil": [
+      [
+        "2026-11-06",
+        81.56,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        127.74,
+        "ok"
+      ]
+    ],
+    "en-delta-reign-728060-holofoil": [
+      [
+        "2026-11-06",
+        32.05,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        26.94,
+        "ok"
+      ]
+    ],
+    "en-delta-reign-728061-holofoil": [
+      [
+        "2026-11-06",
+        327.81,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        295.44,
+        "ok"
+      ]
+    ],
+    "en-delta-reign-726575-holofoil": [
+      [
+        "2026-11-06",
+        11.81,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        20.57,
+        "ok"
+      ]
+    ],
+    "en-delta-reign-726576-holofoil": [
+      [
+        "2026-11-06",
+        38.42,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        31.7,
+        "ok"
+      ]
+    ],
+    "en-delta-reign-728062-holofoil": [
+      [
+        "2026-11-06",
+        349.35,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        210.88,
+        "ok"
+      ]
+    ]
+  },
+  "sourceDate": "2026-11-16",
+  "source": "https://tcgcsv.com/faq",
+  "sources": [
+    {
+      "day": "2026-11-06",
+      "url": "https://tcgcsv.com/archive/tcgplayer/prices-2026-11-06.ppmd.7z"
+    },
+    {
+      "day": "2026-11-16",
+      "url": "https://tcgcsv.com/tcgplayer/3/24831/prices"
+    }
+  ],
+  "baseline": {
+    "date": "2026-11-06",
+    "usd": 1091.15,
+    "proposed": false
+  },
+  "preview": true,
+  "previewNote": "Snapshot from the 17 Nov 2026 public-safe handoff. Live public read is not switched on. Prices are TCGCSV market guides dated 6 Nov 2026 (launch, index 100) and 16 Nov 2026. Daily refresh for this set is not switched on yet.",
+  "sourceVersion": "25b30ff1fcb4d959fc4fba2393f221bce8351c7a615832cd05d5a749b0e605cf"
+}

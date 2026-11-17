@@ -14,7 +14,7 @@ ALLOWED={'catalogue.js','market-history.js','market-release.json','market-source
          'data/psa10/cardz-approved.json'}
 # Per-index caches the publisher may commit. thirtieth-current.json stays on the
 # explicit list above and is not accepted through this name check.
-INDEX_CACHES={'tcg-modern'}
+INDEX_CACHES={'tcg-modern','delta-reign','sv-151','prismatic-evolutions'}
 
 
 def promoted_path_allowed(name, allowed=ALLOWED, index_caches=INDEX_CACHES):

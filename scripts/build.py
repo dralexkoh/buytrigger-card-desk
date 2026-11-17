@@ -9,6 +9,9 @@ import site_seo as seo
 from digest_signup import digest_signup_html
 from thirtieth_prices import publish_price_page as publish_thirtieth_prices, PRICE_PAGE_URL as THIRTIETH_PRICE_URL, source_date as thirtieth_source_date
 from tcg_modern_prices import publish_price_page as publish_modern_prices, PRICE_PAGE_URL as MODERN_PRICE_URL, source_date as modern_source_date
+from delta_reign_prices import publish_price_page as publish_delta_reign_prices, PRICE_PAGE_URL as DELTA_REIGN_PRICE_URL, source_date as delta_reign_source_date
+from sv_151_prices import publish_price_page as publish_sv_151_prices, PRICE_PAGE_URL as SV_151_PRICE_URL, source_date as sv_151_source_date
+from prismatic_evolutions_prices import publish_price_page as publish_prismatic_evolutions_prices, PRICE_PAGE_URL as PRISMATIC_EVOLUTIONS_PRICE_URL, source_date as prismatic_evolutions_source_date
 from raw_price_page import absolutize_document_nav, root_absolute_href
 
 def absolutize_story_links(page):
@@ -52,6 +55,7 @@ FILES+=['bluechip-raw-archive.html','bluechip-engine.js','bluechip.js','bluechip
 FILES+=['bluechip-collection-data.js','bluechip-collection-sources.json']
 FILES+=['grading-calculator.js','grading-calculator.css']
 FILES+=['thirtieth-engine.js','thirtieth.js','thirtieth.css','thirtieth-catalogue.json','thirtieth-release.json']
+FILES+=['set-index-engine.js','delta-reign.js','delta-reign-market-snapshot.json','sv-151.js','sv-151-market-snapshot.json','prismatic-evolutions.js','prismatic-evolutions-market-snapshot.json']
 FILES+=['prices-table.js','prices-table.css']
 for name in FILES:shutil.copy2(P/name,D/name)
 bluechip=json.loads((P/'bluechip-release.json').read_text())
@@ -114,7 +118,7 @@ soup.select_one('meta[property="og:title"]')['content']='Drops · Release Calend
 soup.select_one('meta[name=description]')['content']='Pokémon product release dates for the UK, US and Asia, with official sources and regional availability notes.'
 soup.select_one('main').clear();soup.select_one('main').append(BeautifulSoup('<section class="page-intro"><h1>Pokémon release calendar</h1>'+''.join('<p>'+html.escape(x['title'])+' · '+x['date']+' · '+x['country']+' · <a href="'+x['sourceUrl']+'">Official source</a></p>' for x in drops['items'])+'</section>','html.parser'))
 (D/'drops.html').write_text(str(soup))
-for route, filename, title, description in [('calculator','grading-calculator.html','Grading Calculator','Compare selling a card raw with grading. Calculate what you keep, break-even sale prices and a buy limit for each grade.'),('market','market.html','Market','Explore the existing card benchmarks and set trackers.'),('thirtieth','30th-anniversary-index.html','30th Anniversary Index','Follow the 30th Celebration chases, numbered Pikachu, RGB Mews and four Day & Night promos, with a Top 20 Raw ranking and dated histories.')]:
+for route, filename, title, description in [('calculator','grading-calculator.html','Grading Calculator','Compare selling a card raw with grading. Calculate what you keep, break-even sale prices and a buy limit for each grade.'),('market','market.html','Market','Explore the existing card benchmarks and set trackers.'),('thirtieth','30th-anniversary-index.html','30th Anniversary Index','Follow the 30th Celebration chases, numbered Pikachu, RGB Mews and four Day & Night promos, with a Top 20 Raw ranking and dated histories.'),('delta-reign','delta-reign-index.html','Delta Reign Index','Follow all 141 English ME06: Delta Reign cards, with a Raw market-guide index starting at 100 on 6 November 2026 and dated prices as of 16 November 2026.'),('sv-151','sv-151-index.html','SV 151 Index','Follow all 207 English Scarlet & Violet 151 cards, with a Raw market-guide index and dated prices as of 16 November 2026.'),('prismatic-evolutions','prismatic-evolutions-index.html','Prismatic Evolutions Index','Follow 180 English Prismatic Evolutions cards, with a Raw market-guide index and dated prices as of 16 November 2026. The roster is the 180 English base printings, leaving out Poké Ball and Master Ball pattern versions.')]:
  soup=BeautifulSoup((P/'index.html').read_text(),'html.parser');soup.body['data-route']=route
  soup.title.string=title+' · '+BRAND
  soup.select_one('link[rel=canonical]')['href']=BASE+filename
@@ -177,6 +181,9 @@ for w in e.get('wire',[]):
 
 publish_thirtieth_prices(P, D)
 publish_modern_prices(P, D)
+publish_delta_reign_prices(P, D)
+publish_sv_151_prices(P, D)
+publish_prismatic_evolutions_prices(P, D)
 advertise_description='Advertising and sponsorship on BuyTrigger.Cards for shops and brands serving Pokémon TCG collectors. Audience figures coming soon.'
 soup=BeautifulSoup((P/'index.html').read_text(),'html.parser');soup.body['data-route']='advertise';soup.head.insert(0,soup.new_tag('base',href='../'))
 soup.title.string='Advertise / Sponsor · '+BRAND;url=BASE+'advertise/'
@@ -187,10 +194,13 @@ main=soup.select_one('main');main.clear();main.append(BeautifulSoup(advertise_ma
 absolutize_document_nav(soup)
 folder=D/'advertise';folder.mkdir(parents=True);(folder/'index.html').write_text(str(soup))
 
-static_urls=[BASE,BASE+'grading-calculator.html',BASE+'undervalued.html',BASE+'undervalued-japanese.html',BASE+'market.html',BASE+'30th-anniversary-index.html',BASE+'drops.html',BASE+'tcg-modern-index.html',BASE+'top-50.html',BASE+'bluechip-raw-archive.html',BASE+'advertise/']
+static_urls=[BASE,BASE+'grading-calculator.html',BASE+'undervalued.html',BASE+'undervalued-japanese.html',BASE+'market.html',BASE+'30th-anniversary-index.html',BASE+'delta-reign-index.html',BASE+'sv-151-index.html',BASE+'prismatic-evolutions-index.html',BASE+'drops.html',BASE+'tcg-modern-index.html',BASE+'top-50.html',BASE+'bluechip-raw-archive.html',BASE+'advertise/']
 sitemap_entries=seo.collect_sitemap_entries(e,static_urls)
 sitemap_entries.append({'url':THIRTIETH_PRICE_URL,'lastmod':thirtieth_source_date(P)})
 sitemap_entries.append({'url':MODERN_PRICE_URL,'lastmod':modern_source_date(P)})
+sitemap_entries.append({'url':DELTA_REIGN_PRICE_URL,'lastmod':delta_reign_source_date(P)})
+sitemap_entries.append({'url':SV_151_PRICE_URL,'lastmod':sv_151_source_date(P)})
+sitemap_entries.append({'url':PRISMATIC_EVOLUTIONS_PRICE_URL,'lastmod':prismatic_evolutions_source_date(P)})
 (D/'sitemap.xml').write_text(seo.urlset_xml(sitemap_entries))
 (D/'news-sitemap.xml').write_text(seo.news_sitemap_xml(seo.collect_news_entries(e)))
 (D/'robots.txt').write_text(seo.robots_txt())

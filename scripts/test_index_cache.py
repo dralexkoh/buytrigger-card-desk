@@ -216,6 +216,9 @@ class IndexCacheTests(unittest.TestCase):
 
     def test_commit_allowlist_accepts_index_caches_and_existing_outputs_only(self):
         self.assertTrue(promoted_path_allowed('data/market-cache/tcg-modern-current.json'))
+        self.assertTrue(promoted_path_allowed('data/market-cache/delta-reign-current.json'))
+        self.assertTrue(promoted_path_allowed('data/market-cache/sv-151-current.json'))
+        self.assertTrue(promoted_path_allowed('data/market-cache/prismatic-evolutions-current.json'))
         self.assertTrue(promoted_path_allowed('data/market-cache/thirtieth-current.json'))
         self.assertFalse(promoted_path_allowed('data/market-cache/other-current.json'))
         self.assertFalse(promoted_path_allowed('data/market-cache/thirtieth-anniversary-current.json'))
@@ -238,6 +241,7 @@ class IndexCacheTests(unittest.TestCase):
             'catalogue.js', 'market-history.js', 'market-release.json', 'market-sources.json',
             'top50-data.js', 'top50-release.json', 'top50-sources.json', 'refresh-status.json',
             'data/market-cache/thirtieth-current.json', 'data/market-cache/tcg-modern-current.json',
+            'data/market-cache/delta-reign-current.json',
             'bluechip-collection-data.js', 'bluechip-collection-sources.json',
             'data/refresh/state.json', 'data/refresh/psa10-holds/2026-11-17.json',
             'data/psa10/cardz-approved.json',
@@ -246,6 +250,22 @@ class IndexCacheTests(unittest.TestCase):
         with self.assertRaises(SystemExit) as caught:
             reject_unexpected([*paths, 'data/psa10/cardz-snapshot.json'])
         self.assertEqual(caught.exception.code, 'Unexpected pipeline commit path')
+
+
+    def test_delta_reign_roster_cache_matches_identity_fields(self):
+        card = json.loads((SITE / 'data/market-rosters/delta-reign.json').read_text())['cards'][0]
+        approved = self.seed([('2026-11-16', [row(card, 'accepted', 0.08)])], cards=(card,), index='delta-reign')
+        cache = index_cache.build(self.root, approved)
+        self.assertEqual(cache['index'], 'delta-reign')
+        self.assertEqual(cache['grade'], 'Raw')
+        self.assertEqual(cache['sourceDate'], '2026-11-16')
+        self.assertEqual(len(cache['cards']), 1)
+        published = cache['cards'][0]
+        for field in ('productId', 'groupId', 'name', 'set', 'number', 'language', 'printing', 'image'):
+            self.assertEqual(str(published[field]), str(card[field]))
+        self.assertEqual(published['points'][0]['usd'], 0.08)
+        self.assertEqual(published['points'][0]['status'], 'ok')
+        self.assertEqual(published['points'][0]['source'], 'https://tcgcsv.com/tcgplayer/3/24831/prices')
 
 
 if __name__ == '__main__':

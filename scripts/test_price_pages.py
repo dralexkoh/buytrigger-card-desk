@@ -13,13 +13,16 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 import raw_price_page
 import tcg_modern_prices
 import thirtieth_prices
+import delta_reign_prices
+import sv_151_prices
+import prismatic_evolutions_prices
 
 ROOT = Path(__file__).resolve().parents[1]
 
 
 class SnapshotFollowsEdits(unittest.TestCase):
     def test_published_page_follows_a_temporary_price_and_date(self):
-        modules = (thirtieth_prices, tcg_modern_prices)
+        modules = (thirtieth_prices, tcg_modern_prices, delta_reign_prices, sv_151_prices, prismatic_evolutions_prices)
         originals = {module: (ROOT / module.SNAPSHOT).read_text() for module in modules}
         try:
             for module in modules:

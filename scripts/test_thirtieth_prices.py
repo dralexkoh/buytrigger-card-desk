@@ -88,6 +88,9 @@ class PageTests(unittest.TestCase):
         self.assertEqual(home.select_one('#site-nav a[data-nav="drops"]')['href'], 'drops.html')
         self.assertEqual(home.select_one('footer a[href="prices/thirtieth-anniversary/"]').get_text(), '30th Anniversary prices')
         self.assertEqual(home.select_one('footer a[href="prices/tcg-modern/"]').get_text(), 'TCG Modern prices')
+        self.assertEqual(home.select_one('footer a[href="prices/delta-reign/"]').get_text(), 'Delta Reign prices')
+        self.assertEqual(home.select_one('footer a[href="prices/sv-151/"]').get_text(), 'SV 151 prices')
+        self.assertEqual(home.select_one('footer a[href="prices/prismatic-evolutions/"]').get_text(), 'Prismatic Evolutions prices')
         self.assertEqual(home.select_one('main h1').get_text(), 'BuyTrigger.Cards')
         for link in home.select('header a[href], footer a[href]'):
             href = link.get('href') or ''

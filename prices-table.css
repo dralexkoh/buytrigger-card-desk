@@ -23,15 +23,16 @@
 .price-page .price-usd,.price-page .price-usd-col,.price-page .price-usd-col button{text-align:right;font-variant-numeric:tabular-nums}
 .price-page .price-usd{font-weight:800;white-space:nowrap}
 .price-page .price-name{font-weight:700}
-.price-page .price-number,.price-page .price-subset,.price-page .price-set{color:#171719}
+.price-page .price-number,.price-page .price-subset,.price-page .price-set,.price-page .price-rarity{color:#171719}
 .price-page .price-card img{width:52px;height:auto;display:block;background:#fff;border-radius:4px}
 .price-page .price-card-fallback{display:block;width:72px;font-size:11px;line-height:1.3;color:#626269}
 .price-page .price-link a{color:#df242b;font-weight:800;white-space:nowrap}
 .price-page #price-empty{margin:14px 0 0;font-weight:700}
+.price-page .price-image-credit{padding:0 56px;margin:8px 0 0;color:#626269;font-size:13px}
 .price-page .visually-hidden{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 .price-page .digest-signup{margin:28px 0 36px}
 @media (min-width:721px){.price-page .price-table{min-width:760px}}
-@media (max-width:900px){.price-page .price-sheet{padding-left:34px;padding-right:34px}}
+@media (max-width:900px){.price-page .price-sheet{padding-left:34px;padding-right:34px}.price-page .price-image-credit{padding-left:34px;padding-right:34px}}
 @media (max-width:720px){
  .price-page .publication-strip>span:last-child{display:none}
  .price-page .price-sheet{padding:4px 20px 28px}
@@ -47,6 +48,7 @@
  .price-page .price-table .price-card img{width:72px}
  .price-page .price-table .price-usd{font-size:18px}
  .price-page .price-table .price-link a{min-height:44px;display:inline-flex;align-items:center}
- .price-page .price-subset,.price-page .price-set{font-size:13px;color:#626269}
+ .price-page .price-subset,.price-page .price-set,.price-page .price-rarity{font-size:13px;color:#626269}
+ .price-page .price-image-credit{padding-left:20px;padding-right:20px}
 }
 @media (prefers-reduced-motion:reduce){.price-page .price-table-wrap{scroll-behavior:auto}}

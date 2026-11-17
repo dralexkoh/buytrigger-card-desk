@@ -1,0 +1,4600 @@
+{
+  "schemaVersion": 2,
+  "available": true,
+  "index": "sv-151",
+  "sourceSystem": "shared-cards-market",
+  "grade": "Raw",
+  "currency": "USD",
+  "measure": "tcgcsv_market",
+  "cards": [
+    {
+      "key": "en-sv-151-502552-normal",
+      "name": "Bulbasaur - 001/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "001/165",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/sv-151/502552.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-sv-151-502553-normal",
+      "name": "Ivysaur - 002/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "002/165",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/sv-151/502553.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-sv-151-502554-holofoil",
+      "name": "Venusaur ex - 003/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "003/165",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/sv-151/502554.jpg",
+      "rarity": "Double Rare"
+    },
+    {
+      "key": "en-sv-151-502555-normal",
+      "name": "Charmander - 004/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "004/165",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/sv-151/502555.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-sv-151-502557-normal",
+      "name": "Charmeleon - 005/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "005/165",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/sv-151/502557.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-sv-151-502558-holofoil",
+      "name": "Charizard ex - 006/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "006/165",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/sv-151/502558.jpg",
+      "rarity": "Double Rare"
+    },
+    {
+      "key": "en-sv-151-502548-normal",
+      "name": "Squirtle - 007/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "007/165",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/sv-151/502548.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-sv-151-502550-normal",
+      "name": "Wartortle - 008/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "008/165",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/sv-151/502550.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-sv-151-502551-holofoil",
+      "name": "Blastoise ex - 009/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "009/165",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/sv-151/502551.jpg",
+      "rarity": "Double Rare"
+    },
+    {
+      "key": "en-sv-151-502559-normal",
+      "name": "Caterpie - 010/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "010/165",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/sv-151/502559.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-sv-151-502560-normal",
+      "name": "Metapod - 011/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "011/165",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/sv-151/502560.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-sv-151-502561-normal",
+      "name": "Butterfree - 012/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "012/165",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/sv-151/502561.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-sv-151-502562-normal",
+      "name": "Weedle - 013/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "013/165",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/sv-151/502562.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-sv-151-502563-normal",
+      "name": "Kakuna - 014/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "014/165",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/sv-151/502563.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-sv-151-502564-holofoil",
+      "name": "Beedrill - 015/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "015/165",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/sv-151/502564.jpg",
+      "rarity": "Rare"
+    },
+    {
+      "key": "en-sv-151-502565-normal",
+      "name": "Pidgey - 016/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "016/165",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/sv-151/502565.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-sv-151-502566-normal",
+      "name": "Pidgeotto - 017/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "017/165",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/sv-151/502566.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-sv-151-502567-normal",
+      "name": "Pidgeot - 018/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "018/165",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/sv-151/502567.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-sv-151-502568-normal",
+      "name": "Rattata - 019/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "019/165",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/sv-151/502568.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-sv-151-502569-normal",
+      "name": "Raticate - 020/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "020/165",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/sv-151/502569.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-sv-151-502587-normal",
+      "name": "Spearow - 021/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "021/165",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/sv-151/502587.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-sv-151-502589-normal",
+      "name": "Fearow - 022/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "022/165",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/sv-151/502589.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-sv-151-515955-normal",
+      "name": "Ekans - 023/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "023/165",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/sv-151/515955.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-sv-151-515956-holofoil",
+      "name": "Arbok ex - 024/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "024/165",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/sv-151/515956.jpg",
+      "rarity": "Double Rare"
+    },
+    {
+      "key": "en-sv-151-517033-normal",
+      "name": "Pikachu - 025/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "025/165",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/sv-151/517033.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-sv-151-515957-holofoil",
+      "name": "Raichu - 026/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "026/165",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/sv-151/515957.jpg",
+      "rarity": "Rare"
+    },
+    {
+      "key": "en-sv-151-515978-normal",
+      "name": "Sandshrew - 027/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "027/165",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/sv-151/515978.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-sv-151-515989-normal",
+      "name": "Sandslash - 028/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "028/165",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/sv-151/515989.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-sv-151-515994-normal",
+      "name": "Nidoran F - 029/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "029/165",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/sv-151/515994.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-sv-151-516000-normal",
+      "name": "Nidorina - 030/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "030/165",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/sv-151/516000.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-sv-151-516004-normal",
+      "name": "Nidoqueen - 031/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "031/165",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/sv-151/516004.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-sv-151-516006-normal",
+      "name": "Nidoran M - 032/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "032/165",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/sv-151/516006.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-sv-151-516016-normal",
+      "name": "Nidorino - 033/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "033/165",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/sv-151/516016.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-sv-151-516024-holofoil",
+      "name": "Nidoking - 034/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "034/165",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/sv-151/516024.jpg",
+      "rarity": "Rare"
+    },
+    {
+      "key": "en-sv-151-516030-normal",
+      "name": "Clefairy - 035/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "035/165",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/sv-151/516030.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-sv-151-516036-normal",
+      "name": "Clefable - 036/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "036/165",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/sv-151/516036.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-sv-151-516060-normal",
+      "name": "Vulpix - 037/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "037/165",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/sv-151/516060.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-sv-151-516072-holofoil",
+      "name": "Ninetales ex - 038/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "038/165",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/sv-151/516072.jpg",
+      "rarity": "Double Rare"
+    },
+    {
+      "key": "en-sv-151-516108-normal",
+      "name": "Jigglypuff - 039/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "039/165",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/sv-151/516108.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-sv-151-516145-holofoil",
+      "name": "Wigglytuff ex - 040/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "040/165",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/sv-151/516145.jpg",
+      "rarity": "Double Rare"
+    },
+    {
+      "key": "en-sv-151-516150-normal",
+      "name": "Zubat - 041/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "041/165",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/sv-151/516150.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-sv-151-516152-normal",
+      "name": "Golbat - 042/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "042/165",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/sv-151/516152.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-sv-151-516156-normal",
+      "name": "Oddish - 043/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "043/165",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/sv-151/516156.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-sv-151-516157-normal",
+      "name": "Gloom - 044/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "044/165",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/sv-151/516157.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-sv-151-516159-holofoil",
+      "name": "Vileplume - 045/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "045/165",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/sv-151/516159.jpg",
+      "rarity": "Rare"
+    },
+    {
+      "key": "en-sv-151-516163-normal",
+      "name": "Paras - 046/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "046/165",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/sv-151/516163.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-sv-151-516170-normal",
+      "name": "Parasect - 047/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "047/165",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/sv-151/516170.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-sv-151-516206-normal",
+      "name": "Venonat - 048/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "048/165",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/sv-151/516206.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-sv-151-516213-normal",
+      "name": "Venomoth - 049/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "049/165",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/sv-151/516213.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-sv-151-516215-normal",
+      "name": "Diglett - 050/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "050/165",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/sv-151/516215.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-sv-151-516216-normal",
+      "name": "Dugtrio - 051/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "051/165",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/sv-151/516216.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-sv-151-516221-normal",
+      "name": "Meowth - 052/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "052/165",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/sv-151/516221.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-sv-151-516223-normal",
+      "name": "Persian - 053/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "053/165",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/sv-151/516223.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-sv-151-516231-normal",
+      "name": "Psyduck - 054/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "054/165",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/sv-151/516231.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-sv-151-516232-normal",
+      "name": "Golduck - 055/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "055/165",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/sv-151/516232.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-sv-151-516242-normal",
+      "name": "Mankey - 056/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "056/165",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/sv-151/516242.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-sv-151-516246-normal",
+      "name": "Primeape - 057/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "057/165",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/sv-151/516246.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-sv-151-516247-normal",
+      "name": "Growlithe - 058/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "058/165",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/sv-151/516247.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-sv-151-516248-normal",
+      "name": "Arcanine - 059/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "059/165",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/sv-151/516248.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-sv-151-516249-normal",
+      "name": "Poliwag - 060/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "060/165",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/sv-151/516249.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-sv-151-516250-normal",
+      "name": "Poliwhirl - 061/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "061/165",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/sv-151/516250.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-sv-151-516251-normal",
+      "name": "Poliwrath - 062/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "062/165",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/sv-151/516251.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-sv-151-516268-normal",
+      "name": "Abra - 063/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "063/165",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/sv-151/516268.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-sv-151-516269-normal",
+      "name": "Kadabra - 064/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "064/165",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/sv-151/516269.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-sv-151-516381-holofoil",
+      "name": "Alakazam ex - 065/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "065/165",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/sv-151/516381.jpg",
+      "rarity": "Double Rare"
+    },
+    {
+      "key": "en-sv-151-516382-normal",
+      "name": "Machop - 066/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "066/165",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/sv-151/516382.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-sv-151-516383-normal",
+      "name": "Machoke - 067/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "067/165",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/sv-151/516383.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-sv-151-516385-holofoil",
+      "name": "Machamp - 068/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "068/165",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/sv-151/516385.jpg",
+      "rarity": "Rare"
+    },
+    {
+      "key": "en-sv-151-516560-normal",
+      "name": "Bellsprout - 069/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "069/165",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/sv-151/516560.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-sv-151-516563-normal",
+      "name": "Weepinbell - 070/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "070/165",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/sv-151/516563.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-sv-151-516564-normal",
+      "name": "Victreebel - 071/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "071/165",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/sv-151/516564.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-sv-151-516565-normal",
+      "name": "Tentacool - 072/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "072/165",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/sv-151/516565.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-sv-151-516567-normal",
+      "name": "Tentacruel - 073/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "073/165",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/sv-151/516567.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-sv-151-516569-normal",
+      "name": "Geodude - 074/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "074/165",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/sv-151/516569.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-sv-151-516572-normal",
+      "name": "Graveler - 075/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "075/165",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/sv-151/516572.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-sv-151-516574-holofoil",
+      "name": "Golem ex - 076/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "076/165",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/sv-151/516574.jpg",
+      "rarity": "Double Rare"
+    },
+    {
+      "key": "en-sv-151-516601-normal",
+      "name": "Ponyta - 077/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "077/165",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/sv-151/516601.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-sv-151-516607-normal",
+      "name": "Rapidash - 078/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "078/165",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/sv-151/516607.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-sv-151-516650-normal",
+      "name": "Slowpoke - 079/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "079/165",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/sv-151/516650.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-sv-151-516651-normal",
+      "name": "Slowbro - 080/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "080/165",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/sv-151/516651.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-sv-151-516648-normal",
+      "name": "Magnemite - 081/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "081/165",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/sv-151/516648.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-sv-151-516649-normal",
+      "name": "Magneton - 082/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "082/165",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/sv-151/516649.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-sv-151-516652-normal",
+      "name": "Farfetch'd - 083/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "083/165",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/sv-151/516652.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-sv-151-516653-normal",
+      "name": "Doduo - 084/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "084/165",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/sv-151/516653.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-sv-151-516654-holofoil",
+      "name": "Dodrio - 085/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "085/165",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/sv-151/516654.jpg",
+      "rarity": "Rare"
+    },
+    {
+      "key": "en-sv-151-516655-normal",
+      "name": "Seel - 086/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "086/165",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/sv-151/516655.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-sv-151-516656-normal",
+      "name": "Dewgong - 087/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "087/165",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/sv-151/516656.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-sv-151-516657-normal",
+      "name": "Grimer - 088/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "088/165",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/sv-151/516657.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-sv-151-516658-normal",
+      "name": "Muk - 089/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "089/165",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/sv-151/516658.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-sv-151-516659-normal",
+      "name": "Shellder - 090/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "090/165",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/sv-151/516659.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-sv-151-516660-normal",
+      "name": "Cloyster - 091/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "091/165",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/sv-151/516660.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-sv-151-516661-normal",
+      "name": "Gastly - 092/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "092/165",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/sv-151/516661.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-sv-151-516662-normal",
+      "name": "Haunter - 093/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "093/165",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/sv-151/516662.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-sv-151-516663-holofoil",
+      "name": "Gengar - 094/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "094/165",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/sv-151/516663.jpg",
+      "rarity": "Rare"
+    },
+    {
+      "key": "en-sv-151-516664-normal",
+      "name": "Onix - 095/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "095/165",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/sv-151/516664.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-sv-151-516665-normal",
+      "name": "Drowzee - 096/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "096/165",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/sv-151/516665.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-sv-151-516666-normal",
+      "name": "Hypno - 097/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "097/165",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/sv-151/516666.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-sv-151-516667-normal",
+      "name": "Krabby - 098/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "098/165",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/sv-151/516667.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-sv-151-516668-normal",
+      "name": "Kingler - 099/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "099/165",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/sv-151/516668.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-sv-151-516669-normal",
+      "name": "Voltorb - 100/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "100/165",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/sv-151/516669.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-sv-151-516670-holofoil",
+      "name": "Electrode - 101/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "101/165",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/sv-151/516670.jpg",
+      "rarity": "Rare"
+    },
+    {
+      "key": "en-sv-151-516671-normal",
+      "name": "Exeggcute - 102/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "102/165",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/sv-151/516671.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-sv-151-516672-normal",
+      "name": "Exeggutor - 103/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "103/165",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/sv-151/516672.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-sv-151-516673-normal",
+      "name": "Cubone - 104/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "104/165",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/sv-151/516673.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-sv-151-516674-holofoil",
+      "name": "Marowak - 105/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "105/165",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/sv-151/516674.jpg",
+      "rarity": "Rare"
+    },
+    {
+      "key": "en-sv-151-516675-normal",
+      "name": "Hitmonlee - 106/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "106/165",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/sv-151/516675.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-sv-151-516676-normal",
+      "name": "Hitmonchan - 107/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "107/165",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/sv-151/516676.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-sv-151-516677-normal",
+      "name": "Lickitung - 108/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "108/165",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/sv-151/516677.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-sv-151-516679-normal",
+      "name": "Koffing - 109/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "109/165",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/sv-151/516679.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-sv-151-516680-holofoil",
+      "name": "Weezing - 110/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "110/165",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/sv-151/516680.jpg",
+      "rarity": "Rare"
+    },
+    {
+      "key": "en-sv-151-516570-normal",
+      "name": "Rhyhorn - 111/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "111/165",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/sv-151/516570.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-sv-151-516573-normal",
+      "name": "Rhydon - 112/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "112/165",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/sv-151/516573.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-sv-151-516575-holofoil",
+      "name": "Chansey - 113/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "113/165",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/sv-151/516575.jpg",
+      "rarity": "Rare"
+    },
+    {
+      "key": "en-sv-151-516579-normal",
+      "name": "Tangela - 114/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "114/165",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/sv-151/516579.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-sv-151-516581-holofoil",
+      "name": "Kangaskhan ex - 115/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "115/165",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/sv-151/516581.jpg",
+      "rarity": "Double Rare"
+    },
+    {
+      "key": "en-sv-151-516583-normal",
+      "name": "Horsea - 116/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "116/165",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/sv-151/516583.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-sv-151-516584-normal",
+      "name": "Seadra - 117/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "117/165",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/sv-151/516584.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-sv-151-516681-normal",
+      "name": "Goldeen - 118/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "118/165",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/sv-151/516681.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-sv-151-516682-normal",
+      "name": "Seaking - 119/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "119/165",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/sv-151/516682.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-sv-151-516683-normal",
+      "name": "Staryu - 120/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "120/165",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/sv-151/516683.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-sv-151-516684-holofoil",
+      "name": "Starmie - 121/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "121/165",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/sv-151/516684.jpg",
+      "rarity": "Rare"
+    },
+    {
+      "key": "en-sv-151-516685-holofoil",
+      "name": "Mr. Mime - 122/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "122/165",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/sv-151/516685.jpg",
+      "rarity": "Rare"
+    },
+    {
+      "key": "en-sv-151-516686-normal",
+      "name": "Scyther - 123/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "123/165",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/sv-151/516686.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-sv-151-516687-holofoil",
+      "name": "Jynx ex - 124/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "124/165",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/sv-151/516687.jpg",
+      "rarity": "Double Rare"
+    },
+    {
+      "key": "en-sv-151-516688-normal",
+      "name": "Electabuzz - 125/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "125/165",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/sv-151/516688.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-sv-151-516689-normal",
+      "name": "Magmar - 126/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "126/165",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/sv-151/516689.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-sv-151-516690-normal",
+      "name": "Pinsir - 127/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "127/165",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/sv-151/516690.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-sv-151-516691-normal",
+      "name": "Tauros - 128/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "128/165",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/sv-151/516691.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-sv-151-516692-normal",
+      "name": "Magikarp - 129/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "129/165",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/sv-151/516692.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-sv-151-516693-holofoil",
+      "name": "Gyarados - 130/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "130/165",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/sv-151/516693.jpg",
+      "rarity": "Rare"
+    },
+    {
+      "key": "en-sv-151-516694-normal",
+      "name": "Lapras - 131/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "131/165",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/sv-151/516694.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-sv-151-516695-holofoil",
+      "name": "Ditto - 132/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "132/165",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/sv-151/516695.jpg",
+      "rarity": "Rare"
+    },
+    {
+      "key": "en-sv-151-516696-normal",
+      "name": "Eevee - 133/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "133/165",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/sv-151/516696.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-sv-151-516697-holofoil",
+      "name": "Vaporeon - 134/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "134/165",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/sv-151/516697.jpg",
+      "rarity": "Rare"
+    },
+    {
+      "key": "en-sv-151-516698-holofoil",
+      "name": "Jolteon - 135/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "135/165",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/sv-151/516698.jpg",
+      "rarity": "Rare"
+    },
+    {
+      "key": "en-sv-151-516699-holofoil",
+      "name": "Flareon - 136/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "136/165",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/sv-151/516699.jpg",
+      "rarity": "Rare"
+    },
+    {
+      "key": "en-sv-151-516700-normal",
+      "name": "Porygon - 137/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "137/165",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/sv-151/516700.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-sv-151-516701-normal",
+      "name": "Omanyte - 138/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "138/165",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/sv-151/516701.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-sv-151-516702-holofoil",
+      "name": "Omastar - 139/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "139/165",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/sv-151/516702.jpg",
+      "rarity": "Rare"
+    },
+    {
+      "key": "en-sv-151-516703-normal",
+      "name": "Kabuto - 140/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "140/165",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/sv-151/516703.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-sv-151-516704-holofoil",
+      "name": "Kabutops - 141/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "141/165",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/sv-151/516704.jpg",
+      "rarity": "Rare"
+    },
+    {
+      "key": "en-sv-151-516705-holofoil",
+      "name": "Aerodactyl - 142/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "142/165",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/sv-151/516705.jpg",
+      "rarity": "Rare"
+    },
+    {
+      "key": "en-sv-151-516706-normal",
+      "name": "Snorlax - 143/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "143/165",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/sv-151/516706.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-sv-151-516707-holofoil",
+      "name": "Articuno - 144/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "144/165",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/sv-151/516707.jpg",
+      "rarity": "Rare"
+    },
+    {
+      "key": "en-sv-151-516708-holofoil",
+      "name": "Zapdos ex - 145/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "145/165",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/sv-151/516708.jpg",
+      "rarity": "Double Rare"
+    },
+    {
+      "key": "en-sv-151-516709-holofoil",
+      "name": "Moltres - 146/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "146/165",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/sv-151/516709.jpg",
+      "rarity": "Rare"
+    },
+    {
+      "key": "en-sv-151-516710-normal",
+      "name": "Dratini - 147/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "147/165",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/sv-151/516710.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-sv-151-516711-normal",
+      "name": "Dragonair - 148/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "148/165",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/sv-151/516711.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-sv-151-516712-holofoil",
+      "name": "Dragonite - 149/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "149/165",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/sv-151/516712.jpg",
+      "rarity": "Rare"
+    },
+    {
+      "key": "en-sv-151-516713-holofoil",
+      "name": "Mewtwo - 150/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "150/165",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/sv-151/516713.jpg",
+      "rarity": "Rare"
+    },
+    {
+      "key": "en-sv-151-516566-holofoil",
+      "name": "Mew ex - 151/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "151/165",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/sv-151/516566.jpg",
+      "rarity": "Double Rare"
+    },
+    {
+      "key": "en-sv-151-516714-normal",
+      "name": "Antique Dome Fossil - 152/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "152/165",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/sv-151/516714.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-sv-151-516715-normal",
+      "name": "Antique Helix Fossil - 153/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "153/165",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/sv-151/516715.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-sv-151-516716-normal",
+      "name": "Antique Old Amber - 154/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "154/165",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/sv-151/516716.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-sv-151-516717-normal",
+      "name": "Big Air Balloon - 155/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "155/165",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/sv-151/516717.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-sv-151-516718-normal",
+      "name": "Bill's Transfer - 156/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "156/165",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/sv-151/516718.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-sv-151-516719-normal",
+      "name": "Cycling Road - 157/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "157/165",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/sv-151/516719.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-sv-151-516720-normal",
+      "name": "Daisy's Help - 158/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "158/165",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/sv-151/516720.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-sv-151-516721-normal",
+      "name": "Energy Sticker - 159/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "159/165",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/sv-151/516721.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-sv-151-516722-normal",
+      "name": "Erika's Invitation - 160/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "160/165",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/sv-151/516722.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-sv-151-516723-normal",
+      "name": "Giovanni's Charisma - 161/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "161/165",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/sv-151/516723.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-sv-151-516724-normal",
+      "name": "Grabber - 162/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "162/165",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/sv-151/516724.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-sv-151-516725-normal",
+      "name": "Leftovers - 163/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "163/165",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/sv-151/516725.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-sv-151-516726-normal",
+      "name": "Protective Goggles - 164/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "164/165",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/sv-151/516726.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-sv-151-516727-normal",
+      "name": "Rigid Band - 165/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "165/165",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/sv-151/516727.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-sv-151-516997-holofoil",
+      "name": "Bulbasaur - 166/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "166/165",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/sv-151/516997.jpg",
+      "rarity": "Illustration Rare"
+    },
+    {
+      "key": "en-sv-151-516998-holofoil",
+      "name": "Ivysaur - 167/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "167/165",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/sv-151/516998.jpg",
+      "rarity": "Illustration Rare"
+    },
+    {
+      "key": "en-sv-151-502556-holofoil",
+      "name": "Charmander - 168/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "168/165",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/sv-151/502556.jpg",
+      "rarity": "Illustration Rare"
+    },
+    {
+      "key": "en-sv-151-517018-holofoil",
+      "name": "Charmeleon - 169/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "169/165",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/sv-151/517018.jpg",
+      "rarity": "Illustration Rare"
+    },
+    {
+      "key": "en-sv-151-502549-holofoil",
+      "name": "Squirtle - 170/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "170/165",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/sv-151/502549.jpg",
+      "rarity": "Illustration Rare"
+    },
+    {
+      "key": "en-sv-151-517038-holofoil",
+      "name": "Wartortle - 171/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "171/165",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/sv-151/517038.jpg",
+      "rarity": "Illustration Rare"
+    },
+    {
+      "key": "en-sv-151-517016-holofoil",
+      "name": "Caterpie - 172/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "172/165",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/sv-151/517016.jpg",
+      "rarity": "Illustration Rare"
+    },
+    {
+      "key": "en-sv-151-513721-holofoil",
+      "name": "Pikachu - 173/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "173/165",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/sv-151/513721.jpg",
+      "rarity": "Illustration Rare"
+    },
+    {
+      "key": "en-sv-151-517029-holofoil",
+      "name": "Nidoking - 174/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "174/165",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/sv-151/517029.jpg",
+      "rarity": "Illustration Rare"
+    },
+    {
+      "key": "en-sv-151-517035-holofoil",
+      "name": "Psyduck - 175/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "175/165",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/sv-151/517035.jpg",
+      "rarity": "Illustration Rare"
+    },
+    {
+      "key": "en-sv-151-517034-holofoil",
+      "name": "Poliwhirl - 176/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "176/165",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/sv-151/517034.jpg",
+      "rarity": "Illustration Rare"
+    },
+    {
+      "key": "en-sv-151-517025-holofoil",
+      "name": "Machoke - 177/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "177/165",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/sv-151/517025.jpg",
+      "rarity": "Illustration Rare"
+    },
+    {
+      "key": "en-sv-151-517036-holofoil",
+      "name": "Tangela - 178/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "178/165",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/sv-151/517036.jpg",
+      "rarity": "Illustration Rare"
+    },
+    {
+      "key": "en-sv-151-517028-holofoil",
+      "name": "Mr. Mime - 179/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "179/165",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/sv-151/517028.jpg",
+      "rarity": "Illustration Rare"
+    },
+    {
+      "key": "en-sv-151-517031-holofoil",
+      "name": "Omanyte - 180/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "180/165",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/sv-151/517031.jpg",
+      "rarity": "Illustration Rare"
+    },
+    {
+      "key": "en-sv-151-517020-holofoil",
+      "name": "Dragonair - 181/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "181/165",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/sv-151/517020.jpg",
+      "rarity": "Illustration Rare"
+    },
+    {
+      "key": "en-sv-151-517037-holofoil",
+      "name": "Venusaur ex - 182/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "182/165",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/sv-151/517037.jpg",
+      "rarity": "Ultra Rare"
+    },
+    {
+      "key": "en-sv-151-517017-holofoil",
+      "name": "Charizard ex - 183/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "183/165",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/sv-151/517017.jpg",
+      "rarity": "Ultra Rare"
+    },
+    {
+      "key": "en-sv-151-517015-holofoil",
+      "name": "Blastoise ex - 184/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "184/165",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/sv-151/517015.jpg",
+      "rarity": "Ultra Rare"
+    },
+    {
+      "key": "en-sv-151-517014-holofoil",
+      "name": "Arbok ex - 185/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "185/165",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/sv-151/517014.jpg",
+      "rarity": "Ultra Rare"
+    },
+    {
+      "key": "en-sv-151-517030-holofoil",
+      "name": "Ninetales ex - 186/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "186/165",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/sv-151/517030.jpg",
+      "rarity": "Ultra Rare"
+    },
+    {
+      "key": "en-sv-151-517039-holofoil",
+      "name": "Wigglytuff ex - 187/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "187/165",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/sv-151/517039.jpg",
+      "rarity": "Ultra Rare"
+    },
+    {
+      "key": "en-sv-151-517013-holofoil",
+      "name": "Alakazam ex - 188/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "188/165",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/sv-151/517013.jpg",
+      "rarity": "Ultra Rare"
+    },
+    {
+      "key": "en-sv-151-517021-holofoil",
+      "name": "Golem ex - 189/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "189/165",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/sv-151/517021.jpg",
+      "rarity": "Ultra Rare"
+    },
+    {
+      "key": "en-sv-151-517024-holofoil",
+      "name": "Kangaskhan ex - 190/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "190/165",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/sv-151/517024.jpg",
+      "rarity": "Ultra Rare"
+    },
+    {
+      "key": "en-sv-151-517023-holofoil",
+      "name": "Jynx ex - 191/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "191/165",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/sv-151/517023.jpg",
+      "rarity": "Ultra Rare"
+    },
+    {
+      "key": "en-sv-151-517040-holofoil",
+      "name": "Zapdos ex - 192/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "192/165",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/sv-151/517040.jpg",
+      "rarity": "Ultra Rare"
+    },
+    {
+      "key": "en-sv-151-517027-holofoil",
+      "name": "Mew ex - 193/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "193/165",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/sv-151/517027.jpg",
+      "rarity": "Ultra Rare"
+    },
+    {
+      "key": "en-sv-151-517041-holofoil",
+      "name": "Bill's Transfer - 194/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "194/165",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/sv-151/517041.jpg",
+      "rarity": "Ultra Rare"
+    },
+    {
+      "key": "en-sv-151-517042-holofoil",
+      "name": "Daisy's Help - 195/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "195/165",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/sv-151/517042.jpg",
+      "rarity": "Ultra Rare"
+    },
+    {
+      "key": "en-sv-151-517176-holofoil",
+      "name": "Erika's Invitation - 196/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "196/165",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/sv-151/517176.jpg",
+      "rarity": "Ultra Rare"
+    },
+    {
+      "key": "en-sv-151-517043-holofoil",
+      "name": "Giovanni's Charisma - 197/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "197/165",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/sv-151/517043.jpg",
+      "rarity": "Ultra Rare"
+    },
+    {
+      "key": "en-sv-151-517044-holofoil",
+      "name": "Venusaur ex - 198/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "198/165",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/sv-151/517044.jpg",
+      "rarity": "Special Illustration Rare"
+    },
+    {
+      "key": "en-sv-151-517045-holofoil",
+      "name": "Charizard ex - 199/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "199/165",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/sv-151/517045.jpg",
+      "rarity": "Special Illustration Rare"
+    },
+    {
+      "key": "en-sv-151-517046-holofoil",
+      "name": "Blastoise ex - 200/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "200/165",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/sv-151/517046.jpg",
+      "rarity": "Special Illustration Rare"
+    },
+    {
+      "key": "en-sv-151-517047-holofoil",
+      "name": "Alakazam ex - 201/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "201/165",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/sv-151/517047.jpg",
+      "rarity": "Special Illustration Rare"
+    },
+    {
+      "key": "en-sv-151-517048-holofoil",
+      "name": "Zapdos ex - 202/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "202/165",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/sv-151/517048.jpg",
+      "rarity": "Special Illustration Rare"
+    },
+    {
+      "key": "en-sv-151-517049-holofoil",
+      "name": "Erika's Invitation - 203/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "203/165",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/sv-151/517049.jpg",
+      "rarity": "Special Illustration Rare"
+    },
+    {
+      "key": "en-sv-151-517050-holofoil",
+      "name": "Giovanni's Charisma - 204/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "204/165",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/sv-151/517050.jpg",
+      "rarity": "Special Illustration Rare"
+    },
+    {
+      "key": "en-sv-151-517051-holofoil",
+      "name": "Mew ex - 205/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "205/165",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/sv-151/517051.jpg",
+      "rarity": "Hyper Rare"
+    },
+    {
+      "key": "en-sv-151-517052-holofoil",
+      "name": "Switch - 206/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "206/165",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/sv-151/517052.jpg",
+      "rarity": "Hyper Rare"
+    },
+    {
+      "key": "en-sv-151-517053-holofoil",
+      "name": "Basic Psychic Energy - 207/165",
+      "set": "SV: Scarlet & Violet 151",
+      "number": "207/165",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/sv-151/517053.jpg",
+      "rarity": "Hyper Rare"
+    }
+  ],
+  "points": {
+    "en-sv-151-502552-normal": [
+      [
+        "2024-02-29",
+        0.06,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.22,
+        "ok"
+      ]
+    ],
+    "en-sv-151-502553-normal": [
+      [
+        "2024-02-29",
+        0.1,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.29,
+        "ok"
+      ]
+    ],
+    "en-sv-151-502554-holofoil": [
+      [
+        "2024-02-29",
+        1.46,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        1.19,
+        "ok"
+      ]
+    ],
+    "en-sv-151-502555-normal": [
+      [
+        "2024-02-29",
+        0.1,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.18,
+        "ok"
+      ]
+    ],
+    "en-sv-151-502557-normal": [
+      [
+        "2024-02-29",
+        0.08,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.21,
+        "ok"
+      ]
+    ],
+    "en-sv-151-502558-holofoil": [
+      [
+        "2024-02-29",
+        4.95,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        7.99,
+        "ok"
+      ]
+    ],
+    "en-sv-151-502548-normal": [
+      [
+        "2024-02-29",
+        0.1,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.25,
+        "ok"
+      ]
+    ],
+    "en-sv-151-502550-normal": [
+      [
+        "2024-02-29",
+        0.08,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.3,
+        "ok"
+      ]
+    ],
+    "en-sv-151-502551-holofoil": [
+      [
+        "2024-02-29",
+        2.16,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        2.46,
+        "ok"
+      ]
+    ],
+    "en-sv-151-502559-normal": [
+      [
+        "2024-02-29",
+        0.03,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.16,
+        "ok"
+      ]
+    ],
+    "en-sv-151-502560-normal": [
+      [
+        "2024-02-29",
+        0.08,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.2,
+        "ok"
+      ]
+    ],
+    "en-sv-151-502561-normal": [
+      [
+        "2024-02-29",
+        0.04,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.17,
+        "ok"
+      ]
+    ],
+    "en-sv-151-502562-normal": [
+      [
+        "2024-02-29",
+        0.03,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.14,
+        "ok"
+      ]
+    ],
+    "en-sv-151-502563-normal": [
+      [
+        "2024-02-29",
+        0.06,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.21,
+        "ok"
+      ]
+    ],
+    "en-sv-151-502564-holofoil": [
+      [
+        "2024-02-29",
+        0.09,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.26,
+        "ok"
+      ]
+    ],
+    "en-sv-151-502565-normal": [
+      [
+        "2024-02-29",
+        0.12,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.18,
+        "ok"
+      ]
+    ],
+    "en-sv-151-502566-normal": [
+      [
+        "2024-02-29",
+        0.12,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.3,
+        "ok"
+      ]
+    ],
+    "en-sv-151-502567-normal": [
+      [
+        "2024-02-29",
+        0.04,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.14,
+        "ok"
+      ]
+    ],
+    "en-sv-151-502568-normal": [
+      [
+        "2024-02-29",
+        0.03,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.14,
+        "ok"
+      ]
+    ],
+    "en-sv-151-502569-normal": [
+      [
+        "2024-02-29",
+        0.05,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.18,
+        "ok"
+      ]
+    ],
+    "en-sv-151-502587-normal": [
+      [
+        "2024-02-29",
+        0.05,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.19,
+        "ok"
+      ]
+    ],
+    "en-sv-151-502589-normal": [
+      [
+        "2024-02-29",
+        0.05,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.2,
+        "ok"
+      ]
+    ],
+    "en-sv-151-515955-normal": [
+      [
+        "2024-02-29",
+        0.04,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.14,
+        "ok"
+      ]
+    ],
+    "en-sv-151-515956-holofoil": [
+      [
+        "2024-02-29",
+        1.26,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        1.25,
+        "ok"
+      ]
+    ],
+    "en-sv-151-517033-normal": [
+      [
+        "2024-02-29",
+        0.08,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.26,
+        "ok"
+      ]
+    ],
+    "en-sv-151-515957-holofoil": [
+      [
+        "2024-02-29",
+        0.12,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.31,
+        "ok"
+      ]
+    ],
+    "en-sv-151-515978-normal": [
+      [
+        "2024-02-29",
+        0.04,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.18,
+        "ok"
+      ]
+    ],
+    "en-sv-151-515989-normal": [
+      [
+        "2024-02-29",
+        0.04,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.16,
+        "ok"
+      ]
+    ],
+    "en-sv-151-515994-normal": [
+      [
+        "2024-02-29",
+        0.13,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.21,
+        "ok"
+      ]
+    ],
+    "en-sv-151-516000-normal": [
+      [
+        "2024-02-29",
+        0.06,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.21,
+        "ok"
+      ]
+    ],
+    "en-sv-151-516004-normal": [
+      [
+        "2024-02-29",
+        0.05,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.19,
+        "ok"
+      ]
+    ],
+    "en-sv-151-516006-normal": [
+      [
+        "2024-02-29",
+        0.11,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.25,
+        "ok"
+      ]
+    ],
+    "en-sv-151-516016-normal": [
+      [
+        "2024-02-29",
+        0.04,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.16,
+        "ok"
+      ]
+    ],
+    "en-sv-151-516024-holofoil": [
+      [
+        "2024-02-29",
+        0.15,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.28,
+        "ok"
+      ]
+    ],
+    "en-sv-151-516030-normal": [
+      [
+        "2024-02-29",
+        0.03,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.2,
+        "ok"
+      ]
+    ],
+    "en-sv-151-516036-normal": [
+      [
+        "2024-02-29",
+        0.04,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.2,
+        "ok"
+      ]
+    ],
+    "en-sv-151-516060-normal": [
+      [
+        "2024-02-29",
+        0.04,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.17,
+        "ok"
+      ]
+    ],
+    "en-sv-151-516072-holofoil": [
+      [
+        "2024-02-29",
+        0.95,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        1.64,
+        "ok"
+      ]
+    ],
+    "en-sv-151-516108-normal": [
+      [
+        "2024-02-29",
+        0.04,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.19,
+        "ok"
+      ]
+    ],
+    "en-sv-151-516145-holofoil": [
+      [
+        "2024-02-29",
+        0.89,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        1.16,
+        "ok"
+      ]
+    ],
+    "en-sv-151-516150-normal": [
+      [
+        "2024-02-29",
+        0.03,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.13,
+        "ok"
+      ]
+    ],
+    "en-sv-151-516152-normal": [
+      [
+        "2024-02-29",
+        0.04,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.17,
+        "ok"
+      ]
+    ],
+    "en-sv-151-516156-normal": [
+      [
+        "2024-02-29",
+        0.04,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.2,
+        "ok"
+      ]
+    ],
+    "en-sv-151-516157-normal": [
+      [
+        "2024-02-29",
+        0.05,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.16,
+        "ok"
+      ]
+    ],
+    "en-sv-151-516159-holofoil": [
+      [
+        "2024-02-29",
+        0.12,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.28,
+        "ok"
+      ]
+    ],
+    "en-sv-151-516163-normal": [
+      [
+        "2024-02-29",
+        0.05,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.13,
+        "ok"
+      ]
+    ],
+    "en-sv-151-516170-normal": [
+      [
+        "2024-02-29",
+        0.06,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.19,
+        "ok"
+      ]
+    ],
+    "en-sv-151-516206-normal": [
+      [
+        "2024-02-29",
+        0.06,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.16,
+        "ok"
+      ]
+    ],
+    "en-sv-151-516213-normal": [
+      [
+        "2024-02-29",
+        0.06,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.17,
+        "ok"
+      ]
+    ],
+    "en-sv-151-516215-normal": [
+      [
+        "2024-02-29",
+        0.03,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.16,
+        "ok"
+      ]
+    ],
+    "en-sv-151-516216-normal": [
+      [
+        "2024-02-29",
+        0.04,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.18,
+        "ok"
+      ]
+    ],
+    "en-sv-151-516221-normal": [
+      [
+        "2024-02-29",
+        0.04,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.24,
+        "ok"
+      ]
+    ],
+    "en-sv-151-516223-normal": [
+      [
+        "2024-02-29",
+        0.04,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.18,
+        "ok"
+      ]
+    ],
+    "en-sv-151-516231-normal": [
+      [
+        "2024-02-29",
+        0.05,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.25,
+        "ok"
+      ]
+    ],
+    "en-sv-151-516232-normal": [
+      [
+        "2024-02-29",
+        0.05,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.17,
+        "ok"
+      ]
+    ],
+    "en-sv-151-516242-normal": [
+      [
+        "2024-02-29",
+        0.02,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.17,
+        "ok"
+      ]
+    ],
+    "en-sv-151-516246-normal": [
+      [
+        "2024-02-29",
+        0.04,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.16,
+        "ok"
+      ]
+    ],
+    "en-sv-151-516247-normal": [
+      [
+        "2024-02-29",
+        0.05,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.15,
+        "ok"
+      ]
+    ],
+    "en-sv-151-516248-normal": [
+      [
+        "2024-02-29",
+        0.07,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.19,
+        "ok"
+      ]
+    ],
+    "en-sv-151-516249-normal": [
+      [
+        "2024-02-29",
+        0.05,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.14,
+        "ok"
+      ]
+    ],
+    "en-sv-151-516250-normal": [
+      [
+        "2024-02-29",
+        0.09,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.23,
+        "ok"
+      ]
+    ],
+    "en-sv-151-516251-normal": [
+      [
+        "2024-02-29",
+        0.06,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.21,
+        "ok"
+      ]
+    ],
+    "en-sv-151-516268-normal": [
+      [
+        "2024-02-29",
+        0.05,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.15,
+        "ok"
+      ]
+    ],
+    "en-sv-151-516269-normal": [
+      [
+        "2024-02-29",
+        0.1,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.17,
+        "ok"
+      ]
+    ],
+    "en-sv-151-516381-holofoil": [
+      [
+        "2024-02-29",
+        1.34,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        1.78,
+        "ok"
+      ]
+    ],
+    "en-sv-151-516382-normal": [
+      [
+        "2024-02-29",
+        0.04,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.16,
+        "ok"
+      ]
+    ],
+    "en-sv-151-516383-normal": [
+      [
+        "2024-02-29",
+        0.06,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.18,
+        "ok"
+      ]
+    ],
+    "en-sv-151-516385-holofoil": [
+      [
+        "2024-02-29",
+        0.14,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.31,
+        "ok"
+      ]
+    ],
+    "en-sv-151-516560-normal": [
+      [
+        "2024-02-29",
+        0.03,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.15,
+        "ok"
+      ]
+    ],
+    "en-sv-151-516563-normal": [
+      [
+        "2024-02-29",
+        0.08,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.22,
+        "ok"
+      ]
+    ],
+    "en-sv-151-516564-normal": [
+      [
+        "2024-02-29",
+        0.05,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.2,
+        "ok"
+      ]
+    ],
+    "en-sv-151-516565-normal": [
+      [
+        "2024-02-29",
+        0.04,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.17,
+        "ok"
+      ]
+    ],
+    "en-sv-151-516567-normal": [
+      [
+        "2024-02-29",
+        0.03,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.19,
+        "ok"
+      ]
+    ],
+    "en-sv-151-516569-normal": [
+      [
+        "2024-02-29",
+        0.04,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.2,
+        "ok"
+      ]
+    ],
+    "en-sv-151-516572-normal": [
+      [
+        "2024-02-29",
+        0.04,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.15,
+        "ok"
+      ]
+    ],
+    "en-sv-151-516574-holofoil": [
+      [
+        "2024-02-29",
+        0.97,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        1.01,
+        "ok"
+      ]
+    ],
+    "en-sv-151-516601-normal": [
+      [
+        "2024-02-29",
+        0.04,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.18,
+        "ok"
+      ]
+    ],
+    "en-sv-151-516607-normal": [
+      [
+        "2024-02-29",
+        0.04,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.15,
+        "ok"
+      ]
+    ],
+    "en-sv-151-516650-normal": [
+      [
+        "2024-02-29",
+        0.04,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.19,
+        "ok"
+      ]
+    ],
+    "en-sv-151-516651-normal": [
+      [
+        "2024-02-29",
+        0.05,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.16,
+        "ok"
+      ]
+    ],
+    "en-sv-151-516648-normal": [
+      [
+        "2024-02-29",
+        0.03,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.19,
+        "ok"
+      ]
+    ],
+    "en-sv-151-516649-normal": [
+      [
+        "2024-02-29",
+        0.03,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.21,
+        "ok"
+      ]
+    ],
+    "en-sv-151-516652-normal": [
+      [
+        "2024-02-29",
+        0.03,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.15,
+        "ok"
+      ]
+    ],
+    "en-sv-151-516653-normal": [
+      [
+        "2024-02-29",
+        0.06,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.14,
+        "ok"
+      ]
+    ],
+    "en-sv-151-516654-holofoil": [
+      [
+        "2024-02-29",
+        0.13,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.29,
+        "ok"
+      ]
+    ],
+    "en-sv-151-516655-normal": [
+      [
+        "2024-02-29",
+        0.04,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.17,
+        "ok"
+      ]
+    ],
+    "en-sv-151-516656-normal": [
+      [
+        "2024-02-29",
+        0.04,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.16,
+        "ok"
+      ]
+    ],
+    "en-sv-151-516657-normal": [
+      [
+        "2024-02-29",
+        0.04,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.13,
+        "ok"
+      ]
+    ],
+    "en-sv-151-516658-normal": [
+      [
+        "2024-02-29",
+        0.04,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.21,
+        "ok"
+      ]
+    ],
+    "en-sv-151-516659-normal": [
+      [
+        "2024-02-29",
+        0.03,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.14,
+        "ok"
+      ]
+    ],
+    "en-sv-151-516660-normal": [
+      [
+        "2024-02-29",
+        0.04,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.15,
+        "ok"
+      ]
+    ],
+    "en-sv-151-516661-normal": [
+      [
+        "2024-02-29",
+        0.04,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.2,
+        "ok"
+      ]
+    ],
+    "en-sv-151-516662-normal": [
+      [
+        "2024-02-29",
+        0.05,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.22,
+        "ok"
+      ]
+    ],
+    "en-sv-151-516663-holofoil": [
+      [
+        "2024-02-29",
+        0.21,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        2.17,
+        "ok"
+      ]
+    ],
+    "en-sv-151-516664-normal": [
+      [
+        "2024-02-29",
+        0.06,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.2,
+        "ok"
+      ]
+    ],
+    "en-sv-151-516665-normal": [
+      [
+        "2024-02-29",
+        0.03,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.15,
+        "ok"
+      ]
+    ],
+    "en-sv-151-516666-normal": [
+      [
+        "2024-02-29",
+        0.05,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.23,
+        "ok"
+      ]
+    ],
+    "en-sv-151-516667-normal": [
+      [
+        "2024-02-29",
+        0.03,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.17,
+        "ok"
+      ]
+    ],
+    "en-sv-151-516668-normal": [
+      [
+        "2024-02-29",
+        0.07,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.2,
+        "ok"
+      ]
+    ],
+    "en-sv-151-516669-normal": [
+      [
+        "2024-02-29",
+        0.03,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.17,
+        "ok"
+      ]
+    ],
+    "en-sv-151-516670-holofoil": [
+      [
+        "2024-02-29",
+        0.15,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.26,
+        "ok"
+      ]
+    ],
+    "en-sv-151-516671-normal": [
+      [
+        "2024-02-29",
+        0.04,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.15,
+        "ok"
+      ]
+    ],
+    "en-sv-151-516672-normal": [
+      [
+        "2024-02-29",
+        0.08,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.2,
+        "ok"
+      ]
+    ],
+    "en-sv-151-516673-normal": [
+      [
+        "2024-02-29",
+        0.04,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.22,
+        "ok"
+      ]
+    ],
+    "en-sv-151-516674-holofoil": [
+      [
+        "2024-02-29",
+        0.11,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.28,
+        "ok"
+      ]
+    ],
+    "en-sv-151-516675-normal": [
+      [
+        "2024-02-29",
+        0.07,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.21,
+        "ok"
+      ]
+    ],
+    "en-sv-151-516676-normal": [
+      [
+        "2024-02-29",
+        0.08,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.23,
+        "ok"
+      ]
+    ],
+    "en-sv-151-516677-normal": [
+      [
+        "2024-02-29",
+        0.04,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.18,
+        "ok"
+      ]
+    ],
+    "en-sv-151-516679-normal": [
+      [
+        "2024-02-29",
+        0.04,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.16,
+        "ok"
+      ]
+    ],
+    "en-sv-151-516680-holofoil": [
+      [
+        "2024-02-29",
+        0.1,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.24,
+        "ok"
+      ]
+    ],
+    "en-sv-151-516570-normal": [
+      [
+        "2024-02-29",
+        0.04,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.11,
+        "ok"
+      ]
+    ],
+    "en-sv-151-516573-normal": [
+      [
+        "2024-02-29",
+        0.04,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.18,
+        "ok"
+      ]
+    ],
+    "en-sv-151-516575-holofoil": [
+      [
+        "2024-02-29",
+        0.16,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.35,
+        "ok"
+      ]
+    ],
+    "en-sv-151-516579-normal": [
+      [
+        "2024-02-29",
+        0.05,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.14,
+        "ok"
+      ]
+    ],
+    "en-sv-151-516581-holofoil": [
+      [
+        "2024-02-29",
+        1.04,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.84,
+        "ok"
+      ]
+    ],
+    "en-sv-151-516583-normal": [
+      [
+        "2024-02-29",
+        0.05,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.19,
+        "ok"
+      ]
+    ],
+    "en-sv-151-516584-normal": [
+      [
+        "2024-02-29",
+        0.04,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.17,
+        "ok"
+      ]
+    ],
+    "en-sv-151-516681-normal": [
+      [
+        "2024-02-29",
+        0.04,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.14,
+        "ok"
+      ]
+    ],
+    "en-sv-151-516682-normal": [
+      [
+        "2024-02-29",
+        0.08,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.13,
+        "ok"
+      ]
+    ],
+    "en-sv-151-516683-normal": [
+      [
+        "2024-02-29",
+        0.03,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.17,
+        "ok"
+      ]
+    ],
+    "en-sv-151-516684-holofoil": [
+      [
+        "2024-02-29",
+        0.12,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.27,
+        "ok"
+      ]
+    ],
+    "en-sv-151-516685-holofoil": [
+      [
+        "2024-02-29",
+        0.1,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.28,
+        "ok"
+      ]
+    ],
+    "en-sv-151-516686-normal": [
+      [
+        "2024-02-29",
+        0.09,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.2,
+        "ok"
+      ]
+    ],
+    "en-sv-151-516687-holofoil": [
+      [
+        "2024-02-29",
+        1.06,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        1.1,
+        "ok"
+      ]
+    ],
+    "en-sv-151-516688-normal": [
+      [
+        "2024-02-29",
+        0.03,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.2,
+        "ok"
+      ]
+    ],
+    "en-sv-151-516689-normal": [
+      [
+        "2024-02-29",
+        0.05,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.22,
+        "ok"
+      ]
+    ],
+    "en-sv-151-516690-normal": [
+      [
+        "2024-02-29",
+        0.05,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.21,
+        "ok"
+      ]
+    ],
+    "en-sv-151-516691-normal": [
+      [
+        "2024-02-29",
+        0.08,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.18,
+        "ok"
+      ]
+    ],
+    "en-sv-151-516692-normal": [
+      [
+        "2024-02-29",
+        0.03,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.17,
+        "ok"
+      ]
+    ],
+    "en-sv-151-516693-holofoil": [
+      [
+        "2024-02-29",
+        0.15,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.41,
+        "ok"
+      ]
+    ],
+    "en-sv-151-516694-normal": [
+      [
+        "2024-02-29",
+        0.07,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.19,
+        "ok"
+      ]
+    ],
+    "en-sv-151-516695-holofoil": [
+      [
+        "2024-02-29",
+        0.21,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.56,
+        "ok"
+      ]
+    ],
+    "en-sv-151-516696-normal": [
+      [
+        "2024-02-29",
+        0.05,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.22,
+        "ok"
+      ]
+    ],
+    "en-sv-151-516697-holofoil": [
+      [
+        "2024-02-29",
+        0.19,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.39,
+        "ok"
+      ]
+    ],
+    "en-sv-151-516698-holofoil": [
+      [
+        "2024-02-29",
+        0.17,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.34,
+        "ok"
+      ]
+    ],
+    "en-sv-151-516699-holofoil": [
+      [
+        "2024-02-29",
+        0.19,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.33,
+        "ok"
+      ]
+    ],
+    "en-sv-151-516700-normal": [
+      [
+        "2024-02-29",
+        0.04,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.16,
+        "ok"
+      ]
+    ],
+    "en-sv-151-516701-normal": [
+      [
+        "2024-02-29",
+        0.13,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.2,
+        "ok"
+      ]
+    ],
+    "en-sv-151-516702-holofoil": [
+      [
+        "2024-02-29",
+        0.1,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.31,
+        "ok"
+      ]
+    ],
+    "en-sv-151-516703-normal": [
+      [
+        "2024-02-29",
+        0.07,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.19,
+        "ok"
+      ]
+    ],
+    "en-sv-151-516704-holofoil": [
+      [
+        "2024-02-29",
+        0.13,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.31,
+        "ok"
+      ]
+    ],
+    "en-sv-151-516705-holofoil": [
+      [
+        "2024-02-29",
+        0.14,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.35,
+        "ok"
+      ]
+    ],
+    "en-sv-151-516706-normal": [
+      [
+        "2024-02-29",
+        0.11,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.28,
+        "ok"
+      ]
+    ],
+    "en-sv-151-516707-holofoil": [
+      [
+        "2024-02-29",
+        0.15,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.31,
+        "ok"
+      ]
+    ],
+    "en-sv-151-516708-holofoil": [
+      [
+        "2024-02-29",
+        1.0,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        1.86,
+        "ok"
+      ]
+    ],
+    "en-sv-151-516709-holofoil": [
+      [
+        "2024-02-29",
+        0.21,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.3,
+        "ok"
+      ]
+    ],
+    "en-sv-151-516710-normal": [
+      [
+        "2024-02-29",
+        0.09,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.2,
+        "ok"
+      ]
+    ],
+    "en-sv-151-516711-normal": [
+      [
+        "2024-02-29",
+        0.08,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.25,
+        "ok"
+      ]
+    ],
+    "en-sv-151-516712-holofoil": [
+      [
+        "2024-02-29",
+        0.15,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        1.33,
+        "ok"
+      ]
+    ],
+    "en-sv-151-516713-holofoil": [
+      [
+        "2024-02-29",
+        0.26,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        1.87,
+        "ok"
+      ]
+    ],
+    "en-sv-151-516566-holofoil": [
+      [
+        "2024-02-29",
+        5.02,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        5.93,
+        "ok"
+      ]
+    ],
+    "en-sv-151-516714-normal": [
+      [
+        "2024-02-29",
+        0.09,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.2,
+        "ok"
+      ]
+    ],
+    "en-sv-151-516715-normal": [
+      [
+        "2024-02-29",
+        0.09,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.21,
+        "ok"
+      ]
+    ],
+    "en-sv-151-516716-normal": [
+      [
+        "2024-02-29",
+        0.1,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.23,
+        "ok"
+      ]
+    ],
+    "en-sv-151-516717-normal": [
+      [
+        "2024-02-29",
+        0.08,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.2,
+        "ok"
+      ]
+    ],
+    "en-sv-151-516718-normal": [
+      [
+        "2024-02-29",
+        0.11,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.2,
+        "ok"
+      ]
+    ],
+    "en-sv-151-516719-normal": [
+      [
+        "2024-02-29",
+        0.08,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.21,
+        "ok"
+      ]
+    ],
+    "en-sv-151-516720-normal": [
+      [
+        "2024-02-29",
+        0.07,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.22,
+        "ok"
+      ]
+    ],
+    "en-sv-151-516721-normal": [
+      [
+        "2024-02-29",
+        0.17,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.24,
+        "ok"
+      ]
+    ],
+    "en-sv-151-516722-normal": [
+      [
+        "2024-02-29",
+        0.1,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.25,
+        "ok"
+      ]
+    ],
+    "en-sv-151-516723-normal": [
+      [
+        "2024-02-29",
+        0.13,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.26,
+        "ok"
+      ]
+    ],
+    "en-sv-151-516724-normal": [
+      [
+        "2024-02-29",
+        0.28,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.23,
+        "ok"
+      ]
+    ],
+    "en-sv-151-516725-normal": [
+      [
+        "2024-02-29",
+        0.08,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.28,
+        "ok"
+      ]
+    ],
+    "en-sv-151-516726-normal": [
+      [
+        "2024-02-29",
+        0.13,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.3,
+        "ok"
+      ]
+    ],
+    "en-sv-151-516727-normal": [
+      [
+        "2024-02-29",
+        0.09,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        0.21,
+        "ok"
+      ]
+    ],
+    "en-sv-151-516997-holofoil": [
+      [
+        "2024-02-29",
+        23.55,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        51.23,
+        "ok"
+      ]
+    ],
+    "en-sv-151-516998-holofoil": [
+      [
+        "2024-02-29",
+        16.86,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        35.36,
+        "ok"
+      ]
+    ],
+    "en-sv-151-502556-holofoil": [
+      [
+        "2024-02-29",
+        30.49,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        77.81,
+        "ok"
+      ]
+    ],
+    "en-sv-151-517018-holofoil": [
+      [
+        "2024-02-29",
+        21.16,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        55.24,
+        "ok"
+      ]
+    ],
+    "en-sv-151-502549-holofoil": [
+      [
+        "2024-02-29",
+        26.85,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        77.75,
+        "ok"
+      ]
+    ],
+    "en-sv-151-517038-holofoil": [
+      [
+        "2024-02-29",
+        19.27,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        45.1,
+        "ok"
+      ]
+    ],
+    "en-sv-151-517016-holofoil": [
+      [
+        "2024-02-29",
+        7.08,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        16.05,
+        "ok"
+      ]
+    ],
+    "en-sv-151-513721-holofoil": [
+      [
+        "2024-02-29",
+        19.41,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        50.96,
+        "ok"
+      ]
+    ],
+    "en-sv-151-517029-holofoil": [
+      [
+        "2024-02-29",
+        8.52,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        14.27,
+        "ok"
+      ]
+    ],
+    "en-sv-151-517035-holofoil": [
+      [
+        "2024-02-29",
+        9.68,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        48.99,
+        "ok"
+      ]
+    ],
+    "en-sv-151-517034-holofoil": [
+      [
+        "2024-02-29",
+        10.66,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        32.14,
+        "ok"
+      ]
+    ],
+    "en-sv-151-517025-holofoil": [
+      [
+        "2024-02-29",
+        6.21,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        16.99,
+        "ok"
+      ]
+    ],
+    "en-sv-151-517036-holofoil": [
+      [
+        "2024-02-29",
+        6.04,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        12.61,
+        "ok"
+      ]
+    ],
+    "en-sv-151-517028-holofoil": [
+      [
+        "2024-02-29",
+        4.61,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        10.5,
+        "ok"
+      ]
+    ],
+    "en-sv-151-517031-holofoil": [
+      [
+        "2024-02-29",
+        6.51,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        11.43,
+        "ok"
+      ]
+    ],
+    "en-sv-151-517020-holofoil": [
+      [
+        "2024-02-29",
+        16.47,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        37.09,
+        "ok"
+      ]
+    ],
+    "en-sv-151-517037-holofoil": [
+      [
+        "2024-02-29",
+        16.38,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        11.43,
+        "ok"
+      ]
+    ],
+    "en-sv-151-517017-holofoil": [
+      [
+        "2024-02-29",
+        37.32,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        34.88,
+        "ok"
+      ]
+    ],
+    "en-sv-151-517015-holofoil": [
+      [
+        "2024-02-29",
+        22.93,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        17.31,
+        "ok"
+      ]
+    ],
+    "en-sv-151-517014-holofoil": [
+      [
+        "2024-02-29",
+        9.62,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        5.77,
+        "ok"
+      ]
+    ],
+    "en-sv-151-517030-holofoil": [
+      [
+        "2024-02-29",
+        15.07,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        11.94,
+        "ok"
+      ]
+    ],
+    "en-sv-151-517039-holofoil": [
+      [
+        "2024-02-29",
+        9.68,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        7.17,
+        "ok"
+      ]
+    ],
+    "en-sv-151-517013-holofoil": [
+      [
+        "2024-02-29",
+        12.74,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        8.54,
+        "ok"
+      ]
+    ],
+    "en-sv-151-517021-holofoil": [
+      [
+        "2024-02-29",
+        7.85,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        6.6,
+        "ok"
+      ]
+    ],
+    "en-sv-151-517024-holofoil": [
+      [
+        "2024-02-29",
+        9.64,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        5.44,
+        "ok"
+      ]
+    ],
+    "en-sv-151-517023-holofoil": [
+      [
+        "2024-02-29",
+        8.53,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        4.89,
+        "ok"
+      ]
+    ],
+    "en-sv-151-517040-holofoil": [
+      [
+        "2024-02-29",
+        13.07,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        8.82,
+        "ok"
+      ]
+    ],
+    "en-sv-151-517027-holofoil": [
+      [
+        "2024-02-29",
+        20.77,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        30.26,
+        "ok"
+      ]
+    ],
+    "en-sv-151-517041-holofoil": [
+      [
+        "2024-02-29",
+        5.08,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        1.81,
+        "ok"
+      ]
+    ],
+    "en-sv-151-517042-holofoil": [
+      [
+        "2024-02-29",
+        5.53,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        2.19,
+        "ok"
+      ]
+    ],
+    "en-sv-151-517176-holofoil": [
+      [
+        "2024-02-29",
+        12.22,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        6.06,
+        "ok"
+      ]
+    ],
+    "en-sv-151-517043-holofoil": [
+      [
+        "2024-02-29",
+        5.28,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        2.99,
+        "ok"
+      ]
+    ],
+    "en-sv-151-517044-holofoil": [
+      [
+        "2024-02-29",
+        42.62,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        88.6,
+        "ok"
+      ]
+    ],
+    "en-sv-151-517045-holofoil": [
+      [
+        "2026-11-09",
+        291.28,
+        "ok"
+      ],
+      [
+        "2026-11-15",
+        287.6,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        287.6,
+        "ok"
+      ]
+    ],
+    "en-sv-151-517046-holofoil": [
+      [
+        "2024-02-29",
+        44.16,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        103.3,
+        "ok"
+      ]
+    ],
+    "en-sv-151-517047-holofoil": [
+      [
+        "2024-02-29",
+        31.57,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        52.12,
+        "ok"
+      ]
+    ],
+    "en-sv-151-517048-holofoil": [
+      [
+        "2024-02-29",
+        38.09,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        64.29,
+        "ok"
+      ]
+    ],
+    "en-sv-151-517049-holofoil": [
+      [
+        "2024-02-29",
+        22.3,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        13.47,
+        "ok"
+      ]
+    ],
+    "en-sv-151-517050-holofoil": [
+      [
+        "2024-02-29",
+        9.96,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        13.16,
+        "ok"
+      ]
+    ],
+    "en-sv-151-517051-holofoil": [
+      [
+        "2024-02-29",
+        8.2,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        24.27,
+        "ok"
+      ]
+    ],
+    "en-sv-151-517052-holofoil": [
+      [
+        "2024-02-29",
+        4.66,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        2.38,
+        "ok"
+      ]
+    ],
+    "en-sv-151-517053-holofoil": [
+      [
+        "2024-02-29",
+        4.35,
+        "ok"
+      ],
+      [
+        "2026-11-16",
+        3.65,
+        "ok"
+      ]
+    ]
+  },
+  "sourceDate": "2026-11-16",
+  "source": "https://tcgcsv.com/faq",
+  "sources": [
+    {
+      "day": "2024-02-29",
+      "url": "https://tcgcsv.com/archive/tcgplayer/prices-2024-02-29.ppmd.7z"
+    },
+    {
+      "day": "2026-11-09",
+      "url": "https://tcgcsv.com/archive/tcgplayer/prices-2026-11-09.ppmd.7z"
+    },
+    {
+      "day": "2026-11-15",
+      "url": "https://tcgcsv.com/archive/tcgplayer/prices-2026-11-15.ppmd.7z"
+    },
+    {
+      "day": "2026-11-16",
+      "url": "https://tcgcsv.com/tcgplayer/3/23237/prices"
+    }
+  ],
+  "baseline": {
+    "date": "2023-09-22",
+    "usd": null,
+    "proposed": false
+  },
+  "preview": true,
+  "previewNote": "Snapshot from the 17 Nov 2026 public-safe handoff. Live public read is not switched on. The index start date is 22 Sep 2023 (English launch day). The dated guides in this snapshot are the earliest point in the handoff (29 Feb 2024 for 206 of 207 cards; Charizard ex 199/165 from 9 Nov 2026) and the current guides dated 16 Nov 2026. Charizard ex 199/165, which also sits in TCG Modern, is dated 15 Nov 2026 in the handoff; this snapshot reuses that guide for 16 Nov so the set has a complete current day. Daily refresh for this set is not switched on yet.",
+  "sourceVersion": "a13531a7e350fb4284731d68b2bc799409cf44fa85ab08ec5df3ab58f9acfbfa"
+}
