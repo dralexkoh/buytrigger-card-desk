@@ -92,7 +92,7 @@ def render_chase_cards(item):
         tiles.append(f'<li>{inner}</li>')
     credit = item.get('chase_cards_credit')
     credit_html = f'<p class="chase-strip-credit">{esc(credit)}</p>' if isinstance(credit, str) and credit.strip() else ''
-    return ('<section class="chase-strip" aria-label="Chase cards">'
+    return ('<section class="story-chase" aria-label="Chase cards">'
             '<h2 class="chase-strip-title">Chase cards</h2>'
             f'<ul class="chase-strip-row">{"".join(tiles)}</ul>'
             f'{credit_html}</section>')
