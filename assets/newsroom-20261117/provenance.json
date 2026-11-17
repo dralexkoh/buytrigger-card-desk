@@ -1,0 +1,98 @@
+{
+  "reviewer": "Vault Newsroom",
+  "review_date": "2026-11-17",
+  "rights_basis": "Official Pokémon Card Game Japan product-page promotional art and card images, reused as permitted official media with credit, consistent with prior Newsroom official-source briefs.",
+  "credit_line": "Promotional image / Card image: The Pokémon Company / pokemon-card.com",
+  "crops_checked": [
+    "full-size",
+    "approx 393px phone width",
+    "site rail thumbnail"
+  ],
+  "outputs": [
+    {
+      "key": "promo",
+      "path": "assets/newsroom-20261117/hadou-seeker-official-promo-pack-lucario.webp",
+      "sha256": "8ff2c6f49e470aa9fe785246056508775574740093f8bf1a7f86a971446cb1b6",
+      "size_px": [
+        1600,
+        1067
+      ],
+      "class": "permitted-media"
+    },
+    {
+      "key": "pack",
+      "path": "assets/newsroom-20261117/hadou-seeker-official-booster-pack.webp",
+      "sha256": "b54798c93a2e33a9dc73f48650f4655c3fa33f768bfb063a0870e96b47d6ecf1",
+      "size_px": [
+        598,
+        1044
+      ],
+      "class": "permitted-media"
+    },
+    {
+      "key": "lucario",
+      "path": "assets/newsroom-20261117/mega-lucario-z-ex-hadou-seeker.webp",
+      "sha256": "ea88761e9d8938f4158761a673a4df48673f7f53d3bed1097afe5cc71cd79ad5",
+      "size_px": [
+        676,
+        907
+      ],
+      "class": "permitted-media"
+    },
+    {
+      "key": "garchomp",
+      "path": "assets/newsroom-20261117/mega-garchomp-z-ex-hadou-seeker.webp",
+      "sha256": "e2ea0cc7d82d7befb7f58c9419b097ddfaf971eb5a797aa899fa4d5cc3b74773",
+      "size_px": [
+        676,
+        907
+      ],
+      "class": "permitted-media"
+    },
+    {
+      "key": "absol",
+      "path": "assets/newsroom-20261117/mega-absol-z-ex-hadou-seeker.webp",
+      "sha256": "755ba4aa8b8de0d685cea865e8496ee90229fdb91551fccc4efb146ef15eedb8",
+      "size_px": [
+        676,
+        907
+      ],
+      "class": "permitted-media"
+    }
+  ],
+  "inputs": [
+    {
+      "path": "/tmp/flowing-fist-src/img/hero_bg_eiksq.webp",
+      "source_url": "https://www.pokemon-card.com/ex/m7/assets/images/hero_bg_eiksq.webp",
+      "sha256": "d79cfa0a12453bd26a48541ed99d8c2cd2ae62e9a48ce605f09e249553416d69",
+      "class": "permitted-media"
+    },
+    {
+      "path": "/tmp/flowing-fist-src/img/product_pack_kmqoi.webp",
+      "source_url": "https://www.pokemon-card.com/ex/m7/assets/images/product_pack_kmqoi.webp",
+      "sha256": "f57d769d544994f7196488e96087dbf3ba1cbacddde95e63f6b7cefc224f8536",
+      "class": "permitted-media"
+    },
+    {
+      "path": "/tmp/flowing-fist-src/img/modal_card_bhdzs.webp",
+      "source_url": "https://www.pokemon-card.com/ex/m7/assets/images/modal_card_bhdzs.webp",
+      "sha256": "79d9bba18a3273222969ded7fa511c7e3001171f328371538003443fbc42a07c",
+      "class": "permitted-media"
+    },
+    {
+      "path": "/tmp/flowing-fist-src/img/modal_card_h8s4g.webp",
+      "source_url": "https://www.pokemon-card.com/ex/m7/assets/images/modal_card_h8s4g.webp",
+      "sha256": "a3eee1a166d510ff3c1cb83491761f069d49df66565858d27c5ab68830a3e949",
+      "class": "permitted-media"
+    },
+    {
+      "path": "/tmp/flowing-fist-src/img/modal_card_be3fz.webp",
+      "source_url": "https://www.pokemon-card.com/ex/m7/assets/images/modal_card_be3fz.webp",
+      "sha256": "eab5d8b2715f6f3872486360069009cf0ace7f3ff5e5450972f1edc855f95afa",
+      "class": "permitted-media"
+    }
+  ],
+  "generation_prompt": null,
+  "tool": "Pillow, resize only, paper #F4F4F1 behind transparent assets, no generation, no drawing of franchise characters",
+  "reference_files": []
+}
