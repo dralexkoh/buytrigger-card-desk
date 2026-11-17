@@ -338,6 +338,67 @@ class IndexCacheTests(unittest.TestCase):
             self.assertNotEqual(published['points'][0]['usd'], 0)
             self.assertEqual(published['points'][0]['source'], f"https://tcgcsv.com/tcgplayer/3/{card['groupId']}/prices")
 
+    def test_prismatic_cache_has_347_db_cards_and_the_index_view_has_180(self):
+        roster = json.loads((SITE / 'data/market-rosters/prismatic-evolutions.json').read_text())
+        cards = roster['cards']
+        index_cards = [card for card in cards if card.get('inIndex', True) is not False]
+        parallels = [card for card in cards if card.get('inIndex') is False]
+        self.assertEqual(len(cards), 347)
+        self.assertEqual(len(index_cards), 180)
+        self.assertEqual(len(parallels), 167)
+        self.assertEqual(len({(card['productId'], card['printing']) for card in cards}), 347)
+        by_number = {card['number']: card for card in index_cards}
+        self.assertEqual(len(by_number), 180)
+        for card in parallels:
+            self.assertIn('Ball Pattern', card['name'])
+            self.assertEqual(card['image'], by_number[card['number']]['image'])
+            self.assertNotIn('chase_rank', card)
+            self.assertEqual(card['groupId'], '23821')
+            self.assertEqual(card['set'], 'SV: Prismatic Evolutions')
+            self.assertEqual(card['language'], 'English')
+            self.assertEqual(card['printing'], 'Holofoil')
+        for product_id in ('610511', '610516'):
+            shared = next(card for card in index_cards if card['productId'] == product_id)
+            self.assertEqual(shared['image'], f'assets/tcg-modern/{product_id}.jpg')
+            self.assertNotIn('inIndex', shared)
+        ranks = sorted((card['chase_rank'], card['productId']) for card in cards if 'chase_rank' in card)
+        self.assertEqual(ranks, [
+            (1, '610516'), (2, '610511'), (3, '610499'), (4, '610510'), (5, '610505'),
+            (6, '610504'), (7, '610501'), (8, '610508'), (9, '610522'), (10, '610517'),
+        ])
+        cache = index_cache.build(SITE, roster)
+        identity = ('productId', 'groupId', 'name', 'set', 'number', 'language', 'printing', 'image')
+        self.assertEqual(len(cache['cards']), 347)
+        self.assertEqual(
+            [(card['productId'], card['printing']) for card in cache['cards']],
+            [(card['productId'], card['printing']) for card in cards],
+        )
+        for source, published in zip(cards, cache['cards']):
+            self.assertEqual({field: published[field] for field in identity}, {field: source[field] for field in identity})
+            self.assertNotIn('inIndex', published)
+            for point in published['points']:
+                self.assertNotEqual(point.get('usd'), 0)
+                if point['status'] == 'ok':
+                    self.assertGreater(point['usd'], 0)
+                else:
+                    self.assertIsNone(point['usd'])
+                if point.get('reportedUsd') is not None:
+                    self.assertGreater(point['reportedUsd'], 0)
+        text = json.dumps(cache, separators=(',', ':'), sort_keys=True, allow_nan=False)
+        self.assertNotRegex(text, r'"usd":0(?:\.0+)?(?![0-9.])')
+        published_file = json.loads((SITE / 'data/market-cache/prismatic-evolutions-current.json').read_text())
+        self.assertEqual(len(published_file['cards']), 347)
+        self.assertEqual(
+            {(card['productId'], card['printing']) for card in published_file['cards']},
+            {(card['productId'], card['printing']) for card in cards},
+        )
+        snapshot = json.loads((SITE / 'prismatic-evolutions-market-snapshot.json').read_text())
+        self.assertEqual(len(snapshot['cards']), 180)
+        self.assertEqual(snapshot['baseline'], {'date': '2025-01-17', 'usd': None, 'proposed': False})
+        self.assertFalse(any('Ball Pattern' in card['name'] for card in snapshot['cards']))
+        snapshot_ids = {card['key'].rsplit('-', 2)[-2] for card in snapshot['cards']}
+        self.assertEqual(snapshot_ids, {card['productId'] for card in index_cards})
+
 
 if __name__ == '__main__':
     unittest.main()
