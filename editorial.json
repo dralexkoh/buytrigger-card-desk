@@ -2212,6 +2212,73 @@
   ],
   "wire": [
     {
+      "id": "delta-reign-index-141-cards-2026-11-17",
+      "eventKey": "buytrigger-delta-reign-index-live-2026-11-17",
+      "date": "2026-11-17",
+      "displayDate": "16 Nov · Price guide",
+      "category": "Price action",
+      "kind": "Market price guide",
+      "title": "BuyTrigger.Cards now tracks all 141 Delta Reign cards, with a Raw index from 6 November",
+      "summary": "Delta Reign now has its own price page and index on BuyTrigger.Cards. It covers all 141 English cards in the set, one of each base printing, and every card carries its dated TCGplayer market guide for a raw copy.\n\nThe index works like a basket. It adds up those 141 guides and sets the total to 100 on 6 November, the day the set came out. On the latest prices, dated 16 November, it reads 88.18. In plain terms, one copy of every card in the set, priced at guide, costs about 12% less than it did on launch day. The whole basket comes to US$962.23.\n\nMost of that money sits at the top of the set. The Mega Rayquaza ex Special Illustration Rare 138/103 is the priciest card, at US$295.44. The gold Mega Hyper Rare 141/103 is next at US$210.88, after falling 19.2% over the past seven days.\n\nFor now the page shows 16 November prices, and they will stay on that date until the set's daily refresh is switched on. Launch-week prices swing a lot, so read the early moves with care. These are guide prices, not sales.\n\nPrices: TCGplayer market price via TCGCSV, Raw, USD, as of 16 November.",
+      "sourceLabel": "TCGplayer market price via TCGCSV",
+      "url": "https://tcgcsv.com/tcgplayer/3/24831/prices",
+      "checkedAt": "2026-11-17T15:17:57Z",
+      "sourcePublishedAt": "2026-11-16",
+      "ctaUrl": "/delta-reign-index.html",
+      "ctaLabel": "Open the Delta Reign index →",
+      "visual": "source-media",
+      "image": "assets/newsroom-20261117c/delta-reign-index-141-cards-hero.webp",
+      "imageAlt": "Curated graphic: the English Delta Reign booster box, the Mega Rayquaza ex Special Illustration Rare 138/103 and the gold Mega Rayquaza ex 141/103, beside the Raw index reading 88.18 on 16 November (100 on 6 November) for all 141 cards, a US$962.23 basket.",
+      "imageCredit": "Card and box images: TCGplayer. Card artwork © Pokémon.",
+      "imageSourceUrl": "https://tcgplayer-cdn.tcgplayer.com/product/712094_in_1000x1000.jpg",
+      "chase_cards": [
+        {
+          "name": "Mega Rayquaza ex",
+          "image": "assets/delta-chase-20261107/138-mega-rayquaza-sir-728061.jpg",
+          "alt": "Exact English Delta Reign Mega Rayquaza ex 138/103 Special Illustration Rare catalogue reference.",
+          "set": "Delta Reign",
+          "number": "138/103"
+        },
+        {
+          "name": "Gold Mega Rayquaza ex",
+          "image": "assets/delta-chase-20261107/141-mega-rayquaza-gold-728062.jpg",
+          "alt": "Exact English Delta Reign Mega Rayquaza ex 141/103 Mega Hyper Rare catalogue reference.",
+          "set": "Delta Reign",
+          "number": "141/103"
+        },
+        {
+          "name": "Raikou ex",
+          "image": "assets/delta-chase-20261107/136-raikou-sir-726574.jpg",
+          "alt": "Exact English Delta Reign Raikou ex 136/103 Special Illustration Rare catalogue reference.",
+          "set": "Delta Reign",
+          "number": "136/103"
+        },
+        {
+          "name": "Zinnia’s Trust",
+          "image": "assets/delta-chase-20261107/140-zinnia-trust-sir-726576.jpg",
+          "alt": "Exact English Delta Reign Zinnia’s Trust 140/103 Special Illustration Rare catalogue reference.",
+          "set": "Delta Reign",
+          "number": "140/103"
+        },
+        {
+          "name": "Mega Golurk ex",
+          "image": "assets/delta-chase-20261107/137-mega-golurk-sir-728060.jpg",
+          "alt": "Exact English Delta Reign Mega Golurk ex 137/103 Special Illustration Rare catalogue reference.",
+          "set": "Delta Reign",
+          "number": "137/103"
+        }
+      ],
+      "chase_cards_credit": "Card image: TCGplayer. Card artwork © Pokémon.",
+      "author": {
+        "id": "elliot-reed",
+        "name": "Elliot Reed",
+        "type": "named_ai_correspondent",
+        "label": "Correspondent",
+        "beat": "Markets & auctions"
+      },
+      "newsRevision": 1
+    },
+    {
       "id": "ex-star-series-three-sets-may-2027-rumour-pokebeach-2026-11-16",
       "eventKey": "pokebeach-ex-star-magma-heartbeat-lightning-impact-aurora-ripples-2026-11-16",
       "date": "2026-11-17",

@@ -1,0 +1,56 @@
+{
+  "reviewer": "Vault Newsroom",
+  "review_date": "2026-11-17",
+  "rights_basis": "TCGplayer catalogue references (Delta Reign booster box and exact English cards), consistent with prior Delta Reign briefs, composed on the owner-locked BuyTrigger.Cards brand canvas. Index figures read from the live page https://buytrigger.cards/delta-reign-index.html. No generated or redrawn franchise characters.",
+  "credit_line": "Card and box images: TCGplayer · Card artwork © Pokémon · Prices: TCGplayer via TCGCSV · Graphic: BuyTrigger.Cards",
+  "crops_checked": [
+    "full-size 1600x900",
+    "390px phone width"
+  ],
+  "generation_prompt": null,
+  "tool": "Pillow composition (/workspace/nr1117b-work/compose3.py)",
+  "reference_files": [],
+  "outputs": [
+    {
+      "path": "assets/newsroom-20261117c/delta-reign-index-141-cards-hero.webp",
+      "sha256": "66125fffc87952b680a297910888c5abee442afea62b2fc1422ee043311b7400",
+      "size_px": [
+        1600,
+        900
+      ],
+      "class": "permitted-media + brand-asset composition"
+    }
+  ],
+  "inputs": [
+    {
+      "path": "/workspace/nr1117b-work/src/dr-box-712094.jpg",
+      "source_url": "https://tcgplayer-cdn.tcgplayer.com/product/712094_in_1000x1000.jpg",
+      "sha256": "3fad6d78b3a7a5b5212772f39112385939496a2ad1c8b8ac34394119aecfe07a",
+      "class": "permitted-media (TCGplayer catalogue reference)"
+    },
+    {
+      "path": "/workspace/nr1117b-work/src/dr-728061.jpg",
+      "source_url": "https://tcgplayer-cdn.tcgplayer.com/product/728061_in_1000x1000.jpg",
+      "sha256": "aa46c56d3c1d73a760e54eb0071bacde4110d03ede036bc013706edb8ed99823",
+      "class": "permitted-media (TCGplayer catalogue reference)"
+    },
+    {
+      "path": "/workspace/nr1117b-work/src/dr-728062.jpg",
+      "source_url": "https://tcgplayer-cdn.tcgplayer.com/product/728062_in_1000x1000.jpg",
+      "sha256": "63bec14d7f8cf3ceaf36645e6107b46023416f310ed9f45428a11e94375742a9",
+      "class": "permitted-media (TCGplayer catalogue reference)"
+    },
+    {
+      "path": "/home/box/private/buytrigger/full/BuyTrigger-Cards-Grok-Handover-2026-11-10/workspace/brand/buytrigger-cards/skill/assets/buytrigger-badge-gengar-vaporeon-web.png",
+      "source_url": "owner brand asset",
+      "sha256": "303e7a82ef8ebe755375d864029ab623c55b6272c44cec15462539cc5c25a4fa",
+      "class": "brand-asset"
+    },
+    {
+      "path": "/workspace/nr1117c/assets/publisher-logo-600x60.png",
+      "source_url": "repo brand asset (wordmark)",
+      "sha256": "ae4ac346e762dfc13bb5a5b11211a6fc9d05f6117a3588e55a2b8ea2283d6aac",
+      "class": "brand-asset"
+    }
+  ]
+}
