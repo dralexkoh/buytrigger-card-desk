@@ -89,5 +89,39 @@ function createEngine(spec){
  return {positive,day,validate,series,latest,focus,rankedRaw,basket,segments,spec};
 }
 
-return {positive,day,keys,createEngine};
+function chaseEntries(roster){
+ if(!roster||!Array.isArray(roster.cards))return [];
+ return roster.cards.filter(card=>Number.isInteger(card.chase_rank)&&card.chase_rank>0).map(card=>({
+  chase_rank:card.chase_rank,
+  productId:String(card.productId||''),
+  name:typeof card.name==='string'?card.name:'',
+  number:typeof card.number==='string'?card.number:'',
+  image:typeof card.image==='string'?card.image:''
+ })).filter(card=>card.productId).sort((a,b)=>a.chase_rank-b.chase_rank||a.productId.localeCompare(b.productId));
+}
+
+function chaseHtml(roster,data,latest,helpers){
+ const esc=helpers.esc,money=helpers.money,date=helpers.date;
+ const byId=new Map((data.cards||[]).map(card=>{
+  const match=String(card.image||'').match(/(\d+)\.jpg$/);
+  return [match?match[1]:'',card];
+ }));
+ const tiles=[];
+ for(const entry of chaseEntries(roster)){
+  const card=byId.get(entry.productId);
+  if(!card)continue;
+  const point=latest(data,card.key);
+  const priced=point&&point[2]==='ok';
+  const name=String(card.name||'').replace(/ - .*$/,'');
+  const label=name+' '+card.number;
+  const eager=tiles.length<4;
+  const art=card.image?`<img src="${esc(card.image)}" alt="${esc(label)}" width="200" height="279" decoding="async" loading="${eager?'eager':'lazy'}" onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'chase-fallback',textContent:this.alt||'Card image unavailable'}))">`:`<span class="chase-fallback">${esc(name||'Card image unavailable')}</span>`;
+  tiles.push(`<button type="button" class="chase-tile" data-set-card="${esc(card.key)}" aria-label="Open ${esc(label)}"><span class="chase-art">${art}</span><strong>${esc(name)}</strong><span class="chase-number">${esc(card.number)}</span><span class="chase-price"><span>Raw guide</span><b>${priced?money(point[1]):'—'}</b></span><small>${point?esc(date(point[0])):'No observations'} · Raw guide</small></button>`);
+ }
+ if(!tiles.length)return '';
+ const note=`TCGplayer market guides via TCGCSV, as of ${esc(date(data.sourceDate))}. Guide prices, not verified sales or offers.`;
+ return `<section class="chase-band" aria-labelledby="chase-title"><div class="chase-head"><h2 id="chase-title">Chase cards</h2><p>${note}</p></div><div class="chase-strip">${tiles.join('')}</div></section>`;
+}
+
+return {positive,day,keys,createEngine,chaseEntries,chaseHtml};
 });
