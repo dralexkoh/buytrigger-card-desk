@@ -1,0 +1,183 @@
+{
+  "reviewer": "Vault Newsroom",
+  "review_date": "2026-11-17",
+  "rights_basis": "Official Pokémon media reused with credit (pokemon-card.com ex★ teaser key art via the official Pokémon Card Game Japan YouTube thumbnail embedded on pokemon-card.com/info/005613.html; pokemon.com English card images) and TCGplayer catalogue references (151 pack and cards), composed on the owner-locked BuyTrigger.Cards brand canvas. No generated or redrawn franchise characters.",
+  "credit_line": {
+    "ex-star": "Key art: The Pokémon Company / pokemon-card.com · Card image: The Pokémon Company / pokemon.com · Graphic: BuyTrigger.Cards",
+    "sv-151": "Card and pack images: TCGplayer · Card artwork © Pokémon · Prices: TCGplayer via TCGCSV · Graphic: BuyTrigger.Cards"
+  },
+  "crops_checked": [
+    "full-size 1600x900",
+    "390px phone width",
+    "site rail thumbnail 104x78, 72x64 and 48x40"
+  ],
+  "generation_prompt": null,
+  "tool": "Pillow composition (/workspace/nr1117b-work/compose.py, reusing /tmp/compose_heroes.py chrome); resize only for card assets",
+  "reference_files": [],
+  "outputs": [
+    {
+      "path": "assets/newsroom-20261117b/ex-star-series-hero-key-art-and-beasts.webp",
+      "sha256": "aaaaab281d80809f5d1067af316fbf325b0d6113d4c2aa229e94ff0c015e0cc2",
+      "size_px": [
+        1600,
+        900
+      ],
+      "class": "permitted-media + brand-asset composition"
+    },
+    {
+      "path": "assets/newsroom-20261117b/sv-151-pikachu-ir-since-30-sep-hero.webp",
+      "sha256": "3afe25212baa6d3523108fc50a9db28f5b4fbdb635d9b00ca6831d0bb4396931",
+      "size_px": [
+        1600,
+        900
+      ],
+      "class": "permitted-media + brand-asset composition"
+    },
+    {
+      "path": "assets/newsroom-20261117b/swsh12pt5gg_en_gg38.webp",
+      "sha256": "ad3474c33d875f45db914959f264c8311889f081cb4c25fab3504872ae1eee01",
+      "size_px": [
+        245,
+        342
+      ],
+      "class": "permitted-media (official pokemon.com card image)"
+    },
+    {
+      "path": "assets/newsroom-20261117b/swsh12pt5gg_en_gg36.webp",
+      "sha256": "827655754f24cd03636a8599441f9c6eff44d695a4c788fae309fe13a7bced6a",
+      "size_px": [
+        245,
+        342
+      ],
+      "class": "permitted-media (official pokemon.com card image)"
+    },
+    {
+      "path": "assets/newsroom-20261117b/swsh12pt5gg_en_gg41.webp",
+      "sha256": "87c2f430259ddd668992ba7783e295fd442638671dee09740ab414020d643208",
+      "size_px": [
+        245,
+        342
+      ],
+      "class": "permitted-media (official pokemon.com card image)"
+    },
+    {
+      "path": "assets/newsroom-20261117b/sv-151-173-513721.webp",
+      "sha256": "be30757d68c52e0a8a1c6939f292bb81deaa9696874fe57dd790b29b0fa2b9db",
+      "size_px": [
+        420,
+        586
+      ],
+      "class": "permitted-media (TCGplayer catalogue reference)"
+    },
+    {
+      "path": "assets/newsroom-20261117b/sv-151-166-516997.webp",
+      "sha256": "2f73fa4480fa243878d07a1a3956001b7d35ffcc5323793e44a4102f10efbb69",
+      "size_px": [
+        503,
+        700
+      ],
+      "class": "permitted-media (TCGplayer catalogue reference)"
+    },
+    {
+      "path": "assets/newsroom-20261117b/sv-151-201-517047.webp",
+      "sha256": "c868e2713b4443598dedb6fbc2e4e265a57a69ffd290301670d335cc3bc76662",
+      "size_px": [
+        503,
+        700
+      ],
+      "class": "permitted-media (TCGplayer catalogue reference)"
+    },
+    {
+      "path": "assets/newsroom-20261117b/sv-151-202-517048.webp",
+      "sha256": "abe2cbd5b053d2c195f6c72b52520b7af75696e2a2ecff885f5d9b7c4c9ad37b",
+      "size_px": [
+        503,
+        700
+      ],
+      "class": "permitted-media (TCGplayer catalogue reference)"
+    },
+    {
+      "path": "assets/newsroom-20261117b/sv-151-169-517018.webp",
+      "sha256": "34bc9eb494097253a99fd90753dff1e6698a927b00013c8be3172eed414c2f83",
+      "size_px": [
+        503,
+        700
+      ],
+      "class": "permitted-media (TCGplayer catalogue reference)"
+    }
+  ],
+  "inputs": [
+    {
+      "path": "/workspace/nr1117b-work/src/yt-max.jpg",
+      "source_url": "https://img.youtube.com/vi/BONiTSGvEp0/maxresdefault.jpg (official Pokémon Card Game Japan video embedded on https://www.pokemon-card.com/info/005613.html)",
+      "sha256": "2e934efcdefc7c8b10d38e77f5f60d833d63221a9b16721434eb16fc5cf8eeb5",
+      "class": "permitted-media (official key art)"
+    },
+    {
+      "path": "/workspace/nr1117b-work/src/pack151.jpg",
+      "source_url": "https://tcgplayer-cdn.tcgplayer.com/product/504467_in_1000x1000.jpg",
+      "sha256": "f6880238d36a178e3cc3e5d419c9c656ba35f7be6888afc4c1035accf64341c9",
+      "class": "permitted-media (TCGplayer catalogue reference)"
+    },
+    {
+      "path": "/home/box/private/buytrigger/full/BuyTrigger-Cards-Grok-Handover-2026-11-10/workspace/brand/buytrigger-cards/skill/assets/buytrigger-badge-gengar-vaporeon-web.png",
+      "source_url": "owner brand asset",
+      "sha256": "303e7a82ef8ebe755375d864029ab623c55b6272c44cec15462539cc5c25a4fa",
+      "class": "brand-asset"
+    },
+    {
+      "path": "/workspace/nr1117b/assets/publisher-logo-600x60.png",
+      "source_url": "repo brand asset (wordmark)",
+      "sha256": "ae4ac346e762dfc13bb5a5b11211a6fc9d05f6117a3588e55a2b8ea2283d6aac",
+      "class": "brand-asset"
+    },
+    {
+      "path": "/workspace/nr1117b-work/src/SWSH12PT5GG_EN_GG38.png",
+      "source_url": "https://assets.pokemon.com/assets/cms2/img/cards/web/SWSH12PT5GG/SWSH12PT5GG_EN_GG38.png",
+      "sha256": "10bed999043525ffd404a639ef9531f91eaa2caef61d50ff17926194c838b194",
+      "class": "permitted-media (official pokemon.com card image)"
+    },
+    {
+      "path": "/workspace/nr1117b-work/src/SWSH12PT5GG_EN_GG36.png",
+      "source_url": "https://assets.pokemon.com/assets/cms2/img/cards/web/SWSH12PT5GG/SWSH12PT5GG_EN_GG36.png",
+      "sha256": "fe9aab96cd3bfad86da7da2da52171ba29dcda433b5636299a879a49804f121f",
+      "class": "permitted-media (official pokemon.com card image)"
+    },
+    {
+      "path": "/workspace/nr1117b-work/src/SWSH12PT5GG_EN_GG41.png",
+      "source_url": "https://assets.pokemon.com/assets/cms2/img/cards/web/SWSH12PT5GG/SWSH12PT5GG_EN_GG41.png",
+      "sha256": "4da723444468dadd04b07af0f847aaf6b8d64e3f9be23de49c8f1656f9c7b79b",
+      "class": "permitted-media (official pokemon.com card image)"
+    },
+    {
+      "path": "/workspace/nr1117b-work/src/pikachu-513721.jpg",
+      "source_url": "https://tcgplayer-cdn.tcgplayer.com/product/513721_in_1000x1000.jpg",
+      "sha256": "57a9fd3b8d1536cb5e941d8f4753edae90c0111d4d2cd5001a81bc39288c7551",
+      "class": "permitted-media (TCGplayer catalogue reference)"
+    },
+    {
+      "path": "/workspace/nr1117b-work/src/tcg-516997.jpg",
+      "source_url": "https://tcgplayer-cdn.tcgplayer.com/product/516997_in_1000x1000.jpg",
+      "sha256": "8957a1f5465e2670339fa7acc4e0fe5c2dc346fc638003ee7fe285681799c4ba",
+      "class": "permitted-media (TCGplayer catalogue reference)"
+    },
+    {
+      "path": "/workspace/nr1117b-work/src/tcg-517047.jpg",
+      "source_url": "https://tcgplayer-cdn.tcgplayer.com/product/517047_in_1000x1000.jpg",
+      "sha256": "09ea0475f25b4aefa15f0206d126a7d5e640a706cbf3f505767d83e8e4e64a31",
+      "class": "permitted-media (TCGplayer catalogue reference)"
+    },
+    {
+      "path": "/workspace/nr1117b-work/src/tcg-517048.jpg",
+      "source_url": "https://tcgplayer-cdn.tcgplayer.com/product/517048_in_1000x1000.jpg",
+      "sha256": "50b85922070a0c44506b60a013ea1fb6ac3dee15087c9e69138eed58a80bcf5d",
+      "class": "permitted-media (TCGplayer catalogue reference)"
+    },
+    {
+      "path": "/workspace/nr1117b-work/src/tcg-517018.jpg",
+      "source_url": "https://tcgplayer-cdn.tcgplayer.com/product/517018_in_1000x1000.jpg",
+      "sha256": "ccf9b3b833d26c7df7b4e3a30b483ecd87965a4f2f952af97e899b202353c759",
+      "class": "permitted-media (TCGplayer catalogue reference)"
+    }
+  ]
+}

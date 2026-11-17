@@ -197,7 +197,10 @@ class StoryChaseStripTests(unittest.TestCase):
         index_text = json.dumps(index)
         self.assertIn('PSA 10 last sales are shown where a reviewed figure is available.', index_text)
         self.assertIn('PSA 9 is not shown.', index_text)
-        self.assertTrue(all(render_chase_cards(item) == '' for item in editorial['wire']))
+        for item in editorial['wire']:
+            # Wire briefs may carry a strip; any that do must validate.
+            if render_chase_cards(item):
+                validate_chase_cards(item, ROOT, item['id'])
         self.assertTrue(all('chase_cards' not in item or item['slug'] == article['slug'] for item in editorial['articles']))
         browser = (ROOT / 'editorial.js').read_text()
         self.assertTrue(browser.startswith('window.BT_EDITORIAL='))

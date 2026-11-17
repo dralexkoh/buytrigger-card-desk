@@ -2212,6 +2212,138 @@
   ],
   "wire": [
     {
+      "id": "ex-star-series-three-sets-may-2027-rumour-pokebeach-2026-11-16",
+      "eventKey": "pokebeach-ex-star-magma-heartbeat-lightning-impact-aurora-ripples-2026-11-16",
+      "date": "2026-11-17",
+      "displayDate": "16 Nov · Rumour",
+      "category": "Releases",
+      "kind": "Unconfirmed report",
+      "title": "Rumour: PokeBeach says the ex★ era starts with three sets in Japan on 21 May 2027",
+      "summary": "Pokémon’s next card era has a name, but no official date yet. At the closing ceremony of the 2026 World Championships on 31 August, the Pokémon Trading Card Game showed the logo for a new ex★ series. The Pokémon Company International’s press release that day said Raikou, Entei and Suicune are “coming soon” in it, and that “more details will be shared in the future”. That is still everything Pokémon has said.\n\nPokeBeach says it now knows more. In a report on 16 November, it said the series opens in Japan on 21 May 2027 with three sets on the same day: Magma Heartbeat, Lightning Impact and Aurora Ripples, one for each of the legendary beasts. The site credits a tip from @taibuppan, says it first spotted the three names as trademarks in October, and points out that three sets have never launched on one day before.\n\nWe checked pokemon-card.com, pokemon.com and The Pokémon Company International’s press schedule on 17 November. None of them list these sets or that date, so treat the names and the May date as PokeBeach’s report, not a confirmed launch.\n\nThe beasts already carry some of the hobby’s favourite modern cards. The newest, Delta Reign’s Raikou ex Special Illustration Rare, had a market guide of US$127.74 on 16 November, up from US$88.86 a week earlier. The 2023 Crown Zenith Galarian Gallery trio sits lower. Suicune V leads it at about US$57, and Entei V and Raikou V are both a little over US$40.\n\nPrices: TCGplayer market price via TCGCSV, Raw, USD, as of 16 November. A price guide, not a sale.",
+      "sourceLabel": "PokeBeach",
+      "url": "https://www.pokebeach.com/2026/11/magma-heartbeat-lightning-impact-and-aurora-ripples-to-launch-pokemon-ex%E2%98%85-series-in-may-2027",
+      "checkedAt": "2026-11-17T14:46:54Z",
+      "sourcePublishedAt": "2026-11-16",
+      "ctaUrl": "/prices/delta-reign/",
+      "ctaLabel": "Delta Reign prices, Raikou ex included →",
+      "visual": "release",
+      "image": "assets/newsroom-20261117b/ex-star-series-hero-key-art-and-beasts.webp",
+      "imageAlt": "Curated graphic: the official ex★ teaser key art from Pokémon Card Game Japan beside the official English Crown Zenith Galarian Gallery Entei V, Suicune V and Raikou V cards. The May 2027 sets are labelled as a PokeBeach rumour.",
+      "imageCredit": "Key art: The Pokémon Company / pokemon-card.com · Card image: The Pokémon Company / pokemon.com",
+      "imageSourceUrl": "https://www.pokemon-card.com/info/005613.html",
+      "chase_cards": [
+        {
+          "name": "Raikou ex",
+          "image": "assets/delta-chase-20261107/136-raikou-sir-726574.jpg",
+          "alt": "Exact English Delta Reign Raikou ex 136/103 Special Illustration Rare catalogue reference.",
+          "set": "Delta Reign",
+          "number": "136/103"
+        },
+        {
+          "name": "Suicune V",
+          "image": "assets/newsroom-20261117b/swsh12pt5gg_en_gg38.webp",
+          "alt": "Official English Crown Zenith Galarian Gallery Suicune V GG38/GG70 card image from pokemon.com.",
+          "set": "Crown Zenith",
+          "number": "GG38/GG70"
+        },
+        {
+          "name": "Entei V",
+          "image": "assets/newsroom-20261117b/swsh12pt5gg_en_gg36.webp",
+          "alt": "Official English Crown Zenith Galarian Gallery Entei V GG36/GG70 card image from pokemon.com.",
+          "set": "Crown Zenith",
+          "number": "GG36/GG70"
+        },
+        {
+          "name": "Raikou V",
+          "image": "assets/newsroom-20261117b/swsh12pt5gg_en_gg41.webp",
+          "alt": "Official English Crown Zenith Galarian Gallery Raikou V GG41/GG70 card image from pokemon.com.",
+          "set": "Crown Zenith",
+          "number": "GG41/GG70"
+        }
+      ],
+      "chase_cards_credit": "Card image: The Pokémon Company / pokemon.com (Crown Zenith); Raikou ex 136/103: TCGplayer. Card artwork © Pokémon.",
+      "author": {
+        "id": "hana-mori",
+        "name": "Hana Mori",
+        "type": "named_ai_correspondent",
+        "label": "Correspondent",
+        "beat": "Japan desk"
+      },
+      "newsRevision": 1
+    },
+    {
+      "id": "sv-151-pikachu-illustration-rare-down-since-30-sep-2026-11-17",
+      "eventKey": "sv-151-pikachu-ir-173-since-30-sep-2026-11-16",
+      "date": "2026-11-17",
+      "displayDate": "16 Nov · Price guide",
+      "category": "Price action",
+      "kind": "Market price guide",
+      "title": "The 151 Pikachu Illustration Rare is down 34% since 30 Sep",
+      "summary": "Of the ten cards collectors chase hardest in Scarlet & Violet 151, the Pikachu Illustration Rare has had the roughest autumn. Its TCGplayer market guide was US$76.96 on 30 September. By 16 November it was US$50.96, about a third lower.\n\nThe slide hasn’t stopped, either. On 9 November the same guide read US$56.91, so the last seven days alone account for a 10.5% fall.\n\nPikachu isn’t the only one. Every 151 chase card we can measure back to 30 September is lower now. The Bulbasaur Illustration Rare is down 28% since 30 Sep, and the Alakazam ex and Zapdos ex Special Illustration Rares are each down more than 20%. Charmeleon has held up best, just 2.1% lower, and it was also the top ten’s biggest riser over the past week.\n\nOne card is missing from that comparison. Charizard ex 199/165, the set’s top chase, has no 30 September point in our price history, so we’ve left it out rather than guess.\n\nThese are guide prices for raw, ungraded copies in mixed condition, not individual sales, and graded copies trade on a market of their own. Every card in the set is on our 151 price page.\n\nPrices: TCGplayer market price via TCGCSV, Raw, USD, as of 16 November.",
+      "sourceLabel": "TCGplayer market price via TCGCSV",
+      "url": "https://tcgcsv.com/tcgplayer/3/23237/prices",
+      "checkedAt": "2026-11-17T14:46:54Z",
+      "sourcePublishedAt": "2026-11-16",
+      "ctaUrl": "/prices/sv-151/",
+      "ctaLabel": "Every 151 card’s price →",
+      "visual": "source-media",
+      "image": "assets/newsroom-20261117b/sv-151-pikachu-ir-since-30-sep-hero.webp",
+      "imageAlt": "Curated graphic: the English Scarlet & Violet 151 booster pack and Pikachu Illustration Rare 173/165, with its TCGplayer market guide down 34% since 30 Sep, from US$76.96 to US$50.96, and 10.5% lower over the last seven days.",
+      "imageCredit": "Card and pack images: TCGplayer. Card artwork © Pokémon.",
+      "imageSourceUrl": "https://tcgplayer-cdn.tcgplayer.com/product/513721_in_1000x1000.jpg",
+      "chase_cards": [
+        {
+          "name": "Pikachu",
+          "image": "assets/newsroom-20261117b/sv-151-173-513721.webp",
+          "alt": "Exact English Scarlet & Violet 151 Pikachu 173/165 Illustration Rare catalogue reference.",
+          "set": "151",
+          "number": "173/165",
+          "link": "https://www.tcgplayer.com/product/513721"
+        },
+        {
+          "name": "Bulbasaur",
+          "image": "assets/newsroom-20261117b/sv-151-166-516997.webp",
+          "alt": "Exact English Scarlet & Violet 151 Bulbasaur 166/165 Illustration Rare catalogue reference.",
+          "set": "151",
+          "number": "166/165",
+          "link": "https://www.tcgplayer.com/product/516997"
+        },
+        {
+          "name": "Alakazam ex",
+          "image": "assets/newsroom-20261117b/sv-151-201-517047.webp",
+          "alt": "Exact English Scarlet & Violet 151 Alakazam ex 201/165 Special Illustration Rare catalogue reference.",
+          "set": "151",
+          "number": "201/165",
+          "link": "https://www.tcgplayer.com/product/517047"
+        },
+        {
+          "name": "Zapdos ex",
+          "image": "assets/newsroom-20261117b/sv-151-202-517048.webp",
+          "alt": "Exact English Scarlet & Violet 151 Zapdos ex 202/165 Special Illustration Rare catalogue reference.",
+          "set": "151",
+          "number": "202/165",
+          "link": "https://www.tcgplayer.com/product/517048"
+        },
+        {
+          "name": "Charmeleon",
+          "image": "assets/newsroom-20261117b/sv-151-169-517018.webp",
+          "alt": "Exact English Scarlet & Violet 151 Charmeleon 169/165 Illustration Rare catalogue reference.",
+          "set": "151",
+          "number": "169/165",
+          "link": "https://www.tcgplayer.com/product/517018"
+        }
+      ],
+      "chase_cards_credit": "Card image: TCGplayer. Card artwork © Pokémon.",
+      "author": {
+        "id": "elliot-reed",
+        "name": "Elliot Reed",
+        "type": "named_ai_correspondent",
+        "label": "Correspondent",
+        "beat": "Markets & auctions"
+      },
+      "newsRevision": 1
+    },
+    {
       "id": "hadou-seeker-japan-pack-lucario-2026-11-17",
       "eventKey": "pokemon-jp-hadou-seeker-official-pack-promo-2026-11-17",
       "date": "2026-11-17",
