@@ -14,6 +14,7 @@ from unittest import mock
 import daily_refresh as D
 import run_daily_pipeline as P
 import test_daily_refresh as fixtures
+from commit_refresh import reject_unexpected
 
 
 class PublicPipelineTests(unittest.TestCase):
@@ -149,6 +150,25 @@ class PublicPipelineTests(unittest.TestCase):
         self.assertTrue(receipt["sourceFailed"])
         self.assertEqual(status["requestCount"], 1)
         self.assertIn("already retained", status["lastError"])
+
+    def test_successful_refresh_promotes_the_cardz_allowlist(self):
+        output = self.root / "cardz-output"
+        for name in [*D.FILES, "refresh-status.json"]:
+            target = output / name
+            target.parent.mkdir(parents=True, exist_ok=True)
+            target.write_text("{}\n")
+        cardz = output / "data/psa10/cardz-approved.json"
+        cardz.parent.mkdir(parents=True)
+        cardz.write_text("[]\n")
+        selected = P.apply_output(output, self.root / "cardz-stage", False)
+        self.assertIn("data/psa10/cardz-approved.json", selected)
+        self.assertEqual((self.root / "cardz-stage/data/psa10/cardz-approved.json").read_text(), "[]\n")
+        reject_unexpected(selected)
+        failed = P.apply_output(output, self.root / "cardz-failed-stage", True)
+        self.assertNotIn("data/psa10/cardz-approved.json", failed)
+        with self.assertRaises(SystemExit) as caught:
+            reject_unexpected([*selected, "data/psa10/cardz-snapshot.json"])
+        self.assertEqual(caught.exception.code, "Unexpected pipeline commit path")
 
     def test_apply_failure_rejects_changed_existing_revision_receipt(self):
         output, stage = self.root / "output", self.root / "stage"
