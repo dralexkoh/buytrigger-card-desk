@@ -63,3 +63,42 @@ test('chase cards follow roster chase_rank, with 1 at the top', () => {
   const swapped = {cards: [{productId: '2', chase_rank: 2, name: 'B', number: '2'}, {productId: '1', chase_rank: 1, name: 'A', number: '1'}, {productId: '9', name: 'Skip'}]};
   assert.deepEqual(chaseEntries(swapped).map((card) => card.productId), ['1', '2']);
 });
+
+test('Prismatic index view stays at 180 while ball patterns stay out of the gallery', () => {
+  const snapshot = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'prismatic-evolutions-market-snapshot.json'), 'utf8'));
+  const engine = createEngine({
+    index: 'prismatic-evolutions',
+    cardCount: 180,
+    baselineDate: '2025-01-17',
+    imagePattern: 'assets/prismatic-evolutions/[0-9]+\\.jpg',
+    keyPattern: 'en-prismatic-evolutions-[0-9]+-(holofoil|normal)',
+    sourcePattern: 'https://tcgcsv\\.com/(?:archive/tcgplayer/prices-\\d{4}-\\d{2}-\\d{2}\\.ppmd\\.7z|tcgplayer/3/23821/prices)',
+    allowedSets: ['SV: Prismatic Evolutions'],
+    allowedPrintings: ['Holofoil', 'Normal'],
+    gallery: {
+      secret: (card) => parseInt(card.number, 10) > 131,
+      'special-illustration': (card) => card.rarity === 'Special Illustration Rare',
+      'ace-spec': (card) => card.rarity === 'ACE SPEC Rare',
+      hyper: (card) => card.rarity === 'Hyper Rare',
+    },
+  });
+  const generated = new Date();
+  const data = engine.validate({
+    ...snapshot,
+    generatedAt: generated.toISOString(),
+    expiresAt: new Date(generated.getTime() + 9 * 60 * 1000).toISOString(),
+  });
+  const focus = engine.focus(data);
+  assert.equal(data.cards.length, 180);
+  assert.equal(focus.all.length, 180);
+  assert.equal(data.baseline.date, '2025-01-17');
+  assert.equal(data.baseline.usd, null);
+  assert.equal(data.baseline.proposed, false);
+  assert.equal(data.cards.some((card) => /ball pattern/i.test(card.name)), false);
+  for (const group of Object.values(focus)) {
+    assert.equal(group.some((card) => /ball pattern/i.test(card.name)), false);
+  }
+  const cache = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'data/market-cache/prismatic-evolutions-current.json'), 'utf8'));
+  assert.equal(cache.cards.length, 347);
+  assert.equal(cache.index, 'prismatic-evolutions');
+});
