@@ -1,0 +1,132 @@
+{
+  "reviewer": "Vault Newsroom",
+  "review_date": "2026-11-17",
+  "rights_basis": "TCGplayer catalogue references (exact English sealed product and cards), consistent with prior Delta Reign, 151 and Prismatic briefs, composed on the owner-locked BuyTrigger.Cards brand canvas. Prices from TCGCSV (TCGplayer market price). Index status read from the live index pages. No generated or redrawn franchise characters.",
+  "credit_line": "Card and box/pack images: TCGplayer · Card artwork © Pokémon · Prices: TCGplayer via TCGCSV · Graphic: BuyTrigger.Cards",
+  "crops_checked": [
+    "full-size 1600x900",
+    "390px phone width"
+  ],
+  "generation_prompt": null,
+  "tool": "Pillow composition (/workspace/nr1117d-work/compose.py, helpers /tmp/compose_heroes.py)",
+  "reference_files": [],
+  "outputs": [
+    {
+      "path": "assets/newsroom-20261117d/delta-reign-raikou-ex-sir-7-day-hero.webp",
+      "sha256": "dcf65a3681c1678591dcb34e300ff5b4ef5ee9597d9ef268b903070dc24c53e7",
+      "size_px": [
+        1600,
+        900
+      ],
+      "class": "permitted-media + brand-asset composition",
+      "inputs": [
+        {
+          "path": "/workspace/nr1117d-work/src/dr-box-712094.jpg",
+          "source_url": "https://tcgplayer-cdn.tcgplayer.com/product/712094_in_1000x1000.jpg",
+          "sha256": "3fad6d78b3a7a5b5212772f39112385939496a2ad1c8b8ac34394119aecfe07a",
+          "class": "permitted-media (TCGplayer catalogue reference)"
+        },
+        {
+          "path": "/workspace/nr1117d-work/src/dr-726574.jpg",
+          "source_url": "https://tcgplayer-cdn.tcgplayer.com/product/726574_in_1000x1000.jpg",
+          "sha256": "baae80d136c1e45b235af8e384e5c20af2fcc417a85ef2efea4a26b27756bf2f",
+          "class": "permitted-media (TCGplayer catalogue reference)"
+        },
+        {
+          "path": "/home/box/private/buytrigger/full/BuyTrigger-Cards-Grok-Handover-2026-11-10/workspace/brand/buytrigger-cards/skill/assets/buytrigger-badge-gengar-vaporeon-web.png",
+          "source_url": "owner brand asset",
+          "sha256": "303e7a82ef8ebe755375d864029ab623c55b6272c44cec15462539cc5c25a4fa",
+          "class": "brand-asset"
+        },
+        {
+          "path": "/workspace/nr1117d/assets/publisher-logo-600x60.png",
+          "source_url": "repo brand asset (wordmark)",
+          "sha256": "ae4ac346e762dfc13bb5a5b11211a6fc9d05f6117a3588e55a2b8ea2283d6aac",
+          "class": "brand-asset"
+        }
+      ]
+    },
+    {
+      "path": "assets/newsroom-20261117d/sv-151-price-page-207-cards-hero.webp",
+      "sha256": "974c4607e4a6818db6776d176214fdc6379b54fa4198e0e812f08c47692e5d32",
+      "size_px": [
+        1600,
+        900
+      ],
+      "class": "permitted-media + brand-asset composition",
+      "inputs": [
+        {
+          "path": "/workspace/nr1117d-work/src/pack151.jpg",
+          "source_url": "https://tcgplayer-cdn.tcgplayer.com/product/504467_in_1000x1000.jpg",
+          "sha256": "f6880238d36a178e3cc3e5d419c9c656ba35f7be6888afc4c1035accf64341c9",
+          "class": "permitted-media (TCGplayer catalogue reference)"
+        },
+        {
+          "path": "/workspace/nr1117d-work/src/tcg-517045.jpg",
+          "source_url": "https://tcgplayer-cdn.tcgplayer.com/product/517045_in_1000x1000.jpg",
+          "sha256": "49ab157be44087673a1e9aca4ab8b3bc91d5740519a73688ca92c035a813d11e",
+          "class": "permitted-media (TCGplayer catalogue reference)"
+        },
+        {
+          "path": "/workspace/nr1117d-work/src/tcg-517044.jpg",
+          "source_url": "https://tcgplayer-cdn.tcgplayer.com/product/517044_in_1000x1000.jpg",
+          "sha256": "f73391c888288bf682e3c40985b5b971b5e3397a629d8e10d216764cc280c844",
+          "class": "permitted-media (TCGplayer catalogue reference)"
+        },
+        {
+          "path": "/home/box/private/buytrigger/full/BuyTrigger-Cards-Grok-Handover-2026-11-10/workspace/brand/buytrigger-cards/skill/assets/buytrigger-badge-gengar-vaporeon-web.png",
+          "source_url": "owner brand asset",
+          "sha256": "303e7a82ef8ebe755375d864029ab623c55b6272c44cec15462539cc5c25a4fa",
+          "class": "brand-asset"
+        },
+        {
+          "path": "/workspace/nr1117d/assets/publisher-logo-600x60.png",
+          "source_url": "repo brand asset (wordmark)",
+          "sha256": "ae4ac346e762dfc13bb5a5b11211a6fc9d05f6117a3588e55a2b8ea2283d6aac",
+          "class": "brand-asset"
+        }
+      ]
+    },
+    {
+      "path": "assets/newsroom-20261117d/prismatic-evolutions-price-page-180-cards-hero.webp",
+      "sha256": "780fd34d514201643f9972a52eef42e2e8fc476308a3102ed476d2eda3c2e6fd",
+      "size_px": [
+        1600,
+        900
+      ],
+      "class": "permitted-media + brand-asset composition",
+      "inputs": [
+        {
+          "path": "/workspace/nr1117d-work/src/pe-pack-593294.jpg",
+          "source_url": "https://tcgplayer-cdn.tcgplayer.com/product/593294_in_1000x1000.jpg",
+          "sha256": "b9d2d93f5ae845e2ac76f30dddc0bf4cfe4d819fa3a2161cbdbfbb226ec617ff",
+          "class": "permitted-media (TCGplayer catalogue reference)"
+        },
+        {
+          "path": "/workspace/nr1117d-work/src/tcg-610516.jpg",
+          "source_url": "https://tcgplayer-cdn.tcgplayer.com/product/610516_in_1000x1000.jpg",
+          "sha256": "a4043f249af0ffb52f4676649c7aa224dc8158c76f1ca0ecf1b8cb88d0ed9b86",
+          "class": "permitted-media (TCGplayer catalogue reference)"
+        },
+        {
+          "path": "/workspace/nr1117d-work/src/tcg-610511.jpg",
+          "source_url": "https://tcgplayer-cdn.tcgplayer.com/product/610511_in_1000x1000.jpg",
+          "sha256": "a155120165a518ee1db0264b009a5ec2ec2a6224bfe0c967ff9c5e4d1955c1a4",
+          "class": "permitted-media (TCGplayer catalogue reference)"
+        },
+        {
+          "path": "/home/box/private/buytrigger/full/BuyTrigger-Cards-Grok-Handover-2026-11-10/workspace/brand/buytrigger-cards/skill/assets/buytrigger-badge-gengar-vaporeon-web.png",
+          "source_url": "owner brand asset",
+          "sha256": "303e7a82ef8ebe755375d864029ab623c55b6272c44cec15462539cc5c25a4fa",
+          "class": "brand-asset"
+        },
+        {
+          "path": "/workspace/nr1117d/assets/publisher-logo-600x60.png",
+          "source_url": "repo brand asset (wordmark)",
+          "sha256": "ae4ac346e762dfc13bb5a5b11211a6fc9d05f6117a3588e55a2b8ea2283d6aac",
+          "class": "brand-asset"
+        }
+      ]
+    }
+  ]
+}
