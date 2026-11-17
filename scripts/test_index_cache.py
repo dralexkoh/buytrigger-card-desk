@@ -2,6 +2,8 @@
 import io
 import json
 import shutil
+import subprocess
+import sys
 import tempfile
 import unittest
 from contextlib import redirect_stdout
@@ -251,6 +253,32 @@ class IndexCacheTests(unittest.TestCase):
             reject_unexpected([*paths, 'data/psa10/cardz-snapshot.json'])
         self.assertEqual(caught.exception.code, 'Unexpected pipeline commit path')
 
+    def test_commit_refresh_dry_run_accepts_promoted_paths_without_pushing(self):
+        receipt = self.root / 'dry-receipt.json'
+        paths = [
+            'catalogue.js', 'refresh-status.json',
+            'data/market-cache/delta-reign-current.json',
+            'data/market-cache/sv-151-current.json',
+            'data/market-cache/prismatic-evolutions-current.json',
+            'data/refresh/state.json', 'data/psa10/cardz-approved.json',
+        ]
+        receipt.write_text(json.dumps({'promotedPaths': paths}))
+        proc = subprocess.run(
+            [sys.executable, str(SITE / 'scripts/commit_refresh.py'), '--receipt', str(receipt), '--dry-run'],
+            capture_output=True, text=True,
+        )
+        self.assertEqual(proc.returncode, 0, proc.stderr)
+        self.assertIn('No commit and no push', proc.stdout)
+        for name in paths:
+            self.assertIn(name, proc.stdout)
+        rejected = self.root / 'bad-receipt.json'
+        rejected.write_text(json.dumps({'promotedPaths': paths + ['data/market-rosters/delta-reign.json']}))
+        failed = subprocess.run(
+            [sys.executable, str(SITE / 'scripts/commit_refresh.py'), '--receipt', str(rejected), '--dry-run'],
+            capture_output=True, text=True,
+        )
+        self.assertNotEqual(failed.returncode, 0)
+        self.assertIn('Unexpected pipeline commit path', failed.stderr)
 
     def test_delta_reign_roster_cache_matches_identity_fields(self):
         card = json.loads((SITE / 'data/market-rosters/delta-reign.json').read_text())['cards'][0]

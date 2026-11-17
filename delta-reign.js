@@ -20,13 +20,14 @@ const E=Factory.createEngine({
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const money=n=>new Intl.NumberFormat('en-US',{style:'currency',currency:'USD'}).format(n);
 const date=s=>new Date(s+'T12:00:00Z').toLocaleDateString('en-GB',{day:'numeric',month:'short',year:'numeric',timeZone:'UTC'});
-let epoch=0,data=null,controller=null,timer=null,expiry=null,active=false,search='',collection='all',period='All',sort='default',returnFocus=null;
+let epoch=0,data=null,chaseRoster=null,controller=null,timer=null,expiry=null,active=false,search='',collection='all',period='All',sort='default',returnFocus=null;
 const CREDIT='Card image: The Pokémon Company / pokemon.com';
 const heroes=[[728061,'Mega Rayquaza ex 138/103'],[728062,'Mega Rayquaza ex 141/103'],[726574,'Raikou ex 136/103']];
 const galleryLabels={all:'All 141 cards',top20:'Top 20 by Raw',secret:'Secret rares', 'special-illustration':'Special Illustration Rares',illustration:'Illustration Rares','mega-hyper':'Mega Hyper Rare'};
 
 function page(){
  return `
+ <div id="chase-slot"></div>
  <section class="page-intro thirtieth-intro">
   <a class="back-link" href="market.html">← All markets</a>
   <div class="thirtieth-hero">
@@ -166,6 +167,18 @@ async function loadSnapshot(signal){
  return value;
 }
 
+async function loadRoster(signal){
+ if(chaseRoster)return chaseRoster;
+ const res=await fetch('data/market-rosters/'+E.spec.index+'.json',{cache:'no-store',signal});
+ if(!res.ok)throw Error();
+ chaseRoster=await res.json();
+ return chaseRoster;
+}
+function drawChase(){
+ const slot=document.getElementById('chase-slot');
+ if(!slot)return;
+ slot.innerHTML=data&&chaseRoster?Factory.chaseHtml(chaseRoster,data,E.latest,{esc,money,date}):'';
+}
 async function load(){
  if(!active)return;
  const token=++epoch;
@@ -200,6 +213,9 @@ async function load(){
   if(!value)value=await loadSnapshot();
   if(!active||token!==epoch)return;
   data=value;
+  try{await loadRoster(controller.signal);}catch(err){}
+  if(!active||token!==epoch)return;
+  drawChase();
   draw();
   drawCards();
   clearTimeout(expiry);

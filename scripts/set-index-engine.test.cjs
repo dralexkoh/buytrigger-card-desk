@@ -45,3 +45,21 @@ test('Delta Reign snapshot validates and ranks the three most expensive cards fi
   assert.equal(Number(latest.usd.toFixed(2)), 962.23);
   assert.ok(latest.value < 100);
 });
+
+test('chase cards follow roster chase_rank, with 1 at the top', () => {
+  const {chaseEntries} = require('../set-index-engine.js');
+  const expected = {
+    'delta-reign': ['728061', '728062', '726574', '726567', '726576', '728060', '727592', '726565', '726575', '726563'],
+    'sv-151': ['517045', '517046', '517044', '502556', '502549', '517048', '517018', '517047', '516997', '513721'],
+    'prismatic-evolutions': ['610516', '610511', '610499', '610510', '610505', '610504', '610501', '610508', '610522', '610517'],
+  };
+  for (const [slug, ids] of Object.entries(expected)) {
+    const roster = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'data/market-rosters', slug + '.json'), 'utf8'));
+    assert.equal(roster.chase_source, 'keeper-2026-11-17');
+    const entries = chaseEntries(roster);
+    assert.deepEqual(entries.map((card) => card.productId), ids);
+    assert.deepEqual(entries.map((card) => card.chase_rank), [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
+  }
+  const swapped = {cards: [{productId: '2', chase_rank: 2, name: 'B', number: '2'}, {productId: '1', chase_rank: 1, name: 'A', number: '1'}, {productId: '9', name: 'Skip'}]};
+  assert.deepEqual(chaseEntries(swapped).map((card) => card.productId), ['1', '2']);
+});

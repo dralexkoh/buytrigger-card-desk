@@ -1,6 +1,7 @@
 {
   "schemaVersion": 1,
   "index": "prismatic-evolutions",
+ "chase_source": "keeper-2026-11-17",
   "approvedBy": "Alex Koh, 17 Nov 2026 07:22 Europe/London: Prismatic roster is 180 cards, without the ball patterns. Follows the 17 Nov 2026 public-safe handoff: every English base printing (Holofoil, or Normal where no holo exists), leaving out 167 Pok\u00e9 Ball and Master Ball pattern versions.",
   "sourceList": "TCGCSV group 23821 SV: Prismatic Evolutions products, 2026-11-16 build (DB index loaded 17 Nov 2026, write-16/17/18)",
   "excluded": [
@@ -2440,6 +2441,7 @@
     },
     {
       "productId": "610499",
+      "chase_rank": 3,
       "groupId": "23821",
       "name": "Leafeon ex - 144/131",
       "set": "SV: Prismatic Evolutions",
@@ -2460,6 +2462,7 @@
     },
     {
       "productId": "610501",
+      "chase_rank": 7,
       "groupId": "23821",
       "name": "Flareon ex - 146/131",
       "set": "SV: Prismatic Evolutions",
@@ -2490,6 +2493,7 @@
     },
     {
       "productId": "610504",
+      "chase_rank": 6,
       "groupId": "23821",
       "name": "Vaporeon ex - 149/131",
       "set": "SV: Prismatic Evolutions",
@@ -2500,6 +2504,7 @@
     },
     {
       "productId": "610505",
+      "chase_rank": 5,
       "groupId": "23821",
       "name": "Glaceon ex - 150/131",
       "set": "SV: Prismatic Evolutions",
@@ -2530,6 +2535,7 @@
     },
     {
       "productId": "610508",
+      "chase_rank": 8,
       "groupId": "23821",
       "name": "Jolteon ex - 153/131",
       "set": "SV: Prismatic Evolutions",
@@ -2550,6 +2556,7 @@
     },
     {
       "productId": "610510",
+      "chase_rank": 4,
       "groupId": "23821",
       "name": "Espeon ex - 155/131",
       "set": "SV: Prismatic Evolutions",
@@ -2560,6 +2567,7 @@
     },
     {
       "productId": "610511",
+      "chase_rank": 2,
       "groupId": "23821",
       "name": "Sylveon ex - 156/131",
       "set": "SV: Prismatic Evolutions",
@@ -2610,6 +2618,7 @@
     },
     {
       "productId": "610516",
+      "chase_rank": 1,
       "groupId": "23821",
       "name": "Umbreon ex - 161/131",
       "set": "SV: Prismatic Evolutions",
@@ -2620,6 +2629,7 @@
     },
     {
       "productId": "610517",
+      "chase_rank": 10,
       "groupId": "23821",
       "name": "Roaring Moon ex",
       "set": "SV: Prismatic Evolutions",
@@ -2670,6 +2680,7 @@
     },
     {
       "productId": "610522",
+      "chase_rank": 9,
       "groupId": "23821",
       "name": "Eevee ex - 167/131",
       "set": "SV: Prismatic Evolutions",

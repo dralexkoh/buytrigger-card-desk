@@ -34,10 +34,16 @@ def reject_unexpected(paths):
 def main():
     parser=argparse.ArgumentParser()
     parser.add_argument('--receipt',type=Path,required=True)
+    parser.add_argument('--dry-run',action='store_true',help='Validate promoted paths without committing or pushing')
     args=parser.parse_args()
     receipt=json.loads(args.receipt.read_text())
     paths=receipt['promotedPaths']
     reject_unexpected(paths)
+    if args.dry_run:
+        print('Dry run: promoted paths accepted. No commit and no push.')
+        for name in paths:
+            print(name)
+        return
     git('fetch','origin','main')
     if git('rev-parse','HEAD').stdout!=git('rev-parse','origin/main').stdout:
         raise SystemExit('Remote main advanced; no data commit or deployment made. Rerun from current main.')

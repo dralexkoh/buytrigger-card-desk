@@ -110,6 +110,19 @@
     const count = doc.querySelector('#price-count');
     const empty = doc.querySelector('#price-empty');
     if (!table || !filter || !sort || !count) return;
+    const chase = doc.querySelector('#chase-cards');
+    if (chase && chase.dataset.bound !== 'true') {
+      chase.dataset.bound = 'true';
+      chase.addEventListener('click', event => {
+        const tile = event.target.closest('[data-chase-card]');
+        if (!tile) return;
+        const row = doc.getElementById('card-' + tile.getAttribute('data-chase-card'));
+        if (!row) return;
+        doc.querySelectorAll('.price-row-focus').forEach(node => node.classList.remove('price-row-focus'));
+        row.classList.add('price-row-focus');
+        row.scrollIntoView({block: 'center'});
+      });
+    }
     const body = table.tBodies[0];
 
     function apply() {
