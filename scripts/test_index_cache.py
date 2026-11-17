@@ -11,7 +11,7 @@ from pathlib import Path
 import daily_refresh as D
 import index_cache
 import run_daily_pipeline as P
-from commit_refresh import promoted_path_allowed
+from commit_refresh import promoted_path_allowed, reject_unexpected
 
 SITE = Path(__file__).resolve().parents[1]
 SHA = 'a' * 64
@@ -221,12 +221,31 @@ class IndexCacheTests(unittest.TestCase):
         self.assertFalse(promoted_path_allowed('data/market-cache/thirtieth-anniversary-current.json'))
         self.assertTrue(promoted_path_allowed('catalogue.js'))
         self.assertTrue(promoted_path_allowed('data/refresh/observations/2026-11-13/raw.json'))
+        self.assertTrue(promoted_path_allowed('data/psa10/cardz-approved.json'))
+        self.assertTrue(promoted_path_allowed('data/refresh/psa10-holds/2026-11-16.json'))
+        self.assertFalse(promoted_path_allowed('data/psa10/other.json'))
+        self.assertFalse(promoted_path_allowed('data/psa10/cardz-approved.json.bak'))
+        self.assertFalse(promoted_path_allowed('data/psa10/nested/cardz-approved.json'))
         self.assertFalse(promoted_path_allowed('data/market-cache/tcg-modern-current.json.bak'))
         self.assertFalse(promoted_path_allowed('data/market-cache/nested/tcg-modern-current.json'))
         self.assertFalse(promoted_path_allowed('data/market-rosters/tcg-modern.json'))
         self.assertFalse(promoted_path_allowed('../data/market-cache/tcg-modern-current.json'))
         self.assertFalse(promoted_path_allowed('/tmp/tcg-modern-current.json'))
         self.assertFalse(promoted_path_allowed('data/refresh/state.txt'))
+
+    def test_cardz_allowlist_commit_passes_and_an_unknown_path_still_fails(self):
+        paths = [
+            'catalogue.js', 'market-history.js', 'market-release.json', 'market-sources.json',
+            'top50-data.js', 'top50-release.json', 'top50-sources.json', 'refresh-status.json',
+            'data/market-cache/thirtieth-current.json', 'data/market-cache/tcg-modern-current.json',
+            'bluechip-collection-data.js', 'bluechip-collection-sources.json',
+            'data/refresh/state.json', 'data/refresh/psa10-holds/2026-11-17.json',
+            'data/psa10/cardz-approved.json',
+        ]
+        reject_unexpected(paths)
+        with self.assertRaises(SystemExit) as caught:
+            reject_unexpected([*paths, 'data/psa10/cardz-snapshot.json'])
+        self.assertEqual(caught.exception.code, 'Unexpected pipeline commit path')
 
 
 if __name__ == '__main__':
