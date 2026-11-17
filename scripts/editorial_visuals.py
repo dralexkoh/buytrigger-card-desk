@@ -3,6 +3,7 @@ from pathlib import Path
 from urllib.parse import urlsplit
 import json,re
 from bs4 import BeautifulSoup
+from chase_cards import validate_chase_cards
 
 STYLES={'editorial-ink-v1','family-anime-v1','brand-graphic-v1','japan-editorial-v1','source-media-v1'}
 WIRE_MEDIA=('image','imageAlt','imageCredit','imageSourceUrl')
@@ -36,8 +37,10 @@ def validate_editorial_visuals(editorial,root):
     root=Path(root).resolve()
     for wire in editorial.get('wire',[]):
         validate_wire_media(wire,root)
+        validate_chase_cards(wire, root, wire.get('id', 'wire story'))
     for article in editorial['articles']:
         slug=article.get('slug','unnamed')
+        validate_chase_cards(article, root, slug)
         for field in ('image','imageAlt','imageCredit','visualStyle'):
             if not isinstance(article.get(field),str) or not article[field].strip():
                 raise ValueError(f'{slug}: missing editorial {field}')
