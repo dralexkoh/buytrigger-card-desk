@@ -47,6 +47,7 @@ def description(cards, date_text):
 
 SPEC = {
     'snapshot': SNAPSHOT,
+    'roster': Path('data/market-rosters/sv-151.json'),
     'page_rel': PAGE_REL,
     'url': PRICE_PAGE_URL,
     'campaign': CAMPAIGN,

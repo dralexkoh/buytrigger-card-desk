@@ -1,6 +1,7 @@
 {
  "schemaVersion": 1,
  "index": "delta-reign",
+ "chase_source": "keeper-2026-11-17",
  "approvedBy": "Alex Koh, 17 Nov 2026 00:38 Europe/London (\"Bring Delta Reign on ... build it to a similar spec ... The other one you can create is the 151 Prismatic\")",
  "sourceList": "TCGCSV group 24831 ME06: Delta Reign products, 2026-11-16 build (DB index loaded 17 Nov 2026, write-16/17/18)",
  "excluded": [],
@@ -537,6 +538,7 @@
   },
   {
    "productId": "726563",
+   "chase_rank": 10,
    "groupId": "24831",
    "name": "Groudon - 111/103",
    "set": "ME06: Delta Reign",
@@ -557,6 +559,7 @@
   },
   {
    "productId": "726565",
+   "chase_rank": 8,
    "groupId": "24831",
    "name": "Eevee - 114/103",
    "set": "ME06: Delta Reign",
@@ -577,6 +580,7 @@
   },
   {
    "productId": "726567",
+   "chase_rank": 4,
    "groupId": "24831",
    "name": "Kecleon - 117/103",
    "set": "ME06: Delta Reign",
@@ -647,6 +651,7 @@
   },
   {
    "productId": "726574",
+   "chase_rank": 3,
    "groupId": "24831",
    "name": "Raikou ex",
    "set": "ME06: Delta Reign",
@@ -657,6 +662,7 @@
   },
   {
    "productId": "726575",
+   "chase_rank": 9,
    "groupId": "24831",
    "name": "Aarune - 139/103",
    "set": "ME06: Delta Reign",
@@ -667,6 +673,7 @@
   },
   {
    "productId": "726576",
+   "chase_rank": 5,
    "groupId": "24831",
    "name": "Zinnia's Trust - 140/103",
    "set": "ME06: Delta Reign",
@@ -997,6 +1004,7 @@
   },
   {
    "productId": "727592",
+   "chase_rank": 7,
    "groupId": "24831",
    "name": "Mega Golisopod ex - 135/103",
    "set": "ME06: Delta Reign",
@@ -1387,6 +1395,7 @@
   },
   {
    "productId": "728060",
+   "chase_rank": 6,
    "groupId": "24831",
    "name": "Mega Golurk ex - 137/103",
    "set": "ME06: Delta Reign",
@@ -1397,6 +1406,7 @@
   },
   {
    "productId": "728061",
+   "chase_rank": 1,
    "groupId": "24831",
    "name": "Mega Rayquaza ex - 138/103",
    "set": "ME06: Delta Reign",
@@ -1407,6 +1417,7 @@
   },
   {
    "productId": "728062",
+   "chase_rank": 2,
    "groupId": "24831",
    "name": "Mega Rayquaza ex - 141/103",
    "set": "ME06: Delta Reign",

@@ -1,6 +1,7 @@
 {
   "schemaVersion": 1,
   "index": "sv-151",
+ "chase_source": "keeper-2026-11-17",
   "approvedBy": "Alex Koh, 17 Nov 2026 00:38 Europe/London (\"Bring Delta Reign on ... build it to a similar spec ... The other one you can create is the 151 Prismatic\")",
   "sourceList": "TCGCSV group 23237 SV: Scarlet & Violet 151 products, 2026-11-16 build (DB index loaded 17 Nov 2026, write-16/17/18)",
   "excluded": [
@@ -24,6 +25,7 @@
     },
     {
       "productId": "502549",
+      "chase_rank": 5,
       "groupId": "23237",
       "name": "Squirtle - 170/165",
       "set": "SV: Scarlet & Violet 151",
@@ -94,6 +96,7 @@
     },
     {
       "productId": "502556",
+      "chase_rank": 4,
       "groupId": "23237",
       "name": "Charmander - 168/165",
       "set": "SV: Scarlet & Violet 151",
@@ -254,6 +257,7 @@
     },
     {
       "productId": "513721",
+      "chase_rank": 10,
       "groupId": "23237",
       "name": "Pikachu - 173/165",
       "set": "SV: Scarlet & Violet 151",
@@ -1684,6 +1688,7 @@
     },
     {
       "productId": "516997",
+      "chase_rank": 9,
       "groupId": "23237",
       "name": "Bulbasaur - 166/165",
       "set": "SV: Scarlet & Violet 151",
@@ -1754,6 +1759,7 @@
     },
     {
       "productId": "517018",
+      "chase_rank": 7,
       "groupId": "23237",
       "name": "Charmeleon - 169/165",
       "set": "SV: Scarlet & Violet 151",
@@ -1974,6 +1980,7 @@
     },
     {
       "productId": "517044",
+      "chase_rank": 3,
       "groupId": "23237",
       "name": "Venusaur ex - 198/165",
       "set": "SV: Scarlet & Violet 151",
@@ -1984,6 +1991,7 @@
     },
     {
       "productId": "517045",
+      "chase_rank": 1,
       "groupId": "23237",
       "name": "Charizard ex - 199/165",
       "set": "SV: Scarlet & Violet 151",
@@ -1994,6 +2002,7 @@
     },
     {
       "productId": "517046",
+      "chase_rank": 2,
       "groupId": "23237",
       "name": "Blastoise ex - 200/165",
       "set": "SV: Scarlet & Violet 151",
@@ -2004,6 +2013,7 @@
     },
     {
       "productId": "517047",
+      "chase_rank": 8,
       "groupId": "23237",
       "name": "Alakazam ex - 201/165",
       "set": "SV: Scarlet & Violet 151",
@@ -2014,6 +2024,7 @@
     },
     {
       "productId": "517048",
+      "chase_rank": 6,
       "groupId": "23237",
       "name": "Zapdos ex - 202/165",
       "set": "SV: Scarlet & Violet 151",

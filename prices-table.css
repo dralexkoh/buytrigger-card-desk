@@ -35,14 +35,17 @@
 @media (max-width:900px){.price-page .price-sheet{padding-left:34px;padding-right:34px}.price-page .price-image-credit{padding-left:34px;padding-right:34px}}
 @media (max-width:720px){
  .price-page .publication-strip>span:last-child{display:none}
- .price-page .price-sheet{padding:4px 20px 28px}
- .price-page .price-tools{display:grid;grid-template-columns:1fr}
+ .price-page .page-intro{padding-top:12px;padding-bottom:8px}
+ .price-page .page-intro h1{font-size:32px;line-height:1;margin:4px 0 6px;letter-spacing:-.8px}
+ .price-page .price-lead{margin:0;font-size:14px;line-height:1.35}
+ .price-page .price-sheet{padding:0 20px 28px}
+ .price-page .price-tools{display:grid;grid-template-columns:1fr;margin:0 0 8px}
  .price-page .price-tools input,.price-page .price-tools select{width:100%}
  .price-page .digest-signup{margin:20px 0 28px}
  .price-page .price-table{min-width:0}
  .price-page .price-table thead{display:none}
  .price-page .price-table,.price-page .price-table tbody,.price-page .price-table tr,.price-page .price-table td{display:block}
- .price-page .price-table tr{display:grid;grid-template-columns:72px minmax(0,1fr);column-gap:12px;row-gap:3px;padding:14px 12px;border-bottom:1px solid #deded9}
+ .price-page .price-table tr{display:grid;grid-template-columns:72px minmax(0,1fr);column-gap:12px;row-gap:3px;padding:14px 12px;border-bottom:1px solid #deded9;scroll-margin:72px}
  .price-page .price-table td{border:0;padding:0}
  .price-page .price-table .price-card{grid-row:1 / span 5}
  .price-page .price-table .price-card img{width:72px}

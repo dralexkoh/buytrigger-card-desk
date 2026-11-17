@@ -105,6 +105,87 @@ def _jpeg_size(path: Path):
     return None
 
 
+def short_name(name: str, number: str) -> str:
+    suffix = ' - ' + number
+    if name.endswith(suffix):
+        return name[:-len(suffix)]
+    return name
+
+
+def chase_cards(priced: list, roster: dict) -> list:
+    """Cards marked chase_rank in the set roster, lowest rank first (1 = top)."""
+    by_id = {card['product_id']: card for card in priced}
+    chosen = []
+    seen = set()
+    for raw in roster.get('cards') or []:
+        rank = raw.get('chase_rank')
+        if rank is None:
+            continue
+        if isinstance(rank, bool) or not isinstance(rank, int) or rank < 1:
+            raise ValueError('chase_rank must be a positive integer')
+        product_id = str(raw.get('productId') or '')
+        if product_id in seen:
+            raise ValueError('Duplicate chase card: ' + product_id)
+        seen.add(product_id)
+        card = by_id.get(product_id)
+        if card is None:
+            continue
+        chosen.append({**card, 'chase_rank': rank, 'display_name': short_name(card['name'], card['number'])})
+    ranks = [card['chase_rank'] for card in chosen]
+    if len(ranks) != len(set(ranks)):
+        raise ValueError('Duplicate chase_rank')
+    chosen.sort(key=lambda card: (card['chase_rank'], card['product_id']))
+    return chosen
+
+
+def load_chase(priced: list, root: Path, spec: dict) -> list:
+    roster_path = spec.get('roster')
+    if not roster_path:
+        return []
+    roster = json.loads((root / roster_path).read_text())
+    return chase_cards(priced, roster)
+
+
+def _chase_tile(card, spec, date_text):
+    name = html.escape(card['display_name'])
+    number = html.escape(card['number'])
+    label = html.escape(spec['price_header'])
+    shown = usd(card['price'])
+    if card['image']:
+        art = (
+            f'<img src="{html.escape(card["image"], quote=True)}" alt="{html.escape(card["display_name"] + " " + card["number"], quote=True)}"'
+            ' width="200" height="279" decoding="async"'
+            + (' loading="eager"' if card['chase_rank'] <= 4 else ' loading="lazy"')
+            + '>'
+        )
+    else:
+        art = f'<span class="chase-fallback">{name}</span>'
+    return (
+        f'<button type="button" class="chase-tile" data-chase-card="{card["product_id"]}"'
+        f' aria-label="Show {html.escape(card["display_name"] + " " + card["number"], quote=True)} in the card list">'
+        f'<span class="chase-art">{art}</span>'
+        f'<strong>{name}</strong>'
+        f'<span class="chase-number">{number}</span>'
+        f'<span class="chase-price"><span>{label}</span><b>{shown}</b></span>'
+        f'<small>as of {html.escape(date_text)}</small>'
+        '</button>'
+    )
+
+
+def chase_block(cards, spec, date_text, sentence):
+    if not cards:
+        return ''
+    note = sentence + '. US-market references in USD, not offers.'
+    tiles = ''.join(_chase_tile(card, spec, date_text) for card in cards)
+    return (
+        '<section class="chase-band chase-band-inset" id="chase-cards" aria-labelledby="chase-title">'
+        '<div class="chase-head"><h2 id="chase-title">Chase cards</h2>'
+        f'<p>{html.escape(note)}</p></div>'
+        f'<div class="chase-strip">{tiles}</div>'
+        '</section>'
+    )
+
+
 def prepare_cards(snapshot: dict, root: Path, spec: dict):
     seen = set()
     cards = []
@@ -171,7 +252,7 @@ def _row(card, spec):
     href = f'https://www.tcgplayer.com/product/{card["product_id"]}'
     shown = usd(card['price'])
     return (
-        f'<tr data-name="{html.escape(card["name"], quote=True)}" data-number="{html.escape(card["number"], quote=True)}" '
+        f'<tr id="card-{card["product_id"]}" data-name="{html.escape(card["name"], quote=True)}" data-number="{html.escape(card["number"], quote=True)}" '
         f'data-{attr_name}="{html.escape(card["label"], quote=True)}" '
         f'data-price="{price_attr(card["price"])}" data-id="{card["product_id"]}" data-search="{search}">'
         f'<td class="price-card">{image}</td>'
@@ -265,16 +346,17 @@ def render_page(root: Path, spec: dict, snapshot: dict | None = None) -> str:
     description = spec['description'](cards, date_text)
     title = spec['title']
     rows = ''.join(_row(card, spec) for card in cards)
+    chase = chase_block(load_chase(cards, root, spec), spec, date_text, sentence)
     digest = digest_signup_html(spec['form_id'], campaign=spec['campaign'])
     credit = ''
     if spec.get('image_credit'):
         credit = '<p class="price-image-credit">' + html.escape(spec['image_credit']) + '</p>'
     main = f'''
 <section class="page-intro">
+{chase}
 <span class="kicker red-text">{html.escape(spec['kicker'])}</span>
 <h1>{html.escape(spec['heading'])}<span class="red-text">.</span></h1>
-<p>{html.escape(spec['intro'](cards))}</p>
-<p class="price-source"><strong>{html.escape(sentence)}.</strong> {html.escape(spec['source_note'])}</p>
+<p class="price-lead">{html.escape(spec['intro'](cards))}</p>
 </section>
 <section class="price-sheet" aria-labelledby="price-table-title">
 <div class="price-tools">
@@ -293,6 +375,7 @@ def render_page(root: Path, spec: dict, snapshot: dict | None = None) -> str:
 </table>
 </div>
 <p id="price-empty" hidden>No cards match that filter.</p>
+<p class="price-source"><strong>{html.escape(sentence)}.</strong> {html.escape(spec['source_note'])}</p>
 </section>
 {credit}
 {digest}
