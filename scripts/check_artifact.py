@@ -24,7 +24,11 @@ else:assert shared['endpoint'] is None
 
 APPROVED_TARGET_READER='https://ukblxmvsqihnnyysvxes.supabase.co/functions/v1/public-card-targets'
 targets=json.loads((d/'public-targets-config.json').read_text())
-assert set(targets)=={'schemaVersion','enabled','endpoint','review'}
+assert set(targets)=={'schemaVersion','enabled','endpoint','review','fx'}
+fx=targets['fx']
+assert set(fx)=={'source','sourceUrl','usdSourceUrl','observedOn','gradingMinor','gradingCurrency','pairs'}
+assert fx['gradingMinor']==3500 and fx['gradingCurrency']=='GBP' and fx['observedOn']=='2026-11-18'
+assert set(fx['pairs'])=={'GBPUSD','GBPJPY','USDJPY'} and all(isinstance(rate,str) and rate for rate in fx['pairs'].values())
 assert targets['schemaVersion']==1 and type(targets['enabled']) is bool
 assert targets['endpoint']==(APPROVED_TARGET_READER if targets['enabled'] else None), 'Use only the reviewed shared Cards reader'
 review=targets['review']

@@ -24,8 +24,9 @@ const calendarDay=x=>typeof x==='string'&&/^\d{4}-\d\d-\d\d$/.test(x)&&Number.is
 const timestamp=x=>typeof x==='string'&&/^\d{4}-\d\d-\d\dT(?:[01]\d|2[0-3]):[0-5]\d:[0-5]\d(?:\.\d{1,6})?(Z|[+-]\d\d:\d\d)$/.test(x)&&calendarDay(x.slice(0,10))&&Number.isFinite(Date.parse(x));
 const printingKey=c=>JSON.stringify([c.set,c.number,c.printing].map(value=>value.trim().toLowerCase()));
 function validateConfig(c){
- const fields=['schemaVersion','enabled','endpoint'];if(c?.review!==undefined)fields.push('review');
+ const fields=['schemaVersion','enabled','endpoint'];if(c?.review!==undefined)fields.push('review');if(c?.fx!==undefined)fields.push('fx');
  if(!exactKeys(c,fields)||c.schemaVersion!==1||typeof c.enabled!=='boolean'||(c.enabled?c.endpoint!==APPROVED_ENDPOINT:c.endpoint!==null))throw Error('Invalid public feed setup');
+ if(c.fx!==undefined&&!validFx(c.fx))throw Error('Invalid exchange rates');
  if(c.review!==undefined){
   const r=c.review,d=r?.checkedAt;
   const keys=['checkedAt','listingsChecked'];
@@ -36,8 +37,10 @@ function validateConfig(c){
    !Array.isArray(lines)||lines.length<1||lines.length>3||lines.some(line=>typeof line!=='string'||!line.trim()||line.length>280)
   )))throw Error('Invalid review findings');
   if(r.psaUpside!==undefined&&(!Array.isArray(r.psaUpside)||r.psaUpside.length>100||
-   !r.psaUpside.every(c=>validUpside(c,d))||new Set(r.psaUpside.map(c=>c.id)).size!==r.psaUpside.length
+   !r.psaUpside.every(card=>validUpside(card,d))||new Set(r.psaUpside.map(card=>card.id)).size!==r.psaUpside.length
   ))throw Error('Invalid PSA upside examples');
+  const valueFees=(r.psaUpside??[]).filter(card=>card.kind!=='watch'&&(card.gradingTier??'Value')==='Value').map(card=>card.gradingMinor);
+  if((r.psaUpside??[]).some(card=>card.kind==='watch')&&(!c.fx||!valueFees.length||valueFees.some(fee=>fee!==c.fx.gradingMinor)))throw Error('Invalid exchange rates');
  }
  return c;
 }
@@ -63,6 +66,34 @@ function validLegacyUpside(c,reviewDay,now=Date.now()){
  return c.gradingUrl.endsWith('/psa-'+(c.gradingTier??'Value').toLowerCase()+'/')&&c.rawUrl!==c.saleUrl.split('?')[0];
 }
 const EXT_KEYS=['kind','currency','market','grading','liquidity'];
+const RATE_TEXT=/^\d{1,6}\.\d{1,6}$/;
+function validFx(fx){
+ if(!exactKeys(fx,['source','sourceUrl','usdSourceUrl','observedOn','gradingMinor','gradingCurrency','pairs']))return false;
+ if(typeof fx.source!=='string'||!fx.source.trim()||fx.source.length>160||DENIED.test(fx.source)||fx.gradingCurrency!=='GBP')return false;
+ if(!Number.isSafeInteger(fx.gradingMinor)||fx.gradingMinor<1||fx.gradingMinor>100_000_000)return false;
+ if(!calendarDay(fx.observedOn)||Date.parse(fx.observedOn)>Date.now())return false;
+ for(const url of [fx.sourceUrl,fx.usdSourceUrl])if(typeof url!=='string'||url.length>500||!/^https:\/\/[A-Za-z0-9.-]+\/[^\s"<>]*$/.test(url)||DENIED.test(url))return false;
+ if(!exactKeys(fx.pairs,['GBPUSD','GBPJPY','USDJPY']))return false;
+ return Object.values(fx.pairs).every(rate=>typeof rate==='string'&&RATE_TEXT.test(rate)&&Number(rate)>0);
+}
+function minorUnit(currency){return currency==='JPY'?1:100;}
+function rateParts(text){
+ if(typeof text!=='string'||!RATE_TEXT.test(text))return null;
+ const [whole,frac]=text.split('.');
+ const scale=10**frac.length;
+ const numer=Number(whole)*scale+Number(frac);
+ return Number.isSafeInteger(numer)&&numer>0?{numer,scale}:null;
+}
+function convertMinor(amountMinor,from,to,pairs){
+ if(!Number.isSafeInteger(amountMinor)||!pairs)return null;
+ if(from===to)return amountMinor;
+ const fromUnit=minorUnit(from),toUnit=minorUnit(to);
+ const direct=rateParts(pairs[from+to]),inverse=rateParts(pairs[to+from]);
+ const numer=direct?amountMinor*direct.numer*toUnit:inverse?amountMinor*inverse.scale*toUnit:null;
+ const denom=direct?fromUnit*direct.scale:inverse?fromUnit*inverse.numer:null;
+ if(numer===null||!Number.isSafeInteger(numer)||!Number.isSafeInteger(denom)||denom<=0)return null;
+ return Math.round(numer/denom);
+}
 const DENIED=/(pokeinvest|pokemonpricetracker|pokemon price tracker|pokemon-price-tracker)/i;
 const HTTPS_URL=/^https:\/\/[A-Za-z0-9.-]+\/[^\s"<>]*$/;
 const PSA_URL=/^https:\/\/www\.psacard\.com\/[A-Za-z0-9/_.?=&%-]+$/;
@@ -160,39 +191,68 @@ function validWatch(c,reviewDay,now){
  const market=c.market;
  return object(market)&&(Object.hasOwn(market,'rawGuide')||Object.hasOwn(market,'rawAsk'))&&(Object.hasOwn(market,'psa10Guide')||Object.hasOwn(market,'psa10Median30d'));
 }
-function upsideCard(c,checkedAt){
+function upsideCard(c,checkedAt,fx){
  const cost=c.rawMinor+c.gradingMinor;
  const margin=c.psa10Minor-cost;
  const tier=c.gradingTier??'Value';
  const artCredit=c.imageSourceUrl.startsWith('https://assets.tcgdex.net/')?'Card artwork via TCGdex':'Official Pokémon card artwork';
+ const yen=c.language==='ja'&&fx;
  const rows=[['Raw delivered',c.rawMinor],['PSA '+tier+' grading',c.gradingMinor],['Card + grading',cost],['UK PSA 10 sale',c.psa10Minor],['Profit if PSA 10',margin]];
  const postage=c.returnPostageFromMinor;
+ const shown=minor=>yen?money(convertMinor(minor,'GBP','JPY',fx.pairs),'JPY'):money(minor);
  let postageNote='';
- if(postage>=margin)postageNote=' The dealer’s minimum return postage of '+money(postage)+' wipes out this margin.';
- else if(margin<=2*postage)postageNote=' After the dealer’s minimum '+money(postage)+' return postage, '+money(margin-postage)+' remains before other costs.';
- const figures=rows.map(([label,value])=>`<div><dt>${label}</dt><dd>${money(value)}</dd></div>`).join('');
+ if(postage>=margin)postageNote=' The dealer’s minimum return postage of '+shown(postage)+' wipes out this margin.';
+ else if(margin<=2*postage)postageNote=' After the dealer’s minimum '+shown(postage)+' return postage, '+shown(margin-postage)+' remains before other costs.';
+ let figures=yen?rows.map(([label,value])=>figureRow(label,convertMinor(value,'GBP','JPY',fx.pairs),'JPY',label==='Profit if PSA 10')).join('')+figureRow('Profit (US$)',convertMinor(margin,'GBP','USD',fx.pairs),'USD',true):rows.map(([label,value])=>`<div><dt>${label}</dt><dd>${money(value)}</dd></div>`).join('');
+ const conversion=yen?` Converted at £1 = ¥${fx.pairs.GBPJPY} and £1 = US$${fx.pairs.GBPUSD} (ECB, ${date(fx.observedOn)}).`:'';
  return `<article class="public-target" id="pick-${esc(c.id)}">
   <button type="button" class="target-picture" data-target-art="${esc(c.id)}" aria-label="Enlarge ${esc(c.name)} card artwork"><img src="${esc(c.image)}" alt="${esc(c.name+' · '+c.set+' · '+c.number)}"><span>View artwork ↗</span></button>
   <div class="target-copy"><span class="kicker">PSA 10 UPSIDE · ${c.language==='ja'?'JAPANESE':'ENGLISH'}</span><h3>${esc(c.name)}</h3><p class="target-printing">${esc(c.set+' · '+c.number+' · '+c.printing)}</p><p class="target-summary">Profit shown if this card earns PSA 10. The seller lists the card as Raw. Its grade and the condition of the copy are unknown.</p><p class="target-date">Entry and grading checked ${date(checkedAt)}</p></div>
-  <div class="target-outcomes"><dl class="target-upside-figures">${figures}</dl><p class="target-context">PSA 10 sale on ${date(c.soldOn)}, excluding the buyer fee. Profit excludes grading postage and selling costs.${postageNote}</p><details><summary>Prices &amp; sources</summary><ul><li><a href="${esc(c.rawUrl)}">Raw listing</a></li><li><a href="${esc(c.gradingUrl)}">PSA ${tier} fee and return postage</a></li><li><a href="${esc(c.saleUrl)}">UK PSA 10 sold listing</a></li><li><a href="${esc(c.imageSourceUrl)}">${artCredit}</a></li></ul></details></div>
+  <div class="target-outcomes"><dl class="target-upside-figures">${figures}</dl><p class="target-context">PSA 10 sale on ${date(c.soldOn)}, excluding the buyer fee. Profit excludes grading postage and selling costs.${postageNote}${conversion}</p><details><summary>Prices &amp; sources</summary><ul><li><a href="${esc(c.rawUrl)}">Raw listing</a></li><li><a href="${esc(c.gradingUrl)}">PSA ${tier} fee and return postage</a></li><li><a href="${esc(c.saleUrl)}">UK PSA 10 sold listing</a></li><li><a href="${esc(c.imageSourceUrl)}">${artCredit}</a></li></ul></details></div>
  </article>`;
 }
-function cardCurrency(c){return c.language==='ja'?'JPY':'USD';}
 function marketFigure(market,keys,currency){
  if(!object(market))return null;
  return keys.map(key=>market[key]).find(value=>object(value)&&value.currency===currency)||null;
 }
-function watchCard(c,checkedAt){
+function figureRow(label,amountMinor,currency,profit){
+ const shown=amountMinor===null?'—':money(amountMinor,currency);
+ return `<div${profit?' class="target-profit"':''}><dt>${label}</dt><dd>${shown}</dd></div>`;
+}
+function watchMaths(c,fx){
+ const yen=c.language==='ja';
+ const display=yen?'JPY':'USD';
+ const rawFigure=marketFigure(c.market,yen?['rawAsk']:['rawAsk','rawGuide'],display);
+ const sale=marketFigure(c.market,['psa10Median30d','psa10Guide'],'USD');
+ const raw=rawFigure?rawFigure.amountMinor:null;
+ const grading=fx?convertMinor(fx.gradingMinor,fx.gradingCurrency,display,fx.pairs):null;
+ const psa=sale&&fx?convertMinor(sale.amountMinor,'USD',display,fx.pairs):null;
+ const card=raw===null||grading===null?null:raw+grading;
+ const profit=card===null||psa===null?null:psa-card;
+ return {display,raw,grading,card,psa,profit,usdProfit:yen&&profit!==null&&fx?convertMinor(profit,'JPY','USD',fx.pairs):null};
+}
+function conversionNote(fx,language){
+ const day=date(fx.observedOn);
+ if(language==='ja')return `Converted at £1 = ¥${fx.pairs.GBPJPY} and US$1 = ¥${fx.pairs.USDJPY} (ECB, ${day}).`;
+ return `Converted at £1 = US$${fx.pairs.GBPUSD} (ECB, ${day}).`;
+}
+function watchCard(c,checkedAt,fx){
  const artCredit=c.imageSourceUrl.startsWith('https://assets.tcgdex.net/')?'Card artwork via TCGdex':'Official Pokémon card artwork';
- const currency=cardCurrency(c);
- const raw=marketFigure(c.market,['rawAsk','rawGuide'],currency);
- const psa10=marketFigure(c.market,['psa10Median30d','psa10Guide'],currency);
- const rows=[['Raw delivered',raw],['PSA Value grading',null],['Card + grading',null],['UK PSA 10 sale',psa10],['Profit if PSA 10',null]];
- const figures=rows.map(([label,figure])=>`<div><dt>${label}</dt><dd>${figure?money(figure.amountMinor,figure.currency):'—'}</dd></div>`).join('');
+ const yen=c.language==='ja';
+ const sums=watchMaths(c,fx);
+ const rows=[
+  figureRow('Raw delivered',sums.raw,sums.display),
+  figureRow('PSA Value grading',sums.grading,sums.display),
+  figureRow('Card + grading',sums.card,sums.display),
+  figureRow(yen?'PSA 10 sale (converted)':'PSA 10 sale',sums.psa,sums.display),
+  figureRow('Profit if PSA 10',sums.profit,sums.display,true)
+ ];
+ if(yen)rows.push(figureRow('Profit (US$)',sums.usdProfit,'USD',true));
+ const note=fx?` ${conversionNote(fx,c.language)}`:'';
  return `<article class="public-target" id="pick-${esc(c.id)}">
   <button type="button" class="target-picture" data-target-art="${esc(c.id)}" aria-label="Enlarge ${esc(c.name)} card artwork"><img src="${esc(c.image)}" alt="${esc(c.name+' · '+c.set+' · '+c.number)}"><span>View artwork ↗</span></button>
-  <div class="target-copy"><span class="kicker">WATCH · ${c.language==='ja'?'JAPANESE':'ENGLISH'}</span><h3>${esc(c.name)}</h3><p class="target-printing">${esc(c.set+' · '+c.number+' · '+c.printing)}</p><p class="target-summary">Profit shown if this card earns PSA 10. The seller lists the card as Raw. Its grade and the condition of the copy are unknown.</p><p class="target-date">Entry and grading checked ${date(checkedAt)}</p></div>
-  <div class="target-outcomes"><dl class="target-upside-figures">${figures}</dl><p class="target-context">Profit excludes grading postage and selling costs.</p><details><summary>Prices &amp; sources</summary><ul><li><a href="${esc(c.imageSourceUrl)}">${artCredit}</a></li></ul></details></div>
+  <div class="target-copy"><span class="kicker">WATCH · ${yen?'JAPANESE':'ENGLISH'}</span><h3>${esc(c.name)}</h3><p class="target-printing">${esc(c.set+' · '+c.number+' · '+c.printing)}</p><p class="target-summary">Profit shown if this card earns PSA 10. The seller lists the card as Raw. Its grade and the condition of the copy are unknown.</p><p class="target-date">Entry and grading checked ${date(checkedAt)}</p></div>
+  <div class="target-outcomes"><dl class="target-upside-figures">${rows.join('')}</dl><p class="target-context">Profit excludes grading postage and selling costs.${note}</p><details><summary>Prices &amp; sources</summary><ul><li><a href="${esc(c.imageSourceUrl)}">${artCredit}</a></li></ul></details></div>
  </article>`;
 }
 function validateFeed(data,language,now=Date.now()){
@@ -227,7 +287,7 @@ function mount(language){
   const ids=new Set(current.map(c=>c.id)),printings=new Set(current.map(printingKey));
   return config?.review?.psaUpside?.filter(c=>c.language===language&&!ids.has(c.id)&&!printings.has(printingKey(c)))??[];
  }
- function renderCard(c,checkedAt){return c.kind==='watch'?watchCard(c,checkedAt):upsideCard(c,checkedAt);}
+ function renderCard(c,checkedAt){return c.kind==='watch'?watchCard(c,checkedAt,config.fx):upsideCard(c,checkedAt,config.fx);}
  function earlierCards(examples){
   return examples.map(c=>renderCard(c,c.checkedAt??config.review.checkedAt)).join('');
  }
