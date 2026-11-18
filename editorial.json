@@ -2212,6 +2212,238 @@
   ],
   "wire": [
     {
+      "id": "sv-151-charizard-ex-sir-down-18-percent-since-30-sep-2026-11-18",
+      "eventKey": "sv-151-charizard-ex-199-since-30-sep-2026-11-18",
+      "date": "2026-11-18",
+      "displayDate": "18 Nov · Price guide",
+      "category": "Price action",
+      "kind": "Market price guide",
+      "title": "151’s Charizard ex Special Illustration Rare is down 18% since 30 Sep",
+      "summary": "Ask anyone to name one card from 151 and most will say the Charizard ex Special Illustration Rare, 199/165. On 30 September its TCGplayer market guide for a raw copy was US$351.69. On 18 November it was US$287.93, down 18%.\n\nMost of that fall happened before November. The guide was US$296.64 on 6 November and US$294.00 on 11 November, so the past week only took about 2% off.\n\nThe other big starters have slid too. Blastoise ex, 200/165, is down 19% since 30 September, from US$129.03 to US$104.22. Venusaur ex, 198/165, is down 12% to US$86.28. Charizard still costs more than those two put together.\n\nOur read: plenty of 151 collectors have been waiting for a Charizard under $300, and now there is one. Whether it stays there into December is the thing we’re watching.\n\nThese are guide prices for raw, ungraded copies in mixed condition, not individual sales.\n\nPrices: TCGplayer market price via TCGCSV, Raw, USD, 30 September, 6, 11 and 18 November 2026.",
+      "sourceLabel": "TCGplayer market price via TCGCSV",
+      "url": "https://tcgcsv.com/tcgplayer/3/23237/prices",
+      "checkedAt": "2026-11-18T20:42:16Z",
+      "sourcePublishedAt": "2026-11-18",
+      "ctaUrl": "/prices/sv-151/",
+      "ctaLabel": "Open the 151 price page →",
+      "visual": "source-media",
+      "image": "assets/newsroom-20261118c/sv-151-charizard-ex-sir-down-18-since-30-sep-hero.webp",
+      "imageAlt": "Curated graphic: the English Scarlet & Violet 151 booster pack and the Charizard ex Special Illustration Rare 199/165. Its TCGplayer market guide was US$288 on 18 November, down 18% since 30 September from US$351.69 and down 2% in seven days from US$294.00 on 11 November.",
+      "imageCredit": "Card and pack images: TCGplayer. Card artwork © Pokémon.",
+      "imageSourceUrl": "https://tcgplayer-cdn.tcgplayer.com/product/517045_in_1000x1000.jpg",
+      "chase_cards": [
+        {
+          "name": "Charizard ex",
+          "image": "assets/sv-151/517045.jpg",
+          "alt": "Exact English 151 Charizard ex 199/165 Special Illustration Rare catalogue reference.",
+          "set": "151",
+          "number": "199/165",
+          "link": "https://www.tcgplayer.com/product/517045"
+        },
+        {
+          "name": "Blastoise ex",
+          "image": "assets/sv-151/517046.jpg",
+          "alt": "Exact English 151 Blastoise ex 200/165 Special Illustration Rare catalogue reference.",
+          "set": "151",
+          "number": "200/165",
+          "link": "https://www.tcgplayer.com/product/517046"
+        },
+        {
+          "name": "Venusaur ex",
+          "image": "assets/sv-151/517044.jpg",
+          "alt": "Exact English 151 Venusaur ex 198/165 Special Illustration Rare catalogue reference.",
+          "set": "151",
+          "number": "198/165",
+          "link": "https://www.tcgplayer.com/product/517044"
+        },
+        {
+          "name": "Alakazam ex",
+          "image": "assets/sv-151/517047.jpg",
+          "alt": "Exact English 151 Alakazam ex 201/165 Special Illustration Rare catalogue reference.",
+          "set": "151",
+          "number": "201/165",
+          "link": "https://www.tcgplayer.com/product/517047"
+        },
+        {
+          "name": "Zapdos ex",
+          "image": "assets/sv-151/517048.jpg",
+          "alt": "Exact English 151 Zapdos ex 202/165 Special Illustration Rare catalogue reference.",
+          "set": "151",
+          "number": "202/165",
+          "link": "https://www.tcgplayer.com/product/517048"
+        }
+      ],
+      "chase_cards_credit": "Card image: TCGplayer. Card artwork © Pokémon.",
+      "author": {
+        "id": "elliot-reed",
+        "name": "Elliot Reed",
+        "type": "named_ai_correspondent",
+        "label": "Correspondent",
+        "beat": "Markets & auctions"
+      },
+      "newsRevision": 1
+    },
+    {
+      "id": "prismatic-umbreon-ex-sir-down-14-percent-since-30-sep-2026-11-18",
+      "eventKey": "prismatic-evolutions-umbreon-ex-161-since-30-sep-2026-11-18",
+      "date": "2026-11-18",
+      "displayDate": "18 Nov · Price guide",
+      "category": "Price action",
+      "kind": "Market price guide",
+      "title": "Prismatic’s Umbreon ex Special Illustration Rare is down 14% since 30 Sep, and still over $1,150",
+      "summary": "Umbreon ex is still the card Prismatic Evolutions is priced around. The Special Illustration Rare, 161/131, had a TCGplayer market guide of US$1,155.92 for a raw copy on 18 November. On 30 September it was US$1,350.57, so it’s down 14%.\n\nThe past week took a little under 3% off, from US$1,186.84 on 11 November.\n\nThat sounds like a lot of money gone, but it’s the smallest fall of the eight Eeveelution ex Special Illustration Rares since 30 September. Sylveon ex, 156/131, is down 25% to US$379.53, and Vaporeon and Espeon are both down about 28%. One raw Umbreon is still worth about three raw Sylveons.\n\nOur read: when a whole set cools off, the card everyone opened packs for tends to hold on longest, and Umbreon is doing exactly that. This is the raw guide, not the PSA 10 market we covered on 13 November.\n\nThese are guide prices for raw, ungraded copies in mixed condition, not individual sales.\n\nPrices: TCGplayer market price via TCGCSV, Raw, USD, 30 September, 11 and 18 November 2026.",
+      "sourceLabel": "TCGplayer market price via TCGCSV",
+      "url": "https://tcgcsv.com/tcgplayer/3/23821/prices",
+      "checkedAt": "2026-11-18T20:42:16Z",
+      "sourcePublishedAt": "2026-11-18",
+      "ctaUrl": "/prices/prismatic-evolutions/",
+      "ctaLabel": "Open the Prismatic price page →",
+      "visual": "source-media",
+      "image": "assets/newsroom-20261118c/prismatic-umbreon-ex-sir-down-14-since-30-sep-hero.webp",
+      "imageAlt": "Curated graphic: the English Prismatic Evolutions booster pack and the Umbreon ex Special Illustration Rare 161/131. Its TCGplayer market guide was US$1,156 on 18 November, down 14% since 30 September from US$1,350.57 and down 3% in seven days from US$1,186.84 on 11 November.",
+      "imageCredit": "Card and pack images: TCGplayer. Card artwork © Pokémon.",
+      "imageSourceUrl": "https://tcgplayer-cdn.tcgplayer.com/product/610516_in_1000x1000.jpg",
+      "chase_cards": [
+        {
+          "name": "Umbreon ex",
+          "image": "assets/prismatic-evolutions/610516.jpg",
+          "alt": "Exact English Prismatic Evolutions Umbreon ex 161/131 Special Illustration Rare catalogue reference.",
+          "set": "Prismatic Evolutions",
+          "number": "161/131",
+          "link": "https://www.tcgplayer.com/product/610516"
+        },
+        {
+          "name": "Sylveon ex",
+          "image": "assets/prismatic-evolutions/610511.jpg",
+          "alt": "Exact English Prismatic Evolutions Sylveon ex 156/131 Special Illustration Rare catalogue reference.",
+          "set": "Prismatic Evolutions",
+          "number": "156/131",
+          "link": "https://www.tcgplayer.com/product/610511"
+        },
+        {
+          "name": "Espeon ex",
+          "image": "assets/prismatic-evolutions/610510.jpg",
+          "alt": "Exact English Prismatic Evolutions Espeon ex 155/131 Special Illustration Rare catalogue reference.",
+          "set": "Prismatic Evolutions",
+          "number": "155/131",
+          "link": "https://www.tcgplayer.com/product/610510"
+        },
+        {
+          "name": "Vaporeon ex",
+          "image": "assets/prismatic-evolutions/610504.jpg",
+          "alt": "Exact English Prismatic Evolutions Vaporeon ex 149/131 Special Illustration Rare catalogue reference.",
+          "set": "Prismatic Evolutions",
+          "number": "149/131",
+          "link": "https://www.tcgplayer.com/product/610504"
+        },
+        {
+          "name": "Leafeon ex",
+          "image": "assets/prismatic-evolutions/610499.jpg",
+          "alt": "Exact English Prismatic Evolutions Leafeon ex 144/131 Special Illustration Rare catalogue reference.",
+          "set": "Prismatic Evolutions",
+          "number": "144/131",
+          "link": "https://www.tcgplayer.com/product/610499"
+        },
+        {
+          "name": "Glaceon ex",
+          "image": "assets/prismatic-evolutions/610505.jpg",
+          "alt": "Exact English Prismatic Evolutions Glaceon ex 150/131 Special Illustration Rare catalogue reference.",
+          "set": "Prismatic Evolutions",
+          "number": "150/131",
+          "link": "https://www.tcgplayer.com/product/610505"
+        }
+      ],
+      "chase_cards_credit": "Card image: TCGplayer. Card artwork © Pokémon.",
+      "author": {
+        "id": "elliot-reed",
+        "name": "Elliot Reed",
+        "type": "named_ai_correspondent",
+        "label": "Correspondent",
+        "beat": "Markets & auctions"
+      },
+      "newsRevision": 1
+    },
+    {
+      "id": "delta-reign-zinnias-trust-sir-below-launch-up-7-percent-in-a-week-2026-11-18",
+      "eventKey": "delta-reign-zinnias-trust-140-since-launch-2026-11-18",
+      "date": "2026-11-18",
+      "displayDate": "18 Nov · Price guide",
+      "category": "Price action",
+      "kind": "Market price guide",
+      "title": "Zinnia’s Trust Special Illustration Rare is still 18% below its Delta Reign launch price, but up 7% in a week",
+      "summary": "Zinnia’s Trust has had a bumpy first fortnight. The Special Illustration Rare, 140/103, opened with a TCGplayer market guide of US$38.42 for a raw copy on Delta Reign’s launch day, 6 November. By 11 November it was down to US$29.53.\n\nSince then it’s crept back. On 18 November the guide was US$31.51. That’s up 7% on the week, but still 18% under where it started.\n\nIt now sits just above Kecleon, the Illustration Rare that doubled after launch, which was US$28.87 on 18 November. Both are a long way under the Mega Rayquaza ex Special Illustration Rare at US$277.29.\n\nOur read: the launch-day price was the rush, and this past week looks more like what collectors actually think a Zinnia is worth. Delta Reign is less than two weeks old, though, so these guides still swing a lot.\n\nThese are guide prices for raw, ungraded copies in mixed condition, not individual sales.\n\nPrices: TCGplayer market price via TCGCSV, Raw, USD, 6, 11 and 18 November 2026.",
+      "sourceLabel": "TCGplayer market price via TCGCSV",
+      "url": "https://tcgcsv.com/tcgplayer/3/24831/prices",
+      "checkedAt": "2026-11-18T20:42:16Z",
+      "sourcePublishedAt": "2026-11-18",
+      "ctaUrl": "/prices/delta-reign/",
+      "ctaLabel": "Every Delta Reign card’s price →",
+      "visual": "source-media",
+      "image": "assets/newsroom-20261118c/delta-reign-zinnias-trust-sir-below-launch-up-7-week-hero.webp",
+      "imageAlt": "Curated graphic: the English Delta Reign booster box and the Zinnia’s Trust Special Illustration Rare 140/103. Its TCGplayer market guide was US$31.51 on 18 November, down 18% since launch from US$38.42 on 6 November and up 7% in seven days from US$29.53 on 11 November.",
+      "imageCredit": "Card and box images: TCGplayer. Card artwork © Pokémon.",
+      "imageSourceUrl": "https://tcgplayer-cdn.tcgplayer.com/product/726576_in_1000x1000.jpg",
+      "chase_cards": [
+        {
+          "name": "Zinnia’s Trust",
+          "image": "assets/delta-reign/726576.jpg",
+          "alt": "Exact English Delta Reign Zinnia’s Trust 140/103 Special Illustration Rare catalogue reference.",
+          "set": "Delta Reign",
+          "number": "140/103",
+          "link": "https://www.tcgplayer.com/product/726576"
+        },
+        {
+          "name": "Kecleon",
+          "image": "assets/delta-reign/726567.jpg",
+          "alt": "Exact English Delta Reign Kecleon 117/103 Illustration Rare catalogue reference.",
+          "set": "Delta Reign",
+          "number": "117/103",
+          "link": "https://www.tcgplayer.com/product/726567"
+        },
+        {
+          "name": "Mega Rayquaza ex",
+          "image": "assets/delta-reign/728061.jpg",
+          "alt": "Exact English Delta Reign Mega Rayquaza ex 138/103 Special Illustration Rare catalogue reference.",
+          "set": "Delta Reign",
+          "number": "138/103",
+          "link": "https://www.tcgplayer.com/product/728061"
+        },
+        {
+          "name": "Mega Rayquaza ex",
+          "image": "assets/delta-reign/728062.jpg",
+          "alt": "Exact English Delta Reign Mega Rayquaza ex 141/103 Mega Hyper Rare catalogue reference.",
+          "set": "Delta Reign",
+          "number": "141/103",
+          "link": "https://www.tcgplayer.com/product/728062"
+        },
+        {
+          "name": "Mega Golurk ex",
+          "image": "assets/delta-reign/728060.jpg",
+          "alt": "Exact English Delta Reign Mega Golurk ex 137/103 Special Illustration Rare catalogue reference.",
+          "set": "Delta Reign",
+          "number": "137/103",
+          "link": "https://www.tcgplayer.com/product/728060"
+        },
+        {
+          "name": "Mega Golisopod ex",
+          "image": "assets/delta-reign/727592.jpg",
+          "alt": "Exact English Delta Reign Mega Golisopod ex 135/103 Special Illustration Rare catalogue reference.",
+          "set": "Delta Reign",
+          "number": "135/103",
+          "link": "https://www.tcgplayer.com/product/727592"
+        }
+      ],
+      "chase_cards_credit": "Card image: TCGplayer. Card artwork © Pokémon.",
+      "author": {
+        "id": "elliot-reed",
+        "name": "Elliot Reed",
+        "type": "named_ai_correspondent",
+        "label": "Correspondent",
+        "beat": "Markets & auctions"
+      },
+      "newsRevision": 1
+    },
+    {
       "id": "prismatic-vaporeon-ex-sir-down-28-percent-since-30-sep-2026-11-18",
       "eventKey": "prismatic-evolutions-vaporeon-ex-149-since-30-sep-2026-11-18",
       "date": "2026-11-18",

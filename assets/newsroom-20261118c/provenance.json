@@ -1,0 +1,120 @@
+{
+  "reviewer": "Vault Newsroom",
+  "review_date": "2026-11-18",
+  "rights_basis": "TCGplayer catalogue references (exact English sealed product and cards), consistent with prior Delta Reign, 151 and Prismatic briefs, composed on the owner-locked BuyTrigger.Cards brand canvas. Prices from TCGCSV (TCGplayer market price, build 2026-11-18T20:05Z, pulled 18 Nov 20:4x London, and dated archives). No generated or redrawn franchise characters.",
+  "credit_line": "Card and box/pack images: TCGplayer · Card artwork © Pokémon · Prices: TCGplayer via TCGCSV · Graphic: BuyTrigger.Cards",
+  "crops_checked": [
+    "full-size 1600x900",
+    "390px phone width"
+  ],
+  "generation_prompt": null,
+  "tool": "Pillow composition (/workspace/nr1118c-work/compose.py, helpers /workspace/nr1118c-work/compose_heroes.py)",
+  "reference_files": [],
+  "outputs": [
+    {
+      "path": "assets/newsroom-20261118c/sv-151-charizard-ex-sir-down-18-since-30-sep-hero.webp",
+      "sha256": "849515aa5484eeb52d06e623bb5368566b46182d099a23c03d9aac08188394d9",
+      "size_px": [
+        1600,
+        900
+      ],
+      "class": "permitted-media + brand-asset composition",
+      "inputs": [
+        {
+          "path": "/workspace/nr1118c-work/src/pack151.jpg",
+          "source_url": "https://tcgplayer-cdn.tcgplayer.com/product/504467_in_1000x1000.jpg",
+          "sha256": "f6880238d36a178e3cc3e5d419c9c656ba35f7be6888afc4c1035accf64341c9",
+          "class": "permitted-media (TCGplayer catalogue reference)"
+        },
+        {
+          "path": "/workspace/nr1118c-work/src/tcg-517045.jpg",
+          "source_url": "https://tcgplayer-cdn.tcgplayer.com/product/517045_in_1000x1000.jpg",
+          "sha256": "49ab157be44087673a1e9aca4ab8b3bc91d5740519a73688ca92c035a813d11e",
+          "class": "permitted-media (TCGplayer catalogue reference)"
+        },
+        {
+          "path": "/home/box/private/buytrigger/full/BuyTrigger-Cards-Grok-Handover-2026-11-10/workspace/brand/buytrigger-cards/skill/assets/buytrigger-badge-gengar-vaporeon-web.png",
+          "source_url": "owner brand asset",
+          "sha256": "303e7a82ef8ebe755375d864029ab623c55b6272c44cec15462539cc5c25a4fa",
+          "class": "brand-asset"
+        },
+        {
+          "path": "/workspace/nr1118c/assets/publisher-logo-600x60.png",
+          "source_url": "repo brand asset (wordmark)",
+          "sha256": "ae4ac346e762dfc13bb5a5b11211a6fc9d05f6117a3588e55a2b8ea2283d6aac",
+          "class": "brand-asset"
+        }
+      ]
+    },
+    {
+      "path": "assets/newsroom-20261118c/prismatic-umbreon-ex-sir-down-14-since-30-sep-hero.webp",
+      "sha256": "b17388069287ec3bd289c44ccd819549dc36d11682656ebe163ddbc26e2c6989",
+      "size_px": [
+        1600,
+        900
+      ],
+      "class": "permitted-media + brand-asset composition",
+      "inputs": [
+        {
+          "path": "/workspace/nr1118c-work/src/pe-pack-593294.jpg",
+          "source_url": "https://tcgplayer-cdn.tcgplayer.com/product/593294_in_1000x1000.jpg",
+          "sha256": "b9d2d93f5ae845e2ac76f30dddc0bf4cfe4d819fa3a2161cbdbfbb226ec617ff",
+          "class": "permitted-media (TCGplayer catalogue reference)"
+        },
+        {
+          "path": "/workspace/nr1118c-work/src/tcg-610516.jpg",
+          "source_url": "https://tcgplayer-cdn.tcgplayer.com/product/610516_in_1000x1000.jpg",
+          "sha256": "a4043f249af0ffb52f4676649c7aa224dc8158c76f1ca0ecf1b8cb88d0ed9b86",
+          "class": "permitted-media (TCGplayer catalogue reference)"
+        },
+        {
+          "path": "/home/box/private/buytrigger/full/BuyTrigger-Cards-Grok-Handover-2026-11-10/workspace/brand/buytrigger-cards/skill/assets/buytrigger-badge-gengar-vaporeon-web.png",
+          "source_url": "owner brand asset",
+          "sha256": "303e7a82ef8ebe755375d864029ab623c55b6272c44cec15462539cc5c25a4fa",
+          "class": "brand-asset"
+        },
+        {
+          "path": "/workspace/nr1118c/assets/publisher-logo-600x60.png",
+          "source_url": "repo brand asset (wordmark)",
+          "sha256": "ae4ac346e762dfc13bb5a5b11211a6fc9d05f6117a3588e55a2b8ea2283d6aac",
+          "class": "brand-asset"
+        }
+      ]
+    },
+    {
+      "path": "assets/newsroom-20261118c/delta-reign-zinnias-trust-sir-below-launch-up-7-week-hero.webp",
+      "sha256": "440c12867461e6a0f57c6201b899e99d44eb384977470be09220b696107bfded",
+      "size_px": [
+        1600,
+        900
+      ],
+      "class": "permitted-media + brand-asset composition",
+      "inputs": [
+        {
+          "path": "/workspace/nr1118c-work/src/dr-box-712094.jpg",
+          "source_url": "https://tcgplayer-cdn.tcgplayer.com/product/712094_in_1000x1000.jpg",
+          "sha256": "3fad6d78b3a7a5b5212772f39112385939496a2ad1c8b8ac34394119aecfe07a",
+          "class": "permitted-media (TCGplayer catalogue reference)"
+        },
+        {
+          "path": "/workspace/nr1118c-work/src/tcg-726576.jpg",
+          "source_url": "https://tcgplayer-cdn.tcgplayer.com/product/726576_in_1000x1000.jpg",
+          "sha256": "928443627dd023086136dfca3159346930ea0b06a7a81952d7ffc847ae5f4407",
+          "class": "permitted-media (TCGplayer catalogue reference)"
+        },
+        {
+          "path": "/home/box/private/buytrigger/full/BuyTrigger-Cards-Grok-Handover-2026-11-10/workspace/brand/buytrigger-cards/skill/assets/buytrigger-badge-gengar-vaporeon-web.png",
+          "source_url": "owner brand asset",
+          "sha256": "303e7a82ef8ebe755375d864029ab623c55b6272c44cec15462539cc5c25a4fa",
+          "class": "brand-asset"
+        },
+        {
+          "path": "/workspace/nr1118c/assets/publisher-logo-600x60.png",
+          "source_url": "repo brand asset (wordmark)",
+          "sha256": "ae4ac346e762dfc13bb5a5b11211a6fc9d05f6117a3588e55a2b8ea2283d6aac",
+          "class": "brand-asset"
+        }
+      ]
+    }
+  ]
+}
