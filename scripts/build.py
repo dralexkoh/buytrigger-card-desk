@@ -140,7 +140,6 @@ for route,filename,language,code in [('targets','undervalued.html','English','en
   soup.select_one(tag)[key]=value
  r=targets['review'];n=r['listingsChecked'][code];day=r['checkedAt']
  examples=[card for card in r.get('psaUpside',[]) if card['language']==code and card.get('kind','upside')!='watch']
- watched=[card for card in r.get('psaUpside',[]) if card['language']==code and card.get('kind')=='watch']
  def gbp(value):return f'£{value/100:,.2f}'
  overview=''.join(
   f"<p>{html.escape(card['name'])} {html.escape(card['number'])} · PSA 10 scenario. "
@@ -148,9 +147,6 @@ for route,filename,language,code in [('targets','undervalued.html','English','en
   f"PSA 10 sale {gbp(card['psa10Minor'])} on {html.escape(card['soldOn'])}, leaving {gbp(card['psa10Minor']-card['rawMinor']-card['gradingMinor'])} before grading postage and selling costs. "
   f"Raw and grading checked {html.escape(card.get('checkedAt',day))}.</p>"
   for card in examples)
- overview+=''.join(
-  f"<p>{html.escape(card['name'])} {html.escape(card['number'])} · Watch entry. Dated market evidence, not a buy signal. Checked {html.escape(card['checkedAt'])}.</p>"
-  for card in watched)
  findings=r.get('findings',{}).get(code,[])
  findings_html=('<ul class="target-review-findings" aria-label="What held the picks back">'+
                 ''.join(f'<li>{html.escape(line)}</li>' for line in findings)+'</ul>') if findings else ''

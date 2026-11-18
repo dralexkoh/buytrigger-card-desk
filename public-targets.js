@@ -174,51 +174,25 @@ function upsideCard(c,checkedAt){
  return `<article class="public-target" id="pick-${esc(c.id)}">
   <button type="button" class="target-picture" data-target-art="${esc(c.id)}" aria-label="Enlarge ${esc(c.name)} card artwork"><img src="${esc(c.image)}" alt="${esc(c.name+' · '+c.set+' · '+c.number)}"><span>View artwork ↗</span></button>
   <div class="target-copy"><span class="kicker">PSA 10 UPSIDE · ${c.language==='ja'?'JAPANESE':'ENGLISH'}</span><h3>${esc(c.name)}</h3><p class="target-printing">${esc(c.set+' · '+c.number+' · '+c.printing)}</p><p class="target-summary">Profit shown if this card earns PSA 10. The seller lists the card as Raw. Its grade and the condition of the copy are unknown.</p><p class="target-date">Entry and grading checked ${date(checkedAt)}</p></div>
-  <div class="target-outcomes"><dl class="target-upside-figures">${figures}</dl><p class="target-context">PSA 10 sale on ${date(c.soldOn)}, excluding the buyer fee. Profit excludes grading postage and selling costs.${postageNote}</p>${moreEvidence(c)}<details><summary>Prices &amp; sources</summary><ul><li><a href="${esc(c.rawUrl)}">Raw listing</a></li><li><a href="${esc(c.gradingUrl)}">PSA ${tier} fee and return postage</a></li><li><a href="${esc(c.saleUrl)}">UK PSA 10 sold listing</a></li><li><a href="${esc(c.imageSourceUrl)}">${artCredit}</a></li></ul></details></div>
+  <div class="target-outcomes"><dl class="target-upside-figures">${figures}</dl><p class="target-context">PSA 10 sale on ${date(c.soldOn)}, excluding the buyer fee. Profit excludes grading postage and selling costs.${postageNote}</p><details><summary>Prices &amp; sources</summary><ul><li><a href="${esc(c.rawUrl)}">Raw listing</a></li><li><a href="${esc(c.gradingUrl)}">PSA ${tier} fee and return postage</a></li><li><a href="${esc(c.saleUrl)}">UK PSA 10 sold listing</a></li><li><a href="${esc(c.imageSourceUrl)}">${artCredit}</a></li></ul></details></div>
  </article>`;
 }
-const MARKET_LABELS=[['rawGuide','Raw guide'],['rawAsk','Raw ask'],['psa10Guide','PSA 10 guide'],['psa10Median30d','PSA 10 30-day median']];
-const GRADING_LABELS=[['gemRatePct','Gem rate'],['psa10Pop','PSA 10 pop'],['totalGraded','Total graded']];
-const LIQUIDITY_LABELS=[['rawSold30d','Raw'],['psa10Sold30d','PSA 10']];
-function marketRows(market){
- if(!object(market))return '';
- return MARKET_LABELS.filter(([key])=>object(market[key])).map(([key,label])=>{
-  const value=market[key];
-  return `<div><dt>${label}</dt><dd><span class="evidence-amount">${money(value.amountMinor,value.currency)}</span><a class="evidence-line" href="${esc(value.sourceUrl)}">${esc(value.source)} · ${date(value.observedOn)} · ${esc(value.type)} · ${esc(value.confidence)}</a></dd></div>`;
- }).join('');
-}
-function statRow(label,key,entry){
- if(entry==null)return `<div><dt>${label}</dt><dd>Unavailable</dd></div>`;
- const shown=key==='gemRatePct'?(Number.isInteger(entry.value)?String(entry.value):String(entry.value))+'%':new Intl.NumberFormat('en-GB').format(entry.value);
- return `<div><dt>${label}</dt><dd><span class="evidence-amount">${shown}</span><span class="evidence-line">PSA, ${date(entry.observedOn)}</span></dd></div>`;
-}
-function liquidityLines(block){
- if(!object(block))return '';
- return LIQUIDITY_LABELS.map(([key,label])=>{
-  const value=block[key];
-  if(!object(value))return '';
-  return `<p class="evidence-liquidity">${label} · ${value.floor?'≥':''}${value.value} sold in 30 days<span class="evidence-line">${esc(value.source)} · ${date(value.observedOn)}</span></p>`;
- }).join('');
-}
-function moreEvidence(c){
- const chunks=[];
- const market=marketRows(c.market);
- if(market)chunks.push(`<dl class="target-evidence">${market}</dl>`);
- if(object(c.grading)){
-  const rows=GRADING_LABELS.filter(([key])=>Object.hasOwn(c.grading,key)).map(([key,label])=>statRow(label,key,c.grading[key])).join('');
-  if(rows)chunks.push(`<dl class="target-evidence">${rows}</dl>`);
- }
- const sold=liquidityLines(c.liquidity);
- if(sold)chunks.push(sold);
- return chunks.length?`<h4>More evidence</h4>${chunks.join('')}`:'';
+function cardCurrency(c){return c.language==='ja'?'JPY':'USD';}
+function marketFigure(market,keys,currency){
+ if(!object(market))return null;
+ return keys.map(key=>market[key]).find(value=>object(value)&&value.currency===currency)||null;
 }
 function watchCard(c,checkedAt){
  const artCredit=c.imageSourceUrl.startsWith('https://assets.tcgdex.net/')?'Card artwork via TCGdex':'Official Pokémon card artwork';
- const grading=GRADING_LABELS.map(([key,label])=>statRow(label,key,c.grading?.[key]??null)).join('');
+ const currency=cardCurrency(c);
+ const raw=marketFigure(c.market,['rawAsk','rawGuide'],currency);
+ const psa10=marketFigure(c.market,['psa10Median30d','psa10Guide'],currency);
+ const rows=[['Raw delivered',raw],['PSA Value grading',null],['Card + grading',null],['UK PSA 10 sale',psa10],['Profit if PSA 10',null]];
+ const figures=rows.map(([label,figure])=>`<div><dt>${label}</dt><dd>${figure?money(figure.amountMinor,figure.currency):'—'}</dd></div>`).join('');
  return `<article class="public-target" id="pick-${esc(c.id)}">
   <button type="button" class="target-picture" data-target-art="${esc(c.id)}" aria-label="Enlarge ${esc(c.name)} card artwork"><img src="${esc(c.image)}" alt="${esc(c.name+' · '+c.set+' · '+c.number)}"><span>View artwork ↗</span></button>
-  <div class="target-copy"><span class="kicker target-badge-watch">WATCH · ${c.language==='ja'?'JAPANESE':'ENGLISH'}</span><h3>${esc(c.name)}</h3><p class="target-printing">${esc(c.set+' · '+c.number+' · '+c.printing)}</p><p class="target-summary">Watch entry: dated market evidence, not a buy signal. Prices are in the currency shown; no conversions.</p><p class="target-date">Checked ${date(checkedAt)}</p></div>
-  <div class="target-outcomes"><dl class="target-evidence">${marketRows(c.market)}</dl><h4>Grading</h4><dl class="target-evidence">${grading}</dl>${liquidityLines(c.liquidity)}<details><summary>Prices &amp; sources</summary><ul><li><a href="${esc(c.imageSourceUrl)}">${artCredit}</a></li></ul></details></div>
+  <div class="target-copy"><span class="kicker">WATCH · ${c.language==='ja'?'JAPANESE':'ENGLISH'}</span><h3>${esc(c.name)}</h3><p class="target-printing">${esc(c.set+' · '+c.number+' · '+c.printing)}</p><p class="target-summary">Profit shown if this card earns PSA 10. The seller lists the card as Raw. Its grade and the condition of the copy are unknown.</p><p class="target-date">Entry and grading checked ${date(checkedAt)}</p></div>
+  <div class="target-outcomes"><dl class="target-upside-figures">${figures}</dl><p class="target-context">Profit excludes grading postage and selling costs.</p><details><summary>Prices &amp; sources</summary><ul><li><a href="${esc(c.imageSourceUrl)}">${artCredit}</a></li></ul></details></div>
  </article>`;
 }
 function validateFeed(data,language,now=Date.now()){
@@ -268,8 +242,7 @@ function mount(language){
    host.innerHTML=`<div class="opportunity-empty"><h3>No current reviewed picks</h3><p>${esc(message||'The next reviewed cards will appear here.')}</p>${retryButton}</div>`;
    return;
   }
-  const watch=examples.some(c=>c.kind==='watch');
-  status.textContent=watch?`${examples.length} dated entr${examples.length===1?'y':'ies'}`:`${examples.length} dated PSA 10 scenario${examples.length===1?'':'s'}`;
+  status.textContent=`${examples.length} dated PSA 10 scenario${examples.length===1?'':'s'}`;
   const findings=review.findings?.[language]??[];
   const notice=message?`<div class="opportunity-empty"><p>${esc(message)}</p>${retryButton}</div>`:'';
   host.innerHTML=notice+earlierCards(examples)+
@@ -296,8 +269,7 @@ function mount(language){
     const examples=earlierExamples(cards);
     items=[...cards,...examples];
     status.textContent=`${cards.length} current reviewed card${cards.length===1?'':'s'}`;
-    const mixed=examples.some(c=>c.kind==='watch');
-    const earlier=examples.length?'<header><h3>'+(mixed?'Earlier dated entries':'Earlier PSA 10 scenarios')+'</h3><p class="target-context">'+(mixed?'Dates show when each figure was checked. Watch entries are not buy signals.':'Raw and grading prices were checked on the dates shown.')+'</p></header>'+earlierCards(examples):'';
+    const earlier=examples.length?'<header><h3>Earlier PSA 10 scenarios</h3><p class="target-context">Raw and grading prices were checked on the dates shown.</p></header>'+earlierCards(examples):'';
     host.innerHTML=cards.map(c=>renderCard(c,c.checkedAt)).join('')+earlier;
     pictureErrors();
     const expires=Math.min(Date.parse(data.generatedAt)+REFRESH_SECONDS*1000,...cards.map(c=>Date.parse(c.validUntil)));

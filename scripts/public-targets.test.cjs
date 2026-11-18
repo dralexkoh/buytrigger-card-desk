@@ -99,22 +99,27 @@ test('widened config keeps the 25 legacy cards and renders 14 watch cards from s
  for(const entry of legacy){
   assert.equal(upsideCard(entry,entry.checkedAt??datedConfig.review.checkedAt),legacyHtml[entry.id],entry.id);
  }
- const html=watch.map(entry=>watchCard(entry,entry.checkedAt)).join('\n');
- assert.match(html,/class="kicker target-badge-watch">WATCH · ENGLISH/);
- assert.match(html,/class="kicker target-badge-watch">WATCH · JAPANESE/);
- assert.match(html,/US\$19\.61/);
- assert.match(html,/¥1,480/);
- assert.match(html,/≥30 sold in 30 days/);
- assert.match(html,/38 sold in 30 days/);
- assert.match(html,/Watch entry: dated market evidence, not a buy signal\. Prices are in the currency shown; no conversions\./);
- assert.doesNotMatch(html,/Profit if PSA 10|PSA Value grading/);
+ const english=watchCard(watch.find(entry=>entry.id==='vaporeon-swsh9tg-tg02-en'),'2026-11-18');
+ const japanese=watchCard(watch.find(entry=>entry.id==='flareon-s8b-188-ja'),'2026-11-18');
+ assert.match(english,/<span class="kicker">WATCH · ENGLISH<\/span>/);
+ assert.match(english,/Raw delivered<\/dt><dd>US\$18\.51<\/dd>/);
+ assert.match(english,/UK PSA 10 sale<\/dt><dd>US\$615<\/dd>/);
+ assert.match(english,/PSA Value grading<\/dt><dd>—<\/dd>/);
+ assert.match(english,/Card \+ grading<\/dt><dd>—<\/dd>/);
+ assert.match(english,/Profit if PSA 10<\/dt><dd>—<\/dd>/);
+ assert.match(japanese,/<span class="kicker">WATCH · JAPANESE<\/span>/);
+ assert.match(japanese,/Raw delivered<\/dt><dd>¥1,480<\/dd>/);
+ assert.match(japanese,/UK PSA 10 sale<\/dt><dd>—<\/dd>/);
+ assert.doesNotMatch(japanese,/US\$/);
  for(const entry of watch){
   const one=watchCard(entry,entry.checkedAt);
-  assert.match(one,entry.language==='ja'?/WATCH · JAPANESE/:/WATCH · ENGLISH/);
-  assert.match(one,/Gem rate<\/dt><dd>Unavailable<\/dd>/);
-  assert.match(one,/PSA 10 pop<\/dt><dd>Unavailable<\/dd>/);
-  assert.match(one,/Total graded<\/dt><dd>Unavailable<\/dd>/);
-  assert.match(one,/Card artwork via TCGdex/);
+  const legacyShape=upsideCard(legacy[0],legacy[0].checkedAt??datedConfig.review.checkedAt);
+  assert.equal((one.match(/<div><dt>/g)||[]).length,5);
+  assert.equal((one.match(/class="public-target"|class="target-picture"|class="target-copy"|class="target-printing"|class="target-summary"|class="target-date"|class="target-outcomes"|class="target-upside-figures"|class="target-context"/g)||[]).length,(legacyShape.match(/class="public-target"|class="target-picture"|class="target-copy"|class="target-printing"|class="target-summary"|class="target-date"|class="target-outcomes"|class="target-upside-figures"|class="target-context"/g)||[]).length);
+  assert.match(one,entry.language==='ja'?/>WATCH · JAPANESE</:/>WATCH · ENGLISH</);
+  assert.doesNotMatch(one,/evidence-line|target-evidence|target-badge-watch|Unavailable|More evidence|Gem rate|sold in 30 days/);
+  if(entry.language==='ja')assert.doesNotMatch(one,/US\$|£/);
+  else assert.doesNotMatch(one,/¥|£/);
  }
 });
 
@@ -149,12 +154,9 @@ test('saved database packet cases match the public validator',()=>{
   assert.equal(validateFeed(data,packet.public.language,at).length,1,name);
  }
  const upside=upsideCard(packets.good.upside_gbp_with_usd_market_block.public,'2026-11-06T12:00:00Z');
- assert.match(upside,/More evidence/);
  assert.match(upside,/Profit if PSA 10<\/dt><dd>£/);
- assert.match(upside,/US\$20/);
- assert.doesNotMatch(upside,/target-badge-watch/);
+ assert.doesNotMatch(upside,/More evidence|US\$|evidence-line/);
  const populated=watchCard(packets.good.watch_with_psa_direct_pop.public,'2026-11-18T21:30:00Z');
- assert.match(populated,/1,234/);
- assert.match(populated,/PSA, 18 Nov 2026/);
- assert.match(populated,/Gem rate<\/dt><dd>Unavailable<\/dd>/);
+ assert.match(populated,/Raw delivered<\/dt><dd>US\$18\.51<\/dd>/);
+ assert.doesNotMatch(populated,/1,234|Unavailable|Gem rate|evidence-line/);
 });
