@@ -7,6 +7,7 @@ const legacyHtml=require('./fixtures/public-targets/legacy-upside-html.json');
 const feedEn=require('./fixtures/public-targets/feed-watch-en.json');
 const feedJa=require('./fixtures/public-targets/feed-watch-ja.json');
 const packets=require('./fixtures/public-targets/db-packet-cases.json');
+const ecb=require('./fixtures/public-targets/ecb-frankfurter-2026-11-18.json');
 
 const now=Date.parse('2026-11-06T12:00:00Z');
 const card={
@@ -99,27 +100,47 @@ test('widened config keeps the 25 legacy cards and renders 14 watch cards from s
  for(const entry of legacy){
   assert.equal(upsideCard(entry,entry.checkedAt??datedConfig.review.checkedAt),legacyHtml[entry.id],entry.id);
  }
- const english=watchCard(watch.find(entry=>entry.id==='vaporeon-swsh9tg-tg02-en'),'2026-11-18');
- const japanese=watchCard(watch.find(entry=>entry.id==='flareon-s8b-188-ja'),'2026-11-18');
+ const fx=datedConfig.fx;
+ const [gbpQuote,usdQuote]=ecb.quotes;
+ assert.equal(fx.pairs.GBPUSD,String(gbpQuote.rates.USD));
+ assert.equal(fx.pairs.GBPJPY,String(gbpQuote.rates.JPY));
+ assert.equal(fx.pairs.USDJPY,String(usdQuote.rates.JPY));
+ assert.equal(fx.observedOn,ecb.observedOn);
+ assert.equal(fx.observedOn,'2026-11-18');
+ assert.equal(fx.gradingMinor,3500);
+ const english=watchCard(watch.find(entry=>entry.id==='vaporeon-swsh9tg-tg02-en'),'2026-11-18',fx);
+ const japanese=watchCard(watch.find(entry=>entry.id==='flareon-s8b-188-ja'),'2026-11-18',fx);
+ const soldOut=watchCard(watch.find(entry=>entry.id==='charizard-vstar-s12a-212-ja'),'2026-11-18',fx);
  assert.match(english,/<span class="kicker">WATCH · ENGLISH<\/span>/);
  assert.match(english,/Raw delivered<\/dt><dd>US\$18\.51<\/dd>/);
+ assert.match(english,/PSA Value grading<\/dt><dd>US\$46\.09<\/dd>/);
+ assert.match(english,/Card \+ grading<\/dt><dd>US\$64\.60<\/dd>/);
  assert.match(english,/UK PSA 10 sale<\/dt><dd>US\$615<\/dd>/);
- assert.match(english,/PSA Value grading<\/dt><dd>—<\/dd>/);
- assert.match(english,/Card \+ grading<\/dt><dd>—<\/dd>/);
- assert.match(english,/Profit if PSA 10<\/dt><dd>—<\/dd>/);
+ assert.match(english,/Profit if PSA 10<\/dt><dd>US\$550\.40<\/dd>/);
+ assert.match(english,/Converted at £1 = US\$1\.3168 \(ECB, 18 Nov 2026\)/);
+ assert.doesNotMatch(english,/¥|evidence-line|Profit \(US\$\)/);
  assert.match(japanese,/<span class="kicker">WATCH · JAPANESE<\/span>/);
  assert.match(japanese,/Raw delivered<\/dt><dd>¥1,480<\/dd>/);
- assert.match(japanese,/UK PSA 10 sale<\/dt><dd>—<\/dd>/);
- assert.doesNotMatch(japanese,/US\$/);
+ assert.match(japanese,/PSA Value grading<\/dt><dd>¥7,348<\/dd>/);
+ assert.match(japanese,/Card \+ grading<\/dt><dd>¥8,828<\/dd>/);
+ assert.match(japanese,/UK PSA 10 sale \(converted\)<\/dt><dd>¥10,362<\/dd>/);
+ assert.match(japanese,/Profit if PSA 10<\/dt><dd>¥1,534<\/dd>/);
+ assert.match(japanese,/Profit \(US\$\)<\/dt><dd>US\$9\.62<\/dd>/);
+ assert.match(japanese,/Converted at £1 = ¥209\.93 and US\$1 = ¥159\.42 \(ECB, 18 Nov 2026\)/);
+ assert.match(soldOut,/Raw delivered<\/dt><dd>—<\/dd>/);
+ assert.match(soldOut,/PSA Value grading<\/dt><dd>¥7,348<\/dd>/);
+ assert.match(soldOut,/Card \+ grading<\/dt><dd>—<\/dd>/);
+ assert.match(soldOut,/UK PSA 10 sale \(converted\)<\/dt><dd>¥27,698<\/dd>/);
+ assert.match(soldOut,/Profit if PSA 10<\/dt><dd>—<\/dd>/);
+ assert.match(soldOut,/Profit \(US\$\)<\/dt><dd>—<\/dd>/);
  for(const entry of watch){
-  const one=watchCard(entry,entry.checkedAt);
+  const one=watchCard(entry,entry.checkedAt,fx);
   const legacyShape=upsideCard(legacy[0],legacy[0].checkedAt??datedConfig.review.checkedAt);
-  assert.equal((one.match(/<div><dt>/g)||[]).length,5);
+  assert.equal((one.match(/<div(?: class="target-profit")?><dt>/g)||[]).length,entry.language==='ja'?6:5);
   assert.equal((one.match(/class="public-target"|class="target-picture"|class="target-copy"|class="target-printing"|class="target-summary"|class="target-date"|class="target-outcomes"|class="target-upside-figures"|class="target-context"/g)||[]).length,(legacyShape.match(/class="public-target"|class="target-picture"|class="target-copy"|class="target-printing"|class="target-summary"|class="target-date"|class="target-outcomes"|class="target-upside-figures"|class="target-context"/g)||[]).length);
   assert.match(one,entry.language==='ja'?/>WATCH · JAPANESE</:/>WATCH · ENGLISH</);
+  assert.match(one,/Converted at £1 = /);
   assert.doesNotMatch(one,/evidence-line|target-evidence|target-badge-watch|Unavailable|More evidence|Gem rate|sold in 30 days/);
-  if(entry.language==='ja')assert.doesNotMatch(one,/US\$|£/);
-  else assert.doesNotMatch(one,/¥|£/);
  }
 });
 
@@ -156,7 +177,8 @@ test('saved database packet cases match the public validator',()=>{
  const upside=upsideCard(packets.good.upside_gbp_with_usd_market_block.public,'2026-11-06T12:00:00Z');
  assert.match(upside,/Profit if PSA 10<\/dt><dd>£/);
  assert.doesNotMatch(upside,/More evidence|US\$|evidence-line/);
- const populated=watchCard(packets.good.watch_with_psa_direct_pop.public,'2026-11-18T21:30:00Z');
+ const populated=watchCard(packets.good.watch_with_psa_direct_pop.public,'2026-11-18T21:30:00Z',datedConfig.fx);
  assert.match(populated,/Raw delivered<\/dt><dd>US\$18\.51<\/dd>/);
+ assert.match(populated,/Profit if PSA 10<\/dt><dd>US\$550\.40<\/dd>/);
  assert.doesNotMatch(populated,/1,234|Unavailable|Gem rate|evidence-line/);
 });

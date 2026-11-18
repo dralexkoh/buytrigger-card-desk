@@ -2,6 +2,19 @@
   "schemaVersion": 1,
   "enabled": true,
   "endpoint": "https://ukblxmvsqihnnyysvxes.supabase.co/functions/v1/public-card-targets",
+  "fx": {
+    "source": "ECB reference rate via frankfurter.app",
+    "sourceUrl": "https://api.frankfurter.dev/v1/2026-11-18?from=GBP&to=USD,JPY",
+    "usdSourceUrl": "https://api.frankfurter.dev/v1/2026-11-18?from=USD&to=JPY",
+    "observedOn": "2026-11-18",
+    "gradingMinor": 3500,
+    "gradingCurrency": "GBP",
+    "pairs": {
+      "GBPUSD": "1.3168",
+      "GBPJPY": "209.93",
+      "USDJPY": "159.42"
+    }
+  },
   "review": {
     "checkedAt": "2026-11-05",
     "listingsChecked": {
