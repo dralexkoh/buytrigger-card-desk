@@ -1,0 +1,3236 @@
+{
+ "watch": [
+  {
+   "publicConsent": true,
+   "reviewedAt": "2026-11-18T21:31:00Z",
+   "reviewedBy": "BuyTrigger.Cards evidence review",
+   "sourceIdentity": null,
+   "gates": {
+    "exactIssue": true,
+    "publicMediaRights": true,
+    "publicSafeSources": true
+   },
+   "public": {
+    "id": "vaporeon-swsh9tg-tg02-en",
+    "name": "Vaporeon",
+    "set": "Brilliant Stars Trainer Gallery",
+    "number": "TG02/TG30",
+    "printing": "Trainer Gallery Ultra Rare",
+    "language": "en",
+    "image": "assets/public-targets/vaporeon-swsh9tg-tg02-en.webp",
+    "imageSourceUrl": "https://assets.tcgdex.net/en/swsh/swsh9/TG02/high.webp",
+    "checkedAt": "2026-11-18T21:30:00Z",
+    "validUntil": "2026-11-25T20:30:00Z",
+    "kind": "watch",
+    "market": {
+     "rawGuide": {
+      "amountMinor": 1961,
+      "currency": "USD",
+      "type": "guide",
+      "source": "PriceCharting ungraded price guide",
+      "sourceUrl": "https://www.pricecharting.com/game/pokemon-brilliant-stars/vaporeon-tg02",
+      "observedOn": "2026-11-18",
+      "confidence": "medium"
+     },
+     "rawAsk": {
+      "amountMinor": 1851,
+      "currency": "USD",
+      "type": "ask",
+      "source": "TCGplayer lowest listing via TCGCSV (file 2026-11-18 20:05 UTC)",
+      "sourceUrl": "https://www.tcgplayer.com/product/264211",
+      "observedOn": "2026-11-18",
+      "confidence": "medium"
+     },
+     "psa10Guide": {
+      "amountMinor": 65184,
+      "currency": "USD",
+      "type": "guide",
+      "source": "PriceCharting PSA 10 price guide",
+      "sourceUrl": "https://www.pricecharting.com/game/pokemon-brilliant-stars/vaporeon-tg02",
+      "observedOn": "2026-11-18",
+      "confidence": "medium"
+     },
+     "psa10Median30d": {
+      "amountMinor": 61500,
+      "currency": "USD",
+      "type": "median",
+      "source": "PriceCharting PSA 10 sold list, 30-day median (titles not hand-checked)",
+      "sourceUrl": "https://www.pricecharting.com/game/pokemon-brilliant-stars/vaporeon-tg02",
+      "observedOn": "2026-11-18",
+      "confidence": "medium"
+     }
+    },
+    "grading": {
+     "gemRatePct": null,
+     "psa10Pop": null,
+     "totalGraded": null
+    },
+    "liquidity": {
+     "rawSold30d": {
+      "value": 38,
+      "source": "PriceCharting sold list (eBay/TCGplayer sales shown on page)",
+      "observedOn": "2026-11-18",
+      "floor": false
+     },
+     "psa10Sold30d": {
+      "value": 30,
+      "source": "PriceCharting sold list (eBay/TCGplayer sales shown on page)",
+      "observedOn": "2026-11-18",
+      "floor": true
+     }
+    }
+   }
+  },
+  {
+   "publicConsent": true,
+   "reviewedAt": "2026-11-18T21:31:00Z",
+   "reviewedBy": "BuyTrigger.Cards evidence review",
+   "sourceIdentity": null,
+   "gates": {
+    "exactIssue": true,
+    "publicMediaRights": true,
+    "publicSafeSources": true
+   },
+   "public": {
+    "id": "flareon-swsh9tg-tg01-en",
+    "name": "Flareon",
+    "set": "Brilliant Stars Trainer Gallery",
+    "number": "TG01/TG30",
+    "printing": "Trainer Gallery Ultra Rare",
+    "language": "en",
+    "image": "assets/public-targets/flareon-swsh9tg-tg01-en.webp",
+    "imageSourceUrl": "https://assets.tcgdex.net/en/swsh/swsh9/TG01/high.webp",
+    "checkedAt": "2026-11-18T21:30:00Z",
+    "validUntil": "2026-11-25T20:30:00Z",
+    "kind": "watch",
+    "market": {
+     "rawGuide": {
+      "amountMinor": 2010,
+      "currency": "USD",
+      "type": "guide",
+      "source": "PriceCharting ungraded price guide",
+      "sourceUrl": "https://www.pricecharting.com/game/pokemon-brilliant-stars/flareon-tg01",
+      "observedOn": "2026-11-18",
+      "confidence": "medium"
+     },
+     "rawAsk": {
+      "amountMinor": 1599,
+      "currency": "USD",
+      "type": "ask",
+      "source": "TCGplayer lowest listing via TCGCSV (file 2026-11-18 20:05 UTC)",
+      "sourceUrl": "https://www.tcgplayer.com/product/264210",
+      "observedOn": "2026-11-18",
+      "confidence": "medium"
+     },
+     "psa10Guide": {
+      "amountMinor": 63800,
+      "currency": "USD",
+      "type": "guide",
+      "source": "PriceCharting PSA 10 price guide",
+      "sourceUrl": "https://www.pricecharting.com/game/pokemon-brilliant-stars/flareon-tg01",
+      "observedOn": "2026-11-18",
+      "confidence": "medium"
+     },
+     "psa10Median30d": {
+      "amountMinor": 59999,
+      "currency": "USD",
+      "type": "median",
+      "source": "PriceCharting PSA 10 sold list, 30-day median (titles not hand-checked)",
+      "sourceUrl": "https://www.pricecharting.com/game/pokemon-brilliant-stars/flareon-tg01",
+      "observedOn": "2026-11-18",
+      "confidence": "medium"
+     }
+    },
+    "grading": {
+     "gemRatePct": null,
+     "psa10Pop": null,
+     "totalGraded": null
+    },
+    "liquidity": {
+     "rawSold30d": {
+      "value": 40,
+      "source": "PriceCharting sold list (eBay/TCGplayer sales shown on page)",
+      "observedOn": "2026-11-18",
+      "floor": false
+     },
+     "psa10Sold30d": {
+      "value": 29,
+      "source": "PriceCharting sold list (eBay/TCGplayer sales shown on page)",
+      "observedOn": "2026-11-18",
+      "floor": false
+     }
+    }
+   }
+  },
+  {
+   "publicConsent": true,
+   "reviewedAt": "2026-11-18T21:31:00Z",
+   "reviewedBy": "BuyTrigger.Cards evidence review",
+   "sourceIdentity": null,
+   "gates": {
+    "exactIssue": true,
+    "publicMediaRights": true,
+    "publicSafeSources": true
+   },
+   "public": {
+    "id": "jolteon-swsh9tg-tg04-en",
+    "name": "Jolteon",
+    "set": "Brilliant Stars Trainer Gallery",
+    "number": "TG04/TG30",
+    "printing": "Trainer Gallery Ultra Rare",
+    "language": "en",
+    "image": "assets/public-targets/jolteon-swsh9tg-tg04-en.webp",
+    "imageSourceUrl": "https://assets.tcgdex.net/en/swsh/swsh9/TG04/high.webp",
+    "checkedAt": "2026-11-18T21:30:00Z",
+    "validUntil": "2026-11-25T20:30:00Z",
+    "kind": "watch",
+    "market": {
+     "rawGuide": {
+      "amountMinor": 1855,
+      "currency": "USD",
+      "type": "guide",
+      "source": "PriceCharting ungraded price guide",
+      "sourceUrl": "https://www.pricecharting.com/game/pokemon-brilliant-stars/jolteon-tg04",
+      "observedOn": "2026-11-18",
+      "confidence": "medium"
+     },
+     "rawAsk": {
+      "amountMinor": 1314,
+      "currency": "USD",
+      "type": "ask",
+      "source": "TCGplayer lowest listing via TCGCSV (file 2026-11-18 20:05 UTC)",
+      "sourceUrl": "https://www.tcgplayer.com/product/264213",
+      "observedOn": "2026-11-18",
+      "confidence": "medium"
+     },
+     "psa10Guide": {
+      "amountMinor": 61513,
+      "currency": "USD",
+      "type": "guide",
+      "source": "PriceCharting PSA 10 price guide",
+      "sourceUrl": "https://www.pricecharting.com/game/pokemon-brilliant-stars/jolteon-tg04",
+      "observedOn": "2026-11-18",
+      "confidence": "medium"
+     },
+     "psa10Median30d": {
+      "amountMinor": 60000,
+      "currency": "USD",
+      "type": "median",
+      "source": "PriceCharting PSA 10 sold list, 30-day median (titles not hand-checked)",
+      "sourceUrl": "https://www.pricecharting.com/game/pokemon-brilliant-stars/jolteon-tg04",
+      "observedOn": "2026-11-18",
+      "confidence": "medium"
+     }
+    },
+    "grading": {
+     "gemRatePct": null,
+     "psa10Pop": null,
+     "totalGraded": null
+    },
+    "liquidity": {
+     "rawSold30d": {
+      "value": 41,
+      "source": "PriceCharting sold list (eBay/TCGplayer sales shown on page)",
+      "observedOn": "2026-11-18",
+      "floor": false
+     },
+     "psa10Sold30d": {
+      "value": 23,
+      "source": "PriceCharting sold list (eBay/TCGplayer sales shown on page)",
+      "observedOn": "2026-11-18",
+      "floor": false
+     }
+    }
+   }
+  },
+  {
+   "publicConsent": true,
+   "reviewedAt": "2026-11-18T21:31:00Z",
+   "reviewedBy": "BuyTrigger.Cards evidence review",
+   "sourceIdentity": null,
+   "gates": {
+    "exactIssue": true,
+    "publicMediaRights": true,
+    "publicSafeSources": true
+   },
+   "public": {
+    "id": "eevee-swsh9tg-tg11-en",
+    "name": "Eevee",
+    "set": "Brilliant Stars Trainer Gallery",
+    "number": "TG11/TG30",
+    "printing": "Trainer Gallery Ultra Rare",
+    "language": "en",
+    "image": "assets/public-targets/eevee-swsh9tg-tg11-en.webp",
+    "imageSourceUrl": "https://assets.tcgdex.net/en/swsh/swsh9/TG11/high.webp",
+    "checkedAt": "2026-11-18T21:30:00Z",
+    "validUntil": "2026-11-25T20:30:00Z",
+    "kind": "watch",
+    "market": {
+     "rawGuide": {
+      "amountMinor": 1899,
+      "currency": "USD",
+      "type": "guide",
+      "source": "PriceCharting ungraded price guide",
+      "sourceUrl": "https://www.pricecharting.com/game/pokemon-brilliant-stars/eevee-tg11",
+      "observedOn": "2026-11-18",
+      "confidence": "medium"
+     },
+     "rawAsk": {
+      "amountMinor": 1534,
+      "currency": "USD",
+      "type": "ask",
+      "source": "TCGplayer lowest listing via TCGCSV (file 2026-11-18 20:05 UTC)",
+      "sourceUrl": "https://www.tcgplayer.com/product/264218",
+      "observedOn": "2026-11-18",
+      "confidence": "medium"
+     },
+     "psa10Guide": {
+      "amountMinor": 57500,
+      "currency": "USD",
+      "type": "guide",
+      "source": "PriceCharting PSA 10 price guide",
+      "sourceUrl": "https://www.pricecharting.com/game/pokemon-brilliant-stars/eevee-tg11",
+      "observedOn": "2026-11-18",
+      "confidence": "medium"
+     },
+     "psa10Median30d": {
+      "amountMinor": 65000,
+      "currency": "USD",
+      "type": "median",
+      "source": "PriceCharting PSA 10 sold list, 30-day median (titles not hand-checked)",
+      "sourceUrl": "https://www.pricecharting.com/game/pokemon-brilliant-stars/eevee-tg11",
+      "observedOn": "2026-11-18",
+      "confidence": "medium"
+     }
+    },
+    "grading": {
+     "gemRatePct": null,
+     "psa10Pop": null,
+     "totalGraded": null
+    },
+    "liquidity": {
+     "rawSold30d": {
+      "value": 39,
+      "source": "PriceCharting sold list (eBay/TCGplayer sales shown on page)",
+      "observedOn": "2026-11-18",
+      "floor": false
+     },
+     "psa10Sold30d": {
+      "value": 23,
+      "source": "PriceCharting sold list (eBay/TCGplayer sales shown on page)",
+      "observedOn": "2026-11-18",
+      "floor": false
+     }
+    }
+   }
+  },
+  {
+   "publicConsent": true,
+   "reviewedAt": "2026-11-18T21:31:00Z",
+   "reviewedBy": "BuyTrigger.Cards evidence review",
+   "sourceIdentity": null,
+   "gates": {
+    "exactIssue": true,
+    "publicMediaRights": true,
+    "publicSafeSources": true
+   },
+   "public": {
+    "id": "pikachu-sm12-241-en",
+    "name": "Pikachu",
+    "set": "Cosmic Eclipse",
+    "number": "241/236",
+    "printing": "Secret Rare",
+    "language": "en",
+    "image": "assets/public-targets/pikachu-sm12-241-en.webp",
+    "imageSourceUrl": "https://assets.tcgdex.net/en/sm/sm12/241/high.webp",
+    "checkedAt": "2026-11-18T21:30:00Z",
+    "validUntil": "2026-11-25T20:30:00Z",
+    "kind": "watch",
+    "market": {
+     "rawGuide": {
+      "amountMinor": 18000,
+      "currency": "USD",
+      "type": "guide",
+      "source": "PriceCharting ungraded price guide",
+      "sourceUrl": "https://www.pricecharting.com/game/pokemon-cosmic-eclipse/pikachu-241",
+      "observedOn": "2026-11-18",
+      "confidence": "medium"
+     },
+     "rawAsk": {
+      "amountMinor": 14500,
+      "currency": "USD",
+      "type": "ask",
+      "source": "TCGplayer lowest listing via TCGCSV (file 2026-11-18 20:05 UTC)",
+      "sourceUrl": "https://www.tcgplayer.com/product/201352",
+      "observedOn": "2026-11-18",
+      "confidence": "medium"
+     },
+     "psa10Guide": {
+      "amountMinor": 162550,
+      "currency": "USD",
+      "type": "guide",
+      "source": "PriceCharting PSA 10 price guide",
+      "sourceUrl": "https://www.pricecharting.com/game/pokemon-cosmic-eclipse/pikachu-241",
+      "observedOn": "2026-11-18",
+      "confidence": "medium"
+     },
+     "psa10Median30d": {
+      "amountMinor": 158500,
+      "currency": "USD",
+      "type": "median",
+      "source": "PriceCharting PSA 10 sold list, 30-day median (titles not hand-checked)",
+      "sourceUrl": "https://www.pricecharting.com/game/pokemon-cosmic-eclipse/pikachu-241",
+      "observedOn": "2026-11-18",
+      "confidence": "medium"
+     }
+    },
+    "grading": {
+     "gemRatePct": null,
+     "psa10Pop": null,
+     "totalGraded": null
+    },
+    "liquidity": {
+     "rawSold30d": {
+      "value": 41,
+      "source": "PriceCharting sold list (eBay/TCGplayer sales shown on page)",
+      "observedOn": "2026-11-18",
+      "floor": false
+     },
+     "psa10Sold30d": {
+      "value": 26,
+      "source": "PriceCharting sold list (eBay/TCGplayer sales shown on page)",
+      "observedOn": "2026-11-18",
+      "floor": false
+     }
+    }
+   }
+  },
+  {
+   "publicConsent": true,
+   "reviewedAt": "2026-11-18T21:31:00Z",
+   "reviewedBy": "BuyTrigger.Cards evidence review",
+   "sourceIdentity": null,
+   "gates": {
+    "exactIssue": true,
+    "publicMediaRights": true,
+    "publicSafeSources": true
+   },
+   "public": {
+    "id": "charizard-vstar-swshp-swsh262-en",
+    "name": "Charizard VSTAR",
+    "set": "SWSH Black Star Promos",
+    "number": "SWSH262",
+    "printing": "Promo",
+    "language": "en",
+    "image": "assets/public-targets/charizard-vstar-swshp-swsh262-en.webp",
+    "imageSourceUrl": "https://assets.tcgdex.net/en/swsh/swshp/SWSH262/high.webp",
+    "checkedAt": "2026-11-18T21:30:00Z",
+    "validUntil": "2026-11-25T20:30:00Z",
+    "kind": "watch",
+    "market": {
+     "rawGuide": {
+      "amountMinor": 6646,
+      "currency": "USD",
+      "type": "guide",
+      "source": "PriceCharting ungraded price guide",
+      "sourceUrl": "https://www.pricecharting.com/game/pokemon-promo/charizard-vstar-swsh262",
+      "observedOn": "2026-11-18",
+      "confidence": "medium"
+     },
+     "rawAsk": {
+      "amountMinor": 5067,
+      "currency": "USD",
+      "type": "ask",
+      "source": "TCGplayer lowest listing via TCGCSV (file 2026-11-18 20:05 UTC)",
+      "sourceUrl": "https://www.tcgplayer.com/product/285396",
+      "observedOn": "2026-11-18",
+      "confidence": "medium"
+     },
+     "psa10Guide": {
+      "amountMinor": 109414,
+      "currency": "USD",
+      "type": "guide",
+      "source": "PriceCharting PSA 10 price guide",
+      "sourceUrl": "https://www.pricecharting.com/game/pokemon-promo/charizard-vstar-swsh262",
+      "observedOn": "2026-11-18",
+      "confidence": "medium"
+     },
+     "psa10Median30d": {
+      "amountMinor": 107278,
+      "currency": "USD",
+      "type": "median",
+      "source": "PriceCharting PSA 10 sold list, 30-day median (titles not hand-checked)",
+      "sourceUrl": "https://www.pricecharting.com/game/pokemon-promo/charizard-vstar-swsh262",
+      "observedOn": "2026-11-18",
+      "confidence": "medium"
+     }
+    },
+    "grading": {
+     "gemRatePct": null,
+     "psa10Pop": null,
+     "totalGraded": null
+    },
+    "liquidity": {
+     "rawSold30d": {
+      "value": 38,
+      "source": "PriceCharting sold list (eBay/TCGplayer sales shown on page)",
+      "observedOn": "2026-11-18",
+      "floor": false
+     },
+     "psa10Sold30d": {
+      "value": 30,
+      "source": "PriceCharting sold list (eBay/TCGplayer sales shown on page)",
+      "observedOn": "2026-11-18",
+      "floor": true
+     }
+    }
+   }
+  },
+  {
+   "publicConsent": true,
+   "reviewedAt": "2026-11-18T21:31:00Z",
+   "reviewedBy": "BuyTrigger.Cards evidence review",
+   "sourceIdentity": null,
+   "gates": {
+    "exactIssue": true,
+    "publicMediaRights": true,
+    "publicSafeSources": true
+   },
+   "public": {
+    "id": "snorlax-swsh11tg-tg10-en",
+    "name": "Snorlax",
+    "set": "Lost Origin Trainer Gallery",
+    "number": "TG10/TG30",
+    "printing": "Trainer Gallery Ultra Rare",
+    "language": "en",
+    "image": "assets/public-targets/snorlax-swsh11tg-tg10-en.webp",
+    "imageSourceUrl": "https://assets.tcgdex.net/en/swsh/swsh11/TG10/high.webp",
+    "checkedAt": "2026-11-18T21:30:00Z",
+    "validUntil": "2026-11-25T20:30:00Z",
+    "kind": "watch",
+    "market": {
+     "rawGuide": {
+      "amountMinor": 2149,
+      "currency": "USD",
+      "type": "guide",
+      "source": "PriceCharting ungraded price guide",
+      "sourceUrl": "https://www.pricecharting.com/game/pokemon-lost-origin/snorlax-tg10",
+      "observedOn": "2026-11-18",
+      "confidence": "medium"
+     },
+     "rawAsk": {
+      "amountMinor": 1600,
+      "currency": "USD",
+      "type": "ask",
+      "source": "TCGplayer lowest listing via TCGCSV (file 2026-11-18 20:05 UTC)",
+      "sourceUrl": "https://www.tcgplayer.com/product/284270",
+      "observedOn": "2026-11-18",
+      "confidence": "medium"
+     },
+     "psa10Guide": {
+      "amountMinor": 54500,
+      "currency": "USD",
+      "type": "guide",
+      "source": "PriceCharting PSA 10 price guide",
+      "sourceUrl": "https://www.pricecharting.com/game/pokemon-lost-origin/snorlax-tg10",
+      "observedOn": "2026-11-18",
+      "confidence": "medium"
+     },
+     "psa10Median30d": {
+      "amountMinor": 55000,
+      "currency": "USD",
+      "type": "median",
+      "source": "PriceCharting PSA 10 sold list, 30-day median (titles not hand-checked)",
+      "sourceUrl": "https://www.pricecharting.com/game/pokemon-lost-origin/snorlax-tg10",
+      "observedOn": "2026-11-18",
+      "confidence": "medium"
+     }
+    },
+    "grading": {
+     "gemRatePct": null,
+     "psa10Pop": null,
+     "totalGraded": null
+    },
+    "liquidity": {
+     "rawSold30d": {
+      "value": 40,
+      "source": "PriceCharting sold list (eBay/TCGplayer sales shown on page)",
+      "observedOn": "2026-11-18",
+      "floor": false
+     },
+     "psa10Sold30d": {
+      "value": 15,
+      "source": "PriceCharting sold list (eBay/TCGplayer sales shown on page)",
+      "observedOn": "2026-11-18",
+      "floor": false
+     }
+    }
+   }
+  },
+  {
+   "publicConsent": true,
+   "reviewedAt": "2026-11-18T21:31:00Z",
+   "reviewedBy": "BuyTrigger.Cards evidence review",
+   "sourceIdentity": null,
+   "gates": {
+    "exactIssue": true,
+    "publicMediaRights": true,
+    "publicSafeSources": true
+   },
+   "public": {
+    "id": "flareon-s8b-188-ja",
+    "name": "Flareon (ブースター)",
+    "set": "VMAX Climax (S8b)",
+    "number": "188/184",
+    "printing": "Character Rare (CHR)",
+    "language": "ja",
+    "image": "assets/public-targets/flareon-s8b-188-ja.webp",
+    "imageSourceUrl": "https://assets.tcgdex.net/ja/S/S8b/188/high.webp",
+    "checkedAt": "2026-11-18T21:30:00Z",
+    "validUntil": "2026-11-25T20:30:00Z",
+    "kind": "watch",
+    "market": {
+     "rawGuide": {
+      "amountMinor": 1420,
+      "currency": "USD",
+      "type": "guide",
+      "source": "PriceCharting ungraded price guide",
+      "sourceUrl": "https://www.pricecharting.com/game/pokemon-japanese-vmax-climax/flareon-188",
+      "observedOn": "2026-11-18",
+      "confidence": "medium"
+     },
+     "rawAsk": {
+      "amountMinor": 1480,
+      "currency": "JPY",
+      "type": "ask",
+      "source": "Yuyu-tei shop sell price, tax included, in stock",
+      "sourceUrl": "https://yuyu-tei.jp/sell/poc/card/s08b/10298",
+      "observedOn": "2026-11-18",
+      "confidence": "high"
+     },
+     "psa10Guide": {
+      "amountMinor": 6531,
+      "currency": "USD",
+      "type": "guide",
+      "source": "PriceCharting PSA 10 price guide",
+      "sourceUrl": "https://www.pricecharting.com/game/pokemon-japanese-vmax-climax/flareon-188",
+      "observedOn": "2026-11-18",
+      "confidence": "medium"
+     },
+     "psa10Median30d": {
+      "amountMinor": 6500,
+      "currency": "USD",
+      "type": "median",
+      "source": "PriceCharting PSA 10 sold list, 30-day median (titles not hand-checked)",
+      "sourceUrl": "https://www.pricecharting.com/game/pokemon-japanese-vmax-climax/flareon-188",
+      "observedOn": "2026-11-18",
+      "confidence": "medium"
+     }
+    },
+    "grading": {
+     "gemRatePct": null,
+     "psa10Pop": null,
+     "totalGraded": null
+    },
+    "liquidity": {
+     "rawSold30d": {
+      "value": 18,
+      "source": "PriceCharting sold list (eBay/TCGplayer sales shown on page)",
+      "observedOn": "2026-11-18",
+      "floor": false
+     },
+     "psa10Sold30d": {
+      "value": 21,
+      "source": "PriceCharting sold list (eBay/TCGplayer sales shown on page)",
+      "observedOn": "2026-11-18",
+      "floor": false
+     }
+    }
+   }
+  },
+  {
+   "publicConsent": true,
+   "reviewedAt": "2026-11-18T21:31:00Z",
+   "reviewedBy": "BuyTrigger.Cards evidence review",
+   "sourceIdentity": null,
+   "gates": {
+    "exactIssue": true,
+    "publicMediaRights": true,
+    "publicSafeSources": true
+   },
+   "public": {
+    "id": "vaporeon-s8b-189-ja",
+    "name": "Vaporeon (シャワーズ)",
+    "set": "VMAX Climax (S8b)",
+    "number": "189/184",
+    "printing": "Character Rare (CHR)",
+    "language": "ja",
+    "image": "assets/public-targets/vaporeon-s8b-189-ja.webp",
+    "imageSourceUrl": "https://assets.tcgdex.net/ja/S/S8b/189/high.webp",
+    "checkedAt": "2026-11-18T21:30:00Z",
+    "validUntil": "2026-11-25T20:30:00Z",
+    "kind": "watch",
+    "market": {
+     "rawGuide": {
+      "amountMinor": 1810,
+      "currency": "USD",
+      "type": "guide",
+      "source": "PriceCharting ungraded price guide",
+      "sourceUrl": "https://www.pricecharting.com/game/pokemon-japanese-vmax-climax/vaporeon-189",
+      "observedOn": "2026-11-18",
+      "confidence": "medium"
+     },
+     "rawAsk": {
+      "amountMinor": 1780,
+      "currency": "JPY",
+      "type": "ask",
+      "source": "Yuyu-tei shop sell price, tax included, in stock",
+      "sourceUrl": "https://yuyu-tei.jp/sell/poc/card/s08b/10299",
+      "observedOn": "2026-11-18",
+      "confidence": "high"
+     },
+     "psa10Guide": {
+      "amountMinor": 5816,
+      "currency": "USD",
+      "type": "guide",
+      "source": "PriceCharting PSA 10 price guide",
+      "sourceUrl": "https://www.pricecharting.com/game/pokemon-japanese-vmax-climax/vaporeon-189",
+      "observedOn": "2026-11-18",
+      "confidence": "medium"
+     },
+     "psa10Median30d": {
+      "amountMinor": 5533,
+      "currency": "USD",
+      "type": "median",
+      "source": "PriceCharting PSA 10 sold list, 30-day median (titles not hand-checked)",
+      "sourceUrl": "https://www.pricecharting.com/game/pokemon-japanese-vmax-climax/vaporeon-189",
+      "observedOn": "2026-11-18",
+      "confidence": "medium"
+     }
+    },
+    "grading": {
+     "gemRatePct": null,
+     "psa10Pop": null,
+     "totalGraded": null
+    },
+    "liquidity": {
+     "rawSold30d": {
+      "value": 25,
+      "source": "PriceCharting sold list (eBay/TCGplayer sales shown on page)",
+      "observedOn": "2026-11-18",
+      "floor": false
+     },
+     "psa10Sold30d": {
+      "value": 21,
+      "source": "PriceCharting sold list (eBay/TCGplayer sales shown on page)",
+      "observedOn": "2026-11-18",
+      "floor": false
+     }
+    }
+   }
+  },
+  {
+   "publicConsent": true,
+   "reviewedAt": "2026-11-18T21:31:00Z",
+   "reviewedBy": "BuyTrigger.Cards evidence review",
+   "sourceIdentity": null,
+   "gates": {
+    "exactIssue": true,
+    "publicMediaRights": true,
+    "publicSafeSources": true
+   },
+   "public": {
+    "id": "jolteon-s8b-193-ja",
+    "name": "Jolteon (サンダース)",
+    "set": "VMAX Climax (S8b)",
+    "number": "193/184",
+    "printing": "Character Rare (CHR)",
+    "language": "ja",
+    "image": "assets/public-targets/jolteon-s8b-193-ja.webp",
+    "imageSourceUrl": "https://assets.tcgdex.net/ja/S/S8b/193/high.webp",
+    "checkedAt": "2026-11-18T21:30:00Z",
+    "validUntil": "2026-11-25T20:30:00Z",
+    "kind": "watch",
+    "market": {
+     "rawGuide": {
+      "amountMinor": 1361,
+      "currency": "USD",
+      "type": "guide",
+      "source": "PriceCharting ungraded price guide",
+      "sourceUrl": "https://www.pricecharting.com/game/pokemon-japanese-vmax-climax/jolteon-193",
+      "observedOn": "2026-11-18",
+      "confidence": "medium"
+     },
+     "rawAsk": {
+      "amountMinor": 1480,
+      "currency": "JPY",
+      "type": "ask",
+      "source": "Yuyu-tei shop sell price, tax included, in stock",
+      "sourceUrl": "https://yuyu-tei.jp/sell/poc/card/s08b/10303",
+      "observedOn": "2026-11-18",
+      "confidence": "high"
+     },
+     "psa10Guide": {
+      "amountMinor": 4500,
+      "currency": "USD",
+      "type": "guide",
+      "source": "PriceCharting PSA 10 price guide",
+      "sourceUrl": "https://www.pricecharting.com/game/pokemon-japanese-vmax-climax/jolteon-193",
+      "observedOn": "2026-11-18",
+      "confidence": "medium"
+     },
+     "psa10Median30d": {
+      "amountMinor": 4500,
+      "currency": "USD",
+      "type": "median",
+      "source": "PriceCharting PSA 10 sold list, 30-day median (titles not hand-checked)",
+      "sourceUrl": "https://www.pricecharting.com/game/pokemon-japanese-vmax-climax/jolteon-193",
+      "observedOn": "2026-11-18",
+      "confidence": "medium"
+     }
+    },
+    "grading": {
+     "gemRatePct": null,
+     "psa10Pop": null,
+     "totalGraded": null
+    },
+    "liquidity": {
+     "rawSold30d": {
+      "value": 20,
+      "source": "PriceCharting sold list (eBay/TCGplayer sales shown on page)",
+      "observedOn": "2026-11-18",
+      "floor": false
+     },
+     "psa10Sold30d": {
+      "value": 19,
+      "source": "PriceCharting sold list (eBay/TCGplayer sales shown on page)",
+      "observedOn": "2026-11-18",
+      "floor": false
+     }
+    }
+   }
+  },
+  {
+   "publicConsent": true,
+   "reviewedAt": "2026-11-18T21:31:00Z",
+   "reviewedBy": "BuyTrigger.Cards evidence review",
+   "sourceIdentity": null,
+   "gates": {
+    "exactIssue": true,
+    "publicMediaRights": true,
+    "publicSafeSources": true
+   },
+   "public": {
+    "id": "eevee-s8b-210-ja",
+    "name": "Eevee (イーブイ)",
+    "set": "VMAX Climax (S8b)",
+    "number": "210/184",
+    "printing": "Character Rare (CHR)",
+    "language": "ja",
+    "image": "assets/public-targets/eevee-s8b-210-ja.webp",
+    "imageSourceUrl": "https://assets.tcgdex.net/ja/S/S8b/210/high.webp",
+    "checkedAt": "2026-11-18T21:30:00Z",
+    "validUntil": "2026-11-25T20:30:00Z",
+    "kind": "watch",
+    "market": {
+     "rawGuide": {
+      "amountMinor": 1404,
+      "currency": "USD",
+      "type": "guide",
+      "source": "PriceCharting ungraded price guide",
+      "sourceUrl": "https://www.pricecharting.com/game/pokemon-japanese-vmax-climax/eevee-210",
+      "observedOn": "2026-11-18",
+      "confidence": "medium"
+     },
+     "rawAsk": {
+      "amountMinor": 1480,
+      "currency": "JPY",
+      "type": "ask",
+      "source": "Yuyu-tei shop sell price, tax included, in stock",
+      "sourceUrl": "https://yuyu-tei.jp/sell/poc/card/s08b/10320",
+      "observedOn": "2026-11-18",
+      "confidence": "high"
+     },
+     "psa10Guide": {
+      "amountMinor": 5750,
+      "currency": "USD",
+      "type": "guide",
+      "source": "PriceCharting PSA 10 price guide",
+      "sourceUrl": "https://www.pricecharting.com/game/pokemon-japanese-vmax-climax/eevee-210",
+      "observedOn": "2026-11-18",
+      "confidence": "medium"
+     },
+     "psa10Median30d": {
+      "amountMinor": 6000,
+      "currency": "USD",
+      "type": "median",
+      "source": "PriceCharting PSA 10 sold list, 30-day median (titles not hand-checked)",
+      "sourceUrl": "https://www.pricecharting.com/game/pokemon-japanese-vmax-climax/eevee-210",
+      "observedOn": "2026-11-18",
+      "confidence": "medium"
+     }
+    },
+    "grading": {
+     "gemRatePct": null,
+     "psa10Pop": null,
+     "totalGraded": null
+    },
+    "liquidity": {
+     "rawSold30d": {
+      "value": 17,
+      "source": "PriceCharting sold list (eBay/TCGplayer sales shown on page)",
+      "observedOn": "2026-11-18",
+      "floor": false
+     },
+     "psa10Sold30d": {
+      "value": 22,
+      "source": "PriceCharting sold list (eBay/TCGplayer sales shown on page)",
+      "observedOn": "2026-11-18",
+      "floor": false
+     }
+    }
+   }
+  },
+  {
+   "publicConsent": true,
+   "reviewedAt": "2026-11-18T21:31:00Z",
+   "reviewedBy": "BuyTrigger.Cards evidence review",
+   "sourceIdentity": null,
+   "gates": {
+    "exactIssue": true,
+    "publicMediaRights": true,
+    "publicSafeSources": true
+   },
+   "public": {
+    "id": "pikachu-sm11b-054-ja",
+    "name": "Pikachu (ピカチュウ)",
+    "set": "Dream League (SM11b)",
+    "number": "054/049",
+    "printing": "Character Rare (CHR)",
+    "language": "ja",
+    "image": "assets/public-targets/pikachu-sm11b-054-ja.webp",
+    "imageSourceUrl": "https://assets.tcgdex.net/ja/SM/SM11b/054/high.webp",
+    "checkedAt": "2026-11-18T21:30:00Z",
+    "validUntil": "2026-11-25T20:30:00Z",
+    "kind": "watch",
+    "market": {
+     "rawGuide": {
+      "amountMinor": 14500,
+      "currency": "USD",
+      "type": "guide",
+      "source": "PriceCharting ungraded price guide",
+      "sourceUrl": "https://www.pricecharting.com/game/pokemon-japanese-dream-league/pikachu-54",
+      "observedOn": "2026-11-18",
+      "confidence": "medium"
+     },
+     "rawAsk": {
+      "amountMinor": 34800,
+      "currency": "JPY",
+      "type": "ask",
+      "source": "Yuyu-tei shop sell price, tax included, in stock",
+      "sourceUrl": "https://yuyu-tei.jp/sell/poc/card/sm11b/10054",
+      "observedOn": "2026-11-18",
+      "confidence": "high"
+     },
+     "psa10Guide": {
+      "amountMinor": 34500,
+      "currency": "USD",
+      "type": "guide",
+      "source": "PriceCharting PSA 10 price guide",
+      "sourceUrl": "https://www.pricecharting.com/game/pokemon-japanese-dream-league/pikachu-54",
+      "observedOn": "2026-11-18",
+      "confidence": "medium"
+     },
+     "psa10Median30d": {
+      "amountMinor": 34501,
+      "currency": "USD",
+      "type": "median",
+      "source": "PriceCharting PSA 10 sold list, 30-day median (titles not hand-checked)",
+      "sourceUrl": "https://www.pricecharting.com/game/pokemon-japanese-dream-league/pikachu-54",
+      "observedOn": "2026-11-18",
+      "confidence": "medium"
+     }
+    },
+    "grading": {
+     "gemRatePct": null,
+     "psa10Pop": null,
+     "totalGraded": null
+    },
+    "liquidity": {
+     "rawSold30d": {
+      "value": 11,
+      "source": "PriceCharting sold list (eBay/TCGplayer sales shown on page)",
+      "observedOn": "2026-11-18",
+      "floor": false
+     },
+     "psa10Sold30d": {
+      "value": 30,
+      "source": "PriceCharting sold list (eBay/TCGplayer sales shown on page)",
+      "observedOn": "2026-11-18",
+      "floor": true
+     }
+    }
+   }
+  },
+  {
+   "publicConsent": true,
+   "reviewedAt": "2026-11-18T21:31:00Z",
+   "reviewedBy": "BuyTrigger.Cards evidence review",
+   "sourceIdentity": null,
+   "gates": {
+    "exactIssue": true,
+    "publicMediaRights": true,
+    "publicSafeSources": true
+   },
+   "public": {
+    "id": "charizard-vstar-s12a-212-ja",
+    "name": "Charizard VSTAR (リザードンVSTAR)",
+    "set": "VSTAR Universe (S12a)",
+    "number": "212/172",
+    "printing": "Special Art Rare (SAR)",
+    "language": "ja",
+    "image": "assets/public-targets/charizard-vstar-s12a-212-ja.webp",
+    "imageSourceUrl": "https://assets.tcgdex.net/ja/S/S12a/212/high.webp",
+    "checkedAt": "2026-11-18T21:30:00Z",
+    "validUntil": "2026-11-25T20:30:00Z",
+    "kind": "watch",
+    "market": {
+     "rawGuide": {
+      "amountMinor": 7500,
+      "currency": "USD",
+      "type": "guide",
+      "source": "PriceCharting ungraded price guide",
+      "sourceUrl": "https://www.pricecharting.com/game/pokemon-japanese-vstar-universe/charizard-vstar-212",
+      "observedOn": "2026-11-18",
+      "confidence": "medium"
+     },
+     "psa10Guide": {
+      "amountMinor": 17025,
+      "currency": "USD",
+      "type": "guide",
+      "source": "PriceCharting PSA 10 price guide",
+      "sourceUrl": "https://www.pricecharting.com/game/pokemon-japanese-vstar-universe/charizard-vstar-212",
+      "observedOn": "2026-11-18",
+      "confidence": "medium"
+     },
+     "psa10Median30d": {
+      "amountMinor": 17374,
+      "currency": "USD",
+      "type": "median",
+      "source": "PriceCharting PSA 10 sold list, 30-day median (titles not hand-checked)",
+      "sourceUrl": "https://www.pricecharting.com/game/pokemon-japanese-vstar-universe/charizard-vstar-212",
+      "observedOn": "2026-11-18",
+      "confidence": "medium"
+     }
+    },
+    "grading": {
+     "gemRatePct": null,
+     "psa10Pop": null,
+     "totalGraded": null
+    },
+    "liquidity": {
+     "rawSold30d": {
+      "value": 17,
+      "source": "PriceCharting sold list (eBay/TCGplayer sales shown on page)",
+      "observedOn": "2026-11-18",
+      "floor": false
+     },
+     "psa10Sold30d": {
+      "value": 30,
+      "source": "PriceCharting sold list (eBay/TCGplayer sales shown on page)",
+      "observedOn": "2026-11-18",
+      "floor": true
+     }
+    }
+   }
+  },
+  {
+   "publicConsent": true,
+   "reviewedAt": "2026-11-18T21:31:00Z",
+   "reviewedBy": "BuyTrigger.Cards evidence review",
+   "sourceIdentity": null,
+   "gates": {
+    "exactIssue": true,
+    "publicMediaRights": true,
+    "publicSafeSources": true
+   },
+   "public": {
+    "id": "snorlax-s10a-077-ja",
+    "name": "Snorlax (カビゴン)",
+    "set": "Dark Phantasma (S10a)",
+    "number": "077/071",
+    "printing": "Character Rare (CHR)",
+    "language": "ja",
+    "image": "assets/public-targets/snorlax-s10a-077-ja.webp",
+    "imageSourceUrl": "https://assets.tcgdex.net/ja/S/S10a/077/high.webp",
+    "checkedAt": "2026-11-18T21:30:00Z",
+    "validUntil": "2026-11-25T20:30:00Z",
+    "kind": "watch",
+    "market": {
+     "rawGuide": {
+      "amountMinor": 1321,
+      "currency": "USD",
+      "type": "guide",
+      "source": "PriceCharting ungraded price guide",
+      "sourceUrl": "https://www.pricecharting.com/game/pokemon-japanese-dark-phantasma/snorlax-77",
+      "observedOn": "2026-11-18",
+      "confidence": "medium"
+     },
+     "rawAsk": {
+      "amountMinor": 1480,
+      "currency": "JPY",
+      "type": "ask",
+      "source": "Yuyu-tei shop sell price, tax included, in stock",
+      "sourceUrl": "https://yuyu-tei.jp/sell/poc/card/s10a/10126",
+      "observedOn": "2026-11-18",
+      "confidence": "high"
+     },
+     "psa10Guide": {
+      "amountMinor": 7800,
+      "currency": "USD",
+      "type": "guide",
+      "source": "PriceCharting PSA 10 price guide",
+      "sourceUrl": "https://www.pricecharting.com/game/pokemon-japanese-dark-phantasma/snorlax-77",
+      "observedOn": "2026-11-18",
+      "confidence": "medium"
+     },
+     "psa10Median30d": {
+      "amountMinor": 8500,
+      "currency": "USD",
+      "type": "median",
+      "source": "PriceCharting PSA 10 sold list, 30-day median (titles not hand-checked)",
+      "sourceUrl": "https://www.pricecharting.com/game/pokemon-japanese-dark-phantasma/snorlax-77",
+      "observedOn": "2026-11-18",
+      "confidence": "medium"
+     }
+    },
+    "grading": {
+     "gemRatePct": null,
+     "psa10Pop": null,
+     "totalGraded": null
+    },
+    "liquidity": {
+     "rawSold30d": {
+      "value": 30,
+      "source": "PriceCharting sold list (eBay/TCGplayer sales shown on page)",
+      "observedOn": "2026-11-18",
+      "floor": true
+     },
+     "psa10Sold30d": {
+      "value": 23,
+      "source": "PriceCharting sold list (eBay/TCGplayer sales shown on page)",
+      "observedOn": "2026-11-18",
+      "floor": false
+     }
+    }
+   }
+  }
+ ],
+ "cfg": [
+  {
+   "publicConsent": true,
+   "reviewedAt": "2026-11-06T12:01:00Z",
+   "reviewedBy": "BuyTrigger.Cards evidence review",
+   "sourceIdentity": null,
+   "gates": {
+    "exactIssue": true,
+    "availableDeliveredRaw": true,
+    "completedPsa10": true,
+    "eligibleLowestPsaFee": true,
+    "publicMediaRights": true
+   },
+   "public": {
+    "id": "charizard-ex-sv03-215-en",
+    "name": "Charizard ex",
+    "set": "Obsidian Flames",
+    "number": "215/197",
+    "printing": "Ultra Rare",
+    "language": "en",
+    "rawMinor": 2198,
+    "psa10Minor": 11399,
+    "soldOn": "2026-06-29",
+    "rawUrl": "https://tradezardz.co.uk/products/charizard-ex-215-197-obsidian-flames-en-batch03-20261031-card-007",
+    "saleUrl": "https://www.ebay.co.uk/itm/297721154258",
+    "imageSourceUrl": "https://assets.pokemon.com/static-assets/content-assets/cms2/img/cards/web/SV03/SV03_EN_215.png",
+    "image": "assets/public-targets/charizard-ex-sv03-215-en.webp",
+    "gradingMinor": 3500,
+    "gradingTier": "Value",
+    "returnPostageFromMinor": 900,
+    "checkedAt": "2026-11-06T12:00:00Z",
+    "gradingUrl": "https://thesubcenter.co.uk/product/psa-value/",
+    "validUntil": "2026-11-07T12:00:00Z"
+   }
+  },
+  {
+   "publicConsent": true,
+   "reviewedAt": "2026-11-06T12:01:00Z",
+   "reviewedBy": "BuyTrigger.Cards evidence review",
+   "sourceIdentity": null,
+   "gates": {
+    "exactIssue": true,
+    "availableDeliveredRaw": true,
+    "completedPsa10": true,
+    "eligibleLowestPsaFee": true,
+    "publicMediaRights": true
+   },
+   "public": {
+    "id": "wartortle-sv2a-171-ja",
+    "name": "Wartortle",
+    "set": "Pokémon Card 151",
+    "number": "171/165",
+    "printing": "Art Rare",
+    "language": "ja",
+    "rawMinor": 1874,
+    "psa10Minor": 7477,
+    "soldOn": "2026-09-06",
+    "rawUrl": "https://www.nmdcollectables.co.uk/products/wartortle-171-165-art-rare",
+    "saleUrl": "https://www.ebay.co.uk/itm/178052002768",
+    "imageSourceUrl": "https://assets.tcgdex.net/ja/SV/SV2a/171/high.webp",
+    "image": "assets/public-targets/wartortle-sv2a-171-ja.webp",
+    "gradingMinor": 3500,
+    "gradingTier": "Value",
+    "returnPostageFromMinor": 900,
+    "checkedAt": "2026-11-06T12:00:00Z",
+    "gradingUrl": "https://thesubcenter.co.uk/product/psa-value/",
+    "validUntil": "2026-11-07T12:00:00Z"
+   }
+  },
+  {
+   "publicConsent": true,
+   "reviewedAt": "2026-11-06T12:01:00Z",
+   "reviewedBy": "BuyTrigger.Cards evidence review",
+   "sourceIdentity": null,
+   "gates": {
+    "exactIssue": true,
+    "availableDeliveredRaw": true,
+    "completedPsa10": true,
+    "eligibleLowestPsaFee": true,
+    "publicMediaRights": true
+   },
+   "public": {
+    "id": "charmeleon-sv2a-169-ja",
+    "name": "Charmeleon",
+    "set": "Pokémon Card 151",
+    "number": "169/165",
+    "printing": "Art Rare",
+    "language": "ja",
+    "rawMinor": 2274,
+    "psa10Minor": 5899,
+    "soldOn": "2026-08-13",
+    "rawUrl": "https://www.nmdcollectables.co.uk/products/charmeleon-169-165-art-rare",
+    "saleUrl": "https://www.ebay.co.uk/itm/297931748325",
+    "imageSourceUrl": "https://assets.tcgdex.net/ja/SV/SV2a/169/high.webp",
+    "image": "assets/public-targets/charmeleon-sv2a-169-ja.webp",
+    "gradingMinor": 3500,
+    "gradingTier": "Value",
+    "returnPostageFromMinor": 900,
+    "checkedAt": "2026-11-06T12:00:00Z",
+    "gradingUrl": "https://thesubcenter.co.uk/product/psa-value/",
+    "validUntil": "2026-11-07T12:00:00Z"
+   }
+  },
+  {
+   "publicConsent": true,
+   "reviewedAt": "2026-11-05T12:01:00Z",
+   "reviewedBy": "BuyTrigger.Cards evidence review",
+   "sourceIdentity": null,
+   "gates": {
+    "exactIssue": true,
+    "availableDeliveredRaw": true,
+    "completedPsa10": true,
+    "eligibleLowestPsaFee": true,
+    "publicMediaRights": true
+   },
+   "public": {
+    "id": "charizard-ex-sv03-223-en",
+    "name": "Charizard ex",
+    "set": "Obsidian Flames",
+    "number": "223/197",
+    "printing": "Special Illustration Rare",
+    "language": "en",
+    "image": "assets/public-targets/charizard-ex-sv03-223-en.webp",
+    "rawMinor": 9014,
+    "gradingMinor": 5000,
+    "gradingTier": "Standard",
+    "psa10Minor": 50520,
+    "returnPostageFromMinor": 900,
+    "soldOn": "2026-10-28",
+    "rawUrl": "https://www.ebay.co.uk/itm/800675310625",
+    "gradingUrl": "https://thesubcenter.co.uk/product/psa-standard/",
+    "saleUrl": "https://www.ebay.co.uk/itm/168784353055?nordt=true",
+    "imageSourceUrl": "https://assets.tcgdex.net/en/sv/sv03/223/high.webp",
+    "checkedAt": "2026-11-05T12:00:00Z",
+    "validUntil": "2026-11-06T12:00:00Z"
+   }
+  },
+  {
+   "publicConsent": true,
+   "reviewedAt": "2026-11-05T12:01:00Z",
+   "reviewedBy": "BuyTrigger.Cards evidence review",
+   "sourceIdentity": null,
+   "gates": {
+    "exactIssue": true,
+    "availableDeliveredRaw": true,
+    "completedPsa10": true,
+    "eligibleLowestPsaFee": true,
+    "publicMediaRights": true
+   },
+   "public": {
+    "id": "gardevoir-ex-sv045-233-en",
+    "name": "Gardevoir ex",
+    "set": "Paldean Fates",
+    "number": "233/091",
+    "printing": "Special Illustration Rare",
+    "language": "en",
+    "image": "assets/public-targets/gardevoir-ex-sv045-233-en.webp",
+    "rawMinor": 9995,
+    "gradingMinor": 3500,
+    "gradingTier": "Value",
+    "psa10Minor": 28740,
+    "returnPostageFromMinor": 900,
+    "soldOn": "2026-09-19",
+    "rawUrl": "https://lockett-labs.com/products/gardevoir-ex-paldean-fates-233-091",
+    "gradingUrl": "https://thesubcenter.co.uk/product/psa-value/",
+    "saleUrl": "https://www.ebay.co.uk/itm/298656881532?nordt=true",
+    "imageSourceUrl": "https://assets.tcgdex.net/en/sv/sv04.5/233/high.webp",
+    "checkedAt": "2026-11-05T12:00:00Z",
+    "validUntil": "2026-11-06T12:00:00Z"
+   }
+  },
+  {
+   "publicConsent": true,
+   "reviewedAt": "2026-11-05T12:01:00Z",
+   "reviewedBy": "BuyTrigger.Cards evidence review",
+   "sourceIdentity": null,
+   "gates": {
+    "exactIssue": true,
+    "availableDeliveredRaw": true,
+    "completedPsa10": true,
+    "eligibleLowestPsaFee": true,
+    "publicMediaRights": true
+   },
+   "public": {
+    "id": "mew-ex-svp-053-en",
+    "name": "Mew ex",
+    "set": "Scarlet & Violet Black Star Promos",
+    "number": "SVP 053",
+    "printing": "151 Ultra-Premium Collection etched foil",
+    "language": "en",
+    "image": "assets/public-targets/mew-ex-svp-053-en.webp",
+    "rawMinor": 8995,
+    "gradingMinor": 5000,
+    "gradingTier": "Standard",
+    "psa10Minor": 55716,
+    "returnPostageFromMinor": 900,
+    "soldOn": "2026-09-03",
+    "rawUrl": "https://magicmadhouse.co.uk/pokemon-scarlet-violet-promo-svp053-mew-ex-full-art?sku=PE-SVPR-3053",
+    "gradingUrl": "https://thesubcenter.co.uk/product/psa-standard/",
+    "saleUrl": "https://www.ebay.co.uk/itm/307115994971?nordt=true",
+    "imageSourceUrl": "https://assets.tcgdex.net/en/sv/svp/053/high.webp",
+    "checkedAt": "2026-11-05T12:00:00Z",
+    "validUntil": "2026-11-06T12:00:00Z"
+   }
+  },
+  {
+   "publicConsent": true,
+   "reviewedAt": "2026-11-05T12:01:00Z",
+   "reviewedBy": "BuyTrigger.Cards evidence review",
+   "sourceIdentity": null,
+   "gates": {
+    "exactIssue": true,
+    "availableDeliveredRaw": true,
+    "completedPsa10": true,
+    "eligibleLowestPsaFee": true,
+    "publicMediaRights": true
+   },
+   "public": {
+    "id": "milotic-ex-sv08-237-en",
+    "name": "Milotic ex",
+    "set": "Surging Sparks",
+    "number": "237/191",
+    "printing": "Special Illustration Rare",
+    "language": "en",
+    "image": "assets/public-targets/milotic-ex-sv08-237-en.webp",
+    "rawMinor": 8597,
+    "gradingMinor": 3500,
+    "gradingTier": "Value",
+    "psa10Minor": 19163,
+    "returnPostageFromMinor": 900,
+    "soldOn": "2026-10-23",
+    "rawUrl": "https://www.ebay.co.uk/itm/127886681068",
+    "gradingUrl": "https://thesubcenter.co.uk/product/psa-value/",
+    "saleUrl": "https://www.ebay.co.uk/itm/358865278680?nordt=true",
+    "imageSourceUrl": "https://assets.tcgdex.net/en/sv/sv08/237/high.webp",
+    "checkedAt": "2026-11-05T12:00:00Z",
+    "validUntil": "2026-11-06T12:00:00Z"
+   }
+  },
+  {
+   "publicConsent": true,
+   "reviewedAt": "2026-11-05T12:01:00Z",
+   "reviewedBy": "BuyTrigger.Cards evidence review",
+   "sourceIdentity": null,
+   "gates": {
+    "exactIssue": true,
+    "availableDeliveredRaw": true,
+    "completedPsa10": true,
+    "eligibleLowestPsaFee": true,
+    "publicMediaRights": true
+   },
+   "public": {
+    "id": "pikachu-ex-sv085-179-en",
+    "name": "Pikachu ex",
+    "set": "Prismatic Evolutions",
+    "number": "179/131",
+    "printing": "Hyper Rare",
+    "language": "en",
+    "image": "assets/public-targets/pikachu-ex-sv085-179-en.webp",
+    "rawMinor": 4500,
+    "gradingMinor": 3500,
+    "gradingTier": "Value",
+    "psa10Minor": 28780,
+    "returnPostageFromMinor": 900,
+    "soldOn": "2026-09-26",
+    "rawUrl": "https://www.ebay.co.uk/itm/840018840734",
+    "gradingUrl": "https://thesubcenter.co.uk/product/psa-value/",
+    "saleUrl": "https://www.ebay.co.uk/itm/198660296190?nordt=true",
+    "imageSourceUrl": "https://assets.tcgdex.net/en/sv/sv08.5/179/high.webp",
+    "checkedAt": "2026-11-05T12:00:00Z",
+    "validUntil": "2026-11-06T12:00:00Z"
+   }
+  },
+  {
+   "publicConsent": true,
+   "reviewedAt": "2026-11-05T12:01:00Z",
+   "reviewedBy": "BuyTrigger.Cards evidence review",
+   "sourceIdentity": null,
+   "gates": {
+    "exactIssue": true,
+    "availableDeliveredRaw": true,
+    "completedPsa10": true,
+    "eligibleLowestPsaFee": true,
+    "publicMediaRights": true
+   },
+   "public": {
+    "id": "zoroark-sv105w-143-en",
+    "name": "Zoroark",
+    "set": "White Flare",
+    "number": "143/086",
+    "printing": "Illustration Rare",
+    "language": "en",
+    "image": "assets/public-targets/zoroark-sv105w-143-en.webp",
+    "rawMinor": 6995,
+    "gradingMinor": 5000,
+    "gradingTier": "Standard",
+    "psa10Minor": 40520,
+    "returnPostageFromMinor": 900,
+    "soldOn": "2026-10-07",
+    "rawUrl": "https://totalcards.net/collections/restocked/products/pokemon-scarlet-violet-white-flare-zoroark-143-086",
+    "gradingUrl": "https://thesubcenter.co.uk/product/psa-standard/",
+    "saleUrl": "https://www.ebay.co.uk/itm/237099385669?nordt=true",
+    "imageSourceUrl": "https://assets.tcgdex.net/en/sv/sv10.5w/143/high.webp",
+    "checkedAt": "2026-11-05T12:00:00Z",
+    "validUntil": "2026-11-06T12:00:00Z"
+   }
+  },
+  {
+   "publicConsent": true,
+   "reviewedAt": "2026-11-05T12:01:00Z",
+   "reviewedBy": "BuyTrigger.Cards evidence review",
+   "sourceIdentity": null,
+   "gates": {
+    "exactIssue": true,
+    "availableDeliveredRaw": true,
+    "completedPsa10": true,
+    "eligibleLowestPsaFee": true,
+    "publicMediaRights": true
+   },
+   "public": {
+    "id": "ninetales-sv3-110-ja",
+    "name": "Ninetales",
+    "set": "Ruler of the Black Flame",
+    "number": "110/108",
+    "printing": "Art Rare",
+    "language": "ja",
+    "image": "assets/public-targets/ninetales-sv3-110-ja.webp",
+    "rawMinor": 919,
+    "gradingMinor": 3500,
+    "gradingTier": "Value",
+    "psa10Minor": 4700,
+    "returnPostageFromMinor": 900,
+    "soldOn": "2026-10-26",
+    "rawUrl": "https://www.ebay.co.uk/itm/287699728820",
+    "gradingUrl": "https://thesubcenter.co.uk/product/psa-value/",
+    "saleUrl": "https://www.ebay.co.uk/itm/800829685976?nordt=true",
+    "imageSourceUrl": "https://assets.tcgdex.net/ja/SV/SV3/110/high.webp",
+    "checkedAt": "2026-11-05T12:00:00Z",
+    "validUntil": "2026-11-06T12:00:00Z"
+   }
+  },
+  {
+   "publicConsent": true,
+   "reviewedAt": "2026-11-05T12:01:00Z",
+   "reviewedBy": "BuyTrigger.Cards evidence review",
+   "sourceIdentity": null,
+   "gates": {
+    "exactIssue": true,
+    "availableDeliveredRaw": true,
+    "completedPsa10": true,
+    "eligibleLowestPsaFee": true,
+    "publicMediaRights": true
+   },
+   "public": {
+    "id": "marshadow-machamp-gx-sm12a-067-ja",
+    "name": "Marshadow & Machamp-GX",
+    "set": "Tag Team GX All Stars",
+    "number": "067/173",
+    "printing": "Double Rare",
+    "language": "ja",
+    "image": "assets/public-targets/marshadow-machamp-gx-sm12a-067-ja.webp",
+    "rawMinor": 700,
+    "gradingMinor": 3500,
+    "gradingTier": "Value",
+    "psa10Minor": 5295,
+    "returnPostageFromMinor": 900,
+    "soldOn": "2026-10-09",
+    "rawUrl": "https://www.ebay.co.uk/itm/267821676678",
+    "gradingUrl": "https://thesubcenter.co.uk/product/psa-value/",
+    "saleUrl": "https://www.ebay.co.uk/itm/860019619138?nordt=true",
+    "imageSourceUrl": "https://www.pokemon-card.com/assets/images/card_images/large/SM12a/037271_P_MASHADOKAIRIKIGX.jpg",
+    "checkedAt": "2026-11-05T12:00:00Z",
+    "validUntil": "2026-11-06T12:00:00Z"
+   }
+  },
+  {
+   "publicConsent": true,
+   "reviewedAt": "2026-11-05T12:01:00Z",
+   "reviewedBy": "BuyTrigger.Cards evidence review",
+   "sourceIdentity": null,
+   "gates": {
+    "exactIssue": true,
+    "availableDeliveredRaw": true,
+    "completedPsa10": true,
+    "eligibleLowestPsaFee": true,
+    "publicMediaRights": true
+   },
+   "public": {
+    "id": "mistys-psyduck-sv10-193-en",
+    "name": "Misty's Psyduck",
+    "set": "Destined Rivals",
+    "number": "193/182",
+    "printing": "Illustration Rare",
+    "language": "en",
+    "image": "assets/public-targets/mistys-psyduck-sv10-193-en.webp",
+    "rawMinor": 4089,
+    "gradingMinor": 3500,
+    "psa10Minor": 26000,
+    "returnPostageFromMinor": 900,
+    "soldOn": "2026-11-04",
+    "rawUrl": "https://www.ebay.co.uk/itm/407342963516",
+    "gradingUrl": "https://thesubcenter.co.uk/product/psa-value/",
+    "saleUrl": "https://www.ebay.co.uk/itm/800876315428?nordt=true",
+    "imageSourceUrl": "https://assets.tcgdex.net/en/sv/sv10/193/high.webp",
+    "checkedAt": "2026-11-05T12:00:00Z",
+    "validUntil": "2026-11-06T12:00:00Z",
+    "gradingTier": "Value"
+   }
+  },
+  {
+   "publicConsent": true,
+   "reviewedAt": "2026-11-05T12:01:00Z",
+   "reviewedBy": "BuyTrigger.Cards evidence review",
+   "sourceIdentity": null,
+   "gates": {
+    "exactIssue": true,
+    "availableDeliveredRaw": true,
+    "completedPsa10": true,
+    "eligibleLowestPsaFee": true,
+    "publicMediaRights": true
+   },
+   "public": {
+    "id": "cleffa-sv03-202-en",
+    "name": "Cleffa",
+    "set": "Obsidian Flames",
+    "number": "202/197",
+    "printing": "Illustration Rare",
+    "language": "en",
+    "image": "assets/public-targets/cleffa-sv03-202-en.webp",
+    "rawMinor": 2682,
+    "gradingMinor": 3500,
+    "psa10Minor": 30000,
+    "returnPostageFromMinor": 900,
+    "soldOn": "2026-10-14",
+    "rawUrl": "https://www.ebay.co.uk/itm/267813388128",
+    "gradingUrl": "https://thesubcenter.co.uk/product/psa-value/",
+    "saleUrl": "https://www.ebay.co.uk/itm/820230847021?nordt=true",
+    "imageSourceUrl": "https://assets.tcgdex.net/en/sv/sv03/202/high.webp",
+    "checkedAt": "2026-11-05T12:00:00Z",
+    "validUntil": "2026-11-06T12:00:00Z",
+    "gradingTier": "Value"
+   }
+  },
+  {
+   "publicConsent": true,
+   "reviewedAt": "2026-11-05T12:01:00Z",
+   "reviewedBy": "BuyTrigger.Cards evidence review",
+   "sourceIdentity": null,
+   "gates": {
+    "exactIssue": true,
+    "availableDeliveredRaw": true,
+    "completedPsa10": true,
+    "eligibleLowestPsaFee": true,
+    "publicMediaRights": true
+   },
+   "public": {
+    "id": "snorlax-sv045-202-en",
+    "name": "Snorlax",
+    "set": "Paldean Fates",
+    "number": "202/091",
+    "printing": "Shiny Rare",
+    "language": "en",
+    "image": "assets/public-targets/snorlax-sv045-202-en.webp",
+    "rawMinor": 3649,
+    "gradingMinor": 3500,
+    "psa10Minor": 24000,
+    "returnPostageFromMinor": 900,
+    "soldOn": "2026-11-02",
+    "rawUrl": "https://www.ebay.co.uk/itm/366724681177",
+    "gradingUrl": "https://thesubcenter.co.uk/product/psa-value/",
+    "saleUrl": "https://www.ebay.co.uk/itm/168826359607?nordt=true",
+    "imageSourceUrl": "https://assets.tcgdex.net/en/sv/sv04.5/202/high.webp",
+    "checkedAt": "2026-11-05T12:00:00Z",
+    "validUntil": "2026-11-06T12:00:00Z",
+    "gradingTier": "Value"
+   }
+  },
+  {
+   "publicConsent": true,
+   "reviewedAt": "2026-11-05T12:01:00Z",
+   "reviewedBy": "BuyTrigger.Cards evidence review",
+   "sourceIdentity": null,
+   "gates": {
+    "exactIssue": true,
+    "availableDeliveredRaw": true,
+    "completedPsa10": true,
+    "eligibleLowestPsaFee": true,
+    "publicMediaRights": true
+   },
+   "public": {
+    "id": "suicune-v-swsh12pt5gg-gg38-en",
+    "name": "Suicune V",
+    "set": "Crown Zenith",
+    "number": "GG38/GG70",
+    "printing": "Galarian Gallery",
+    "language": "en",
+    "image": "assets/public-targets/suicune-v-swsh12pt5gg-gg38-en.webp",
+    "rawMinor": 4995,
+    "gradingMinor": 3500,
+    "psa10Minor": 15000,
+    "returnPostageFromMinor": 900,
+    "soldOn": "2026-11-04",
+    "rawUrl": "https://magicmadhouse.co.uk/pokemon-crown-zenith-gg38-gg70-suicune-v-full-art",
+    "gradingUrl": "https://thesubcenter.co.uk/product/psa-value/",
+    "saleUrl": "https://www.ebay.co.uk/itm/800876453795?nordt=true",
+    "imageSourceUrl": "https://assets.pokemon.com/static-assets/content-assets/cms2/img/cards/web/SWSH12PT5GG/SWSH12PT5GG_EN_GG38.png",
+    "checkedAt": "2026-11-05T12:00:00Z",
+    "validUntil": "2026-11-06T12:00:00Z",
+    "gradingTier": "Value"
+   }
+  },
+  {
+   "publicConsent": true,
+   "reviewedAt": "2026-11-05T12:01:00Z",
+   "reviewedBy": "BuyTrigger.Cards evidence review",
+   "sourceIdentity": null,
+   "gates": {
+    "exactIssue": true,
+    "availableDeliveredRaw": true,
+    "completedPsa10": true,
+    "eligibleLowestPsaFee": true,
+    "publicMediaRights": true
+   },
+   "public": {
+    "id": "cleffa-sv3-113-ja",
+    "name": "Cleffa",
+    "set": "Ruler of the Black Flame",
+    "number": "113/108",
+    "printing": "Art Rare",
+    "language": "ja",
+    "image": "assets/public-targets/cleffa-sv3-113-ja.webp",
+    "rawMinor": 1243,
+    "gradingMinor": 3500,
+    "psa10Minor": 7168,
+    "returnPostageFromMinor": 900,
+    "soldOn": "2026-10-04",
+    "rawUrl": "https://www.ebay.co.uk/itm/377562723445",
+    "gradingUrl": "https://thesubcenter.co.uk/product/psa-value/",
+    "saleUrl": "https://www.ebay.co.uk/itm/287513792793?nordt=true",
+    "imageSourceUrl": "https://assets.tcgdex.net/ja/SV/SV3/113/high.webp",
+    "checkedAt": "2026-11-05T12:00:00Z",
+    "validUntil": "2026-11-06T12:00:00Z",
+    "gradingTier": "Value"
+   }
+  },
+  {
+   "publicConsent": true,
+   "reviewedAt": "2026-11-05T12:01:00Z",
+   "reviewedBy": "BuyTrigger.Cards evidence review",
+   "sourceIdentity": null,
+   "gates": {
+    "exactIssue": true,
+    "availableDeliveredRaw": true,
+    "completedPsa10": true,
+    "eligibleLowestPsaFee": true,
+    "publicMediaRights": true
+   },
+   "public": {
+    "id": "drowzee-sv1v-086-ja",
+    "name": "Drowzee",
+    "set": "Violet ex",
+    "number": "086/078",
+    "printing": "Art Rare",
+    "language": "ja",
+    "image": "assets/public-targets/drowzee-sv1v-086-ja.webp",
+    "rawMinor": 1874,
+    "gradingMinor": 3500,
+    "psa10Minor": 5452,
+    "returnPostageFromMinor": 900,
+    "soldOn": "2026-10-31",
+    "rawUrl": "https://www.nmdcollectables.co.uk/products/drowzee-086-078-art-rare",
+    "gradingUrl": "https://thesubcenter.co.uk/product/psa-value/",
+    "saleUrl": "https://www.ebay.co.uk/itm/336866973953?nordt=true",
+    "imageSourceUrl": "https://assets.tcgdex.net/ja/SV/SV1V/086/high.webp",
+    "checkedAt": "2026-11-05T12:00:00Z",
+    "validUntil": "2026-11-06T12:00:00Z",
+    "gradingTier": "Value"
+   }
+  },
+  {
+   "publicConsent": true,
+   "reviewedAt": "2026-11-05T12:01:00Z",
+   "reviewedBy": "BuyTrigger.Cards evidence review",
+   "sourceIdentity": null,
+   "gates": {
+    "exactIssue": true,
+    "availableDeliveredRaw": true,
+    "completedPsa10": true,
+    "eligibleLowestPsaFee": true,
+    "publicMediaRights": true
+   },
+   "public": {
+    "id": "wailord-sv09-162-en",
+    "name": "Wailord",
+    "set": "Journey Together",
+    "number": "162/159",
+    "language": "en",
+    "image": "assets/public-targets/wailord-sv09-162-en.webp",
+    "rawMinor": 1448,
+    "gradingMinor": 3500,
+    "psa10Minor": 12000,
+    "soldOn": "2026-09-05",
+    "rawUrl": "https://elite-tcg.co.uk/products/wailord-journey-together-162-159",
+    "gradingUrl": "https://thesubcenter.co.uk/product/psa-value/",
+    "saleUrl": "https://www.ebay.co.uk/itm/358909553092?nordt=true",
+    "imageSourceUrl": "https://assets.tcgdex.net/en/sv/sv09/162/high.webp",
+    "printing": "Illustration Rare",
+    "returnPostageFromMinor": 900,
+    "checkedAt": "2026-11-05T12:00:00Z",
+    "validUntil": "2026-11-06T12:00:00Z",
+    "gradingTier": "Value"
+   }
+  },
+  {
+   "publicConsent": true,
+   "reviewedAt": "2026-11-05T12:01:00Z",
+   "reviewedBy": "BuyTrigger.Cards evidence review",
+   "sourceIdentity": null,
+   "gates": {
+    "exactIssue": true,
+    "availableDeliveredRaw": true,
+    "completedPsa10": true,
+    "eligibleLowestPsaFee": true,
+    "publicMediaRights": true
+   },
+   "public": {
+    "id": "meowth-ex-me03-121-en",
+    "name": "Meowth ex",
+    "set": "Perfect Order",
+    "number": "121/088",
+    "printing": "Special Illustration Rare",
+    "language": "en",
+    "image": "assets/public-targets/meowth-ex-me03-121-en.webp",
+    "rawMinor": 8999,
+    "gradingMinor": 3500,
+    "psa10Minor": 19163,
+    "returnPostageFromMinor": 900,
+    "soldOn": "2026-11-04",
+    "rawUrl": "https://www.ebay.co.uk/itm/237165058967",
+    "gradingUrl": "https://thesubcenter.co.uk/product/psa-value/",
+    "saleUrl": "https://www.ebay.co.uk/itm/147665988267?nordt=true",
+    "imageSourceUrl": "https://assets.tcgdex.net/en/me/me03/121/high.webp",
+    "checkedAt": "2026-11-05T12:00:00Z",
+    "validUntil": "2026-11-06T12:00:00Z",
+    "gradingTier": "Value"
+   }
+  },
+  {
+   "publicConsent": true,
+   "reviewedAt": "2026-11-05T12:01:00Z",
+   "reviewedBy": "BuyTrigger.Cards evidence review",
+   "sourceIdentity": null,
+   "gates": {
+    "exactIssue": true,
+    "availableDeliveredRaw": true,
+    "completedPsa10": true,
+    "eligibleLowestPsaFee": true,
+    "publicMediaRights": true
+   },
+   "public": {
+    "id": "pikachu-sv2a-173-ja",
+    "name": "Pikachu",
+    "set": "Pokémon Card 151",
+    "number": "173/165",
+    "printing": "Art Rare",
+    "language": "ja",
+    "image": "assets/public-targets/pikachu-sv2a-173-ja.webp",
+    "rawMinor": 2269,
+    "gradingMinor": 3500,
+    "psa10Minor": 6178,
+    "returnPostageFromMinor": 900,
+    "soldOn": "2026-10-29",
+    "rawUrl": "https://www.ebay.co.uk/itm/800752259497",
+    "gradingUrl": "https://thesubcenter.co.uk/product/psa-value/",
+    "saleUrl": "https://www.ebay.co.uk/itm/800835960800?nordt=true",
+    "imageSourceUrl": "https://assets.tcgdex.net/ja/SV/SV2a/173/high.webp",
+    "checkedAt": "2026-11-05T12:00:00Z",
+    "validUntil": "2026-11-06T12:00:00Z",
+    "gradingTier": "Value"
+   }
+  },
+  {
+   "publicConsent": true,
+   "reviewedAt": "2026-11-05T12:01:00Z",
+   "reviewedBy": "BuyTrigger.Cards evidence review",
+   "sourceIdentity": null,
+   "gates": {
+    "exactIssue": true,
+    "availableDeliveredRaw": true,
+    "completedPsa10": true,
+    "eligibleLowestPsaFee": true,
+    "publicMediaRights": true
+   },
+   "public": {
+    "id": "drowzee-sv01-210-en",
+    "name": "Drowzee",
+    "set": "Scarlet & Violet",
+    "number": "210/198",
+    "printing": "Illustration Rare",
+    "language": "en",
+    "image": "assets/public-targets/drowzee-sv01-210-en.webp",
+    "rawMinor": 3980,
+    "gradingMinor": 5000,
+    "gradingTier": "Standard",
+    "psa10Minor": 66010,
+    "returnPostageFromMinor": 900,
+    "soldOn": "2026-10-10",
+    "rawUrl": "https://www.ebay.co.uk/itm/198752667980",
+    "gradingUrl": "https://thesubcenter.co.uk/product/psa-standard/",
+    "saleUrl": "https://www.ebay.co.uk/itm/820203279527?nordt=true",
+    "imageSourceUrl": "https://assets.tcgdex.net/en/sv/sv01/210/high.webp",
+    "checkedAt": "2026-11-05T12:00:00Z",
+    "validUntil": "2026-11-06T12:00:00Z"
+   }
+  },
+  {
+   "publicConsent": true,
+   "reviewedAt": "2026-11-05T12:01:00Z",
+   "reviewedBy": "BuyTrigger.Cards evidence review",
+   "sourceIdentity": null,
+   "gates": {
+    "exactIssue": true,
+    "availableDeliveredRaw": true,
+    "completedPsa10": true,
+    "eligibleLowestPsaFee": true,
+    "publicMediaRights": true
+   },
+   "public": {
+    "id": "groudon-sv04-199-en",
+    "name": "Groudon",
+    "set": "Paradox Rift",
+    "number": "199/182",
+    "printing": "Illustration Rare",
+    "language": "en",
+    "image": "assets/public-targets/groudon-sv04-199-en.webp",
+    "rawMinor": 7620,
+    "gradingMinor": 5000,
+    "gradingTier": "Standard",
+    "psa10Minor": 37000,
+    "returnPostageFromMinor": 900,
+    "soldOn": "2026-11-04",
+    "rawUrl": "https://www.ebay.co.uk/itm/840082733031",
+    "gradingUrl": "https://thesubcenter.co.uk/product/psa-standard/",
+    "saleUrl": "https://www.ebay.co.uk/itm/800876315413?nordt=true",
+    "imageSourceUrl": "https://assets.tcgdex.net/en/sv/sv04/199/high.webp",
+    "checkedAt": "2026-11-05T12:00:00Z",
+    "validUntil": "2026-11-06T12:00:00Z"
+   }
+  },
+  {
+   "publicConsent": true,
+   "reviewedAt": "2026-11-05T12:01:00Z",
+   "reviewedBy": "BuyTrigger.Cards evidence review",
+   "sourceIdentity": null,
+   "gates": {
+    "exactIssue": true,
+    "availableDeliveredRaw": true,
+    "completedPsa10": true,
+    "eligibleLowestPsaFee": true,
+    "publicMediaRights": true
+   },
+   "public": {
+    "id": "charmander-sv2a-168-ja",
+    "name": "Charmander",
+    "set": "Pokémon Card 151",
+    "number": "168/165",
+    "printing": "Art Rare",
+    "language": "ja",
+    "image": "assets/public-targets/charmander-sv2a-168-ja.webp",
+    "rawMinor": 1887,
+    "gradingMinor": 3500,
+    "gradingTier": "Value",
+    "psa10Minor": 6490,
+    "returnPostageFromMinor": 900,
+    "soldOn": "2026-11-02",
+    "rawUrl": "https://www.ebay.co.uk/itm/137902159794",
+    "gradingUrl": "https://thesubcenter.co.uk/product/psa-value/",
+    "saleUrl": "https://www.ebay.co.uk/itm/128149206079?nordt=true",
+    "imageSourceUrl": "https://assets.tcgdex.net/ja/SV/SV2a/168/high.webp",
+    "checkedAt": "2026-11-05T12:00:00Z",
+    "validUntil": "2026-11-06T12:00:00Z"
+   }
+  },
+  {
+   "publicConsent": true,
+   "reviewedAt": "2026-11-05T12:01:00Z",
+   "reviewedBy": "BuyTrigger.Cards evidence review",
+   "sourceIdentity": null,
+   "gates": {
+    "exactIssue": true,
+    "availableDeliveredRaw": true,
+    "completedPsa10": true,
+    "eligibleLowestPsaFee": true,
+    "publicMediaRights": true
+   },
+   "public": {
+    "id": "psyduck-sv2a-175-ja",
+    "name": "Psyduck",
+    "set": "Pokémon Card 151",
+    "number": "175/165",
+    "printing": "Art Rare",
+    "language": "ja",
+    "image": "assets/public-targets/psyduck-sv2a-175-ja.webp",
+    "rawMinor": 1713,
+    "gradingMinor": 3500,
+    "gradingTier": "Value",
+    "psa10Minor": 6500,
+    "returnPostageFromMinor": 900,
+    "soldOn": "2026-10-17",
+    "rawUrl": "https://www.ebay.co.uk/itm/267774126098",
+    "gradingUrl": "https://thesubcenter.co.uk/product/psa-value/",
+    "saleUrl": "https://www.ebay.co.uk/itm/800801499476?nordt=true",
+    "imageSourceUrl": "https://assets.tcgdex.net/ja/SV/SV2a/175/high.webp",
+    "checkedAt": "2026-11-05T12:00:00Z",
+    "validUntil": "2026-11-06T12:00:00Z"
+   }
+  },
+  {
+   "publicConsent": true,
+   "reviewedAt": "2026-11-05T12:01:00Z",
+   "reviewedBy": "BuyTrigger.Cards evidence review",
+   "sourceIdentity": null,
+   "gates": {
+    "exactIssue": true,
+    "availableDeliveredRaw": true,
+    "completedPsa10": true,
+    "eligibleLowestPsaFee": true,
+    "publicMediaRights": true
+   },
+   "public": {
+    "id": "mewtwo-sv2a-183-ja",
+    "name": "Mewtwo",
+    "set": "Pokémon Card 151",
+    "number": "183/165",
+    "printing": "Art Rare",
+    "language": "ja",
+    "image": "assets/public-targets/mewtwo-sv2a-183-ja.webp",
+    "rawMinor": 1885,
+    "gradingMinor": 3500,
+    "gradingTier": "Value",
+    "psa10Minor": 6584,
+    "returnPostageFromMinor": 900,
+    "soldOn": "2026-10-25",
+    "rawUrl": "https://www.ebay.co.uk/itm/227561079212",
+    "gradingUrl": "https://thesubcenter.co.uk/product/psa-value/",
+    "saleUrl": "https://www.ebay.co.uk/itm/366743059350?nordt=true",
+    "imageSourceUrl": "https://assets.tcgdex.net/ja/SV/SV2a/183/high.webp",
+    "checkedAt": "2026-11-05T12:00:00Z",
+    "validUntil": "2026-11-06T12:00:00Z"
+   }
+  }
+ ],
+ "bad": {
+  "watch_unknown_key": {
+   "publicConsent": true,
+   "reviewedAt": "2026-11-18T21:31:00Z",
+   "reviewedBy": "BuyTrigger.Cards evidence review",
+   "sourceIdentity": null,
+   "gates": {
+    "exactIssue": true,
+    "publicMediaRights": true,
+    "publicSafeSources": true
+   },
+   "public": {
+    "id": "vaporeon-swsh9tg-tg02-en",
+    "name": "Vaporeon",
+    "set": "Brilliant Stars Trainer Gallery",
+    "number": "TG02/TG30",
+    "printing": "Trainer Gallery Ultra Rare",
+    "language": "en",
+    "image": "assets/public-targets/vaporeon-swsh9tg-tg02-en.webp",
+    "imageSourceUrl": "https://assets.tcgdex.net/en/swsh/swsh9/TG02/high.webp",
+    "checkedAt": "2026-11-18T21:30:00Z",
+    "validUntil": "2026-11-25T20:30:00Z",
+    "kind": "watch",
+    "market": {
+     "rawGuide": {
+      "amountMinor": 1961,
+      "currency": "USD",
+      "type": "guide",
+      "source": "PriceCharting ungraded price guide",
+      "sourceUrl": "https://www.pricecharting.com/game/pokemon-brilliant-stars/vaporeon-tg02",
+      "observedOn": "2026-11-18",
+      "confidence": "medium"
+     },
+     "rawAsk": {
+      "amountMinor": 1851,
+      "currency": "USD",
+      "type": "ask",
+      "source": "TCGplayer lowest listing via TCGCSV (file 2026-11-18 20:05 UTC)",
+      "sourceUrl": "https://www.tcgplayer.com/product/264211",
+      "observedOn": "2026-11-18",
+      "confidence": "medium"
+     },
+     "psa10Guide": {
+      "amountMinor": 65184,
+      "currency": "USD",
+      "type": "guide",
+      "source": "PriceCharting PSA 10 price guide",
+      "sourceUrl": "https://www.pricecharting.com/game/pokemon-brilliant-stars/vaporeon-tg02",
+      "observedOn": "2026-11-18",
+      "confidence": "medium"
+     },
+     "psa10Median30d": {
+      "amountMinor": 61500,
+      "currency": "USD",
+      "type": "median",
+      "source": "PriceCharting PSA 10 sold list, 30-day median (titles not hand-checked)",
+      "sourceUrl": "https://www.pricecharting.com/game/pokemon-brilliant-stars/vaporeon-tg02",
+      "observedOn": "2026-11-18",
+      "confidence": "medium"
+     }
+    },
+    "grading": {
+     "gemRatePct": null,
+     "psa10Pop": null,
+     "totalGraded": null
+    },
+    "liquidity": {
+     "rawSold30d": {
+      "value": 38,
+      "source": "PriceCharting sold list (eBay/TCGplayer sales shown on page)",
+      "observedOn": "2026-11-18",
+      "floor": false
+     },
+     "psa10Sold30d": {
+      "value": 30,
+      "source": "PriceCharting sold list (eBay/TCGplayer sales shown on page)",
+      "observedOn": "2026-11-18",
+      "floor": true
+     }
+    },
+    "notes": "hi"
+   }
+  },
+  "grading_pokeinvest": {
+   "publicConsent": true,
+   "reviewedAt": "2026-11-18T21:31:00Z",
+   "reviewedBy": "BuyTrigger.Cards evidence review",
+   "sourceIdentity": null,
+   "gates": {
+    "exactIssue": true,
+    "publicMediaRights": true,
+    "publicSafeSources": true
+   },
+   "public": {
+    "id": "vaporeon-swsh9tg-tg02-en",
+    "name": "Vaporeon",
+    "set": "Brilliant Stars Trainer Gallery",
+    "number": "TG02/TG30",
+    "printing": "Trainer Gallery Ultra Rare",
+    "language": "en",
+    "image": "assets/public-targets/vaporeon-swsh9tg-tg02-en.webp",
+    "imageSourceUrl": "https://assets.tcgdex.net/en/swsh/swsh9/TG02/high.webp",
+    "checkedAt": "2026-11-18T21:30:00Z",
+    "validUntil": "2026-11-25T20:30:00Z",
+    "kind": "watch",
+    "market": {
+     "rawGuide": {
+      "amountMinor": 1961,
+      "currency": "USD",
+      "type": "guide",
+      "source": "PriceCharting ungraded price guide",
+      "sourceUrl": "https://www.pricecharting.com/game/pokemon-brilliant-stars/vaporeon-tg02",
+      "observedOn": "2026-11-18",
+      "confidence": "medium"
+     },
+     "rawAsk": {
+      "amountMinor": 1851,
+      "currency": "USD",
+      "type": "ask",
+      "source": "TCGplayer lowest listing via TCGCSV (file 2026-11-18 20:05 UTC)",
+      "sourceUrl": "https://www.tcgplayer.com/product/264211",
+      "observedOn": "2026-11-18",
+      "confidence": "medium"
+     },
+     "psa10Guide": {
+      "amountMinor": 65184,
+      "currency": "USD",
+      "type": "guide",
+      "source": "PriceCharting PSA 10 price guide",
+      "sourceUrl": "https://www.pricecharting.com/game/pokemon-brilliant-stars/vaporeon-tg02",
+      "observedOn": "2026-11-18",
+      "confidence": "medium"
+     },
+     "psa10Median30d": {
+      "amountMinor": 61500,
+      "currency": "USD",
+      "type": "median",
+      "source": "PriceCharting PSA 10 sold list, 30-day median (titles not hand-checked)",
+      "sourceUrl": "https://www.pricecharting.com/game/pokemon-brilliant-stars/vaporeon-tg02",
+      "observedOn": "2026-11-18",
+      "confidence": "medium"
+     }
+    },
+    "grading": {
+     "gemRatePct": {
+      "value": 11.1,
+      "source": "PokeInvest pop report",
+      "sourceUrl": "https://www.pokeinvest.io/example",
+      "observedOn": "2026-11-16"
+     },
+     "psa10Pop": null,
+     "totalGraded": null
+    },
+    "liquidity": {
+     "rawSold30d": {
+      "value": 38,
+      "source": "PriceCharting sold list (eBay/TCGplayer sales shown on page)",
+      "observedOn": "2026-11-18",
+      "floor": false
+     },
+     "psa10Sold30d": {
+      "value": 30,
+      "source": "PriceCharting sold list (eBay/TCGplayer sales shown on page)",
+      "observedOn": "2026-11-18",
+      "floor": true
+     }
+    }
+   }
+  },
+  "grading_pokeinvest_text_psa_url": {
+   "publicConsent": true,
+   "reviewedAt": "2026-11-18T21:31:00Z",
+   "reviewedBy": "BuyTrigger.Cards evidence review",
+   "sourceIdentity": null,
+   "gates": {
+    "exactIssue": true,
+    "publicMediaRights": true,
+    "publicSafeSources": true
+   },
+   "public": {
+    "id": "vaporeon-swsh9tg-tg02-en",
+    "name": "Vaporeon",
+    "set": "Brilliant Stars Trainer Gallery",
+    "number": "TG02/TG30",
+    "printing": "Trainer Gallery Ultra Rare",
+    "language": "en",
+    "image": "assets/public-targets/vaporeon-swsh9tg-tg02-en.webp",
+    "imageSourceUrl": "https://assets.tcgdex.net/en/swsh/swsh9/TG02/high.webp",
+    "checkedAt": "2026-11-18T21:30:00Z",
+    "validUntil": "2026-11-25T20:30:00Z",
+    "kind": "watch",
+    "market": {
+     "rawGuide": {
+      "amountMinor": 1961,
+      "currency": "USD",
+      "type": "guide",
+      "source": "PriceCharting ungraded price guide",
+      "sourceUrl": "https://www.pricecharting.com/game/pokemon-brilliant-stars/vaporeon-tg02",
+      "observedOn": "2026-11-18",
+      "confidence": "medium"
+     },
+     "rawAsk": {
+      "amountMinor": 1851,
+      "currency": "USD",
+      "type": "ask",
+      "source": "TCGplayer lowest listing via TCGCSV (file 2026-11-18 20:05 UTC)",
+      "sourceUrl": "https://www.tcgplayer.com/product/264211",
+      "observedOn": "2026-11-18",
+      "confidence": "medium"
+     },
+     "psa10Guide": {
+      "amountMinor": 65184,
+      "currency": "USD",
+      "type": "guide",
+      "source": "PriceCharting PSA 10 price guide",
+      "sourceUrl": "https://www.pricecharting.com/game/pokemon-brilliant-stars/vaporeon-tg02",
+      "observedOn": "2026-11-18",
+      "confidence": "medium"
+     },
+     "psa10Median30d": {
+      "amountMinor": 61500,
+      "currency": "USD",
+      "type": "median",
+      "source": "PriceCharting PSA 10 sold list, 30-day median (titles not hand-checked)",
+      "sourceUrl": "https://www.pricecharting.com/game/pokemon-brilliant-stars/vaporeon-tg02",
+      "observedOn": "2026-11-18",
+      "confidence": "medium"
+     }
+    },
+    "grading": {
+     "gemRatePct": null,
+     "psa10Pop": {
+      "value": 1234,
+      "source": "PokeInvest copy of PSA",
+      "sourceUrl": "https://www.psacard.com/pop/tcg-cards/2022/x/1",
+      "observedOn": "2026-11-16"
+     },
+     "totalGraded": null
+    },
+    "liquidity": {
+     "rawSold30d": {
+      "value": 38,
+      "source": "PriceCharting sold list (eBay/TCGplayer sales shown on page)",
+      "observedOn": "2026-11-18",
+      "floor": false
+     },
+     "psa10Sold30d": {
+      "value": 30,
+      "source": "PriceCharting sold list (eBay/TCGplayer sales shown on page)",
+      "observedOn": "2026-11-18",
+      "floor": true
+     }
+    }
+   }
+  },
+  "market_ppt_source": {
+   "publicConsent": true,
+   "reviewedAt": "2026-11-18T21:31:00Z",
+   "reviewedBy": "BuyTrigger.Cards evidence review",
+   "sourceIdentity": null,
+   "gates": {
+    "exactIssue": true,
+    "publicMediaRights": true,
+    "publicSafeSources": true
+   },
+   "public": {
+    "id": "vaporeon-swsh9tg-tg02-en",
+    "name": "Vaporeon",
+    "set": "Brilliant Stars Trainer Gallery",
+    "number": "TG02/TG30",
+    "printing": "Trainer Gallery Ultra Rare",
+    "language": "en",
+    "image": "assets/public-targets/vaporeon-swsh9tg-tg02-en.webp",
+    "imageSourceUrl": "https://assets.tcgdex.net/en/swsh/swsh9/TG02/high.webp",
+    "checkedAt": "2026-11-18T21:30:00Z",
+    "validUntil": "2026-11-25T20:30:00Z",
+    "kind": "watch",
+    "market": {
+     "rawGuide": {
+      "amountMinor": 1961,
+      "currency": "USD",
+      "type": "guide",
+      "source": "PokemonPriceTracker",
+      "sourceUrl": "https://www.pricecharting.com/game/pokemon-brilliant-stars/vaporeon-tg02",
+      "observedOn": "2026-11-18",
+      "confidence": "medium"
+     },
+     "rawAsk": {
+      "amountMinor": 1851,
+      "currency": "USD",
+      "type": "ask",
+      "source": "TCGplayer lowest listing via TCGCSV (file 2026-11-18 20:05 UTC)",
+      "sourceUrl": "https://www.tcgplayer.com/product/264211",
+      "observedOn": "2026-11-18",
+      "confidence": "medium"
+     },
+     "psa10Guide": {
+      "amountMinor": 65184,
+      "currency": "USD",
+      "type": "guide",
+      "source": "PriceCharting PSA 10 price guide",
+      "sourceUrl": "https://www.pricecharting.com/game/pokemon-brilliant-stars/vaporeon-tg02",
+      "observedOn": "2026-11-18",
+      "confidence": "medium"
+     },
+     "psa10Median30d": {
+      "amountMinor": 61500,
+      "currency": "USD",
+      "type": "median",
+      "source": "PriceCharting PSA 10 sold list, 30-day median (titles not hand-checked)",
+      "sourceUrl": "https://www.pricecharting.com/game/pokemon-brilliant-stars/vaporeon-tg02",
+      "observedOn": "2026-11-18",
+      "confidence": "medium"
+     }
+    },
+    "grading": {
+     "gemRatePct": null,
+     "psa10Pop": null,
+     "totalGraded": null
+    },
+    "liquidity": {
+     "rawSold30d": {
+      "value": 38,
+      "source": "PriceCharting sold list (eBay/TCGplayer sales shown on page)",
+      "observedOn": "2026-11-18",
+      "floor": false
+     },
+     "psa10Sold30d": {
+      "value": 30,
+      "source": "PriceCharting sold list (eBay/TCGplayer sales shown on page)",
+      "observedOn": "2026-11-18",
+      "floor": true
+     }
+    }
+   }
+  },
+  "market_ppt_url": {
+   "publicConsent": true,
+   "reviewedAt": "2026-11-18T21:31:00Z",
+   "reviewedBy": "BuyTrigger.Cards evidence review",
+   "sourceIdentity": null,
+   "gates": {
+    "exactIssue": true,
+    "publicMediaRights": true,
+    "publicSafeSources": true
+   },
+   "public": {
+    "id": "vaporeon-swsh9tg-tg02-en",
+    "name": "Vaporeon",
+    "set": "Brilliant Stars Trainer Gallery",
+    "number": "TG02/TG30",
+    "printing": "Trainer Gallery Ultra Rare",
+    "language": "en",
+    "image": "assets/public-targets/vaporeon-swsh9tg-tg02-en.webp",
+    "imageSourceUrl": "https://assets.tcgdex.net/en/swsh/swsh9/TG02/high.webp",
+    "checkedAt": "2026-11-18T21:30:00Z",
+    "validUntil": "2026-11-25T20:30:00Z",
+    "kind": "watch",
+    "market": {
+     "rawGuide": {
+      "amountMinor": 1961,
+      "currency": "USD",
+      "type": "guide",
+      "source": "PriceCharting ungraded price guide",
+      "sourceUrl": "https://www.pricecharting.com/game/pokemon-brilliant-stars/vaporeon-tg02",
+      "observedOn": "2026-11-18",
+      "confidence": "medium"
+     },
+     "rawAsk": {
+      "amountMinor": 1851,
+      "currency": "USD",
+      "type": "ask",
+      "source": "TCGplayer lowest listing via TCGCSV (file 2026-11-18 20:05 UTC)",
+      "sourceUrl": "https://www.tcgplayer.com/product/264211",
+      "observedOn": "2026-11-18",
+      "confidence": "medium"
+     },
+     "psa10Guide": {
+      "amountMinor": 65184,
+      "currency": "USD",
+      "type": "guide",
+      "source": "PriceCharting PSA 10 price guide",
+      "sourceUrl": "https://www.pokemonpricetracker.com/card/x",
+      "observedOn": "2026-11-18",
+      "confidence": "medium"
+     },
+     "psa10Median30d": {
+      "amountMinor": 61500,
+      "currency": "USD",
+      "type": "median",
+      "source": "PriceCharting PSA 10 sold list, 30-day median (titles not hand-checked)",
+      "sourceUrl": "https://www.pricecharting.com/game/pokemon-brilliant-stars/vaporeon-tg02",
+      "observedOn": "2026-11-18",
+      "confidence": "medium"
+     }
+    },
+    "grading": {
+     "gemRatePct": null,
+     "psa10Pop": null,
+     "totalGraded": null
+    },
+    "liquidity": {
+     "rawSold30d": {
+      "value": 38,
+      "source": "PriceCharting sold list (eBay/TCGplayer sales shown on page)",
+      "observedOn": "2026-11-18",
+      "floor": false
+     },
+     "psa10Sold30d": {
+      "value": 30,
+      "source": "PriceCharting sold list (eBay/TCGplayer sales shown on page)",
+      "observedOn": "2026-11-18",
+      "floor": true
+     }
+    }
+   }
+  },
+  "market_missing_observedOn": {
+   "publicConsent": true,
+   "reviewedAt": "2026-11-18T21:31:00Z",
+   "reviewedBy": "BuyTrigger.Cards evidence review",
+   "sourceIdentity": null,
+   "gates": {
+    "exactIssue": true,
+    "publicMediaRights": true,
+    "publicSafeSources": true
+   },
+   "public": {
+    "id": "vaporeon-swsh9tg-tg02-en",
+    "name": "Vaporeon",
+    "set": "Brilliant Stars Trainer Gallery",
+    "number": "TG02/TG30",
+    "printing": "Trainer Gallery Ultra Rare",
+    "language": "en",
+    "image": "assets/public-targets/vaporeon-swsh9tg-tg02-en.webp",
+    "imageSourceUrl": "https://assets.tcgdex.net/en/swsh/swsh9/TG02/high.webp",
+    "checkedAt": "2026-11-18T21:30:00Z",
+    "validUntil": "2026-11-25T20:30:00Z",
+    "kind": "watch",
+    "market": {
+     "rawGuide": {
+      "amountMinor": 1961,
+      "currency": "USD",
+      "type": "guide",
+      "source": "PriceCharting ungraded price guide",
+      "sourceUrl": "https://www.pricecharting.com/game/pokemon-brilliant-stars/vaporeon-tg02",
+      "confidence": "medium"
+     },
+     "rawAsk": {
+      "amountMinor": 1851,
+      "currency": "USD",
+      "type": "ask",
+      "source": "TCGplayer lowest listing via TCGCSV (file 2026-11-18 20:05 UTC)",
+      "sourceUrl": "https://www.tcgplayer.com/product/264211",
+      "observedOn": "2026-11-18",
+      "confidence": "medium"
+     },
+     "psa10Guide": {
+      "amountMinor": 65184,
+      "currency": "USD",
+      "type": "guide",
+      "source": "PriceCharting PSA 10 price guide",
+      "sourceUrl": "https://www.pricecharting.com/game/pokemon-brilliant-stars/vaporeon-tg02",
+      "observedOn": "2026-11-18",
+      "confidence": "medium"
+     },
+     "psa10Median30d": {
+      "amountMinor": 61500,
+      "currency": "USD",
+      "type": "median",
+      "source": "PriceCharting PSA 10 sold list, 30-day median (titles not hand-checked)",
+      "sourceUrl": "https://www.pricecharting.com/game/pokemon-brilliant-stars/vaporeon-tg02",
+      "observedOn": "2026-11-18",
+      "confidence": "medium"
+     }
+    },
+    "grading": {
+     "gemRatePct": null,
+     "psa10Pop": null,
+     "totalGraded": null
+    },
+    "liquidity": {
+     "rawSold30d": {
+      "value": 38,
+      "source": "PriceCharting sold list (eBay/TCGplayer sales shown on page)",
+      "observedOn": "2026-11-18",
+      "floor": false
+     },
+     "psa10Sold30d": {
+      "value": 30,
+      "source": "PriceCharting sold list (eBay/TCGplayer sales shown on page)",
+      "observedOn": "2026-11-18",
+      "floor": true
+     }
+    }
+   }
+  },
+  "market_observed_after_check": {
+   "publicConsent": true,
+   "reviewedAt": "2026-11-18T21:31:00Z",
+   "reviewedBy": "BuyTrigger.Cards evidence review",
+   "sourceIdentity": null,
+   "gates": {
+    "exactIssue": true,
+    "publicMediaRights": true,
+    "publicSafeSources": true
+   },
+   "public": {
+    "id": "vaporeon-swsh9tg-tg02-en",
+    "name": "Vaporeon",
+    "set": "Brilliant Stars Trainer Gallery",
+    "number": "TG02/TG30",
+    "printing": "Trainer Gallery Ultra Rare",
+    "language": "en",
+    "image": "assets/public-targets/vaporeon-swsh9tg-tg02-en.webp",
+    "imageSourceUrl": "https://assets.tcgdex.net/en/swsh/swsh9/TG02/high.webp",
+    "checkedAt": "2026-11-18T21:30:00Z",
+    "validUntil": "2026-11-25T20:30:00Z",
+    "kind": "watch",
+    "market": {
+     "rawGuide": {
+      "amountMinor": 1961,
+      "currency": "USD",
+      "type": "guide",
+      "source": "PriceCharting ungraded price guide",
+      "sourceUrl": "https://www.pricecharting.com/game/pokemon-brilliant-stars/vaporeon-tg02",
+      "observedOn": "2026-11-19",
+      "confidence": "medium"
+     },
+     "rawAsk": {
+      "amountMinor": 1851,
+      "currency": "USD",
+      "type": "ask",
+      "source": "TCGplayer lowest listing via TCGCSV (file 2026-11-18 20:05 UTC)",
+      "sourceUrl": "https://www.tcgplayer.com/product/264211",
+      "observedOn": "2026-11-18",
+      "confidence": "medium"
+     },
+     "psa10Guide": {
+      "amountMinor": 65184,
+      "currency": "USD",
+      "type": "guide",
+      "source": "PriceCharting PSA 10 price guide",
+      "sourceUrl": "https://www.pricecharting.com/game/pokemon-brilliant-stars/vaporeon-tg02",
+      "observedOn": "2026-11-18",
+      "confidence": "medium"
+     },
+     "psa10Median30d": {
+      "amountMinor": 61500,
+      "currency": "USD",
+      "type": "median",
+      "source": "PriceCharting PSA 10 sold list, 30-day median (titles not hand-checked)",
+      "sourceUrl": "https://www.pricecharting.com/game/pokemon-brilliant-stars/vaporeon-tg02",
+      "observedOn": "2026-11-18",
+      "confidence": "medium"
+     }
+    },
+    "grading": {
+     "gemRatePct": null,
+     "psa10Pop": null,
+     "totalGraded": null
+    },
+    "liquidity": {
+     "rawSold30d": {
+      "value": 38,
+      "source": "PriceCharting sold list (eBay/TCGplayer sales shown on page)",
+      "observedOn": "2026-11-18",
+      "floor": false
+     },
+     "psa10Sold30d": {
+      "value": 30,
+      "source": "PriceCharting sold list (eBay/TCGplayer sales shown on page)",
+      "observedOn": "2026-11-18",
+      "floor": true
+     }
+    }
+   }
+  },
+  "watch_no_psa10_value": {
+   "publicConsent": true,
+   "reviewedAt": "2026-11-18T21:31:00Z",
+   "reviewedBy": "BuyTrigger.Cards evidence review",
+   "sourceIdentity": null,
+   "gates": {
+    "exactIssue": true,
+    "publicMediaRights": true,
+    "publicSafeSources": true
+   },
+   "public": {
+    "id": "vaporeon-swsh9tg-tg02-en",
+    "name": "Vaporeon",
+    "set": "Brilliant Stars Trainer Gallery",
+    "number": "TG02/TG30",
+    "printing": "Trainer Gallery Ultra Rare",
+    "language": "en",
+    "image": "assets/public-targets/vaporeon-swsh9tg-tg02-en.webp",
+    "imageSourceUrl": "https://assets.tcgdex.net/en/swsh/swsh9/TG02/high.webp",
+    "checkedAt": "2026-11-18T21:30:00Z",
+    "validUntil": "2026-11-25T20:30:00Z",
+    "kind": "watch",
+    "market": {
+     "rawGuide": {
+      "amountMinor": 1961,
+      "currency": "USD",
+      "type": "guide",
+      "source": "PriceCharting ungraded price guide",
+      "sourceUrl": "https://www.pricecharting.com/game/pokemon-brilliant-stars/vaporeon-tg02",
+      "observedOn": "2026-11-18",
+      "confidence": "medium"
+     },
+     "rawAsk": {
+      "amountMinor": 1851,
+      "currency": "USD",
+      "type": "ask",
+      "source": "TCGplayer lowest listing via TCGCSV (file 2026-11-18 20:05 UTC)",
+      "sourceUrl": "https://www.tcgplayer.com/product/264211",
+      "observedOn": "2026-11-18",
+      "confidence": "medium"
+     }
+    },
+    "grading": {
+     "gemRatePct": null,
+     "psa10Pop": null,
+     "totalGraded": null
+    },
+    "liquidity": {
+     "rawSold30d": {
+      "value": 38,
+      "source": "PriceCharting sold list (eBay/TCGplayer sales shown on page)",
+      "observedOn": "2026-11-18",
+      "floor": false
+     },
+     "psa10Sold30d": {
+      "value": 30,
+      "source": "PriceCharting sold list (eBay/TCGplayer sales shown on page)",
+      "observedOn": "2026-11-18",
+      "floor": true
+     }
+    }
+   }
+  },
+  "watch_with_rawUrl": {
+   "publicConsent": true,
+   "reviewedAt": "2026-11-18T21:31:00Z",
+   "reviewedBy": "BuyTrigger.Cards evidence review",
+   "sourceIdentity": null,
+   "gates": {
+    "exactIssue": true,
+    "publicMediaRights": true,
+    "publicSafeSources": true
+   },
+   "public": {
+    "id": "vaporeon-swsh9tg-tg02-en",
+    "name": "Vaporeon",
+    "set": "Brilliant Stars Trainer Gallery",
+    "number": "TG02/TG30",
+    "printing": "Trainer Gallery Ultra Rare",
+    "language": "en",
+    "image": "assets/public-targets/vaporeon-swsh9tg-tg02-en.webp",
+    "imageSourceUrl": "https://assets.tcgdex.net/en/swsh/swsh9/TG02/high.webp",
+    "checkedAt": "2026-11-18T21:30:00Z",
+    "validUntil": "2026-11-25T20:30:00Z",
+    "kind": "watch",
+    "market": {
+     "rawGuide": {
+      "amountMinor": 1961,
+      "currency": "USD",
+      "type": "guide",
+      "source": "PriceCharting ungraded price guide",
+      "sourceUrl": "https://www.pricecharting.com/game/pokemon-brilliant-stars/vaporeon-tg02",
+      "observedOn": "2026-11-18",
+      "confidence": "medium"
+     },
+     "rawAsk": {
+      "amountMinor": 1851,
+      "currency": "USD",
+      "type": "ask",
+      "source": "TCGplayer lowest listing via TCGCSV (file 2026-11-18 20:05 UTC)",
+      "sourceUrl": "https://www.tcgplayer.com/product/264211",
+      "observedOn": "2026-11-18",
+      "confidence": "medium"
+     },
+     "psa10Guide": {
+      "amountMinor": 65184,
+      "currency": "USD",
+      "type": "guide",
+      "source": "PriceCharting PSA 10 price guide",
+      "sourceUrl": "https://www.pricecharting.com/game/pokemon-brilliant-stars/vaporeon-tg02",
+      "observedOn": "2026-11-18",
+      "confidence": "medium"
+     },
+     "psa10Median30d": {
+      "amountMinor": 61500,
+      "currency": "USD",
+      "type": "median",
+      "source": "PriceCharting PSA 10 sold list, 30-day median (titles not hand-checked)",
+      "sourceUrl": "https://www.pricecharting.com/game/pokemon-brilliant-stars/vaporeon-tg02",
+      "observedOn": "2026-11-18",
+      "confidence": "medium"
+     }
+    },
+    "grading": {
+     "gemRatePct": null,
+     "psa10Pop": null,
+     "totalGraded": null
+    },
+    "liquidity": {
+     "rawSold30d": {
+      "value": 38,
+      "source": "PriceCharting sold list (eBay/TCGplayer sales shown on page)",
+      "observedOn": "2026-11-18",
+      "floor": false
+     },
+     "psa10Sold30d": {
+      "value": 30,
+      "source": "PriceCharting sold list (eBay/TCGplayer sales shown on page)",
+      "observedOn": "2026-11-18",
+      "floor": true
+     }
+    },
+    "rawUrl": "https://www.ebay.co.uk/itm/123456789012"
+   }
+  },
+  "watch_wrong_gates": {
+   "publicConsent": true,
+   "reviewedAt": "2026-11-18T21:31:00Z",
+   "reviewedBy": "BuyTrigger.Cards evidence review",
+   "sourceIdentity": null,
+   "gates": {
+    "exactIssue": true,
+    "publicMediaRights": true,
+    "publicSafeSources": true,
+    "availableDeliveredRaw": true
+   },
+   "public": {
+    "id": "vaporeon-swsh9tg-tg02-en",
+    "name": "Vaporeon",
+    "set": "Brilliant Stars Trainer Gallery",
+    "number": "TG02/TG30",
+    "printing": "Trainer Gallery Ultra Rare",
+    "language": "en",
+    "image": "assets/public-targets/vaporeon-swsh9tg-tg02-en.webp",
+    "imageSourceUrl": "https://assets.tcgdex.net/en/swsh/swsh9/TG02/high.webp",
+    "checkedAt": "2026-11-18T21:30:00Z",
+    "validUntil": "2026-11-25T20:30:00Z",
+    "kind": "watch",
+    "market": {
+     "rawGuide": {
+      "amountMinor": 1961,
+      "currency": "USD",
+      "type": "guide",
+      "source": "PriceCharting ungraded price guide",
+      "sourceUrl": "https://www.pricecharting.com/game/pokemon-brilliant-stars/vaporeon-tg02",
+      "observedOn": "2026-11-18",
+      "confidence": "medium"
+     },
+     "rawAsk": {
+      "amountMinor": 1851,
+      "currency": "USD",
+      "type": "ask",
+      "source": "TCGplayer lowest listing via TCGCSV (file 2026-11-18 20:05 UTC)",
+      "sourceUrl": "https://www.tcgplayer.com/product/264211",
+      "observedOn": "2026-11-18",
+      "confidence": "medium"
+     },
+     "psa10Guide": {
+      "amountMinor": 65184,
+      "currency": "USD",
+      "type": "guide",
+      "source": "PriceCharting PSA 10 price guide",
+      "sourceUrl": "https://www.pricecharting.com/game/pokemon-brilliant-stars/vaporeon-tg02",
+      "observedOn": "2026-11-18",
+      "confidence": "medium"
+     },
+     "psa10Median30d": {
+      "amountMinor": 61500,
+      "currency": "USD",
+      "type": "median",
+      "source": "PriceCharting PSA 10 sold list, 30-day median (titles not hand-checked)",
+      "sourceUrl": "https://www.pricecharting.com/game/pokemon-brilliant-stars/vaporeon-tg02",
+      "observedOn": "2026-11-18",
+      "confidence": "medium"
+     }
+    },
+    "grading": {
+     "gemRatePct": null,
+     "psa10Pop": null,
+     "totalGraded": null
+    },
+    "liquidity": {
+     "rawSold30d": {
+      "value": 38,
+      "source": "PriceCharting sold list (eBay/TCGplayer sales shown on page)",
+      "observedOn": "2026-11-18",
+      "floor": false
+     },
+     "psa10Sold30d": {
+      "value": 30,
+      "source": "PriceCharting sold list (eBay/TCGplayer sales shown on page)",
+      "observedOn": "2026-11-18",
+      "floor": true
+     }
+    }
+   }
+  },
+  "liquidity_floor_not_bool": {
+   "publicConsent": true,
+   "reviewedAt": "2026-11-18T21:31:00Z",
+   "reviewedBy": "BuyTrigger.Cards evidence review",
+   "sourceIdentity": null,
+   "gates": {
+    "exactIssue": true,
+    "publicMediaRights": true,
+    "publicSafeSources": true
+   },
+   "public": {
+    "id": "vaporeon-swsh9tg-tg02-en",
+    "name": "Vaporeon",
+    "set": "Brilliant Stars Trainer Gallery",
+    "number": "TG02/TG30",
+    "printing": "Trainer Gallery Ultra Rare",
+    "language": "en",
+    "image": "assets/public-targets/vaporeon-swsh9tg-tg02-en.webp",
+    "imageSourceUrl": "https://assets.tcgdex.net/en/swsh/swsh9/TG02/high.webp",
+    "checkedAt": "2026-11-18T21:30:00Z",
+    "validUntil": "2026-11-25T20:30:00Z",
+    "kind": "watch",
+    "market": {
+     "rawGuide": {
+      "amountMinor": 1961,
+      "currency": "USD",
+      "type": "guide",
+      "source": "PriceCharting ungraded price guide",
+      "sourceUrl": "https://www.pricecharting.com/game/pokemon-brilliant-stars/vaporeon-tg02",
+      "observedOn": "2026-11-18",
+      "confidence": "medium"
+     },
+     "rawAsk": {
+      "amountMinor": 1851,
+      "currency": "USD",
+      "type": "ask",
+      "source": "TCGplayer lowest listing via TCGCSV (file 2026-11-18 20:05 UTC)",
+      "sourceUrl": "https://www.tcgplayer.com/product/264211",
+      "observedOn": "2026-11-18",
+      "confidence": "medium"
+     },
+     "psa10Guide": {
+      "amountMinor": 65184,
+      "currency": "USD",
+      "type": "guide",
+      "source": "PriceCharting PSA 10 price guide",
+      "sourceUrl": "https://www.pricecharting.com/game/pokemon-brilliant-stars/vaporeon-tg02",
+      "observedOn": "2026-11-18",
+      "confidence": "medium"
+     },
+     "psa10Median30d": {
+      "amountMinor": 61500,
+      "currency": "USD",
+      "type": "median",
+      "source": "PriceCharting PSA 10 sold list, 30-day median (titles not hand-checked)",
+      "sourceUrl": "https://www.pricecharting.com/game/pokemon-brilliant-stars/vaporeon-tg02",
+      "observedOn": "2026-11-18",
+      "confidence": "medium"
+     }
+    },
+    "grading": {
+     "gemRatePct": null,
+     "psa10Pop": null,
+     "totalGraded": null
+    },
+    "liquidity": {
+     "rawSold30d": {
+      "value": 38,
+      "source": "PriceCharting sold list (eBay/TCGplayer sales shown on page)",
+      "observedOn": "2026-11-18",
+      "floor": "yes"
+     },
+     "psa10Sold30d": {
+      "value": 30,
+      "source": "PriceCharting sold list (eBay/TCGplayer sales shown on page)",
+      "observedOn": "2026-11-18",
+      "floor": true
+     }
+    }
+   }
+  },
+  "unknown_kind": {
+   "publicConsent": true,
+   "reviewedAt": "2026-11-18T21:31:00Z",
+   "reviewedBy": "BuyTrigger.Cards evidence review",
+   "sourceIdentity": null,
+   "gates": {
+    "exactIssue": true,
+    "publicMediaRights": true,
+    "publicSafeSources": true
+   },
+   "public": {
+    "id": "vaporeon-swsh9tg-tg02-en",
+    "name": "Vaporeon",
+    "set": "Brilliant Stars Trainer Gallery",
+    "number": "TG02/TG30",
+    "printing": "Trainer Gallery Ultra Rare",
+    "language": "en",
+    "image": "assets/public-targets/vaporeon-swsh9tg-tg02-en.webp",
+    "imageSourceUrl": "https://assets.tcgdex.net/en/swsh/swsh9/TG02/high.webp",
+    "checkedAt": "2026-11-18T21:30:00Z",
+    "validUntil": "2026-11-25T20:30:00Z",
+    "kind": "grail",
+    "market": {
+     "rawGuide": {
+      "amountMinor": 1961,
+      "currency": "USD",
+      "type": "guide",
+      "source": "PriceCharting ungraded price guide",
+      "sourceUrl": "https://www.pricecharting.com/game/pokemon-brilliant-stars/vaporeon-tg02",
+      "observedOn": "2026-11-18",
+      "confidence": "medium"
+     },
+     "rawAsk": {
+      "amountMinor": 1851,
+      "currency": "USD",
+      "type": "ask",
+      "source": "TCGplayer lowest listing via TCGCSV (file 2026-11-18 20:05 UTC)",
+      "sourceUrl": "https://www.tcgplayer.com/product/264211",
+      "observedOn": "2026-11-18",
+      "confidence": "medium"
+     },
+     "psa10Guide": {
+      "amountMinor": 65184,
+      "currency": "USD",
+      "type": "guide",
+      "source": "PriceCharting PSA 10 price guide",
+      "sourceUrl": "https://www.pricecharting.com/game/pokemon-brilliant-stars/vaporeon-tg02",
+      "observedOn": "2026-11-18",
+      "confidence": "medium"
+     },
+     "psa10Median30d": {
+      "amountMinor": 61500,
+      "currency": "USD",
+      "type": "median",
+      "source": "PriceCharting PSA 10 sold list, 30-day median (titles not hand-checked)",
+      "sourceUrl": "https://www.pricecharting.com/game/pokemon-brilliant-stars/vaporeon-tg02",
+      "observedOn": "2026-11-18",
+      "confidence": "medium"
+     }
+    },
+    "grading": {
+     "gemRatePct": null,
+     "psa10Pop": null,
+     "totalGraded": null
+    },
+    "liquidity": {
+     "rawSold30d": {
+      "value": 38,
+      "source": "PriceCharting sold list (eBay/TCGplayer sales shown on page)",
+      "observedOn": "2026-11-18",
+      "floor": false
+     },
+     "psa10Sold30d": {
+      "value": 30,
+      "source": "PriceCharting sold list (eBay/TCGplayer sales shown on page)",
+      "observedOn": "2026-11-18",
+      "floor": true
+     }
+    }
+   }
+  },
+  "upside_jpy_vs_gbp_grading": {
+   "publicConsent": true,
+   "reviewedAt": "2026-11-06T12:01:00Z",
+   "reviewedBy": "BuyTrigger.Cards evidence review",
+   "sourceIdentity": null,
+   "gates": {
+    "exactIssue": true,
+    "availableDeliveredRaw": true,
+    "completedPsa10": true,
+    "eligibleLowestPsaFee": true,
+    "publicMediaRights": true
+   },
+   "public": {
+    "id": "charizard-ex-sv03-215-en",
+    "name": "Charizard ex",
+    "set": "Obsidian Flames",
+    "number": "215/197",
+    "printing": "Ultra Rare",
+    "language": "en",
+    "rawMinor": 2198,
+    "psa10Minor": 11399,
+    "soldOn": "2026-06-29",
+    "rawUrl": "https://tradezardz.co.uk/products/charizard-ex-215-197-obsidian-flames-en-batch03-20261031-card-007",
+    "saleUrl": "https://www.ebay.co.uk/itm/297721154258",
+    "imageSourceUrl": "https://assets.pokemon.com/static-assets/content-assets/cms2/img/cards/web/SV03/SV03_EN_215.png",
+    "image": "assets/public-targets/charizard-ex-sv03-215-en.webp",
+    "gradingMinor": 3500,
+    "gradingTier": "Value",
+    "returnPostageFromMinor": 900,
+    "checkedAt": "2026-11-06T12:00:00Z",
+    "gradingUrl": "https://thesubcenter.co.uk/product/psa-value/",
+    "validUntil": "2026-11-07T12:00:00Z",
+    "currency": "JPY"
+   }
+  },
+  "upside_usd": {
+   "publicConsent": true,
+   "reviewedAt": "2026-11-06T12:01:00Z",
+   "reviewedBy": "BuyTrigger.Cards evidence review",
+   "sourceIdentity": null,
+   "gates": {
+    "exactIssue": true,
+    "availableDeliveredRaw": true,
+    "completedPsa10": true,
+    "eligibleLowestPsaFee": true,
+    "publicMediaRights": true
+   },
+   "public": {
+    "id": "charizard-ex-sv03-215-en",
+    "name": "Charizard ex",
+    "set": "Obsidian Flames",
+    "number": "215/197",
+    "printing": "Ultra Rare",
+    "language": "en",
+    "rawMinor": 2198,
+    "psa10Minor": 11399,
+    "soldOn": "2026-06-29",
+    "rawUrl": "https://tradezardz.co.uk/products/charizard-ex-215-197-obsidian-flames-en-batch03-20261031-card-007",
+    "saleUrl": "https://www.ebay.co.uk/itm/297721154258",
+    "imageSourceUrl": "https://assets.pokemon.com/static-assets/content-assets/cms2/img/cards/web/SV03/SV03_EN_215.png",
+    "image": "assets/public-targets/charizard-ex-sv03-215-en.webp",
+    "gradingMinor": 3500,
+    "gradingTier": "Value",
+    "returnPostageFromMinor": 900,
+    "checkedAt": "2026-11-06T12:00:00Z",
+    "gradingUrl": "https://thesubcenter.co.uk/product/psa-value/",
+    "validUntil": "2026-11-07T12:00:00Z",
+    "currency": "USD"
+   }
+  },
+  "upside_unknown_key": {
+   "publicConsent": true,
+   "reviewedAt": "2026-11-06T12:01:00Z",
+   "reviewedBy": "BuyTrigger.Cards evidence review",
+   "sourceIdentity": null,
+   "gates": {
+    "exactIssue": true,
+    "availableDeliveredRaw": true,
+    "completedPsa10": true,
+    "eligibleLowestPsaFee": true,
+    "publicMediaRights": true
+   },
+   "public": {
+    "id": "charizard-ex-sv03-215-en",
+    "name": "Charizard ex",
+    "set": "Obsidian Flames",
+    "number": "215/197",
+    "printing": "Ultra Rare",
+    "language": "en",
+    "rawMinor": 2198,
+    "psa10Minor": 11399,
+    "soldOn": "2026-06-29",
+    "rawUrl": "https://tradezardz.co.uk/products/charizard-ex-215-197-obsidian-flames-en-batch03-20261031-card-007",
+    "saleUrl": "https://www.ebay.co.uk/itm/297721154258",
+    "imageSourceUrl": "https://assets.pokemon.com/static-assets/content-assets/cms2/img/cards/web/SV03/SV03_EN_215.png",
+    "image": "assets/public-targets/charizard-ex-sv03-215-en.webp",
+    "gradingMinor": 3500,
+    "gradingTier": "Value",
+    "returnPostageFromMinor": 900,
+    "checkedAt": "2026-11-06T12:00:00Z",
+    "gradingUrl": "https://thesubcenter.co.uk/product/psa-value/",
+    "validUntil": "2026-11-07T12:00:00Z",
+    "extra": 1
+   }
+  },
+  "upside_market_pokeinvest": {
+   "publicConsent": true,
+   "reviewedAt": "2026-11-06T12:01:00Z",
+   "reviewedBy": "BuyTrigger.Cards evidence review",
+   "sourceIdentity": null,
+   "gates": {
+    "exactIssue": true,
+    "availableDeliveredRaw": true,
+    "completedPsa10": true,
+    "eligibleLowestPsaFee": true,
+    "publicMediaRights": true
+   },
+   "public": {
+    "id": "charizard-ex-sv03-215-en",
+    "name": "Charizard ex",
+    "set": "Obsidian Flames",
+    "number": "215/197",
+    "printing": "Ultra Rare",
+    "language": "en",
+    "rawMinor": 2198,
+    "psa10Minor": 11399,
+    "soldOn": "2026-06-29",
+    "rawUrl": "https://tradezardz.co.uk/products/charizard-ex-215-197-obsidian-flames-en-batch03-20261031-card-007",
+    "saleUrl": "https://www.ebay.co.uk/itm/297721154258",
+    "imageSourceUrl": "https://assets.pokemon.com/static-assets/content-assets/cms2/img/cards/web/SV03/SV03_EN_215.png",
+    "image": "assets/public-targets/charizard-ex-sv03-215-en.webp",
+    "gradingMinor": 3500,
+    "gradingTier": "Value",
+    "returnPostageFromMinor": 900,
+    "checkedAt": "2026-11-06T12:00:00Z",
+    "gradingUrl": "https://thesubcenter.co.uk/product/psa-value/",
+    "validUntil": "2026-11-07T12:00:00Z",
+    "kind": "upside",
+    "market": {
+     "rawGuide": {
+      "amountMinor": 100,
+      "currency": "GBP",
+      "type": "guide",
+      "source": "PokeInvest",
+      "sourceUrl": "https://x.com/a",
+      "observedOn": "2026-11-01",
+      "confidence": "low"
+     }
+    }
+   }
+  }
+ },
+ "good": {
+  "watch_with_psa_direct_pop": {
+   "publicConsent": true,
+   "reviewedAt": "2026-11-18T21:31:00Z",
+   "reviewedBy": "BuyTrigger.Cards evidence review",
+   "sourceIdentity": null,
+   "gates": {
+    "exactIssue": true,
+    "publicMediaRights": true,
+    "publicSafeSources": true
+   },
+   "public": {
+    "id": "vaporeon-swsh9tg-tg02-en",
+    "name": "Vaporeon",
+    "set": "Brilliant Stars Trainer Gallery",
+    "number": "TG02/TG30",
+    "printing": "Trainer Gallery Ultra Rare",
+    "language": "en",
+    "image": "assets/public-targets/vaporeon-swsh9tg-tg02-en.webp",
+    "imageSourceUrl": "https://assets.tcgdex.net/en/swsh/swsh9/TG02/high.webp",
+    "checkedAt": "2026-11-18T21:30:00Z",
+    "validUntil": "2026-11-25T20:30:00Z",
+    "kind": "watch",
+    "market": {
+     "rawGuide": {
+      "amountMinor": 1961,
+      "currency": "USD",
+      "type": "guide",
+      "source": "PriceCharting ungraded price guide",
+      "sourceUrl": "https://www.pricecharting.com/game/pokemon-brilliant-stars/vaporeon-tg02",
+      "observedOn": "2026-11-18",
+      "confidence": "medium"
+     },
+     "rawAsk": {
+      "amountMinor": 1851,
+      "currency": "USD",
+      "type": "ask",
+      "source": "TCGplayer lowest listing via TCGCSV (file 2026-11-18 20:05 UTC)",
+      "sourceUrl": "https://www.tcgplayer.com/product/264211",
+      "observedOn": "2026-11-18",
+      "confidence": "medium"
+     },
+     "psa10Guide": {
+      "amountMinor": 65184,
+      "currency": "USD",
+      "type": "guide",
+      "source": "PriceCharting PSA 10 price guide",
+      "sourceUrl": "https://www.pricecharting.com/game/pokemon-brilliant-stars/vaporeon-tg02",
+      "observedOn": "2026-11-18",
+      "confidence": "medium"
+     },
+     "psa10Median30d": {
+      "amountMinor": 61500,
+      "currency": "USD",
+      "type": "median",
+      "source": "PriceCharting PSA 10 sold list, 30-day median (titles not hand-checked)",
+      "sourceUrl": "https://www.pricecharting.com/game/pokemon-brilliant-stars/vaporeon-tg02",
+      "observedOn": "2026-11-18",
+      "confidence": "medium"
+     }
+    },
+    "grading": {
+     "gemRatePct": null,
+     "psa10Pop": {
+      "value": 1234,
+      "source": "PSA Population Report",
+      "sourceUrl": "https://www.psacard.com/pop/tcg-cards/2022/pokemon-sword-shield-brilliant-stars/211290",
+      "observedOn": "2026-11-18"
+     },
+     "totalGraded": null
+    },
+    "liquidity": {
+     "rawSold30d": {
+      "value": 38,
+      "source": "PriceCharting sold list (eBay/TCGplayer sales shown on page)",
+      "observedOn": "2026-11-18",
+      "floor": false
+     },
+     "psa10Sold30d": {
+      "value": 30,
+      "source": "PriceCharting sold list (eBay/TCGplayer sales shown on page)",
+      "observedOn": "2026-11-18",
+      "floor": true
+     }
+    }
+   }
+  },
+  "upside_gbp_with_usd_market_block": {
+   "publicConsent": true,
+   "reviewedAt": "2026-11-06T12:01:00Z",
+   "reviewedBy": "BuyTrigger.Cards evidence review",
+   "sourceIdentity": null,
+   "gates": {
+    "exactIssue": true,
+    "availableDeliveredRaw": true,
+    "completedPsa10": true,
+    "eligibleLowestPsaFee": true,
+    "publicMediaRights": true
+   },
+   "public": {
+    "id": "charizard-ex-sv03-215-en",
+    "name": "Charizard ex",
+    "set": "Obsidian Flames",
+    "number": "215/197",
+    "printing": "Ultra Rare",
+    "language": "en",
+    "rawMinor": 2198,
+    "psa10Minor": 11399,
+    "soldOn": "2026-06-29",
+    "rawUrl": "https://tradezardz.co.uk/products/charizard-ex-215-197-obsidian-flames-en-batch03-20261031-card-007",
+    "saleUrl": "https://www.ebay.co.uk/itm/297721154258",
+    "imageSourceUrl": "https://assets.pokemon.com/static-assets/content-assets/cms2/img/cards/web/SV03/SV03_EN_215.png",
+    "image": "assets/public-targets/charizard-ex-sv03-215-en.webp",
+    "gradingMinor": 3500,
+    "gradingTier": "Value",
+    "returnPostageFromMinor": 900,
+    "checkedAt": "2026-11-06T12:00:00Z",
+    "gradingUrl": "https://thesubcenter.co.uk/product/psa-value/",
+    "validUntil": "2026-11-07T12:00:00Z",
+    "kind": "upside",
+    "currency": "GBP",
+    "market": {
+     "rawGuide": {
+      "amountMinor": 2000,
+      "currency": "USD",
+      "type": "guide",
+      "source": "PriceCharting",
+      "sourceUrl": "https://www.pricecharting.com/game/x",
+      "observedOn": "2026-11-01",
+      "confidence": "medium"
+     }
+    }
+   }
+  }
+ },
+ "_note": "Synthetic denylist/positive-control values (not real data). Expected: every bad case false, every good case true (DB v2, 18 Nov 2026)."
+}

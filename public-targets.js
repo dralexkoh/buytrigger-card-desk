@@ -11,7 +11,12 @@ const SOURCE_URLS={
  imageSourceUrl:/^https:\/\/(?:assets\.pokemon\.com|assets\.tcgdex\.net|www\.pokemon-card\.com)\/[a-zA-Z0-9/_.-]+\.(?:jpg|png|webp)$/
 };
 const esc=x=>String(x).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-const money=n=>n===null?'—':new Intl.NumberFormat('en-GB',{style:'currency',currency:'GBP',maximumFractionDigits:n%100?2:0}).format(n/100);
+function money(minor,currency='GBP'){
+ if(minor===null)return '—';
+ if(currency==='JPY')return new Intl.NumberFormat('ja-JP',{style:'currency',currency:'JPY',minimumFractionDigits:0,maximumFractionDigits:0}).format(minor).replaceAll('￥','¥');
+ if(currency==='USD')return new Intl.NumberFormat('en-US',{style:'currency',currency:'USD',maximumFractionDigits:minor%100?2:0}).format(minor/100).replace('$','US$');
+ return new Intl.NumberFormat('en-GB',{style:'currency',currency:'GBP',maximumFractionDigits:minor%100?2:0}).format(minor/100);
+}
 const date=x=>new Date(x).toLocaleDateString('en-GB',{day:'numeric',month:'short',year:'numeric',timeZone:'UTC'});
 const object=x=>x&&typeof x==='object'&&!Array.isArray(x);
 const exactKeys=(x,keys)=>object(x)&&Object.keys(x).length===keys.length&&keys.every(k=>Object.hasOwn(x,k));
@@ -36,7 +41,7 @@ function validateConfig(c){
  }
  return c;
 }
-function validUpside(c,reviewDay,now=Date.now()){
+function validLegacyUpside(c,reviewDay,now=Date.now()){
  const live=reviewDay===null;
  const fields=['id','name','set','number','printing','language','image','rawMinor','gradingMinor','psa10Minor','returnPostageFromMinor','soldOn','rawUrl','gradingUrl','saleUrl','imageSourceUrl'];
  if(live||c?.gradingTier!==undefined)fields.push('gradingTier');
@@ -57,6 +62,104 @@ function validUpside(c,reviewDay,now=Date.now()){
  if(!Object.entries(SOURCE_URLS).every(([key,pattern])=>typeof c[key]==='string'&&c[key].length<=500&&pattern.test(c[key])))return false;
  return c.gradingUrl.endsWith('/psa-'+(c.gradingTier??'Value').toLowerCase()+'/')&&c.rawUrl!==c.saleUrl.split('?')[0];
 }
+const EXT_KEYS=['kind','currency','market','grading','liquidity'];
+const DENIED=/(pokeinvest|pokemonpricetracker|pokemon price tracker|pokemon-price-tracker)/i;
+const HTTPS_URL=/^https:\/\/[A-Za-z0-9.-]+\/[^\s"<>]*$/;
+const PSA_URL=/^https:\/\/www\.psacard\.com\/[A-Za-z0-9/_.?=&%-]+$/;
+const MARKET_KEYS=['rawGuide','rawAsk','psa10Guide','psa10Median30d'];
+const GRADING_KEYS=['gemRatePct','psa10Pop','totalGraded'];
+const LIQUIDITY_KEYS=['rawSold30d','psa10Sold30d'];
+function sourceAllowed(s){return typeof s==='string'&&!DENIED.test(s);}
+function sourceText(s){return sourceAllowed(s)&&s.trim().length>=1&&s.trim().length<=160;}
+function positiveMinor(n){return Number.isSafeInteger(n)&&n>=1&&n<=999999999;}
+function wholeDigits(n,max){return Number.isSafeInteger(n)&&n>=0&&String(n).length<=max;}
+function allowedKeys(x,keys){return object(x)&&Object.keys(x).every(k=>keys.includes(k));}
+function evidenceOk(v,block,checkedDay){
+ if(!object(v))return false;
+ if(block==='market'){
+  if(!exactKeys(v,['amountMinor','currency','type','source','sourceUrl','observedOn','confidence']))return false;
+  if(!positiveMinor(v.amountMinor)||!['GBP','USD','JPY'].includes(v.currency)||!['guide','ask','bid','sale','median'].includes(v.type)||!['high','medium','low'].includes(v.confidence))return false;
+ }else if(block==='grading'){
+  if(!exactKeys(v,['value','source','sourceUrl','observedOn']))return false;
+  if(typeof v.value!=='number'||!Number.isFinite(v.value)||v.value<0||typeof v.sourceUrl!=='string'||!PSA_URL.test(v.sourceUrl))return false;
+ }else if(block==='liquidity'){
+  if(!exactKeys(v,['value','source','observedOn','floor']))return false;
+  if(!wholeDigits(v.value,7)||typeof v.floor!=='boolean')return false;
+ }else return false;
+ if(!sourceText(v.source))return false;
+ if(Object.hasOwn(v,'sourceUrl')&&(typeof v.sourceUrl!=='string'||v.sourceUrl.length>500||!HTTPS_URL.test(v.sourceUrl)||!sourceAllowed(v.sourceUrl)))return false;
+ return calendarDay(v.observedOn)&&v.observedOn<=checkedDay;
+}
+function blocksOk(d,checkedDay){
+ if(Object.hasOwn(d,'market')){
+  const market=d.market;
+  if(!object(market)||!Object.keys(market).length||!allowedKeys(market,MARKET_KEYS))return false;
+  for(const value of Object.values(market)) if(!evidenceOk(value,'market',checkedDay))return false;
+ }
+ if(Object.hasOwn(d,'grading')){
+  const grading=d.grading;
+  if(!object(grading)||!allowedKeys(grading,GRADING_KEYS))return false;
+  for(const [key,value] of Object.entries(grading)){
+   if(value===null)continue;
+   if(!evidenceOk(value,'grading',checkedDay))return false;
+   if(key==='gemRatePct'&&value.value>100)return false;
+   if((key==='psa10Pop'||key==='totalGraded')&&!wholeDigits(value.value,9))return false;
+  }
+ }
+ if(Object.hasOwn(d,'liquidity')){
+  const liquidity=d.liquidity;
+  if(!object(liquidity)||!allowedKeys(liquidity,LIQUIDITY_KEYS))return false;
+  for(const value of Object.values(liquidity)){
+   if(value===null)continue;
+   if(!evidenceOk(value,'liquidity',checkedDay))return false;
+  }
+ }
+ return true;
+}
+function blockCheckedDay(c,reviewDay){
+ const value=c.checkedAt===undefined?reviewDay:c.checkedAt;
+ if(timestamp(value))return new Date(value).toISOString().slice(0,10);
+ if(reviewDay!==null&&calendarDay(value))return value;
+ return null;
+}
+function validUpside(c,reviewDay,now=Date.now()){
+ if(!object(c)||!EXT_KEYS.some(k=>Object.hasOwn(c,k)))return validLegacyUpside(c,reviewDay,now);
+ if(Object.hasOwn(c,'kind')&&typeof c.kind!=='string')return false;
+ if(Object.hasOwn(c,'currency')&&c.currency!=null&&!['GBP','USD','JPY'].includes(c.currency))return false;
+ const kind=typeof c.kind==='string'?c.kind:'upside';
+ if(kind==='upside'){
+  if((c.currency??'GBP')!=='GBP')return false;
+  if(['market','grading','liquidity'].some(k=>Object.hasOwn(c,k))){
+   const day=blockCheckedDay(c,reviewDay);
+   if(!day||!blocksOk(c,day))return false;
+  }
+  const legacy={};
+  for(const [key,value] of Object.entries(c)) if(!EXT_KEYS.includes(key))legacy[key]=value;
+  return validLegacyUpside(legacy,reviewDay,now);
+ }
+ return kind==='watch'&&validWatch(c,reviewDay,now);
+}
+function validWatch(c,reviewDay,now){
+ const live=reviewDay===null;
+ const fields=['id','name','set','number','printing','language','image','imageSourceUrl','checkedAt','kind','market'];
+ if(live)fields.push('validUntil');
+ for(const key of ['currency','grading','liquidity']) if(Object.hasOwn(c,key))fields.push(key);
+ if(!exactKeys(c,fields)||c.kind!=='watch'||!['en','ja'].includes(c.language)||typeof c.id!=='string'||!/^[a-z0-9-]{1,100}$/.test(c.id))return false;
+ if(!['name','set','number','printing'].every(k=>typeof c[k]==='string'&&c[k].trim()&&c[k].length<=120))return false;
+ if(typeof c.image!=='string'||!/^assets\/public-targets\/[a-z0-9_-]+\.(jpg|png|webp)$/.test(c.image))return false;
+ if(c.currency!=null&&!['GBP','USD','JPY'].includes(c.currency))return false;
+ if(typeof c.imageSourceUrl!=='string'||c.imageSourceUrl.length>500||!SOURCE_URLS.imageSourceUrl.test(c.imageSourceUrl))return false;
+ let checkedDay;
+ if(live){
+  const checked=Date.parse(c.checkedAt),expires=Date.parse(c.validUntil);
+  if(!timestamp(c.checkedAt)||!timestamp(c.validUntil)||checked>now||expires<=now||expires-checked>MAX_EVIDENCE_AGE)return false;
+  checkedDay=new Date(c.checkedAt).toISOString().slice(0,10);
+ }else if(!calendarDay(c.checkedAt)||Date.parse(c.checkedAt)>now)return false;
+ else checkedDay=c.checkedAt;
+ if(!blocksOk(c,checkedDay))return false;
+ const market=c.market;
+ return object(market)&&(Object.hasOwn(market,'rawGuide')||Object.hasOwn(market,'rawAsk'))&&(Object.hasOwn(market,'psa10Guide')||Object.hasOwn(market,'psa10Median30d'));
+}
 function upsideCard(c,checkedAt){
  const cost=c.rawMinor+c.gradingMinor;
  const margin=c.psa10Minor-cost;
@@ -72,6 +175,24 @@ function upsideCard(c,checkedAt){
   <button type="button" class="target-picture" data-target-art="${esc(c.id)}" aria-label="Enlarge ${esc(c.name)} card artwork"><img src="${esc(c.image)}" alt="${esc(c.name+' · '+c.set+' · '+c.number)}"><span>View artwork ↗</span></button>
   <div class="target-copy"><span class="kicker">PSA 10 UPSIDE · ${c.language==='ja'?'JAPANESE':'ENGLISH'}</span><h3>${esc(c.name)}</h3><p class="target-printing">${esc(c.set+' · '+c.number+' · '+c.printing)}</p><p class="target-summary">Profit shown if this card earns PSA 10. The seller lists the card as Raw. Its grade and the condition of the copy are unknown.</p><p class="target-date">Entry and grading checked ${date(checkedAt)}</p></div>
   <div class="target-outcomes"><dl class="target-upside-figures">${figures}</dl><p class="target-context">PSA 10 sale on ${date(c.soldOn)}, excluding the buyer fee. Profit excludes grading postage and selling costs.${postageNote}</p><details><summary>Prices &amp; sources</summary><ul><li><a href="${esc(c.rawUrl)}">Raw listing</a></li><li><a href="${esc(c.gradingUrl)}">PSA ${tier} fee and return postage</a></li><li><a href="${esc(c.saleUrl)}">UK PSA 10 sold listing</a></li><li><a href="${esc(c.imageSourceUrl)}">${artCredit}</a></li></ul></details></div>
+ </article>`;
+}
+function cardCurrency(c){return c.language==='ja'?'JPY':'USD';}
+function marketFigure(market,keys,currency){
+ if(!object(market))return null;
+ return keys.map(key=>market[key]).find(value=>object(value)&&value.currency===currency)||null;
+}
+function watchCard(c,checkedAt){
+ const artCredit=c.imageSourceUrl.startsWith('https://assets.tcgdex.net/')?'Card artwork via TCGdex':'Official Pokémon card artwork';
+ const currency=cardCurrency(c);
+ const raw=marketFigure(c.market,['rawAsk','rawGuide'],currency);
+ const psa10=marketFigure(c.market,['psa10Median30d','psa10Guide'],currency);
+ const rows=[['Raw delivered',raw],['PSA Value grading',null],['Card + grading',null],['UK PSA 10 sale',psa10],['Profit if PSA 10',null]];
+ const figures=rows.map(([label,figure])=>`<div><dt>${label}</dt><dd>${figure?money(figure.amountMinor,figure.currency):'—'}</dd></div>`).join('');
+ return `<article class="public-target" id="pick-${esc(c.id)}">
+  <button type="button" class="target-picture" data-target-art="${esc(c.id)}" aria-label="Enlarge ${esc(c.name)} card artwork"><img src="${esc(c.image)}" alt="${esc(c.name+' · '+c.set+' · '+c.number)}"><span>View artwork ↗</span></button>
+  <div class="target-copy"><span class="kicker">WATCH · ${c.language==='ja'?'JAPANESE':'ENGLISH'}</span><h3>${esc(c.name)}</h3><p class="target-printing">${esc(c.set+' · '+c.number+' · '+c.printing)}</p><p class="target-summary">Profit shown if this card earns PSA 10. The seller lists the card as Raw. Its grade and the condition of the copy are unknown.</p><p class="target-date">Entry and grading checked ${date(checkedAt)}</p></div>
+  <div class="target-outcomes"><dl class="target-upside-figures">${figures}</dl><p class="target-context">Profit excludes grading postage and selling costs.</p><details><summary>Prices &amp; sources</summary><ul><li><a href="${esc(c.imageSourceUrl)}">${artCredit}</a></li></ul></details></div>
  </article>`;
 }
 function validateFeed(data,language,now=Date.now()){
@@ -106,8 +227,9 @@ function mount(language){
   const ids=new Set(current.map(c=>c.id)),printings=new Set(current.map(printingKey));
   return config?.review?.psaUpside?.filter(c=>c.language===language&&!ids.has(c.id)&&!printings.has(printingKey(c)))??[];
  }
+ function renderCard(c,checkedAt){return c.kind==='watch'?watchCard(c,checkedAt):upsideCard(c,checkedAt);}
  function earlierCards(examples){
-  return examples.map(c=>upsideCard(c,c.checkedAt??config.review.checkedAt)).join('');
+  return examples.map(c=>renderCard(c,c.checkedAt??config.review.checkedAt)).join('');
  }
  function datedReview(message='',retry=false){
   clearTimeout(expiryTimer);
@@ -148,7 +270,7 @@ function mount(language){
     items=[...cards,...examples];
     status.textContent=`${cards.length} current reviewed card${cards.length===1?'':'s'}`;
     const earlier=examples.length?'<header><h3>Earlier PSA 10 scenarios</h3><p class="target-context">Raw and grading prices were checked on the dates shown.</p></header>'+earlierCards(examples):'';
-    host.innerHTML=cards.map(c=>upsideCard(c,c.checkedAt)).join('')+earlier;
+    host.innerHTML=cards.map(c=>renderCard(c,c.checkedAt)).join('')+earlier;
     pictureErrors();
     const expires=Math.min(Date.parse(data.generatedAt)+REFRESH_SECONDS*1000,...cards.map(c=>Date.parse(c.validUntil)));
     clearTimeout(expiryTimer);
@@ -165,5 +287,5 @@ function mount(language){
  cleanup=()=>{active=false;controller?.abort();clearTimeout(timer);clearTimeout(expiryTimer);host.removeEventListener('click',click);document.removeEventListener('visibilitychange',visible);dialog.remove();document.documentElement.classList.remove('target-art-open');};
  refresh();
 }
-return {validateConfig,validateFeed,upsideCard,mount,unmount};
+return {validateConfig,validateFeed,upsideCard,watchCard,mount,unmount};
 });

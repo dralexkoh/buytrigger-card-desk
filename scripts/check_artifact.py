@@ -37,6 +37,10 @@ assert set(review['findings'])=={'en','ja'} and all(
 assert set(review['listingsChecked'])=={'en','ja'} and all(type(v) is int and 0<v<=500 for v in review['listingsChecked'].values())
 for card in review['psaUpside']:
  assert re.fullmatch(r'assets/public-targets/[a-z0-9_-]+\.webp',card['image']) and (d/card['image']).is_file()
+ if card.get('kind')=='watch':
+  assert isinstance(card.get('market'),dict) and card['market'] and set(card['market'])<= {'rawGuide','rawAsk','psa10Guide','psa10Median30d'}
+  continue
+ assert card.get('kind','upside')=='upside'
  assert card['psa10Minor']>card['rawMinor']+card['gradingMinor']>0
 assert (d/'CNAME').read_text()=='buytrigger.cards\n', 'Wrong public domain contract'
 from build_tracking_catalogue import create_catalogue

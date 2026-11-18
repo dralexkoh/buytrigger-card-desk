@@ -139,17 +139,14 @@ for route,filename,language,code in [('targets','undervalued.html','English','en
  for tag,key,value in [('link[rel=canonical]','href',BASE+filename),('meta[property="og:url"]','content',BASE+filename),('meta[property="og:title"]','content',title+' · BuyTrigger.Cards'),('meta[property="og:description"]','content',description),('meta[name=description]','content',description)]:
   soup.select_one(tag)[key]=value
  r=targets['review'];n=r['listingsChecked'][code];day=r['checkedAt']
- examples=[card for card in r.get('psaUpside',[]) if card['language']==code]
- if examples:
-  def gbp(value):return f'£{value/100:,.2f}'
-  overview=''.join(
-   f"<p>{html.escape(card['name'])} {html.escape(card['number'])} · PSA 10 scenario. "
-   f"Raw {gbp(card['rawMinor'])} delivered + PSA grading {gbp(card['gradingMinor'])}. "
-   f"PSA 10 sale {gbp(card['psa10Minor'])} on {html.escape(card['soldOn'])}, leaving {gbp(card['psa10Minor']-card['rawMinor']-card['gradingMinor'])} before grading postage and selling costs. "
-   f"Raw and grading checked {html.escape(card.get('checkedAt',day))}.</p>"
-   for card in examples)
- else:
-  overview=''
+ examples=[card for card in r.get('psaUpside',[]) if card['language']==code and card.get('kind','upside')!='watch']
+ def gbp(value):return f'£{value/100:,.2f}'
+ overview=''.join(
+  f"<p>{html.escape(card['name'])} {html.escape(card['number'])} · PSA 10 scenario. "
+  f"Raw {gbp(card['rawMinor'])} delivered + PSA grading {gbp(card['gradingMinor'])}. "
+  f"PSA 10 sale {gbp(card['psa10Minor'])} on {html.escape(card['soldOn'])}, leaving {gbp(card['psa10Minor']-card['rawMinor']-card['gradingMinor'])} before grading postage and selling costs. "
+  f"Raw and grading checked {html.escape(card.get('checkedAt',day))}.</p>"
+  for card in examples)
  findings=r.get('findings',{}).get(code,[])
  findings_html=('<ul class="target-review-findings" aria-label="What held the picks back">'+
                 ''.join(f'<li>{html.escape(line)}</li>' for line in findings)+'</ul>') if findings else ''
