@@ -1,0 +1,497 @@
+{
+ "schemaVersion": 2,
+ "generatedAt": "2026-11-18T21:35:00.000000+00:00",
+ "refreshAfterSeconds": 300,
+ "cards": [
+  {
+   "id": "vaporeon-swsh9tg-tg02-en",
+   "name": "Vaporeon",
+   "set": "Brilliant Stars Trainer Gallery",
+   "number": "TG02/TG30",
+   "printing": "Trainer Gallery Ultra Rare",
+   "language": "en",
+   "image": "assets/public-targets/vaporeon-swsh9tg-tg02-en.webp",
+   "imageSourceUrl": "https://assets.tcgdex.net/en/swsh/swsh9/TG02/high.webp",
+   "checkedAt": "2026-11-18T21:30:00Z",
+   "validUntil": "2026-11-25T20:30:00Z",
+   "kind": "watch",
+   "market": {
+    "rawGuide": {
+     "amountMinor": 1961,
+     "currency": "USD",
+     "type": "guide",
+     "source": "PriceCharting ungraded price guide",
+     "sourceUrl": "https://www.pricecharting.com/game/pokemon-brilliant-stars/vaporeon-tg02",
+     "observedOn": "2026-11-18",
+     "confidence": "medium"
+    },
+    "rawAsk": {
+     "amountMinor": 1851,
+     "currency": "USD",
+     "type": "ask",
+     "source": "TCGplayer lowest listing via TCGCSV (file 2026-11-18 20:05 UTC)",
+     "sourceUrl": "https://www.tcgplayer.com/product/264211",
+     "observedOn": "2026-11-18",
+     "confidence": "medium"
+    },
+    "psa10Guide": {
+     "amountMinor": 65184,
+     "currency": "USD",
+     "type": "guide",
+     "source": "PriceCharting PSA 10 price guide",
+     "sourceUrl": "https://www.pricecharting.com/game/pokemon-brilliant-stars/vaporeon-tg02",
+     "observedOn": "2026-11-18",
+     "confidence": "medium"
+    },
+    "psa10Median30d": {
+     "amountMinor": 61500,
+     "currency": "USD",
+     "type": "median",
+     "source": "PriceCharting PSA 10 sold list, 30-day median (titles not hand-checked)",
+     "sourceUrl": "https://www.pricecharting.com/game/pokemon-brilliant-stars/vaporeon-tg02",
+     "observedOn": "2026-11-18",
+     "confidence": "medium"
+    }
+   },
+   "grading": {
+    "gemRatePct": null,
+    "psa10Pop": null,
+    "totalGraded": null
+   },
+   "liquidity": {
+    "rawSold30d": {
+     "value": 38,
+     "source": "PriceCharting sold list (eBay/TCGplayer sales shown on page)",
+     "observedOn": "2026-11-18",
+     "floor": false
+    },
+    "psa10Sold30d": {
+     "value": 30,
+     "source": "PriceCharting sold list (eBay/TCGplayer sales shown on page)",
+     "observedOn": "2026-11-18",
+     "floor": true
+    }
+   }
+  },
+  {
+   "id": "flareon-swsh9tg-tg01-en",
+   "name": "Flareon",
+   "set": "Brilliant Stars Trainer Gallery",
+   "number": "TG01/TG30",
+   "printing": "Trainer Gallery Ultra Rare",
+   "language": "en",
+   "image": "assets/public-targets/flareon-swsh9tg-tg01-en.webp",
+   "imageSourceUrl": "https://assets.tcgdex.net/en/swsh/swsh9/TG01/high.webp",
+   "checkedAt": "2026-11-18T21:30:00Z",
+   "validUntil": "2026-11-25T20:30:00Z",
+   "kind": "watch",
+   "market": {
+    "rawGuide": {
+     "amountMinor": 2010,
+     "currency": "USD",
+     "type": "guide",
+     "source": "PriceCharting ungraded price guide",
+     "sourceUrl": "https://www.pricecharting.com/game/pokemon-brilliant-stars/flareon-tg01",
+     "observedOn": "2026-11-18",
+     "confidence": "medium"
+    },
+    "rawAsk": {
+     "amountMinor": 1599,
+     "currency": "USD",
+     "type": "ask",
+     "source": "TCGplayer lowest listing via TCGCSV (file 2026-11-18 20:05 UTC)",
+     "sourceUrl": "https://www.tcgplayer.com/product/264210",
+     "observedOn": "2026-11-18",
+     "confidence": "medium"
+    },
+    "psa10Guide": {
+     "amountMinor": 63800,
+     "currency": "USD",
+     "type": "guide",
+     "source": "PriceCharting PSA 10 price guide",
+     "sourceUrl": "https://www.pricecharting.com/game/pokemon-brilliant-stars/flareon-tg01",
+     "observedOn": "2026-11-18",
+     "confidence": "medium"
+    },
+    "psa10Median30d": {
+     "amountMinor": 59999,
+     "currency": "USD",
+     "type": "median",
+     "source": "PriceCharting PSA 10 sold list, 30-day median (titles not hand-checked)",
+     "sourceUrl": "https://www.pricecharting.com/game/pokemon-brilliant-stars/flareon-tg01",
+     "observedOn": "2026-11-18",
+     "confidence": "medium"
+    }
+   },
+   "grading": {
+    "gemRatePct": null,
+    "psa10Pop": null,
+    "totalGraded": null
+   },
+   "liquidity": {
+    "rawSold30d": {
+     "value": 40,
+     "source": "PriceCharting sold list (eBay/TCGplayer sales shown on page)",
+     "observedOn": "2026-11-18",
+     "floor": false
+    },
+    "psa10Sold30d": {
+     "value": 29,
+     "source": "PriceCharting sold list (eBay/TCGplayer sales shown on page)",
+     "observedOn": "2026-11-18",
+     "floor": false
+    }
+   }
+  },
+  {
+   "id": "jolteon-swsh9tg-tg04-en",
+   "name": "Jolteon",
+   "set": "Brilliant Stars Trainer Gallery",
+   "number": "TG04/TG30",
+   "printing": "Trainer Gallery Ultra Rare",
+   "language": "en",
+   "image": "assets/public-targets/jolteon-swsh9tg-tg04-en.webp",
+   "imageSourceUrl": "https://assets.tcgdex.net/en/swsh/swsh9/TG04/high.webp",
+   "checkedAt": "2026-11-18T21:30:00Z",
+   "validUntil": "2026-11-25T20:30:00Z",
+   "kind": "watch",
+   "market": {
+    "rawGuide": {
+     "amountMinor": 1855,
+     "currency": "USD",
+     "type": "guide",
+     "source": "PriceCharting ungraded price guide",
+     "sourceUrl": "https://www.pricecharting.com/game/pokemon-brilliant-stars/jolteon-tg04",
+     "observedOn": "2026-11-18",
+     "confidence": "medium"
+    },
+    "rawAsk": {
+     "amountMinor": 1314,
+     "currency": "USD",
+     "type": "ask",
+     "source": "TCGplayer lowest listing via TCGCSV (file 2026-11-18 20:05 UTC)",
+     "sourceUrl": "https://www.tcgplayer.com/product/264213",
+     "observedOn": "2026-11-18",
+     "confidence": "medium"
+    },
+    "psa10Guide": {
+     "amountMinor": 61513,
+     "currency": "USD",
+     "type": "guide",
+     "source": "PriceCharting PSA 10 price guide",
+     "sourceUrl": "https://www.pricecharting.com/game/pokemon-brilliant-stars/jolteon-tg04",
+     "observedOn": "2026-11-18",
+     "confidence": "medium"
+    },
+    "psa10Median30d": {
+     "amountMinor": 60000,
+     "currency": "USD",
+     "type": "median",
+     "source": "PriceCharting PSA 10 sold list, 30-day median (titles not hand-checked)",
+     "sourceUrl": "https://www.pricecharting.com/game/pokemon-brilliant-stars/jolteon-tg04",
+     "observedOn": "2026-11-18",
+     "confidence": "medium"
+    }
+   },
+   "grading": {
+    "gemRatePct": null,
+    "psa10Pop": null,
+    "totalGraded": null
+   },
+   "liquidity": {
+    "rawSold30d": {
+     "value": 41,
+     "source": "PriceCharting sold list (eBay/TCGplayer sales shown on page)",
+     "observedOn": "2026-11-18",
+     "floor": false
+    },
+    "psa10Sold30d": {
+     "value": 23,
+     "source": "PriceCharting sold list (eBay/TCGplayer sales shown on page)",
+     "observedOn": "2026-11-18",
+     "floor": false
+    }
+   }
+  },
+  {
+   "id": "eevee-swsh9tg-tg11-en",
+   "name": "Eevee",
+   "set": "Brilliant Stars Trainer Gallery",
+   "number": "TG11/TG30",
+   "printing": "Trainer Gallery Ultra Rare",
+   "language": "en",
+   "image": "assets/public-targets/eevee-swsh9tg-tg11-en.webp",
+   "imageSourceUrl": "https://assets.tcgdex.net/en/swsh/swsh9/TG11/high.webp",
+   "checkedAt": "2026-11-18T21:30:00Z",
+   "validUntil": "2026-11-25T20:30:00Z",
+   "kind": "watch",
+   "market": {
+    "rawGuide": {
+     "amountMinor": 1899,
+     "currency": "USD",
+     "type": "guide",
+     "source": "PriceCharting ungraded price guide",
+     "sourceUrl": "https://www.pricecharting.com/game/pokemon-brilliant-stars/eevee-tg11",
+     "observedOn": "2026-11-18",
+     "confidence": "medium"
+    },
+    "rawAsk": {
+     "amountMinor": 1534,
+     "currency": "USD",
+     "type": "ask",
+     "source": "TCGplayer lowest listing via TCGCSV (file 2026-11-18 20:05 UTC)",
+     "sourceUrl": "https://www.tcgplayer.com/product/264218",
+     "observedOn": "2026-11-18",
+     "confidence": "medium"
+    },
+    "psa10Guide": {
+     "amountMinor": 57500,
+     "currency": "USD",
+     "type": "guide",
+     "source": "PriceCharting PSA 10 price guide",
+     "sourceUrl": "https://www.pricecharting.com/game/pokemon-brilliant-stars/eevee-tg11",
+     "observedOn": "2026-11-18",
+     "confidence": "medium"
+    },
+    "psa10Median30d": {
+     "amountMinor": 65000,
+     "currency": "USD",
+     "type": "median",
+     "source": "PriceCharting PSA 10 sold list, 30-day median (titles not hand-checked)",
+     "sourceUrl": "https://www.pricecharting.com/game/pokemon-brilliant-stars/eevee-tg11",
+     "observedOn": "2026-11-18",
+     "confidence": "medium"
+    }
+   },
+   "grading": {
+    "gemRatePct": null,
+    "psa10Pop": null,
+    "totalGraded": null
+   },
+   "liquidity": {
+    "rawSold30d": {
+     "value": 39,
+     "source": "PriceCharting sold list (eBay/TCGplayer sales shown on page)",
+     "observedOn": "2026-11-18",
+     "floor": false
+    },
+    "psa10Sold30d": {
+     "value": 23,
+     "source": "PriceCharting sold list (eBay/TCGplayer sales shown on page)",
+     "observedOn": "2026-11-18",
+     "floor": false
+    }
+   }
+  },
+  {
+   "id": "pikachu-sm12-241-en",
+   "name": "Pikachu",
+   "set": "Cosmic Eclipse",
+   "number": "241/236",
+   "printing": "Secret Rare",
+   "language": "en",
+   "image": "assets/public-targets/pikachu-sm12-241-en.webp",
+   "imageSourceUrl": "https://assets.tcgdex.net/en/sm/sm12/241/high.webp",
+   "checkedAt": "2026-11-18T21:30:00Z",
+   "validUntil": "2026-11-25T20:30:00Z",
+   "kind": "watch",
+   "market": {
+    "rawGuide": {
+     "amountMinor": 18000,
+     "currency": "USD",
+     "type": "guide",
+     "source": "PriceCharting ungraded price guide",
+     "sourceUrl": "https://www.pricecharting.com/game/pokemon-cosmic-eclipse/pikachu-241",
+     "observedOn": "2026-11-18",
+     "confidence": "medium"
+    },
+    "rawAsk": {
+     "amountMinor": 14500,
+     "currency": "USD",
+     "type": "ask",
+     "source": "TCGplayer lowest listing via TCGCSV (file 2026-11-18 20:05 UTC)",
+     "sourceUrl": "https://www.tcgplayer.com/product/201352",
+     "observedOn": "2026-11-18",
+     "confidence": "medium"
+    },
+    "psa10Guide": {
+     "amountMinor": 162550,
+     "currency": "USD",
+     "type": "guide",
+     "source": "PriceCharting PSA 10 price guide",
+     "sourceUrl": "https://www.pricecharting.com/game/pokemon-cosmic-eclipse/pikachu-241",
+     "observedOn": "2026-11-18",
+     "confidence": "medium"
+    },
+    "psa10Median30d": {
+     "amountMinor": 158500,
+     "currency": "USD",
+     "type": "median",
+     "source": "PriceCharting PSA 10 sold list, 30-day median (titles not hand-checked)",
+     "sourceUrl": "https://www.pricecharting.com/game/pokemon-cosmic-eclipse/pikachu-241",
+     "observedOn": "2026-11-18",
+     "confidence": "medium"
+    }
+   },
+   "grading": {
+    "gemRatePct": null,
+    "psa10Pop": null,
+    "totalGraded": null
+   },
+   "liquidity": {
+    "rawSold30d": {
+     "value": 41,
+     "source": "PriceCharting sold list (eBay/TCGplayer sales shown on page)",
+     "observedOn": "2026-11-18",
+     "floor": false
+    },
+    "psa10Sold30d": {
+     "value": 26,
+     "source": "PriceCharting sold list (eBay/TCGplayer sales shown on page)",
+     "observedOn": "2026-11-18",
+     "floor": false
+    }
+   }
+  },
+  {
+   "id": "charizard-vstar-swshp-swsh262-en",
+   "name": "Charizard VSTAR",
+   "set": "SWSH Black Star Promos",
+   "number": "SWSH262",
+   "printing": "Promo",
+   "language": "en",
+   "image": "assets/public-targets/charizard-vstar-swshp-swsh262-en.webp",
+   "imageSourceUrl": "https://assets.tcgdex.net/en/swsh/swshp/SWSH262/high.webp",
+   "checkedAt": "2026-11-18T21:30:00Z",
+   "validUntil": "2026-11-25T20:30:00Z",
+   "kind": "watch",
+   "market": {
+    "rawGuide": {
+     "amountMinor": 6646,
+     "currency": "USD",
+     "type": "guide",
+     "source": "PriceCharting ungraded price guide",
+     "sourceUrl": "https://www.pricecharting.com/game/pokemon-promo/charizard-vstar-swsh262",
+     "observedOn": "2026-11-18",
+     "confidence": "medium"
+    },
+    "rawAsk": {
+     "amountMinor": 5067,
+     "currency": "USD",
+     "type": "ask",
+     "source": "TCGplayer lowest listing via TCGCSV (file 2026-11-18 20:05 UTC)",
+     "sourceUrl": "https://www.tcgplayer.com/product/285396",
+     "observedOn": "2026-11-18",
+     "confidence": "medium"
+    },
+    "psa10Guide": {
+     "amountMinor": 109414,
+     "currency": "USD",
+     "type": "guide",
+     "source": "PriceCharting PSA 10 price guide",
+     "sourceUrl": "https://www.pricecharting.com/game/pokemon-promo/charizard-vstar-swsh262",
+     "observedOn": "2026-11-18",
+     "confidence": "medium"
+    },
+    "psa10Median30d": {
+     "amountMinor": 107278,
+     "currency": "USD",
+     "type": "median",
+     "source": "PriceCharting PSA 10 sold list, 30-day median (titles not hand-checked)",
+     "sourceUrl": "https://www.pricecharting.com/game/pokemon-promo/charizard-vstar-swsh262",
+     "observedOn": "2026-11-18",
+     "confidence": "medium"
+    }
+   },
+   "grading": {
+    "gemRatePct": null,
+    "psa10Pop": null,
+    "totalGraded": null
+   },
+   "liquidity": {
+    "rawSold30d": {
+     "value": 38,
+     "source": "PriceCharting sold list (eBay/TCGplayer sales shown on page)",
+     "observedOn": "2026-11-18",
+     "floor": false
+    },
+    "psa10Sold30d": {
+     "value": 30,
+     "source": "PriceCharting sold list (eBay/TCGplayer sales shown on page)",
+     "observedOn": "2026-11-18",
+     "floor": true
+    }
+   }
+  },
+  {
+   "id": "snorlax-swsh11tg-tg10-en",
+   "name": "Snorlax",
+   "set": "Lost Origin Trainer Gallery",
+   "number": "TG10/TG30",
+   "printing": "Trainer Gallery Ultra Rare",
+   "language": "en",
+   "image": "assets/public-targets/snorlax-swsh11tg-tg10-en.webp",
+   "imageSourceUrl": "https://assets.tcgdex.net/en/swsh/swsh11/TG10/high.webp",
+   "checkedAt": "2026-11-18T21:30:00Z",
+   "validUntil": "2026-11-25T20:30:00Z",
+   "kind": "watch",
+   "market": {
+    "rawGuide": {
+     "amountMinor": 2149,
+     "currency": "USD",
+     "type": "guide",
+     "source": "PriceCharting ungraded price guide",
+     "sourceUrl": "https://www.pricecharting.com/game/pokemon-lost-origin/snorlax-tg10",
+     "observedOn": "2026-11-18",
+     "confidence": "medium"
+    },
+    "rawAsk": {
+     "amountMinor": 1600,
+     "currency": "USD",
+     "type": "ask",
+     "source": "TCGplayer lowest listing via TCGCSV (file 2026-11-18 20:05 UTC)",
+     "sourceUrl": "https://www.tcgplayer.com/product/284270",
+     "observedOn": "2026-11-18",
+     "confidence": "medium"
+    },
+    "psa10Guide": {
+     "amountMinor": 54500,
+     "currency": "USD",
+     "type": "guide",
+     "source": "PriceCharting PSA 10 price guide",
+     "sourceUrl": "https://www.pricecharting.com/game/pokemon-lost-origin/snorlax-tg10",
+     "observedOn": "2026-11-18",
+     "confidence": "medium"
+    },
+    "psa10Median30d": {
+     "amountMinor": 55000,
+     "currency": "USD",
+     "type": "median",
+     "source": "PriceCharting PSA 10 sold list, 30-day median (titles not hand-checked)",
+     "sourceUrl": "https://www.pricecharting.com/game/pokemon-lost-origin/snorlax-tg10",
+     "observedOn": "2026-11-18",
+     "confidence": "medium"
+    }
+   },
+   "grading": {
+    "gemRatePct": null,
+    "psa10Pop": null,
+    "totalGraded": null
+   },
+   "liquidity": {
+    "rawSold30d": {
+     "value": 40,
+     "source": "PriceCharting sold list (eBay/TCGplayer sales shown on page)",
+     "observedOn": "2026-11-18",
+     "floor": false
+    },
+    "psa10Sold30d": {
+     "value": 15,
+     "source": "PriceCharting sold list (eBay/TCGplayer sales shown on page)",
+     "observedOn": "2026-11-18",
+     "floor": false
+    }
+   }
+  }
+ ]
+}

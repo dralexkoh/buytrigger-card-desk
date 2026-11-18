@@ -14,3 +14,18 @@
 .target-review-history{padding:0 24px 14px;font-size:15px}
 .target-review-history summary{cursor:pointer;min-height:44px;align-content:center;font-weight:600}
 .target-review-history li+li{margin-top:8px}
+.target-badge-watch{display:inline-block;padding:3px 8px;border-radius:999px;background:#171719;color:#fff;letter-spacing:.04em;line-height:1.4}
+.target-evidence{margin:0 0 12px}
+.target-evidence>div{padding:8px 0;border-bottom:1px solid #deded9}
+.target-evidence dt{font-size:13px;line-height:1.4;color:#626269}
+.target-evidence dd{margin:2px 0 0;font-weight:700;min-width:0}
+.evidence-amount{font-variant-numeric:tabular-nums}
+.evidence-line{display:block;margin-top:3px;font-size:12px;line-height:1.45;font-weight:400;color:#626269;white-space:normal;overflow-wrap:anywhere}
+.evidence-liquidity{margin:8px 0;font-size:15px;font-weight:700}
+.target-outcomes{min-width:0}
+@media(max-width:650px){
+ .target-badge-watch{font-size:11px;letter-spacing:.02em;padding:3px 7px}
+ .evidence-line{font-size:12px;line-height:1.4}
+ .target-evidence dd,.evidence-liquidity{font-size:16px}
+ .target-outcomes h4{font-size:20px}
+}

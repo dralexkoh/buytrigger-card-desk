@@ -1,0 +1,488 @@
+{
+ "schemaVersion": 2,
+ "generatedAt": "2026-11-18T21:35:00.000000+00:00",
+ "refreshAfterSeconds": 300,
+ "cards": [
+  {
+   "id": "flareon-s8b-188-ja",
+   "name": "Flareon (ブースター)",
+   "set": "VMAX Climax (S8b)",
+   "number": "188/184",
+   "printing": "Character Rare (CHR)",
+   "language": "ja",
+   "image": "assets/public-targets/flareon-s8b-188-ja.webp",
+   "imageSourceUrl": "https://assets.tcgdex.net/ja/S/S8b/188/high.webp",
+   "checkedAt": "2026-11-18T21:30:00Z",
+   "validUntil": "2026-11-25T20:30:00Z",
+   "kind": "watch",
+   "market": {
+    "rawGuide": {
+     "amountMinor": 1420,
+     "currency": "USD",
+     "type": "guide",
+     "source": "PriceCharting ungraded price guide",
+     "sourceUrl": "https://www.pricecharting.com/game/pokemon-japanese-vmax-climax/flareon-188",
+     "observedOn": "2026-11-18",
+     "confidence": "medium"
+    },
+    "rawAsk": {
+     "amountMinor": 1480,
+     "currency": "JPY",
+     "type": "ask",
+     "source": "Yuyu-tei shop sell price, tax included, in stock",
+     "sourceUrl": "https://yuyu-tei.jp/sell/poc/card/s08b/10298",
+     "observedOn": "2026-11-18",
+     "confidence": "high"
+    },
+    "psa10Guide": {
+     "amountMinor": 6531,
+     "currency": "USD",
+     "type": "guide",
+     "source": "PriceCharting PSA 10 price guide",
+     "sourceUrl": "https://www.pricecharting.com/game/pokemon-japanese-vmax-climax/flareon-188",
+     "observedOn": "2026-11-18",
+     "confidence": "medium"
+    },
+    "psa10Median30d": {
+     "amountMinor": 6500,
+     "currency": "USD",
+     "type": "median",
+     "source": "PriceCharting PSA 10 sold list, 30-day median (titles not hand-checked)",
+     "sourceUrl": "https://www.pricecharting.com/game/pokemon-japanese-vmax-climax/flareon-188",
+     "observedOn": "2026-11-18",
+     "confidence": "medium"
+    }
+   },
+   "grading": {
+    "gemRatePct": null,
+    "psa10Pop": null,
+    "totalGraded": null
+   },
+   "liquidity": {
+    "rawSold30d": {
+     "value": 18,
+     "source": "PriceCharting sold list (eBay/TCGplayer sales shown on page)",
+     "observedOn": "2026-11-18",
+     "floor": false
+    },
+    "psa10Sold30d": {
+     "value": 21,
+     "source": "PriceCharting sold list (eBay/TCGplayer sales shown on page)",
+     "observedOn": "2026-11-18",
+     "floor": false
+    }
+   }
+  },
+  {
+   "id": "vaporeon-s8b-189-ja",
+   "name": "Vaporeon (シャワーズ)",
+   "set": "VMAX Climax (S8b)",
+   "number": "189/184",
+   "printing": "Character Rare (CHR)",
+   "language": "ja",
+   "image": "assets/public-targets/vaporeon-s8b-189-ja.webp",
+   "imageSourceUrl": "https://assets.tcgdex.net/ja/S/S8b/189/high.webp",
+   "checkedAt": "2026-11-18T21:30:00Z",
+   "validUntil": "2026-11-25T20:30:00Z",
+   "kind": "watch",
+   "market": {
+    "rawGuide": {
+     "amountMinor": 1810,
+     "currency": "USD",
+     "type": "guide",
+     "source": "PriceCharting ungraded price guide",
+     "sourceUrl": "https://www.pricecharting.com/game/pokemon-japanese-vmax-climax/vaporeon-189",
+     "observedOn": "2026-11-18",
+     "confidence": "medium"
+    },
+    "rawAsk": {
+     "amountMinor": 1780,
+     "currency": "JPY",
+     "type": "ask",
+     "source": "Yuyu-tei shop sell price, tax included, in stock",
+     "sourceUrl": "https://yuyu-tei.jp/sell/poc/card/s08b/10299",
+     "observedOn": "2026-11-18",
+     "confidence": "high"
+    },
+    "psa10Guide": {
+     "amountMinor": 5816,
+     "currency": "USD",
+     "type": "guide",
+     "source": "PriceCharting PSA 10 price guide",
+     "sourceUrl": "https://www.pricecharting.com/game/pokemon-japanese-vmax-climax/vaporeon-189",
+     "observedOn": "2026-11-18",
+     "confidence": "medium"
+    },
+    "psa10Median30d": {
+     "amountMinor": 5533,
+     "currency": "USD",
+     "type": "median",
+     "source": "PriceCharting PSA 10 sold list, 30-day median (titles not hand-checked)",
+     "sourceUrl": "https://www.pricecharting.com/game/pokemon-japanese-vmax-climax/vaporeon-189",
+     "observedOn": "2026-11-18",
+     "confidence": "medium"
+    }
+   },
+   "grading": {
+    "gemRatePct": null,
+    "psa10Pop": null,
+    "totalGraded": null
+   },
+   "liquidity": {
+    "rawSold30d": {
+     "value": 25,
+     "source": "PriceCharting sold list (eBay/TCGplayer sales shown on page)",
+     "observedOn": "2026-11-18",
+     "floor": false
+    },
+    "psa10Sold30d": {
+     "value": 21,
+     "source": "PriceCharting sold list (eBay/TCGplayer sales shown on page)",
+     "observedOn": "2026-11-18",
+     "floor": false
+    }
+   }
+  },
+  {
+   "id": "jolteon-s8b-193-ja",
+   "name": "Jolteon (サンダース)",
+   "set": "VMAX Climax (S8b)",
+   "number": "193/184",
+   "printing": "Character Rare (CHR)",
+   "language": "ja",
+   "image": "assets/public-targets/jolteon-s8b-193-ja.webp",
+   "imageSourceUrl": "https://assets.tcgdex.net/ja/S/S8b/193/high.webp",
+   "checkedAt": "2026-11-18T21:30:00Z",
+   "validUntil": "2026-11-25T20:30:00Z",
+   "kind": "watch",
+   "market": {
+    "rawGuide": {
+     "amountMinor": 1361,
+     "currency": "USD",
+     "type": "guide",
+     "source": "PriceCharting ungraded price guide",
+     "sourceUrl": "https://www.pricecharting.com/game/pokemon-japanese-vmax-climax/jolteon-193",
+     "observedOn": "2026-11-18",
+     "confidence": "medium"
+    },
+    "rawAsk": {
+     "amountMinor": 1480,
+     "currency": "JPY",
+     "type": "ask",
+     "source": "Yuyu-tei shop sell price, tax included, in stock",
+     "sourceUrl": "https://yuyu-tei.jp/sell/poc/card/s08b/10303",
+     "observedOn": "2026-11-18",
+     "confidence": "high"
+    },
+    "psa10Guide": {
+     "amountMinor": 4500,
+     "currency": "USD",
+     "type": "guide",
+     "source": "PriceCharting PSA 10 price guide",
+     "sourceUrl": "https://www.pricecharting.com/game/pokemon-japanese-vmax-climax/jolteon-193",
+     "observedOn": "2026-11-18",
+     "confidence": "medium"
+    },
+    "psa10Median30d": {
+     "amountMinor": 4500,
+     "currency": "USD",
+     "type": "median",
+     "source": "PriceCharting PSA 10 sold list, 30-day median (titles not hand-checked)",
+     "sourceUrl": "https://www.pricecharting.com/game/pokemon-japanese-vmax-climax/jolteon-193",
+     "observedOn": "2026-11-18",
+     "confidence": "medium"
+    }
+   },
+   "grading": {
+    "gemRatePct": null,
+    "psa10Pop": null,
+    "totalGraded": null
+   },
+   "liquidity": {
+    "rawSold30d": {
+     "value": 20,
+     "source": "PriceCharting sold list (eBay/TCGplayer sales shown on page)",
+     "observedOn": "2026-11-18",
+     "floor": false
+    },
+    "psa10Sold30d": {
+     "value": 19,
+     "source": "PriceCharting sold list (eBay/TCGplayer sales shown on page)",
+     "observedOn": "2026-11-18",
+     "floor": false
+    }
+   }
+  },
+  {
+   "id": "eevee-s8b-210-ja",
+   "name": "Eevee (イーブイ)",
+   "set": "VMAX Climax (S8b)",
+   "number": "210/184",
+   "printing": "Character Rare (CHR)",
+   "language": "ja",
+   "image": "assets/public-targets/eevee-s8b-210-ja.webp",
+   "imageSourceUrl": "https://assets.tcgdex.net/ja/S/S8b/210/high.webp",
+   "checkedAt": "2026-11-18T21:30:00Z",
+   "validUntil": "2026-11-25T20:30:00Z",
+   "kind": "watch",
+   "market": {
+    "rawGuide": {
+     "amountMinor": 1404,
+     "currency": "USD",
+     "type": "guide",
+     "source": "PriceCharting ungraded price guide",
+     "sourceUrl": "https://www.pricecharting.com/game/pokemon-japanese-vmax-climax/eevee-210",
+     "observedOn": "2026-11-18",
+     "confidence": "medium"
+    },
+    "rawAsk": {
+     "amountMinor": 1480,
+     "currency": "JPY",
+     "type": "ask",
+     "source": "Yuyu-tei shop sell price, tax included, in stock",
+     "sourceUrl": "https://yuyu-tei.jp/sell/poc/card/s08b/10320",
+     "observedOn": "2026-11-18",
+     "confidence": "high"
+    },
+    "psa10Guide": {
+     "amountMinor": 5750,
+     "currency": "USD",
+     "type": "guide",
+     "source": "PriceCharting PSA 10 price guide",
+     "sourceUrl": "https://www.pricecharting.com/game/pokemon-japanese-vmax-climax/eevee-210",
+     "observedOn": "2026-11-18",
+     "confidence": "medium"
+    },
+    "psa10Median30d": {
+     "amountMinor": 6000,
+     "currency": "USD",
+     "type": "median",
+     "source": "PriceCharting PSA 10 sold list, 30-day median (titles not hand-checked)",
+     "sourceUrl": "https://www.pricecharting.com/game/pokemon-japanese-vmax-climax/eevee-210",
+     "observedOn": "2026-11-18",
+     "confidence": "medium"
+    }
+   },
+   "grading": {
+    "gemRatePct": null,
+    "psa10Pop": null,
+    "totalGraded": null
+   },
+   "liquidity": {
+    "rawSold30d": {
+     "value": 17,
+     "source": "PriceCharting sold list (eBay/TCGplayer sales shown on page)",
+     "observedOn": "2026-11-18",
+     "floor": false
+    },
+    "psa10Sold30d": {
+     "value": 22,
+     "source": "PriceCharting sold list (eBay/TCGplayer sales shown on page)",
+     "observedOn": "2026-11-18",
+     "floor": false
+    }
+   }
+  },
+  {
+   "id": "pikachu-sm11b-054-ja",
+   "name": "Pikachu (ピカチュウ)",
+   "set": "Dream League (SM11b)",
+   "number": "054/049",
+   "printing": "Character Rare (CHR)",
+   "language": "ja",
+   "image": "assets/public-targets/pikachu-sm11b-054-ja.webp",
+   "imageSourceUrl": "https://assets.tcgdex.net/ja/SM/SM11b/054/high.webp",
+   "checkedAt": "2026-11-18T21:30:00Z",
+   "validUntil": "2026-11-25T20:30:00Z",
+   "kind": "watch",
+   "market": {
+    "rawGuide": {
+     "amountMinor": 14500,
+     "currency": "USD",
+     "type": "guide",
+     "source": "PriceCharting ungraded price guide",
+     "sourceUrl": "https://www.pricecharting.com/game/pokemon-japanese-dream-league/pikachu-54",
+     "observedOn": "2026-11-18",
+     "confidence": "medium"
+    },
+    "rawAsk": {
+     "amountMinor": 34800,
+     "currency": "JPY",
+     "type": "ask",
+     "source": "Yuyu-tei shop sell price, tax included, in stock",
+     "sourceUrl": "https://yuyu-tei.jp/sell/poc/card/sm11b/10054",
+     "observedOn": "2026-11-18",
+     "confidence": "high"
+    },
+    "psa10Guide": {
+     "amountMinor": 34500,
+     "currency": "USD",
+     "type": "guide",
+     "source": "PriceCharting PSA 10 price guide",
+     "sourceUrl": "https://www.pricecharting.com/game/pokemon-japanese-dream-league/pikachu-54",
+     "observedOn": "2026-11-18",
+     "confidence": "medium"
+    },
+    "psa10Median30d": {
+     "amountMinor": 34501,
+     "currency": "USD",
+     "type": "median",
+     "source": "PriceCharting PSA 10 sold list, 30-day median (titles not hand-checked)",
+     "sourceUrl": "https://www.pricecharting.com/game/pokemon-japanese-dream-league/pikachu-54",
+     "observedOn": "2026-11-18",
+     "confidence": "medium"
+    }
+   },
+   "grading": {
+    "gemRatePct": null,
+    "psa10Pop": null,
+    "totalGraded": null
+   },
+   "liquidity": {
+    "rawSold30d": {
+     "value": 11,
+     "source": "PriceCharting sold list (eBay/TCGplayer sales shown on page)",
+     "observedOn": "2026-11-18",
+     "floor": false
+    },
+    "psa10Sold30d": {
+     "value": 30,
+     "source": "PriceCharting sold list (eBay/TCGplayer sales shown on page)",
+     "observedOn": "2026-11-18",
+     "floor": true
+    }
+   }
+  },
+  {
+   "id": "charizard-vstar-s12a-212-ja",
+   "name": "Charizard VSTAR (リザードンVSTAR)",
+   "set": "VSTAR Universe (S12a)",
+   "number": "212/172",
+   "printing": "Special Art Rare (SAR)",
+   "language": "ja",
+   "image": "assets/public-targets/charizard-vstar-s12a-212-ja.webp",
+   "imageSourceUrl": "https://assets.tcgdex.net/ja/S/S12a/212/high.webp",
+   "checkedAt": "2026-11-18T21:30:00Z",
+   "validUntil": "2026-11-25T20:30:00Z",
+   "kind": "watch",
+   "market": {
+    "rawGuide": {
+     "amountMinor": 7500,
+     "currency": "USD",
+     "type": "guide",
+     "source": "PriceCharting ungraded price guide",
+     "sourceUrl": "https://www.pricecharting.com/game/pokemon-japanese-vstar-universe/charizard-vstar-212",
+     "observedOn": "2026-11-18",
+     "confidence": "medium"
+    },
+    "psa10Guide": {
+     "amountMinor": 17025,
+     "currency": "USD",
+     "type": "guide",
+     "source": "PriceCharting PSA 10 price guide",
+     "sourceUrl": "https://www.pricecharting.com/game/pokemon-japanese-vstar-universe/charizard-vstar-212",
+     "observedOn": "2026-11-18",
+     "confidence": "medium"
+    },
+    "psa10Median30d": {
+     "amountMinor": 17374,
+     "currency": "USD",
+     "type": "median",
+     "source": "PriceCharting PSA 10 sold list, 30-day median (titles not hand-checked)",
+     "sourceUrl": "https://www.pricecharting.com/game/pokemon-japanese-vstar-universe/charizard-vstar-212",
+     "observedOn": "2026-11-18",
+     "confidence": "medium"
+    }
+   },
+   "grading": {
+    "gemRatePct": null,
+    "psa10Pop": null,
+    "totalGraded": null
+   },
+   "liquidity": {
+    "rawSold30d": {
+     "value": 17,
+     "source": "PriceCharting sold list (eBay/TCGplayer sales shown on page)",
+     "observedOn": "2026-11-18",
+     "floor": false
+    },
+    "psa10Sold30d": {
+     "value": 30,
+     "source": "PriceCharting sold list (eBay/TCGplayer sales shown on page)",
+     "observedOn": "2026-11-18",
+     "floor": true
+    }
+   }
+  },
+  {
+   "id": "snorlax-s10a-077-ja",
+   "name": "Snorlax (カビゴン)",
+   "set": "Dark Phantasma (S10a)",
+   "number": "077/071",
+   "printing": "Character Rare (CHR)",
+   "language": "ja",
+   "image": "assets/public-targets/snorlax-s10a-077-ja.webp",
+   "imageSourceUrl": "https://assets.tcgdex.net/ja/S/S10a/077/high.webp",
+   "checkedAt": "2026-11-18T21:30:00Z",
+   "validUntil": "2026-11-25T20:30:00Z",
+   "kind": "watch",
+   "market": {
+    "rawGuide": {
+     "amountMinor": 1321,
+     "currency": "USD",
+     "type": "guide",
+     "source": "PriceCharting ungraded price guide",
+     "sourceUrl": "https://www.pricecharting.com/game/pokemon-japanese-dark-phantasma/snorlax-77",
+     "observedOn": "2026-11-18",
+     "confidence": "medium"
+    },
+    "rawAsk": {
+     "amountMinor": 1480,
+     "currency": "JPY",
+     "type": "ask",
+     "source": "Yuyu-tei shop sell price, tax included, in stock",
+     "sourceUrl": "https://yuyu-tei.jp/sell/poc/card/s10a/10126",
+     "observedOn": "2026-11-18",
+     "confidence": "high"
+    },
+    "psa10Guide": {
+     "amountMinor": 7800,
+     "currency": "USD",
+     "type": "guide",
+     "source": "PriceCharting PSA 10 price guide",
+     "sourceUrl": "https://www.pricecharting.com/game/pokemon-japanese-dark-phantasma/snorlax-77",
+     "observedOn": "2026-11-18",
+     "confidence": "medium"
+    },
+    "psa10Median30d": {
+     "amountMinor": 8500,
+     "currency": "USD",
+     "type": "median",
+     "source": "PriceCharting PSA 10 sold list, 30-day median (titles not hand-checked)",
+     "sourceUrl": "https://www.pricecharting.com/game/pokemon-japanese-dark-phantasma/snorlax-77",
+     "observedOn": "2026-11-18",
+     "confidence": "medium"
+    }
+   },
+   "grading": {
+    "gemRatePct": null,
+    "psa10Pop": null,
+    "totalGraded": null
+   },
+   "liquidity": {
+    "rawSold30d": {
+     "value": 30,
+     "source": "PriceCharting sold list (eBay/TCGplayer sales shown on page)",
+     "observedOn": "2026-11-18",
+     "floor": true
+    },
+    "psa10Sold30d": {
+     "value": 23,
+     "source": "PriceCharting sold list (eBay/TCGplayer sales shown on page)",
+     "observedOn": "2026-11-18",
+     "floor": false
+    }
+   }
+  }
+ ]
+}
