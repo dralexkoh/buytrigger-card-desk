@@ -349,15 +349,25 @@ class IndexCacheTests(unittest.TestCase):
         self.assertEqual(len({(card['productId'], card['printing']) for card in cards}), 347)
         by_number = {card['number']: card for card in index_cards}
         self.assertEqual(len(by_number), 180)
+        shared_modern = {'610511', '610516'}
+
+        def expected_image(product_id):
+            product_id = str(product_id)
+            if product_id in shared_modern:
+                return f'assets/tcg-modern/{product_id}.jpg'
+            return f'assets/prismatic-evolutions/{product_id}.jpg'
+
+        for card in cards:
+            self.assertEqual(card['image'], expected_image(card['productId']))
         for card in parallels:
             self.assertIn('Ball Pattern', card['name'])
-            self.assertEqual(card['image'], by_number[card['number']]['image'])
+            self.assertNotEqual(card['image'], by_number[card['number']]['image'])
             self.assertNotIn('chase_rank', card)
             self.assertEqual(card['groupId'], '23821')
             self.assertEqual(card['set'], 'SV: Prismatic Evolutions')
             self.assertEqual(card['language'], 'English')
             self.assertEqual(card['printing'], 'Holofoil')
-        for product_id in ('610511', '610516'):
+        for product_id in shared_modern:
             shared = next(card for card in index_cards if card['productId'] == product_id)
             self.assertEqual(shared['image'], f'assets/tcg-modern/{product_id}.jpg')
             self.assertNotIn('inIndex', shared)
@@ -392,6 +402,8 @@ class IndexCacheTests(unittest.TestCase):
             {(card['productId'], card['printing']) for card in published_file['cards']},
             {(card['productId'], card['printing']) for card in cards},
         )
+        for card in (*cache['cards'], *published_file['cards']):
+            self.assertEqual(card['image'], expected_image(card['productId']))
         snapshot = json.loads((SITE / 'prismatic-evolutions-market-snapshot.json').read_text())
         self.assertEqual(len(snapshot['cards']), 180)
         self.assertEqual(snapshot['baseline'], {'date': '2025-01-17', 'usd': None, 'proposed': False})
