@@ -191,21 +191,24 @@ function validWatch(c,reviewDay,now){
  const market=c.market;
  return object(market)&&(Object.hasOwn(market,'rawGuide')||Object.hasOwn(market,'rawAsk'))&&(Object.hasOwn(market,'psa10Guide')||Object.hasOwn(market,'psa10Median30d'));
 }
-function upsideCard(c,checkedAt){
+function upsideCard(c,checkedAt,fx){
  const cost=c.rawMinor+c.gradingMinor;
  const margin=c.psa10Minor-cost;
  const tier=c.gradingTier??'Value';
  const artCredit=c.imageSourceUrl.startsWith('https://assets.tcgdex.net/')?'Card artwork via TCGdex':'Official Pokémon card artwork';
+ const yen=c.language==='ja'&&fx;
  const rows=[['Raw delivered',c.rawMinor],['PSA '+tier+' grading',c.gradingMinor],['Card + grading',cost],['UK PSA 10 sale',c.psa10Minor],['Profit if PSA 10',margin]];
  const postage=c.returnPostageFromMinor;
+ const shown=minor=>yen?money(convertMinor(minor,'GBP','JPY',fx.pairs),'JPY'):money(minor);
  let postageNote='';
- if(postage>=margin)postageNote=' The dealer’s minimum return postage of '+money(postage)+' wipes out this margin.';
- else if(margin<=2*postage)postageNote=' After the dealer’s minimum '+money(postage)+' return postage, '+money(margin-postage)+' remains before other costs.';
- const figures=rows.map(([label,value])=>`<div><dt>${label}</dt><dd>${money(value)}</dd></div>`).join('');
+ if(postage>=margin)postageNote=' The dealer’s minimum return postage of '+shown(postage)+' wipes out this margin.';
+ else if(margin<=2*postage)postageNote=' After the dealer’s minimum '+shown(postage)+' return postage, '+shown(margin-postage)+' remains before other costs.';
+ let figures=yen?rows.map(([label,value])=>figureRow(label,convertMinor(value,'GBP','JPY',fx.pairs),'JPY',label==='Profit if PSA 10')).join('')+figureRow('Profit (US$)',convertMinor(margin,'GBP','USD',fx.pairs),'USD',true):rows.map(([label,value])=>`<div><dt>${label}</dt><dd>${money(value)}</dd></div>`).join('');
+ const conversion=yen?` Converted at £1 = ¥${fx.pairs.GBPJPY} and £1 = US$${fx.pairs.GBPUSD} (ECB, ${date(fx.observedOn)}).`:'';
  return `<article class="public-target" id="pick-${esc(c.id)}">
   <button type="button" class="target-picture" data-target-art="${esc(c.id)}" aria-label="Enlarge ${esc(c.name)} card artwork"><img src="${esc(c.image)}" alt="${esc(c.name+' · '+c.set+' · '+c.number)}"><span>View artwork ↗</span></button>
   <div class="target-copy"><span class="kicker">PSA 10 UPSIDE · ${c.language==='ja'?'JAPANESE':'ENGLISH'}</span><h3>${esc(c.name)}</h3><p class="target-printing">${esc(c.set+' · '+c.number+' · '+c.printing)}</p><p class="target-summary">Profit shown if this card earns PSA 10. The seller lists the card as Raw. Its grade and the condition of the copy are unknown.</p><p class="target-date">Entry and grading checked ${date(checkedAt)}</p></div>
-  <div class="target-outcomes"><dl class="target-upside-figures">${figures}</dl><p class="target-context">PSA 10 sale on ${date(c.soldOn)}, excluding the buyer fee. Profit excludes grading postage and selling costs.${postageNote}</p><details><summary>Prices &amp; sources</summary><ul><li><a href="${esc(c.rawUrl)}">Raw listing</a></li><li><a href="${esc(c.gradingUrl)}">PSA ${tier} fee and return postage</a></li><li><a href="${esc(c.saleUrl)}">UK PSA 10 sold listing</a></li><li><a href="${esc(c.imageSourceUrl)}">${artCredit}</a></li></ul></details></div>
+  <div class="target-outcomes"><dl class="target-upside-figures">${figures}</dl><p class="target-context">PSA 10 sale on ${date(c.soldOn)}, excluding the buyer fee. Profit excludes grading postage and selling costs.${postageNote}${conversion}</p><details><summary>Prices &amp; sources</summary><ul><li><a href="${esc(c.rawUrl)}">Raw listing</a></li><li><a href="${esc(c.gradingUrl)}">PSA ${tier} fee and return postage</a></li><li><a href="${esc(c.saleUrl)}">UK PSA 10 sold listing</a></li><li><a href="${esc(c.imageSourceUrl)}">${artCredit}</a></li></ul></details></div>
  </article>`;
 }
 function marketFigure(market,keys,currency){
@@ -241,7 +244,7 @@ function watchCard(c,checkedAt,fx){
   figureRow('Raw delivered',sums.raw,sums.display),
   figureRow('PSA Value grading',sums.grading,sums.display),
   figureRow('Card + grading',sums.card,sums.display),
-  figureRow(yen?'UK PSA 10 sale (converted)':'UK PSA 10 sale',sums.psa,sums.display),
+  figureRow(yen?'PSA 10 sale (converted)':'PSA 10 sale',sums.psa,sums.display),
   figureRow('Profit if PSA 10',sums.profit,sums.display,true)
  ];
  if(yen)rows.push(figureRow('Profit (US$)',sums.usdProfit,'USD',true));
@@ -284,7 +287,7 @@ function mount(language){
   const ids=new Set(current.map(c=>c.id)),printings=new Set(current.map(printingKey));
   return config?.review?.psaUpside?.filter(c=>c.language===language&&!ids.has(c.id)&&!printings.has(printingKey(c)))??[];
  }
- function renderCard(c,checkedAt){return c.kind==='watch'?watchCard(c,checkedAt,config.fx):upsideCard(c,checkedAt);}
+ function renderCard(c,checkedAt){return c.kind==='watch'?watchCard(c,checkedAt,config.fx):upsideCard(c,checkedAt,config.fx);}
  function earlierCards(examples){
   return examples.map(c=>renderCard(c,c.checkedAt??config.review.checkedAt)).join('');
  }

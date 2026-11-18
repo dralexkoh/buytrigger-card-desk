@@ -82,9 +82,16 @@ test('saved main config still validates and every legacy card renders byte-for-b
   assert.equal(validateConfig(legacyConfig).review.psaUpside.length,25);
  });
  for(const entry of legacyConfig.review.psaUpside){
-  const html=upsideCard(entry,entry.checkedAt??legacyConfig.review.checkedAt);
+  const html=upsideCard(entry,entry.checkedAt??legacyConfig.review.checkedAt,datedConfig.fx);
   assert.equal(html,legacyHtml[entry.id],entry.id);
-  assert.doesNotMatch(html,/target-badge-watch|More evidence|US\$|¥/);
+  if(entry.language==='en')assert.doesNotMatch(html,/target-badge-watch|More evidence|US\$|¥|Profit \(US\$\)/);
+  else{
+   assert.match(html,/¥/);
+   assert.match(html,/Profit \(US\$\)/);
+   assert.match(html,/UK PSA 10 sale<\/dt>/);
+   assert.match(html,/Converted at £1 = ¥209\.93 and £1 = US\$1\.3168 \(ECB, 18 Nov 2026\)/);
+   assert.doesNotMatch(html,/PSA 10 sale \(converted\)|target-badge-watch|More evidence/);
+  }
  }
 });
 
@@ -94,13 +101,20 @@ test('widened config keeps the 25 legacy cards and renders 14 watch cards from s
  });
  const watch=datedConfig.review.psaUpside.filter(entry=>entry.kind==='watch');
  const legacy=datedConfig.review.psaUpside.filter(entry=>entry.kind!=='watch');
+ const fx=datedConfig.fx;
  assert.equal(watch.length,14);
  assert.equal(watch.filter(entry=>entry.language==='en').length,7);
  assert.equal(watch.filter(entry=>entry.language==='ja').length,7);
  for(const entry of legacy){
-  assert.equal(upsideCard(entry,entry.checkedAt??datedConfig.review.checkedAt),legacyHtml[entry.id],entry.id);
+  assert.equal(upsideCard(entry,entry.checkedAt??datedConfig.review.checkedAt,fx),legacyHtml[entry.id],entry.id);
  }
- const fx=datedConfig.fx;
+ const wartortle=upsideCard(legacy.find(entry=>entry.id==='wartortle-sv2a-171-ja'),'2026-11-06',fx);
+ assert.match(wartortle,/Raw delivered<\/dt><dd>¥3,934<\/dd>/);
+ assert.match(wartortle,/PSA Value grading<\/dt><dd>¥7,348<\/dd>/);
+ assert.match(wartortle,/Card \+ grading<\/dt><dd>¥11,282<\/dd>/);
+ assert.match(wartortle,/UK PSA 10 sale<\/dt><dd>¥15,696<\/dd>/);
+ assert.match(wartortle,/Profit if PSA 10<\/dt><dd>¥4,415<\/dd>/);
+ assert.match(wartortle,/Profit \(US\$\)<\/dt><dd>US\$27\.69<\/dd>/);
  const [gbpQuote,usdQuote]=ecb.quotes;
  assert.equal(fx.pairs.GBPUSD,String(gbpQuote.rates.USD));
  assert.equal(fx.pairs.GBPJPY,String(gbpQuote.rates.JPY));
@@ -115,7 +129,8 @@ test('widened config keeps the 25 legacy cards and renders 14 watch cards from s
  assert.match(english,/Raw delivered<\/dt><dd>US\$18\.51<\/dd>/);
  assert.match(english,/PSA Value grading<\/dt><dd>US\$46\.09<\/dd>/);
  assert.match(english,/Card \+ grading<\/dt><dd>US\$64\.60<\/dd>/);
- assert.match(english,/UK PSA 10 sale<\/dt><dd>US\$615<\/dd>/);
+ assert.match(english,/PSA 10 sale<\/dt><dd>US\$615<\/dd>/);
+ assert.doesNotMatch(english,/UK PSA 10 sale/);
  assert.match(english,/Profit if PSA 10<\/dt><dd>US\$550\.40<\/dd>/);
  assert.match(english,/Converted at £1 = US\$1\.3168 \(ECB, 18 Nov 2026\)/);
  assert.doesNotMatch(english,/¥|evidence-line|Profit \(US\$\)/);
@@ -123,14 +138,15 @@ test('widened config keeps the 25 legacy cards and renders 14 watch cards from s
  assert.match(japanese,/Raw delivered<\/dt><dd>¥1,480<\/dd>/);
  assert.match(japanese,/PSA Value grading<\/dt><dd>¥7,348<\/dd>/);
  assert.match(japanese,/Card \+ grading<\/dt><dd>¥8,828<\/dd>/);
- assert.match(japanese,/UK PSA 10 sale \(converted\)<\/dt><dd>¥10,362<\/dd>/);
+ assert.match(japanese,/PSA 10 sale \(converted\)<\/dt><dd>¥10,362<\/dd>/);
+ assert.doesNotMatch(japanese,/UK PSA 10 sale/);
  assert.match(japanese,/Profit if PSA 10<\/dt><dd>¥1,534<\/dd>/);
  assert.match(japanese,/Profit \(US\$\)<\/dt><dd>US\$9\.62<\/dd>/);
  assert.match(japanese,/Converted at £1 = ¥209\.93 and US\$1 = ¥159\.42 \(ECB, 18 Nov 2026\)/);
  assert.match(soldOut,/Raw delivered<\/dt><dd>—<\/dd>/);
  assert.match(soldOut,/PSA Value grading<\/dt><dd>¥7,348<\/dd>/);
  assert.match(soldOut,/Card \+ grading<\/dt><dd>—<\/dd>/);
- assert.match(soldOut,/UK PSA 10 sale \(converted\)<\/dt><dd>¥27,698<\/dd>/);
+ assert.match(soldOut,/PSA 10 sale \(converted\)<\/dt><dd>¥27,698<\/dd>/);
  assert.match(soldOut,/Profit if PSA 10<\/dt><dd>—<\/dd>/);
  assert.match(soldOut,/Profit \(US\$\)<\/dt><dd>—<\/dd>/);
  for(const entry of watch){
