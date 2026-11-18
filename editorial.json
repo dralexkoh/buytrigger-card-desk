@@ -2212,6 +2212,238 @@
   ],
   "wire": [
     {
+      "id": "prismatic-vaporeon-ex-sir-down-28-percent-since-30-sep-2026-11-18",
+      "eventKey": "prismatic-evolutions-vaporeon-ex-149-since-30-sep-2026-11-18",
+      "date": "2026-11-18",
+      "displayDate": "18 Nov · Price guide",
+      "category": "Price action",
+      "kind": "Market price guide",
+      "title": "Prismatic’s Vaporeon ex Special Illustration Rare is down 28% since 30 Sep",
+      "summary": "Vaporeon ex has had the roughest autumn of any big Prismatic Evolutions chase card. The Special Illustration Rare, 149/131, had a TCGplayer market guide of US$282.41 for a raw copy on 30 September. On 17 November it was US$203.48, a drop of just under 28%.\n\nWe track ten chase cards in the set, and none has fallen further since 30 September. Espeon ex, 155/131, is right behind it. Its guide went from US$312.32 to US$226.10, down 27.6%, so there are only a few tenths of a percent in it.\n\nThe past week looks different. Vaporeon slipped about 2% between 10 and 17 November, while Espeon lost about 6%. Espeon is falling faster right now, so the two could swap places in a week or two.\n\nThe bit we’d point at is the order of the Eeveelutions. On 30 September Vaporeon was priced above Glaceon ex. Now it sits about US$18 below it.\n\nThese are guide prices for raw, ungraded copies in mixed condition, not individual sales.\n\nPrices: TCGplayer market price via TCGCSV, Raw, USD, 30 September, 10 November and 17 November 2026.",
+      "sourceLabel": "TCGplayer market price via TCGCSV",
+      "url": "https://tcgcsv.com/tcgplayer/3/23821/prices",
+      "checkedAt": "2026-11-18T14:43:19Z",
+      "sourcePublishedAt": "2026-11-17",
+      "ctaUrl": "/prices/prismatic-evolutions/",
+      "ctaLabel": "Open the Prismatic price page →",
+      "visual": "source-media",
+      "image": "assets/newsroom-20261118b/prismatic-vaporeon-ex-sir-down-since-30-sep-hero.webp",
+      "imageAlt": "Curated graphic: the English Prismatic Evolutions booster pack with the Vaporeon ex 149/131 and Espeon ex 155/131 Special Illustration Rares. Vaporeon’s TCGplayer market guide was US$203 on 17 November, down 27.9% since 30 September from US$282.41; Espeon is down 27.6% from US$312.32.",
+      "imageCredit": "Card and pack images: TCGplayer. Card artwork © Pokémon.",
+      "imageSourceUrl": "https://tcgplayer-cdn.tcgplayer.com/product/610504_in_1000x1000.jpg",
+      "chase_cards": [
+        {
+          "name": "Vaporeon ex",
+          "image": "assets/prismatic-evolutions/610504.jpg",
+          "alt": "Exact English Prismatic Evolutions Vaporeon ex 149/131 Special Illustration Rare catalogue reference.",
+          "set": "Prismatic Evolutions",
+          "number": "149/131",
+          "link": "https://www.tcgplayer.com/product/610504"
+        },
+        {
+          "name": "Espeon ex",
+          "image": "assets/prismatic-evolutions/610510.jpg",
+          "alt": "Exact English Prismatic Evolutions Espeon ex 155/131 Special Illustration Rare catalogue reference.",
+          "set": "Prismatic Evolutions",
+          "number": "155/131",
+          "link": "https://www.tcgplayer.com/product/610510"
+        },
+        {
+          "name": "Glaceon ex",
+          "image": "assets/prismatic-evolutions/610505.jpg",
+          "alt": "Exact English Prismatic Evolutions Glaceon ex 150/131 Special Illustration Rare catalogue reference.",
+          "set": "Prismatic Evolutions",
+          "number": "150/131",
+          "link": "https://www.tcgplayer.com/product/610505"
+        },
+        {
+          "name": "Leafeon ex",
+          "image": "assets/prismatic-evolutions/610499.jpg",
+          "alt": "Exact English Prismatic Evolutions Leafeon ex 144/131 Special Illustration Rare catalogue reference.",
+          "set": "Prismatic Evolutions",
+          "number": "144/131",
+          "link": "https://www.tcgplayer.com/product/610499"
+        },
+        {
+          "name": "Flareon ex",
+          "image": "assets/prismatic-evolutions/610501.jpg",
+          "alt": "Exact English Prismatic Evolutions Flareon ex 146/131 Special Illustration Rare catalogue reference.",
+          "set": "Prismatic Evolutions",
+          "number": "146/131",
+          "link": "https://www.tcgplayer.com/product/610501"
+        },
+        {
+          "name": "Jolteon ex",
+          "image": "assets/prismatic-evolutions/610508.jpg",
+          "alt": "Exact English Prismatic Evolutions Jolteon ex 153/131 Special Illustration Rare catalogue reference.",
+          "set": "Prismatic Evolutions",
+          "number": "153/131",
+          "link": "https://www.tcgplayer.com/product/610508"
+        }
+      ],
+      "chase_cards_credit": "Card image: TCGplayer. Card artwork © Pokémon.",
+      "author": {
+        "id": "elliot-reed",
+        "name": "Elliot Reed",
+        "type": "named_ai_correspondent",
+        "label": "Correspondent",
+        "beat": "Markets & auctions"
+      },
+      "newsRevision": 1
+    },
+    {
+      "id": "delta-reign-kecleon-illustration-rare-more-than-doubled-since-launch-2026-11-18",
+      "eventKey": "delta-reign-kecleon-117-since-launch-2026-11-18",
+      "date": "2026-11-18",
+      "displayDate": "18 Nov · Price guide",
+      "category": "Price action",
+      "kind": "Market price guide",
+      "title": "Delta Reign’s Kecleon Illustration Rare has more than doubled since launch",
+      "summary": "Kecleon is the surprise of Delta Reign so far. The Illustration Rare, 117/103, had a TCGplayer market guide of US$14.57 for a raw copy on launch day, 6 November. On 17 November it was US$30.00, up 106%.\n\nNearly all of that jump came in the first few days. By 10 November the guide was already US$31.06, and it has eased about 3% since. So it doubled, then sat there for a week.\n\nAt US$30 it’s the priciest Illustration Rare in the set and the fifth-priciest card overall. That puts it above three of the set’s Special Illustration Rares. The closest of them, Mega Golurk ex, is at US$27.63.\n\nOur read is that it’s the art. Kecleon hiding in a wall of flowers is the sort of card people pull and keep, and kept copies don’t reach the market. Launch-week guides still jump around a lot, though, so we’d give this one another couple of weeks before calling it settled.\n\nThese are guide prices for raw, ungraded copies in mixed condition, not individual sales.\n\nPrices: TCGplayer market price via TCGCSV, Raw, USD, 6, 10 and 17 November 2026.",
+      "sourceLabel": "TCGplayer market price via TCGCSV",
+      "url": "https://tcgcsv.com/tcgplayer/3/24831/prices",
+      "checkedAt": "2026-11-18T14:43:19Z",
+      "sourcePublishedAt": "2026-11-17",
+      "ctaUrl": "/prices/delta-reign/",
+      "ctaLabel": "Every Delta Reign card’s price →",
+      "visual": "source-media",
+      "image": "assets/newsroom-20261118b/delta-reign-kecleon-ir-doubled-since-launch-hero.webp",
+      "imageAlt": "Curated graphic: the English Delta Reign booster box and the Kecleon Illustration Rare 117/103, with its TCGplayer market guide at US$30 on 17 November, up 106% since launch from US$14.57 on 6 November and down 3% in seven days from US$31.06 on 10 November.",
+      "imageCredit": "Card and box images: TCGplayer. Card artwork © Pokémon.",
+      "imageSourceUrl": "https://tcgplayer-cdn.tcgplayer.com/product/726567_in_1000x1000.jpg",
+      "chase_cards": [
+        {
+          "name": "Kecleon",
+          "image": "assets/delta-reign/726567.jpg",
+          "alt": "Exact English Delta Reign Kecleon 117/103 Illustration Rare catalogue reference.",
+          "set": "Delta Reign",
+          "number": "117/103",
+          "link": "https://www.tcgplayer.com/product/726567"
+        },
+        {
+          "name": "Zinnia’s Trust",
+          "image": "assets/delta-reign/726576.jpg",
+          "alt": "Exact English Delta Reign Zinnia’s Trust 140/103 Special Illustration Rare catalogue reference.",
+          "set": "Delta Reign",
+          "number": "140/103",
+          "link": "https://www.tcgplayer.com/product/726576"
+        },
+        {
+          "name": "Mega Golurk ex",
+          "image": "assets/delta-reign/728060.jpg",
+          "alt": "Exact English Delta Reign Mega Golurk ex 137/103 Special Illustration Rare catalogue reference.",
+          "set": "Delta Reign",
+          "number": "137/103",
+          "link": "https://www.tcgplayer.com/product/728060"
+        },
+        {
+          "name": "Mega Golisopod ex",
+          "image": "assets/delta-reign/727592.jpg",
+          "alt": "Exact English Delta Reign Mega Golisopod ex 135/103 Special Illustration Rare catalogue reference.",
+          "set": "Delta Reign",
+          "number": "135/103",
+          "link": "https://www.tcgplayer.com/product/727592"
+        },
+        {
+          "name": "Aarune",
+          "image": "assets/delta-reign/726575.jpg",
+          "alt": "Exact English Delta Reign Aarune 139/103 Special Illustration Rare catalogue reference.",
+          "set": "Delta Reign",
+          "number": "139/103",
+          "link": "https://www.tcgplayer.com/product/726575"
+        },
+        {
+          "name": "Eevee",
+          "image": "assets/delta-reign/726565.jpg",
+          "alt": "Exact English Delta Reign Eevee 114/103 Illustration Rare catalogue reference.",
+          "set": "Delta Reign",
+          "number": "114/103",
+          "link": "https://www.tcgplayer.com/product/726565"
+        }
+      ],
+      "chase_cards_credit": "Card image: TCGplayer. Card artwork © Pokémon.",
+      "author": {
+        "id": "elliot-reed",
+        "name": "Elliot Reed",
+        "type": "named_ai_correspondent",
+        "label": "Correspondent",
+        "beat": "Markets & auctions"
+      },
+      "newsRevision": 1
+    },
+    {
+      "id": "sv-151-alakazam-zapdos-ex-sirs-down-more-than-20-percent-since-30-sep-2026-11-18",
+      "eventKey": "sv-151-alakazam-201-zapdos-202-since-30-sep-2026-11-18",
+      "date": "2026-11-18",
+      "displayDate": "18 Nov · Price guide",
+      "category": "Price action",
+      "kind": "Market price guide",
+      "title": "151’s Alakazam ex and Zapdos ex Special Illustration Rares are both down more than 20% since 30 Sep",
+      "summary": "Two of 151’s mid-list Special Illustration Rares have had a hard autumn. Alakazam ex, 201/165, had a TCGplayer market guide of US$68.06 for a raw copy on 30 September. On 17 November it was US$51.35, down about 25%.\n\nZapdos ex, 202/165, is down about 23% over the same stretch, from US$82.44 to US$63.18. It’s still about US$12 ahead of Alakazam.\n\nNeither had a better week. Alakazam lost 5% between 10 and 17 November, and Zapdos lost about 2.5%.\n\nOur read is that these are the 151 cards people let go first when they want money for newer sets. They don’t carry Charizard’s name or the starters’ fan base, so there are fewer buyers waiting for them.\n\nThese are guide prices for raw, ungraded copies in mixed condition, not individual sales.\n\nPrices: TCGplayer market price via TCGCSV, Raw, USD, 30 September, 10 November and 17 November 2026.",
+      "sourceLabel": "TCGplayer market price via TCGCSV",
+      "url": "https://tcgcsv.com/tcgplayer/3/23237/prices",
+      "checkedAt": "2026-11-18T14:43:19Z",
+      "sourcePublishedAt": "2026-11-17",
+      "ctaUrl": "/prices/sv-151/",
+      "ctaLabel": "Open the 151 price page →",
+      "visual": "source-media",
+      "image": "assets/newsroom-20261118b/sv-151-alakazam-zapdos-sir-down-since-30-sep-hero.webp",
+      "imageAlt": "Curated graphic: the English Scarlet & Violet 151 booster pack with the Alakazam ex 201/165 and Zapdos ex 202/165 Special Illustration Rares. Since 30 September Alakazam’s TCGplayer market guide is down 25%, from US$68.06 to US$51.35, and Zapdos is down 23%, from US$82.44 to US$63.18.",
+      "imageCredit": "Card and pack images: TCGplayer. Card artwork © Pokémon.",
+      "imageSourceUrl": "https://tcgplayer-cdn.tcgplayer.com/product/517047_in_1000x1000.jpg",
+      "chase_cards": [
+        {
+          "name": "Alakazam ex",
+          "image": "assets/sv-151/517047.jpg",
+          "alt": "Exact English 151 Alakazam ex 201/165 Special Illustration Rare catalogue reference.",
+          "set": "151",
+          "number": "201/165",
+          "link": "https://www.tcgplayer.com/product/517047"
+        },
+        {
+          "name": "Zapdos ex",
+          "image": "assets/sv-151/517048.jpg",
+          "alt": "Exact English 151 Zapdos ex 202/165 Special Illustration Rare catalogue reference.",
+          "set": "151",
+          "number": "202/165",
+          "link": "https://www.tcgplayer.com/product/517048"
+        },
+        {
+          "name": "Venusaur ex",
+          "image": "assets/sv-151/517044.jpg",
+          "alt": "Exact English 151 Venusaur ex 198/165 Special Illustration Rare catalogue reference.",
+          "set": "151",
+          "number": "198/165",
+          "link": "https://www.tcgplayer.com/product/517044"
+        },
+        {
+          "name": "Charizard ex",
+          "image": "assets/sv-151/517045.jpg",
+          "alt": "Exact English 151 Charizard ex 199/165 Special Illustration Rare catalogue reference.",
+          "set": "151",
+          "number": "199/165",
+          "link": "https://www.tcgplayer.com/product/517045"
+        },
+        {
+          "name": "Blastoise ex",
+          "image": "assets/sv-151/517046.jpg",
+          "alt": "Exact English 151 Blastoise ex 200/165 Special Illustration Rare catalogue reference.",
+          "set": "151",
+          "number": "200/165",
+          "link": "https://www.tcgplayer.com/product/517046"
+        }
+      ],
+      "chase_cards_credit": "Card image: TCGplayer. Card artwork © Pokémon.",
+      "author": {
+        "id": "elliot-reed",
+        "name": "Elliot Reed",
+        "type": "named_ai_correspondent",
+        "label": "Correspondent",
+        "beat": "Markets & auctions"
+      },
+      "newsRevision": 1
+    },
+    {
       "id": "delta-reign-gold-mega-rayquaza-ex-down-36-percent-since-launch-2026-11-18",
       "eventKey": "delta-reign-mega-rayquaza-ex-141-since-launch-2026-11-18",
       "date": "2026-11-18",

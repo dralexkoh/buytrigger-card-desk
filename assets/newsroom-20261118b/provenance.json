@@ -1,0 +1,132 @@
+{
+  "reviewer": "Vault Newsroom",
+  "review_date": "2026-11-18",
+  "rights_basis": "TCGplayer catalogue references (exact English sealed product and cards), consistent with prior Delta Reign, 151 and Prismatic briefs, composed on the owner-locked BuyTrigger.Cards brand canvas. Prices from TCGCSV (TCGplayer market price, build 2026-11-17T20:05Z, rechecked 18 Nov 14:4x London, and dated archives). No generated or redrawn franchise characters.",
+  "credit_line": "Card and box/pack images: TCGplayer · Card artwork © Pokémon · Prices: TCGplayer via TCGCSV · Graphic: BuyTrigger.Cards",
+  "crops_checked": [
+    "full-size 1600x900",
+    "390px phone width"
+  ],
+  "generation_prompt": null,
+  "tool": "Pillow composition (/workspace/nr1118b-work/compose.py, helpers /workspace/nr1118b-work/compose_heroes.py)",
+  "reference_files": [],
+  "outputs": [
+    {
+      "path": "assets/newsroom-20261118b/prismatic-vaporeon-ex-sir-down-since-30-sep-hero.webp",
+      "sha256": "267db835d5d4b519b19457e006ab9aed4eaca7b813da188052bf621636d65827",
+      "size_px": [
+        1600,
+        900
+      ],
+      "class": "permitted-media + brand-asset composition",
+      "inputs": [
+        {
+          "path": "/workspace/nr1118b-work/src/pe-pack-593294.jpg",
+          "source_url": "https://tcgplayer-cdn.tcgplayer.com/product/593294_in_1000x1000.jpg",
+          "sha256": "b9d2d93f5ae845e2ac76f30dddc0bf4cfe4d819fa3a2161cbdbfbb226ec617ff",
+          "class": "permitted-media (TCGplayer catalogue reference)"
+        },
+        {
+          "path": "/workspace/nr1118b-work/src/tcg-610504.jpg",
+          "source_url": "https://tcgplayer-cdn.tcgplayer.com/product/610504_in_1000x1000.jpg",
+          "sha256": "799edcaa72efbf93c103d39559f0d8071f831e58f7d85f98602095ba8b5ee7d7",
+          "class": "permitted-media (TCGplayer catalogue reference)"
+        },
+        {
+          "path": "/workspace/nr1118b-work/src/tcg-610510.jpg",
+          "source_url": "https://tcgplayer-cdn.tcgplayer.com/product/610510_in_1000x1000.jpg",
+          "sha256": "eccf145158df0a2571e203bf6a6ebeb32e39a374faab6b7e2fe86deb07b6056f",
+          "class": "permitted-media (TCGplayer catalogue reference)"
+        },
+        {
+          "path": "/home/box/private/buytrigger/full/BuyTrigger-Cards-Grok-Handover-2026-11-10/workspace/brand/buytrigger-cards/skill/assets/buytrigger-badge-gengar-vaporeon-web.png",
+          "source_url": "owner brand asset",
+          "sha256": "303e7a82ef8ebe755375d864029ab623c55b6272c44cec15462539cc5c25a4fa",
+          "class": "brand-asset"
+        },
+        {
+          "path": "/workspace/nr1118b/assets/publisher-logo-600x60.png",
+          "source_url": "repo brand asset (wordmark)",
+          "sha256": "ae4ac346e762dfc13bb5a5b11211a6fc9d05f6117a3588e55a2b8ea2283d6aac",
+          "class": "brand-asset"
+        }
+      ]
+    },
+    {
+      "path": "assets/newsroom-20261118b/delta-reign-kecleon-ir-doubled-since-launch-hero.webp",
+      "sha256": "e25d2dee8f98356b816fafac5c6d709f0940a52194384d2ad5dcdca71f162e53",
+      "size_px": [
+        1600,
+        900
+      ],
+      "class": "permitted-media + brand-asset composition",
+      "inputs": [
+        {
+          "path": "/workspace/nr1118b-work/src/dr-box-712094.jpg",
+          "source_url": "https://tcgplayer-cdn.tcgplayer.com/product/712094_in_1000x1000.jpg",
+          "sha256": "3fad6d78b3a7a5b5212772f39112385939496a2ad1c8b8ac34394119aecfe07a",
+          "class": "permitted-media (TCGplayer catalogue reference)"
+        },
+        {
+          "path": "/workspace/nr1118b-work/src/tcg-726567.jpg",
+          "source_url": "https://tcgplayer-cdn.tcgplayer.com/product/726567_in_1000x1000.jpg",
+          "sha256": "09e9bb8e095a375c8161b0a5205b0548ef7a25e349f04886a0d366c72e3fac18",
+          "class": "permitted-media (TCGplayer catalogue reference)"
+        },
+        {
+          "path": "/home/box/private/buytrigger/full/BuyTrigger-Cards-Grok-Handover-2026-11-10/workspace/brand/buytrigger-cards/skill/assets/buytrigger-badge-gengar-vaporeon-web.png",
+          "source_url": "owner brand asset",
+          "sha256": "303e7a82ef8ebe755375d864029ab623c55b6272c44cec15462539cc5c25a4fa",
+          "class": "brand-asset"
+        },
+        {
+          "path": "/workspace/nr1118b/assets/publisher-logo-600x60.png",
+          "source_url": "repo brand asset (wordmark)",
+          "sha256": "ae4ac346e762dfc13bb5a5b11211a6fc9d05f6117a3588e55a2b8ea2283d6aac",
+          "class": "brand-asset"
+        }
+      ]
+    },
+    {
+      "path": "assets/newsroom-20261118b/sv-151-alakazam-zapdos-sir-down-since-30-sep-hero.webp",
+      "sha256": "9b8c81bdbf4f4ceee02df7c6f819bd7c96428187f29b963fb790c7543335ae11",
+      "size_px": [
+        1600,
+        900
+      ],
+      "class": "permitted-media + brand-asset composition",
+      "inputs": [
+        {
+          "path": "/workspace/nr1118b-work/src/pack151.jpg",
+          "source_url": "https://tcgplayer-cdn.tcgplayer.com/product/504467_in_1000x1000.jpg",
+          "sha256": "f6880238d36a178e3cc3e5d419c9c656ba35f7be6888afc4c1035accf64341c9",
+          "class": "permitted-media (TCGplayer catalogue reference)"
+        },
+        {
+          "path": "/workspace/nr1118b-work/src/tcg-517047.jpg",
+          "source_url": "https://tcgplayer-cdn.tcgplayer.com/product/517047_in_1000x1000.jpg",
+          "sha256": "09ea0475f25b4aefa15f0206d126a7d5e640a706cbf3f505767d83e8e4e64a31",
+          "class": "permitted-media (TCGplayer catalogue reference)"
+        },
+        {
+          "path": "/workspace/nr1118b-work/src/tcg-517048.jpg",
+          "source_url": "https://tcgplayer-cdn.tcgplayer.com/product/517048_in_1000x1000.jpg",
+          "sha256": "50b85922070a0c44506b60a013ea1fb6ac3dee15087c9e69138eed58a80bcf5d",
+          "class": "permitted-media (TCGplayer catalogue reference)"
+        },
+        {
+          "path": "/home/box/private/buytrigger/full/BuyTrigger-Cards-Grok-Handover-2026-11-10/workspace/brand/buytrigger-cards/skill/assets/buytrigger-badge-gengar-vaporeon-web.png",
+          "source_url": "owner brand asset",
+          "sha256": "303e7a82ef8ebe755375d864029ab623c55b6272c44cec15462539cc5c25a4fa",
+          "class": "brand-asset"
+        },
+        {
+          "path": "/workspace/nr1118b/assets/publisher-logo-600x60.png",
+          "source_url": "repo brand asset (wordmark)",
+          "sha256": "ae4ac346e762dfc13bb5a5b11211a6fc9d05f6117a3588e55a2b8ea2283d6aac",
+          "class": "brand-asset"
+        }
+      ]
+    }
+  ]
+}
