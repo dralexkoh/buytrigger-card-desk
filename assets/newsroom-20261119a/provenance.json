@@ -1,0 +1,132 @@
+{
+  "reviewer": "Vault Newsroom",
+  "review_date": "2026-11-19",
+  "rights_basis": "TCGplayer catalogue references (exact English sealed product and cards) for the two Delta Reign heroes; official Pokémon press images from the pokemon.com 16 Nov 2026 Play! Pokémon prizes post (credited) for the third, composed on the owner-locked BuyTrigger.Cards brand canvas. Prices from TCGCSV (TCGplayer market price, build 2026-11-18T20:05Z, pulled 19 Nov 08:3x London, and dated archives). No generated or redrawn franchise characters.",
+  "credit_line": "Card and box images: TCGplayer (Delta Reign); Images: The Pokémon Company / pokemon.com (Play! Pokémon) · Card artwork © Pokémon · Prices: TCGplayer via TCGCSV · Graphic: BuyTrigger.Cards",
+  "crops_checked": [
+    "full-size 1600x900",
+    "390px phone width"
+  ],
+  "generation_prompt": null,
+  "tool": "Pillow composition (/workspace/nr1119a-work/compose.py, helpers /workspace/nr1118b-work/compose_heroes.py)",
+  "reference_files": [],
+  "outputs": [
+    {
+      "path": "assets/newsroom-20261119a/delta-reign-mega-rayquaza-ex-two-printings-since-launch-hero.webp",
+      "sha256": "73cfccea16ebd7ab2aa446189488f5d2821d9cb3497003f1cc19305e9a0f7336",
+      "size_px": [
+        1600,
+        900
+      ],
+      "class": "permitted-media + brand-asset composition",
+      "inputs": [
+        {
+          "path": "/workspace/nr1119a-work/src/tcg-728061.jpg",
+          "source_url": "https://tcgplayer-cdn.tcgplayer.com/product/728061_in_1000x1000.jpg",
+          "sha256": "aa46c56d3c1d73a760e54eb0071bacde4110d03ede036bc013706edb8ed99823",
+          "class": "permitted-media (TCGplayer catalogue reference)"
+        },
+        {
+          "path": "/workspace/nr1119a-work/src/tcg-728062.jpg",
+          "source_url": "https://tcgplayer-cdn.tcgplayer.com/product/728062_in_1000x1000.jpg",
+          "sha256": "63bec14d7f8cf3ceaf36645e6107b46023416f310ed9f45428a11e94375742a9",
+          "class": "permitted-media (TCGplayer catalogue reference)"
+        },
+        {
+          "path": "/home/box/private/buytrigger/full/BuyTrigger-Cards-Grok-Handover-2026-11-10/workspace/brand/buytrigger-cards/skill/assets/buytrigger-badge-gengar-vaporeon-web.png",
+          "source_url": "owner brand asset",
+          "sha256": "303e7a82ef8ebe755375d864029ab623c55b6272c44cec15462539cc5c25a4fa",
+          "class": "brand-asset"
+        },
+        {
+          "path": "/workspace/nr1119a/assets/publisher-logo-600x60.png",
+          "source_url": "repo brand asset (wordmark)",
+          "sha256": "ae4ac346e762dfc13bb5a5b11211a6fc9d05f6117a3588e55a2b8ea2283d6aac",
+          "class": "brand-asset"
+        }
+      ]
+    },
+    {
+      "path": "assets/newsroom-20261119a/delta-reign-aarune-sir-up-since-launch-down-7-days-hero.webp",
+      "sha256": "2174645f1fb7cf7155b1fedd1829bcbf719c5179dca3801c5e6138313aff111c",
+      "size_px": [
+        1600,
+        900
+      ],
+      "class": "permitted-media + brand-asset composition",
+      "inputs": [
+        {
+          "path": "/workspace/nr1119a-work/src/dr-box-712094.jpg",
+          "source_url": "https://tcgplayer-cdn.tcgplayer.com/product/712094_in_1000x1000.jpg",
+          "sha256": "3fad6d78b3a7a5b5212772f39112385939496a2ad1c8b8ac34394119aecfe07a",
+          "class": "permitted-media (TCGplayer catalogue reference)"
+        },
+        {
+          "path": "/workspace/nr1119a-work/src/tcg-726575.jpg",
+          "source_url": "https://tcgplayer-cdn.tcgplayer.com/product/726575_in_1000x1000.jpg",
+          "sha256": "ee527a341a8502f16a2bc8cef1bc0495933ba106614f78d84d5b981c21406e4a",
+          "class": "permitted-media (TCGplayer catalogue reference)"
+        },
+        {
+          "path": "/home/box/private/buytrigger/full/BuyTrigger-Cards-Grok-Handover-2026-11-10/workspace/brand/buytrigger-cards/skill/assets/buytrigger-badge-gengar-vaporeon-web.png",
+          "source_url": "owner brand asset",
+          "sha256": "303e7a82ef8ebe755375d864029ab623c55b6272c44cec15462539cc5c25a4fa",
+          "class": "brand-asset"
+        },
+        {
+          "path": "/workspace/nr1119a/assets/publisher-logo-600x60.png",
+          "source_url": "repo brand asset (wordmark)",
+          "sha256": "ae4ac346e762dfc13bb5a5b11211a6fc9d05f6117a3588e55a2b8ea2283d6aac",
+          "class": "brand-asset"
+        }
+      ]
+    },
+    {
+      "path": "assets/newsroom-20261119a/play-pokemon-december-2026-league-prizes-mega-rayquaza-hero.webp",
+      "sha256": "c94eb70e26f92c015b3edd3fc5f006e5e36c2a73ad464564375f20154859a04a",
+      "size_px": [
+        1600,
+        900
+      ],
+      "class": "permitted-media + brand-asset composition",
+      "inputs": [
+        {
+          "path": "/workspace/nr1119a-work/src/pp-01-en.png",
+          "source_url": "https://mcdn.pokemon.com/pokemon-prod/image/upload/c_limit,w_1920/f_auto/v1/live/pcom-cms/static-assets/cms3/us/img/play-pokemon/tiles/2026/pokemon-league/prizes/12/inline/01-en.png",
+          "sha256": "4e4004b076e930594003b57c42b6240e47e71c0374f976486e0b5b913ccb3772",
+          "class": "permitted-media (official Pokémon press image, pokemon.com news post 16 Nov 2026)"
+        },
+        {
+          "path": "/workspace/nr1119a-work/src/pp-ME01_EN_28.png",
+          "source_url": "https://mcdn.pokemon.com/pokemon-prod/image/upload/c_limit,w_1920/f_auto/v1/live/pcom-cms/static-assets/cms3/us/img/play-pokemon/tiles/2026/pokemon-league/prizes/12/inline/ME01_EN_28.png",
+          "sha256": "357fd265a59bb5deb93212aa2d883c622be19dc72c17596dc324790c0ffc0293",
+          "class": "permitted-media (official Pokémon press image, pokemon.com news post 16 Nov 2026)"
+        },
+        {
+          "path": "/workspace/nr1119a-work/src/pp-ME01_EN_74.png",
+          "source_url": "https://mcdn.pokemon.com/pokemon-prod/image/upload/c_limit,w_1920/f_auto/v1/live/pcom-cms/static-assets/cms3/us/img/play-pokemon/tiles/2026/pokemon-league/prizes/12/inline/ME01_EN_74.png",
+          "sha256": "11840396c0d6cc185df032d4e7388e19be1c874a38d6c4f5b2071d1436abb1d3",
+          "class": "permitted-media (official Pokémon press image, pokemon.com news post 16 Nov 2026)"
+        },
+        {
+          "path": "/workspace/nr1119a-work/src/pp-ME01_EN_121.png",
+          "source_url": "https://mcdn.pokemon.com/pokemon-prod/image/upload/c_limit,w_1920/f_auto/v1/live/pcom-cms/static-assets/cms3/us/img/play-pokemon/tiles/2026/pokemon-league/prizes/12/inline/ME01_EN_121.png",
+          "sha256": "2506cc9f0470d85a9dd60f6a6ec91da1b5c0c10a341098f15da1ee9a9c618d2b",
+          "class": "permitted-media (official Pokémon press image, pokemon.com news post 16 Nov 2026)"
+        },
+        {
+          "path": "/home/box/private/buytrigger/full/BuyTrigger-Cards-Grok-Handover-2026-11-10/workspace/brand/buytrigger-cards/skill/assets/buytrigger-badge-gengar-vaporeon-web.png",
+          "source_url": "owner brand asset",
+          "sha256": "303e7a82ef8ebe755375d864029ab623c55b6272c44cec15462539cc5c25a4fa",
+          "class": "brand-asset"
+        },
+        {
+          "path": "/workspace/nr1119a/assets/publisher-logo-600x60.png",
+          "source_url": "repo brand asset (wordmark)",
+          "sha256": "ae4ac346e762dfc13bb5a5b11211a6fc9d05f6117a3588e55a2b8ea2283d6aac",
+          "class": "brand-asset"
+        }
+      ]
+    }
+  ]
+}
