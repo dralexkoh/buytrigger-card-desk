@@ -1,0 +1,171 @@
+{
+  "reviewer": "Vault Newsroom",
+  "review_date": "2026-11-19",
+  "rights_basis": "TCGplayer catalogue references (exact English sealed product and cards), consistent with prior Delta Reign and Prismatic briefs, composed on the owner-locked BuyTrigger.Cards brand canvas. Prices from TCGCSV (TCGplayer market price, build 2026-11-18T20:05Z, pulled 19 Nov 14:32 London, and dated archives 30 Sep, 6, 9, 10, 11 Nov). No generated or redrawn franchise characters.",
+  "credit_line": "Card and pack images: TCGplayer · Card artwork © Pokémon · Prices: TCGplayer via TCGCSV · Graphic: BuyTrigger.Cards",
+  "crops_checked": [
+    "full-size 1600x900",
+    "390px phone width"
+  ],
+  "generation_prompt": null,
+  "tool": "Pillow composition (/workspace/nr1119c-work/compose.py, helpers /workspace/nr1118b-work/compose_heroes.py)",
+  "reference_files": [],
+  "outputs": [
+    {
+      "path": "assets/newsroom-20261119c/delta-reign-illustration-rares-cool-off-7-days-hero.webp",
+      "sha256": "c796b3290c2556b8f22a15d120cd7c83463ee0920acdef04ecf0ca10eef68151",
+      "size_px": [
+        1600,
+        900
+      ],
+      "class": "permitted-media + brand-asset composition",
+      "inputs": [
+        {
+          "path": "/workspace/nr1119c-work/src/tcg-726565.jpg",
+          "source_url": "https://tcgplayer-cdn.tcgplayer.com/product/726565_in_1000x1000.jpg",
+          "sha256": "dae212899e19ce7096cc68c2a26f53dfac64217d729b1b8f85ebbafa9781a150",
+          "class": "permitted-media (TCGplayer catalogue reference)"
+        },
+        {
+          "path": "/workspace/nr1119c-work/src/tcg-726563.jpg",
+          "source_url": "https://tcgplayer-cdn.tcgplayer.com/product/726563_in_1000x1000.jpg",
+          "sha256": "f562ab3cdb594400921b40cb09015c6154793f3f4aff39496853bc81b6e3a3b7",
+          "class": "permitted-media (TCGplayer catalogue reference)"
+        },
+        {
+          "path": "/workspace/nr1119c-work/src/tcg-726559.jpg",
+          "source_url": "https://tcgplayer-cdn.tcgplayer.com/product/726559_in_1000x1000.jpg",
+          "sha256": "b1eb93ac61ab1f2e674ce980c51174c21b28eff7aa14fbbaabe0ee90f8ee3576",
+          "class": "permitted-media (TCGplayer catalogue reference)"
+        },
+        {
+          "path": "/home/box/private/buytrigger/full/BuyTrigger-Cards-Grok-Handover-2026-11-10/workspace/brand/buytrigger-cards/skill/assets/buytrigger-badge-gengar-vaporeon-web.png",
+          "source_url": "owner brand asset",
+          "sha256": "303e7a82ef8ebe755375d864029ab623c55b6272c44cec15462539cc5c25a4fa",
+          "class": "brand-asset"
+        },
+        {
+          "path": "/workspace/nr1119c/assets/publisher-logo-600x60.png",
+          "source_url": "repo brand asset (wordmark)",
+          "sha256": "ae4ac346e762dfc13bb5a5b11211a6fc9d05f6117a3588e55a2b8ea2283d6aac",
+          "class": "brand-asset"
+        }
+      ]
+    },
+    {
+      "path": "assets/newsroom-20261119c/prismatic-master-ball-umbreon-down-25-since-30-sep-hero.webp",
+      "sha256": "86e9453bf3058393904fbe1c4d317746c6b2590cf29bfc7225e9bfc3006877c2",
+      "size_px": [
+        1600,
+        900
+      ],
+      "class": "permitted-media + brand-asset composition",
+      "inputs": [
+        {
+          "path": "/workspace/nr1119c-work/src/pe-pack-593294.jpg",
+          "source_url": "https://tcgplayer-cdn.tcgplayer.com/product/593294_in_1000x1000.jpg",
+          "sha256": "b9d2d93f5ae845e2ac76f30dddc0bf4cfe4d819fa3a2161cbdbfbb226ec617ff",
+          "class": "permitted-media (TCGplayer catalogue reference)"
+        },
+        {
+          "path": "/workspace/nr1119c-work/src/tcg-610679.jpg",
+          "source_url": "https://tcgplayer-cdn.tcgplayer.com/product/610679_in_1000x1000.jpg",
+          "sha256": "7c1e8c789a32d346bd9cf04040583a5569e74701e674628db3c3cbbb6eb6f731",
+          "class": "permitted-media (TCGplayer catalogue reference)"
+        },
+        {
+          "path": "/home/box/private/buytrigger/full/BuyTrigger-Cards-Grok-Handover-2026-11-10/workspace/brand/buytrigger-cards/skill/assets/buytrigger-badge-gengar-vaporeon-web.png",
+          "source_url": "owner brand asset",
+          "sha256": "303e7a82ef8ebe755375d864029ab623c55b6272c44cec15462539cc5c25a4fa",
+          "class": "brand-asset"
+        },
+        {
+          "path": "/workspace/nr1119c/assets/publisher-logo-600x60.png",
+          "source_url": "repo brand asset (wordmark)",
+          "sha256": "ae4ac346e762dfc13bb5a5b11211a6fc9d05f6117a3588e55a2b8ea2283d6aac",
+          "class": "brand-asset"
+        }
+      ]
+    },
+    {
+      "path": "assets/newsroom-20261119c/prismatic-master-ball-umbreon-610679.webp",
+      "sha256": "5bcc6faa134a098f7b97efc98187a608ce15c298cc5a32da193077b5891b859e",
+      "size_px": [
+        500,
+        697
+      ],
+      "class": "permitted-media (resized TCGplayer catalogue reference for chase strip)",
+      "inputs": [
+        {
+          "path": "/workspace/nr1119c-work/src/tcg-610679.jpg",
+          "source_url": "https://tcgplayer-cdn.tcgplayer.com/product/610679_in_1000x1000.jpg",
+          "class": "permitted-media (TCGplayer catalogue reference)"
+        }
+      ]
+    },
+    {
+      "path": "assets/newsroom-20261119c/prismatic-master-ball-vaporeon-610653.webp",
+      "sha256": "ebd72a0a3b68826381f5f91377d21dea1f3b087ff622d22e5052b2ace0f9ce03",
+      "size_px": [
+        500,
+        697
+      ],
+      "class": "permitted-media (resized TCGplayer catalogue reference for chase strip)",
+      "inputs": [
+        {
+          "path": "/workspace/nr1119c-work/src/tcg-610653.jpg",
+          "source_url": "https://tcgplayer-cdn.tcgplayer.com/product/610653_in_1000x1000.jpg",
+          "class": "permitted-media (TCGplayer catalogue reference)"
+        }
+      ]
+    },
+    {
+      "path": "assets/newsroom-20261119c/prismatic-master-ball-sylveon-610664.webp",
+      "sha256": "2db3dd3ff940d344db26bef48790551f86b16857ddfb1b703c63e8a440445acd",
+      "size_px": [
+        500,
+        697
+      ],
+      "class": "permitted-media (resized TCGplayer catalogue reference for chase strip)",
+      "inputs": [
+        {
+          "path": "/workspace/nr1119c-work/src/tcg-610664.jpg",
+          "source_url": "https://tcgplayer-cdn.tcgplayer.com/product/610664_in_1000x1000.jpg",
+          "class": "permitted-media (TCGplayer catalogue reference)"
+        }
+      ]
+    },
+    {
+      "path": "assets/newsroom-20261119c/prismatic-master-ball-jolteon-610656.webp",
+      "sha256": "88fcf30cc351b0d7fa5668b01d0d595d3a9ea499704d62abc7665bbba5eb90d0",
+      "size_px": [
+        500,
+        697
+      ],
+      "class": "permitted-media (resized TCGplayer catalogue reference for chase strip)",
+      "inputs": [
+        {
+          "path": "/workspace/nr1119c-work/src/tcg-610656.jpg",
+          "source_url": "https://tcgplayer-cdn.tcgplayer.com/product/610656_in_1000x1000.jpg",
+          "class": "permitted-media (TCGplayer catalogue reference)"
+        }
+      ]
+    },
+    {
+      "path": "assets/newsroom-20261119c/prismatic-master-ball-flareon-610646.webp",
+      "sha256": "6a18ef276b511421c251cba9462d532d21905324160b48bfcd921358ca1d2ddc",
+      "size_px": [
+        500,
+        697
+      ],
+      "class": "permitted-media (resized TCGplayer catalogue reference for chase strip)",
+      "inputs": [
+        {
+          "path": "/workspace/nr1119c-work/src/tcg-610646.jpg",
+          "source_url": "https://tcgplayer-cdn.tcgplayer.com/product/610646_in_1000x1000.jpg",
+          "class": "permitted-media (TCGplayer catalogue reference)"
+        }
+      ]
+    }
+  ]
+}
