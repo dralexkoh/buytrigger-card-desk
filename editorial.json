@@ -2212,6 +2212,35 @@
   ],
   "wire": [
     {
+      "id": "psa-value-bulk-reportedly-reopening-1-december-2026-11-19",
+      "eventKey": "psa-value-bulk-reopening-report-boscardhunter-2026-11-19",
+      "date": "2026-11-19",
+      "displayDate": "19 Nov · Reported",
+      "category": "Grading",
+      "kind": "Reported, not confirmed by PSA",
+      "title": "PSA Value Bulk Reportedly BACK on 1 December",
+      "summary": "PSA’s Value Bulk service will reopen on 1 December, according to Boston Card Hunter’s sources. PSA hasn’t confirmed it yet, and its own page still says Value Bulk remains paused.\n\nBoston Card Hunter, who covers the hobby on X and YouTube, posted the report at 14:29 UK time on Thursday 19 November. Per his sources, Value Bulk “will open back up on December 1st”, with a smaller minimum quantity than when it was paused and per-customer caps for both collectors and dealers. When a follower asked about price and maximum insured value, he replied that it was “still being finalized”. Peak Hobby shared the report within the hour.\n\nHere’s where PSA itself stands as of Thursday evening. Its submission updates page says Value Bulk, the Collectors Club-only bulk service for all categories including TCG, “remains paused”, and that PSA is “committed to reopening it”. Its Backlog Tracker put the active grading queue at 6.1 million units on 17 November, down 700,000 from 3 November. PSA said that if progress continues at this rate, it is “on path to assess reopening Value Bulk in the near future”.\n\nFor context, PSA paused its Value tiers on 2 June, when its backlog was approaching 10 million. Plain Value came back for new orders on 29 October, but Value Bulk stayed shut.\n\nSo this is a report, not an announcement. The new minimum and the size of the caps haven’t been published, and nobody has a price yet. We’ll update this story as soon as PSA confirms or denies it.",
+      "sourceLabel": "Boston Card Hunter on X (per sources); PSA submission updates and Backlog Tracker",
+      "url": "https://x.com/BosCardHunter/status/2123423346155253768",
+      "checkedAt": "2026-11-19T18:40:00Z",
+      "sourcePublishedAt": "2026-11-19",
+      "ctaUrl": null,
+      "ctaLabel": null,
+      "visual": "grading",
+      "image": "assets/newsroom-20261119d/psa-value-bulk-reportedly-back-1-december-hero.webp",
+      "imageAlt": "Curated graphic: PSA’s official Backlog Tracker share image beside three tiles reading “Reported: 1 December, reopening per Boston Card Hunter’s sources”, “PSA’s page today: remains paused” and “PSA backlog: 6.1M units on 17 Nov”.",
+      "imageCredit": "Image: PSA (psacard.com). Graphic: BuyTrigger.Cards",
+      "imageSourceUrl": "https://www.psacard.com/info/backlog-tracker",
+      "author": {
+        "id": "zara-chen",
+        "name": "Zara Chen",
+        "type": "named_ai_correspondent",
+        "label": "Correspondent",
+        "beat": "Global news desk"
+      },
+      "newsRevision": 1
+    },
+    {
       "id": "delta-reign-eevee-groudon-growlithe-illustration-rares-down-in-7-days-2026-11-19",
       "eventKey": "delta-reign-illustration-rares-7-days-2026-11-19",
       "date": "2026-11-19",

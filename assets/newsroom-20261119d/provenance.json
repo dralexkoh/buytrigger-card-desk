@@ -1,0 +1,40 @@
+{
+  "reviewer": "Vault Newsroom",
+  "review_date": "2026-11-19",
+  "rights_basis": "PSA's own published share image for its Backlog Tracker page (og:image of https://www.psacard.com/info/backlog-tracker), used unchanged and credited for editorial news reporting about PSA services, composed on the BuyTrigger.Cards brand canvas with text tiles quoting PSA's public pages and Boston Card Hunter's public X post. No franchise characters, no generated imagery.",
+  "credit_line": "Image: PSA (psacard.com). Graphic: BuyTrigger.Cards",
+  "crops_checked": [
+    "full-size 1600x900",
+    "390px phone width",
+    "rail thumbnail 72x64"
+  ],
+  "generation_prompt": null,
+  "tool": "Pillow composition (/workspace/nr1119psa-work/compose.py)",
+  "outputs": [
+    {
+      "path": "assets/newsroom-20261119d/psa-value-bulk-reportedly-back-1-december-hero.webp",
+      "sha256": "5444ee870fe284d7ad7e4a5b8f3583cf606d7d4e3973f5eab7274f3c1854812f",
+      "size_px": [
+        1600,
+        900
+      ],
+      "class": "permitted-media + brand composition",
+      "inputs": [
+        {
+          "source_url": "https://images.ctfassets.net/l40e281thfxr/6csiDTsdnOCtE97s4rmxLh/9a71ffc8f5e1de382d22b4cd71eac4da/PSA.png",
+          "page": "https://www.psacard.com/info/backlog-tracker",
+          "sha256": "ab011e2e0c252f1d490bb12679ccc762ffebffaacd8d8a23bc11ef01e649335c",
+          "class": "permitted-media"
+        },
+        {
+          "file": "buytrigger-badge-gengar-vaporeon-web.png",
+          "class": "brand-asset"
+        },
+        {
+          "file": "assets/publisher-logo-600x60.png",
+          "class": "brand-asset"
+        }
+      ]
+    }
+  ]
+}
