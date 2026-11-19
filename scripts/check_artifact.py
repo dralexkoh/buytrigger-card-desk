@@ -272,7 +272,9 @@ def assert_price_guide(slug, lead):
   assert '?' not in link['href'] and '#' not in link['href']
   rel=link.get('rel') or []
   rel=rel if isinstance(rel,list) else str(rel).split()
-  assert 'nofollow' in rel and 'noopener' in rel and 'sponsored' not in rel
+  assert 'nofollow' in rel and 'noopener' in rel and 'sponsored' in rel
+  disclosure=link.find_next_sibling(class_='affiliate-link-disclosure')
+  assert disclosure is not None and disclosure.get_text(strip=True)=='Affiliate link', slug+' '+row['data-id']
   image=row.select_one('img')
   path=card.get('image_path') or ''
   if path and (d/path).is_file():

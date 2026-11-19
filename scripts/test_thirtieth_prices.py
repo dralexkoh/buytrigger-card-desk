@@ -112,7 +112,7 @@ class PageTests(unittest.TestCase):
             rel = link['rel'] if isinstance(link.get('rel'), list) else str(link.get('rel')).split()
             self.assertIn('nofollow', rel)
             self.assertIn('noopener', rel)
-            self.assertNotIn('sponsored', rel)
+            self.assertIn('sponsored', rel)
             ids.add(link['href'].rsplit('/', 1)[-1])
         self.assertEqual(len(ids), 195)
         self.assertEqual(self.page.select_one('#price-table tbody tr .price-number').get_text(), self.page.select_one('#price-table tbody tr')['data-number'])
