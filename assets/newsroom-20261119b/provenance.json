@@ -1,0 +1,33 @@
+{
+  "reviewer": "Vault Newsroom",
+  "review_date": "2026-11-19",
+  "rights_basis": "Official Pokémon TCG Mega Evolution—Flowing Fists key art (three panels) published by @PokemonTCG on X with the 19 Nov 2026 announcement, composed on the BuyTrigger.Cards brand canvas, credited. Facts from The Pokémon Company International press release (press.pokemon.com, 19 Nov 2026 06:00 US time). No generated or redrawn franchise characters.",
+  "credit_line": "Key art: The Pokémon Company / @PokemonTCG on X. Graphic: BuyTrigger.Cards",
+  "crops_checked": [
+    "full-size 1600x900",
+    "390px phone width"
+  ],
+  "generation_prompt": null,
+  "tool": "Pillow composition (/workspace/nr1119b-work/compose.py)",
+  "outputs": [
+    {
+      "path": "assets/newsroom-20261119b/flowing-fists-official-saturday-6-february-hero.webp",
+      "sha256": "88b8f86bf63ed667e8dee339d492e3b1207c7c35866d58b2f95ec79f5f77c65e",
+      "size_px": [
+        1600,
+        900
+      ],
+      "class": "official-media + brand composition",
+      "inputs": [
+        {
+          "source_url": "https://x.com/PokemonTCG/status/2123416725777494381",
+          "files": [
+            "HXfkQFyWMAAKtj4",
+            "HXfkQUJWIAAcVz6",
+            "HXfkQkQW8AAYoQn"
+          ]
+        }
+      ]
+    }
+  ]
+}
