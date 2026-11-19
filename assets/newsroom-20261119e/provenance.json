@@ -1,0 +1,114 @@
+{
+  "reviewer": "Vault Newsroom",
+  "review_date": "2026-11-19",
+  "rights_basis": "TCGplayer catalogue references (exact English sealed product and cards), consistent with prior Delta Reign and Prismatic briefs, composed on the owner-locked BuyTrigger.Cards brand canvas. Prices from TCGCSV (TCGplayer market price, build 2026-11-19T20:04Z, pulled 19 Nov 20:40 London, and dated archives 30 Sep, 6, 12, 14, 15 Nov). No generated or redrawn franchise characters.",
+  "credit_line": "Card and pack images: TCGplayer · Card artwork © Pokémon · Prices: TCGplayer via TCGCSV · Graphic: BuyTrigger.Cards",
+  "crops_checked": [
+    "full-size",
+    "390px phone width"
+  ],
+  "generation_prompt": null,
+  "tool": "Pillow composition (/workspace/nr1119d-work/compose.py, helpers /workspace/nr1118b-work/compose_heroes.py)",
+  "reference_files": [],
+  "outputs": [
+    {
+      "path": "assets/newsroom-20261119e/delta-reign-raikou-ex-sir-spike-cools-hero.webp",
+      "sha256": "728478ac1f36b60a2e2b2e411728fea30b2f7e91def29eb409e6792e009b8cce",
+      "size_px": [
+        1600,
+        900
+      ],
+      "class": "permitted-media + brand-asset composition",
+      "inputs": [
+        {
+          "path": "/workspace/nr1119d-work/src/tcg-726574.jpg",
+          "source_url": "https://tcgplayer-cdn.tcgplayer.com/product/726574_in_1000x1000.jpg",
+          "sha256": "baae80d136c1e45b235af8e384e5c20af2fcc417a85ef2efea4a26b27756bf2f",
+          "class": "permitted-media (TCGplayer catalogue reference)"
+        },
+        {
+          "path": "/home/box/private/buytrigger/full/BuyTrigger-Cards-Grok-Handover-2026-11-10/workspace/brand/buytrigger-cards/skill/assets/buytrigger-badge-gengar-vaporeon-web.png",
+          "source_url": "owner brand asset",
+          "sha256": "303e7a82ef8ebe755375d864029ab623c55b6272c44cec15462539cc5c25a4fa",
+          "class": "brand-asset"
+        },
+        {
+          "path": "/workspace/nr1119d/assets/publisher-logo-600x60.png",
+          "source_url": "repo brand asset (wordmark)",
+          "sha256": "ae4ac346e762dfc13bb5a5b11211a6fc9d05f6117a3588e55a2b8ea2283d6aac",
+          "class": "brand-asset"
+        }
+      ]
+    },
+    {
+      "path": "assets/newsroom-20261119e/prismatic-roaring-moon-ex-sir-down-17-since-30-sep-hero.webp",
+      "sha256": "c4d99e0711c195280b88605d00ca2fd9338c63faacc747d010e8421adf1ae211",
+      "size_px": [
+        1600,
+        900
+      ],
+      "class": "permitted-media + brand-asset composition",
+      "inputs": [
+        {
+          "path": "/workspace/nr1119d-work/src/tcg-593294.jpg",
+          "source_url": "https://tcgplayer-cdn.tcgplayer.com/product/593294_in_1000x1000.jpg",
+          "sha256": "b9d2d93f5ae845e2ac76f30dddc0bf4cfe4d819fa3a2161cbdbfbb226ec617ff",
+          "class": "permitted-media (TCGplayer catalogue reference)"
+        },
+        {
+          "path": "/workspace/nr1119d-work/src/tcg-610517.jpg",
+          "source_url": "https://tcgplayer-cdn.tcgplayer.com/product/610517_in_1000x1000.jpg",
+          "sha256": "a05e028defb21be15f79499b58a74ff0bcdd25efef7c6d67b057701714f868bc",
+          "class": "permitted-media (TCGplayer catalogue reference)"
+        },
+        {
+          "path": "/home/box/private/buytrigger/full/BuyTrigger-Cards-Grok-Handover-2026-11-10/workspace/brand/buytrigger-cards/skill/assets/buytrigger-badge-gengar-vaporeon-web.png",
+          "source_url": "owner brand asset",
+          "sha256": "303e7a82ef8ebe755375d864029ab623c55b6272c44cec15462539cc5c25a4fa",
+          "class": "brand-asset"
+        },
+        {
+          "path": "/workspace/nr1119d/assets/publisher-logo-600x60.png",
+          "source_url": "repo brand asset (wordmark)",
+          "sha256": "ae4ac346e762dfc13bb5a5b11211a6fc9d05f6117a3588e55a2b8ea2283d6aac",
+          "class": "brand-asset"
+        }
+      ]
+    },
+    {
+      "path": "assets/newsroom-20261119e/delta-reign-golisopod-catching-golurk-hero.webp",
+      "sha256": "330c8ea2a30093846b915cb204def4e62689cc6925732c350ad36bd225c64bcb",
+      "size_px": [
+        1600,
+        900
+      ],
+      "class": "permitted-media + brand-asset composition",
+      "inputs": [
+        {
+          "path": "/workspace/nr1119d-work/src/tcg-727592.jpg",
+          "source_url": "https://tcgplayer-cdn.tcgplayer.com/product/727592_in_1000x1000.jpg",
+          "sha256": "965d072b576c720de912cb53908fcd185c403f2693121125eedc1a0e80374294",
+          "class": "permitted-media (TCGplayer catalogue reference)"
+        },
+        {
+          "path": "/workspace/nr1119d-work/src/tcg-728060.jpg",
+          "source_url": "https://tcgplayer-cdn.tcgplayer.com/product/728060_in_1000x1000.jpg",
+          "sha256": "e3477edef9bb69c8660db5a6524140062caa1056d3762ace5fc3603f71e91de4",
+          "class": "permitted-media (TCGplayer catalogue reference)"
+        },
+        {
+          "path": "/home/box/private/buytrigger/full/BuyTrigger-Cards-Grok-Handover-2026-11-10/workspace/brand/buytrigger-cards/skill/assets/buytrigger-badge-gengar-vaporeon-web.png",
+          "source_url": "owner brand asset",
+          "sha256": "303e7a82ef8ebe755375d864029ab623c55b6272c44cec15462539cc5c25a4fa",
+          "class": "brand-asset"
+        },
+        {
+          "path": "/workspace/nr1119d/assets/publisher-logo-600x60.png",
+          "source_url": "repo brand asset (wordmark)",
+          "sha256": "ae4ac346e762dfc13bb5a5b11211a6fc9d05f6117a3588e55a2b8ea2283d6aac",
+          "class": "brand-asset"
+        }
+      ]
+    }
+  ]
+}

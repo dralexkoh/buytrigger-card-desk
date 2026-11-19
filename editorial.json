@@ -2212,6 +2212,174 @@
   ],
   "wire": [
     {
+      "date": "2026-11-19",
+      "displayDate": "19 Nov · Price guide",
+      "category": "Price action",
+      "kind": "Market price guide",
+      "checkedAt": "2026-11-19T20:42:03Z",
+      "sourcePublishedAt": "2026-11-19",
+      "visual": "source-media",
+      "author": {
+        "id": "elliot-reed",
+        "name": "Elliot Reed",
+        "type": "named_ai_correspondent",
+        "label": "Correspondent",
+        "beat": "Markets & auctions"
+      },
+      "newsRevision": 1,
+      "chase_cards_credit": "Card image: TCGplayer. Card artwork © Pokémon.",
+      "id": "delta-reign-raikou-ex-sir-spike-cools-2026-11-19",
+      "eventKey": "delta-reign-raikou-ex-136-spike-cools-2026-11-19",
+      "title": "Raikou SIR’s Spike Is Already Cooling",
+      "summary": "Raikou was the Delta Reign card everyone was talking about this week, and the hype has already eased off a bit.\n\nThe Special Illustration Rare, 136/103, peaked at a TCGplayer market guide of US$131.75 for a raw copy on 15 November. On 19 November it was US$102.04. That’s 23% off the top in four days.\n\nIt slid a little each day on the way down: US$116.01 on 17 November, US$104.70 on 18 November, then US$102.04.\n\nZoom out and it still looks strong. A week ago, on 12 November, the guide was US$92.70, so Raikou is up 10% on the week. It’s also 25% above launch day, when it sat at US$81.56.\n\nFor comparison, the Mega Rayquaza ex Special Illustration Rare, 138/103, was US$283.09 on 19 November, down 3% on the week.\n\nOur read: the jump past US$130 was the kind of spike new sets get when one card catches fire. Raikou has settled back to around US$100, which is still well above where it opened. Delta Reign is two weeks old, so expect more swings.\n\nThese are guide prices for raw, ungraded copies in mixed condition, not individual sales.\n\nPrices: TCGplayer market price via TCGCSV, Raw, USD, 6, 12, 15, 17, 18 and 19 November 2026.",
+      "sourceLabel": "TCGplayer market price via TCGCSV",
+      "url": "https://tcgcsv.com/tcgplayer/3/24831/prices",
+      "ctaUrl": "/prices/delta-reign/",
+      "ctaLabel": "Every Delta Reign card’s price →",
+      "image": "assets/newsroom-20261119e/delta-reign-raikou-ex-sir-spike-cools-hero.webp",
+      "imageAlt": "Curated graphic: the Delta Reign Raikou ex 136/103 Special Illustration Rare. Its TCGplayer market guide was US$102.04 on 19 November, down 23% from US$131.75 on 15 November but up 10% in seven days.",
+      "imageCredit": "Card image: TCGplayer. Card artwork © Pokémon.",
+      "imageSourceUrl": "https://tcgplayer-cdn.tcgplayer.com/product/726574_in_1000x1000.jpg",
+      "chase_cards": [
+        {
+          "name": "Raikou ex",
+          "image": "assets/delta-reign/726574.jpg",
+          "alt": "Exact English Delta Reign Raikou ex 136/103 Special Illustration Rare catalogue reference.",
+          "set": "Delta Reign",
+          "number": "136/103",
+          "link": "https://www.tcgplayer.com/product/726574"
+        },
+        {
+          "name": "Mega Rayquaza ex",
+          "image": "assets/delta-reign/728061.jpg",
+          "alt": "Exact English Delta Reign Mega Rayquaza ex 138/103 Special Illustration Rare catalogue reference.",
+          "set": "Delta Reign",
+          "number": "138/103",
+          "link": "https://www.tcgplayer.com/product/728061"
+        },
+        {
+          "name": "Mega Golisopod ex",
+          "image": "assets/delta-reign/727592.jpg",
+          "alt": "Exact English Delta Reign Mega Golisopod ex 135/103 Special Illustration Rare catalogue reference.",
+          "set": "Delta Reign",
+          "number": "135/103",
+          "link": "https://www.tcgplayer.com/product/727592"
+        }
+      ]
+    },
+    {
+      "date": "2026-11-19",
+      "displayDate": "19 Nov · Price guide",
+      "category": "Price action",
+      "kind": "Market price guide",
+      "checkedAt": "2026-11-19T20:42:03Z",
+      "sourcePublishedAt": "2026-11-19",
+      "visual": "source-media",
+      "author": {
+        "id": "elliot-reed",
+        "name": "Elliot Reed",
+        "type": "named_ai_correspondent",
+        "label": "Correspondent",
+        "beat": "Markets & auctions"
+      },
+      "newsRevision": 1,
+      "chase_cards_credit": "Card image: TCGplayer. Card artwork © Pokémon.",
+      "id": "prismatic-roaring-moon-ex-sir-down-17-percent-since-30-sep-2026-11-19",
+      "eventKey": "prismatic-evolutions-roaring-moon-ex-162-since-30-sep-2026-11-19",
+      "title": "Roaring Moon SIR Keeps SLIDING",
+      "summary": "Every big chase in Prismatic Evolutions is an Eeveelution except one. Roaring Moon ex, 162/131, is the odd one out in the set’s top 10, and it hasn’t been spared the slide.\n\nIts Special Illustration Rare had a TCGplayer market guide of US$166.60 for a raw copy on 30 September. On 19 November it was US$137.69, down 17%.\n\nThe last week didn’t help. It was US$144.85 on 12 November, so it dropped another 5% in seven days.\n\nThat puts it in line with the Eeveelutions rather than apart from them. The Umbreon ex Special Illustration Rare, 161/131, is down 16% since 30 September to US$1,138.79.\n\nOur read: Roaring Moon was never the reason people opened Prismatic, so it follows the set’s mood. Right now that mood is cooling.\n\nThese are guide prices for raw, ungraded copies in mixed condition, not individual sales.\n\nPrices: TCGplayer market price via TCGCSV, Raw, USD, 30 September, 12 and 19 November 2026.",
+      "sourceLabel": "TCGplayer market price via TCGCSV",
+      "url": "https://tcgcsv.com/tcgplayer/3/23821/prices",
+      "ctaUrl": "/prices/prismatic-evolutions/",
+      "ctaLabel": "Open the Prismatic price page →",
+      "image": "assets/newsroom-20261119e/prismatic-roaring-moon-ex-sir-down-17-since-30-sep-hero.webp",
+      "imageAlt": "Curated graphic: the English Prismatic Evolutions booster pack and the Roaring Moon ex 162/131 Special Illustration Rare. Its TCGplayer market guide was US$137.69 on 19 November, down 17% since 30 September and 5% in seven days.",
+      "imageCredit": "Card and pack images: TCGplayer. Card artwork © Pokémon.",
+      "imageSourceUrl": "https://tcgplayer-cdn.tcgplayer.com/product/610517_in_1000x1000.jpg",
+      "chase_cards": [
+        {
+          "name": "Roaring Moon ex",
+          "image": "assets/prismatic-evolutions/610517.jpg",
+          "alt": "Exact English Prismatic Evolutions Roaring Moon ex 162/131 Special Illustration Rare catalogue reference.",
+          "set": "Prismatic Evolutions",
+          "number": "162/131",
+          "link": "https://www.tcgplayer.com/product/610517"
+        },
+        {
+          "name": "Umbreon ex",
+          "image": "assets/prismatic-evolutions/610516.jpg",
+          "alt": "Exact English Prismatic Evolutions Umbreon ex 161/131 Special Illustration Rare catalogue reference.",
+          "set": "Prismatic Evolutions",
+          "number": "161/131",
+          "link": "https://www.tcgplayer.com/product/610516"
+        },
+        {
+          "name": "Sylveon ex",
+          "image": "assets/prismatic-evolutions/610511.jpg",
+          "alt": "Exact English Prismatic Evolutions Sylveon ex 156/131 Special Illustration Rare catalogue reference.",
+          "set": "Prismatic Evolutions",
+          "number": "156/131",
+          "link": "https://www.tcgplayer.com/product/610511"
+        }
+      ]
+    },
+    {
+      "date": "2026-11-19",
+      "displayDate": "19 Nov · Price guide",
+      "category": "Price action",
+      "kind": "Market price guide",
+      "checkedAt": "2026-11-19T20:42:03Z",
+      "sourcePublishedAt": "2026-11-19",
+      "visual": "source-media",
+      "author": {
+        "id": "elliot-reed",
+        "name": "Elliot Reed",
+        "type": "named_ai_correspondent",
+        "label": "Correspondent",
+        "beat": "Markets & auctions"
+      },
+      "newsRevision": 1,
+      "chase_cards_credit": "Card image: TCGplayer. Card artwork © Pokémon.",
+      "id": "delta-reign-mega-golisopod-ex-sir-catching-mega-golurk-ex-2026-11-19",
+      "eventKey": "delta-reign-golisopod-135-golurk-137-since-launch-2026-11-19",
+      "title": "Golisopod Is Catching Golurk FAST",
+      "summary": "Two Mega Special Illustration Rares in Delta Reign started a long way apart. They’re not any more.\n\nOn launch day, 6 November, Mega Golurk ex, 137/103, had a TCGplayer market guide of US$32.05 for a raw copy. Mega Golisopod ex, 135/103, was US$21.12. That’s a gap of almost US$11.\n\nOn 19 November Golisopod was US$26.04, up 23% since launch. Golurk was US$28.90, down 10%. The gap is now under US$3.\n\nGolurk isn’t in free fall. It bottomed at US$24.70 on 14 November and is up 7% on the week from US$27.01 on 12 November. Golisopod is up 6.5% on the week too, from US$24.45. Both are rising right now, but Golisopod has done it from launch day.\n\nOur read: Golurk opened priced like the bigger card, and collectors have been closing that gap ever since. Delta Reign is still settling, so treat these as early numbers.\n\nThese are guide prices for raw, ungraded copies in mixed condition, not individual sales.\n\nPrices: TCGplayer market price via TCGCSV, Raw, USD, 6, 12, 14 and 19 November 2026.",
+      "sourceLabel": "TCGplayer market price via TCGCSV",
+      "url": "https://tcgcsv.com/tcgplayer/3/24831/prices",
+      "ctaUrl": "/prices/delta-reign/",
+      "ctaLabel": "Every Delta Reign card’s price →",
+      "image": "assets/newsroom-20261119e/delta-reign-golisopod-catching-golurk-hero.webp",
+      "imageAlt": "Curated graphic: the Delta Reign Mega Golisopod ex 135/103 and Mega Golurk ex 137/103 Special Illustration Rares. Since launch on 6 November, Golisopod is up 23% to US$26.04 and Golurk down 10% to US$28.90; the gap shrank from about US$11 to under US$3.",
+      "imageCredit": "Card images: TCGplayer. Card artwork © Pokémon.",
+      "imageSourceUrl": "https://tcgplayer-cdn.tcgplayer.com/product/727592_in_1000x1000.jpg",
+      "chase_cards": [
+        {
+          "name": "Mega Golisopod ex",
+          "image": "assets/delta-reign/727592.jpg",
+          "alt": "Exact English Delta Reign Mega Golisopod ex 135/103 Special Illustration Rare catalogue reference.",
+          "set": "Delta Reign",
+          "number": "135/103",
+          "link": "https://www.tcgplayer.com/product/727592"
+        },
+        {
+          "name": "Mega Golurk ex",
+          "image": "assets/delta-reign/728060.jpg",
+          "alt": "Exact English Delta Reign Mega Golurk ex 137/103 Special Illustration Rare catalogue reference.",
+          "set": "Delta Reign",
+          "number": "137/103",
+          "link": "https://www.tcgplayer.com/product/728060"
+        },
+        {
+          "name": "Raikou ex",
+          "image": "assets/delta-reign/726574.jpg",
+          "alt": "Exact English Delta Reign Raikou ex 136/103 Special Illustration Rare catalogue reference.",
+          "set": "Delta Reign",
+          "number": "136/103",
+          "link": "https://www.tcgplayer.com/product/726574"
+        }
+      ]
+    },
+    {
       "id": "psa-value-bulk-reportedly-reopening-1-december-2026-11-19",
       "eventKey": "psa-value-bulk-reopening-report-boscardhunter-2026-11-19",
       "date": "2026-11-19",
