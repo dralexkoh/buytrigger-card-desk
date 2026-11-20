@@ -73,6 +73,24 @@ Analytics accepts only the apex, `www` and the original GitHub project path. The
 
 The initial commercial placement is limited to Drops. Its two former press-product pictures use the existing house text-graphic treatment instead. Homepage/Feature content and artwork remain unchanged; homepage commercial placement is disabled pending its separate media review.
 
+## Buy on eBay card button
+
+Price pages and the card database (the set list and the opened card record) include a plain-text **Buy on eBay** button. It opens an eBay UK Buy It Now search for that card’s name, number and set. It is not a single listing, and it does not use an eBay logo. Raw and PSA 10 are separate searches. The campaign id is read from `commerce.json`. Clicks are counted with a `customid` for each placement: `price-raw`, `price-psa10`, `db-raw`, `db-psa10`, and `story-<slug>-raw` / `story-<slug>-psa10`.
+
+A card with no usable name, collector number or set is left without the button. Drops listing links are unchanged.
+
+To drop the same button into a story or Feature, add this block in the story HTML. Do not invent a price, and do not paste a finished eBay URL. `commerce.js` builds the link when the page loads. The placement must be `story-` plus the story slug, letters, numbers and hyphens only, and the finished custom id must stay within 64 characters.
+
+```html
+<div data-ebay-card
+  data-ebay-name="Mega Rayquaza ex"
+  data-ebay-number="138/103"
+  data-ebay-set="Delta Reign"
+  data-ebay-placement="story-your-story-slug"></div>
+```
+
+`data-ebay-set` can include a catalogue code such as `ME06: Delta Reign`. The helper uses the name after the code. On a narrow screen the two buttons stack. The visible label is the words “Buy on eBay”, plus a Raw or PSA 10 chip. The note under the button says the reader is going to eBay and that buytrigger.cards earns from qualifying purchases as an eBay Partner Network affiliate.
+
 
 ## V1.8.1 — approved Gengar / Vaporeon badge, 4 November 2026
 

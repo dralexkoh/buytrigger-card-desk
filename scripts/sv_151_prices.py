@@ -69,6 +69,7 @@ SPEC = {
     'filter_placeholder': 'Name, number or rarity',
     'region_label': 'SV 151 raw prices',
     'caption': 'English Pokémon Scarlet & Violet 151 raw prices in USD',
+    'search_set': 'SV: Scarlet & Violet 151',
     'accept_set': accept_set,
     'accept_image': accept_image,
     'intro': intro,

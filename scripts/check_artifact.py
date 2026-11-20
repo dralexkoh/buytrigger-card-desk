@@ -228,7 +228,7 @@ assert news_locs=={item['url'] for item in collect_news_entries(editorial)}
 locs={node.text for node in ET.fromstring((d/'sitemap.xml').read_text()).iter('{http://www.sitemaps.org/schemas/sitemap/0.9}loc')}
 assert all(article_url(a['slug']) in locs for a in editorial['articles'])
 assert all(news_url(w['id']) in locs for w in editorial.get('wire',[]))
-from raw_price_page import display_price, format_source_date, load_snapshot
+from raw_price_page import display_price, format_source_date, load_snapshot, without_ebay_buttons
 NAV_HREFS=(
  '/index.html#home','/market.html','/index.html#desk','/index.html#journal','/index.html#targets','/drops.html',
  '/index.html#about','/prices/thirtieth-anniversary/','/prices/tcg-modern/','/prices/delta-reign/','/prices/sv-151/','/prices/prismatic-evolutions/','/advertise/',
@@ -256,8 +256,9 @@ def assert_price_guide(slug, lead):
  assert len(rows)==len(snapshot['cards']), slug+' row count must follow the snapshot'
  text=page.get_text(' ')
  assert f'{lead}, as of {format_source_date(snapshot["source_date"])}' in text
- assert 'PSA' not in html, slug+' price page must not mention PSA'
- assert not re.search(r'\b(buy|sell|accumulate|invest)\b', text, re.I)
+ checked=without_ebay_buttons(html)
+ assert 'PSA' not in checked, slug+' price page must not mention PSA outside the eBay button'
+ assert not re.search(r'\b(buy|sell|accumulate|invest)\b', BeautifulSoup(checked,'html.parser').get_text(' '), re.I)
  by_id={str(card['tcgplayer_product_id']): card for card in snapshot['cards']}
  assert {row['data-id'] for row in rows}==set(by_id)
  for row in rows:
@@ -267,8 +268,17 @@ def assert_price_guide(slug, lead):
   assert row.select_one('.price-usd').get_text()==shown
   assert row.select_one('.price-name').get_text()==str(card['name']).strip()
   assert row.select_one('.price-number').get_text()==str(card['number']).strip()
-  link=row.select_one('a')
+  link=row.select_one('a.price-check')
   assert link['href']=='https://www.tcgplayer.com/product/'+row['data-id']
+  buys=row.select('a.ebay-buy')
+  assert len(buys)==2, slug+' missing eBay buttons for '+row['data-id']
+  assert {buy['href'].split('customid=')[-1] for buy in buys}=={'price-raw','price-psa10'}
+  for buy in buys:
+   assert buy['href'].startswith('https://www.ebay.co.uk/sch/i.html?')
+   assert buy.get('target')=='_blank'
+   buy_rel=buy.get('rel') or []
+   buy_rel=buy_rel if isinstance(buy_rel,list) else str(buy_rel).split()
+   assert 'nofollow' in buy_rel and 'noopener' in buy_rel and 'sponsored' in buy_rel
   assert '?' not in link['href'] and '#' not in link['href']
   rel=link.get('rel') or []
   rel=rel if isinstance(rel,list) else str(rel).split()

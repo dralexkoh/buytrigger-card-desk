@@ -103,7 +103,32 @@ class AffiliateDisclosureTests(unittest.TestCase):
                 self.assertFalse(disclosure.has_attr('hidden'))
                 self.assertIsNone(disclosure.get('title'))
             total += len(links)
+            ebay = page.select('#price-table a.ebay-buy')
+            self.assertEqual(len(ebay), len(cards) * 2, str(module.PAGE_REL))
+            raws = [link for link in ebay if 'customid=price-raw' in link['href']]
+            grades = [link for link in ebay if 'customid=price-psa10' in link['href']]
+            self.assertEqual(len(raws), len(cards), str(module.PAGE_REL))
+            self.assertEqual(len(grades), len(cards), str(module.PAGE_REL))
+            for link in ebay:
+                self.assertTrue(link['href'].startswith('https://www.ebay.co.uk/sch/i.html?'), link['href'])
+                self.assertEqual(link.get('target'), '_blank')
+                rel = link.get('rel') or []
+                rel = rel if isinstance(rel, list) else str(rel).split()
+                self.assertIn('nofollow', rel)
+                self.assertIn('sponsored', rel)
+                self.assertIn('noopener', rel)
+                self.assertNotIn('img', link.decode())
+            self.assertEqual(len(page.select('p.ebay-buy-note')), 1, str(module.PAGE_REL))
         self.assertEqual(total, 822)
+        ray = BeautifulSoup(delta_reign_prices.render_page(ROOT), 'html.parser')
+        chosen = ray.select_one('#price-table tr[data-number="138/103"]')
+        raw_link = chosen.select_one('a.ebay-buy[href*="customid=price-raw"]')
+        self.assertEqual(
+            raw_link['href'],
+            'https://www.ebay.co.uk/sch/i.html?_nkw=Mega+Rayquaza+ex+138%2F103+Delta+Reign'
+            '&LH_BIN=1&LH_PrefLoc=1&mkevt=1&mkcid=1&mkrid=710-53481-19255-0'
+            '&campid=5339239680&toolid=10001&customid=price-raw',
+        )
 
 
 if __name__ == '__main__':
