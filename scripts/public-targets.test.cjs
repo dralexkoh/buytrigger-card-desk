@@ -23,8 +23,8 @@ const feed=(cards=[card])=>({schemaVersion:2,generatedAt:'2026-11-06T12:00:00.00
 test('only the approved Cards endpoint may be configured',()=>{
  const endpoint='https://ukblxmvsqihnnyysvxes.supabase.co/functions/v1/public-card-targets';
  assert.equal(validateConfig({schemaVersion:1,enabled:true,endpoint}).endpoint,endpoint);
- assert.equal(validateConfig(datedConfig).review.psaUpside.length,39);
- assert.equal(datedConfig.review.psaUpside.filter(c=>c.kind==='watch').length,14);
+ assert.equal(validateConfig(datedConfig).review.psaUpside.length,40);
+ assert.equal(datedConfig.review.psaUpside.filter(c=>c.kind==='watch').length,15);
  for(const value of [endpoint+'?token=secret',endpoint+'#secret',endpoint.replace('ukblxmvsqihnnyysvxes','another-project'),endpoint.replace('https:','http:'),endpoint.replace('https://','https://user:secret@')]){
   assert.throws(()=>validateConfig({schemaVersion:1,enabled:true,endpoint:value}));
  }
@@ -95,16 +95,16 @@ test('saved main config still validates and every legacy card renders byte-for-b
  }
 });
 
-test('widened config keeps the 25 legacy cards and renders 14 watch cards from saved figures',()=>{
+test('widened config keeps the 25 legacy cards and renders 15 watch cards from saved figures',()=>{
  withClock(Date.parse('2026-11-20T00:00:00Z'),()=>{
-  assert.equal(validateConfig(datedConfig).review.psaUpside.length,39);
+  assert.equal(validateConfig(datedConfig).review.psaUpside.length,40);
  });
  const watch=datedConfig.review.psaUpside.filter(entry=>entry.kind==='watch');
  const legacy=datedConfig.review.psaUpside.filter(entry=>entry.kind!=='watch');
  const fx=datedConfig.fx;
- assert.equal(watch.length,14);
+ assert.equal(watch.length,15);
  assert.equal(watch.filter(entry=>entry.language==='en').length,7);
- assert.equal(watch.filter(entry=>entry.language==='ja').length,7);
+ assert.equal(watch.filter(entry=>entry.language==='ja').length,8);
  for(const entry of legacy){
   assert.equal(upsideCard(entry,entry.checkedAt??datedConfig.review.checkedAt,fx),legacyHtml[entry.id],entry.id);
  }
@@ -149,6 +149,15 @@ test('widened config keeps the 25 legacy cards and renders 14 watch cards from s
  assert.match(soldOut,/PSA 10 sale \(converted\)<\/dt><dd>¥27,698<\/dd>/);
  assert.match(soldOut,/Profit if PSA 10<\/dt><dd>—<\/dd>/);
  assert.match(soldOut,/Profit \(US\$\)<\/dt><dd>—<\/dd>/);
+ const palafin=watchCard(watch.find(entry=>entry.id==='palafin-ex-sv8a-207-ja'),'2026-11-20',fx);
+ assert.match(palafin,/<span class="kicker">WATCH · JAPANESE<\/span>/);
+ assert.match(palafin,/Palafin ex \(イルカマンex\)/);
+ assert.match(palafin,/Raw delivered<\/dt><dd>¥1,480<\/dd>/);
+ assert.match(palafin,/PSA Value grading<\/dt><dd>¥7,348<\/dd>/);
+ assert.match(palafin,/Card \+ grading<\/dt><dd>¥8,828<\/dd>/);
+ assert.match(palafin,/PSA 10 sale \(converted\)<\/dt><dd>¥8,370<\/dd>/);
+ assert.match(palafin,/Profit if PSA 10<\/dt><dd>-¥458<\/dd>/);
+ assert.match(palafin,/Profit \(US\$\)<\/dt><dd>-US\$2\.87<\/dd>/);
  for(const entry of watch){
   const one=watchCard(entry,entry.checkedAt,fx);
   const legacyShape=upsideCard(legacy[0],legacy[0].checkedAt??datedConfig.review.checkedAt);

@@ -1457,6 +1457,75 @@
             "floor": false
           }
         }
+      },
+      {
+        "id": "palafin-ex-sv8a-207-ja",
+        "name": "Palafin ex (イルカマンex)",
+        "set": "Terastal Festival ex (SV8a)",
+        "number": "207/187",
+        "printing": "Special Art Rare (SAR)",
+        "language": "ja",
+        "image": "assets/public-targets/palafin-ex-sv8a-207-ja.webp",
+        "imageSourceUrl": "https://assets.tcgdex.net/ja/SV/SV8a/207/high.webp",
+        "checkedAt": "2026-11-20",
+        "kind": "watch",
+        "market": {
+          "rawGuide": {
+            "amountMinor": 1000,
+            "currency": "USD",
+            "type": "guide",
+            "source": "PriceCharting ungraded price guide",
+            "sourceUrl": "https://www.pricecharting.com/game/pokemon-japanese-terastal-festival/palafin-ex-207",
+            "observedOn": "2026-11-20",
+            "confidence": "medium"
+          },
+          "rawAsk": {
+            "amountMinor": 1480,
+            "currency": "JPY",
+            "type": "ask",
+            "source": "Yuyu-tei shop sell price, tax included, in stock",
+            "sourceUrl": "https://yuyu-tei.jp/sell/poc/card/sv08a/10452",
+            "observedOn": "2026-11-20",
+            "confidence": "high"
+          },
+          "psa10Guide": {
+            "amountMinor": 5400,
+            "currency": "USD",
+            "type": "guide",
+            "source": "PriceCharting PSA 10 price guide",
+            "sourceUrl": "https://www.pricecharting.com/game/pokemon-japanese-terastal-festival/palafin-ex-207",
+            "observedOn": "2026-11-20",
+            "confidence": "medium"
+          },
+          "psa10Median30d": {
+            "amountMinor": 5250,
+            "currency": "USD",
+            "type": "median",
+            "source": "PriceCharting PSA 10 sold list, 30-day median of accepted sold prices (titles hand-checked)",
+            "sourceUrl": "https://www.pricecharting.com/game/pokemon-japanese-terastal-festival/palafin-ex-207",
+            "observedOn": "2026-11-20",
+            "confidence": "medium"
+          }
+        },
+        "grading": {
+          "gemRatePct": null,
+          "psa10Pop": null,
+          "totalGraded": null
+        },
+        "liquidity": {
+          "rawSold30d": {
+            "value": 13,
+            "source": "PriceCharting sold list (eBay/TCGplayer sales shown on page)",
+            "observedOn": "2026-11-20",
+            "floor": false
+          },
+          "psa10Sold30d": {
+            "value": 20,
+            "source": "PriceCharting sold list (eBay/TCGplayer sales shown on page)",
+            "observedOn": "2026-11-20",
+            "floor": false
+          }
+        }
       }
     ]
   }
