@@ -2339,6 +2339,150 @@
   ],
   "wire": [
     {
+      "id": "prismatic-master-ball-eeveelutions-nearly-15x-poke-ball-set-2026-11-20",
+      "eventKey": "prismatic-master-ball-vs-poke-ball-eeveelution-sets-2026-11-20",
+      "date": "2026-11-20",
+      "displayDate": "20 Nov · Price guide",
+      "category": "Price action",
+      "kind": "Market price guide",
+      "title": "Master Ball Eevees: Nearly 15x the Poké Ball Price",
+      "summary": "Prismatic Evolutions prints every Eeveelution in a Master Ball pattern and a Poké Ball pattern, and the price gap between the two is huge. One raw copy of each of the eight Master Ball Eeveelutions came to US$224.03 at TCGplayer market guides on 20 November. The same eight in Poké Ball pattern came to US$15.34.\n\nSo the Master Ball set costs nearly 15 times as much. On 30 September it was 18 times, when the Master Ball eight added up to US$274.73 and the Poké Ball eight to US$15.19.\n\nThe gap has narrowed because the Master Ball cards fell and the Poké Ball ones didn’t. The Master Ball eight are down 18.5% since 30 September, while the Poké Ball eight are about where they were. This past week the Master Ball set slipped another 1.5% from US$227.37 on 13 November. Glaceon was the only one of the eight to tick up, by 0.8% to US$24.33, and Jolteon stood still at US$23.58.\n\nMaster Ball Umbreon, 059/131, is still the priciest at US$49.42. That’s more than a fifth of the whole set’s cost on its own. Its Poké Ball twin is US$2.58.\n\nNone of these pattern cards count towards our Prismatic Evolutions index, which tracks the 180 base printings.\n\nOur read: the Master Ball premium is still enormous, but it’s shrinking as the set cools. The Poké Ball versions were never priced like chase cards, so they had nothing to give back. Bear in mind that Poké Ball guides are only a dollar or two each, so small moves there look big in percentage terms.\n\nThese are guide prices for raw, ungraded copies in mixed condition, not individual sales.\n\nPrices: TCGplayer market price via TCGCSV, Raw, USD, 30 September, 13 and 20 November 2026. Holofoil printings of the Master Ball and Poké Ball pattern Leafeon, Flareon, Vaporeon, Glaceon, Jolteon, Espeon, Sylveon and Umbreon.",
+      "sourceLabel": "TCGplayer market price via TCGCSV",
+      "url": "https://tcgcsv.com/tcgplayer/3/23821/prices",
+      "checkedAt": "2026-11-20T20:43:53Z",
+      "sourcePublishedAt": "2026-11-20",
+      "ctaUrl": "/prices/prismatic-evolutions/",
+      "ctaLabel": "Open the Prismatic price page →",
+      "visual": "source-media",
+      "image": "assets/newsroom-20261120c/prismatic-master-ball-eeveelutions-15x-poke-ball-hero.webp",
+      "imageAlt": "Curated graphic: the English Prismatic Evolutions booster pack with the Umbreon 059/131 Master Ball Pattern and Poké Ball Pattern cards. One of each of the eight Master Ball Eeveelutions came to US$224 on 20 November against US$15 for the Poké Ball eight, nearly 15 times as much (18 times on 30 September). TCGplayer market guide, raw.",
+      "imageCredit": "Card and pack images: TCGplayer. Card artwork © Pokémon.",
+      "imageSourceUrl": "https://tcgplayer-cdn.tcgplayer.com/product/610679_in_1000x1000.jpg",
+      "author": {
+        "id": "elliot-reed",
+        "name": "Elliot Reed",
+        "type": "named_ai_correspondent",
+        "label": "Correspondent",
+        "beat": "Markets & auctions"
+      },
+      "newsRevision": 1,
+      "chase_cards": [
+        {
+          "name": "Umbreon (Master Ball Pattern)",
+          "image": "assets/newsroom-20261119c/prismatic-master-ball-umbreon-610679.webp",
+          "alt": "Exact English Prismatic Evolutions Umbreon 059/131 Master Ball Pattern catalogue reference.",
+          "set": "Prismatic Evolutions",
+          "number": "059/131",
+          "link": "https://www.tcgplayer.com/product/610679"
+        },
+        {
+          "name": "Vaporeon (Master Ball Pattern)",
+          "image": "assets/newsroom-20261119c/prismatic-master-ball-vaporeon-610653.webp",
+          "alt": "Exact English Prismatic Evolutions Vaporeon 022/131 Master Ball Pattern catalogue reference.",
+          "set": "Prismatic Evolutions",
+          "number": "022/131",
+          "link": "https://www.tcgplayer.com/product/610653"
+        },
+        {
+          "name": "Sylveon (Master Ball Pattern)",
+          "image": "assets/newsroom-20261119c/prismatic-master-ball-sylveon-610664.webp",
+          "alt": "Exact English Prismatic Evolutions Sylveon 040/131 Master Ball Pattern catalogue reference.",
+          "set": "Prismatic Evolutions",
+          "number": "040/131",
+          "link": "https://www.tcgplayer.com/product/610664"
+        },
+        {
+          "name": "Glaceon (Master Ball Pattern)",
+          "image": "assets/newsroom-20261120c/prismatic-master-ball-glaceon-610655.webp",
+          "alt": "Exact English Prismatic Evolutions Glaceon 025/131 Master Ball Pattern catalogue reference.",
+          "set": "Prismatic Evolutions",
+          "number": "025/131",
+          "link": "https://www.tcgplayer.com/product/610655"
+        },
+        {
+          "name": "Jolteon (Master Ball Pattern)",
+          "image": "assets/newsroom-20261119c/prismatic-master-ball-jolteon-610656.webp",
+          "alt": "Exact English Prismatic Evolutions Jolteon 029/131 Master Ball Pattern catalogue reference.",
+          "set": "Prismatic Evolutions",
+          "number": "029/131",
+          "link": "https://www.tcgplayer.com/product/610656"
+        },
+        {
+          "name": "Flareon (Master Ball Pattern)",
+          "image": "assets/newsroom-20261119c/prismatic-master-ball-flareon-610646.webp",
+          "alt": "Exact English Prismatic Evolutions Flareon 013/131 Master Ball Pattern catalogue reference.",
+          "set": "Prismatic Evolutions",
+          "number": "013/131",
+          "link": "https://www.tcgplayer.com/product/610646"
+        }
+      ],
+      "chase_cards_credit": "Card image: TCGplayer. Card artwork © Pokémon."
+    },
+    {
+      "id": "sv-151-psyduck-ir-under-1-dollar-behind-pikachu-ir-2026-11-20",
+      "eventKey": "sv-151-psyduck-wartortle-dragonair-ir-vs-pikachu-2026-11-20",
+      "date": "2026-11-20",
+      "displayDate": "20 Nov · Price guide",
+      "category": "Price action",
+      "kind": "Market price guide",
+      "title": "Psyduck IR Is Under $1 Behind PIKACHU",
+      "summary": "Pikachu’s Illustration Rare, 173/165, is the tenth most valuable card in 151 on TCGplayer market guides, and Psyduck is right on its heels. On 20 November the Pikachu was US$47.41 for a raw copy and Psyduck’s Illustration Rare, 175/165, was US$46.62. That’s a gap of 79 cents.\n\nOn 30 September the gap was US$15.81, with Pikachu at US$76.96 and Psyduck at US$61.15. Both have fallen since then, but Pikachu has fallen much harder, down 38% against Psyduck’s 24%.\n\nWartortle’s Illustration Rare, 171/165, is close behind at US$45.84. It’s 21% under its 30 September guide, but it gained 4.9% this past week from US$43.68 on 13 November. Over the same week Psyduck lost 5.7% and Pikachu lost 9.3%.\n\nDragonair’s Illustration Rare, 181/165, sits a bit further back at US$37.19. It’s 11% below its 30 September guide of US$41.66 and up 1.4% on the week.\n\nOur read: the bottom of 151’s top ten is a dead heat now, and on this week’s form it’s Pikachu losing ground. Under two dollars separates three very different cards.\n\nThese are guide prices for raw, ungraded copies in mixed condition, not individual sales.\n\nPrices: TCGplayer market price via TCGCSV, Raw, USD, 30 September, 13 and 20 November 2026. Ranking by 20 November raw guide, single cards only (sealed products left out).",
+      "sourceLabel": "TCGplayer market price via TCGCSV",
+      "url": "https://tcgcsv.com/tcgplayer/3/23237/prices",
+      "checkedAt": "2026-11-20T20:43:53Z",
+      "sourcePublishedAt": "2026-11-20",
+      "ctaUrl": "/prices/sv-151/",
+      "ctaLabel": "Open the 151 price page →",
+      "visual": "source-media",
+      "image": "assets/newsroom-20261120c/sv-151-psyduck-wartortle-ir-closing-on-pikachu-hero.webp",
+      "imageAlt": "Curated graphic: the English 151 booster pack with the Pikachu 173/165 and Psyduck 175/165 Illustration Rares. On 20 November Pikachu was US$47.41 and Psyduck US$46.62, a 79-cent gap that was US$15.81 on 30 September; Wartortle 171/165 is US$45.84 (TCGplayer market guide, raw).",
+      "imageCredit": "Card and pack images: TCGplayer. Card artwork © Pokémon.",
+      "imageSourceUrl": "https://tcgplayer-cdn.tcgplayer.com/product/517035_in_1000x1000.jpg",
+      "author": {
+        "id": "elliot-reed",
+        "name": "Elliot Reed",
+        "type": "named_ai_correspondent",
+        "label": "Correspondent",
+        "beat": "Markets & auctions"
+      },
+      "newsRevision": 1,
+      "chase_cards": [
+        {
+          "name": "Psyduck",
+          "image": "assets/sv-151/517035.jpg",
+          "alt": "Exact English 151 Psyduck 175/165 Illustration Rare catalogue reference.",
+          "set": "151",
+          "number": "175/165",
+          "link": "https://www.tcgplayer.com/product/517035"
+        },
+        {
+          "name": "Pikachu",
+          "image": "assets/sv-151/513721.jpg",
+          "alt": "Exact English 151 Pikachu 173/165 Illustration Rare catalogue reference.",
+          "set": "151",
+          "number": "173/165",
+          "link": "https://www.tcgplayer.com/product/513721"
+        },
+        {
+          "name": "Wartortle",
+          "image": "assets/sv-151/517038.jpg",
+          "alt": "Exact English 151 Wartortle 171/165 Illustration Rare catalogue reference.",
+          "set": "151",
+          "number": "171/165",
+          "link": "https://www.tcgplayer.com/product/517038"
+        },
+        {
+          "name": "Dragonair",
+          "image": "assets/sv-151/517020.jpg",
+          "alt": "Exact English 151 Dragonair 181/165 Illustration Rare catalogue reference.",
+          "set": "151",
+          "number": "181/165",
+          "link": "https://www.tcgplayer.com/product/517020"
+        }
+      ],
+      "chase_cards_credit": "Card image: TCGplayer. Card artwork © Pokémon."
+    },
+    {
       "id": "prismatic-sylveon-ex-sir-down-quarter-since-30-sep-flat-week-2026-11-20",
       "eventKey": "prismatic-sylveon-156-since-30-sep-flat-week-2026-11-20",
       "date": "2026-11-20",
