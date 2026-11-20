@@ -242,7 +242,7 @@ function mount(){
  document.getElementById('set-sort').onchange=e=>{sort=e.target.value;drawCards();};
  const root=document.getElementById('main');
  root.onclick=e=>{
-  if(e.target.closest('a.ebay-buy'))return;
+  if(e.target.closest('.ebay-bar a'))return;
   const tab=e.target.closest('[data-set-tab]');
   if(tab){
    root.querySelectorAll('[data-set-tab]').forEach(b=>{const on=b===tab;b.setAttribute('aria-selected',String(on));b.tabIndex=on?0:-1;document.getElementById('set-panel-'+b.dataset.setTab).hidden=!on;});

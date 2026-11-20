@@ -62,7 +62,8 @@ function createPlacementTracker(win){
  return{tick,click,hidden};
 }
 const NOT_A_SET=new Set(['Common','Uncommon','Rare','Double Rare','Ultra Rare','Illustration Rare','Special Illustration Rare','Hyper Rare','Mega Hyper Rare','ACE SPEC Rare','TCG Modern','30th Anniversary']);
-const CARD_NOTE='Opens an eBay UK Buy It Now search for this card’s name, number and set, not a single listing. Search results, seller prices and availability vary. As an eBay Partner Network affiliate, we earn from qualifying purchases.';
+const EBAY_WORDMARK='assets/ebay/ebay-wordmark-b4-trimmed.png';
+const PRICE_NOTE='Each “Buy on eBay” control opens an eBay UK Buy It Now search for that card’s name, number and set, not a single listing. Search results, seller prices and availability vary. These are affiliate links: as an eBay Partner Network partner, we may earn from qualifying purchases.';
 function cleanName(value){
   const name=String(value??'').replace(/\s+/g,' ').trim();
   if(name.length<2||name.length>80||!/[A-Za-z]/.test(name)||!/^[A-Za-z0-9][A-Za-z0-9 '&.,()[\]!:-]*$/.test(name))return null;
@@ -103,24 +104,28 @@ function cardSearchUrl(card,config,placement,grade){
   u.searchParams.set('LH_PrefLoc','1');
   return ebayLink(u.href,config,custom);
 }
-function ebayButton(card,href,grade,detail){
-  const chip=grade==='psa10'?'PSA 10':'RAW';
-  const where=grade==='psa10'?'PSA 10':'raw';
-  const aria=`Buy on eBay: ${card.name}, ${card.number}, ${card.set}, ${where}. Opens an eBay UK Buy It Now search.`;
-  return `<a class="ebay-buy${detail?' ebay-buy-detail':''}" href="${esc(href)}" target="_blank" rel="nofollow sponsored noopener" aria-label="${esc(aria)}">Buy on eBay <span class="ebay-buy-chip">${chip}</span> <span class="ebay-buy-mark" aria-hidden="true">↗</span></a>`;
+function ebayBar(card,raw,psa,line){
+  const rel='rel="nofollow sponsored noopener" target="_blank"';
+  const who=esc(card.name+' '+card.number);
+  return `<div class="ebay-bar ${line?'ebay-bar-line':'ebay-bar-grey'}" role="group" aria-label="Buy on eBay"><a class="ebay-brand" href="${esc(raw)}" ${rel}><span>Buy on</span><img class="ebay-logo" src="${EBAY_WORDMARK}" alt="eBay" width="783" height="324"><span class="visually-hidden">, raw, UK Buy It Now search for ${who}</span></a><a class="ebay-seg" href="${esc(raw)}" ${rel}>RAW<span class="visually-hidden">, ${who}</span></a><a class="ebay-seg" href="${esc(psa)}" ${rel}>PSA 10<span class="visually-hidden">, ${who}</span></a></div>`;
+}
+function ebayShop(card,raw,psa,id){
+  const name=String(card?.name??'').replace(/\s+/g,' ').trim();
+  const set=String(card?.set??'').replace(/\s+/g,' ').trim();
+  const line=`Opens an eBay UK Buy It Now search for ${name}, ${set}. Search results, seller prices and availability vary.`;
+  return `<aside class="shop-strip" aria-label="Shop this card on eBay"><div class="shop-strip-head"><span class="kicker red-text">Shop this card</span><span class="shop-affil">Affiliate link</span></div><p>${esc(line)}</p>${ebayBar(id,raw,psa,true)}</aside>`;
 }
 function ebayCardBlock(card,config,options={}){
   const id=cleanCard(card);
   const raw=cardSearchUrl(card,config,options.placement,'raw');
   const psa=cardSearchUrl(card,config,options.placement,'psa10');
   if(!id||!raw||!psa)return '';
-  const buys=`<span class="ebay-buys${options.stack?' ebay-buys-stack':''}">${ebayButton(id,raw,'raw',options.detail)}${ebayButton(id,psa,'psa10',options.detail)}</span>`;
-  const pill=options.pill?'<small class="affiliate-link-disclosure">Affiliate link</small>':'';
-  const note=options.note==='page'?ebayPageNote():options.note?`<p class="ebay-buy-note">${CARD_NOTE}</p>`:'';
-  return buys+pill+note;
+  if(options.variant==='shop'||options.detail)return ebayShop(card,raw,psa,id);
+  return ebayBar(id,raw,psa,false);
 }
-function ebayPageNote(){return `<p class="ebay-buy-note"><strong>How the eBay button works.</strong> ${CARD_NOTE}</p>`;}
-const api={ebayLink,isFresh,activeOffers,affiliateCard,disclosure,createPlacementTracker,cleanCard,cardSearchUrl,ebayCardBlock,ebayPageNote};
+function ebayPageNote(){return `<div class="ebay-footnote"><p><strong>About the eBay links.</strong> ${PRICE_NOTE} “Check price” is a separate affiliate link.</p></div>`;}
+function ebayListNote(){return `<div class="ebay-footnote"><p><strong>About the eBay links.</strong> ${PRICE_NOTE}</p></div>`;}
+const api={ebayLink,isFresh,activeOffers,affiliateCard,disclosure,createPlacementTracker,cleanCard,cardSearchUrl,ebayCardBlock,ebayPageNote,ebayListNote};
 if(typeof module==='object'&&module.exports)module.exports=api;
 if(root)root.BTCommerce=api;
 if(!root?.document)return;
@@ -165,13 +170,12 @@ function mountCardSlots(){
       set:el.getAttribute('data-ebay-set')
     },config,{
       placement:el.getAttribute('data-ebay-placement')||'',
-      detail:el.getAttribute('data-ebay-detail')!=='tile',
-      stack:el.getAttribute('data-ebay-stack')==='1',
-      pill:true,
-      note:el.getAttribute('data-ebay-note')==='0'?false:'card'
+      variant:el.getAttribute('data-ebay-detail')==='tile'?'row':'shop'
     });
     el.dataset.ebayReady='1';
   }
+  const grid=doc.querySelector('#set-grid');
+  if(grid&&!grid.parentElement.querySelector(':scope > .ebay-footnote'))grid.insertAdjacentHTML('afterend',ebayListNote());
 }
 doc.addEventListener('click',e=>{
   const link=e.target.closest('[data-offer-link]');

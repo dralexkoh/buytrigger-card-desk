@@ -27,11 +27,7 @@
 .price-page .price-card img{width:52px;height:auto;display:block;background:#fff;border-radius:4px}
 .price-page .price-card-fallback{display:block;width:72px;font-size:11px;line-height:1.3;color:#626269}
 .price-page .price-link a.price-check{color:#df242b;font-weight:800;white-space:nowrap}
-.price-page .price-link a.ebay-buy{color:#fff}
-.price-page .price-out{display:flex;flex-direction:column;align-items:flex-start;gap:8px;max-width:100%}
-.price-page .ebay-buys{flex-wrap:nowrap}
-.price-page .ebay-buy-note{margin:16px 0 0}
-.price-page .affiliate-link-disclosure{display:inline-block;padding:2px 6px;border-radius:4px;background:#ecece8;color:#171719;font-size:11px;font-weight:700;line-height:1.35;letter-spacing:.2px}
+.price-page .price-out{display:flex;flex-direction:column;align-items:flex-start;gap:6px;max-width:100%}
 .price-page #price-empty{margin:14px 0 0;font-weight:700}
 .price-page .price-image-credit{padding:0 56px;margin:8px 0 0;color:#626269;font-size:13px}
 .price-page .visually-hidden{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
@@ -56,9 +52,7 @@
  .price-page .price-table .price-card img{width:72px}
  .price-page .price-table .price-usd{font-size:18px}
  .price-page .price-table .price-link{grid-column:1 / -1;margin-top:8px}
- .price-page .ebay-buys{flex-wrap:wrap}
  .price-page .price-table .price-link a.price-check{min-height:44px;display:inline-flex;align-items:center}
- .price-page .price-table .affiliate-link-disclosure{font-size:12px}
  .price-page .price-subset,.price-page .price-set,.price-page .price-rarity{font-size:13px;color:#626269}
  .price-page .price-image-credit{padding-left:20px;padding-right:20px}
 }

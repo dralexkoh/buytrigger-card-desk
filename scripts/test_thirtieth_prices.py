@@ -101,7 +101,7 @@ class PageTests(unittest.TestCase):
             self.assertFalse(href.startswith('/'), href)
 
     def test_rows_use_local_images_and_plain_tcgplayer_links(self):
-        images = self.page.select('#price-table img')
+        images = self.page.select('#price-table .price-card img')
         self.assertEqual(len(images), 195)
         self.assertTrue(all(img['src'].startswith('assets/thirtieth/') and img['src'].endswith('.jpg') for img in images))
         links = self.page.select('#price-table a.price-check')
@@ -157,7 +157,7 @@ class PageTests(unittest.TestCase):
             }],
         }
         page = BeautifulSoup(prices.render_page(ROOT, snapshot), 'html.parser')
-        self.assertIsNone(page.select_one('#price-table img'))
+        self.assertIsNone(page.select_one('#price-table .price-card img'))
         self.assertIn('Example', page.select_one('.price-card-fallback').get_text())
         self.assertNotIn('http', page.select_one('.price-card').decode())
 

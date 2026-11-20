@@ -75,11 +75,15 @@ The initial commercial placement is limited to Drops. Its two former press-produ
 
 ## Buy on eBay card button
 
-Price pages and the card database (the set list and the opened card record) include a plain-text **Buy on eBay** button. It opens an eBay UK Buy It Now search for that card’s name, number and set. It is not a single listing, and it does not use an eBay logo. Raw and PSA 10 are separate searches. The campaign id is read from `commerce.json`. Clicks are counted with a `customid` for each placement: `price-raw`, `price-psa10`, `db-raw`, `db-psa10`, and `story-<slug>-raw` / `story-<slug>-psa10`.
+Price rows and card-database set lists use one light-grey pill: Buy on, then the official eBay wordmark, then RAW and PSA 10. The wordmark and RAW open the raw eBay UK Buy It Now search. PSA 10 opens the graded search. On a phone the pill is one full-width bar, with the wordmark on the left and RAW / PSA 10 on the right. The red Check price link stays under the pill on price pages. One note under the table says where the links go, that results and prices vary, that buytrigger.cards may earn from qualifying purchases as an eBay Partner Network partner, and that Check price is a separate affiliate link.
 
-A card with no usable name, collector number or set is left without the button. Drops listing links are unchanged.
+The opened card record, and a story or Feature block, use a Shop this card box instead: a red top rule, an Affiliate link label, one line naming the search, and a white hairline pill with the same three links.
 
-To drop the same button into a story or Feature, add this block in the story HTML. Do not invent a price, and do not paste a finished eBay URL. `commerce.js` builds the link when the page loads. The placement must be `story-` plus the story slug, letters, numbers and hyphens only, and the finished custom id must stay within 64 characters.
+The wordmark is `assets/ebay/ebay-wordmark-b4-trimmed.png`, the official single-color file, trimmed of empty margin only. Use that file as it is. Do not recolour it, stretch it, or add a shadow or filter. The campaign id is read from `commerce.json`. Clicks are counted with `price-raw`, `price-psa10`, `db-raw`, `db-psa10`, and `story-<slug>-raw` / `story-<slug>-psa10`.
+
+A card with no usable name, collector number or set is left without the pill. Drops listing links are unchanged.
+
+To drop the shop box into a story or Feature, add this block in the story HTML. Do not invent a price, and do not paste a finished eBay URL. `commerce.js` builds the links when the page loads. The placement must be `story-` plus the story slug, letters, numbers and hyphens only, and the finished custom id must stay within 64 characters.
 
 ```html
 <div data-ebay-card
@@ -89,7 +93,7 @@ To drop the same button into a story or Feature, add this block in the story HTM
   data-ebay-placement="story-your-story-slug"></div>
 ```
 
-`data-ebay-set` can include a catalogue code such as `ME06: Delta Reign`. The helper uses the name after the code. On a narrow screen the two buttons stack. The visible label is the words “Buy on eBay”, plus a Raw or PSA 10 chip. The note under the button says the reader is going to eBay and that buytrigger.cards earns from qualifying purchases as an eBay Partner Network affiliate.
+`data-ebay-set` can include a catalogue code such as `ME06: Delta Reign`. The search uses the name after the code. The visible wordmark is the image, with alt text eBay, not typed multi-colour letters.
 
 
 ## V1.8.1 — approved Gengar / Vaporeon badge, 4 November 2026

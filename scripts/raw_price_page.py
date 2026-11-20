@@ -258,13 +258,13 @@ def ebay_buttons(cards):
     return {row['id']: row['html'] for row in parsed['rows']}, parsed['pageNote']
 
 
-_EBAY_BUTTON = re.compile(r'<a\b[^>]*\bclass="[^"]*\bebay-buy\b[^"]*"[^>]*>.*?</a>', re.S)
-_EBAY_NOTE = re.compile(r'<p\b[^>]*\bclass="[^"]*\bebay-buy-note\b[^"]*"[^>]*>.*?</p>', re.S)
+_EBAY_BAR = re.compile(r'<div\b[^>]*\bclass="[^"]*\bebay-bar\b[^"]*"[^>]*>.*?</div>', re.S)
+_EBAY_NOTE = re.compile(r'<div\b[^>]*\bclass="[^"]*\bebay-footnote\b[^"]*"[^>]*>.*?</div>', re.S)
 
 
 def without_ebay_buttons(rendered: str) -> str:
-    """Remove the labelled eBay buttons and note before the trading-language check."""
-    cleaned = _EBAY_BUTTON.sub('', rendered)
+    """Remove the eBay pill and the table note before the trading-language check."""
+    cleaned = _EBAY_BAR.sub('', rendered)
     cleaned = _EBAY_NOTE.sub('', cleaned)
     return cleaned.replace('>Buy</th>', '></th>')
 
@@ -301,7 +301,7 @@ def _row(card, spec, buys=''):
         f'<td class="price-usd">{shown}</td>'
         f'<td class="price-link"><span class="price-out">{buys}'
         f'<a class="price-check" href="{href}" rel="nofollow sponsored noopener" target="_blank">Check price</a>'
-        f'<small class="affiliate-link-disclosure">Affiliate link</small></span></td>'
+        f'</span></td>'
         '</tr>'
     )
 

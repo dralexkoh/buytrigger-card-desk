@@ -65,7 +65,7 @@ class SnapshotFollowsEdits(unittest.TestCase):
 
 
 class AffiliateDisclosureTests(unittest.TestCase):
-    """Every rendered tcgplayer.com link on a price page carries a visible label."""
+    """Check price stays a plain catalogue link. The eBay note under the table names it."""
 
     def test_every_rendered_tcgplayer_link_has_an_affiliate_disclosure(self):
         modules = (
@@ -95,34 +95,39 @@ class AffiliateDisclosureTests(unittest.TestCase):
                 rel = rel if isinstance(rel, list) else str(rel).split()
                 self.assertIn('sponsored', rel)
                 self.assertIn('noopener', rel)
-                disclosure = link.find_next_sibling(class_='affiliate-link-disclosure')
-                self.assertIsNotNone(disclosure, href)
-                self.assertIs(disclosure.parent, link.parent)
-                self.assertEqual(disclosure.get_text(strip=True), 'Affiliate link')
-                self.assertNotIn('visually-hidden', disclosure.get('class') or [])
-                self.assertFalse(disclosure.has_attr('hidden'))
-                self.assertIsNone(disclosure.get('title'))
+                self.assertIsNone(link.find_next_sibling(class_='affiliate-link-disclosure'), href)
+            self.assertEqual(page.select('#price-table .affiliate-link-disclosure'), [], str(module.PAGE_REL))
             total += len(links)
-            ebay = page.select('#price-table a.ebay-buy')
-            self.assertEqual(len(ebay), len(cards) * 2, str(module.PAGE_REL))
-            raws = [link for link in ebay if 'customid=price-raw' in link['href']]
-            grades = [link for link in ebay if 'customid=price-psa10' in link['href']]
-            self.assertEqual(len(raws), len(cards), str(module.PAGE_REL))
-            self.assertEqual(len(grades), len(cards), str(module.PAGE_REL))
-            for link in ebay:
-                self.assertTrue(link['href'].startswith('https://www.ebay.co.uk/sch/i.html?'), link['href'])
-                self.assertEqual(link.get('target'), '_blank')
-                rel = link.get('rel') or []
-                rel = rel if isinstance(rel, list) else str(rel).split()
-                self.assertIn('nofollow', rel)
-                self.assertIn('sponsored', rel)
-                self.assertIn('noopener', rel)
-                self.assertNotIn('img', link.decode())
-            self.assertEqual(len(page.select('p.ebay-buy-note')), 1, str(module.PAGE_REL))
+            bars = page.select('#price-table .ebay-bar')
+            self.assertEqual(len(bars), len(cards), str(module.PAGE_REL))
+            for bar in bars:
+                parts = bar.select('a')
+                self.assertEqual(len(parts), 3, str(module.PAGE_REL))
+                self.assertEqual(parts[0]['href'], parts[1]['href'])
+                self.assertIn('customid=price-raw', parts[0]['href'])
+                self.assertIn('customid=price-psa10', parts[2]['href'])
+                logo = parts[0].select_one('img')
+                self.assertEqual(logo['alt'], 'eBay')
+                self.assertTrue(logo['src'].endswith('assets/ebay/ebay-wordmark-b4-trimmed.png'))
+                self.assertIsNone(logo.get('style'))
+                for link in parts:
+                    self.assertTrue(link['href'].startswith('https://www.ebay.co.uk/sch/i.html?'), link['href'])
+                    self.assertEqual(link.get('target'), '_blank')
+                    rel = link.get('rel') or []
+                    rel = rel if isinstance(rel, list) else str(rel).split()
+                    self.assertIn('nofollow', rel)
+                    self.assertIn('sponsored', rel)
+                    self.assertIn('noopener', rel)
+            notes = page.select('.ebay-footnote')
+            self.assertEqual(len(notes), 1, str(module.PAGE_REL))
+            note = notes[0].get_text(' ', strip=True)
+            self.assertIn('eBay UK Buy It Now search', note)
+            self.assertIn('eBay Partner Network partner', note)
+            self.assertIn('Check price', note)
         self.assertEqual(total, 822)
         ray = BeautifulSoup(delta_reign_prices.render_page(ROOT), 'html.parser')
         chosen = ray.select_one('#price-table tr[data-number="138/103"]')
-        raw_link = chosen.select_one('a.ebay-buy[href*="customid=price-raw"]')
+        raw_link = chosen.select_one('.ebay-brand')
         self.assertEqual(
             raw_link['href'],
             'https://www.ebay.co.uk/sch/i.html?_nkw=Mega+Rayquaza+ex+138%2F103+Delta+Reign'

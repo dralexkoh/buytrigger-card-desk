@@ -2,22 +2,35 @@
 
 .drops-wrap .commerce-wrap{padding:24px 0}.affiliate-placement-body p{max-width:600px}@media(max-width:650px){.affiliate-placement .kicker{display:none}.affiliate-placement h2{margin-top:0}.affiliate-placement-body{gap:12px}}
 
-/* Buy on eBay card button. Plain text only: no eBay logo or recolored wordmark. */
-.ebay-buys{display:flex;flex-wrap:wrap;gap:8px;align-items:stretch}
-.ebay-buys-stack{flex-direction:column;align-items:stretch}
-.ebay-buys-stack .ebay-buy{width:100%;white-space:normal}
-.ebay-buy{display:inline-flex;align-items:center;justify-content:center;gap:8px;box-sizing:border-box;min-height:44px;padding:8px 12px;border-radius:5px;background:#171719;color:#fff;font:700 14px/1.2 Arial,Helvetica,sans-serif;letter-spacing:0;text-decoration:none;white-space:nowrap}
-.ebay-buy-detail{min-height:48px;padding:10px 14px}
-.ebay-buy-chip{display:inline-flex;align-items:center;padding:2px 6px;border-radius:4px;background:#fff;color:#171719;font-size:11px;font-weight:800;letter-spacing:.3px;line-height:1.2}
-.ebay-buy-mark{font-size:14px;line-height:1}
-.ebay-buy:hover{background:#2c2c30;color:#fff}
-.ebay-buy:focus-visible{outline:3px solid #f5d331;outline-offset:3px}
-.ebay-buy-note{max-width:none;margin:12px 0 0;padding:12px 14px;background:#fff;border-left:4px solid #df242b;color:#171719;font-size:14px;line-height:1.5}
-.ebay-buy-note strong{font-weight:800}
-.set-card .ebay-buys,.set-dialog .ebay-buys{margin-top:12px}
-.set-card .affiliate-link-disclosure,.set-dialog .affiliate-link-disclosure,[data-ebay-card] .affiliate-link-disclosure{display:inline-block;margin-top:8px;padding:2px 6px;border-radius:4px;background:#ecece8;color:#171719;font:700 11px/1.35 Arial,Helvetica,sans-serif;letter-spacing:.2px}
-.set-dialog .ebay-buy-note{font-size:13px;line-height:1.5}
+/* Buy on eBay. The wordmark file is the official single-color mark and is not recolored. */
+.ebay-bar{display:inline-flex;align-items:stretch;max-width:100%;min-height:36px;border-radius:999px;background:#e8e8e4;overflow:hidden;vertical-align:middle}
+.ebay-bar a{display:inline-flex;align-items:center;justify-content:center;gap:6px;box-sizing:border-box;min-height:36px;padding:6px 11px;color:#3f3f44;font:600 12px/1 Arial,Helvetica,sans-serif;letter-spacing:.04em;text-decoration:none;white-space:nowrap}
+.ebay-bar a+a{box-shadow:inset 1px 0 0 #c8c8c2}
+.ebay-brand{padding-left:12px;padding-right:10px;color:#5e5e64;font-weight:500;letter-spacing:0}
+.ebay-seg{font-size:11px;font-weight:700;letter-spacing:.08em}
+.ebay-logo{height:15px;width:auto;max-width:none;flex:0 0 auto;display:block}
+.visually-hidden{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.ebay-bar a:hover{background:rgba(23,23,25,.06);color:#171719}
+.ebay-bar a:focus-visible{outline:3px solid #171719;outline-offset:-3px;position:relative;z-index:1}
+.ebay-bar-line{background:#fff;box-shadow:inset 0 0 0 1px #d7d7d1}
+.ebay-bar-line a+a{box-shadow:inset 1px 0 0 #e3e3dd}
+.ebay-footnote{max-width:none;margin:16px 0 0;padding:14px 16px;background:#fff;border-left:4px solid #df242b;color:#171719;font-size:15px;line-height:1.5}
+.ebay-footnote p{max-width:none;margin:0}
+.ebay-footnote strong{font-weight:800}
+.set-card .ebay-bar{display:flex;width:100%;margin-top:12px}
+.set-card .ebay-brand{flex:1 1 auto;justify-content:flex-start}
+.shop-strip{margin:14px 0 0;padding:12px 14px 14px;background:#f6f6f3;border-top:3px solid #df242b}
+.shop-strip-head{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.shop-strip .kicker{margin:0}
+.shop-affil{color:#8a8a90;font-size:12px;font-weight:600;line-height:1.2}
+.shop-strip p{max-width:none;margin:8px 0 12px;color:#171719;font-size:14px;line-height:1.45}
+.shop-strip .ebay-bar{display:flex;width:100%}
+.shop-strip .ebay-brand{flex:1 1 auto;justify-content:flex-start}
 @media(max-width:720px){
- .ebay-buys{flex-direction:column;align-items:stretch}
- .ebay-buy{width:100%}
+ .thirtieth-catalogue .set-grid{grid-template-columns:1fr}
+ .ebay-bar,.price-page .ebay-bar{display:flex;width:100%;min-height:44px}
+ .ebay-bar a{min-height:44px}
+ .ebay-brand{flex:1 1 auto;justify-content:flex-start}
+ .ebay-seg{flex:0 0 auto}
+ .ebay-logo{height:16px}
 }

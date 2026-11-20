@@ -270,9 +270,13 @@ def assert_price_guide(slug, lead):
   assert row.select_one('.price-number').get_text()==str(card['number']).strip()
   link=row.select_one('a.price-check')
   assert link['href']=='https://www.tcgplayer.com/product/'+row['data-id']
-  buys=row.select('a.ebay-buy')
-  assert len(buys)==2, slug+' missing eBay buttons for '+row['data-id']
-  assert {buy['href'].split('customid=')[-1] for buy in buys}=={'price-raw','price-psa10'}
+  buys=row.select('.ebay-bar a')
+  assert len(buys)==3, slug+' missing eBay pill for '+row['data-id']
+  assert sum('customid=price-raw' in buy['href'] for buy in buys)==2
+  assert sum('customid=price-psa10' in buy['href'] for buy in buys)==1
+  assert buys[0]['href']==buys[1]['href']
+  logo=buys[0].select_one('img.ebay-logo')
+  assert logo and logo.get('alt')=='eBay' and logo.get('src','').endswith('assets/ebay/ebay-wordmark-b4-trimmed.png')
   for buy in buys:
    assert buy['href'].startswith('https://www.ebay.co.uk/sch/i.html?')
    assert buy.get('target')=='_blank'
@@ -283,14 +287,15 @@ def assert_price_guide(slug, lead):
   rel=link.get('rel') or []
   rel=rel if isinstance(rel,list) else str(rel).split()
   assert 'nofollow' in rel and 'noopener' in rel and 'sponsored' in rel
-  disclosure=link.find_next_sibling(class_='affiliate-link-disclosure')
-  assert disclosure is not None and disclosure.get_text(strip=True)=='Affiliate link', slug+' '+row['data-id']
-  image=row.select_one('img')
+  assert row.select_one('.affiliate-link-disclosure') is None, slug+' '+row['data-id']
+  image=row.select_one('.price-card img')
   path=card.get('image_path') or ''
   if path and (d/path).is_file():
    assert image is not None and image.get('src')==path
   else:
    assert image is None
+ note=page.select_one('.ebay-footnote')
+ assert note and 'Check price' in note.get_text() and 'eBay Partner Network' in note.get_text(), slug+' eBay note'
  assert_root_nav(page, slug)
 assert_price_guide('thirtieth-anniversary', 'Raw (ungraded) prices, source: TCGCSV market price')
 assert_price_guide('tcg-modern', 'Raw (ungraded) market guide prices, source: TCGCSV market price')

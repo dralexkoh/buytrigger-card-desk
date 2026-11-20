@@ -107,7 +107,7 @@ class PageTests(unittest.TestCase):
         self.assertIsNone(self.page.select_one('script[src="site.js"]'))
 
     def test_rows_use_repo_images_and_plain_tcgplayer_links(self):
-        images = self.page.select('#price-table img')
+        images = self.page.select('#price-table .price-card img')
         self.assertEqual(
             sorted(img['src'] for img in images),
             ['assets/thirtieth/717607.jpg', 'assets/thirtieth/717608.jpg', 'assets/thirtieth/717609.jpg'],
@@ -170,7 +170,7 @@ class PageTests(unittest.TestCase):
             }],
         }
         page = BeautifulSoup(prices.render_page(ROOT, snapshot), 'html.parser')
-        self.assertIsNone(page.select_one('#price-table img'))
+        self.assertIsNone(page.select_one('#price-table .price-card img'))
         self.assertIn('Example', page.select_one('.price-card-fallback').get_text())
         self.assertNotIn('http', page.select_one('.price-card').decode())
         self.assertEqual(page.select_one('.price-usd').get_text(), '$12.50')
