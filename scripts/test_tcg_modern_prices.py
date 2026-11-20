@@ -11,6 +11,7 @@ from bs4 import BeautifulSoup
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import digest_signup
 import tcg_modern_prices as prices
+import raw_price_page
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -61,9 +62,11 @@ class PageTests(unittest.TestCase):
             self.text,
         )
         self.assertIn('US-market references in USD, not sales or offers.', self.text)
-        self.assertNotIn('PSA', self.html)
+        editorial_html = raw_price_page.without_ebay_buttons(self.html)
+        editorial = BeautifulSoup(editorial_html, 'html.parser').get_text(' ')
+        self.assertNotIn('PSA', editorial_html)
         self.assertIsNone(re.search(r'(?<!un)graded', self.html, re.I))
-        self.assertIsNone(re.search(r'\b(buy|sell|accumulate|invest)\b', self.text, re.I))
+        self.assertIsNone(re.search(r'\b(buy|sell|accumulate|invest)\b', editorial, re.I))
         self.assertIsNone(re.search(r'sale', re.sub(r'not sales or offers', '', self.text, flags=re.I), re.I))
         self.assertIsNone(re.search(
             r'index level|index change|since launch|week-on-week|7-day|7 day|performance|multiplier',
@@ -104,13 +107,13 @@ class PageTests(unittest.TestCase):
         self.assertIsNone(self.page.select_one('script[src="site.js"]'))
 
     def test_rows_use_repo_images_and_plain_tcgplayer_links(self):
-        images = self.page.select('#price-table img')
+        images = self.page.select('#price-table .price-card img')
         self.assertEqual(
             sorted(img['src'] for img in images),
             ['assets/thirtieth/717607.jpg', 'assets/thirtieth/717608.jpg', 'assets/thirtieth/717609.jpg'],
         )
         self.assertEqual(len(self.page.select('.price-card-fallback')), len(self.cards) - len(images))
-        links = self.page.select('#price-table a')
+        links = self.page.select('#price-table a.price-check')
         self.assertEqual(len(links), len(self.cards))
         ids = set()
         for link in links:
@@ -167,7 +170,7 @@ class PageTests(unittest.TestCase):
             }],
         }
         page = BeautifulSoup(prices.render_page(ROOT, snapshot), 'html.parser')
-        self.assertIsNone(page.select_one('#price-table img'))
+        self.assertIsNone(page.select_one('#price-table .price-card img'))
         self.assertIn('Example', page.select_one('.price-card-fallback').get_text())
         self.assertNotIn('http', page.select_one('.price-card').decode())
         self.assertEqual(page.select_one('.price-usd').get_text(), '$12.50')

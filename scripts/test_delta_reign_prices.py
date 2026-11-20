@@ -11,6 +11,7 @@ from bs4 import BeautifulSoup
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import digest_signup
 import delta_reign_prices as prices
+import raw_price_page
 
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE = 'Raw (ungraded) market guide prices, source: TCGCSV market price, as of 16 Nov 2026'
@@ -49,9 +50,10 @@ class PageTests(unittest.TestCase):
     def test_page_lists_every_card_without_graded_or_trading_language(self):
         rows = self.page.select('#price-table tbody tr')
         self.assertEqual(len(rows), 141)
-        self.assertNotIn('PSA', self.html)
+        editorial = raw_price_page.without_ebay_buttons(self.html)
+        self.assertNotIn('PSA', editorial)
         self.assertIsNone(re.search(r'(?<!un)graded', self.html, re.I))
-        text = self.page.get_text(' ')
+        text = BeautifulSoup(editorial, 'html.parser').get_text(' ')
         self.assertIn(SOURCE, text)
         self.assertIn('16 November 2026', text)
         self.assertIn('US-market references in USD, not offers.', text)
@@ -80,10 +82,10 @@ class PageTests(unittest.TestCase):
         self.assertIsNone(self.page.select_one('script[src="site.js"]'))
 
     def test_rows_use_local_images_and_plain_tcgplayer_links(self):
-        images = self.page.select('#price-table img')
+        images = self.page.select('#price-table .price-card img')
         self.assertEqual(len(images), 141)
         self.assertTrue(all(img['src'].startswith('assets/delta-reign/') and img['src'].endswith('.jpg') for img in images))
-        links = self.page.select('#price-table a')
+        links = self.page.select('#price-table a.price-check')
         self.assertEqual(len(links), 141)
         ids = set()
         for link in links:
@@ -123,7 +125,7 @@ class PageTests(unittest.TestCase):
             }],
         }
         page = BeautifulSoup(prices.render_page(ROOT, snapshot), 'html.parser')
-        self.assertIsNone(page.select_one('#price-table img'))
+        self.assertIsNone(page.select_one('#price-table .price-card img'))
         self.assertIn('Example', page.select_one('.price-card-fallback').get_text())
         self.assertNotIn('http', page.select_one('.price-card').decode())
 

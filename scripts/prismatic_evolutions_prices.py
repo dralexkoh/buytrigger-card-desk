@@ -69,6 +69,7 @@ SPEC = {
     'filter_placeholder': 'Name, number or rarity',
     'region_label': 'Prismatic Evolutions raw prices',
     'caption': 'English Pokémon Prismatic Evolutions raw prices in USD',
+    'search_set': 'SV: Prismatic Evolutions',
     'accept_set': accept_set,
     'accept_image': accept_image,
     'intro': intro,

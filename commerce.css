@@ -1,3 +1,36 @@
 .commerce-wrap{max-width:1440px;margin:0 auto;padding:0 4vw 36px}.affiliate-placement{border-top:3px solid var(--ink,#171719);background:#f2f0e9;padding:16px 22px 14px}.commerce-label{display:block;font:700 12px/1.4 'IBM Plex Sans',sans-serif;letter-spacing:.06em;text-transform:uppercase;margin-bottom:12px;color:#555}.affiliate-placement-body{display:flex;align-items:center;justify-content:space-between;gap:24px}.affiliate-placement h2{font-family:'Barlow Condensed',sans-serif;font-size:34px;line-height:1.05;margin:5px 0 8px}.affiliate-placement p{max-width:650px;margin:0;font-size:15px;line-height:1.5}.affiliate-placement .btn{flex-shrink:0;min-height:44px;white-space:normal;text-align:center}.affiliate-disclosure{font-size:12px!important;color:#555;line-height:1.5!important;margin:14px 0 0!important}.verified-offers{padding-top:24px!important;padding-bottom:24px!important}.verified-offers[hidden]{display:none}.verified-offers .section-heading{margin-bottom:10px}.verified-offers .section-heading h2{font-size:34px}.offers-note{font-size:15px;line-height:1.5;color:#555;margin:0 0 18px}.verified-offer-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.verified-offer{border:1px solid #d9d6ce;border-top:3px solid #df242b;background:#fff;padding:20px;min-width:0;display:flex;flex-direction:column}.verified-offer h3{font-family:'Barlow Condensed',sans-serif;font-size:27px;line-height:1.1;margin:12px 0}.verified-offer p{font-size:14px;line-height:1.5;margin:0 0 12px}.verified-offer .offer-seller,.verified-offer .offer-status{font-size:12px;color:#555}.verified-offer .btn{margin-top:auto;min-height:44px;align-self:flex-start}.offer-expired{background:#ddd!important;color:#444!important;cursor:default}.verified-offers .drop-meta{flex-wrap:wrap;gap:6px}.affiliate-placement a:focus-visible,.verified-offers a:focus-visible{outline:3px solid #df242b;outline-offset:4px}@media(max-width:900px){.verified-offer-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.affiliate-placement-body{align-items:flex-start;flex-direction:column;gap:14px}}@media(max-width:650px){.commerce-wrap{padding:0 16px 24px}.affiliate-placement{padding:14px 16px}.affiliate-placement h2{font-size:30px}.affiliate-placement .kicker{font-size:11px}.affiliate-placement p{font-size:14px}.affiliate-placement .btn{width:100%}.verified-offer-grid{grid-template-columns:1fr}.verified-offers .section-heading{align-items:flex-start;gap:12px}.verified-offers .section-heading h2{font-size:30px}.verified-offers .text-link{font-size:14px;min-height:44px;display:inline-flex;align-items:center}.verified-offer{padding:16px}.verified-offer h3{font-size:26px}}
 
 .drops-wrap .commerce-wrap{padding:24px 0}.affiliate-placement-body p{max-width:600px}@media(max-width:650px){.affiliate-placement .kicker{display:none}.affiliate-placement h2{margin-top:0}.affiliate-placement-body{gap:12px}}
+
+/* Buy on eBay. The wordmark file is the official single-color mark and is not recolored. */
+.ebay-bar{display:inline-flex;align-items:stretch;max-width:100%;min-height:36px;border-radius:999px;background:#e8e8e4;overflow:hidden;vertical-align:middle}
+.ebay-bar a{display:inline-flex;align-items:center;justify-content:center;gap:6px;box-sizing:border-box;min-height:36px;padding:6px 11px;color:#3f3f44;font:600 12px/1 Arial,Helvetica,sans-serif;letter-spacing:.04em;text-decoration:none;white-space:nowrap}
+.ebay-bar a+a{box-shadow:inset 1px 0 0 #c8c8c2}
+.ebay-brand{padding-left:12px;padding-right:10px;color:#5e5e64;font-weight:500;letter-spacing:0}
+.ebay-seg{font-size:11px;font-weight:700;letter-spacing:.08em}
+.ebay-logo{height:15px;width:auto;max-width:none;flex:0 0 auto;display:block}
+.visually-hidden{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.ebay-bar a:hover{background:rgba(23,23,25,.06);color:#171719}
+.ebay-bar a:focus-visible{outline:3px solid #171719;outline-offset:-3px;position:relative;z-index:1}
+.ebay-bar-line{background:#fff;box-shadow:inset 0 0 0 1px #d7d7d1}
+.ebay-bar-line a+a{box-shadow:inset 1px 0 0 #e3e3dd}
+.ebay-footnote{max-width:none;margin:16px 0 0;padding:14px 16px;background:#fff;border-left:4px solid #df242b;color:#171719;font-size:15px;line-height:1.5}
+.ebay-footnote p{max-width:none;margin:0}
+.ebay-footnote strong{font-weight:800}
+.set-card .ebay-bar{display:flex;width:100%;margin-top:12px}
+.set-card .ebay-brand{flex:1 1 auto;justify-content:flex-start}
+.shop-strip{margin:14px 0 0;padding:12px 14px 14px;background:#f6f6f3;border-top:3px solid #df242b}
+.shop-strip-head{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.shop-strip .kicker{margin:0}
+.shop-affil{color:#8a8a90;font-size:12px;font-weight:600;line-height:1.2}
+.shop-strip p{max-width:none;margin:8px 0 12px;color:#171719;font-size:14px;line-height:1.45}
+.shop-strip .ebay-bar{display:flex;width:100%}
+.shop-strip .ebay-brand{flex:1 1 auto;justify-content:flex-start}
+@media(max-width:720px){
+ .thirtieth-catalogue .set-grid{grid-template-columns:1fr}
+ .ebay-bar,.price-page .ebay-bar{display:flex;width:100%;min-height:44px}
+ .ebay-bar a{min-height:44px}
+ .ebay-brand{flex:1 1 auto;justify-content:flex-start}
+ .ebay-seg{flex:0 0 auto}
+ .ebay-logo{height:16px}
+}

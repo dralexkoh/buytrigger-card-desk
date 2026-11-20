@@ -69,6 +69,7 @@ SPEC = {
     'filter_placeholder': 'Name, number or rarity',
     'region_label': 'Delta Reign raw prices',
     'caption': 'English Pokémon ME06: Delta Reign raw prices in USD',
+    'search_set': 'ME06: Delta Reign',
     'accept_set': accept_set,
     'accept_image': accept_image,
     'intro': intro,

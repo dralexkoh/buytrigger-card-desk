@@ -108,6 +108,10 @@ function issueLabel(c){
  return c.number;
 }
 
+function ebayBuys(c,detail){
+ const block=window.BTCommerce&&window.BTCommerce.ebayCardBlock;
+ return block?block(c,window.BT_COMMERCE,{placement:'db',detail:!!detail,stack:!detail,pill:true,note:detail?'card':false}):'';
+}
 function cardMarkup(c,group,rank){
  const point=E.latest(data,c.key);
  const imageLabel=esc(c.name+' · '+c.number+' · '+c.set+' · English '+c.printing);
@@ -118,6 +122,7 @@ function cardMarkup(c,group,rank){
    <h3>${esc(c.name.replace(/ - .*$/,''))}</h3><p>English · ${esc(c.printing)}</p>
    ${rawPrice(point)}
    <small>${point?date(point[0]):'No observations'} · ${point?.[2]==='ok'?'Raw guide':'Price unavailable'}</small>
+   ${ebayBuys(c,false)}
    <button class="set-open" data-set-card="${c.key}">Open card &amp; history ↗</button>
   </div>
  </article>`;
@@ -155,7 +160,7 @@ function openCard(key,button){
  const c=data?.cards.find(c=>c.key===key);if(!c)return;returnFocus=button;
  const rows=E.series(data,key),p=rows.at(-1);
  const product=c.image.match(/([0-9]+)\.jpg$/)[1];
- document.getElementById('set-dialog-body').innerHTML=`<div class="set-dialog-card"><img src="${c.image}" alt="${esc(c.name+' · '+c.number+' · English '+c.printing)}"><div><span class="kicker">${esc(c.number)} / ENGLISH</span><h2>${esc(c.name)}</h2><p>${esc(c.set)} · ${esc(c.printing)} · ${esc(c.rarity||'')}</p>${rawPrice(p)}<p>Raw market guide, ${p?date(p[0]):'unavailable'}.</p><a href="https://www.tcgplayer.com/product/${product}" target="_blank" rel="noopener">Exact catalogue issue ↗</a></div></div><div class="set-popup-tabs" role="tablist" aria-label="Card details">${[['overview','Overview'],['evidence','Prices & sources'],['method','Method']].map(([id,label])=>`<button role="tab" id="set-tab-${id}" aria-controls="set-panel-${id}" aria-selected="${id==='overview'}" tabindex="${id==='overview'?0:-1}" data-set-tab="${id}">${label}</button>`).join('')}</div><section id="set-panel-overview" role="tabpanel" aria-labelledby="set-tab-overview"><div class="set-dialog-chart">${chart(rows.map(p=>({date:p[0],usd:p[2]==='ok'?p[1]:null})),p=>p.usd,'Dated Raw market guide in USD')}</div></section><section id="set-panel-evidence" role="tabpanel" aria-labelledby="set-tab-evidence" hidden><details class="set-observations" open><summary>All prices, dates and sources</summary><div><table><thead><tr><th>Date</th><th>Raw USD</th><th>Source / status</th></tr></thead><tbody>${[...rows].reverse().map(p=>`<tr><td>${date(p[0])}</td><td>${p[2]==='ok'?money(p[1]):'—'}</td><td>${esc(p[2]==='ok'?'TCGCSV market guide':p[2].replaceAll('_',' '))}${data.sources.filter(s=>s.day===p[0]).map(s=>` <a href="${esc(s.url)}" target="_blank" rel="noopener">Source ↗</a>`).join('')}</td></tr>`).join('')}</tbody></table></div></details></section><section id="set-panel-method" role="tabpanel" aria-labelledby="set-tab-method" hidden><h3>One printing. One price series.</h3><p>English · ${esc(c.set)} · ${esc(c.number)} · ${esc(c.printing)}. Raw observations are TCGplayer mixed-condition market guides supplied by TCGCSV. They are separate from Near Mint guides and completed-sale prices.</p><p>Missing values stay unpriced. These figures describe this printing; they are not a condition assessment, a grading outcome or a guaranteed resale price.</p><p class="set-credit">${CREDIT}</p></section>`;
+ document.getElementById('set-dialog-body').innerHTML=`<div class="set-dialog-card"><img src="${c.image}" alt="${esc(c.name+' · '+c.number+' · English '+c.printing)}"><div><span class="kicker">${esc(c.number)} / ENGLISH</span><h2>${esc(c.name)}</h2><p>${esc(c.set)} · ${esc(c.printing)} · ${esc(c.rarity||'')}</p>${rawPrice(p)}<p>Raw market guide, ${p?date(p[0]):'unavailable'}.</p><a href="https://www.tcgplayer.com/product/${product}" target="_blank" rel="noopener">Exact catalogue issue ↗</a>${ebayBuys(c,true)}</div></div><div class="set-popup-tabs" role="tablist" aria-label="Card details">${[['overview','Overview'],['evidence','Prices & sources'],['method','Method']].map(([id,label])=>`<button role="tab" id="set-tab-${id}" aria-controls="set-panel-${id}" aria-selected="${id==='overview'}" tabindex="${id==='overview'?0:-1}" data-set-tab="${id}">${label}</button>`).join('')}</div><section id="set-panel-overview" role="tabpanel" aria-labelledby="set-tab-overview"><div class="set-dialog-chart">${chart(rows.map(p=>({date:p[0],usd:p[2]==='ok'?p[1]:null})),p=>p.usd,'Dated Raw market guide in USD')}</div></section><section id="set-panel-evidence" role="tabpanel" aria-labelledby="set-tab-evidence" hidden><details class="set-observations" open><summary>All prices, dates and sources</summary><div><table><thead><tr><th>Date</th><th>Raw USD</th><th>Source / status</th></tr></thead><tbody>${[...rows].reverse().map(p=>`<tr><td>${date(p[0])}</td><td>${p[2]==='ok'?money(p[1]):'—'}</td><td>${esc(p[2]==='ok'?'TCGCSV market guide':p[2].replaceAll('_',' '))}${data.sources.filter(s=>s.day===p[0]).map(s=>` <a href="${esc(s.url)}" target="_blank" rel="noopener">Source ↗</a>`).join('')}</td></tr>`).join('')}</tbody></table></div></details></section><section id="set-panel-method" role="tabpanel" aria-labelledby="set-tab-method" hidden><h3>One printing. One price series.</h3><p>English · ${esc(c.set)} · ${esc(c.number)} · ${esc(c.printing)}. Raw observations are TCGplayer mixed-condition market guides supplied by TCGCSV. They are separate from Near Mint guides and completed-sale prices.</p><p>Missing values stay unpriced. These figures describe this printing; they are not a condition assessment, a grading outcome or a guaranteed resale price.</p><p class="set-credit">${CREDIT}</p></section>`;
  document.getElementById('set-dialog').showModal();
 }
 
@@ -241,6 +246,7 @@ function mount(){
  document.getElementById('set-sort').onchange=e=>{sort=e.target.value;drawCards();};
  const root=document.getElementById('main');
  root.onclick=e=>{
+  if(e.target.closest('.ebay-bar a'))return;
   const tab=e.target.closest('[data-set-tab]');
   if(tab){
    root.querySelectorAll('[data-set-tab]').forEach(b=>{const on=b===tab;b.setAttribute('aria-selected',String(on));b.tabIndex=on?0:-1;document.getElementById('set-panel-'+b.dataset.setTab).hidden=!on;});

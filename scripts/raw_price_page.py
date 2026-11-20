@@ -12,6 +12,7 @@ import json
 import math
 import re
 import struct
+import subprocess
 
 from bs4 import BeautifulSoup
 
@@ -215,6 +216,7 @@ def prepare_cards(snapshot: dict, root: Path, spec: dict):
             'number': number.strip(),
             'subset': subset,
             'label': label,
+            'search_set': spec.get('search_set') or subset,
             'price': price,
             'product_id': product_id,
             'image': image_path if image_file.is_file() else None,
@@ -230,7 +232,44 @@ def prepare_cards(snapshot: dict, root: Path, spec: dict):
     return cards
 
 
-def _row(card, spec):
+def ebay_buttons(cards):
+    """Ask commerce.js for the row buttons and the page note. campid stays in commerce.json."""
+    script = Path(__file__).resolve().parent / 'render_ebay_buys.cjs'
+    payload = json.dumps({
+        'cards': [
+            {
+                'id': card['product_id'],
+                'name': card['name'],
+                'number': card['number'],
+                'set': card.get('search_set') or '',
+            }
+            for card in cards
+        ],
+        'options': {
+            'placement': 'price',
+            'detail': False,
+            'stack': False,
+            'pill': False,
+            'note': False,
+        },
+    }).encode()
+    raw = subprocess.check_output(['node', str(script)], input=payload)
+    parsed = json.loads(raw)
+    return {row['id']: row['html'] for row in parsed['rows']}, parsed['pageNote']
+
+
+_EBAY_BAR = re.compile(r'<div\b[^>]*\bclass="[^"]*\bebay-bar\b[^"]*"[^>]*>.*?</div>', re.S)
+_EBAY_NOTE = re.compile(r'<div\b[^>]*\bclass="[^"]*\bebay-footnote\b[^"]*"[^>]*>.*?</div>', re.S)
+
+
+def without_ebay_buttons(rendered: str) -> str:
+    """Remove the eBay pill and the table note before the trading-language check."""
+    cleaned = _EBAY_BAR.sub('', rendered)
+    cleaned = _EBAY_NOTE.sub('', cleaned)
+    return cleaned.replace('>Buy</th>', '></th>')
+
+
+def _row(card, spec, buys=''):
     name = html.escape(card['name'])
     number = html.escape(card['number'])
     label = html.escape(card['label'])
@@ -260,8 +299,9 @@ def _row(card, spec):
         f'<td class="price-number">{number}</td>'
         f'<td class="{spec["group_class"]}">{label}</td>'
         f'<td class="price-usd">{shown}</td>'
-        f'<td class="price-link"><span class="price-out"><a href="{href}" rel="nofollow sponsored noopener" target="_blank">Check price</a>'
-        f'<small class="affiliate-link-disclosure">Affiliate link</small></span></td>'
+        f'<td class="price-link"><span class="price-out">{buys}'
+        f'<a class="price-check" href="{href}" rel="nofollow sponsored noopener" target="_blank">Check price</a>'
+        f'</span></td>'
         '</tr>'
     )
 
@@ -296,7 +336,7 @@ def _table_head(spec):
         + number
         + group
         + price
-        + _column_heading('Check price')
+        + _column_heading('Buy')
         + '</tr></thead>'
     )
 
@@ -319,9 +359,10 @@ def absolutize_document_nav(page):
 
 
 def _guard_language(rendered: str, spec: dict):
-    if re.search(r'PSA', rendered):
+    editorial = without_ebay_buttons(rendered)
+    if re.search(r'PSA', editorial):
         raise ValueError('Price page contains PSA')
-    text = BeautifulSoup(rendered, 'html.parser').get_text(' ')
+    text = BeautifulSoup(editorial, 'html.parser').get_text(' ')
     if re.search(r'\b(buy|sell|accumulate|invest)\b', text, re.I):
         raise ValueError('Price page contains buy, sell, accumulate or invest wording')
     for pattern in spec.get('text_bans') or []:
@@ -346,7 +387,10 @@ def render_page(root: Path, spec: dict, snapshot: dict | None = None) -> str:
     count = len(cards)
     description = spec['description'](cards, date_text)
     title = spec['title']
-    rows = ''.join(_row(card, spec) for card in cards)
+    buys, ebay_note = ebay_buttons(cards)
+    rows = ''.join(_row(card, spec, buys.get(card['product_id'], '')) for card in cards)
+    if not any(buys.values()):
+        ebay_note = ''
     chase = chase_block(load_chase(cards, root, spec), spec, date_text, sentence)
     digest = digest_signup_html(spec['form_id'], campaign=spec['campaign'])
     credit = ''
@@ -376,6 +420,7 @@ def render_page(root: Path, spec: dict, snapshot: dict | None = None) -> str:
 </table>
 </div>
 <p id="price-empty" hidden>No cards match that filter.</p>
+{ebay_note}
 <p class="price-source"><strong>{html.escape(sentence)}.</strong> {html.escape(spec['source_note'])}</p>
 </section>
 {credit}
