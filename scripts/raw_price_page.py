@@ -260,7 +260,8 @@ def _row(card, spec):
         f'<td class="price-number">{number}</td>'
         f'<td class="{spec["group_class"]}">{label}</td>'
         f'<td class="price-usd">{shown}</td>'
-        f'<td class="price-link"><a href="{href}" rel="nofollow noopener" target="_blank">Check price</a></td>'
+        f'<td class="price-link"><span class="price-out"><a href="{href}" rel="nofollow sponsored noopener" target="_blank">Check price</a>'
+        f'<small class="affiliate-link-disclosure">Affiliate link</small></span></td>'
         '</tr>'
     )
 

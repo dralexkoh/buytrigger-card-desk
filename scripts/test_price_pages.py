@@ -64,5 +64,47 @@ class SnapshotFollowsEdits(unittest.TestCase):
         )
 
 
+class AffiliateDisclosureTests(unittest.TestCase):
+    """Every rendered tcgplayer.com link on a price page carries a visible label."""
+
+    def test_every_rendered_tcgplayer_link_has_an_affiliate_disclosure(self):
+        modules = (
+            thirtieth_prices,
+            tcg_modern_prices,
+            delta_reign_prices,
+            sv_151_prices,
+            prismatic_evolutions_prices,
+        )
+        total = 0
+        for module in modules:
+            page = BeautifulSoup(module.render_page(ROOT), 'html.parser')
+            links = [
+                link for link in page.select('a[href]')
+                if 'tcgplayer.com' in (link.get('href') or '')
+            ]
+            cards = module.prepare_cards(module.load_snapshot(ROOT / module.SNAPSHOT), ROOT)
+            self.assertEqual(len(links), len(cards), str(module.PAGE_REL))
+            for link in links:
+                href = link['href']
+                self.assertTrue(href.startswith('https://www.tcgplayer.com/product/'), href)
+                self.assertNotIn('?', href)
+                self.assertNotIn('#', href)
+                self.assertNotIn('utm_', href)
+                self.assertNotIn('impact.com', href)
+                rel = link.get('rel') or []
+                rel = rel if isinstance(rel, list) else str(rel).split()
+                self.assertIn('sponsored', rel)
+                self.assertIn('noopener', rel)
+                disclosure = link.find_next_sibling(class_='affiliate-link-disclosure')
+                self.assertIsNotNone(disclosure, href)
+                self.assertIs(disclosure.parent, link.parent)
+                self.assertEqual(disclosure.get_text(strip=True), 'Affiliate link')
+                self.assertNotIn('visually-hidden', disclosure.get('class') or [])
+                self.assertFalse(disclosure.has_attr('hidden'))
+                self.assertIsNone(disclosure.get('title'))
+            total += len(links)
+        self.assertEqual(total, 822)
+
+
 if __name__ == '__main__':
     unittest.main()

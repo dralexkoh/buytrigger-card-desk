@@ -120,7 +120,7 @@ class PageTests(unittest.TestCase):
             rel = link['rel'] if isinstance(link.get('rel'), list) else str(link.get('rel')).split()
             self.assertIn('nofollow', rel)
             self.assertIn('noopener', rel)
-            self.assertNotIn('sponsored', rel)
+            self.assertIn('sponsored', rel)
             ids.add(link['href'].rsplit('/', 1)[-1])
         self.assertEqual(ids, {card['product_id'] for card in self.cards})
         self.assertNotIn('tcg-modern-index', self.html)
