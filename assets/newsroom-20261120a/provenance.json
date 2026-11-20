@@ -1,0 +1,182 @@
+{
+  "reviewer": "Vault Newsroom",
+  "review_date": "2026-11-20",
+  "rights_basis": "Official Pokémon Card Game Japan product and card images (pokemon-card.com, credited) and TCGplayer catalogue references, composed on the owner-locked BuyTrigger.Cards brand canvas. Strip card images for Hadou Seeker copied unaltered from pokemon-card.com. Prices from TCGCSV (TCGplayer market price, build 2026-11-19T20:04Z, and dated archives 30 Sep and 12 Nov). No generated or redrawn franchise characters.",
+  "credit_line": "Card and product images: The Pokémon Company / pokemon-card.com; TCGplayer · Graphic: BuyTrigger.Cards",
+  "crops_checked": [
+    "full-size",
+    "390px phone width"
+  ],
+  "generation_prompt": null,
+  "tool": "Pillow composition (/workspace/nr1120a-work/compose.py, helpers /workspace/nr1118b-work/compose_heroes.py)",
+  "reference_files": [],
+  "outputs": [
+    {
+      "path": "assets/newsroom-20261120a/hadou-seeker-card-list-78-cards-hero.webp",
+      "sha256": "a2d8be60c94aa1201d0b1b735fba8afa2898e1515b1c9d7e057c11ec8552754b",
+      "size_px": [
+        1600,
+        900
+      ],
+      "class": "permitted-media + brand-asset composition",
+      "inputs": [
+        {
+          "path": "/workspace/nr1120a-work/m7/m7-057-bhdzs.webp",
+          "source_url": "https://www.pokemon-card.com/ex/m7/assets/images/card/m7-057-bhdzs.webp",
+          "sha256": "17875080d6d9c88d0c5109ad6bd8f3eec75b1c461247d2b28f8dec67d10243c1",
+          "class": "official permitted media (The Pokémon Company / pokemon-card.com)"
+        },
+        {
+          "path": "/workspace/nr1120a-work/m7/m7-008-de93t.webp",
+          "source_url": "https://www.pokemon-card.com/ex/m7/assets/images/card/m7-008-de93t.webp",
+          "sha256": "f114b8a2018d89dceeec4ed5e8c9f0de07de9f0e63d03aaf9e7938d1ca78a94b",
+          "class": "official permitted media (The Pokémon Company / pokemon-card.com)"
+        },
+        {
+          "path": "/workspace/nr1120a-work/m7/m7-054-in9u8.webp",
+          "source_url": "https://www.pokemon-card.com/ex/m7/assets/images/card/m7-054-in9u8.webp",
+          "sha256": "e98b7feb37b29568862e411ab6c79e3fc6137e696df9306987b3a4f0b12126a0",
+          "class": "official permitted media (The Pokémon Company / pokemon-card.com)"
+        },
+        {
+          "path": "/workspace/nr1120a-work/m7/m7-113-m01h7.webp",
+          "source_url": "https://www.pokemon-card.com/ex/m7/assets/images/card/m7-113-m01h7.webp",
+          "sha256": "4335263e489a36f3f0be6c7eb510ca5904404e5f069c17b2c1a014b60ea90560",
+          "class": "official permitted media (The Pokémon Company / pokemon-card.com)"
+        },
+        {
+          "path": "/home/box/private/buytrigger/full/BuyTrigger-Cards-Grok-Handover-2026-11-10/workspace/brand/buytrigger-cards/skill/assets/buytrigger-badge-gengar-vaporeon-web.png",
+          "source_url": "owner brand asset",
+          "sha256": "303e7a82ef8ebe755375d864029ab623c55b6272c44cec15462539cc5c25a4fa",
+          "class": "brand-asset"
+        },
+        {
+          "path": "/workspace/nr1120a/assets/publisher-logo-600x60.png",
+          "source_url": "repo brand asset (wordmark)",
+          "sha256": "ae4ac346e762dfc13bb5a5b11211a6fc9d05f6117a3588e55a2b8ea2283d6aac",
+          "class": "brand-asset"
+        }
+      ]
+    },
+    {
+      "path": "assets/newsroom-20261120a/pikachu-card-illustration-figure-collection-hero.webp",
+      "sha256": "7f347f36e9bd40d4f336bb4ac6c1b9941f71eea31486dfd6ad28a8127d2c98ac",
+      "size_px": [
+        1600,
+        900
+      ],
+      "class": "permitted-media + brand-asset composition",
+      "inputs": [
+        {
+          "path": "/workspace/nr1120a-work/pika_1.jpg",
+          "source_url": "https://www.pokemon-card.com/info/2026/11/images/005764_1.jpg",
+          "sha256": "12a7effb10a9cb44de20874ee71f9ca44a620db5a8a66dc15a77f270b94bdffd",
+          "class": "official permitted media (The Pokémon Company / pokemon-card.com)"
+        },
+        {
+          "path": "/home/box/private/buytrigger/full/BuyTrigger-Cards-Grok-Handover-2026-11-10/workspace/brand/buytrigger-cards/skill/assets/buytrigger-badge-gengar-vaporeon-web.png",
+          "source_url": "owner brand asset",
+          "sha256": "303e7a82ef8ebe755375d864029ab623c55b6272c44cec15462539cc5c25a4fa",
+          "class": "brand-asset"
+        },
+        {
+          "path": "/workspace/nr1120a/assets/publisher-logo-600x60.png",
+          "source_url": "repo brand asset (wordmark)",
+          "sha256": "ae4ac346e762dfc13bb5a5b11211a6fc9d05f6117a3588e55a2b8ea2283d6aac",
+          "class": "brand-asset"
+        }
+      ]
+    },
+    {
+      "path": "assets/newsroom-20261120a/sv-151-blastoise-venusaur-ex-sirs-since-30-sep-hero.webp",
+      "sha256": "6bafc211898e985a58316d0473f369665fe8cfb8c09813934145ec479fb7d138",
+      "size_px": [
+        1600,
+        900
+      ],
+      "class": "permitted-media + brand-asset composition",
+      "inputs": [
+        {
+          "path": "/workspace/nr1120a-work/src/tcg-504467.jpg",
+          "source_url": "https://tcgplayer-cdn.tcgplayer.com/product/504467_in_1000x1000.jpg",
+          "sha256": "f6880238d36a178e3cc3e5d419c9c656ba35f7be6888afc4c1035accf64341c9",
+          "class": "permitted-media (TCGplayer catalogue reference)"
+        },
+        {
+          "path": "/workspace/nr1120a-work/src/tcg-517046.jpg",
+          "source_url": "https://tcgplayer-cdn.tcgplayer.com/product/517046_in_1000x1000.jpg",
+          "sha256": "b38d889f4c5fc11002184f84213670d3cd420e45a79057f4f36f92fe57a16de2",
+          "class": "permitted-media (TCGplayer catalogue reference)"
+        },
+        {
+          "path": "/workspace/nr1120a-work/src/tcg-517044.jpg",
+          "source_url": "https://tcgplayer-cdn.tcgplayer.com/product/517044_in_1000x1000.jpg",
+          "sha256": "f73391c888288bf682e3c40985b5b971b5e3397a629d8e10d216764cc280c844",
+          "class": "permitted-media (TCGplayer catalogue reference)"
+        },
+        {
+          "path": "/home/box/private/buytrigger/full/BuyTrigger-Cards-Grok-Handover-2026-11-10/workspace/brand/buytrigger-cards/skill/assets/buytrigger-badge-gengar-vaporeon-web.png",
+          "source_url": "owner brand asset",
+          "sha256": "303e7a82ef8ebe755375d864029ab623c55b6272c44cec15462539cc5c25a4fa",
+          "class": "brand-asset"
+        },
+        {
+          "path": "/workspace/nr1120a/assets/publisher-logo-600x60.png",
+          "source_url": "repo brand asset (wordmark)",
+          "sha256": "ae4ac346e762dfc13bb5a5b11211a6fc9d05f6117a3588e55a2b8ea2283d6aac",
+          "class": "brand-asset"
+        }
+      ]
+    },
+    {
+      "path": "assets/newsroom-20261120a/m7-057-bhdzs.webp",
+      "sha256": "17875080d6d9c88d0c5109ad6bd8f3eec75b1c461247d2b28f8dec67d10243c1",
+      "class": "official card image, unaltered",
+      "inputs": [
+        {
+          "source_url": "https://www.pokemon-card.com/ex/m7/assets/images/card/m7-057-bhdzs.webp"
+        }
+      ]
+    },
+    {
+      "path": "assets/newsroom-20261120a/m7-008-de93t.webp",
+      "sha256": "f114b8a2018d89dceeec4ed5e8c9f0de07de9f0e63d03aaf9e7938d1ca78a94b",
+      "class": "official card image, unaltered",
+      "inputs": [
+        {
+          "source_url": "https://www.pokemon-card.com/ex/m7/assets/images/card/m7-008-de93t.webp"
+        }
+      ]
+    },
+    {
+      "path": "assets/newsroom-20261120a/m7-054-in9u8.webp",
+      "sha256": "e98b7feb37b29568862e411ab6c79e3fc6137e696df9306987b3a4f0b12126a0",
+      "class": "official card image, unaltered",
+      "inputs": [
+        {
+          "source_url": "https://www.pokemon-card.com/ex/m7/assets/images/card/m7-054-in9u8.webp"
+        }
+      ]
+    },
+    {
+      "path": "assets/newsroom-20261120a/m7-059-ekpr2.webp",
+      "sha256": "eab1d3bfb70979e84bdad365d7e00e8c2ecc497ba45ebfbc2f7aa2b613af1534",
+      "class": "official card image, unaltered",
+      "inputs": [
+        {
+          "source_url": "https://www.pokemon-card.com/ex/m7/assets/images/card/m7-059-ekpr2.webp"
+        }
+      ]
+    },
+    {
+      "path": "assets/newsroom-20261120a/m7-113-m01h7.webp",
+      "sha256": "4335263e489a36f3f0be6c7eb510ca5904404e5f069c17b2c1a014b60ea90560",
+      "class": "official card image, unaltered",
+      "inputs": [
+        {
+          "source_url": "https://www.pokemon-card.com/ex/m7/assets/images/card/m7-113-m01h7.webp"
+        }
+      ]
+    }
+  ]
+}

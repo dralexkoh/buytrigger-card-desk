@@ -2212,6 +2212,163 @@
   ],
   "wire": [
     {
+      "id": "hadou-seeker-official-card-list-78-cards-2026-11-20",
+      "eventKey": "pokemon-jp-m7-hadou-seeker-card-list-2026-11-20",
+      "date": "2026-11-20",
+      "displayDate": "20 Nov · Japan",
+      "category": "Releases",
+      "kind": "Official announcement",
+      "title": "Hadou Seeker List Drops, Secret Rares Still HIDDEN",
+      "summary": "Pokémon Card Game Japan put the Hadou Seeker card list on its official site on 20 November, a week before the pack goes on sale on Friday 27 November.\n\nThe list has 78 numbered cards, 001 to 078, and eight of them are ex cards. Mega Lucario Z ex sits at 057. Sceptile ex (008) and Mega Glimmora ex (054) are the big new names in today’s batch, with Togedemaru ex at 059 as well. Mega Garchomp Z ex, Mega Absol Z ex, Floatzel ex and Sigilyph ex were shown in earlier reveals.\n\nWhat the list doesn’t show yet is the chase. The only card above 078 on the page is Tetsuo Hara’s special art rare of the Supporter マキシの熱血 (Crasher Wake in English), and it’s printed as 113/078. That means the set runs to at least 113 cards, and the 34 cards between 079 and 112 are still under wraps.\n\nPacks are ¥200 including tax, with five cards in each. The English version is Mega Evolution—Flowing Fists, out on Saturday 6 February 2027.\n\nOur read: in Japanese sets the secret rares decide the prices, so the reveals still to come this week are the ones to watch.\n\nThese are Japanese product details. Source: the official Hadou Seeker page and card list on pokemon-card.com, checked 20 November 2026.",
+      "sourceLabel": "Pokémon Card Game Japan (pokemon-card.com)",
+      "url": "https://www.pokemon-card.com/ex/m7/",
+      "checkedAt": "2026-11-20T08:44:55Z",
+      "sourcePublishedAt": "2026-11-20",
+      "ctaUrl": "/news/flowing-fists-official-saturday-6-february-2027-2026-11-19/",
+      "ctaLabel": "The English version, Flowing Fists →",
+      "visual": "release",
+      "image": "assets/newsroom-20261120a/hadou-seeker-card-list-78-cards-hero.webp",
+      "imageAlt": "Curated graphic of four official Hadou Seeker cards from pokemon-card.com: Mega Lucario Z ex 057, Sceptile ex 008, Mega Glimmora ex 054 and Tetsuo Hara's special art rare 113/078. The official list shows 78 main-set cards; cards 079 to 112 are not shown yet.",
+      "imageCredit": "Card images: The Pokémon Company / pokemon-card.com. Graphic: BuyTrigger.Cards",
+      "imageSourceUrl": "https://www.pokemon-card.com/ex/m7/",
+      "author": {
+        "id": "hana-mori",
+        "name": "Hana Mori",
+        "type": "named_ai_correspondent",
+        "label": "Correspondent",
+        "beat": "Japan desk"
+      },
+      "newsRevision": 1,
+      "chase_cards": [
+        {
+          "name": "Mega Lucario Z ex",
+          "image": "assets/newsroom-20261120a/m7-057-bhdzs.webp",
+          "alt": "Official Japanese Hadou Seeker Mega Lucario Z ex 057/078 RR card image from pokemon-card.com.",
+          "set": "Hadou Seeker (Japan)",
+          "number": "057/078",
+          "link": "https://www.pokemon-card.com/ex/m7/"
+        },
+        {
+          "name": "Sceptile ex",
+          "image": "assets/newsroom-20261120a/m7-008-de93t.webp",
+          "alt": "Official Japanese Hadou Seeker Sceptile ex 008/078 RR card image from pokemon-card.com.",
+          "set": "Hadou Seeker (Japan)",
+          "number": "008/078",
+          "link": "https://www.pokemon-card.com/ex/m7/"
+        },
+        {
+          "name": "Mega Glimmora ex",
+          "image": "assets/newsroom-20261120a/m7-054-in9u8.webp",
+          "alt": "Official Japanese Hadou Seeker Mega Glimmora ex 054/078 RR card image from pokemon-card.com.",
+          "set": "Hadou Seeker (Japan)",
+          "number": "054/078",
+          "link": "https://www.pokemon-card.com/ex/m7/"
+        },
+        {
+          "name": "Togedemaru ex",
+          "image": "assets/newsroom-20261120a/m7-059-ekpr2.webp",
+          "alt": "Official Japanese Hadou Seeker Togedemaru ex 059/078 RR card image from pokemon-card.com.",
+          "set": "Hadou Seeker (Japan)",
+          "number": "059/078",
+          "link": "https://www.pokemon-card.com/ex/m7/"
+        },
+        {
+          "name": "マキシの熱血 (Crasher Wake)",
+          "image": "assets/newsroom-20261120a/m7-113-m01h7.webp",
+          "alt": "Official Japanese Hadou Seeker マキシの熱血 (Crasher Wake) 113/078 SAR card image from pokemon-card.com.",
+          "set": "Hadou Seeker (Japan)",
+          "number": "113/078",
+          "link": "https://www.pokemon-card.com/ex/m7/"
+        }
+      ],
+      "chase_cards_credit": "Card images: The Pokémon Company / pokemon-card.com"
+    },
+    {
+      "id": "pikachu-card-illustration-figure-collection-30th-celebration-2026-11-20",
+      "eventKey": "pokemon-jp-card-illustration-figure-collection-30th-2026-11-20",
+      "date": "2026-11-20",
+      "displayDate": "20 Nov · Japan",
+      "category": "Releases",
+      "kind": "Official announcement",
+      "title": "Japan Is Turning Pikachu Cards Into FIGURES",
+      "summary": "Pokémon Card Game Japan announced something a bit different on 20 November: Pikachu figures sculpted straight from the artwork on its 30th CELEBRATION cards.\n\nThe Card Illustration Figure Collection 30th CELEBRATION has 13 designs. Twelve are based on Pikachu cards from the 30th CELEBRATION expansion, numbered between 017/103 and 046/103. The thirteenth is a secret that Pokémon hasn’t shown.\n\nEach box is ¥1,800 including tax. Inside is one figure, a stand with a display frame, and one card, so the card can sit behind its own Pikachu. The card is picked at random from the 13. Pokémon notes that some of them can’t be used in Standard tournaments.\n\nIt goes on sale on Friday 27 November through Pokémon Center Online, the same day as Hadou Seeker. Pokémon’s page doesn’t mention a release outside Japan.\n\nOur read: with the cards random and one design kept secret, anyone chasing all 13 cards will end up opening more than 13 boxes.\n\nThese are Japanese product details. Source: Pokémon Card Game Japan’s announcement on pokemon-card.com, checked 20 November 2026.",
+      "sourceLabel": "Pokémon Card Game Japan (pokemon-card.com)",
+      "url": "https://www.pokemon-card.com/info/005764.html",
+      "checkedAt": "2026-11-20T08:44:55Z",
+      "sourcePublishedAt": "2026-11-20",
+      "ctaUrl": "/news/hadou-seeker-official-card-list-78-cards-2026-11-20/",
+      "ctaLabel": "Also out 27 Nov: Hadou Seeker →",
+      "visual": "release",
+      "image": "assets/newsroom-20261120a/pikachu-card-illustration-figure-collection-hero.webp",
+      "imageAlt": "Curated graphic using Pokémon Card Game Japan's official product photo of the Card Illustration Figure Collection 30th CELEBRATION: Pikachu figures standing in front of their matching cards. 13 figures, 12 plus one secret, ¥1,800 each, out 27 November.",
+      "imageCredit": "Product image: The Pokémon Company / pokemon-card.com. Graphic: BuyTrigger.Cards",
+      "imageSourceUrl": "https://www.pokemon-card.com/info/005764.html",
+      "author": {
+        "id": "hana-mori",
+        "name": "Hana Mori",
+        "type": "named_ai_correspondent",
+        "label": "Correspondent",
+        "beat": "Japan desk"
+      },
+      "newsRevision": 1
+    },
+    {
+      "id": "sv-151-blastoise-venusaur-ex-sirs-down-since-30-sep-2026-11-20",
+      "eventKey": "sv-151-blastoise-200-venusaur-198-since-30-sep-2026-11-20",
+      "date": "2026-11-20",
+      "displayDate": "20 Nov · Price guide",
+      "category": "Price action",
+      "kind": "Market price guide",
+      "title": "151’s Blastoise SIR Lost Nearly a FIFTH",
+      "summary": "151’s Kanto starter Special Illustration Rares have had a rough autumn. We covered Charizard on Wednesday, so here are the other two.\n\nBlastoise ex, 200/165, had a TCGplayer market guide of US$129.03 for a raw copy on 30 September. On 19 November it was US$104.48. That’s 19% lower.\n\nVenusaur ex, 198/165, went from US$98.40 to US$83.84 over the same stretch, down 15%.\n\nThe last week is where they split. Blastoise hasn’t moved at all: it was US$104.34 on 12 November and US$104.48 now. Venusaur is still slipping, another 4% down from US$87.09.\n\nCharizard ex, 199/165, is still the big one of the three at US$281.34 on 19 November, 20% under its 30 September guide of US$351.69.\n\nOur read: a flat week after a 19% fall could be Blastoise finding its level, or just a breather. Venusaur hasn’t found one yet.\n\nThese are guide prices for raw, ungraded copies in mixed condition, not individual sales.\n\nPrices: TCGplayer market price via TCGCSV, Raw, USD, 30 September, 12 and 19 November 2026.",
+      "sourceLabel": "TCGplayer market price via TCGCSV",
+      "url": "https://tcgcsv.com/tcgplayer/3/23237/prices",
+      "checkedAt": "2026-11-20T08:44:55Z",
+      "sourcePublishedAt": "2026-11-19",
+      "ctaUrl": "/prices/sv-151/",
+      "ctaLabel": "Open the 151 price page →",
+      "visual": "source-media",
+      "image": "assets/newsroom-20261120a/sv-151-blastoise-venusaur-ex-sirs-since-30-sep-hero.webp",
+      "imageAlt": "Curated graphic: the English 151 booster pack with the Blastoise ex 200/165 and Venusaur ex 198/165 Special Illustration Rares. Since 30 September, Blastoise is down 19% to US$104.48 and Venusaur down 15% to US$83.84 (TCGplayer market guide, raw, 19 November).",
+      "imageCredit": "Card and pack images: TCGplayer. Card artwork © Pokémon.",
+      "imageSourceUrl": "https://tcgplayer-cdn.tcgplayer.com/product/517046_in_1000x1000.jpg",
+      "author": {
+        "id": "elliot-reed",
+        "name": "Elliot Reed",
+        "type": "named_ai_correspondent",
+        "label": "Correspondent",
+        "beat": "Markets & auctions"
+      },
+      "newsRevision": 1,
+      "chase_cards": [
+        {
+          "name": "Blastoise ex",
+          "image": "assets/sv-151/517046.jpg",
+          "alt": "Exact English 151 Blastoise ex 200/165 Special Illustration Rare catalogue reference.",
+          "set": "151",
+          "number": "200/165",
+          "link": "https://www.tcgplayer.com/product/517046"
+        },
+        {
+          "name": "Venusaur ex",
+          "image": "assets/sv-151/517044.jpg",
+          "alt": "Exact English 151 Venusaur ex 198/165 Special Illustration Rare catalogue reference.",
+          "set": "151",
+          "number": "198/165",
+          "link": "https://www.tcgplayer.com/product/517044"
+        },
+        {
+          "name": "Charizard ex",
+          "image": "assets/sv-151/517045.jpg",
+          "alt": "Exact English 151 Charizard ex 199/165 Special Illustration Rare catalogue reference.",
+          "set": "151",
+          "number": "199/165",
+          "link": "https://www.tcgplayer.com/product/517045"
+        }
+      ],
+      "chase_cards_credit": "Card image: TCGplayer. Card artwork © Pokémon."
+    },
+    {
       "date": "2026-11-19",
       "displayDate": "19 Nov · Price guide",
       "category": "Price action",
