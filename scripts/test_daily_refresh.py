@@ -40,7 +40,7 @@ class CollectorTests(unittest.TestCase):
 
     def fixture_day(self, date, overrides=None, archive=False):
         overrides = overrides or {}
-        prices = {D.key(c): c["quotes"]["Raw"]["price"] for c in self.modern["cards"] + self.top["cards"] if c["productId"] != 85203}
+        prices = {D.key(c): c["quotes"]["Raw"]["price"] for c in self.modern["cards"] + self.top["cards"] if c.get("quotes", {}).get("Raw", {}).get("price")}
         groups = {}
         for key, card in self.identities.items():
             value = overrides.get(key, prices[key])
@@ -87,10 +87,17 @@ class CollectorTests(unittest.TestCase):
         top = D.read_js(out / "top50-data.js", "window.BT_TOP50")
         self.assertEqual(top["history"], self.top["history"])
         modern = D.read_js(out / "catalogue.js", "window.MODERN_PREVIEW_DATA")
-        self.assertEqual(next(c for c in modern["cards"] if c["productId"] == 85203), next(c for c in self.modern["cards"] if c["productId"] == 85203))
+        self.assertFalse(any(c["productId"] == 85203 for c in modern["cards"]))
+        rayquaza = next(c for c in modern["cards"] if c["productId"] == 728061)
+        self.assertEqual(rayquaza["releaseDate"], "2026-11-06")
+        self.assertNotIn("Raw", rayquaza["quotes"])
         self.assertEqual(top["release"]["rankingSourceDate"], "2026-11-02")
+        # 6 Nov is after this 2 Nov baseline, so the new card is a visible gap, not a priced row.
         self.assertEqual(status["coverage"]["modern"]["priced"], 99)
-        self.assertEqual(status["coverage"]["modern"]["eur"], 1)
+        self.assertEqual(status["coverage"]["modern"]["missing"], 1)
+        self.assertEqual(status["coverage"]["modern"]["usd"], 99)
+        self.assertEqual(status["coverage"]["modern"]["eur"], 0)
+        self.assertEqual(status["coverage"]["modern"]["total"], 100)
 
     def test_new_build_dedup_and_same_date_replay(self):
         self.fixture_day("2026-11-03")
@@ -316,8 +323,8 @@ class CollectorTests(unittest.TestCase):
         self.assertEqual(status["coverage"]["modern"]["total"], 100)
         self.assertEqual(status["coverage"]["top50"]["total"], 50)
         groups = {c["groupId"] for c in self.identities.values()}
-        self.assertNotIn(24831, groups)
-        self.assertEqual(status["requestCount"], len(groups) + 3)
+        self.assertIn(24831, groups)
+        self.assertEqual(status["requestCount"], len(groups) + 2)
         observation = D.read_json(next((out / "data/refresh/observations").rglob("*.json")))
         by_key = {row["key"]: row for row in observation["observations"]}
         self.assertEqual(len(by_key), len(self.identities) + 3)

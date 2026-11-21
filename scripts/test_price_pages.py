@@ -124,7 +124,7 @@ class AffiliateDisclosureTests(unittest.TestCase):
             self.assertIn('eBay UK Buy It Now search', note)
             self.assertIn('eBay Partner Network partner', note)
             self.assertIn('Check price', note)
-        self.assertEqual(total, 822)
+        self.assertEqual(total, 823)
         ray = BeautifulSoup(delta_reign_prices.render_page(ROOT), 'html.parser')
         chosen = ray.select_one('#price-table tr[data-number="138/103"]')
         raw_link = chosen.select_one('.ebay-brand')
