@@ -79,7 +79,16 @@ Price rows and card-database set lists use one light-grey pill: Buy on, then the
 
 The opened card, a story or Feature block, the TCG Modern and grail indexes, and Undervalued cards use a compact Buy on eBay control: the card name, number and set, the wordmark pill with RAW and PSA 10, an Affiliate link label, and one short line that results and prices vary. It is not a full-width banner. Price-table rows keep their existing pills. Japanese Undervalued searches add the word Japanese on ebay.co.uk.
 
-The wordmark is `assets/ebay/ebay-wordmark-b4-trimmed.png`, the official single-color file, trimmed of empty margin only. Use that file as it is. Do not recolour it, stretch it, or add a shadow or filter. The campaign id is read from `commerce.json`. Clicks are counted with `price-raw`, `price-psa10`, `db-raw`, `db-psa10`, and `story-<slug>-raw` / `story-<slug>-psa10`.
+The wordmark is `assets/ebay/ebay-wordmark-b4-trimmed.png`, the official single-color file, trimmed of empty margin only. Use that file as it is. Do not recolour it, stretch it, or add a shadow or filter. The campaign id is read from `commerce.json`. Clicks are counted with these ids, each with `-raw` and `-psa10`:
+
+- `price-*` on price-guide rows
+- `db-*` on card-database set lists and opened records
+- `story-<slug>-*` on a news brief or Feature. A news brief uses `story-` plus the first 45 characters of its id, with a trailing hyphen trimmed. A Feature uses `story-` plus its full slug
+- `index-*` on TCG Modern and BlueChip price-index cards
+- `uv-*` on the UK Undervalued list
+- `uvjp-*` on the Japanese Undervalued list. The search also includes the word Japanese
+
+A visit with `utm_content` of `deal`, `news`, `feature` or `reply` prefixes that id with `d_`, `n_`, `f_` or `r_` for the rest of the session. The finished id stays within 64 characters.
 
 A card with no usable name, collector number or set is left without the pill. Drops listing links are unchanged.
 
