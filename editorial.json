@@ -2339,6 +2339,250 @@
   ],
   "wire": [
     {
+      "id": "delta-reign-top-10-week-three-2026-11-21",
+      "eventKey": "delta-reign-top-10-chase-7-day-2026-11-21",
+      "date": "2026-11-21",
+      "displayDate": "21 Nov · Price guide",
+      "category": "Price action",
+      "kind": "Market price guide",
+      "title": "Only TWO Delta Reign Chases Rose This Week",
+      "summary": "Only two of Delta Reign’s ten most valuable cards went up in price this past week. The other eight went down.\n\nMega Golurk ex’s Special Illustration Rare, 137/103, did best. It rose 13.2% to US$28.75 for a raw copy on TCGplayer market guides on 20 November, from US$25.40 on 13 November. Mega Golisopod ex’s Special Illustration Rare, 135/103, gained 11.1% to US$26.41, so the pair are now just US$2.34 apart.\n\nKecleon’s Illustration Rare, 117/103, fell hardest. It lost 19.8% on the week to US$23.74, from US$29.61. Aarune’s Special Illustration Rare, 139/103, was close behind, down 19.4% to US$18.41. Both are still well up on launch day, though: Kecleon by 63% on its 6 November guide of US$14.57, and Aarune by 56%.\n\nThe big cards hardly moved. The Mega Rayquaza ex Special Illustration Rare, 138/103, slipped 0.4% to US$292.09, and Raikou ex’s SIR, 136/103, dipped 0.7% to US$100.16. The gold Mega Rayquaza ex, 141/103, lost 4.7% to US$220.39 and is now 37% below its launch guide.\n\nOne copy of each of the ten comes to US$779.90. That’s 3.0% less than a week ago and 14.6% less than the same ten cards cost on launch day (US$912.85).\n\nOur read: in week three the early sprinters are cooling and two Mega ex cards that started slowly are the ones moving up. Launch-month guides still swing a lot, so treat any single week with care.\n\nOur Delta Reign price page and index still show 16 November prices until the set’s daily refresh is switched on.\n\nThese are guide prices for raw, ungraded copies in mixed condition, not individual sales.\n\nPrices: TCGplayer market price via TCGCSV, Raw, USD, 6, 13 and 20 November 2026. Top ten = the ten most valuable single cards by 20 November raw guide (sealed products left out). Delta Reign went on sale on 6 November, so moves are 7-day or since launch.",
+      "sourceLabel": "TCGplayer market price via TCGCSV",
+      "url": "https://tcgcsv.com/tcgplayer/3/24831/prices",
+      "checkedAt": "2026-11-21T08:40:44Z",
+      "sourcePublishedAt": "2026-11-20",
+      "ctaUrl": "/prices/delta-reign/",
+      "ctaLabel": "Open the Delta Reign price page →",
+      "visual": "source-media",
+      "image": "assets/newsroom-20261121a/delta-reign-top-10-week-three-hero.webp",
+      "imageAlt": "Curated graphic: the English Delta Reign booster pack with the Mega Golurk ex 137/103 and Mega Golisopod ex 135/103 Special Illustration Rares, up 13% and 11% from 13 to 20 November. Only two of the set's ten most valuable cards rose that week; Kecleon 117/103 Illustration Rare fell 20%. TCGplayer market guide, raw.",
+      "imageCredit": "Card and pack images: TCGplayer. Card artwork © Pokémon.",
+      "imageSourceUrl": "https://tcgplayer-cdn.tcgplayer.com/product/728060_in_1000x1000.jpg",
+      "author": {
+        "id": "elliot-reed",
+        "name": "Elliot Reed",
+        "type": "named_ai_correspondent",
+        "label": "Correspondent",
+        "beat": "Markets & auctions"
+      },
+      "newsRevision": 1,
+      "chase_cards": [
+        {
+          "name": "Mega Golurk ex",
+          "image": "assets/delta-reign/728060.jpg",
+          "alt": "Exact English Delta Reign Mega Golurk ex 137/103 Special Illustration Rare catalogue reference.",
+          "set": "Delta Reign",
+          "number": "137/103",
+          "link": "https://www.tcgplayer.com/product/728060"
+        },
+        {
+          "name": "Mega Golisopod ex",
+          "image": "assets/delta-reign/727592.jpg",
+          "alt": "Exact English Delta Reign Mega Golisopod ex 135/103 Special Illustration Rare catalogue reference.",
+          "set": "Delta Reign",
+          "number": "135/103",
+          "link": "https://www.tcgplayer.com/product/727592"
+        },
+        {
+          "name": "Kecleon",
+          "image": "assets/delta-reign/726567.jpg",
+          "alt": "Exact English Delta Reign Kecleon 117/103 Illustration Rare catalogue reference.",
+          "set": "Delta Reign",
+          "number": "117/103",
+          "link": "https://www.tcgplayer.com/product/726567"
+        },
+        {
+          "name": "Aarune",
+          "image": "assets/delta-reign/726575.jpg",
+          "alt": "Exact English Delta Reign Aarune 139/103 Special Illustration Rare catalogue reference.",
+          "set": "Delta Reign",
+          "number": "139/103",
+          "link": "https://www.tcgplayer.com/product/726575"
+        },
+        {
+          "name": "Mega Rayquaza ex",
+          "image": "assets/delta-reign/728061.jpg",
+          "alt": "Exact English Delta Reign Mega Rayquaza ex 138/103 Special Illustration Rare catalogue reference.",
+          "set": "Delta Reign",
+          "number": "138/103",
+          "link": "https://www.tcgplayer.com/product/728061"
+        },
+        {
+          "name": "Raikou ex",
+          "image": "assets/delta-reign/726574.jpg",
+          "alt": "Exact English Delta Reign Raikou ex 136/103 Special Illustration Rare catalogue reference.",
+          "set": "Delta Reign",
+          "number": "136/103",
+          "link": "https://www.tcgplayer.com/product/726574"
+        }
+      ],
+      "chase_cards_credit": "Card image: TCGplayer. Card artwork © Pokémon.",
+      "ebay_cards": [
+        {
+          "name": "Mega Golurk ex",
+          "number": "137/103",
+          "set": "Delta Reign"
+        },
+        {
+          "name": "Mega Golisopod ex",
+          "number": "135/103",
+          "set": "Delta Reign"
+        },
+        {
+          "name": "Kecleon",
+          "number": "117/103",
+          "set": "Delta Reign"
+        },
+        {
+          "name": "Aarune",
+          "number": "139/103",
+          "set": "Delta Reign"
+        },
+        {
+          "name": "Mega Rayquaza ex",
+          "number": "138/103",
+          "set": "Delta Reign"
+        },
+        {
+          "name": "Raikou ex",
+          "number": "136/103",
+          "set": "Delta Reign"
+        },
+        {
+          "name": "Mega Rayquaza ex",
+          "number": "141/103",
+          "set": "Delta Reign"
+        }
+      ]
+    },
+    {
+      "id": "prismatic-espeon-sir-biggest-fall-2026-11-21",
+      "eventKey": "prismatic-eevee-family-ex-sirs-since-30-sep-2026-11-21",
+      "date": "2026-11-21",
+      "displayDate": "21 Nov · Price guide",
+      "category": "Price action",
+      "kind": "Market price guide",
+      "title": "Espeon Is Now the Eevee SIR Falling HARDEST",
+      "summary": "Espeon has overtaken Vaporeon as the Prismatic Evolutions Eevee-family Special Illustration Rare that has fallen furthest since the end of September.\n\nEspeon ex’s Special Illustration Rare, 155/131, was US$221.74 for a raw copy on TCGplayer market guides on 20 November. On 30 September it was US$312.32, so it’s down 29.0%. Vaporeon ex’s SIR, 149/131, is down 28.0% over the same stretch, to US$203.36. When we covered Vaporeon on 18 November, it was the one falling fastest.\n\nAll nine Eevee-family ex Special Illustration Rares in the set are below their 30 September guides. Eevee ex, 167/131, has held up best at -14.5% (US$150.82). Umbreon ex, 161/131, is next at -16.1%, although at US$1,132.83 that’s still more than US$200 off. One of each of the nine came to US$3,619.92 on 30 September and US$2,872.77 on 20 November, down 20.6%.\n\nThis past week (13 to 20 November) eight of the nine fell again. Glaceon ex’s SIR, 150/131, dropped most, by 6.6% to US$220.01, with Espeon next at -6.0%. Sylveon ex’s SIR, 156/131, was the only one to rise, up 1.8% to US$377.39.\n\nOur read: Espeon is still the fourth priciest of the nine, but only US$1.73 ahead of Glaceon now. At the end of September it led Glaceon by US$46.\n\nThese are guide prices for raw, ungraded copies in mixed condition, not individual sales.\n\nPrices: TCGplayer market price via TCGCSV, Raw, USD, 30 September, 13 and 20 November 2026. The nine are the ex Special Illustration Rares of Eevee, Leafeon, Flareon, Vaporeon, Glaceon, Jolteon, Espeon, Sylveon and Umbreon (Holofoil).",
+      "sourceLabel": "TCGplayer market price via TCGCSV",
+      "url": "https://tcgcsv.com/tcgplayer/3/23821/prices",
+      "checkedAt": "2026-11-21T08:40:44Z",
+      "sourcePublishedAt": "2026-11-20",
+      "ctaUrl": "/prices/prismatic-evolutions/",
+      "ctaLabel": "Open the Prismatic price page →",
+      "visual": "source-media",
+      "image": "assets/newsroom-20261121a/prismatic-espeon-ex-sir-biggest-eevee-faller-hero.webp",
+      "imageAlt": "Curated graphic: the English Prismatic Evolutions booster pack with the Espeon ex 155/131 and Vaporeon ex 149/131 Special Illustration Rares. Espeon was US$222 on 20 November against US$312 on 30 September, down 29%, the largest fall of the nine Eevee-family ex SIRs; Vaporeon is down 28%. TCGplayer market guide, raw.",
+      "imageCredit": "Card and pack images: TCGplayer. Card artwork © Pokémon.",
+      "imageSourceUrl": "https://tcgplayer-cdn.tcgplayer.com/product/610510_in_1000x1000.jpg",
+      "author": {
+        "id": "elliot-reed",
+        "name": "Elliot Reed",
+        "type": "named_ai_correspondent",
+        "label": "Correspondent",
+        "beat": "Markets & auctions"
+      },
+      "newsRevision": 1,
+      "chase_cards": [
+        {
+          "name": "Espeon ex",
+          "image": "assets/prismatic-evolutions/610510.jpg",
+          "alt": "Exact English Prismatic Evolutions Espeon ex 155/131 Special Illustration Rare catalogue reference.",
+          "set": "Prismatic Evolutions",
+          "number": "155/131",
+          "link": "https://www.tcgplayer.com/product/610510"
+        },
+        {
+          "name": "Vaporeon ex",
+          "image": "assets/prismatic-evolutions/610504.jpg",
+          "alt": "Exact English Prismatic Evolutions Vaporeon ex 149/131 Special Illustration Rare catalogue reference.",
+          "set": "Prismatic Evolutions",
+          "number": "149/131",
+          "link": "https://www.tcgplayer.com/product/610504"
+        },
+        {
+          "name": "Glaceon ex",
+          "image": "assets/prismatic-evolutions/610505.jpg",
+          "alt": "Exact English Prismatic Evolutions Glaceon ex 150/131 Special Illustration Rare catalogue reference.",
+          "set": "Prismatic Evolutions",
+          "number": "150/131",
+          "link": "https://www.tcgplayer.com/product/610505"
+        },
+        {
+          "name": "Umbreon ex",
+          "image": "assets/prismatic-evolutions/610516.jpg",
+          "alt": "Exact English Prismatic Evolutions Umbreon ex 161/131 Special Illustration Rare catalogue reference.",
+          "set": "Prismatic Evolutions",
+          "number": "161/131",
+          "link": "https://www.tcgplayer.com/product/610516"
+        },
+        {
+          "name": "Sylveon ex",
+          "image": "assets/prismatic-evolutions/610511.jpg",
+          "alt": "Exact English Prismatic Evolutions Sylveon ex 156/131 Special Illustration Rare catalogue reference.",
+          "set": "Prismatic Evolutions",
+          "number": "156/131",
+          "link": "https://www.tcgplayer.com/product/610511"
+        },
+        {
+          "name": "Eevee ex",
+          "image": "assets/prismatic-evolutions/610522.jpg",
+          "alt": "Exact English Prismatic Evolutions Eevee ex 167/131 Special Illustration Rare catalogue reference.",
+          "set": "Prismatic Evolutions",
+          "number": "167/131",
+          "link": "https://www.tcgplayer.com/product/610522"
+        }
+      ],
+      "chase_cards_credit": "Card image: TCGplayer. Card artwork © Pokémon.",
+      "ebay_cards": [
+        {
+          "name": "Espeon ex",
+          "number": "155/131",
+          "set": "Prismatic Evolutions"
+        },
+        {
+          "name": "Vaporeon ex",
+          "number": "149/131",
+          "set": "Prismatic Evolutions"
+        },
+        {
+          "name": "Glaceon ex",
+          "number": "150/131",
+          "set": "Prismatic Evolutions"
+        },
+        {
+          "name": "Umbreon ex",
+          "number": "161/131",
+          "set": "Prismatic Evolutions"
+        },
+        {
+          "name": "Sylveon ex",
+          "number": "156/131",
+          "set": "Prismatic Evolutions"
+        },
+        {
+          "name": "Eevee ex",
+          "number": "167/131",
+          "set": "Prismatic Evolutions"
+        },
+        {
+          "name": "Leafeon ex",
+          "number": "144/131",
+          "set": "Prismatic Evolutions"
+        },
+        {
+          "name": "Flareon ex",
+          "number": "146/131",
+          "set": "Prismatic Evolutions"
+        },
+        {
+          "name": "Jolteon ex",
+          "number": "153/131",
+          "set": "Prismatic Evolutions"
+        }
+      ]
+    },
+    {
       "id": "prismatic-master-ball-eeveelutions-nearly-15x-poke-ball-set-2026-11-20",
       "eventKey": "prismatic-master-ball-vs-poke-ball-eeveelution-sets-2026-11-20",
       "date": "2026-11-20",
