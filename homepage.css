@@ -123,3 +123,21 @@ body:has(dialog[open]){overflow:hidden}
  .home-review-promo-copy h2{font-size:23px}
  .home-review-promo-cta{min-width:0;width:100%;font-size:13px;gap:6px;padding:0 8px}
 }
+
+/* symmetric 6-card fan: centre pair shares the apex.
+   site.css anchors cards with left:calc(10% + var(--i)*15.8%) and translateX(-50%),
+   so --i 0..5 sits left of the fan centre. Re-anchor on 50% with the same 15.8% step;
+   dips stay 24,8,0,0,8,24px from site.css. */
+.editorial-page .market-hero .public-modern-fan img{left:calc(50% + (var(--i) - 2.5) * 15.8%)}
+.editorial-page .market-hero .public-modern-fan img:nth-child(1){--r:-15deg;z-index:1}
+.editorial-page .market-hero .public-modern-fan img:nth-child(2){--r:-9deg;z-index:3}
+.editorial-page .market-hero .public-modern-fan img:nth-child(3){--r:-3deg;z-index:5}
+.editorial-page .market-hero .public-modern-fan img:nth-child(4){--r:3deg;z-index:5}
+.editorial-page .market-hero .public-modern-fan img:nth-child(5){--r:9deg;z-index:3}
+.editorial-page .market-hero .public-modern-fan img:nth-child(6){--r:15deg;z-index:1}
+/* same card shape for every scan */
+.editorial-page .market-hero .public-modern-fan img{aspect-ratio:63/88;object-fit:cover}
+.top50-home-fan img{height:auto!important}
+/* align the two panels vertically on desktop */
+.editorial-page .public-top50-feature p{margin:14px 0 19px}
+.editorial-page .public-top50-feature .btn{margin-top:0}
