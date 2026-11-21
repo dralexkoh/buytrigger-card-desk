@@ -21,7 +21,7 @@ from digest_signup import digest_signup_html
 SOURCE_NAME = 'TCGCSV market price'
 SHARE_IMAGE = 'https://buytrigger.cards/assets/family-wide.jpg'
 STYLESHEET = 'prices-table.css'
-SCRIPTS = ('prices-table.js', 'analytics.js')
+SCRIPTS = ('commerce.js', 'prices-table.js', 'analytics.js')
 
 
 def load_snapshot(path: Path) -> dict:
