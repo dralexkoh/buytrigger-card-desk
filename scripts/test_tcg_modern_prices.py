@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 from pathlib import Path
+import json
 import re
 import sys
 import unittest
@@ -25,7 +26,8 @@ class SnapshotTests(unittest.TestCase):
         sets = {card['subset'] for card in self.cards}
         self.assertEqual(len(self.cards), 99)
         self.assertEqual(len(sets), 40)
-        self.assertEqual(self.snapshot['source_date'], '2026-11-13')
+        release = json.loads((ROOT / 'refresh-status.json').read_text())['sourceDate']
+        self.assertEqual(self.snapshot['source_date'], release)
         self.assertEqual(self.snapshot['source'], 'TCGCSV marketPrice')
         self.assertTrue(all(card['price'] and card['price'] > 0 for card in self.cards))
         mews = [card for card in self.cards if str(card['image']).startswith('assets/thirtieth/')]

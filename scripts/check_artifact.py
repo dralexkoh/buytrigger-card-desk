@@ -229,6 +229,7 @@ locs={node.text for node in ET.fromstring((d/'sitemap.xml').read_text()).iter('{
 assert all(article_url(a['slug']) in locs for a in editorial['articles'])
 assert all(news_url(w['id']) in locs for w in editorial.get('wire',[]))
 from raw_price_page import display_price, format_source_date, load_snapshot, without_ebay_buttons
+from price_release import assert_price_as_of, release_date, visible_as_of_dates
 NAV_HREFS=(
  '/index.html#home','/market.html','/index.html#desk','/index.html#journal','/index.html#targets','/drops.html',
  '/index.html#about','/prices/thirtieth-anniversary/','/prices/tcg-modern/','/prices/delta-reign/','/prices/sv-151/','/prices/prismatic-evolutions/','/advertise/',
@@ -256,6 +257,10 @@ def assert_price_guide(slug, lead):
  assert len(rows)==len(snapshot['cards']), slug+' row count must follow the snapshot'
  text=page.get_text(' ')
  assert f'{lead}, as of {format_source_date(snapshot["source_date"])}' in text
+ assert_price_as_of(snapshot['source_date'], release_date(p))
+ shown=visible_as_of_dates(text)
+ expected=format_source_date(release_date(p))
+ assert shown=={expected}, slug+' as-of dates '+str(sorted(shown))+' != '+expected
  checked=without_ebay_buttons(html)
  assert 'PSA' not in checked, slug+' price page must not mention PSA outside the eBay button'
  assert not re.search(r'\b(buy|sell|accumulate|invest)\b', BeautifulSoup(checked,'html.parser').get_text(' '), re.I)

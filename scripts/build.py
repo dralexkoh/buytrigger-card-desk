@@ -205,6 +205,8 @@ for w in e.get('wire',[]):
  check_rendered_news_placements(content,w['id'],w['id'])
  main.append(BeautifulSoup(content,'html.parser'));absolutize_story_links(soup);folder=D/'news'/w['id'];folder.mkdir(parents=True);(folder/'index.html').write_text(str(soup))
 
+from price_release import rebuild_price_snapshots
+rebuild_price_snapshots(P)
 publish_thirtieth_prices(P, D)
 publish_modern_prices(P, D)
 publish_delta_reign_prices(P, D)

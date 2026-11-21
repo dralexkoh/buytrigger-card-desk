@@ -1,6 +1,6 @@
 """Public raw-price page for the English Pokémon ME06: Delta Reign set.
 
-Refresh: replace data/prices/delta-reign.json and rebuild.
+Refresh: the daily job rewrites data/prices/delta-reign.json from the daily cache.
 Rows, the card count and the as-of date all come from that file.
 """
 from __future__ import annotations
@@ -59,7 +59,7 @@ SPEC = {
     'kicker': 'ENGLISH / RAW PRICE REFERENCE',
     'heading': 'Delta Reign raw prices',
     'source_lead': 'Raw (ungraded) market guide prices, source: {source}, as of {date}',
-    'source_note': 'US-market references in USD, not offers. These figures are dated 16 November 2026 and will stay on that date until the daily refresh for this set is switched on.',
+    'source_note': 'US-market references in USD, not offers. These figures follow the daily market-guide release.',
     'price_header': 'Raw price',
     'group_header': 'Rarity',
     'group_attr': 'rarity',

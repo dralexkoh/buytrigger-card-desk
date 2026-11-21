@@ -1,6 +1,6 @@
 """Public raw market-guide page for the TCG Modern English Holofoil list.
 
-Refresh: replace data/prices/tcg-modern.json and rebuild.
+Refresh: the daily job rewrites data/prices/tcg-modern.json from the daily cache.
 Rows, the card count and the as-of date all come from that file.
 Graded values, index levels and performance figures are not published here.
 """
