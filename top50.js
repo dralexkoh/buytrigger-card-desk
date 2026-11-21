@@ -3,7 +3,7 @@
 const root=document.getElementById('modern-preview'),data=window.BT_TOP50,M=window.BTMarket;
 if(!data){root.querySelector('main').innerHTML='<section class="section"><h1>The Raw research archive could not load.</h1><p>Please reload or return to <a href="index.html">the Card Desk</a>.</p></section>';return;}
 const curated=data.release.publicRole==='curated-raw-collection';
-const era=c=>c.year<2019?'classic':'modern';
+const era=c=>c.era==='classic'||c.era==='modern'?c.era:(c.releaseDate&&c.releaseDate<'2011-04-01'?'classic':'modern');
 const viewLabel=curated?'BLUECHIP':location.pathname.endsWith('/bluechip-raw-archive.html')?'RAW RESEARCH ARCHIVE':'BLUECHIP / RAW RESEARCH';
 const cards=data.cards,grades=['Raw','PSA 9','PSA 10'],$=s=>root.querySelector(s),$$=s=>[...root.querySelectorAll(s)];
 function indexBuy(c){const api=window.BTCommerce;if(!api?.ebayCardBlock||!window.BT_COMMERCE)return '';return api.ebayCardBlock({name:c.name,number:c.number,set:c.set},window.BT_COMMERCE,{placement:'index',variant:'shop'});}
@@ -52,7 +52,7 @@ function renderChart(){
  $('#series-label').textContent=raw?`RAW USD · ${s.ids.length} CARDS`:state.grade+' / NOT CONNECTED';
  $('#index-level').textContent=raw&&b.last?b.last.value.toFixed(2):'—';$('#index-return').textContent=raw?pct(M.observedChange(b.first,b.last)):'Pending';
  $('#period-description').textContent=raw&&b.first?`${date(b.first.date)} → ${date(b.last.date)} · chart dates, not trade dates`:'No supported performance series';
- $('#cohort-description').textContent=curated?'Five classic printings with fixed membership. The gallery has all 50 cards and their own histories.':state.cohort==='history'?`${s.ids.length} cards with history from February 2024. All 50 cards and their individual histories are below. Retrospective view.`:`All ${cards.length} cards, with a shared history from ${date(s.baseDate)}. A return needs two complete dates. Retrospective view.`;
+ $('#cohort-description').textContent=curated?'Five printings with a real guide on every sampled date since 8 February 2024. The gallery has all 50 cards and their own histories.':state.cohort==='history'?`${s.ids.length} cards with history from February 2024. All 50 cards and their individual histories are below. Retrospective view.`:`All ${cards.length} cards, with a shared history from ${date(s.baseDate)}. A return needs two complete dates. Retrospective view.`;
  $('#metric-high').textContent=raw&&b.valid.length?Math.max(...b.valid.map(p=>p.value)).toFixed(2):'—';$('#metric-days').textContent=raw?`${b.valid.length} / ${points.length}`:'—';$('#metric-members').textContent=raw?`${s.ids.length} / 50`:'—';
  $('.periods').hidden=!raw;$('.cohort-controls').hidden=!raw||curated;$('.scrubber-label').hidden=!raw;$('#chart-scrub').hidden=!raw||!points.length;
  $('#chart-scrub').max=Math.max(0,points.length-1);$('#chart-scrub').value=Math.max(0,points.length-1);inspect(points.length-1);
@@ -117,6 +117,9 @@ function renderStatic(){
   $('#collection-coverage').textContent=coverage.priced+' current Raw guides · '+coverage.stale+' earlier guides';
  }
  $('#card-fan').innerHTML=(data.heroIds||cards.slice(0,6).map(c=>c.id)).map(id=>image(byId(id),false,true).replace('<img ','<img class="fan-card" ')).join('');
+ const classicOpt=$('#era-filter option[value="classic"]'),modernOpt=$('#era-filter option[value="modern"]');
+ if(classicOpt)classicOpt.textContent=`Classics · ${cards.filter(c=>era(c)==='classic').length}`;
+ if(modernOpt)modernOpt.textContent=`Modern · ${cards.filter(c=>era(c)==='modern').length}`;
  $('#set-filter').innerHTML+=[...sets].sort().map(s=>`<option value="${esc(s)}">${esc(s)}</option>`).join('');
  $('#auction-highlights').innerHTML=data.auctions.map(a=>`<article class="auction-card"><span class="auction-year">${a.year}</span><span class="pill">${esc(a.category)}</span><h3>${esc(a.card)}</h3><p>${esc(a.grader)} ${esc(a.grade)} · ${date(a.saleDate)}</p><div class="auction-value">${money(a.reportedResult)}</div><p>Published auction result · USD<br>Includes buyer’s premium</p><p class="auction-context">${esc(a.collectorContext)}</p><a href="${esc(a.originalAuctionUrl)}" target="_blank" rel="noopener noreferrer">Inspect the original ${esc(a.auctionHouse)} lot ↗</a></article>`).join('');
 }
