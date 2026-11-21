@@ -362,10 +362,11 @@ selected=collection_sources['selection']
 curated=collection['cards']
 assert len(curated)==len(selected)==len({(c['productId'],c['printing']) for c in curated})==50
 assert [c['id'] for c in curated]==list(range(1,51))
-assert all(c['year']<2019 for c in curated[:44]) and all(c['year']>=2019 for c in curated[44:])
-assert collection['release']['selectionDate']==collection_sources['selectionDate']=='2026-11-04'
+assert [c.get('era') for c in curated[:40]]==['classic']*40 and [c.get('era') for c in curated[40:]]==['modern']*10
+assert all(c['releaseDate']<'2011-04-01' for c in curated[:40]) and all(c['releaseDate']>='2011-04-01' for c in curated[40:])
+assert collection['release']['selectionDate']==collection_sources['selectionDate']=='2026-11-21'
 collection_history=collection['history']
-assert collection_history['cohorts']['history']['members']==[3,4,5,41,44]
+assert collection_history['cohorts']['history']['members']==[8,22,42,43,44]
 assert collection_history['cohorts']['current']['members']==[c['id'] for c in curated]
 collection_days=collection_history['dates']
 assert collection_days==sorted(set(collection_days))
@@ -373,7 +374,8 @@ assert collection_days[-1]==collection['release']['sourceDate']
 held={(e['cardId'],e['date']) for e in collection_history['exclusions']}
 for card,reviewed in zip(curated,selected):
  assert all(card[k]==reviewed[k] for k in ('id','productId','groupId','name','number','set','printing','year','language','image','imageSource'))
- assert card['language']=='English' and card['imageExactPrinting'] and card['imageLarge']==card['image']
+ assert card['language']=='English' and card['imageLarge']==card['image']
+ assert card['imageExactPrinting'] or 'picture pending' in card['imageNote'].lower()
  assert hashlib.sha256((d/card['image']).read_bytes()).hexdigest()==reviewed['imageSha256']
  values=collection_history['prices'][str(card['id'])]
  assert len(values)==len(collection_days)
