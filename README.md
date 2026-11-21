@@ -87,6 +87,8 @@ The wordmark is `assets/ebay/ebay-wordmark-b4-trimmed.png`, the official single-
 - `index-*` on TCG Modern and BlueChip price-index cards
 - `uv-*` on the UK Undervalued list
 - `uvjp-*` on the Japanese Undervalued list. The search also includes the word Japanese
+- `uv-cite` and `uvjp-cite` on Undervalued listing and sold-listing citations
+- `story-<slug>-cite` on a news or Feature item or sold-listing citation, using the same slug rule as `story-<slug>-*`
 
 A visit with `utm_content` of `deal`, `news`, `feature` or `reply` prefixes that id with `d_`, `n_`, `f_` or `r_` for the rest of the session. The finished id stays within 64 characters.
 

@@ -294,10 +294,21 @@ function mount(language){
   if(!api?.ebayCardBlock||!globalThis.BT_COMMERCE)return '';
   return api.ebayCardBlock({name:c.name,number:c.number,set:c.set,language:c.language==='ja'?'Japanese':'English'},globalThis.BT_COMMERCE,{placement:c.language==='ja'?'uvjp':'uv',variant:'shop'});
  }
+ function tagCites(html,placement){
+  const api=globalThis.BTCommerce;
+  if(!api?.citeHref||!globalThis.BT_COMMERCE)return html;
+  return html.replace(/<a href="(https:\/\/[^"]*ebay\.[^"]*)">([^<]*)<\/a>/g,(full,href,text)=>{
+   const url=href.replace(/&amp;/g,'&').replace(/&quot;/g,'"');
+   const next=api.citeHref(url,globalThis.BT_COMMERCE,placement);
+   if(!next||next===url)return full;
+   return `<a href="${esc(next)}">${text}</a> <span class="ebay-cite">Affiliate link</span>`;
+  });
+ }
  function renderCard(c,checkedAt){
   const html=c.kind==='watch'?watchCard(c,checkedAt,config.fx):upsideCard(c,checkedAt,config.fx);
+  const cited=tagCites(html,c.language==='ja'?'uvjp-cite':'uv-cite');
   const buy=targetBuy(c);
-  return buy?html.replace('</h3>', '</h3>'+buy):html;
+  return buy?cited.replace('</h3>', '</h3>'+buy):cited;
  }
  function earlierCards(examples){
   return examples.map(c=>renderCard(c,c.checkedAt??config.review.checkedAt)).join('');

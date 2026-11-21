@@ -26,6 +26,7 @@
 .shop-inline .shop-explain{flex:1 1 12rem;min-width:0;max-width:100%;white-space:normal;overflow-wrap:break-word}
 .feature-reference .shop-inline img.ebay-logo,.article-body .shop-inline img.ebay-logo,.shop-inline img.ebay-logo{height:15px!important;width:auto!important;max-width:none!important;max-height:15px!important;object-fit:contain;aspect-ratio:auto;flex:0 0 auto}
 .shop-inline .ebay-bar{width:auto;max-width:100%}
+.ebay-cite{display:inline;margin-left:6px;color:#171719;font-size:11px;font-weight:700;white-space:nowrap}
 .set-dialog-card>div{min-width:0;max-width:100%}
 .catalog-body .shop-inline,.dialog-image .shop-inline,.dialog-main .shop-inline,.target-copy .shop-inline{margin-top:8px;margin-bottom:16px}
 @media(max-width:720px){
@@ -37,5 +38,7 @@
  .ebay-logo{height:16px}
  .shop-inline .ebay-bar{width:auto;min-height:36px}
  .shop-inline .ebay-bar a{min-height:36px}
+ .catalog-body .shop-inline .ebay-bar{display:flex;flex-wrap:wrap;overflow:visible;width:100%;max-width:100%;height:auto;border-radius:10px}
+ .catalog-body .shop-inline .ebay-bar a{white-space:nowrap}
  .feature-reference .shop-inline img.ebay-logo,.article-body .shop-inline img.ebay-logo,.shop-inline img.ebay-logo{height:16px!important;max-height:16px!important}
 }
