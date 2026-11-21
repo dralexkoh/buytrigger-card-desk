@@ -2,7 +2,7 @@ import json
 import unittest
 from pathlib import Path
 
-from ebay_citations import CAMPAIGN, add_tracking, cite_custom_id, tag_html, untracked_hrefs
+from ebay_citations import CAMPAIGN, add_tracking, cite_custom_id, ensure_sponsored, missing_sponsored, tag_html, untracked_hrefs
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -43,7 +43,15 @@ class EbayCitationTests(unittest.TestCase):
         self.assertIn('nordt=true', tagged)
         self.assertIn('customid=uv-cite', tagged)
         self.assertIn('campid=5339239680', tagged)
+        self.assertIn('rel="noopener noreferrer sponsored nofollow"', tagged)
+        self.assertNotIn('target=', tagged)
         self.assertEqual(tag_html(tagged, 'uv-cite'), tagged)
+        bare = '<a href="https://www.ebay.co.uk/sch/i.html?campid=5339239680" target="_blank">Check price</a>'
+        sponsored = ensure_sponsored(bare)
+        self.assertIn('rel="sponsored nofollow noopener"', sponsored)
+        self.assertIn('target="_blank"', sponsored)
+        self.assertEqual(missing_sponsored(sponsored), [])
+        self.assertEqual(ensure_sponsored(sponsored), sponsored)
         self.assertEqual(
             add_tracking('https://www.ebay.co.uk/itm/297721154258?campid=5339239680', 'uv-cite'),
             'https://www.ebay.co.uk/itm/297721154258?campid=5339239680',
