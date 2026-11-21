@@ -9,8 +9,11 @@ Front matter, on a wire brief:
       {"name": "Raikou ex", "number": "136/103", "set": "Delta Reign"}
     ]
 
-The placement is always `story-` plus the brief id. Omit `ebay_cards` and the
-page is unchanged. A Feature carries the same block written in its section HTML.
+Placement (Captain, 20 Nov 2026): a news brief uses `story-` plus the first 45
+characters of its id, with any trailing hyphen trimmed. A Feature uses `story-`
+plus its full slug, and it must fit. Either way `story-<...>-psa10` stays within
+commerce.js's 64-character custom id. Omit `ebay_cards` and the page is unchanged.
+A Feature carries the same block written in its section HTML.
 """
 import re
 
@@ -20,6 +23,7 @@ BLOCK = re.compile(r'<div data-ebay-card\b[^>]*>', re.S)
 ATTR = re.compile(r'data-ebay-(name|number|set|placement)="([^"]*)"')
 URLISH = re.compile(r'https?:|www\.|ebay\.|\$|£|US\$|€')
 MAX_CUSTOM_ID = 64  # commerce.js placementId(): story-<slug>-psa10 must fit
+NEWS_SLUG_CHARS = 45
 
 
 def esc(value):
@@ -29,7 +33,13 @@ def esc(value):
 
 
 def placement_for(slug):
+    """Feature placement: the full slug."""
     return 'story-' + slug
+
+
+def news_placement_for(news_id):
+    """News placement: the first 45 characters of the id, trailing hyphens trimmed."""
+    return 'story-' + news_id[:NEWS_SLUG_CHARS].rstrip('-')
 
 
 def _check_placement(placement, label):
@@ -60,7 +70,7 @@ def validate_ebay_cards(item, slug, label):
         return
     if not isinstance(cards, list) or not cards:
         raise ValueError(f'{label}: ebay_cards needs at least one card')
-    _check_placement(placement_for(slug), label)
+    _check_placement(news_placement_for(slug), label)
     seen = set()
     for index, card in enumerate(cards, 1):
         _check_card(card, f'{label}: eBay card {index}')
@@ -92,8 +102,18 @@ def render_ebay_cards(item, slug):
     cards = item.get('ebay_cards')
     if not cards:
         return ''
-    placement = esc(placement_for(slug))
+    placement = esc(news_placement_for(slug))
     return ''.join(
         f'<div data-ebay-card data-ebay-name="{esc(c["name"])}" data-ebay-number="{esc(c["number"])}" '
         f'data-ebay-set="{esc(c["set"])}" data-ebay-placement="{placement}"></div>'
         for c in cards)
+
+
+def check_rendered_news_placements(markup, news_id, label):
+    """Every block on a built news page uses the expected truncated placement and fits."""
+    expected = news_placement_for(news_id)
+    for tag in BLOCK.findall(markup):
+        placement = dict(ATTR.findall(tag)).get('placement')
+        if placement != expected:
+            raise ValueError(f'{label}: eBay placement {placement} should be {expected}')
+        _check_placement(placement, label)

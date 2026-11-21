@@ -2668,7 +2668,29 @@
           "link": "https://www.tcgplayer.com/product/610646"
         }
       ],
-      "chase_cards_credit": "Card image: TCGplayer. Card artwork © Pokémon."
+      "chase_cards_credit": "Card image: TCGplayer. Card artwork © Pokémon.",
+      "ebay_cards": [
+        {
+          "name": "Umbreon (Master Ball Pattern)",
+          "number": "059/131",
+          "set": "Prismatic Evolutions"
+        },
+        {
+          "name": "Umbreon (Poke Ball Pattern)",
+          "number": "059/131",
+          "set": "Prismatic Evolutions"
+        },
+        {
+          "name": "Glaceon (Master Ball Pattern)",
+          "number": "025/131",
+          "set": "Prismatic Evolutions"
+        },
+        {
+          "name": "Jolteon (Master Ball Pattern)",
+          "number": "029/131",
+          "set": "Prismatic Evolutions"
+        }
+      ]
     },
     {
       "id": "sv-151-psyduck-ir-under-1-dollar-behind-pikachu-ir-2026-11-20",
@@ -2732,7 +2754,29 @@
           "link": "https://www.tcgplayer.com/product/517020"
         }
       ],
-      "chase_cards_credit": "Card image: TCGplayer. Card artwork © Pokémon."
+      "chase_cards_credit": "Card image: TCGplayer. Card artwork © Pokémon.",
+      "ebay_cards": [
+        {
+          "name": "Pikachu",
+          "number": "173/165",
+          "set": "Scarlet & Violet 151"
+        },
+        {
+          "name": "Psyduck",
+          "number": "175/165",
+          "set": "Scarlet & Violet 151"
+        },
+        {
+          "name": "Wartortle",
+          "number": "171/165",
+          "set": "Scarlet & Violet 151"
+        },
+        {
+          "name": "Dragonair",
+          "number": "181/165",
+          "set": "Scarlet & Violet 151"
+        }
+      ]
     },
     {
       "id": "prismatic-sylveon-ex-sir-down-quarter-since-30-sep-flat-week-2026-11-20",
@@ -2796,7 +2840,19 @@
           "link": "https://www.tcgplayer.com/product/610510"
         }
       ],
-      "chase_cards_credit": "Card image: TCGplayer. Card artwork © Pokémon."
+      "chase_cards_credit": "Card image: TCGplayer. Card artwork © Pokémon.",
+      "ebay_cards": [
+        {
+          "name": "Sylveon ex",
+          "number": "156/131",
+          "set": "Prismatic Evolutions"
+        },
+        {
+          "name": "Umbreon ex",
+          "number": "161/131",
+          "set": "Prismatic Evolutions"
+        }
+      ]
     },
     {
       "id": "sv-151-top-10-chase-cards-all-down-since-30-sep-2026-11-20",
@@ -2876,7 +2932,44 @@
           "link": "https://www.tcgplayer.com/product/502549"
         }
       ],
-      "chase_cards_credit": "Card image: TCGplayer. Card artwork © Pokémon."
+      "chase_cards_credit": "Card image: TCGplayer. Card artwork © Pokémon.",
+      "ebay_cards": [
+        {
+          "name": "Pikachu",
+          "number": "173/165",
+          "set": "Scarlet & Violet 151"
+        },
+        {
+          "name": "Bulbasaur",
+          "number": "166/165",
+          "set": "Scarlet & Violet 151"
+        },
+        {
+          "name": "Charmeleon",
+          "number": "169/165",
+          "set": "Scarlet & Violet 151"
+        },
+        {
+          "name": "Charizard ex",
+          "number": "199/165",
+          "set": "Scarlet & Violet 151"
+        },
+        {
+          "name": "Squirtle",
+          "number": "170/165",
+          "set": "Scarlet & Violet 151"
+        },
+        {
+          "name": "Blastoise ex",
+          "number": "200/165",
+          "set": "Scarlet & Violet 151"
+        },
+        {
+          "name": "Psyduck",
+          "number": "175/165",
+          "set": "Scarlet & Violet 151"
+        }
+      ]
     },
     {
       "id": "hadou-seeker-official-card-list-78-cards-2026-11-20",
@@ -3033,7 +3126,24 @@
           "link": "https://www.tcgplayer.com/product/517045"
         }
       ],
-      "chase_cards_credit": "Card image: TCGplayer. Card artwork © Pokémon."
+      "chase_cards_credit": "Card image: TCGplayer. Card artwork © Pokémon.",
+      "ebay_cards": [
+        {
+          "name": "Blastoise ex",
+          "number": "200/165",
+          "set": "Scarlet & Violet 151"
+        },
+        {
+          "name": "Venusaur ex",
+          "number": "198/165",
+          "set": "Scarlet & Violet 151"
+        },
+        {
+          "name": "Charizard ex",
+          "number": "199/165",
+          "set": "Scarlet & Violet 151"
+        }
+      ]
     },
     {
       "date": "2026-11-19",
@@ -3157,6 +3267,18 @@
           "number": "156/131",
           "link": "https://www.tcgplayer.com/product/610511"
         }
+      ],
+      "ebay_cards": [
+        {
+          "name": "Roaring Moon ex",
+          "number": "162/131",
+          "set": "Prismatic Evolutions"
+        },
+        {
+          "name": "Umbreon ex",
+          "number": "161/131",
+          "set": "Prismatic Evolutions"
+        }
       ]
     },
     {
@@ -3212,6 +3334,18 @@
           "set": "Delta Reign",
           "number": "136/103",
           "link": "https://www.tcgplayer.com/product/726574"
+        }
+      ],
+      "ebay_cards": [
+        {
+          "name": "Mega Golisopod ex",
+          "number": "135/103",
+          "set": "Delta Reign"
+        },
+        {
+          "name": "Mega Golurk ex",
+          "number": "137/103",
+          "set": "Delta Reign"
         }
       ]
     },
@@ -3306,7 +3440,34 @@
         "label": "Correspondent",
         "beat": "Markets & auctions"
       },
-      "newsRevision": 1
+      "newsRevision": 1,
+      "ebay_cards": [
+        {
+          "name": "Eevee",
+          "number": "114/103",
+          "set": "Delta Reign"
+        },
+        {
+          "name": "Groudon",
+          "number": "111/103",
+          "set": "Delta Reign"
+        },
+        {
+          "name": "Growlithe",
+          "number": "106/103",
+          "set": "Delta Reign"
+        },
+        {
+          "name": "Kecleon",
+          "number": "117/103",
+          "set": "Delta Reign"
+        },
+        {
+          "name": "Magmortar",
+          "number": "107/103",
+          "set": "Delta Reign"
+        }
+      ]
     },
     {
       "id": "prismatic-master-ball-umbreon-down-25-percent-since-30-sep-2026-11-19",
@@ -3386,7 +3547,39 @@
         "label": "Correspondent",
         "beat": "Markets & auctions"
       },
-      "newsRevision": 1
+      "newsRevision": 1,
+      "ebay_cards": [
+        {
+          "name": "Umbreon (Master Ball Pattern)",
+          "number": "059/131",
+          "set": "Prismatic Evolutions"
+        },
+        {
+          "name": "Umbreon ex",
+          "number": "161/131",
+          "set": "Prismatic Evolutions"
+        },
+        {
+          "name": "Flareon (Master Ball Pattern)",
+          "number": "013/131",
+          "set": "Prismatic Evolutions"
+        },
+        {
+          "name": "Jolteon (Master Ball Pattern)",
+          "number": "029/131",
+          "set": "Prismatic Evolutions"
+        },
+        {
+          "name": "Vaporeon (Master Ball Pattern)",
+          "number": "022/131",
+          "set": "Prismatic Evolutions"
+        },
+        {
+          "name": "Espeon (Master Ball Pattern)",
+          "number": "033/131",
+          "set": "Prismatic Evolutions"
+        }
+      ]
     },
     {
       "id": "flowing-fists-official-saturday-6-february-2027-2026-11-19",
@@ -3487,7 +3680,19 @@
         "label": "Correspondent",
         "beat": "Markets & auctions"
       },
-      "newsRevision": 1
+      "newsRevision": 1,
+      "ebay_cards": [
+        {
+          "name": "Mega Rayquaza ex",
+          "number": "141/103",
+          "set": "Delta Reign"
+        },
+        {
+          "name": "Mega Rayquaza ex",
+          "number": "138/103",
+          "set": "Delta Reign"
+        }
+      ]
     },
     {
       "id": "delta-reign-aarune-sir-up-73-percent-since-launch-down-21-percent-in-a-week-2026-11-19",
@@ -3559,7 +3764,19 @@
         "label": "Correspondent",
         "beat": "Markets & auctions"
       },
-      "newsRevision": 1
+      "newsRevision": 1,
+      "ebay_cards": [
+        {
+          "name": "Aarune",
+          "number": "139/103",
+          "set": "Delta Reign"
+        },
+        {
+          "name": "Zinnia's Trust",
+          "number": "140/103",
+          "set": "Delta Reign"
+        }
+      ]
     },
     {
       "id": "play-pokemon-december-2026-league-prizes-mega-rayquaza-playmat-stamped-promos-2026-11-19",
@@ -3682,7 +3899,24 @@
         "label": "Correspondent",
         "beat": "Markets & auctions"
       },
-      "newsRevision": 1
+      "newsRevision": 1,
+      "ebay_cards": [
+        {
+          "name": "Charizard ex",
+          "number": "199/165",
+          "set": "Scarlet & Violet 151"
+        },
+        {
+          "name": "Blastoise ex",
+          "number": "200/165",
+          "set": "Scarlet & Violet 151"
+        },
+        {
+          "name": "Venusaur ex",
+          "number": "198/165",
+          "set": "Scarlet & Violet 151"
+        }
+      ]
     },
     {
       "id": "prismatic-umbreon-ex-sir-down-14-percent-since-30-sep-2026-11-18",
@@ -3762,7 +3996,29 @@
         "label": "Correspondent",
         "beat": "Markets & auctions"
       },
-      "newsRevision": 1
+      "newsRevision": 1,
+      "ebay_cards": [
+        {
+          "name": "Umbreon ex",
+          "number": "161/131",
+          "set": "Prismatic Evolutions"
+        },
+        {
+          "name": "Sylveon ex",
+          "number": "156/131",
+          "set": "Prismatic Evolutions"
+        },
+        {
+          "name": "Vaporeon ex",
+          "number": "149/131",
+          "set": "Prismatic Evolutions"
+        },
+        {
+          "name": "Espeon ex",
+          "number": "155/131",
+          "set": "Prismatic Evolutions"
+        }
+      ]
     },
     {
       "id": "delta-reign-zinnias-trust-sir-below-launch-up-7-percent-in-a-week-2026-11-18",
@@ -3842,7 +4098,24 @@
         "label": "Correspondent",
         "beat": "Markets & auctions"
       },
-      "newsRevision": 1
+      "newsRevision": 1,
+      "ebay_cards": [
+        {
+          "name": "Zinnia's Trust",
+          "number": "140/103",
+          "set": "Delta Reign"
+        },
+        {
+          "name": "Kecleon",
+          "number": "117/103",
+          "set": "Delta Reign"
+        },
+        {
+          "name": "Mega Rayquaza ex",
+          "number": "138/103",
+          "set": "Delta Reign"
+        }
+      ]
     },
     {
       "id": "prismatic-vaporeon-ex-sir-down-28-percent-since-30-sep-2026-11-18",
@@ -3922,7 +4195,24 @@
         "label": "Correspondent",
         "beat": "Markets & auctions"
       },
-      "newsRevision": 1
+      "newsRevision": 1,
+      "ebay_cards": [
+        {
+          "name": "Vaporeon ex",
+          "number": "149/131",
+          "set": "Prismatic Evolutions"
+        },
+        {
+          "name": "Espeon ex",
+          "number": "155/131",
+          "set": "Prismatic Evolutions"
+        },
+        {
+          "name": "Glaceon ex",
+          "number": "150/131",
+          "set": "Prismatic Evolutions"
+        }
+      ]
     },
     {
       "id": "delta-reign-kecleon-illustration-rare-more-than-doubled-since-launch-2026-11-18",
@@ -4002,7 +4292,19 @@
         "label": "Correspondent",
         "beat": "Markets & auctions"
       },
-      "newsRevision": 1
+      "newsRevision": 1,
+      "ebay_cards": [
+        {
+          "name": "Kecleon",
+          "number": "117/103",
+          "set": "Delta Reign"
+        },
+        {
+          "name": "Mega Golurk ex",
+          "number": "137/103",
+          "set": "Delta Reign"
+        }
+      ]
     },
     {
       "id": "sv-151-alakazam-zapdos-ex-sirs-down-more-than-20-percent-since-30-sep-2026-11-18",
@@ -4074,7 +4376,19 @@
         "label": "Correspondent",
         "beat": "Markets & auctions"
       },
-      "newsRevision": 1
+      "newsRevision": 1,
+      "ebay_cards": [
+        {
+          "name": "Alakazam ex",
+          "number": "201/165",
+          "set": "Scarlet & Violet 151"
+        },
+        {
+          "name": "Zapdos ex",
+          "number": "202/165",
+          "set": "Scarlet & Violet 151"
+        }
+      ]
     },
     {
       "id": "delta-reign-gold-mega-rayquaza-ex-down-36-percent-since-launch-2026-11-18",
@@ -4146,7 +4460,24 @@
         "label": "Correspondent",
         "beat": "Markets & auctions"
       },
-      "newsRevision": 1
+      "newsRevision": 1,
+      "ebay_cards": [
+        {
+          "name": "Mega Rayquaza ex",
+          "number": "141/103",
+          "set": "Delta Reign"
+        },
+        {
+          "name": "Mega Rayquaza ex",
+          "number": "138/103",
+          "set": "Delta Reign"
+        },
+        {
+          "name": "Raikou ex",
+          "number": "136/103",
+          "set": "Delta Reign"
+        }
+      ]
     },
     {
       "id": "prismatic-evolutions-nine-of-top-ten-chase-cards-lower-7-days-2026-11-18",
@@ -4226,7 +4557,49 @@
         "label": "Correspondent",
         "beat": "Markets & auctions"
       },
-      "newsRevision": 1
+      "newsRevision": 1,
+      "ebay_cards": [
+        {
+          "name": "Glaceon ex",
+          "number": "150/131",
+          "set": "Prismatic Evolutions"
+        },
+        {
+          "name": "Espeon ex",
+          "number": "155/131",
+          "set": "Prismatic Evolutions"
+        },
+        {
+          "name": "Sylveon ex",
+          "number": "156/131",
+          "set": "Prismatic Evolutions"
+        },
+        {
+          "name": "Umbreon ex",
+          "number": "161/131",
+          "set": "Prismatic Evolutions"
+        },
+        {
+          "name": "Eevee ex",
+          "number": "167/131",
+          "set": "Prismatic Evolutions"
+        },
+        {
+          "name": "Jolteon ex",
+          "number": "153/131",
+          "set": "Prismatic Evolutions"
+        },
+        {
+          "name": "Leafeon ex",
+          "number": "144/131",
+          "set": "Prismatic Evolutions"
+        },
+        {
+          "name": "Roaring Moon ex",
+          "number": "162/131",
+          "set": "Prismatic Evolutions"
+        }
+      ]
     },
     {
       "id": "sv-151-starter-line-illustration-rares-below-30-sep-2026-11-18",
@@ -4306,7 +4679,39 @@
         "label": "Correspondent",
         "beat": "Markets & auctions"
       },
-      "newsRevision": 1
+      "newsRevision": 1,
+      "ebay_cards": [
+        {
+          "name": "Bulbasaur",
+          "number": "166/165",
+          "set": "Scarlet & Violet 151"
+        },
+        {
+          "name": "Ivysaur",
+          "number": "167/165",
+          "set": "Scarlet & Violet 151"
+        },
+        {
+          "name": "Charmander",
+          "number": "168/165",
+          "set": "Scarlet & Violet 151"
+        },
+        {
+          "name": "Charmeleon",
+          "number": "169/165",
+          "set": "Scarlet & Violet 151"
+        },
+        {
+          "name": "Squirtle",
+          "number": "170/165",
+          "set": "Scarlet & Violet 151"
+        },
+        {
+          "name": "Wartortle",
+          "number": "171/165",
+          "set": "Scarlet & Violet 151"
+        }
+      ]
     },
     {
       "id": "delta-reign-raikou-ex-sir-up-30-percent-7-days-2026-11-17",
@@ -4378,7 +4783,19 @@
         "label": "Correspondent",
         "beat": "Markets & auctions"
       },
-      "newsRevision": 1
+      "newsRevision": 1,
+      "ebay_cards": [
+        {
+          "name": "Raikou ex",
+          "number": "136/103",
+          "set": "Delta Reign"
+        },
+        {
+          "name": "Mega Rayquaza ex",
+          "number": "138/103",
+          "set": "Delta Reign"
+        }
+      ]
     },
     {
       "id": "sv-151-price-page-207-cards-index-blank-2026-11-17",
@@ -4757,7 +5174,39 @@
         "label": "Correspondent",
         "beat": "Markets & auctions"
       },
-      "newsRevision": 1
+      "newsRevision": 1,
+      "ebay_cards": [
+        {
+          "name": "Pikachu",
+          "number": "173/165",
+          "set": "Scarlet & Violet 151"
+        },
+        {
+          "name": "Bulbasaur",
+          "number": "166/165",
+          "set": "Scarlet & Violet 151"
+        },
+        {
+          "name": "Alakazam ex",
+          "number": "201/165",
+          "set": "Scarlet & Violet 151"
+        },
+        {
+          "name": "Zapdos ex",
+          "number": "202/165",
+          "set": "Scarlet & Violet 151"
+        },
+        {
+          "name": "Charmeleon",
+          "number": "169/165",
+          "set": "Scarlet & Violet 151"
+        },
+        {
+          "name": "Charizard ex",
+          "number": "199/165",
+          "set": "Scarlet & Violet 151"
+        }
+      ]
     },
     {
       "id": "hadou-seeker-japan-pack-lucario-2026-11-17",
@@ -4844,7 +5293,29 @@
         "label": "Correspondent",
         "beat": "Markets & auctions"
       },
-      "newsRevision": 2
+      "newsRevision": 2,
+      "ebay_cards": [
+        {
+          "name": "Mew ex",
+          "number": "152/128",
+          "set": "30th Celebration"
+        },
+        {
+          "name": "Gengar ex",
+          "number": "154/128",
+          "set": "30th Celebration"
+        },
+        {
+          "name": "Lugia",
+          "number": "149/147",
+          "set": "30th Celebration"
+        },
+        {
+          "name": "Charizard",
+          "number": "4/102",
+          "set": "30th Celebration"
+        }
+      ]
     },
     {
       "id": "legendary-collection-reverse-holo-moltres-psa10-32300-2026-11-15",
@@ -4871,7 +5342,14 @@
         "label": "Correspondent",
         "beat": "Markets & auctions"
       },
-      "newsRevision": 1
+      "newsRevision": 1,
+      "ebay_cards": [
+        {
+          "name": "Moltres",
+          "number": "30/110",
+          "set": "Legendary Collection"
+        }
+      ]
     },
     {
       "id": "thirtieth-celebration-chase-cards-week-prices-2026-11-13",
