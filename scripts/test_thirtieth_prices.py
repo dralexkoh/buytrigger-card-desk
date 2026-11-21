@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 from pathlib import Path
+import json
 import re
 import sys
 import unittest
@@ -14,7 +15,6 @@ import thirtieth_prices as prices
 import raw_price_page
 
 ROOT = Path(__file__).resolve().parents[1]
-SOURCE = 'Raw (ungraded) prices, source: TCGCSV market price, as of 13 Nov 2026'
 
 
 class SnapshotTests(unittest.TestCase):
@@ -32,14 +32,14 @@ class SnapshotTests(unittest.TestCase):
             'ME: 30th Celebration Classic Collection': 30,
             'ME: Mega Evolution Promo': 4,
         })
-        self.assertEqual(self.snapshot['source_date'], '2026-11-13')
+        release = json.loads((ROOT / 'refresh-status.json').read_text())['sourceDate']
+        self.assertEqual(self.snapshot['source_date'], release)
         self.assertTrue(all(card['image'] and (ROOT / card['image']).is_file() for card in self.cards))
         self.assertTrue(all(card['price'] and card['price'] > 0 for card in self.cards))
 
     def test_default_order_is_raw_price_high_to_low(self):
         ordered = [card['price'] for card in self.cards]
         self.assertEqual(ordered, sorted(ordered, reverse=True))
-        self.assertEqual([card['name'] for card in self.cards[:3]], ['Mew - B/RGB', 'Mew - R/RGB', 'Mew - G/RGB'])
 
 
 class PageTests(unittest.TestCase):
@@ -54,7 +54,9 @@ class PageTests(unittest.TestCase):
         self.assertNotIn('PSA', editorial)
         self.assertIsNone(re.search(r'(?<!un)graded', self.html, re.I))
         text = BeautifulSoup(editorial, 'html.parser').get_text(' ')
-        self.assertIn(SOURCE, text)
+        snapshot = prices.load_snapshot(ROOT / prices.SNAPSHOT)
+        source = 'Raw (ungraded) prices, source: TCGCSV market price, as of ' + prices.format_source_date(snapshot['source_date'])
+        self.assertIn(source, text)
         self.assertIn('Prices are US-market references in USD, not offers.', text)
         self.assertIsNone(re.search(r'\b(buy|sell|accumulate|invest)\b', text, re.I))
         self.assertIsNone(re.search(r'index level|index change|since launch|performance', text, re.I))

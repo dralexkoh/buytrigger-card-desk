@@ -1,6 +1,6 @@
 """Public raw-price page for the English Pokémon 30th Anniversary set.
 
-Refresh: replace data/prices/thirtieth-anniversary.json and rebuild.
+Refresh: the daily job rewrites data/prices/thirtieth-anniversary.json from the daily cache.
 Rows, the card count and the as-of date all come from that file.
 """
 from __future__ import annotations

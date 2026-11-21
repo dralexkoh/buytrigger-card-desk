@@ -15,15 +15,18 @@ ALLOWED={'catalogue.js','market-history.js','market-release.json','market-source
 # Per-index caches the publisher may commit. thirtieth-current.json stays on the
 # explicit list above and is not accepted through this name check.
 INDEX_CACHES={'tcg-modern','delta-reign','sv-151','prismatic-evolutions'}
+PRICE_SNAPSHOTS={
+    'data/prices/thirtieth-anniversary.json','data/prices/tcg-modern.json',
+    'data/prices/delta-reign.json','data/prices/sv-151.json','data/prices/prismatic-evolutions.json'}
 
 
-def promoted_path_allowed(name, allowed=ALLOWED, index_caches=INDEX_CACHES):
+def promoted_path_allowed(name, allowed=ALLOWED, index_caches=INDEX_CACHES, price_snapshots=PRICE_SNAPSHOTS):
     p=Path(name)
     suffix='-current.json'
     index_name=p.name[:-len(suffix)] if p.name.endswith(suffix) else ''
     index_cache=len(p.parts)==3 and p.parts[:2]==('data','market-cache') and index_name in index_caches
     public_target=len(p.parts)==3 and p.parts[:2]==('assets','public-targets') and p.suffix=='.webp'
-    return not (p.is_absolute() or '..' in p.parts or not (name in allowed or index_cache or public_target or name.startswith('data/refresh/') and p.suffix=='.json'))
+    return not (p.is_absolute() or '..' in p.parts or not (name in allowed or name in price_snapshots or index_cache or public_target or name.startswith('data/refresh/') and p.suffix=='.json'))
 
 
 def reject_unexpected(paths):

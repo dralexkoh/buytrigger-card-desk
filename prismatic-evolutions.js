@@ -34,7 +34,7 @@ function page(){
    <div>
     <span class="kicker red-text">ENGLISH / RAW MARKET GUIDES</span>
     <h1>Prismatic Evolutions <em>Index.</em></h1>
-    <p>All 180 English cards from Prismatic Evolutions, one of each base printing. Open any card for its dated Raw market guides. Prices are dated 16 November 2026 and will stay on that date until the daily refresh for this set is switched on. The index start date is 17 January 2025, the set’s English launch day; the index stays at — until a complete launch-day set of guides is available. This roster is the 180 English base printings, leaving out 167 Poké Ball and Master Ball pattern versions.</p>
+    <p>All 180 English cards from Prismatic Evolutions, one of each base printing. Open any card for its dated Raw market guides. Prices follow the daily Raw market-guide release. The source date is shown with the index. The index start date is 17 January 2025, the set’s English launch day; the index stays at — until a complete launch-day set of guides is available. This roster is the 180 English base printings, leaving out 167 Poké Ball and Master Ball pattern versions.</p>
     <a class="btn red" href="#prismatic-evolutions-cards" data-set-scroll>Explore the cards ↓</a>
    </div>
    <div class="thirtieth-fan" aria-label="English Prismatic Evolutions cards">${heroes.map(([id,label])=>`<img src="assets/prismatic-evolutions/${id}.jpg" alt="${label} · English Prismatic Evolutions official card image">`).join('')}</div>
@@ -50,7 +50,7 @@ function page(){
   <details class="set-method">
    <summary>How the chart works</summary>
    <p>The index adds the Raw market guide for one of each of the 180 English base printings and sets that total to 100 on 17 January 2025, the set’s English launch day. The index stays at — until a complete launch-day set of guides is available, because the dated guides in this snapshot do not include one. A day needs every price in the set. Missing dates stay as gaps.</p>
-   <p>Prices are TCGplayer mixed-condition market guides via <a href="https://tcgcsv.com/faq" target="_blank" rel="noopener">TCGCSV</a>, in USD. The dated guides in this snapshot are the earliest point in the 17 November 2026 public-safe handoff (31 January 2025 for 178 of 180 cards; Sylveon ex 156/131 and Umbreon ex 161/131 from 9 November 2026) and the current guides dated 16 November 2026. Those two TCG Modern overlap cards are dated 15 November 2026 in the handoff; this snapshot reuses those guides for 16 November so the set has a complete current day. Daily points will fill in once the regular refresh for this set is switched on. These are guide prices, not verified sales or offers.</p>
+   <p>Prices are TCGplayer mixed-condition market guides via <a href="https://tcgcsv.com/faq" target="_blank" rel="noopener">TCGCSV</a>, in USD. Each figure is that printing’s guide on the daily release. These are guide prices, not verified sales or offers.</p>
   </details>
  </section>
  <section class="thirtieth-catalogue" id="prismatic-evolutions-cards">
@@ -93,7 +93,7 @@ function draw(){
  const chartLabel=indexReady?'Prismatic Evolutions Raw market-guide index':'Prismatic Evolutions Raw market-guide total in USD';
  const chartNote=indexReady
   ?`180 fixed printings. Lines stop where prices are missing. The index is 100 on 17 January 2025, the set’s English launch day.`
-  :`180 fixed printings. The index start date is 17 January 2025, the set’s English launch day. This snapshot cannot yet set 100 on that day, because it does not include a complete launch-day set of guides. The first complete day here is 16 November 2026.`;
+  :`180 fixed printings. The index start date is 17 January 2025, the set’s English launch day. The index stays at — until a complete launch-day set of guides is available.`;
  document.getElementById('prismatic-evolutions-chart').innerHTML=chart(points,chartValue,chartLabel)+
   `<p class="set-chart-note">${chartNote}</p>`;
 }
@@ -170,10 +170,13 @@ function stampSnapshot(value){
  return copy;
 }
 
-async function loadSnapshot(signal){
- const res=await fetch('prismatic-evolutions-market-snapshot.json',{cache:'no-store',signal});
- if(!res.ok)throw Error();
- const value=E.validate(stampSnapshot(await res.json()));
+async function loadDaily(signal){
+ const [cacheRes,snapRes]=await Promise.all([
+  fetch('data/market-cache/'+E.spec.index+'-current.json',{cache:'no-store',signal}),
+  fetch('prismatic-evolutions-market-snapshot.json',{cache:'no-store',signal})
+ ]);
+ if(!cacheRes.ok||!snapRes.ok)throw Error();
+ const value=E.validate(stampSnapshot(Factory.adaptDailyCache(await snapRes.json(),await cacheRes.json())));
  if(!value)throw Error();
  return value;
 }
@@ -198,28 +201,15 @@ async function load(){
  let value=null;
  try{
   const res=await fetch('market-config.json',{cache:'no-store',signal:controller.signal});
-  if(res.ok){
-   const config=await res.json();
-   if(config.enabled&&config.endpoint){
-    const url=new URL(config.endpoint,location.href);
-    if(url.protocol==='https:'||(location.hostname==='127.0.0.1'&&url.origin===location.origin)){
-     url.search=new URLSearchParams({index:'prismatic-evolutions',days:'366'});
-     const r=await fetch(url,{credentials:'omit',cache:'no-store',signal:controller.signal});
-     if(r.ok){
-      const text=await r.text();
-      if(text.length<=3000000){
-       const parsed=JSON.parse(text);
-       if(parsed&&parsed.available!==false)value=E.validate(parsed);
-      }
-     }
-    }
-   }
-  }
+  if(!res.ok)throw Error();
+  const config=await res.json();
+  if(!config.enabled||!config.endpoint)throw Error();
+  value=await loadDaily(controller.signal);
  }catch(e){
   value=null;
  }
  try{
-  if(!value)value=await loadSnapshot();
+  if(!value)value=await loadDaily(controller.signal);
   if(!active||token!==epoch)return;
   data=value;
   try{await loadRoster(controller.signal);}catch(err){}

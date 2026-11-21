@@ -54,7 +54,8 @@ class ChasePricePages(unittest.TestCase):
             self.assertEqual([tile['data-chase-card'] for tile in tiles], ids)
             text = block.get_text(' ')
             self.assertIn('TCGCSV market price', text)
-            self.assertIn('as of 16 Nov 2026', text)
+            snapshot = module.load_snapshot(ROOT / module.SNAPSHOT)
+            self.assertIn('as of ' + module.format_source_date(snapshot['source_date']), text)
             self.assertIn('not offers', text)
             for tile, product_id in zip(tiles, ids):
                 image = tile.select_one('img')

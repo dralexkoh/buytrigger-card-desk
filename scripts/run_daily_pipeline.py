@@ -69,6 +69,11 @@ def apply_output(output, stage, failed):
         # this run already collected (no extra fetch). Approved rosters only.
         from index_cache import write_all
         selected.extend(write_all(stage))
+    if not failed:
+        # /prices/ pages render these snapshots. Rewrite them from the caches
+        # this run already built, then the build publishes the pages.
+        from price_release import rebuild_price_snapshots
+        selected.extend(rebuild_price_snapshots(stage))
     return selected
 
 

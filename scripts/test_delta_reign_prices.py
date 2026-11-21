@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 from pathlib import Path
+import json
 import re
 import sys
 import unittest
@@ -14,7 +15,10 @@ import delta_reign_prices as prices
 import raw_price_page
 
 ROOT = Path(__file__).resolve().parents[1]
-SOURCE = 'Raw (ungraded) market guide prices, source: TCGCSV market price, as of 16 Nov 2026'
+
+
+def release_date():
+    return json.loads((ROOT / 'refresh-status.json').read_text())['sourceDate']
 
 
 class SnapshotTests(unittest.TestCase):
@@ -24,7 +28,7 @@ class SnapshotTests(unittest.TestCase):
 
     def test_snapshot_is_the_full_english_set(self):
         self.assertEqual(len(self.cards), 141)
-        self.assertEqual(self.snapshot['source_date'], '2026-11-16')
+        self.assertEqual(self.snapshot['source_date'], release_date())
         self.assertEqual(self.snapshot['set_slug'], 'delta-reign')
         secrets = [card for card in self.cards if int(card['number'].split('/', 1)[0]) > 103]
         self.assertEqual(len(secrets), 38)
@@ -35,11 +39,6 @@ class SnapshotTests(unittest.TestCase):
     def test_default_order_is_raw_price_high_to_low(self):
         ordered = [card['price'] for card in self.cards]
         self.assertEqual(ordered, sorted(ordered, reverse=True))
-        self.assertEqual(
-            [card['name'] for card in self.cards[:3]],
-            ['Mega Rayquaza ex - 138/103', 'Mega Rayquaza ex - 141/103', 'Raikou ex'],
-        )
-        self.assertEqual(round(sum(card['price'] for card in self.cards), 2), 962.23)
 
 
 class PageTests(unittest.TestCase):
@@ -54,8 +53,9 @@ class PageTests(unittest.TestCase):
         self.assertNotIn('PSA', editorial)
         self.assertIsNone(re.search(r'(?<!un)graded', self.html, re.I))
         text = BeautifulSoup(editorial, 'html.parser').get_text(' ')
-        self.assertIn(SOURCE, text)
-        self.assertIn('16 November 2026', text)
+        date = prices.format_source_date(prices.load_snapshot(ROOT / prices.SNAPSHOT)['source_date'])
+        self.assertIn(f'Raw (ungraded) market guide prices, source: TCGCSV market price, as of {date}', text)
+        self.assertNotIn('will stay on that date', text)
         self.assertIn('US-market references in USD, not offers.', text)
         self.assertIn('Card image: The Pokémon Company / pokemon.com', text)
         self.assertIsNone(re.search(r'\b(buy|sell|accumulate|invest)\b', text, re.I))
