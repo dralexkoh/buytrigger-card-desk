@@ -63,8 +63,9 @@ class IndexCacheTests(unittest.TestCase):
         approved = json.loads((SITE / 'data/market-rosters/tcg-modern.json').read_text())
         catalogue = D.read_js(SITE / 'catalogue.js', 'window.MODERN_PREVIEW_DATA')
         public_ids = {str(c['productId']) for c in catalogue['cards']}
-        self.assertEqual({c['productId'] for c in approved['cards']}, public_ids - {'85203'})
-        self.assertEqual(approved['excluded'][0]['productId'], 85203)
+        self.assertEqual({c['productId'] for c in approved['cards']}, public_ids)
+        self.assertEqual(approved['excluded'], [])
+        self.assertIn('728061', public_ids)
         thirtieth_before = (SITE / 'data/market-cache/thirtieth-current.json').read_bytes()
         catalogue_before = (SITE / 'catalogue.js').read_bytes()
         cache = index_cache.build(SITE, approved)
@@ -81,7 +82,8 @@ class IndexCacheTests(unittest.TestCase):
         built = datetime.fromisoformat(cache['sourceBuildAt'])
         self.assertEqual(built.date().isoformat(), cache['sourceDate'])
         self.assertEqual(cache['expiresAt'], (built + timedelta(hours=48)).isoformat())
-        self.assertEqual(len(cache['cards']), 99)
+        self.assertEqual(len(cache['cards']), 100)
+        self.assertIn('728061', {c['productId'] for c in cache['cards']})
         self.assertNotIn('85203', {c['productId'] for c in cache['cards']})
         shared = {str(c['productId']): c for c in json.loads(thirtieth_before)['cards']}
         for card in cache['cards']:
