@@ -69,8 +69,11 @@ def validate_chase_cards(item, root, label):
             raise ValueError(f'{where} link must be a public https URL')
 
 
-def render_chase_cards(item):
-    """HTML for the strip, or '' when the story has no chase_cards."""
+def render_chase_cards(item, extras=None):
+    """HTML for the strip, or '' when the story has no chase_cards.
+
+    extras maps (name, number) to HTML placed under that card's image, once.
+    """
     cards = item.get('chase_cards') if isinstance(item, dict) else None
     if not isinstance(cards, list) or not cards:
         return ''
@@ -89,7 +92,10 @@ def render_chase_cards(item):
                      f'target="_blank" rel="noopener noreferrer">{body}</a>')
         else:
             inner = f'<div class="chase-strip-card">{body}</div>'
-        tiles.append(f'<li>{inner}</li>')
+        extra = ''
+        if extras:
+            extra = extras.get((card.get('name'), card.get('number'))) or ''
+        tiles.append(f'<li>{inner}{extra}</li>')
     credit = item.get('chase_cards_credit')
     credit_html = f'<p class="chase-strip-credit">{esc(credit)}</p>' if isinstance(credit, str) and credit.strip() else ''
     return ('<section class="story-chase" aria-label="Chase cards">'

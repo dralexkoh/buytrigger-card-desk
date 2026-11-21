@@ -52,8 +52,11 @@
 .story-chase{display:block;max-width:1130px;margin:0 auto 32px}
 .chase-strip-title{font-family:'Barlow Condensed',Barlow,'Arial Narrow',Arial,sans-serif;font-size:28px;font-weight:700;letter-spacing:.2px;line-height:1.1;margin:0 0 12px}
 .chase-strip-row{display:flex;gap:16px;list-style:none;margin:0;padding:0}
-.chase-strip-row>li{flex:1 1 0;min-width:0}
-.chase-strip-card{display:flex;flex-direction:column;gap:8px;height:100%;color:inherit;text-decoration:none}
+.chase-strip-row:has(.shop-inline){flex-wrap:wrap}
+.chase-strip-row>li{display:flex;flex-direction:column;flex:1 1 0;min-width:0}
+.chase-strip-row>li:has(.shop-inline){flex:1 1 240px;min-width:220px;max-width:280px}
+.chase-strip-row .shop-inline{margin-top:8px}
+.chase-strip-card{display:flex;flex-direction:column;gap:8px;color:inherit;text-decoration:none}
 .chase-strip-card img{width:100%;height:auto;aspect-ratio:63/88;object-fit:contain;background:#fff;border:1px solid var(--line)}
 .chase-strip-name{font-family:Arial,Helvetica,sans-serif;font-size:14px;font-weight:700;line-height:1.35;letter-spacing:0}
 .chase-strip-meta{font-size:12px;line-height:1.4;color:var(--muted)}
@@ -63,6 +66,8 @@
  .chase-strip-title{font-size:22px}
  .chase-strip-row{gap:12px;overflow-x:auto;overscroll-behavior-x:contain;scroll-snap-type:x mandatory;padding-bottom:4px}
  .chase-strip-row>li{flex:0 0 42%;scroll-snap-align:start}
+ .chase-strip-row:has(.shop-inline){overflow:visible;scroll-snap-type:none}
+ .chase-strip-row>li:has(.shop-inline){flex-basis:100%;min-width:0;max-width:none}
  .chase-strip-name{font-size:13px}
 }
 @media(max-width:650px){.story-chase{margin:0 18px 24px}}

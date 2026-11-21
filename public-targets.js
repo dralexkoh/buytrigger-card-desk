@@ -278,7 +278,9 @@ function mount(language){
  host.addEventListener('click',click);
  function pictureErrors(){
   host.querySelectorAll('img').forEach(img=>img.addEventListener('error',()=>{
+   if(img.classList.contains('ebay-logo'))return;
    const button=img.closest('button');
+   if(!button)return;
    button.disabled=true;
    button.innerHTML='<span>Picture temporarily unavailable</span>';
   },{once:true}));
@@ -287,7 +289,16 @@ function mount(language){
   const ids=new Set(current.map(c=>c.id)),printings=new Set(current.map(printingKey));
   return config?.review?.psaUpside?.filter(c=>c.language===language&&!ids.has(c.id)&&!printings.has(printingKey(c)))??[];
  }
- function renderCard(c,checkedAt){return c.kind==='watch'?watchCard(c,checkedAt,config.fx):upsideCard(c,checkedAt,config.fx);}
+ function targetBuy(c){
+  const api=globalThis.BTCommerce;
+  if(!api?.ebayCardBlock||!globalThis.BT_COMMERCE)return '';
+  return api.ebayCardBlock({name:c.name,number:c.number,set:c.set,language:c.language==='ja'?'Japanese':'English'},globalThis.BT_COMMERCE,{placement:c.language==='ja'?'uvjp':'uv',variant:'shop'});
+ }
+ function renderCard(c,checkedAt){
+  const html=c.kind==='watch'?watchCard(c,checkedAt,config.fx):upsideCard(c,checkedAt,config.fx);
+  const buy=targetBuy(c);
+  return buy?html.replace('</h3>', '</h3>'+buy):html;
+ }
  function earlierCards(examples){
   return examples.map(c=>renderCard(c,c.checkedAt??config.review.checkedAt)).join('');
  }

@@ -67,7 +67,7 @@ class EbayCardBlocks(unittest.TestCase):
 
     def test_site_js_uses_the_same_placement(self):
         src = (ROOT / 'site.js').read_text()
-        fn = re.search(r'function ebayCards\(w\)\{.*?\}\n', src, re.S).group(0)
+        fn = re.search(r'function ebayBlock\(w,c\)\{.*?\}\nfunction ebayCards\(w,skip\)\{.*?\}\n', src, re.S).group(0)
         esc = re.search(r'const esc=.*?;\n', src).group(0)
         ids = [w['id'] for w in json.loads((ROOT / 'editorial.json').read_text())['wire'] if w.get('ebay_cards')]
         script = esc + fn + "const ids=JSON.parse(require('fs').readFileSync(0,'utf8'));process.stdout.write(JSON.stringify(ids.map(id=>ebayCards({id,ebay_cards:[{name:'Raikou ex',number:'136/103',set:'Delta Reign'}]}))));"
