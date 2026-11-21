@@ -1093,6 +1093,17 @@
       "tcgplayer_product_url": null,
       "image_url": null,
       "image_path": "assets/tcg-modern/98141.jpg"
+    },
+    {
+      "name": "Mega Rayquaza ex - 138/103",
+      "number": "138/103",
+      "set_name": "ME06: Delta Reign",
+      "rarity": "Special Illustration Rare",
+      "raw_price_usd": 295.56,
+      "tcgplayer_product_id": "728061",
+      "tcgplayer_product_url": "https://www.tcgplayer.com/product/728061/pokemon-me06-delta-reign-mega-rayquaza-ex-138-103",
+      "image_url": null,
+      "image_path": "assets/tcg-modern/728061.jpg"
     }
   ]
 }

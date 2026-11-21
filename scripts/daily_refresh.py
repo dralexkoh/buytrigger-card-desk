@@ -268,7 +268,7 @@ def parse_group(body, group):
 
 def validate_baseline(modern, history, top, collection=None):
     """Identity and frozen cohort guards independent of changing daily values."""
-    expected = ((modern, history, 100, {"january": 82, "current": 99}),
+    expected = ((modern, history, 100, {"january": 82, "current": 100}),
                 (top, top["history"], 50, {"history": 14, "current": 50}))
     if collection is not None:
         expected += ((collection, collection["history"], 50, {"history": 5, "current": 50}),)
@@ -291,9 +291,7 @@ def validate_baseline(modern, history, top, collection=None):
             prior = identities.get(key(card))
             if prior and prior["groupId"] != card["groupId"]:
                 raise RefreshError("Overlapping baskets disagree about group identity")
-            # This dated EUR guide is intentionally outside the daily USD collector.
-            if card["productId"] != 85203:
-                identities[key(card)] = {"productId": card["productId"], "groupId": card["groupId"], "printing": card["printing"], "language": "English", "currency": "USD"}
+            identities[key(card)] = {"productId": card["productId"], "groupId": card["groupId"], "printing": card["printing"], "language": "English", "currency": "USD"}
     return identities
 
 
@@ -488,12 +486,6 @@ def coverage_and_quotes(data, hist, source_date):
     held = {(e["cardId"], e["date"]) for e in hist.get("exclusions", [])}
     for card in data["cards"]:
         quote = card.get("quotes", {}).get("Raw")
-        if card["productId"] == 85203:
-            counts["eur"] += bool(quote and quote.get("currency") == "EUR")
-            # A separately dated EUR reference is not today's fresh USD coverage.
-            if quote:
-                counts["stale"] += quote.get("date") != source_date
-            continue
         values = hist["prices"][str(card["id"])]; index = hist["dates"].index(source_date)
         value = values[index]; excluded = (card["id"], source_date) in held
         if positive(value) and not excluded:

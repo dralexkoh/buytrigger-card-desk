@@ -1,18 +1,9 @@
 {
  "schemaVersion": 1,
  "index": "tcg-modern",
- "approvedBy": "Alex Koh, 14 Nov 2026 12:22 Europe/London (\"Use the TCG Modern 100-card list from the public site\")",
+ "approvedBy": "Alex Koh, 2026-11-21 19:33 Europe/London",
  "sourceList": "catalogue.js MODERN_PREVIEW_DATA (selection 2026-11-02)",
- "excluded": [
-  {
-   "productId": 85203,
-   "groupId": 1382,
-   "name": "Empoleon (117 Secret Rare)",
-   "number": "117/116",
-   "printing": "Holofoil",
-   "reason": "TCGCSV has no price row for this product (no subtype); public site uses a dated EUR guide. Not substituted."
-  }
- ],
+ "excluded": [],
  "cards": [
   {
    "productId": "183899",
@@ -1003,6 +994,16 @@
    "language": "English",
    "printing": "Holofoil",
    "image": "assets/tcg-modern/550258.jpg"
+  },
+  {
+   "productId": "728061",
+   "groupId": "24831",
+   "name": "Mega Rayquaza ex - 138/103",
+   "set": "ME06: Delta Reign",
+   "number": "138/103",
+   "language": "English",
+   "printing": "Holofoil",
+   "image": "assets/tcg-modern/728061.jpg"
   }
  ]
 }
