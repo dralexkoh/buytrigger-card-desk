@@ -1,7 +1,7 @@
 """Optional Buy on eBay card blocks for a news brief, plus checks for Feature blocks.
 
 This file only writes the README's `data-ebay-card` block. It builds no link:
-`commerce.js` turns each block into the Shop this card box when the page loads.
+`commerce.js` turns each block into the compact Buy on eBay control when the page loads.
 
 Front matter, on a wire brief:
 
@@ -98,15 +98,18 @@ def validate_section_blocks(article, label):
             seen.add(key)
 
 
-def render_ebay_cards(item, slug):
+def render_ebay_block(card, slug):
+    placement = esc(news_placement_for(slug))
+    return (f'<div data-ebay-card data-ebay-name="{esc(card["name"])}" data-ebay-number="{esc(card["number"])}" '
+            f'data-ebay-set="{esc(card["set"])}" data-ebay-placement="{placement}"></div>')
+
+
+def render_ebay_cards(item, slug, skip=()):
     cards = item.get('ebay_cards')
     if not cards:
         return ''
-    placement = esc(news_placement_for(slug))
-    return ''.join(
-        f'<div data-ebay-card data-ebay-name="{esc(c["name"])}" data-ebay-number="{esc(c["number"])}" '
-        f'data-ebay-set="{esc(c["set"])}" data-ebay-placement="{placement}"></div>'
-        for c in cards)
+    skipped = set(skip)
+    return ''.join(render_ebay_block(c, slug) for c in cards if (c['name'], c['number']) not in skipped)
 
 
 def check_rendered_news_placements(markup, news_id, label):

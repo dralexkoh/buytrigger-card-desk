@@ -111,7 +111,7 @@ const EBAY_WORDMARK='assets/ebay/ebay-wordmark-b4-trimmed.png';
 const PRICE_NOTE='Each “Buy on eBay” control opens an eBay UK Buy It Now search for that card’s name, number and set, not a single listing. Search results, seller prices and availability vary. These are affiliate links: as an eBay Partner Network partner, we may earn from qualifying purchases.';
 function cleanName(value){
   const name=String(value??'').replace(/\s+/g,' ').trim();
-  if(name.length<2||name.length>80||!/[A-Za-z]/.test(name)||!/^[A-Za-z0-9][A-Za-z0-9 '&.,()[\]!:-]*$/.test(name))return null;
+  if(name.length<2||name.length>80||!/[A-Za-z]/.test(name)||!/^[A-Za-z0-9\u00C0-\u024F][A-Za-z0-9\u00C0-\u024F '&.,()[\]!:-]*$/.test(name))return null;
   return name;
 }
 function cleanNumber(value){
@@ -121,7 +121,7 @@ function cleanNumber(value){
 }
 function cleanSet(value){
   let set=String(value??'').replace(/\s+/g,' ').trim().replace(/^[A-Z]{2,4}\d{0,3}:\s+/,'');
-  if(set.length<2||set.length>80||NOT_A_SET.has(set)||!/[A-Za-z]/.test(set)||!/^[A-Za-z0-9][A-Za-z0-9 '&.,:+-]*$/.test(set))return null;
+  if(set.length<2||set.length>80||NOT_A_SET.has(set)||!/[A-Za-z]/.test(set)||!/^[A-Za-z0-9\u00C0-\u024F][A-Za-z0-9\u00C0-\u024F '&.,:+-]*$/.test(set))return null;
   return set;
 }
 function cleanCard(card){
@@ -142,6 +142,7 @@ function cardSearchUrl(card,config,placement,grade){
   const id=cleanCard(card),custom=placementId(placement,grade==='psa10'?'psa10':'raw');
   if(!id||!custom||(grade!=='raw'&&grade!=='psa10'))return null;
   const words=[id.name,id.number,id.set];
+  if(card?.language==='Japanese'||card?.language==='ja')words.push('Japanese');
   if(grade==='psa10')words.push('PSA 10');
   const u=new URL('https://www.ebay.co.uk/sch/i.html');
   u.searchParams.set('_nkw',words.join(' '));
@@ -159,8 +160,8 @@ function shopLabel(id){
 }
 function ebayShop(card,raw,psa,id){
   const label=shopLabel(id);
-  const line=`Opens an eBay UK Buy It Now search for ${label}. Search results, seller prices and availability vary.`;
-  return `<aside class="shop-strip" aria-label="Shop this card on eBay"><div class="shop-strip-head"><span class="kicker red-text">Shop this card</span><p class="shop-id">${esc(label)}</p><span class="shop-affil">Affiliate link</span></div><p class="shop-explain">${esc(line)}</p>${ebayBar(id,raw,psa,true)}</aside>`;
+  const line='UK Buy It Now search. Results, seller prices and availability vary.';
+  return `<aside class="shop-strip shop-inline" aria-label="Buy on eBay"><p class="shop-id">${esc(label)}</p>${ebayBar(id,raw,psa,false)}<p class="shop-meta"><span class="shop-affil">Affiliate link</span><span class="shop-explain">${esc(line)}</span></p></aside>`;
 }
 function ebayCardBlock(card,config,options={}){
   const id=cleanCard(card);

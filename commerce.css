@@ -19,22 +19,13 @@
 .ebay-footnote strong{font-weight:800}
 .set-card .ebay-bar{display:flex;width:100%;margin-top:12px}
 .set-card .ebay-brand{flex:1 1 auto;justify-content:flex-start}
-.shop-strip{margin:14px 0 0;padding:12px 14px 14px;background:#f6f6f3;border-top:3px solid #df242b}
-.shop-strip-head{display:flex;align-items:center;justify-content:space-between;gap:12px}
-.shop-strip .kicker{margin:0}
-.shop-id{display:none;margin:0;min-width:0;color:#171719;font-size:14px;font-weight:700;line-height:1.3}
-.shop-affil{flex:0 0 auto;color:#8a8a90;font-size:12px;font-weight:600;line-height:1.2}
-.shop-explain{max-width:none;margin:8px 0 12px;color:#171719;font-size:14px;line-height:1.45}
-.shop-strip .ebay-bar{display:flex;width:100%}
-.shop-strip .ebay-brand{flex:1 1 auto;justify-content:flex-start}
-@media(max-width:480px){
- .shop-strip{margin:8px 0 0;padding:6px 8px 8px}
- .shop-strip .kicker,.shop-explain{display:none}
- .shop-id{display:block;flex:1 1 auto;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
- .shop-strip-head{gap:8px;margin:0 0 6px}
- .shop-affil{font-size:10px}
- .shop-strip .ebay-bar{margin:0}
-}
+.shop-inline{display:flex;flex-direction:column;align-items:flex-start;gap:4px;width:max-content;max-width:100%;margin:8px 0 0;padding:0;background:none;border:0}
+.shop-inline .shop-id{display:block;margin:0;color:#171719;font-size:13px;font-weight:700;line-height:1.3}
+.shop-inline .shop-meta{display:flex;flex-wrap:wrap;gap:4px 8px;align-items:baseline;max-width:36rem;margin:0;color:#555;font-size:12px;line-height:1.35}
+.shop-inline .shop-affil{flex:0 0 auto;color:#171719;font-size:11px;font-weight:700}
+.shop-inline .shop-explain{min-width:0}
+.shop-inline .ebay-bar{width:auto;max-width:100%}
+.catalog-body .shop-inline,.dialog-image .shop-inline,.dialog-main .shop-inline,.target-copy .shop-inline{margin-top:8px}
 @media(max-width:720px){
  .thirtieth-catalogue .set-grid{grid-template-columns:1fr}
  .ebay-bar,.price-page .ebay-bar{display:flex;width:100%;min-height:44px}
@@ -42,4 +33,6 @@
  .ebay-brand{flex:1 1 auto;justify-content:flex-start}
  .ebay-seg{flex:0 0 auto}
  .ebay-logo{height:16px}
+ .shop-inline .ebay-bar{width:auto;min-height:36px}
+ .shop-inline .ebay-bar a{min-height:36px}
 }

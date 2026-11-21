@@ -45,8 +45,14 @@ test('Buy It Now filters are allowed only as 1, and a card without a clean set i
  assert.equal(cardSearchUrl({name:'Heracross',number:'001/103',set:'Common'},config,'price'),null);
  assert.equal(cleanCard({name:'',number:'001/103',set:'Delta Reign'}),null);
  const shop=ebayCardBlock({name:'Mega Rayquaza ex - 138/103',number:'138/103',set:'ME06: Delta Reign'},config,{placement:'db',variant:'shop'});
- assert.match(shop,/Shop this card/);
+ assert.match(shop,/shop-inline/);
  assert.match(shop,/Affiliate link/);
+ assert.match(shop,/UK Buy It Now search/);
+ const ja=new URL(cardSearchUrl({name:'Palafin ex',number:'207/187',set:'Terastal Festival',language:'Japanese'},config,'uvjp','raw'));
+ assert.equal(ja.searchParams.get('_nkw'),'Palafin ex 207/187 Terastal Festival Japanese');
+ assert.equal(ja.searchParams.get('customid'),'uvjp-raw');
+ const accented=new URL(cardSearchUrl({name:'Wartortle',number:'171/165',set:'Pokémon Card 151',language:'ja'},config,'uvjp','raw'));
+ assert.equal(accented.searchParams.get('_nkw'),'Wartortle 171/165 Pokémon Card 151 Japanese');
  assert.match(shop,/Mega Rayquaza ex · 138\/103 · Delta Reign/);
  assert.doesNotMatch(shop,/Mega Rayquaza ex - 138/);
  const other=ebayCardBlock({name:'Mega Rayquaza ex',number:'141/103',set:'Delta Reign'},config,{placement:'db',variant:'shop'});
