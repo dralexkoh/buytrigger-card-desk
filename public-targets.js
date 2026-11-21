@@ -301,7 +301,7 @@ function mount(language){
    const url=href.replace(/&amp;/g,'&').replace(/&quot;/g,'"');
    const next=api.citeHref(url,globalThis.BT_COMMERCE,placement);
    if(!next||next===url)return full;
-   return `<a href="${esc(next)}">${text}</a> <span class="ebay-cite">Affiliate link</span>`;
+   return `<a href="${esc(next)}" rel="sponsored nofollow noopener">${text}</a> <span class="ebay-cite">Affiliate link</span>`;
   });
  }
  function renderCard(c,checkedAt){

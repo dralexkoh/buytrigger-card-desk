@@ -75,20 +75,34 @@ function citePlacement(win){
   if(path.endsWith('undervalued.html')||hash==='targets'||route==='targets')return 'uv-cite';
   return '';
 }
+function mergeRel(value){
+  const tokens=[];
+  for(const token of String(value||'').split(/\s+/)) if(token&&!tokens.includes(token))tokens.push(token);
+  for(const token of ['sponsored','nofollow','noopener']) if(!tokens.includes(token))tokens.push(token);
+  return tokens.join(' ');
+}
 function tagCitations(doc,win){
   const config=win?.BT_COMMERCE,placement=citePlacement(win);
-  if(!doc||!config?.ebay?.enabled||!placement)return;
+  if(!doc||!config?.ebay?.enabled)return;
   for(const link of doc.querySelectorAll('a[href]')){
-    const href=link.getAttribute('href');
-    if(!href||!/https:\/\/[^/]*ebay\./.test(href)||href.includes('campid='))continue;
-    const next=citeHref(href,config,placement);
-    if(!next||next===href)continue;
-    link.setAttribute('href',next);
-    if(link.nextElementSibling?.classList?.contains('ebay-cite'))continue;
-    const label=doc.createElement('span');
-    label.className='ebay-cite';
-    label.textContent='Affiliate link';
-    link.after(label);
+    let href=link.getAttribute('href');
+    if(!href||!/https:\/\/[^/]*ebay\./.test(href))continue;
+    if(!href.includes('campid=')){
+      if(!placement)continue;
+      const next=citeHref(href,config,placement);
+      if(!next||next===href)continue;
+      link.setAttribute('href',next);
+      href=next;
+      if(!link.nextElementSibling?.classList?.contains('ebay-cite')){
+        const label=doc.createElement('span');
+        label.className='ebay-cite';
+        label.textContent='Affiliate link';
+        link.after(label);
+      }
+    }
+    if(!String(link.getAttribute('href')||'').includes('campid='))continue;
+    const rel=mergeRel(link.getAttribute('rel'));
+    if(link.getAttribute('rel')!==rel)link.setAttribute('rel',rel);
   }
 }
 function citeHref(target,config,placement){
@@ -120,11 +134,11 @@ function measurement(config,slot,creative,destination){return `data-commercial-c
 function affiliateCard(config,placement){
   const url=ebayLink('https://www.ebay.co.uk/sch/i.html?_nkw=Pokemon+TCG',config,placement);
   if(!url)return '';
-  return `<aside class="affiliate-placement" aria-label="eBay affiliate advertisement" ${measurement(config,placement==='cards-home'?'HOME-01':'DROPS-01','ebay-search-v1',placement)}><small class="commerce-label">Ad · Affiliate link</small><div class="affiliate-placement-body"><div><span class="kicker">THE COLLECTOR’S MARKETPLACE</span><h2>Find it on eBay.</h2><p>Explore Pokémon cards and collecting supplies. Search results, seller prices and availability vary.</p></div><a class="btn black" href="${esc(url)}" target="_blank" rel="sponsored noopener noreferrer">Search Pokémon on eBay ↗</a></div><p class="affiliate-disclosure">${disclosure()}</p></aside>`;
+  return `<aside class="affiliate-placement" aria-label="eBay affiliate advertisement" ${measurement(config,placement==='cards-home'?'HOME-01':'DROPS-01','ebay-search-v1',placement)}><small class="commerce-label">Ad · Affiliate link</small><div class="affiliate-placement-body"><div><span class="kicker">THE COLLECTOR’S MARKETPLACE</span><h2>Find it on eBay.</h2><p>Explore Pokémon cards and collecting supplies. Search results, seller prices and availability vary.</p></div><a class="btn black" href="${esc(url)}" target="_blank" rel="sponsored nofollow noopener noreferrer">Search Pokémon on eBay ↗</a></div><p class="affiliate-disclosure">${disclosure()}</p></aside>`;
 }
 function offerCard(o,config,home){const check=new Date(o.checkedAt).toLocaleString('en-GB',{day:'numeric',month:'short',hour:'2-digit',minute:'2-digit',timeZone:'Europe/London'});
   const price=o.price?`${new Intl.NumberFormat('en-GB',{style:'currency',currency:o.price.currency}).format(o.price.amount)} · item price; delivery shown by seller`:'Check price and delivery on the seller’s page.';
-  return `<article class="verified-offer" data-offer-expires="${esc(o.expiresAt)}" ${measurement(config,home?'HOME-01':'DROPS-01','ebay-offer-v1',o.id)}><small class="commerce-label">Ad · Affiliate link</small><div class="drop-meta"><span>${esc(o.country)}</span><span>${esc(o.language)}</span><span>${esc(o.event)}</span></div><h3>${esc(o.title)}</h3><p>${esc(o.summary)}</p><p class="offer-seller">Seller: ${esc(o.seller)} · ${esc(o.fulfilment)}</p><p class="offer-price">${esc(price)}</p><p class="offer-status"><strong>${esc(o.availability)} when checked</strong> · ${esc(check)} UK time</p><a class="btn red" data-offer-link href="${esc(attributeUrl(o.affiliateUrl,root))}" target="_blank" rel="sponsored noopener noreferrer">View on eBay ↗</a></article>`;
+  return `<article class="verified-offer" data-offer-expires="${esc(o.expiresAt)}" ${measurement(config,home?'HOME-01':'DROPS-01','ebay-offer-v1',o.id)}><small class="commerce-label">Ad · Affiliate link</small><div class="drop-meta"><span>${esc(o.country)}</span><span>${esc(o.language)}</span><span>${esc(o.event)}</span></div><h3>${esc(o.title)}</h3><p>${esc(o.summary)}</p><p class="offer-seller">Seller: ${esc(o.seller)} · ${esc(o.fulfilment)}</p><p class="offer-price">${esc(price)}</p><p class="offer-status"><strong>${esc(o.availability)} when checked</strong> · ${esc(check)} UK time</p><a class="btn red" data-offer-link href="${esc(attributeUrl(o.affiliateUrl,root))}" target="_blank" rel="sponsored nofollow noopener noreferrer">View on eBay ↗</a></article>`;
 }
 // Internal measurement: one served/impression/click per placement and page visit.
 // Consent, DNT, browser exclusion and QA are enforced by the existing counter.
