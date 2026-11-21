@@ -3,7 +3,7 @@ const assert=require('node:assert/strict');
 const fs=require('node:fs');
 const path=require('node:path');
 const vm=require('node:vm');
-const {ebayLink,isFresh,activeOffers,affiliateCard,cardSearchUrl,ebayCardBlock,cleanCard,capturePostType}=require('../commerce.js');
+const {ebayLink,citeHref,isFresh,activeOffers,affiliateCard,cardSearchUrl,ebayCardBlock,cleanCard,capturePostType}=require('../commerce.js');
 const config={schemaVersion:1,placements:{home:false,drops:true},ebay:{enabled:true,campaignId:'5339239680'},amazonUk:{enabled:false,trackingId:'buytrigger-21'}};
 const now=Date.parse('2026-11-04T17:00:00Z');
 const offer={id:'ebay-123456789012',region:'UK',affiliateProvider:'ebay',productUrl:'https://www.ebay.co.uk/itm/123456789012',checkedAt:'2026-11-04T16:59:00Z',expiresAt:'2026-11-04T17:14:00Z',availability:'In stock'};
@@ -11,6 +11,22 @@ offer.affiliateUrl=ebayLink(offer.productUrl,config,offer.id);
 test('own campaign, marketplace rotation and exact item are retained',()=>{
  const u=new URL(offer.affiliateUrl);assert.equal(u.pathname,'/itm/123456789012');assert.equal(u.searchParams.get('campid'),'5339239680');assert.equal(u.searchParams.get('mkrid'),'710-53481-19255-0');
  assert.equal(new URL(ebayLink('https://www.ebay.com/itm/123456789012',config)).searchParams.get('mkrid'),'711-53200-19255-0');
+});
+test('citation links gain the campaign without a network request and keep an existing campaign',()=>{
+ const cited=new URL(citeHref('https://www.ebay.co.uk/itm/297721154258?nordt=true',config,'uv-cite'));
+ assert.equal(cited.pathname,'/itm/297721154258');
+ assert.equal(cited.searchParams.get('nordt'),'true');
+ assert.equal(cited.searchParams.get('campid'),'5339239680');
+ assert.equal(cited.searchParams.get('mkrid'),'710-53481-19255-0');
+ assert.equal(cited.searchParams.get('mkcid'),'1');
+ assert.equal(cited.searchParams.get('toolid'),'10001');
+ assert.equal(cited.searchParams.get('mkevt'),'1');
+ assert.equal(cited.searchParams.get('customid'),'uv-cite');
+ const kept='https://www.ebay.co.uk/itm/297721154258?campid=5339239680&customid=price-raw';
+ assert.equal(citeHref(kept,config,'uv-cite'),kept);
+ assert.equal(citeHref('https://tradezardz.co.uk/products/card',config,'uv-cite'),'https://tradezardz.co.uk/products/card');
+ assert.equal(new URL(citeHref('https://www.ebay.com/itm/147660468419',config,'story-example-cite')).searchParams.get('mkrid'),'711-53200-19255-0');
+ assert.equal(new URL(citeHref('https://www.ebay.nl/itm/227601558139',config,'story-example-cite')).searchParams.get('mkrid'),'710-53481-19255-0');
 });
 test('disabled programme, foreign affiliate tags and misleading hosts are rejected',()=>{
  for(const url of ['https://www.ebay.co.uk.evil.test/itm/123456789012','http://www.ebay.co.uk/itm/123456789012','https://user@www.ebay.co.uk/itm/123456789012','https://www.ebay.co.uk/itm/123456789012?campid=5330000000','https://www.amazon.co.uk/dp/B012345678'])assert.equal(ebayLink(url,config),null);

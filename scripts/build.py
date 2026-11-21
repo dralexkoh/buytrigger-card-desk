@@ -6,6 +6,7 @@ from email.utils import format_datetime
 from editorial_visuals import validate_editorial_visuals
 from chase_cards import render_chase_cards
 from ebay_cards import render_ebay_block, render_ebay_cards, check_rendered_news_placements
+from ebay_citations import tag_tree
 from xml.sax.saxutils import escape
 import site_seo as seo
 from digest_signup import digest_signup_html
@@ -265,4 +266,5 @@ for document in D.rglob('*.html'):
 # Google requires the ownership-verification file to retain its exact bytes.
 # Copy it after HTML processing so it receives no markup or metadata.
 shutil.copy2(P/'google794a81691b44d31d.html',D/'google794a81691b44d31d.html')
+tag_tree(D)
 print(f'Built {len(list(D.rglob("*")))} public files/directories. {len(e["articles"])} articles, {len(e.get("wire",[]))} news briefs, RSS, sitemap and news sitemap.')

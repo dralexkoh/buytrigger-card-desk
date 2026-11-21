@@ -63,6 +63,48 @@ function ebayLink(target,config,placement,win){
     return u.href;
   }catch{return null;}
 }
+function citePlacement(win){
+  const path=String(win?.location?.pathname||'');
+  const hash=String(win?.location?.hash||'').replace(/^#/,'');
+  const route=String(win?.document?.body?.dataset?.route||'');
+  const story=path.match(/\/stories\/([a-z0-9]+(?:-[a-z0-9]+)*)\/?$/)||hash.match(/^read\/([a-z0-9-]+)/)||route.match(/^read\/([a-z0-9-]+)/);
+  if(story)return 'story-'+story[1]+'-cite';
+  const news=path.match(/\/news\/([a-z0-9-]+)\/?$/)||hash.match(/^news\/([a-z0-9-]+)/)||route.match(/^news\/([a-z0-9-]+)/);
+  if(news)return 'story-'+news[1].slice(0,45).replace(/-+$/,'')+'-cite';
+  if(path.endsWith('undervalued-japanese.html')||hash==='japan'||route==='japan')return 'uvjp-cite';
+  if(path.endsWith('undervalued.html')||hash==='targets'||route==='targets')return 'uv-cite';
+  return '';
+}
+function tagCitations(doc,win){
+  const config=win?.BT_COMMERCE,placement=citePlacement(win);
+  if(!doc||!config?.ebay?.enabled||!placement)return;
+  for(const link of doc.querySelectorAll('a[href]')){
+    const href=link.getAttribute('href');
+    if(!href||!/https:\/\/[^/]*ebay\./.test(href)||href.includes('campid='))continue;
+    const next=citeHref(href,config,placement);
+    if(!next||next===href)continue;
+    link.setAttribute('href',next);
+    if(link.nextElementSibling?.classList?.contains('ebay-cite'))continue;
+    const label=doc.createElement('span');
+    label.className='ebay-cite';
+    label.textContent='Affiliate link';
+    link.after(label);
+  }
+}
+function citeHref(target,config,placement){
+  try{
+    const u=new URL(target);
+    const host=u.hostname.toLowerCase();
+    const mkrid=ROTATIONS[host]||(host.includes('ebay.')?ROTATIONS['www.ebay.co.uk']:null);
+    if(u.protocol!=='https:'||!mkrid||u.searchParams.get('campid'))return target;
+    const custom=customId(placement,root);
+    if(!custom)return target;
+    for(const [k,v] of Object.entries({mkevt:'1',mkcid:'1',mkrid,campid:config.ebay.campaignId,toolid:'10001',customid:custom})){
+      if(!u.searchParams.has(k))u.searchParams.set(k,v);
+    }
+    return u.href;
+  }catch{return target;}
+}
 function isFresh(offer,now=Date.now()){
   const checked=Date.parse(offer.checkedAt),expires=Date.parse(offer.expiresAt);
   return Number.isFinite(checked)&&Number.isFinite(expires)&&checked<=now&&now<expires&&expires>checked&&expires-checked<=900000;
@@ -173,7 +215,7 @@ function ebayCardBlock(card,config,options={}){
 }
 function ebayPageNote(){return `<div class="ebay-footnote"><p><strong>About the eBay links.</strong> ${PRICE_NOTE} “Check price” is a separate affiliate link.</p></div>`;}
 function ebayListNote(){return `<div class="ebay-footnote"><p><strong>About the eBay links.</strong> ${PRICE_NOTE}</p></div>`;}
-const api={ebayLink,isFresh,activeOffers,affiliateCard,disclosure,createPlacementTracker,cleanCard,cardSearchUrl,ebayCardBlock,ebayPageNote,ebayListNote,capturePostType,stampEbayCustomIds};
+const api={ebayLink,citeHref,tagCitations,isFresh,activeOffers,affiliateCard,disclosure,createPlacementTracker,cleanCard,cardSearchUrl,ebayCardBlock,ebayPageNote,ebayListNote,capturePostType,stampEbayCustomIds};
 if(typeof module==='object'&&module.exports)module.exports=api;
 if(root)root.BTCommerce=api;
 if(!root?.document)return;
@@ -233,6 +275,6 @@ doc.addEventListener('click',e=>{
   if(link&&Date.now()>=Date.parse(link.closest('[data-offer-expires]').dataset.offerExpires)){e.preventDefault();e.stopImmediatePropagation();expireVisible();return;}
 },true);
 doc.addEventListener('click',e=>{const filter=e.target.closest('[data-drop-region]');if(filter){renderOffers(filter.dataset.dropRegion);mountPlacement('drops');}});
-root.addEventListener('hashchange',()=>{mount();mountCardSlots();});doc.addEventListener('visibilitychange',expireVisible);root.setInterval(expireVisible,10000);mount();mountCardSlots();
+root.addEventListener('hashchange',()=>{mount();mountCardSlots();tagCitations(doc,root);});tagCitations(doc,root);doc.addEventListener('visibilitychange',expireVisible);root.setInterval(expireVisible,10000);mount();mountCardSlots();
 const measurementTracker=createPlacementTracker(root);root.setInterval(()=>measurementTracker.tick(),250);doc.addEventListener('click',measurementTracker.click);doc.addEventListener('auxclick',e=>{if(e.button===1)measurementTracker.click(e);});doc.addEventListener('visibilitychange',measurementTracker.hidden);
 })(typeof window!=='undefined'?window:null);
