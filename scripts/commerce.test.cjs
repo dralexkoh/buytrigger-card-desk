@@ -44,7 +44,11 @@ test('Buy It Now filters are allowed only as 1, and a card without a clean set i
  const shop=ebayCardBlock({name:'Mega Rayquaza ex - 138/103',number:'138/103',set:'ME06: Delta Reign'},config,{placement:'db',variant:'shop'});
  assert.match(shop,/Shop this card/);
  assert.match(shop,/Affiliate link/);
- assert.match(shop,/Mega Rayquaza ex - 138\/103, ME06: Delta Reign/);
+ assert.match(shop,/Mega Rayquaza ex · 138\/103 · Delta Reign/);
+ assert.doesNotMatch(shop,/Mega Rayquaza ex - 138/);
+ const other=ebayCardBlock({name:'Mega Rayquaza ex',number:'141/103',set:'Delta Reign'},config,{placement:'db',variant:'shop'});
+ assert.match(other,/Mega Rayquaza ex · 141\/103 · Delta Reign/);
+ assert.doesNotMatch(other,/138\/103/);
  assert.match(shop,/rel="nofollow sponsored noopener"/);
  assert.match(shop,/target="_blank"/);
  assert.match(shop,/alt="eBay"/);

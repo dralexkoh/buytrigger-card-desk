@@ -109,11 +109,13 @@ function ebayBar(card,raw,psa,line){
   const who=esc(card.name+' '+card.number);
   return `<div class="ebay-bar ${line?'ebay-bar-line':'ebay-bar-grey'}" role="group" aria-label="Buy on eBay"><a class="ebay-brand" href="${esc(raw)}" ${rel}><span>Buy on</span><img class="ebay-logo" src="${EBAY_WORDMARK}" alt="eBay" width="783" height="324"><span class="visually-hidden">, raw, UK Buy It Now search for ${who}</span></a><a class="ebay-seg" href="${esc(raw)}" ${rel}>RAW<span class="visually-hidden">, ${who}</span></a><a class="ebay-seg" href="${esc(psa)}" ${rel}>PSA 10<span class="visually-hidden">, ${who}</span></a></div>`;
 }
+function shopLabel(id){
+  return [id.name,id.number,id.set].filter(Boolean).join(' · ');
+}
 function ebayShop(card,raw,psa,id){
-  const name=String(card?.name??'').replace(/\s+/g,' ').trim();
-  const set=String(card?.set??'').replace(/\s+/g,' ').trim();
-  const line=`Opens an eBay UK Buy It Now search for ${name}, ${set}. Search results, seller prices and availability vary.`;
-  return `<aside class="shop-strip" aria-label="Shop this card on eBay"><div class="shop-strip-head"><span class="kicker red-text">Shop this card</span><span class="shop-affil">Affiliate link</span></div><p>${esc(line)}</p>${ebayBar(id,raw,psa,true)}</aside>`;
+  const label=shopLabel(id);
+  const line=`Opens an eBay UK Buy It Now search for ${label}. Search results, seller prices and availability vary.`;
+  return `<aside class="shop-strip" aria-label="Shop this card on eBay"><div class="shop-strip-head"><span class="kicker red-text">Shop this card</span><p class="shop-id">${esc(label)}</p><span class="shop-affil">Affiliate link</span></div><p class="shop-explain">${esc(line)}</p>${ebayBar(id,raw,psa,true)}</aside>`;
 }
 function ebayCardBlock(card,config,options={}){
   const id=cleanCard(card);
