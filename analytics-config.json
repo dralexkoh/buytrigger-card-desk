@@ -29,7 +29,11 @@
     "threads",
     "instagram",
     "tiktok",
-    "newsletter"
+    "newsletter",
+    "reddit",
+    "discord",
+    "substack",
+    "embed"
   ],
   "campaignMediums": [
     "social",

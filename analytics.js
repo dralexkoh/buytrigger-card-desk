@@ -10,7 +10,8 @@
   const EXCLUSION_KEY = 'buytrigger.cards.analytics.exclude.v1';
   const CONSENT_DAYS = 180;
   const COLLECTOR = 'https://brzawmbpwkdundruicca.supabase.co/functions/v1/cards-traffic-ingest';
-  const PAGES = Object.freeze({home:'Home',desk:'Newsroom',journal:'Features',targets:'Undervalued cards',japan:'Japanese cards',method:'Sources and methods',funding:'Funding',privacy:'Privacy',drops:'Drops',calculator:'Grading calculator',market:'All indices',thirtieth:'30th Anniversary Index',advertise:'Advertise'});
+  const PAGES = Object.freeze({home:'Home',desk:'Newsroom',journal:'Features',targets:'Undervalued cards',japan:'Japanese cards',method:'Sources and methods',funding:'Funding',privacy:'Privacy',drops:'Drops',calculator:'Grading calculator',market:'All indices',thirtieth:'30th Anniversary Index','delta-reign':'Delta Reign Index','sv-151':'SV 151 Index','prismatic-evolutions':'Prismatic Evolutions Index',advertise:'Advertise'});
+  const PRICE_PAGES = Object.freeze({'thirtieth-anniversary':'30th Anniversary raw prices','tcg-modern':'TCG Modern raw market guide prices','delta-reign':'Delta Reign raw prices','sv-151':'SV 151 raw prices','prismatic-evolutions':'Prismatic Evolutions raw prices'});
   const SOURCES = Object.freeze({
     'google.com':'google', 'www.google.com':'google', 'www.google.co.uk':'google',
     'bing.com':'bing', 'www.bing.com':'bing', 'duckduckgo.com':'duckduckgo',
@@ -45,11 +46,13 @@
     const url = new URL(href), path = url.pathname.slice(site.basePath.length);
     if (path === 'tcg-modern-index.html') return {id:'modern', url:'/tcg-modern-index', title:'TCG Modern Index', index:'modern'};
     if (path === 'top-50.html') return {id:'top50', url:'/top-50', title:'Top 50', index:'top50'};
-    const standalone = {'market.html':'market','30th-anniversary-index.html':'thirtieth','grading-calculator.html':'calculator','drops.html':'drops','undervalued.html':'targets','undervalued-japanese.html':'japan','bluechip-raw-archive.html':'bluechip-archive'};
+    const standalone = {'market.html':'market','30th-anniversary-index.html':'thirtieth','delta-reign-index.html':'delta-reign','sv-151-index.html':'sv-151','prismatic-evolutions-index.html':'prismatic-evolutions','grading-calculator.html':'calculator','drops.html':'drops','undervalued.html':'targets','undervalued-japanese.html':'japan','bluechip-raw-archive.html':'bluechip-archive'};
     if (standalone[path] && !url.hash) { const id=standalone[path]; return {id,url:'/'+id,title:PAGES[id] || 'BlueChip Raw archive'}; }
     const storyPath = /^stories\/([a-z0-9-]+)\/(?:index\.html)?$/.exec(path);
     const newsPath = /^news\/([a-z0-9-]+)\/(?:index\.html)?$/.exec(path);
+    const pricePath = /^prices\/([a-z0-9-]+)\/(?:index\.html)?$/.exec(path);
     if (path === 'advertise/' || path === 'advertise/index.html') return {id:'advertise', url:'/advertise', title:PAGES.advertise};
+    if (pricePath && Object.hasOwn(PRICE_PAGES, pricePath[1])) { const slug=pricePath[1]; return {id:'prices:'+slug, url:'/prices/'+slug+'/', title:PRICE_PAGES[slug]}; }
     if (path !== '' && path !== 'index.html' && path !== 'drops.html' && path !== 'grading-calculator.html' && !Object.hasOwn(standalone,path) && !storyPath && !newsPath) return null;
     const hash = /^#author-(alex-koh|oscar)$/.test(url.hash) && bodyRoute.startsWith('read/') ? '' : url.hash.slice(1);
     // These pages render hashes before body.data-route; mirror that rule.

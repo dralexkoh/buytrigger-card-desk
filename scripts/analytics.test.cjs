@@ -154,6 +154,78 @@ test('decline removes the banner and remains silent; full preferences require an
   elements.find(x=>x.textContent==='Allow statistics').listeners.click();assert.equal(calls.length,2);assert.equal(win.BTAnalytics.status().consent,'granted');
 });
 
+test('30th Anniversary price page resolves to its own route',()=>{
+  const data={articles:[]};
+  const expected={id:'prices:thirtieth-anniversary',url:'/prices/thirtieth-anniversary/',title:'30th Anniversary raw prices'};
+  assert.deepEqual(A.resolveRoute('https://buytrigger.cards/prices/thirtieth-anniversary/',config,data),expected);
+  assert.deepEqual(A.resolveRoute('https://buytrigger.cards/prices/thirtieth-anniversary/index.html',config,data),expected);
+  assert.deepEqual(A.resolveRoute(base+'prices/thirtieth-anniversary/',config,data),expected);
+});
+test('TCG Modern price page resolves to its own route',()=>{
+  const data={articles:[]};
+  const expected={id:'prices:tcg-modern',url:'/prices/tcg-modern/',title:'TCG Modern raw market guide prices'};
+  assert.deepEqual(A.resolveRoute('https://buytrigger.cards/prices/tcg-modern/',config,data),expected);
+  assert.deepEqual(A.resolveRoute('https://buytrigger.cards/prices/tcg-modern/index.html',config,data),expected);
+  assert.deepEqual(A.resolveRoute(base+'prices/tcg-modern/',config,data),expected);
+});
+test('Delta Reign price page resolves to its own route',()=>{
+  const data={articles:[]};
+  const expected={id:'prices:delta-reign',url:'/prices/delta-reign/',title:'Delta Reign raw prices'};
+  assert.deepEqual(A.resolveRoute('https://buytrigger.cards/prices/delta-reign/',config,data),expected);
+  assert.deepEqual(A.resolveRoute('https://buytrigger.cards/prices/delta-reign/index.html',config,data),expected);
+  assert.deepEqual(A.resolveRoute(base+'prices/delta-reign/',config,data),expected);
+});
+test('SV 151 price page resolves to its own route',()=>{
+  const data={articles:[]};
+  const expected={id:'prices:sv-151',url:'/prices/sv-151/',title:'SV 151 raw prices'};
+  assert.deepEqual(A.resolveRoute('https://buytrigger.cards/prices/sv-151/',config,data),expected);
+  assert.deepEqual(A.resolveRoute('https://buytrigger.cards/prices/sv-151/index.html',config,data),expected);
+  assert.deepEqual(A.resolveRoute(base+'prices/sv-151/',config,data),expected);
+});
+test('Prismatic Evolutions price page resolves to its own route',()=>{
+  const data={articles:[]};
+  const expected={id:'prices:prismatic-evolutions',url:'/prices/prismatic-evolutions/',title:'Prismatic Evolutions raw prices'};
+  assert.deepEqual(A.resolveRoute('https://buytrigger.cards/prices/prismatic-evolutions/',config,data),expected);
+  assert.deepEqual(A.resolveRoute('https://buytrigger.cards/prices/prismatic-evolutions/index.html',config,data),expected);
+  assert.deepEqual(A.resolveRoute(base+'prices/prismatic-evolutions/',config,data),expected);
+  assert.equal(A.resolveRoute('https://buytrigger.cards/prices/not-a-set/',config,data),null);
+});
+test('Delta Reign index resolves to its own route',()=>{
+  const data={articles:[]};
+  const expected={id:'delta-reign',url:'/delta-reign',title:'Delta Reign Index'};
+  assert.deepEqual(A.resolveRoute('https://buytrigger.cards/delta-reign-index.html',config,data),expected);
+  assert.deepEqual(A.resolveRoute('https://buytrigger.cards/index.html#delta-reign',config,data),expected);
+  assert.deepEqual(A.resolveRoute(base+'delta-reign-index.html',config,data),expected);
+});
+test('SV 151 index resolves to its own route',()=>{
+  const data={articles:[]};
+  const expected={id:'sv-151',url:'/sv-151',title:'SV 151 Index'};
+  assert.deepEqual(A.resolveRoute('https://buytrigger.cards/sv-151-index.html',config,data),expected);
+  assert.deepEqual(A.resolveRoute('https://buytrigger.cards/index.html#sv-151',config,data),expected);
+  assert.deepEqual(A.resolveRoute(base+'sv-151-index.html',config,data),expected);
+});
+test('Prismatic Evolutions index resolves to its own route',()=>{
+  const data={articles:[]};
+  const expected={id:'prismatic-evolutions',url:'/prismatic-evolutions',title:'Prismatic Evolutions Index'};
+  assert.deepEqual(A.resolveRoute('https://buytrigger.cards/prismatic-evolutions-index.html',config,data),expected);
+  assert.deepEqual(A.resolveRoute('https://buytrigger.cards/index.html#prismatic-evolutions',config,data),expected);
+  assert.deepEqual(A.resolveRoute(base+'prismatic-evolutions-index.html',config,data),expected);
+});
+test('reddit, discord, substack and embed are accepted campaign sources; an unlisted source is dropped',()=>{
+  for (const source of ['reddit','discord','substack','embed']) {
+    const {out,controller:c}=controller('index.html?utm_source='+source+'&utm_medium=social&utm_campaign=launch_2026_11');
+    c.choose('granted');c.routeRendered();
+    assert.equal(out[0].utm_source,source);
+    assert.equal(out[0].utm_medium,'social');
+    assert.equal(out[0].utm_campaign,'launch_2026_11');
+  }
+  const dropped=controller('index.html?utm_source=myspace&utm_medium=social&utm_campaign=launch_2026_11');
+  dropped.controller.choose('granted');dropped.controller.routeRendered();
+  assert.equal(dropped.out[0].utm_source,undefined);
+  assert.equal(dropped.out[0].utm_medium,undefined);
+  assert.equal(dropped.out[0].utm_campaign,undefined);
+});
+
 // Canonical route identities exclude private query content.
 test('advertising enquiries have their own category without leaking email or query',()=>{
  const {win,out,controller:c}=controller('index.html?email=PRIVATE#advertise');
