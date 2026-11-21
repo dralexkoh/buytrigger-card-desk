@@ -2,15 +2,29 @@
 (function (host) {
   'use strict';
   const positive = n => typeof n === 'number' && Number.isFinite(n) && n > 0;
+  const ageDays=(asOf,day)=>{
+    if(!asOf||!day)return null;
+    const ms=Date.parse(asOf+'T00:00:00Z')-Date.parse(day+'T00:00:00Z');
+    return Number.isFinite(ms)?ms/86400000:null;
+  };
+  // A BlueChip guide more than 30 days behind the release is not a current price.
+  function noCurrentPrice(data,card){
+    if(data?.release?.publicRole!=='curated-raw-collection')return false;
+    const age=ageDays(data.release.sourceDate,card?.quotes?.Raw?.date);
+    return age!=null&&age>30;
+  }
   const exclusion=(data,id,date)=>data.history.exclusions?.find(x=>x.cardId===Number(id)&&x.date===date);
   const price = (data, id, date) => exclusion(data,id,date)?null:(data.history.prices[id]?.[data.history.dates.indexOf(date)] ?? null);
   function cohort(data, mode) {
     const dates = data.history.dates;
     const latest = dates.at(-1);
-    const ids = data.history.cohorts?.[mode]?.members || data.cards.filter(c => mode === 'january'
+    let ids = data.history.cohorts?.[mode]?.members || data.cards.filter(c => mode === 'january'
       ? c.releaseDate <= dates[0] && positive(price(data,c.id,dates[0]))
       : c.quotes.Raw?.currency === 'USD' && positive(price(data,c.id,latest)))
       .map(c => c.id);
+    if(data.release?.publicRole==='curated-raw-collection'){
+      ids=ids.filter(id=>!noCurrentPrice(data,data.cards.find(c=>c.id===id)||{}));
+    }
     const baseIndex = dates.findIndex(d => ids.length && ids.every(id => positive(price(data, id, d))));
     if (baseIndex < 0) return { ids, baseDate: null, points: [] };
     const baseDate = dates[baseIndex];
@@ -54,7 +68,7 @@
     let pen=false; return points.map(p=>{if(!positive(p.value)){pen=false;return '';}
       const command=pen?'L':'M';pen=true;return command+x(p).toFixed(2)+' '+y(p.value).toFixed(2);}).join(' ');
   }
-  const api={positive,price,cohort,periodStart,windowed,change,observedChange,attribution,historyFor,paths};
+  const api={positive,price,cohort,periodStart,windowed,change,observedChange,attribution,historyFor,paths,noCurrentPrice,ageDays};
   if(typeof module!=='undefined'&&module.exports)module.exports=api;
   else host.BTMarket=api;
 })(typeof window!=='undefined'?window:this);

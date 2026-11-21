@@ -415,5 +415,54 @@ class CollectorTests(unittest.TestCase):
         self.assertEqual(len(history["dates"]), len(D.read_js(out / "market-history.js", "window.BT_HISTORY")["dates"]))
 
 
+    def test_bluechip_outlier_hold_keeps_the_last_accepted_guide(self):
+        self.assertIsNone(D.bluechip_outlier(100, 90, {"midPrice": 95, "lowPrice": 80}))
+        self.assertIsNone(D.bluechip_outlier(3.5, None, {}))
+        low_only = D.bluechip_outlier(1, None, {"midPrice": None, "lowPrice": 100})
+        self.assertIn("same-release-lowPrice", low_only["reason"])
+        over = D.bluechip_outlier(10000, 100, {"midPrice": 110})
+        self.assertIn("last-accepted-guide", {item["field"] for item in over["crossChecks"]})
+        both = D.bluechip_outlier(3.5, 800, {"midPrice": 750, "lowPrice": 9000})
+        self.assertEqual({item["field"] for item in both["crossChecks"]}, {"last-accepted-guide", "same-release-midPrice"})
+        stray_ask = D.bluechip_outlier(1574.99, 1574.99, {"midPrice": 19999.99, "lowPrice": 19999.99})
+        self.assertIsNone(stray_ask)
+        features = [{"image": "assets/fresh.jpg", "alt": "Fresh"}, {"image": "assets/old.jpg", "alt": "Old"}]
+        collection = {"release": {"sourceDate": "2026-11-21"}, "cards": [
+            {"image": "assets/fresh.jpg", "quotes": {"Raw": {"date": "2026-11-20", "price": 10}}},
+            {"image": "assets/old.jpg", "quotes": {"Raw": {"date": "2026-09-01", "price": 10}}}]}
+        D.annotate_feature_prices(features, collection)
+        self.assertNotIn("priceLabel", features[0])
+        self.assertEqual(features[1]["priceLabel"], "No current price")
+        self.assertNotIn("PriceCharting", both["reason"])
+        hist = {"dates": ["2026-11-20"], "prices": {"1": [800.0]}, "exclusions": []}
+        card = {"id": 1, "productId": 85668, "groupId": 1372, "printing": "Holofoil", "releaseDate": "2003-05-12",
+                "quotes": {"Raw": {"price": 800.0, "date": "2026-11-20", "currency": "USD"}}}
+        data = {"cards": [card]}
+        observation = {"id": "raw-test", "kind": "live", "sourceDate": "2026-11-21",
+                       "sources": [{"url": "https://tcgcsv.com/tcgplayer/3/1372/prices"}],
+                       "observations": [{"key": "85668|Holofoil", "amount": 3.5, "status": "accepted",
+                                         "sourceRow": {"marketPrice": 3.5, "midPrice": 10000, "lowPrice": 10000}}]}
+        review = self.root / "review"
+        review.mkdir()
+        D.apply_observations(observation, [("bluechip", data, hist)], review)
+        self.assertEqual(hist["exclusions"][0]["policy"], D.BLUECHIP_OUTLIER["id"])
+        self.assertEqual(hist["exclusions"][0]["reportedValue"], 3.5)
+        D.coverage_and_quotes(data, hist, "2026-11-21")
+        self.assertEqual(card["quotes"]["Raw"]["price"], 800.0)
+        self.assertEqual(card["quotes"]["Raw"]["date"], "2026-11-20")
+        self.assertEqual(card["rawRefresh"]["status"], "held")
+        self.assertEqual(D.bluechip_hold_notes([("bluechip", data, hist)], "2026-11-21")[0]["reason"], hist["exclusions"][0]["reason"])
+        plain = {"dates": ["2026-11-20"], "prices": {"1": [800.0]}, "exclusions": []}
+        plain_card = {"id": 1, "productId": 1, "groupId": 1, "printing": "Holofoil",
+                      "quotes": {"Raw": {"price": 800.0, "date": "2026-11-20", "currency": "USD"}}}
+        plain_data = {"cards": [plain_card]}
+        ok = {"id": "raw-ok", "kind": "live", "sourceDate": "2026-11-21", "sources": [{"url": "https://tcgcsv.com/x"}],
+              "observations": [{"key": "1|Holofoil", "amount": 820, "status": "accepted", "sourceRow": {"midPrice": 810, "lowPrice": 700}}]}
+        D.apply_observations(ok, [("top50", plain_data, plain)], review)
+        self.assertEqual(plain["exclusions"], [])
+        D.coverage_and_quotes(plain_data, plain, "2026-11-21")
+        self.assertEqual(plain_card["quotes"]["Raw"]["price"], 820)
+
+
 if __name__ == "__main__":
     unittest.main()

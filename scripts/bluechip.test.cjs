@@ -3,6 +3,7 @@ const assert=require('node:assert/strict');
 const fs=require('node:fs');
 const path=require('node:path');
 const B=require('../bluechip-engine.js');
+const M=require('../market-engine.js');
 const root=path.resolve(__dirname,'..');
 // Synthetic evidence exercises publication safety; these are not market observations.
 function fixture(){const cards=Array.from({length:50},(_,i)=>{
@@ -54,6 +55,32 @@ test('the published collection is 40 classics and 10 modern, ranked on TCGCSV gu
  assert.match(filters,/classic\.textContent='Classics · '\+count\('classic'\)/);
  assert.match(filters,/modern\.textContent='Modern · '\+count\('modern'\)/);
  assert.match(home,/50 CARDS · 40 CLASSICS \+ 10 MODERN/);
+ assert.match(home,/priceLabel==='No current price'/);
  assert.match(home,/100 selected modern cards\./);
  assert.equal(/pricecharting/i.test(page),false);
+ const sky=data.cards.find(c=>c.productId===84186);
+ assert.equal(sky.set,'Skyridge');
+ assert.equal(sky.number,'146/144');
+ assert.equal(sky.printing,'Reverse Holofoil');
+ assert.match(sky.image,/84186-reverse/);
+ const sources=JSON.parse(fs.readFileSync(path.join(root,'bluechip-collection-sources.json'),'utf8'));
+ const selected=sources.selection.find(c=>c.productId===84186);
+ assert.equal(selected.printing,'Reverse Holofoil');
+ assert.equal(selected.image,sky.image);
+ const feature=JSON.parse(fs.readFileSync(path.join(root,'top50-feature.js'),'utf8').replace(/^window\.BT_TOP50_FEATURES=/,'').replace(/;\s*$/,''));
+ assert.match(feature.find(item=>item.image.includes('84186')).alt,/Skyridge · 146\/144 · Reverse Holofoil/);
+ assert.match(page,/No current price/);
+ assert.match(filters,/No current price/);
+});
+test('a BlueChip guide older than 30 days is not a current price and leaves the average',()=>{
+ const data={release:{publicRole:'curated-raw-collection',sourceDate:'2026-11-21'},cards:[
+  {id:1,releaseDate:'2020-01-01',quotes:{Raw:{date:'2026-11-21',price:100,currency:'USD'}}},
+  {id:2,releaseDate:'2020-01-01',quotes:{Raw:{date:'2026-09-01',price:50,currency:'USD'}}}
+ ],history:{dates:['2026-11-20','2026-11-21'],prices:{1:[100,100],2:[50,null]},exclusions:[],cohorts:{history:{members:[1,2]},current:{members:[1,2]}}}};
+ assert.equal(M.noCurrentPrice(data,data.cards[0]),false);
+ assert.equal(M.noCurrentPrice(data,data.cards[1]),true);
+ assert.deepEqual(M.cohort(data,'history').ids,[1]);
+ const archive={...data,release:{publicRole:'top50-raw-archive',sourceDate:'2026-11-21'}};
+ assert.equal(M.noCurrentPrice(archive,archive.cards[1]),false);
+ assert.deepEqual(M.cohort(archive,'history').ids,[1,2]);
 });
