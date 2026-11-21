@@ -1,0 +1,53 @@
+{
+  "reviewer": "Vault Newsroom",
+  "review_date": "2026-11-21",
+  "rights_basis": "House calculation graphic of bid + 20% premium = Alt's displayed total, already published in the live Feature. Status line only updated to match Alt's lot page as of 21 Nov 2026, 15:30 Europe/London (Sold · Nov 5, 2026, $1,131,095). All other typography, figures, colours and layout left identical. Credit: Graphic: BuyTrigger.Cards; source: Alt.",
+  "credit_line": "Graphic: BuyTrigger.Cards; source: Alt",
+  "crops_checked": [
+    "full-size 780x690",
+    "390px phone width"
+  ],
+  "generation_prompt": null,
+  "tool": "Pillow overpaint of the existing auction-total.png status bar only (Liberation Sans Bold 24, Arial metric stand-in; original SVG used font-family Arial, which is not installed). SVG text node replaced in place.",
+  "reference_files": [
+    "buytrigger-brand SKILL.md",
+    "assets/magikarp-fan-club-20261107/auction-total.png",
+    "assets/magikarp-fan-club-20261107/auction-total.svg"
+  ],
+  "outputs": [
+    {
+      "path": "assets/magikarp-fan-club-20261121/auction-total.png",
+      "sha256": "1fc450b843b45a406014946b0a84fc628f1fc9e528dd7145087f22c66acffe0e",
+      "size_px": [
+        780,
+        690
+      ],
+      "class": "original-generated"
+    },
+    {
+      "path": "assets/magikarp-fan-club-20261121/auction-total.svg",
+      "sha256": "1268a6ba1233195af12c1fe13e9b9e15a88b760e837c68f2e779c6f68e843f0d",
+      "class": "original-generated"
+    }
+  ],
+  "inputs": [
+    {
+      "path": "assets/magikarp-fan-club-20261107/auction-total.png",
+      "sha256": "46eea971490e38de6b4d811b86528a78e09a31ddaeb551d566f4f549862277b3",
+      "class": "original-generated",
+      "basis": "Live Feature calculation graphic published 7 Nov 2026; status bar overpainted, all other pixels unchanged"
+    },
+    {
+      "path": "assets/magikarp-fan-club-20261107/auction-total.svg",
+      "sha256": "68c82003812f6523edf9a484249283e3fe140430d6f70b99bfc477b0824fc8cf",
+      "class": "original-generated",
+      "basis": "Live Feature SVG; only the status-line text node changed"
+    },
+    {
+      "path": "/usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf",
+      "sha256": "1b5f2da6f4cadce4c05b9ecebe3a6fcd374eb95ae443605e799f4c3287978939",
+      "class": "system-font",
+      "basis": "Liberation Sans Bold, used only for the new status line on the PNG; metric-compatible Arial stand-in"
+    }
+  ]
+}
