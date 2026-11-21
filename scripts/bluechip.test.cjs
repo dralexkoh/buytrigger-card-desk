@@ -48,8 +48,12 @@ test('the published collection is 40 classics and 10 modern, ranked on TCGCSV gu
  }
  assert.equal(/pricecharting/i.test(JSON.stringify(data.cards)),false);
  assert.match(page,/50 CARDS · 40 CLASSICS \+ 10 MODERN/);
- assert.match(page,/Classics · 40/);
- assert.match(page,/Modern · 10/);
+ assert.match(page,/<option value="classic">Classics<\/option>/);
+ assert.match(page,/<option value="modern">Modern<\/option>/);
+ const filters=fs.readFileSync(path.join(root,'top50.js'),'utf8');
+ assert.match(filters,/classic\.textContent='Classics · '\+count\('classic'\)/);
+ assert.match(filters,/modern\.textContent='Modern · '\+count\('modern'\)/);
  assert.match(home,/50 CARDS · 40 CLASSICS \+ 10 MODERN/);
+ assert.match(home,/Top 100 Modern Cards\./);
  assert.equal(/pricecharting/i.test(page),false);
 });

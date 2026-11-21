@@ -117,10 +117,15 @@ function renderStatic(){
   $('#collection-coverage').textContent=coverage.priced+' current Raw guides · '+coverage.stale+' earlier guides';
  }
  $('#card-fan').innerHTML=(data.heroIds||cards.slice(0,6).map(c=>c.id)).map(id=>image(byId(id),false,true).replace('<img ','<img class="fan-card" ')).join('');
- const classicOpt=$('#era-filter option[value="classic"]'),modernOpt=$('#era-filter option[value="modern"]');
- if(classicOpt)classicOpt.textContent=`Classics · ${cards.filter(c=>era(c)==='classic').length}`;
- if(modernOpt)modernOpt.textContent=`Modern · ${cards.filter(c=>era(c)==='modern').length}`;
  $('#set-filter').innerHTML+=[...sets].sort().map(s=>`<option value="${esc(s)}">${esc(s)}</option>`).join('');
+ const eraFilter=$('#era-filter');
+ if(eraFilter){
+  const count=kind=>cards.filter(c=>era(c)===kind).length;
+  const classic=eraFilter.querySelector('option[value="classic"]');
+  const modern=eraFilter.querySelector('option[value="modern"]');
+  if(classic)classic.textContent='Classics · '+count('classic');
+  if(modern)modern.textContent='Modern · '+count('modern');
+ }
  $('#auction-highlights').innerHTML=data.auctions.map(a=>`<article class="auction-card"><span class="auction-year">${a.year}</span><span class="pill">${esc(a.category)}</span><h3>${esc(a.card)}</h3><p>${esc(a.grader)} ${esc(a.grade)} · ${date(a.saleDate)}</p><div class="auction-value">${money(a.reportedResult)}</div><p>Published auction result · USD<br>Includes buyer’s premium</p><p class="auction-context">${esc(a.collectorContext)}</p><a href="${esc(a.originalAuctionUrl)}" target="_blank" rel="noopener noreferrer">Inspect the original ${esc(a.auctionHouse)} lot ↗</a></article>`).join('');
 }
 root.addEventListener('click',e=>{
