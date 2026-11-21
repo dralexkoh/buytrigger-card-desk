@@ -65,6 +65,13 @@ POLICY = {"id": "daily-factor-two-review-v1", "factor": 2,
           "minimumPreviousObservations": 3, "recentWindow": 7,
           "meaning": "Review trigger only; genuine source-guide moves can exceed this threshold.",
           "historicalApplication": "None: existing reviewed observations and exclusions are preserved."}
+# BlueChip only. A new market guide is held when it is under 10% or over 10x
+# of the last accepted guide. The same-release midPrice (lowPrice when mid is
+# missing) is also used when there is no last accepted guide, or when that
+# field sits within 10x of the last accepted guide. PriceCharting is not a
+# cross-check.
+BLUECHIP_OUTLIER = {"id": "bluechip-outlier-hold-v1", "lowRatio": 0.1, "highRatio": 10,
+                    "crossCheck": "Last accepted guide. Same-release midPrice, or lowPrice if mid is missing, when there is no last accepted guide or that field is within 10x of the last accepted guide."}
 UTC = dt.timezone.utc
 
 
@@ -308,6 +315,87 @@ def prior_values(card_key, date, datasets):
     return sorted(observations.items())[-7:]
 
 
+def outside_band(amount, anchor):
+    return positive(amount) and positive(anchor) and (amount < anchor * BLUECHIP_OUTLIER["lowRatio"] or amount > anchor * BLUECHIP_OUTLIER["highRatio"])
+
+
+def bluechip_outlier(amount, last_accepted, source_row):
+    """Return a hold review when a new BlueChip guide fails the 10% / 10x band.
+
+    The cross-check is the last accepted guide. The same-release midPrice
+    (or lowPrice when mid is missing) is used as well when there is no last
+    accepted guide, or when that field sits inside the same 10x band as the
+    last accepted guide. A lone high ask is not allowed to veto a stable guide.
+    """
+    if not positive(amount):
+        return None
+    row = source_row or {}
+    mid = row.get("midPrice")
+    low = row.get("lowPrice")
+    field_name, field_value = None, None
+    if positive(mid):
+        field_name, field_value = "same-release-midPrice", mid
+    elif positive(low):
+        field_name, field_value = "same-release-lowPrice", low
+    checks = []
+    if positive(last_accepted):
+        checks.append(("last-accepted-guide", last_accepted))
+        if field_value is not None and not outside_band(field_value, last_accepted):
+            checks.append((field_name, field_value))
+    elif field_value is not None:
+        checks.append((field_name, field_value))
+    tripped = [{"field": name, "value": value} for name, value in checks if outside_band(amount, value)]
+    if not tripped:
+        return None
+    detail = "; ".join(f"{item['field']} {item['value']}" for item in tripped)
+    return {"reason": f"BlueChip outlier hold: new guide {amount} is under 10% of or over 10x {detail}. The last accepted guide stays published.",
+            "crossChecks": tripped, "policy": BLUECHIP_OUTLIER["id"],
+            "crossCheck": BLUECHIP_OUTLIER["crossCheck"]}
+
+
+def quote_age_days(source_date, quote_date):
+    if not source_date or not quote_date:
+        return None
+    return (dt.date.fromisoformat(source_date) - dt.date.fromisoformat(quote_date)).days
+
+
+def annotate_feature_prices(features, collection):
+    """Mark a homepage fan card when its BlueChip guide is more than 30 days old."""
+    source_date = collection["release"]["sourceDate"]
+    by_image = {card.get("image"): card for card in collection["cards"]}
+    for item in features:
+        card = by_image.get(item.get("image"))
+        quote = ((card or {}).get("quotes") or {}).get("Raw") or {}
+        age = quote_age_days(source_date, quote.get("date")) if card else None
+        if age is not None and age > 30:
+            item["priceLabel"] = "No current price"
+        else:
+            item.pop("priceLabel", None)
+    return features
+
+
+def bluechip_hold_notes(datasets, date):
+    notes = []
+    for name, _, hist in datasets:
+        if name != "bluechip":
+            continue
+        for entry in hist.get("exclusions", []):
+            if entry.get("date") == date and entry.get("policy") == BLUECHIP_OUTLIER["id"]:
+                notes.append({k: entry.get(k) for k in ("cardId", "productId", "date", "reportedValue", "reason", "policy", "crossChecks")})
+    return notes
+
+
+def last_accepted_amount(hist, card_id, date):
+    held = {e["date"] for e in hist.get("exclusions", []) if e.get("cardId") == card_id}
+    last = None
+    for day, amount in zip(hist["dates"], hist["prices"][str(card_id)]):
+        if day >= date:
+            break
+        if positive(amount) and day not in held:
+            last = amount
+    return last
+
+
 def suspicion(amount, previous, date):
     if not positive(amount) or len(previous) < POLICY["minimumPreviousObservations"]:
         return None
@@ -470,15 +558,24 @@ def apply_observations(observation, datasets, review_root):
                 raise RefreshError("A source-date revision cannot replace an immutable existing observation")
             if card.get("releaseDate") and date < card["releaseDate"]:
                 continue
-            hist["prices"][str(card["id"])][index] = amount if row["status"] != "missing" else None
-            if row["status"] == "held":
+            review = row.get("review")
+            status = row["status"]
+            if name == "bluechip" and status == "accepted":
+                outlier = bluechip_outlier(amount, last_accepted_amount(hist, card["id"], date), row.get("sourceRow"))
+                if outlier:
+                    status = "held"
+                    review = outlier
+            hist["prices"][str(card["id"])][index] = amount if status != "missing" else None
+            if status == "held" and review:
                 hold = {"cardId": card["id"], "productId": card["productId"], "date": date,
-                        "reportedValue": amount, "currency": "USD", "reason": row["review"]["reason"],
+                        "reportedValue": amount, "currency": "USD", "reason": review["reason"],
                         "source": observation["sources"][0]["url"] if observation["kind"] == "archive" else f"{BASE}/tcgplayer/3/{card['groupId']}/prices",
-                        "reviewStatus": "pending", "policy": POLICY["id"]}
+                        "reviewStatus": "pending", "policy": review.get("policy", POLICY["id"])}
+                if review.get("crossChecks"):
+                    hold["crossChecks"] = review["crossChecks"]
                 if not any(e["cardId"] == card["id"] and e["date"] == date for e in hist.get("exclusions", [])):
                     hist.setdefault("exclusions", []).append(hold)
-                immutable_json(review_root / f"{date}-{name}-{card['id']}.json", {**hold, "sourceObservationId": observation["id"], "review": row["review"]})
+                immutable_json(review_root / f"{date}-{name}-{card['id']}.json", {**hold, "sourceObservationId": observation["id"], "review": review})
 
 
 def coverage_and_quotes(data, hist, source_date):
@@ -700,10 +797,13 @@ def run(args):
             immutable_json(output / f"data/refresh/observations/{day}/{observation_id}.json", observation)
             apply_observations(observation, named, output / "data/refresh/review")
             counts = {s: sum(r["status"] == s for r in rows) for s in ("accepted", "missing", "held")}
+            held_notes = bluechip_hold_notes(named, day)
             receipt = {"schemaVersion": SCHEMA, "id": observation_id, "sourceDate": day,
                        "sourceBuildAt": build_at, "retrievedAt": now, "kind": kind,
                        "observationSha256": sha(canonical(observation)), "sources": resources,
                        "counts": counts, "uniqueExactPrintings": len(rows)}
+            if held_notes:
+                receipt["heldObservations"] = [{k: e.get(k) for k in ("cardId", "productId", "date", "reportedValue", "reason", "policy", "crossChecks")} for e in held_notes]
             immutable_json(output / f"data/refresh/receipts/{observation_id}.json", receipt)
             counted = [row for row in rows if row["key"] in basket_keys]
             status["changedCount"] += sum(row["status"] == "accepted" and (not prior_values(row["key"], day, datasets) or prior_values(row["key"], day, datasets)[-1][1] != row["amount"]) for row in counted)
@@ -751,6 +851,11 @@ def run(args):
         if collection is not None:
             write_js(output / COLLECTION_FILES[0], "window.BT_TOP50", collection)
             write_json(output / COLLECTION_FILES[1], sources["bluechip"])
+            feature_path = site / "top50-feature.js"
+            if feature_path.is_file():
+                features = read_js(feature_path, "window.BT_TOP50_FEATURES")
+                annotate_feature_prices(features, collection)
+                write_js(output / "top50-feature.js", "window.BT_TOP50_FEATURES", features)
         write_json(state_path, state)
         status["requestCount"] = len(provider.requests)
         status["uniqueExactPrintings"] = len(identities)

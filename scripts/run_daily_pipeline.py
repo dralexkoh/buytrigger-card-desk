@@ -41,6 +41,8 @@ def apply_output(output, stage, failed):
     selected = ['refresh-status.json'] if failed else [*FILES, 'refresh-status.json']
     if not failed and (output / COLLECTION_FILES[0]).exists():
         selected.extend(COLLECTION_FILES)
+    if not failed and (output / "top50-feature.js").exists():
+        selected.append("top50-feature.js")
     for name in selected:
         copy_one(output/name, stage/name)
     if failed:

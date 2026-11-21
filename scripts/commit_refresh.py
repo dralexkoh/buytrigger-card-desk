@@ -10,7 +10,7 @@ def git(*args,check=True):
 
 ALLOWED={'catalogue.js','market-history.js','market-release.json','market-sources.json',
          'top50-data.js','top50-release.json','top50-sources.json','refresh-status.json','data/market-cache/thirtieth-current.json',
-         'bluechip-collection-data.js','bluechip-collection-sources.json',
+         'bluechip-collection-data.js','bluechip-collection-sources.json','top50-feature.js',
          'data/psa10/cardz-approved.json','public-targets-config.json'}
 # Per-index caches the publisher may commit. thirtieth-current.json stays on the
 # explicit list above and is not accepted through this name check.
