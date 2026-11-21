@@ -1324,31 +1324,31 @@
     },
     {
       "rank": 45,
-      "name": "Empoleon",
-      "set_name": "Plasma Freeze",
-      "number": "117/116",
-      "image_provider": "TCGdex",
-      "source_metadata_url": "https://api.tcgdex.net/v2/en/sets/bw9",
+      "name": "Mega Rayquaza ex",
+      "set_name": "ME06: Delta Reign",
+      "number": "138/103",
+      "image_provider": "TCGplayer",
+      "source_metadata_url": "https://www.tcgplayer.com/product/728061",
       "files": {
         "low": {
           "file": "modern-045-low.webp",
-          "url": "https://assets.tcgdex.net/en/bw/bw9/117/low.webp",
-          "bytes": 21832,
-          "sha256": "35e71b982c0d03e57bc727b86ab146e5f1d93f2153543cb53fbb6681f1c9808b",
-          "width": 245,
-          "height": 337,
+          "url": "https://tcgplayer-cdn.tcgplayer.com/product/728061_in_1000x1000.jpg",
+          "bytes": 24436,
+          "sha256": "1c1a04634cca56b69beaa9eb14ad9f7c5c82b0d7b524685deff7208a6319da45",
+          "width": 200,
+          "height": 279,
           "format": "WEBP",
-          "unchanged_download": true
+          "unchanged_download": false
         },
         "high": {
           "file": "modern-045-high.webp",
-          "url": "https://assets.tcgdex.net/en/bw/bw9/117/high.webp",
-          "bytes": 76708,
-          "sha256": "38db6cd5a48a563ee6d8962e23e6f3f627a18732549018196cec520f9893b007",
-          "width": 600,
-          "height": 825,
+          "url": "https://tcgplayer-cdn.tcgplayer.com/product/728061_in_1000x1000.jpg",
+          "bytes": 35342,
+          "sha256": "21acc776c019b878266c771ba0a9a7e0ceff557951f6a1408d0735127130acd8",
+          "width": 200,
+          "height": 279,
           "format": "WEBP",
-          "unchanged_download": true
+          "unchanged_download": false
         }
       }
     },
