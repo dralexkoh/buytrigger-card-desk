@@ -1,6 +1,9 @@
 const test=require('node:test');
 const assert=require('node:assert/strict');
-const {ebayLink,isFresh,activeOffers,affiliateCard,cardSearchUrl,ebayCardBlock,cleanCard}=require('../commerce.js');
+const fs=require('node:fs');
+const path=require('node:path');
+const vm=require('node:vm');
+const {ebayLink,isFresh,activeOffers,affiliateCard,cardSearchUrl,ebayCardBlock,cleanCard,capturePostType}=require('../commerce.js');
 const config={schemaVersion:1,placements:{home:false,drops:true},ebay:{enabled:true,campaignId:'5339239680'},amazonUk:{enabled:false,trackingId:'buytrigger-21'}};
 const now=Date.parse('2026-11-04T17:00:00Z');
 const offer={id:'ebay-123456789012',region:'UK',affiliateProvider:'ebay',productUrl:'https://www.ebay.co.uk/itm/123456789012',checkedAt:'2026-11-04T16:59:00Z',expiresAt:'2026-11-04T17:14:00Z',availability:'In stock'};
@@ -67,4 +70,68 @@ test('only fresh available exact offers with our campaign enter each region',()=
  assert.equal(activeOffers({items:[offer]},config,now,'UK').length,1);
  for(const bad of [{...offer,availability:'Sold out'},{...offer,availability:'Invitation'},{...offer,affiliateUrl:offer.affiliateUrl.replace('5339239680','5330000000')},{...offer,affiliateProvider:'amazonUk'}])assert.equal(activeOffers({items:[bad]},config,now).length,0);
  assert.equal(activeOffers({items:[offer]},config,now,'US').length,0);
+});
+const source=fs.readFileSync(path.join(__dirname,'..','commerce.js'),'utf8');
+const SEARCH='https://www.ebay.co.uk/sch/i.html?_nkw=Pikachu&LH_BIN=1&LH_PrefLoc=1';
+function memoryStorage(){
+ const items=new Map();
+ return {writes:0,getItem:k=>items.has(k)?items.get(k):null,setItem(k,v){this.writes++;items.set(String(k),String(v));}};
+}
+function boot(href,storage,hrefs=[]){
+ const anchors=hrefs.map(value=>({value,getAttribute(){return this.value;},setAttribute(name,next){if(name==='href')this.value=next;}}));
+ let timers=0;
+ const win={
+  location:new URL(href),
+  sessionStorage:storage||memoryStorage(),
+  document:{body:{dataset:{}},querySelector(){return null;},querySelectorAll(sel){return String(sel).includes('customid')?anchors:[];},addEventListener(){}},
+  addEventListener(){},
+  setInterval(){timers+=1;return 0;},
+ };
+ vm.runInNewContext(source,{window:win,URL,console},{filename:'commerce.js'});
+ win.timers=timers;
+ win.anchors=anchors;
+ return win;
+}
+function customOf(win,placement){return new URL(win.BTCommerce.ebayLink(SEARCH,config,placement)).searchParams.get('customid');}
+test('deal, news, feature and reply prefix an eBay custom id',()=>{
+ assert.equal(customOf(boot('https://buytrigger.cards/?utm_content=deal'),'price-raw'),'d_price-raw');
+ assert.equal(customOf(boot('https://buytrigger.cards/?utm_content=NEWS'),'price-psa10'),'n_price-psa10');
+ assert.equal(customOf(boot('https://buytrigger.cards/?utm_content=Feature'),'story-mega-rayquaza'),'f_story-mega-rayquaza');
+ assert.equal(customOf(boot('https://buytrigger.cards/?utm_content=RePlY'),'db-raw'),'r_db-raw');
+});
+test('any other utm_content is ignored',()=>{
+ const win=boot('https://buytrigger.cards/?utm_source=x&utm_medium=social&utm_content=welcome');
+ assert.equal(win.sessionStorage.writes,0);
+ assert.equal(customOf(win,'price-raw'),'price-raw');
+});
+test('a landing with no utm_content leaves the placement id unchanged',()=>{
+ const win=boot('https://buytrigger.cards/prices/delta-reign/');
+ assert.equal(win.sessionStorage.writes,0);
+ assert.equal(customOf(win,'story-mega-rayquaza'),'story-mega-rayquaza');
+ assert.equal(customOf(win,'a'.repeat(64)).length,64);
+});
+test('a prefixed custom id is trimmed to 64 characters',()=>{
+ const id=customOf(boot('https://buytrigger.cards/?utm_content=deal'),'a'.repeat(64));
+ assert.equal(id.length,64);
+ assert.equal(id,'d_'+'a'.repeat(62));
+});
+test('the post type persists across page navigation within the session',()=>{
+ const storage=memoryStorage();
+ const baked='https://www.ebay.co.uk/sch/i.html?_nkw=Mega+Rayquaza+ex+138%2F103+Delta+Reign&LH_BIN=1&LH_PrefLoc=1&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339239680&toolid=10001&customid=price-raw';
+ boot('https://buytrigger.cards/stories/mega-rayquaza/?utm_content=feature',storage);
+ const price=boot('https://buytrigger.cards/prices/delta-reign/',storage,[baked]);
+ assert.equal(price.timers,0);
+ const stamped=new URL(price.anchors[0].value);
+ assert.equal(stamped.searchParams.get('customid'),'f_price-raw');
+ assert.equal(stamped.searchParams.get('_nkw'),'Mega Rayquaza ex 138/103 Delta Reign');
+ assert.equal(stamped.searchParams.get('campid'),'5339239680');
+ const later=boot('https://buytrigger.cards/index.html?utm_content=not-a-type',storage);
+ assert.equal(customOf(later,'story-mega-rayquaza'),'f_story-mega-rayquaza');
+ assert.equal(later.BTCommerce.activeOffers({items:[offer]},config,now,'UK').length,1);
+});
+test('a blocked sessionStorage leaves the placement id unchanged',()=>{
+ const win={location:new URL('https://buytrigger.cards/?utm_content=deal'),get sessionStorage(){throw new Error('blocked');},document:{body:{dataset:{}},querySelector(){return null;},querySelectorAll(){return [];},addEventListener(){}},addEventListener(){},setInterval(){throw new Error('timer');}};
+ assert.doesNotThrow(()=>vm.runInNewContext(source,{window:win,URL},{filename:'commerce.js'}));
+ assert.equal(new URL(win.BTCommerce.ebayLink(SEARCH,config,'price-raw')).searchParams.get('customid'),'price-raw');
+ assert.doesNotThrow(()=>capturePostType(win));
 });

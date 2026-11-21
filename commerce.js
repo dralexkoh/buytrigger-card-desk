@@ -1,7 +1,51 @@
 (function(root){'use strict';
 const ROTATIONS={'www.ebay.co.uk':'710-53481-19255-0','www.ebay.com':'711-53200-19255-0'};
+const POST_TYPES={deal:'d_',news:'n_',feature:'f_',reply:'r_'};
+const POST_TYPE_KEY='buytrigger.cards.commerce.post-type.v1';
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-function ebayLink(target,config,placement){
+function postTypePrefix(win){
+  try{const type=win?.sessionStorage?.getItem(POST_TYPE_KEY);return Object.hasOwn(POST_TYPES,type)?POST_TYPES[type]:'';}catch(_){return '';}
+}
+function capturePostType(win){
+  try{
+    const value=new URL(win.location.href).searchParams.get('utm_content');
+    if(value==null)return;
+    const type=String(value).toLowerCase();
+    if(!Object.hasOwn(POST_TYPES,type))return;
+    win.sessionStorage.setItem(POST_TYPE_KEY,type);
+  }catch(_){}
+}
+function customId(placement,win){
+  if(!placement||!/^[a-zA-Z0-9_-]{1,64}$/.test(placement))return '';
+  const id=(postTypePrefix(win)+placement).slice(0,64);
+  return /^[a-zA-Z0-9_-]{1,64}$/.test(id)?id:'';
+}
+function attributeUrl(url,win){
+  try{
+    const prefix=postTypePrefix(win);
+    if(!prefix)return url;
+    const u=new URL(url,win?.location?.href);
+    if(u.protocol!=='https:'||!ROTATIONS[u.host])return url;
+    const id=u.searchParams.get('customid');
+    if(!id||id.startsWith(prefix))return url;
+    const next=customId(id,win);
+    if(!next||next===id)return url;
+    u.searchParams.set('customid',next);
+    return u.href;
+  }catch(_){return url;}
+}
+function stampEbayCustomIds(doc,win){
+  if(!postTypePrefix(win))return;
+  let links;try{links=doc.querySelectorAll('a[href*="customid="]');}catch(_){return;}
+  for(const link of links){
+    try{
+      const raw=link.getAttribute('href');
+      const next=attributeUrl(raw,win);
+      if(next&&next!==raw)link.setAttribute('href',next);
+    }catch(_){}
+  }
+}
+function ebayLink(target,config,placement,win){
   if(!config?.ebay?.enabled||!/^\d{10}$/.test(config.ebay.campaignId))return null;
   try{const u=new URL(target);if(u.protocol!=='https:'||!ROTATIONS[u.host]||u.username||u.password||u.hash)return null;
     const listing=/^\/itm\/\d{9,15}$/.test(u.pathname),search=u.pathname==='/sch/i.html';
@@ -14,7 +58,8 @@ function ebayLink(target,config,placement){
       for(const k of ['LH_BIN','LH_PrefLoc'])if(u.searchParams.has(k)&&u.searchParams.get(k)!=='1')return null;
     }
     for(const [k,v] of Object.entries({mkevt:'1',mkcid:'1',mkrid:ROTATIONS[u.host],campid:config.ebay.campaignId,toolid:'10001'}))u.searchParams.set(k,v);
-    if(placement&&/^[a-zA-Z0-9_-]{1,64}$/.test(placement))u.searchParams.set('customid',placement);
+    const custom=customId(placement,arguments.length>3?win:root);
+    if(custom)u.searchParams.set('customid',custom);
     return u.href;
   }catch{return null;}
 }
@@ -26,7 +71,7 @@ function activeOffers(data,config,now=Date.now(),region='All'){
   return (data?.items||[]).filter(o=>isFresh(o,now)&&['In stock','Preorder'].includes(o.availability)
     &&(region==='All'||o.region===region)&&o.affiliateProvider==='ebay'
     &&/^https:\/\/www\.ebay\.(?:co\.uk|com)\/itm\/\d{9,15}(?:\?|$)/.test(o.productUrl)
-    &&ebayLink(o.productUrl,config,o.id)===o.affiliateUrl);
+    &&ebayLink(o.productUrl,config,o.id,null)===o.affiliateUrl);
 }
 function disclosure(){return 'As an eBay Partner Network Affiliate, we earn from qualifying purchases.';}
 function measurement(config,slot,creative,destination){return `data-commercial-campaign="ebay-${esc(config.ebay.campaignId)}" data-commercial-slot="${slot}" data-commercial-creative="${esc(creative)}" data-commercial-destination="${esc(destination)}"`;}
@@ -37,7 +82,7 @@ function affiliateCard(config,placement){
 }
 function offerCard(o,config,home){const check=new Date(o.checkedAt).toLocaleString('en-GB',{day:'numeric',month:'short',hour:'2-digit',minute:'2-digit',timeZone:'Europe/London'});
   const price=o.price?`${new Intl.NumberFormat('en-GB',{style:'currency',currency:o.price.currency}).format(o.price.amount)} · item price; delivery shown by seller`:'Check price and delivery on the seller’s page.';
-  return `<article class="verified-offer" data-offer-expires="${esc(o.expiresAt)}" ${measurement(config,home?'HOME-01':'DROPS-01','ebay-offer-v1',o.id)}><small class="commerce-label">Ad · Affiliate link</small><div class="drop-meta"><span>${esc(o.country)}</span><span>${esc(o.language)}</span><span>${esc(o.event)}</span></div><h3>${esc(o.title)}</h3><p>${esc(o.summary)}</p><p class="offer-seller">Seller: ${esc(o.seller)} · ${esc(o.fulfilment)}</p><p class="offer-price">${esc(price)}</p><p class="offer-status"><strong>${esc(o.availability)} when checked</strong> · ${esc(check)} UK time</p><a class="btn red" data-offer-link href="${esc(o.affiliateUrl)}" target="_blank" rel="sponsored noopener noreferrer">View on eBay ↗</a></article>`;
+  return `<article class="verified-offer" data-offer-expires="${esc(o.expiresAt)}" ${measurement(config,home?'HOME-01':'DROPS-01','ebay-offer-v1',o.id)}><small class="commerce-label">Ad · Affiliate link</small><div class="drop-meta"><span>${esc(o.country)}</span><span>${esc(o.language)}</span><span>${esc(o.event)}</span></div><h3>${esc(o.title)}</h3><p>${esc(o.summary)}</p><p class="offer-seller">Seller: ${esc(o.seller)} · ${esc(o.fulfilment)}</p><p class="offer-price">${esc(price)}</p><p class="offer-status"><strong>${esc(o.availability)} when checked</strong> · ${esc(check)} UK time</p><a class="btn red" data-offer-link href="${esc(attributeUrl(o.affiliateUrl,root))}" target="_blank" rel="sponsored noopener noreferrer">View on eBay ↗</a></article>`;
 }
 // Internal measurement: one served/impression/click per placement and page visit.
 // Consent, DNT, browser exclusion and QA are enforced by the existing counter.
@@ -127,11 +172,13 @@ function ebayCardBlock(card,config,options={}){
 }
 function ebayPageNote(){return `<div class="ebay-footnote"><p><strong>About the eBay links.</strong> ${PRICE_NOTE} “Check price” is a separate affiliate link.</p></div>`;}
 function ebayListNote(){return `<div class="ebay-footnote"><p><strong>About the eBay links.</strong> ${PRICE_NOTE}</p></div>`;}
-const api={ebayLink,isFresh,activeOffers,affiliateCard,disclosure,createPlacementTracker,cleanCard,cardSearchUrl,ebayCardBlock,ebayPageNote,ebayListNote};
+const api={ebayLink,isFresh,activeOffers,affiliateCard,disclosure,createPlacementTracker,cleanCard,cardSearchUrl,ebayCardBlock,ebayPageNote,ebayListNote,capturePostType,stampEbayCustomIds};
 if(typeof module==='object'&&module.exports)module.exports=api;
 if(root)root.BTCommerce=api;
 if(!root?.document)return;
 const doc=root.document;
+capturePostType(root);
+stampEbayCustomIds(doc,root);
 function offersMarkup(items,home){return `<div class="section-heading"><div><span class="kicker red-text">CHECKED AT THE SELLER</span><h2>${home?'Latest verified offers':'Verified product offers'}</h2></div>${home?'<a class="text-link" href="drops.html">See Drops →</a>':''}</div><p class="offers-note">Availability changes quickly. Each offer is checked separately from the release calendar.</p><div class="verified-offer-grid">${items.map(o=>offerCard(o,root.BT_COMMERCE,home)).join('')}</div><p class="affiliate-disclosure">${disclosure()}</p>`;}
 function expireVisible(){for(const card of doc.querySelectorAll('[data-offer-expires]')){
   if(Date.now()<Date.parse(card.dataset.offerExpires))continue;
@@ -179,6 +226,7 @@ function mountCardSlots(){
   const grid=doc.querySelector('#set-grid');
   if(grid&&!grid.parentElement.querySelector(':scope > .ebay-footnote'))grid.insertAdjacentHTML('afterend',ebayListNote());
 }
+if(!['home','drops'].includes(doc.body?.dataset?.page)&&!root.BT_COMMERCE&&!doc.querySelector('[data-ebay-card]'))return;
 doc.addEventListener('click',e=>{
   const link=e.target.closest('[data-offer-link]');
   if(link&&Date.now()>=Date.parse(link.closest('[data-offer-expires]').dataset.offerExpires)){e.preventDefault();e.stopImmediatePropagation();expireVisible();return;}
