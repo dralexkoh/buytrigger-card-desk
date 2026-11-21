@@ -1,0 +1,133 @@
+{
+  "reviewer": "Vault Newsroom",
+  "review_date": "2026-11-21",
+  "rights_basis": "TCGplayer catalogue references (exact product, pack and card images, credited; product and card artwork © Pokémon), composed on the owner-locked BuyTrigger.Cards brand canvas. Strip images are existing repo copies (assets/sv-151/, assets/prismatic-evolutions/). Prices from TCGCSV (TCGplayer market price, 21 Nov 2026 update at 20:06 UTC, plus dated archives 30 Sep, 6, 13 and 14 Nov). No generated or redrawn franchise characters.",
+  "credit_line": "Card, pack and product images: TCGplayer · Artwork © Pokémon · Graphic: BuyTrigger.Cards",
+  "crops_checked": [
+    "full-size",
+    "390px phone width",
+    "72x64 rail thumbnail"
+  ],
+  "generation_prompt": null,
+  "tool": "Pillow composition (/workspace/nr1121c-work/compose.py, helpers /workspace/nr1118b-work/compose_heroes.py)",
+  "reference_files": [],
+  "outputs": [
+    {
+      "path": "assets/newsroom-20261121c/delta-reign-pokemon-center-etb-halved-hero.webp",
+      "sha256": "8a25b3e20f5d056677e277fdab18322ac31a5fda204ed074c0e5eb85f7e001a7",
+      "size_px": [
+        1600,
+        900
+      ],
+      "class": "permitted-media + brand-asset composition",
+      "inputs": [
+        {
+          "path": "/workspace/nr1121c-work/src/tcg-712104.jpg",
+          "source_url": "https://tcgplayer-cdn.tcgplayer.com/product/712104_in_1000x1000.jpg",
+          "sha256": "9f4a4a253359e242253890d85c1ee2eb333c55d34518a0ed8d4ee4c59daaed57",
+          "class": "permitted-media (TCGplayer catalogue reference)"
+        },
+        {
+          "path": "/workspace/nr1121c-work/src/tcg-712102.jpg",
+          "source_url": "https://tcgplayer-cdn.tcgplayer.com/product/712102_in_1000x1000.jpg",
+          "sha256": "e6f56874edc0202995f3cf8374b19da4dd7bfc4662e58f81cdb15212b53c0ad8",
+          "class": "permitted-media (TCGplayer catalogue reference)"
+        },
+        {
+          "path": "/home/box/private/buytrigger/full/BuyTrigger-Cards-Grok-Handover-2026-11-10/workspace/brand/buytrigger-cards/skill/assets/buytrigger-badge-gengar-vaporeon-web.png",
+          "source_url": "owner brand asset",
+          "sha256": "303e7a82ef8ebe755375d864029ab623c55b6272c44cec15462539cc5c25a4fa",
+          "class": "brand-asset"
+        },
+        {
+          "path": "/workspace/nr1121c/assets/publisher-logo-600x60.png",
+          "source_url": "repo brand asset (wordmark)",
+          "sha256": "ae4ac346e762dfc13bb5a5b11211a6fc9d05f6117a3588e55a2b8ea2283d6aac",
+          "class": "brand-asset"
+        }
+      ]
+    },
+    {
+      "path": "assets/newsroom-20261121c/sv-151-alakazam-sir-cheaper-than-charmeleon-hero.webp",
+      "sha256": "cc2565f99c6205e912845437e1e5aee32a49e34171f3229ca4798f3dc5ac782c",
+      "size_px": [
+        1600,
+        900
+      ],
+      "class": "permitted-media + brand-asset composition",
+      "inputs": [
+        {
+          "path": "/workspace/nr1121c-work/src/tcg-504467.jpg",
+          "source_url": "https://tcgplayer-cdn.tcgplayer.com/product/504467_in_1000x1000.jpg",
+          "sha256": "f6880238d36a178e3cc3e5d419c9c656ba35f7be6888afc4c1035accf64341c9",
+          "class": "permitted-media (TCGplayer catalogue reference)"
+        },
+        {
+          "path": "/workspace/nr1121c-work/src/tcg-517047.jpg",
+          "source_url": "https://tcgplayer-cdn.tcgplayer.com/product/517047_in_1000x1000.jpg",
+          "sha256": "09ea0475f25b4aefa15f0206d126a7d5e640a706cbf3f505767d83e8e4e64a31",
+          "class": "permitted-media (TCGplayer catalogue reference)"
+        },
+        {
+          "path": "/workspace/nr1121c-work/src/tcg-517018.jpg",
+          "source_url": "https://tcgplayer-cdn.tcgplayer.com/product/517018_in_1000x1000.jpg",
+          "sha256": "ccf9b3b833d26c7df7b4e3a30b483ecd87965a4f2f952af97e899b202353c759",
+          "class": "permitted-media (TCGplayer catalogue reference)"
+        },
+        {
+          "path": "/home/box/private/buytrigger/full/BuyTrigger-Cards-Grok-Handover-2026-11-10/workspace/brand/buytrigger-cards/skill/assets/buytrigger-badge-gengar-vaporeon-web.png",
+          "source_url": "owner brand asset",
+          "sha256": "303e7a82ef8ebe755375d864029ab623c55b6272c44cec15462539cc5c25a4fa",
+          "class": "brand-asset"
+        },
+        {
+          "path": "/workspace/nr1121c/assets/publisher-logo-600x60.png",
+          "source_url": "repo brand asset (wordmark)",
+          "sha256": "ae4ac346e762dfc13bb5a5b11211a6fc9d05f6117a3588e55a2b8ea2283d6aac",
+          "class": "brand-asset"
+        }
+      ]
+    },
+    {
+      "path": "assets/newsroom-20261121c/prismatic-jolteon-sir-below-eevee-ex-hero.webp",
+      "sha256": "cee42e47905960ea43164cc1613913a660d3b2186f8cc14501c9ce8f87967da0",
+      "size_px": [
+        1600,
+        900
+      ],
+      "class": "permitted-media + brand-asset composition",
+      "inputs": [
+        {
+          "path": "/workspace/nr1121c-work/src/pe-pack-593294.jpg",
+          "source_url": "https://tcgplayer-cdn.tcgplayer.com/product/593294_in_1000x1000.jpg",
+          "sha256": "b9d2d93f5ae845e2ac76f30dddc0bf4cfe4d819fa3a2161cbdbfbb226ec617ff",
+          "class": "permitted-media (TCGplayer catalogue reference)"
+        },
+        {
+          "path": "/workspace/nr1121c-work/src/tcg-610508.jpg",
+          "source_url": "https://tcgplayer-cdn.tcgplayer.com/product/610508_in_1000x1000.jpg",
+          "sha256": "d295fecfbcccdb8b8b1df39d33f8b79584ddbfb722431256da40fb7df1cf81ac",
+          "class": "permitted-media (TCGplayer catalogue reference)"
+        },
+        {
+          "path": "/workspace/nr1121c-work/src/tcg-610522.jpg",
+          "source_url": "https://tcgplayer-cdn.tcgplayer.com/product/610522_in_1000x1000.jpg",
+          "sha256": "c20cb4f398e4d263691dd5db5756274d6d086aa87d2407022dce2c5c05e69661",
+          "class": "permitted-media (TCGplayer catalogue reference)"
+        },
+        {
+          "path": "/home/box/private/buytrigger/full/BuyTrigger-Cards-Grok-Handover-2026-11-10/workspace/brand/buytrigger-cards/skill/assets/buytrigger-badge-gengar-vaporeon-web.png",
+          "source_url": "owner brand asset",
+          "sha256": "303e7a82ef8ebe755375d864029ab623c55b6272c44cec15462539cc5c25a4fa",
+          "class": "brand-asset"
+        },
+        {
+          "path": "/workspace/nr1121c/assets/publisher-logo-600x60.png",
+          "source_url": "repo brand asset (wordmark)",
+          "sha256": "ae4ac346e762dfc13bb5a5b11211a6fc9d05f6117a3588e55a2b8ea2283d6aac",
+          "class": "brand-asset"
+        }
+      ]
+    }
+  ]
+}
