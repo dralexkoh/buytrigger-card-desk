@@ -34,7 +34,7 @@ function page(){
    <div>
     <span class="kicker red-text">ENGLISH / RAW MARKET GUIDES</span>
     <h1>Delta Reign <em>Index.</em></h1>
-    <p>All 141 English cards from ME06: Delta Reign, one of each base printing. Open any card for its dated Raw market guides. Prices are dated 16 November 2026 and will stay on that date until the daily refresh for this set is switched on. The index starts at 100 on 6 November 2026, the set’s launch day.</p>
+    <p>All 141 English cards from ME06: Delta Reign, one of each base printing. Open any card for its dated Raw market guides. Prices follow the daily Raw market-guide release. The source date is shown with the index. The index starts at 100 on 6 November 2026, the set’s launch day.</p>
     <a class="btn red" href="#delta-reign-cards" data-set-scroll>Explore the cards ↓</a>
    </div>
    <div class="thirtieth-fan" aria-label="English Delta Reign cards">${heroes.map(([id,label])=>`<img src="assets/delta-reign/${id}.jpg" alt="${label} · English ME06: Delta Reign official card image">`).join('')}</div>
@@ -50,7 +50,7 @@ function page(){
   <details class="set-method">
    <summary>How the chart works</summary>
    <p>The index adds the Raw market guide for one of each of the 141 English base printings and sets that total to 100 on 6 November 2026, the set’s launch day. A day needs every price in the set. Missing dates stay as gaps.</p>
-   <p>Prices are TCGplayer mixed-condition market guides via <a href="https://tcgcsv.com/faq" target="_blank" rel="noopener">TCGCSV</a>, in USD. This snapshot currently shows the launch-day guides and the 16 November 2026 guides from a verified handoff. Daily points will fill in once the regular refresh for this set is switched on. These are guide prices, not verified sales or offers.</p>
+   <p>Prices are TCGplayer mixed-condition market guides via <a href="https://tcgcsv.com/faq" target="_blank" rel="noopener">TCGCSV</a>, in USD. Each figure is that printing’s guide on the daily release. These are guide prices, not verified sales or offers.</p>
   </details>
  </section>
  <section class="thirtieth-catalogue" id="delta-reign-cards">
@@ -164,10 +164,13 @@ function stampSnapshot(value){
  return copy;
 }
 
-async function loadSnapshot(signal){
- const res=await fetch('delta-reign-market-snapshot.json',{cache:'no-store',signal});
- if(!res.ok)throw Error();
- const value=E.validate(stampSnapshot(await res.json()));
+async function loadDaily(signal){
+ const [cacheRes,snapRes]=await Promise.all([
+  fetch('data/market-cache/'+E.spec.index+'-current.json',{cache:'no-store',signal}),
+  fetch('delta-reign-market-snapshot.json',{cache:'no-store',signal})
+ ]);
+ if(!cacheRes.ok||!snapRes.ok)throw Error();
+ const value=E.validate(stampSnapshot(Factory.adaptDailyCache(await snapRes.json(),await cacheRes.json())));
  if(!value)throw Error();
  return value;
 }
@@ -194,28 +197,15 @@ async function load(){
  let value=null;
  try{
   const res=await fetch('shared-market-config.json',{cache:'no-store',signal:controller.signal});
-  if(res.ok){
-   const config=await res.json();
-   if(config.enabled&&config.endpoint){
-    const url=new URL(config.endpoint,location.href);
-    if(url.protocol==='https:'||(location.hostname==='127.0.0.1'&&url.origin===location.origin)){
-     url.search=new URLSearchParams({index:'delta-reign',days:'366'});
-     const r=await fetch(url,{credentials:'omit',cache:'no-store',signal:controller.signal});
-     if(r.ok){
-      const text=await r.text();
-      if(text.length<=3000000){
-       const parsed=JSON.parse(text);
-       if(parsed&&parsed.available!==false)value=E.validate(parsed);
-      }
-     }
-    }
-   }
-  }
+  if(!res.ok)throw Error();
+  const config=await res.json();
+  if(!config.enabled||!config.endpoint)throw Error();
+  value=await loadDaily(controller.signal);
  }catch(e){
   value=null;
  }
  try{
-  if(!value)value=await loadSnapshot();
+  if(!value)value=await loadDaily(controller.signal);
   if(!active||token!==epoch)return;
   data=value;
   try{await loadRoster(controller.signal);}catch(err){}

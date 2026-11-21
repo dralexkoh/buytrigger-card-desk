@@ -69,7 +69,7 @@ for f in d.rglob('*'):
  s=f.read_text()
  if f.name in {'public-targets.js','public-targets-config.json'}:
   s=s.replace(APPROVED_TARGET_READER,'https://approved-public-target-reader.invalid')
- if f.name=='shared-market-config.json':
+ if f.name in {'shared-market-config.json','market-config.json'}:
   s=s.replace(APPROVED_MARKET,'https://approved-public-market.invalid')
  if f.name in ['analytics.js','analytics-config.json']:
   s=re.sub(re.escape(APPROVED_COLLECTOR)+r'''(?=['"\s<>]|$)''','https://approved-public-card-traffic-collector.invalid',s)
@@ -230,6 +230,7 @@ assert all(article_url(a['slug']) in locs for a in editorial['articles'])
 assert all(news_url(w['id']) in locs for w in editorial.get('wire',[]))
 from raw_price_page import display_price, format_source_date, load_snapshot, without_ebay_buttons
 from price_release import assert_price_as_of, release_date, visible_as_of_dates
+from check_cross_surface_prices import assert_same_release
 NAV_HREFS=(
  '/index.html#home','/market.html','/index.html#desk','/index.html#journal','/index.html#targets','/drops.html',
  '/index.html#about','/prices/thirtieth-anniversary/','/prices/tcg-modern/','/prices/delta-reign/','/prices/sv-151/','/prices/prismatic-evolutions/','/advertise/',
@@ -307,6 +308,9 @@ assert_price_guide('tcg-modern', 'Raw (ungraded) market guide prices, source: TC
 assert_price_guide('delta-reign', 'Raw (ungraded) market guide prices, source: TCGCSV market price')
 assert_price_guide('sv-151', 'Raw (ungraded) market guide prices, source: TCGCSV market price')
 assert_price_guide('prismatic-evolutions', 'Raw (ungraded) market guide prices, source: TCGCSV market price')
+assert_same_release(p)
+market_config=json.loads((d/'market-config.json').read_text())
+assert market_config=={'schemaVersion':1,'enabled':True,'endpoint':APPROVED_MARKET}
 modern_text=BeautifulSoup((d/'prices'/'tcg-modern'/'index.html').read_text(),'html.parser').get_text(' ')
 assert 'US-market references in USD, not sales or offers.' in modern_text
 assert not re.search(r'sale', re.sub(r'not sales or offers', '', modern_text, flags=re.I), re.I)

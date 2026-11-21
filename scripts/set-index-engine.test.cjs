@@ -102,3 +102,28 @@ test('Prismatic index view stays at 180 while ball patterns stay out of the gall
   assert.equal(cache.cards.length, 347);
   assert.equal(cache.index, 'prismatic-evolutions');
 });
+
+test('daily cache replaces the 16 Nov snapshot price for Kecleon and Raikou', () => {
+  const {adaptDailyCache} = require('../set-index-engine.js');
+  const cache = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'data/market-cache/delta-reign-current.json'), 'utf8'));
+  const generated = new Date();
+  const value = engine.validate({
+    ...adaptDailyCache(snapshot, cache),
+    generatedAt: generated.toISOString(),
+    expiresAt: new Date(generated.getTime() + 9 * 60 * 1000).toISOString(),
+  });
+  assert.equal(value.sourceDate, cache.sourceDate);
+  const price = (id) => {
+    const card = value.cards.find((row) => row.image.endsWith('/' + id + '.jpg'));
+    const point = engine.latest(value, card.key);
+    assert.equal(point[0], cache.sourceDate);
+    assert.equal(point[2], 'ok');
+    return point[1];
+  };
+  const kecleon = cache.cards.find((card) => String(card.productId) === '726567');
+  const raikou = cache.cards.find((card) => String(card.productId) === '726574');
+  const onRelease = (card) => card.points.find((point) => point.day === cache.sourceDate).usd;
+  assert.equal(price('726567'), onRelease(kecleon));
+  assert.equal(price('726574'), onRelease(raikou));
+  assert.equal(value.cards.length, 141);
+});

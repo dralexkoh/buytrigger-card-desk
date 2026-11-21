@@ -89,6 +89,32 @@ function createEngine(spec){
  return {positive,day,validate,series,latest,focus,rankedRaw,basket,segments,spec};
 }
 
+function adaptDailyCache(snapshot, cache){
+ if(!cache||cache.schemaVersion!==1||!day(cache.sourceDate)||cache.index!==snapshot.index)throw Error('Daily cache rejected');
+ const byId=new Map();
+ for(const card of cache.cards||[]){
+  if(card.inIndex===false)continue;
+  const id=String(card.productId);
+  if(!byId.has(id))byId.set(id,[]);
+  byId.get(id).push(card);
+ }
+ const points={},urls=new Map();
+ for(const card of snapshot.cards||[]){
+  const id=(String(card.image||'').match(/(\d+)\.jpg$/)||[])[1];
+  const options=byId.get(id)||[];
+  const daily=options.find(row=>row.printing===card.printing)||(options.length===1?options[0]:null);
+  if(!daily)throw Error('Daily cache missing '+id);
+  points[card.key]=(daily.points||[]).map(row=>{
+   const ok=row.status==='ok'&&positive(row.usd);
+   const status=ok?'ok':row.status==='source_anomaly'?'source_anomaly':'no_price';
+   if(row.source)urls.set(row.day,row.source);
+   return [row.day,ok?row.usd:null,status];
+  }).sort((a,b)=>a[0]<b[0]?-1:a[0]>b[0]?1:0);
+ }
+ const sources=[...urls.entries()].sort((a,b)=>a[0]<b[0]?-1:1).map(([day,url])=>({day,url}));
+ return {schemaVersion:2,available:snapshot.available!==false,index:snapshot.index,sourceSystem:'shared-cards-market',grade:'Raw',currency:'USD',measure:'tcgcsv_market',cards:snapshot.cards,points,sourceDate:cache.sourceDate,source:'https://tcgcsv.com/faq',sources,baseline:snapshot.baseline,sourceVersion:snapshot.sourceVersion};
+}
+
 function chaseEntries(roster){
  if(!roster||!Array.isArray(roster.cards))return [];
  return roster.cards.filter(card=>Number.isInteger(card.chase_rank)&&card.chase_rank>0).map(card=>({
@@ -123,5 +149,5 @@ function chaseHtml(roster,data,latest,helpers){
  return `<section class="chase-band" aria-labelledby="chase-title"><div class="chase-head"><h2 id="chase-title">Chase cards</h2><p>${note}</p></div><div class="chase-strip">${tiles.join('')}</div></section>`;
 }
 
-return {positive,day,keys,createEngine,chaseEntries,chaseHtml};
+return {positive,day,keys,createEngine,adaptDailyCache,chaseEntries,chaseHtml};
 });
