@@ -225,6 +225,23 @@ test('reddit, discord, substack and embed are accepted campaign sources; an unli
   assert.equal(dropped.out[0].utm_medium,undefined);
   assert.equal(dropped.out[0].utm_campaign,undefined);
 });
+test('guess-the-price and price-it-sunday are accepted campaign content; an unlisted content value is dropped',()=>{
+  assert.deepEqual(require('../analytics-config.json').campaignContent,['launch','profile','story','index','top50','guess-the-price','price-it-sunday']);
+  for (const content of ['launch','profile','story','index','top50','guess-the-price','price-it-sunday']) {
+    const {out,controller:c}=controller('index.html?utm_source=x&utm_medium=social&utm_campaign=launch_2026_11&utm_content='+content);
+    c.choose('granted');c.routeRendered();
+    assert.equal(out[0].utm_content,content);
+    assert.equal(out[0].utm_source,'x');
+    assert.equal(out[0].utm_medium,'social');
+    assert.equal(out[0].utm_campaign,'launch_2026_11');
+  }
+  const dropped=controller('index.html?utm_source=x&utm_medium=social&utm_campaign=launch_2026_11&utm_content=unlisted-creative');
+  dropped.controller.choose('granted');dropped.controller.routeRendered();
+  assert.equal(dropped.out[0].utm_content,undefined);
+  assert.equal(dropped.out[0].utm_source,'x');
+  assert.equal(dropped.out[0].utm_medium,'social');
+  assert.equal(dropped.out[0].utm_campaign,'launch_2026_11');
+});
 
 // Canonical route identities exclude private query content.
 test('advertising enquiries have their own category without leaking email or query',()=>{
