@@ -106,7 +106,10 @@ test('tcgplayer homepage banner stays hidden until the Impact URL is set',()=>{
  assert.match(html,/Explore the TCGplayer marketplace\./);
  assert.match(html,/Shop Pokémon on TCGplayer/);
  assert.match(html,/We may earn a commission from a purchase through this link\./);
- assert.match(html,/class="tcgplayer-wordmark">TCGplayer</);
+ assert.match(html,/class="tcgplayer-brand"/);
+ assert.match(html,/<svg class="tcgplayer-mark"/);
+ assert.match(html,/>TCGplayer<\/span>/);
+ assert.doesNotMatch(html,/<img/);
  assert.match(html,/rel="sponsored nofollow noopener"/);
  assert.match(html,/target="_blank"/);
  assert.doesNotMatch(html,/BuyTrigger/);
@@ -121,6 +124,10 @@ test('tcgplayer homepage banner stays hidden until the Impact URL is set',()=>{
  const replaced=new URL(tcgplayerHref({tcgplayerImpactUrl:'https://impact.example/go?subId1=old&subId2=other'}));
  assert.equal(replaced.searchParams.get('subId1'),'banner');
  assert.equal(replaced.searchParams.get('subId2'),'home');
+ const site=fs.readFileSync(path.join(__dirname,'..','site.js'),'utf8');
+ const home=site.slice(site.indexOf('function home()'),site.indexOf('function digestSignup'));
+ assert.doesNotMatch(home,/Open the grading calculator|harder question|grading-calculator\.html/);
+ assert.match(site,/function calculator\(/);
 });
 test('only fresh available exact offers with our campaign enter each region',()=>{
  assert.equal(activeOffers({items:[offer]},config,now,'UK').length,1);

@@ -310,6 +310,13 @@ function ebayCardBlock(card,config,options={}){
 }
 function ebayPageNote(){return `<div class="ebay-footnote"><p><strong>About the eBay links.</strong> ${PRICE_NOTE} “Check price” is a separate affiliate link.</p></div>`;}
 function ebayListNote(){return `<div class="ebay-footnote"><p><strong>About the eBay links.</strong> ${PRICE_NOTE}</p></div>`;}
+// Official logo path. Leave empty for the generic bag icon. One swap: set this to the asset path.
+const TCGPLAYER_LOGO='';
+function tcgplayerMark(){
+  const src=String(TCGPLAYER_LOGO||'').trim();
+  if(src)return `<img class="tcgplayer-mark" src="${esc(src)}" alt="" width="20" height="20">`;
+  return `<svg class="tcgplayer-mark" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M6 8h12l-1.2 12H7.2L6 8zM9 8V6.8a3 3 0 0 1 6 0V8"/></svg>`;
+}
 function tcgplayerHref(config){
   const raw=String(config?.tcgplayerImpactUrl??'').trim();
   if(!raw)return '';
@@ -323,7 +330,7 @@ function tcgplayerHref(config){
 function tcgplayerBanner(config){
   const url=tcgplayerHref(config);
   if(!url)return '';
-  return `<aside class="tcgplayer-banner" aria-label="TCGplayer affiliate advertisement"><p class="tcgplayer-banner-label">Advertisement · affiliate link</p><div class="tcgplayer-banner-body"><div class="tcgplayer-banner-copy"><p class="tcgplayer-wordmark">TCGplayer</p><h2>Find your next Pokémon single.</h2><p>Explore the TCGplayer marketplace.</p></div><a class="btn black" href="${esc(url)}" target="_blank" rel="sponsored nofollow noopener">Shop Pokémon on TCGplayer</a></div><p class="tcgplayer-banner-disclosure">We may earn a commission from a purchase through this link.</p></aside>`;
+  return `<aside class="tcgplayer-banner" aria-label="TCGplayer affiliate advertisement"><p class="tcgplayer-banner-label">Advertisement · affiliate link</p><div class="tcgplayer-banner-body"><p class="tcgplayer-brand">${tcgplayerMark()}<span>TCGplayer</span></p><div class="tcgplayer-banner-copy"><h2>Find your next Pokémon single.</h2><p>Explore the TCGplayer marketplace.</p></div><a class="btn black" href="${esc(url)}" target="_blank" rel="sponsored nofollow noopener">Shop Pokémon on TCGplayer</a></div><p class="tcgplayer-banner-disclosure">We may earn a commission from a purchase through this link.</p></aside>`;
 }
 const api={ebayLink,citeHref,tagCitations,isFresh,activeOffers,affiliateCard,disclosure,createPlacementTracker,cleanCard,cardSearchUrl,ebayCardBlock,ebayPageNote,ebayListNote,capturePostType,stampEbayCustomIds,visitorMarket,rewriteEbayHref,rewriteEbayHrefs,tcgplayerHref,tcgplayerBanner};
 if(typeof module==='object'&&module.exports)module.exports=api;
