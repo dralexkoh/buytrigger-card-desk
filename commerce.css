@@ -42,3 +42,22 @@
  .catalog-body .shop-inline .ebay-bar a{white-space:nowrap}
  .feature-reference .shop-inline img.ebay-logo,.article-body .shop-inline img.ebay-logo,.shop-inline img.ebay-logo{height:16px!important;max-height:16px!important}
 }
+
+/* Homepage TCGplayer affiliate card. Text wordmark until an official logo file is added. */
+.editorial-page .tcgplayer-banner-wrap{padding-top:0}
+.tcgplayer-banner{background:var(--yellow,#f5d331);color:var(--ink,#171719);border:1px solid #171719;border-radius:7px;padding:20px 24px 16px}
+.tcgplayer-banner-label{margin:0 0 12px;font:700 13px/1.4 'IBM Plex Sans',Arial,sans-serif;letter-spacing:.01em;color:#171719}
+.tcgplayer-banner-body{display:flex;align-items:center;justify-content:space-between;gap:28px}
+.tcgplayer-banner-copy{min-width:0}
+.tcgplayer-wordmark{margin:0 0 8px;font:800 20px/1 'IBM Plex Sans',Arial,sans-serif;letter-spacing:-.04em;color:#171719}
+.tcgplayer-banner h2{margin:0 0 6px;font-family:'Barlow Condensed',Arial,sans-serif;font-size:40px;font-weight:700;letter-spacing:-.4px;line-height:1;color:#171719}
+.tcgplayer-banner-copy p{margin:0;max-width:40rem;font-size:16px;line-height:1.4;color:#171719}
+.tcgplayer-banner .btn{flex:0 0 auto;white-space:normal;text-align:center}
+.tcgplayer-banner-disclosure{margin:14px 0 0;max-width:none;font-size:12px;line-height:1.45;color:#171719}
+.tcgplayer-banner a:focus-visible{outline:3px solid #171719;outline-offset:4px}
+@media(max-width:700px){
+ .tcgplayer-banner{padding:16px}
+ .tcgplayer-banner-body{flex-direction:column;align-items:stretch;gap:16px}
+ .tcgplayer-banner h2{font-size:32px}
+ .tcgplayer-banner .btn{width:100%}
+}

@@ -28,6 +28,19 @@ class OfferContract(unittest.TestCase):
         for key,value in [('checkedAt','2026-11-04T18:00:00Z'),('checkedAt','2026-11-04T16:59:00'),('expiresAt','2026-11-04T18:00:00Z')]:
             row=copy.deepcopy(self.row);row[key]=value
             with self.assertRaises(ValueError):validate_offers({**self.data,'items':[row]},self.config,self.now)
+    def test_tcgplayer_impact_url_stays_empty_until_set(self):
+        from drops_offers import validate_config
+        self.assertTrue(validate_config(self.config))
+        config=copy.deepcopy(self.config)
+        config['tcgplayerImpactUrl']=''
+        self.assertTrue(validate_config(config))
+        config['tcgplayerImpactUrl']='  https://impact.example/c/1/2/3  '
+        self.assertTrue(validate_config(config))
+        for bad in ['http://impact.example/c/1','javascript:alert(1)',None,12]:
+            broken=copy.deepcopy(self.config);broken['tcgplayerImpactUrl']=bad
+            with self.assertRaises(ValueError):validate_config(broken)
+        extra=copy.deepcopy(self.config);extra['other']='no'
+        with self.assertRaises(ValueError):validate_config(extra)
     def test_no_amazon_activation_or_tracking_in_canonical_target(self):
         config=copy.deepcopy(self.config);config['amazonUk']['enabled']=True
         with self.assertRaises(ValueError):validate_offers(self.data,config,self.now)
