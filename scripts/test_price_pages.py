@@ -112,6 +112,10 @@ class AffiliateDisclosureTests(unittest.TestCase):
                 self.assertIsNone(logo.get('style'))
                 for link in parts:
                     self.assertTrue(link['href'].startswith('https://www.ebay.co.uk/sch/i.html?'), link['href'])
+                    self.assertNotIn('LH_PrefLoc', link['href'])
+                    self.assertIn('campid=5339239680', link['href'])
+                    self.assertIn('LH_BIN=1', link['href'])
+                    self.assertIn('mkrid=710-53481-19255-0', link['href'])
                     self.assertEqual(link.get('target'), '_blank')
                     rel = link.get('rel') or []
                     rel = rel if isinstance(rel, list) else str(rel).split()
@@ -121,7 +125,8 @@ class AffiliateDisclosureTests(unittest.TestCase):
             notes = page.select('.ebay-footnote')
             self.assertEqual(len(notes), 1, str(module.PAGE_REL))
             note = notes[0].get_text(' ', strip=True)
-            self.assertIn('eBay UK Buy It Now search', note)
+            self.assertIn('eBay search (UK or US site depending on your location)', note)
+            self.assertNotIn('eBay UK', note)
             self.assertIn('eBay Partner Network partner', note)
             self.assertIn('Check price', note)
         self.assertEqual(total, 823)
@@ -131,7 +136,7 @@ class AffiliateDisclosureTests(unittest.TestCase):
         self.assertEqual(
             raw_link['href'],
             'https://www.ebay.co.uk/sch/i.html?_nkw=Mega+Rayquaza+ex+138%2F103+Delta+Reign'
-            '&LH_BIN=1&LH_PrefLoc=1&mkevt=1&mkcid=1&mkrid=710-53481-19255-0'
+            '&LH_BIN=1&mkevt=1&mkcid=1&mkrid=710-53481-19255-0'
             '&campid=5339239680&toolid=10001&customid=price-raw',
         )
 

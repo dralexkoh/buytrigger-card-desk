@@ -1,5 +1,7 @@
 (function(root){'use strict';
 const ROTATIONS={'www.ebay.co.uk':'710-53481-19255-0','www.ebay.com':'711-53200-19255-0'};
+// US zones only. Other America/* zones (Toronto, Mexico City, Sao Paulo) are not a US signal.
+const US_ZONES=new Set(['America/New_York','America/Detroit','America/Kentucky/Louisville','America/Kentucky/Monticello','America/Indiana/Indianapolis','America/Indiana/Vincennes','America/Indiana/Winamac','America/Indiana/Marengo','America/Indiana/Petersburg','America/Indiana/Vevay','America/Indiana/Tell_City','America/Indiana/Knox','America/Chicago','America/Menominee','America/North_Dakota/Center','America/North_Dakota/New_Salem','America/North_Dakota/Beulah','America/Denver','America/Boise','America/Phoenix','America/Los_Angeles','America/Anchorage','America/Juneau','America/Sitka','America/Metlakatla','America/Yakutat','America/Nome','America/Adak','America/Puerto_Rico','America/Virgin','America/Indianapolis','America/Louisville','America/Knox_IN','America/Fort_Wayne','America/Atka','America/Shiprock','Pacific/Honolulu','Pacific/Guam','Pacific/Pago_Pago','Pacific/Midway','Pacific/Wake','US/Eastern','US/Central','US/Mountain','US/Pacific','US/Alaska','US/Aleutian','US/Arizona','US/Hawaii','US/East-Indiana','US/Indiana-Starke','US/Michigan','US/Samoa']);
 const POST_TYPES={deal:'d_',news:'n_',feature:'f_',reply:'r_'};
 const POST_TYPE_KEY='buytrigger.cards.commerce.post-type.v1';
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -45,12 +47,92 @@ function stampEbayCustomIds(doc,win){
     }catch(_){}
   }
 }
+function languageTags(nav){
+  const tags=[];
+  const push=value=>{const tag=String(value??'').trim().toLowerCase().replace(/_/g,'-');if(tag&&!tags.includes(tag))tags.push(tag);};
+  try{push(nav&&nav.language);}catch(_){}
+  try{const list=nav&&nav.languages;if(list&&typeof list.length==='number')for(let i=0;i<list.length;i++)push(list[i]);}catch(_){}
+  return tags;
+}
+function readTimeZone(win){
+  try{const tz=win?.Intl?.DateTimeFormat?.().resolvedOptions?.().timeZone;if(typeof tz==='string'&&tz)return tz;}catch(_){}
+  if(win&&win===root){try{const tz=Intl.DateTimeFormat().resolvedOptions().timeZone;if(typeof tz==='string'&&tz)return tz;}catch(_){}}
+  return '';
+}
+// Language plus time zone only. No IP lookup, storage or network.
+function visitorMarket(win){
+  const tags=languageTags(win?.navigator),tz=readTimeZone(win);
+  if(tags.some(tag=>tag==='en-gb'||tag.startsWith('en-gb-'))||tz==='Europe/London')return 'uk';
+  const usLanguage=tags.some(tag=>tag==='en-us'||tag.startsWith('en-us-'));
+  const usZone=US_ZONES.has(tz);
+  if((usLanguage&&tz.startsWith('America/')&&usZone)||usZone)return 'us';
+  return 'other';
+}
+function isEbayHost(host){
+  return /^(?:[a-z0-9-]+\.)*ebay\.(?:com|co\.uk|ca|de|fr|it|es|nl|ie|at|ch|be|pl|ph|com\.au|com\.sg|com\.hk)$/.test(String(host||'').toLowerCase());
+}
+function rewriteEbayHref(href,market){
+  let u;
+  try{u=new URL(href);}catch(_){return href;}
+  if(u.protocol!=='https:'||u.username||u.password||!isEbayHost(u.hostname)||u.pathname!=='/sch/i.html')return href;
+  // Sold-listing citations stay on the marketplace that recorded the sales.
+  if(u.searchParams.has('LH_Sold')||u.searchParams.has('LH_Complete'))return href;
+  const uk=market==='uk';
+  const nextHost=uk?'www.ebay.co.uk':'www.ebay.com';
+  const bin=u.searchParams.get('LH_BIN')==='1';
+  const hadLoc=[...u.searchParams.keys()].includes('LH_PrefLoc');
+  const params=[...u.searchParams.entries()].filter(([key])=>key!=='LH_PrefLoc'&&key!=='mkrid');
+  const rebuilt=[];
+  let placedMkrid=false,placedLoc=false;
+  for(const pair of params){
+    if(pair[0]==='LH_BIN'&&uk&&(bin||hadLoc)){rebuilt.push(pair,['LH_PrefLoc','1']);placedLoc=true;continue;}
+    if(pair[0]==='campid'&&!placedMkrid){rebuilt.push(['mkrid',ROTATIONS[nextHost]]);placedMkrid=true;}
+    rebuilt.push(pair);
+  }
+  if(uk&&(bin||hadLoc)&&!placedLoc)rebuilt.push(['LH_PrefLoc','1']);
+  if(!placedMkrid)rebuilt.push(['mkrid',ROTATIONS[nextHost]]);
+  const out=new URL('https://'+nextHost+u.pathname);
+  for(const [key,value] of rebuilt)out.searchParams.append(key,value);
+  if(u.hash)out.hash=u.hash;
+  return out.href;
+}
+function forVisitor(href,win){
+  if(!href)return href;
+  const scope=win||root;
+  if(!scope||!scope.document)return href;
+  return rewriteEbayHref(href,visitorMarket(scope));
+}
+function rewriteEbayHrefs(scope,win){
+  const market=visitorMarket(win||root);
+  const node=scope||win?.document||root?.document;
+  if(!node)return;
+  const links=[];
+  try{if(node.nodeType===1&&String(node.tagName).toLowerCase()==='a'&&node.getAttribute('href'))links.push(node);}catch(_){}
+  try{if(node.querySelectorAll)links.push(...node.querySelectorAll('a[href*="ebay."]'));}catch(_){return;}
+  for(const link of links){
+    try{
+      const raw=link.getAttribute('href');
+      const next=rewriteEbayHref(raw,market);
+      if(next&&next!==raw)link.setAttribute('href',next);
+    }catch(_){}
+  }
+}
+function watchEbayHrefs(doc,win){
+  const Observer=win?.MutationObserver;
+  if(typeof Observer!=='function'||!doc?.documentElement)return;
+  try{
+    const observer=new Observer(records=>{
+      for(const record of records)for(const added of record.addedNodes||[])if(added&&added.nodeType===1)rewriteEbayHrefs(added,win);
+    });
+    observer.observe(doc.documentElement,{childList:true,subtree:true});
+  }catch(_){}
+}
 function ebayLink(target,config,placement,win){
   if(!config?.ebay?.enabled||!/^\d{10}$/.test(config.ebay.campaignId))return null;
   try{const u=new URL(target);if(u.protocol!=='https:'||!ROTATIONS[u.host]||u.username||u.password||u.hash)return null;
     const listing=/^\/itm\/\d{9,15}$/.test(u.pathname),search=u.pathname==='/sch/i.html';
     if(!listing&&!search)return null;
-    // Card searches add Buy It Now (LH_BIN) and UK item location (LH_PrefLoc). Listing URLs stay limited to var.
+    // Card searches may add Buy It Now (LH_BIN). UK visitors also get LH_PrefLoc. Listing URLs stay limited to var.
     const allowed=listing?['var']:['_nkw','LH_BIN','LH_PrefLoc'];
     if([...u.searchParams.keys()].some(k=>!allowed.includes(k)))return null;
     if(search){
@@ -132,7 +214,7 @@ function activeOffers(data,config,now=Date.now(),region='All'){
 function disclosure(){return 'As an eBay Partner Network Affiliate, we earn from qualifying purchases.';}
 function measurement(config,slot,creative,destination){return `data-commercial-campaign="ebay-${esc(config.ebay.campaignId)}" data-commercial-slot="${slot}" data-commercial-creative="${esc(creative)}" data-commercial-destination="${esc(destination)}"`;}
 function affiliateCard(config,placement){
-  const url=ebayLink('https://www.ebay.co.uk/sch/i.html?_nkw=Pokemon+TCG',config,placement);
+  const url=forVisitor(ebayLink('https://www.ebay.co.uk/sch/i.html?_nkw=Pokemon+TCG',config,placement));
   if(!url)return '';
   return `<aside class="affiliate-placement" aria-label="eBay affiliate advertisement" ${measurement(config,placement==='cards-home'?'HOME-01':'DROPS-01','ebay-search-v1',placement)}><small class="commerce-label">Ad · Affiliate link</small><div class="affiliate-placement-body"><div><span class="kicker">THE COLLECTOR’S MARKETPLACE</span><h2>Find it on eBay.</h2><p>Explore Pokémon cards and collecting supplies. Search results, seller prices and availability vary.</p></div><a class="btn black" href="${esc(url)}" target="_blank" rel="sponsored nofollow noopener noreferrer">Search Pokémon on eBay ↗</a></div><p class="affiliate-disclosure">${disclosure()}</p></aside>`;
 }
@@ -164,7 +246,7 @@ function createPlacementTracker(win){
 }
 const NOT_A_SET=new Set(['Common','Uncommon','Rare','Double Rare','Ultra Rare','Illustration Rare','Special Illustration Rare','Hyper Rare','Mega Hyper Rare','ACE SPEC Rare','TCG Modern','30th Anniversary']);
 const EBAY_WORDMARK='assets/ebay/ebay-wordmark-b4-trimmed.png';
-const PRICE_NOTE='Each “Buy on eBay” control opens an eBay UK Buy It Now search for that card’s name, number and set, not a single listing. Search results, seller prices and availability vary. These are affiliate links: as an eBay Partner Network partner, we may earn from qualifying purchases.';
+const PRICE_NOTE='Each “Buy on eBay” control opens an eBay search (UK or US site depending on your location) for that card’s name, number and set, not a single listing. Search results, seller prices and availability vary. These are affiliate links: as an eBay Partner Network partner, we may earn from qualifying purchases.';
 function cleanName(value){
   const name=String(value??'').replace(/\s+/g,' ').trim();
   if(name.length<2||name.length>80||!/[A-Za-z]/.test(name)||!/^[A-Za-z0-9\u00C0-\u024F][A-Za-z0-9\u00C0-\u024F '&.,()[\]!:-]*$/.test(name))return null;
@@ -203,39 +285,40 @@ function cardSearchUrl(card,config,placement,grade){
   const u=new URL('https://www.ebay.co.uk/sch/i.html');
   u.searchParams.set('_nkw',words.join(' '));
   u.searchParams.set('LH_BIN','1');
-  u.searchParams.set('LH_PrefLoc','1');
   return ebayLink(u.href,config,custom);
 }
 function ebayBar(card,raw,psa,line){
   const rel='rel="nofollow sponsored noopener" target="_blank"';
   const who=esc(card.name+' '+card.number);
-  return `<div class="ebay-bar ${line?'ebay-bar-line':'ebay-bar-grey'}" role="group" aria-label="Buy on eBay"><a class="ebay-brand" href="${esc(raw)}" ${rel}><span>Buy on</span><img class="ebay-logo" src="${EBAY_WORDMARK}" alt="eBay" width="783" height="324"><span class="visually-hidden">, raw, UK Buy It Now search for ${who}</span></a><a class="ebay-seg" href="${esc(raw)}" ${rel}>RAW<span class="visually-hidden">, ${who}</span></a><a class="ebay-seg" href="${esc(psa)}" ${rel}>PSA 10<span class="visually-hidden">, ${who}</span></a></div>`;
+  return `<div class="ebay-bar ${line?'ebay-bar-line':'ebay-bar-grey'}" role="group" aria-label="Buy on eBay"><a class="ebay-brand" href="${esc(raw)}" ${rel}><span>Buy on</span><img class="ebay-logo" src="${EBAY_WORDMARK}" alt="eBay" width="783" height="324"><span class="visually-hidden">, raw, Buy It Now search for ${who}</span></a><a class="ebay-seg" href="${esc(raw)}" ${rel}>RAW<span class="visually-hidden">, ${who}</span></a><a class="ebay-seg" href="${esc(psa)}" ${rel}>PSA 10<span class="visually-hidden">, ${who}</span></a></div>`;
 }
 function shopLabel(id){
   return [id.name,id.number,id.set].filter(Boolean).join(' · ');
 }
 function ebayShop(card,raw,psa,id){
   const label=shopLabel(id);
-  const line='UK Buy It Now search. Results, seller prices and availability vary.';
+  const line='eBay search (UK or US site depending on your location). Results, seller prices and availability vary.';
   return `<aside class="shop-strip shop-inline" aria-label="Buy on eBay"><p class="shop-id">${esc(label)}</p>${ebayBar(id,raw,psa,false)}<p class="shop-meta"><span class="shop-affil">Affiliate link</span><span class="shop-explain">${esc(line)}</span></p></aside>`;
 }
 function ebayCardBlock(card,config,options={}){
   const id=cleanCard(card);
-  const raw=cardSearchUrl(card,config,options.placement,'raw');
-  const psa=cardSearchUrl(card,config,options.placement,'psa10');
+  const raw=forVisitor(cardSearchUrl(card,config,options.placement,'raw'));
+  const psa=forVisitor(cardSearchUrl(card,config,options.placement,'psa10'));
   if(!id||!raw||!psa)return '';
   if(options.variant==='shop'||options.detail)return ebayShop(card,raw,psa,id);
   return ebayBar(id,raw,psa,false);
 }
 function ebayPageNote(){return `<div class="ebay-footnote"><p><strong>About the eBay links.</strong> ${PRICE_NOTE} “Check price” is a separate affiliate link.</p></div>`;}
 function ebayListNote(){return `<div class="ebay-footnote"><p><strong>About the eBay links.</strong> ${PRICE_NOTE}</p></div>`;}
-const api={ebayLink,citeHref,tagCitations,isFresh,activeOffers,affiliateCard,disclosure,createPlacementTracker,cleanCard,cardSearchUrl,ebayCardBlock,ebayPageNote,ebayListNote,capturePostType,stampEbayCustomIds};
+const api={ebayLink,citeHref,tagCitations,isFresh,activeOffers,affiliateCard,disclosure,createPlacementTracker,cleanCard,cardSearchUrl,ebayCardBlock,ebayPageNote,ebayListNote,capturePostType,stampEbayCustomIds,visitorMarket,rewriteEbayHref,rewriteEbayHrefs};
 if(typeof module==='object'&&module.exports)module.exports=api;
 if(root)root.BTCommerce=api;
 if(!root?.document)return;
 const doc=root.document;
 capturePostType(root);
 stampEbayCustomIds(doc,root);
+rewriteEbayHrefs(doc,root);
+watchEbayHrefs(doc,root);
 function offersMarkup(items,home){return `<div class="section-heading"><div><span class="kicker red-text">CHECKED AT THE SELLER</span><h2>${home?'Latest verified offers':'Verified product offers'}</h2></div>${home?'<a class="text-link" href="drops.html">See Drops →</a>':''}</div><p class="offers-note">Availability changes quickly. Each offer is checked separately from the release calendar.</p><div class="verified-offer-grid">${items.map(o=>offerCard(o,root.BT_COMMERCE,home)).join('')}</div><p class="affiliate-disclosure">${disclosure()}</p>`;}
 function expireVisible(){for(const card of doc.querySelectorAll('[data-offer-expires]')){
   if(Date.now()<Date.parse(card.dataset.offerExpires))continue;
