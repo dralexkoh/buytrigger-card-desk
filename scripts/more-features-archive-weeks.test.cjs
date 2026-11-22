@@ -106,9 +106,9 @@ test('current edition more-features rail and week filters follow live editorial 
   const api=select(editorial);
   assert.equal(api.desk,'psa-value-returns');
   assert.deepEqual(api.more.map(a=>a.slug),[
+    'modern-card-prices-is-it-just-bad-copies',
     'delta-reign-top-10-chase-raikou-beats-rayquaza',
     'thirtieth-celebration-psa10-prices-halve',
-    'mega-charizard-x-ex-sir-one-year-prices',
   ]);
   assert.ok(api.more.every(a=>a.slug!==editorial.featuredArticle&&a.slug!==api.desk&&a.status==='published'));
   assert.deepEqual(api.weeks,[

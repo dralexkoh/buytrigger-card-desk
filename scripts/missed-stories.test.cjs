@@ -38,9 +38,9 @@ test('current edition rail is the three newest published Features after Bubble M
   const cards=select(editorial);
   assert.equal(cards.length,3);
   assert.deepEqual(cards.map(a=>a.slug),[
+    'modern-card-prices-is-it-just-bad-copies',
     'delta-reign-top-10-chase-raikou-beats-rayquaza',
     'thirtieth-celebration-psa10-prices-halve',
-    'mega-charizard-x-ex-sir-one-year-prices',
   ]);
   assert.ok(cards.every(a=>a.slug!==editorial.featuredArticle&&a.status==='published'));
   const stamps=cards.map(a=>a.publishedAt);
