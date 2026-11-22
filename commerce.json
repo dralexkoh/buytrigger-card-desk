@@ -11,5 +11,6 @@
   "placements": {
     "home": false,
     "drops": true
-  }
+  },
+  "tcgplayerImpactUrl": ""
 }

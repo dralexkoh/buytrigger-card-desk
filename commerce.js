@@ -310,7 +310,29 @@ function ebayCardBlock(card,config,options={}){
 }
 function ebayPageNote(){return `<div class="ebay-footnote"><p><strong>About the eBay links.</strong> ${PRICE_NOTE} “Check price” is a separate affiliate link.</p></div>`;}
 function ebayListNote(){return `<div class="ebay-footnote"><p><strong>About the eBay links.</strong> ${PRICE_NOTE}</p></div>`;}
-const api={ebayLink,citeHref,tagCitations,isFresh,activeOffers,affiliateCard,disclosure,createPlacementTracker,cleanCard,cardSearchUrl,ebayCardBlock,ebayPageNote,ebayListNote,capturePostType,stampEbayCustomIds,visitorMarket,rewriteEbayHref,rewriteEbayHrefs};
+// Official logo path. Leave empty for the generic bag icon. One swap: set this to the asset path.
+const TCGPLAYER_LOGO='';
+function tcgplayerMark(){
+  const src=String(TCGPLAYER_LOGO||'').trim();
+  if(src)return `<img class="tcgplayer-mark" src="${esc(src)}" alt="" width="20" height="20">`;
+  return `<svg class="tcgplayer-mark" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M6 8h12l-1.2 12H7.2L6 8zM9 8V6.8a3 3 0 0 1 6 0V8"/></svg>`;
+}
+function tcgplayerHref(config){
+  const raw=String(config?.tcgplayerImpactUrl??'').trim();
+  if(!raw)return '';
+  let u;
+  try{u=new URL(raw);}catch(_){return '';}
+  if(u.protocol!=='https:'||!u.host||u.username||u.password)return '';
+  u.searchParams.set('subId1','banner');
+  u.searchParams.set('subId2','home');
+  return u.href;
+}
+function tcgplayerBanner(config){
+  const url=tcgplayerHref(config);
+  if(!url)return '';
+  return `<aside class="tcgplayer-banner" aria-label="TCGplayer affiliate advertisement"><p class="tcgplayer-banner-label">Advertisement · affiliate link</p><div class="tcgplayer-banner-body"><p class="tcgplayer-brand">${tcgplayerMark()}<span>TCGplayer</span></p><div class="tcgplayer-banner-copy"><h2>Find your next Pokémon single.</h2><p>Explore the TCGplayer marketplace.</p></div><a class="btn black" href="${esc(url)}" target="_blank" rel="sponsored nofollow noopener">Shop Pokémon on TCGplayer</a></div><p class="tcgplayer-banner-disclosure">We may earn a commission from a purchase through this link.</p></aside>`;
+}
+const api={ebayLink,citeHref,tagCitations,isFresh,activeOffers,affiliateCard,disclosure,createPlacementTracker,cleanCard,cardSearchUrl,ebayCardBlock,ebayPageNote,ebayListNote,capturePostType,stampEbayCustomIds,visitorMarket,rewriteEbayHref,rewriteEbayHrefs,tcgplayerHref,tcgplayerBanner};
 if(typeof module==='object'&&module.exports)module.exports=api;
 if(root)root.BTCommerce=api;
 if(!root?.document)return;
@@ -337,6 +359,14 @@ function mountPlacement(page){
   const node=doc.createElement('div');node.id='affiliate-placement';node.className='commerce-wrap';node.innerHTML=affiliateCard(root.BT_COMMERCE,page==='home'?'cards-home':'cards-drops');
   if(page==='home')main.querySelector('#verified-offers')?.before(node);
   else{const cards=[...main.querySelectorAll('#drop-list > .drop-card')],anchor=cards[Math.min(2,cards.length-1)];if(anchor)anchor.after(node);else main.append(node);}
+}
+function mountTcgplayerBanner(){
+  if(doc.body?.dataset?.page!=='home'||doc.getElementById('tcgplayer-home-banner'))return;
+  const html=tcgplayerBanner(root.BT_COMMERCE);
+  if(!html)return;
+  const main=doc.querySelector('#main');if(!main)return;
+  const node=doc.createElement('div');node.id='tcgplayer-home-banner';node.className='section tcgplayer-banner-wrap';node.innerHTML=html;
+  main.append(node);
 }
 function mount(){
   const main=doc.querySelector('#main'),page=doc.body.dataset.page;if(!main||!['home','drops'].includes(page))return;
@@ -372,6 +402,6 @@ doc.addEventListener('click',e=>{
   if(link&&Date.now()>=Date.parse(link.closest('[data-offer-expires]').dataset.offerExpires)){e.preventDefault();e.stopImmediatePropagation();expireVisible();return;}
 },true);
 doc.addEventListener('click',e=>{const filter=e.target.closest('[data-drop-region]');if(filter){renderOffers(filter.dataset.dropRegion);mountPlacement('drops');}});
-root.addEventListener('hashchange',()=>{mount();mountCardSlots();tagCitations(doc,root);});tagCitations(doc,root);doc.addEventListener('visibilitychange',expireVisible);root.setInterval(expireVisible,10000);mount();mountCardSlots();
+root.addEventListener('hashchange',()=>{mount();mountTcgplayerBanner();mountCardSlots();tagCitations(doc,root);});tagCitations(doc,root);doc.addEventListener('visibilitychange',expireVisible);root.setInterval(expireVisible,10000);mount();mountTcgplayerBanner();mountCardSlots();
 const measurementTracker=createPlacementTracker(root);root.setInterval(()=>measurementTracker.tick(),250);doc.addEventListener('click',measurementTracker.click);doc.addEventListener('auxclick',e=>{if(e.button===1)measurementTracker.click(e);});doc.addEventListener('visibilitychange',measurementTracker.hidden);
 })(typeof window!=='undefined'?window:null);

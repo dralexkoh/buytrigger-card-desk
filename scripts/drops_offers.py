@@ -22,8 +22,20 @@ def timestamp(value):
 
 
 def validate_config(config):
-    if set(config) != {'schemaVersion', 'ebay', 'amazonUk', 'placements'} or config['schemaVersion'] != 1:
+    keys=set(config)
+    required={'schemaVersion','ebay','amazonUk','placements'}
+    allowed=required|{'tcgplayerImpactUrl'}
+    if not required<=keys<=allowed or config['schemaVersion']!=1:
         raise ValueError('Unknown commerce configuration')
+    if 'tcgplayerImpactUrl' in config:
+        url=config['tcgplayerImpactUrl']
+        if type(url) is not str:
+            raise ValueError('TCGplayer Impact URL must be a string')
+        stripped=url.strip()
+        parsed=urlsplit(stripped) if stripped else None
+        if stripped and (parsed.scheme!='https' or not parsed.netloc or parsed.username
+                         or parsed.password or '\\' in stripped):
+            raise ValueError('TCGplayer Impact URL must be empty or an https link')
     if (set(config['placements']) != {'home', 'drops'}
             or any(type(v) is not bool for v in config['placements'].values())):
         raise ValueError('Placement activation must be explicit')
