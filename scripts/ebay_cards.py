@@ -112,11 +112,69 @@ def render_ebay_cards(item, slug, skip=()):
     return ''.join(render_ebay_block(c, slug) for c in cards if (c['name'], c['number']) not in skipped)
 
 
-def check_rendered_news_placements(markup, news_id, label):
-    """Every block on a built news page uses the expected truncated placement and fits."""
+def summary_paragraphs(summary):
+    """Lead paragraphs of a news brief, split on a blank line."""
+    return [part.strip() for part in re.split(r'\n{2,}', summary or '') if part.strip()]
+
+
+def news_insert_at(count):
+    """Paragraphs that stay above the card-image and eBay unit.
+
+    Four or more paragraphs: after paragraph 3. Three: after paragraph 2.
+    Fewer: after the last lead paragraph.
+    """
+    if count >= 4:
+        return 3
+    if count == 3:
+        return 2
+    return count
+
+
+def render_news_paragraphs(summary, unit_html=''):
+    """Split summary paragraphs with the eBay and chase unit in the agreed place."""
+    paras = ['<p>' + esc(part) + '</p>' for part in summary_paragraphs(summary)]
+    cut = news_insert_at(len(paras))
+    return ''.join(paras[:cut]) + (unit_html or '') + ''.join(paras[cut:])
+
+
+def news_standfirst(summary):
+    parts = summary_paragraphs(summary)
+    return parts[0] if parts else ''
+
+
+def check_rendered_news_placements(markup, news_id, label, summary=None):
+    """Every block on a built news page uses the expected truncated placement and fits.
+
+    When the markup is a full news page, the card-image and eBay unit sits inside
+    the article body, after the lead paragraphs agreed with the SPA.
+    """
     expected = news_placement_for(news_id)
     for tag in BLOCK.findall(markup):
         placement = dict(ATTR.findall(tag)).get('placement')
         if placement != expected:
             raise ValueError(f'{label}: eBay placement {placement} should be {expected}')
         _check_placement(placement, label)
+    if 'article-body' not in markup:
+        return
+    body_at = markup.find('article-body')
+    for needle in ('data-ebay-card', 'class="story-chase"', "class='story-chase'"):
+        at = markup.find(needle)
+        if at != -1 and at < body_at:
+            raise ValueError(f'{label}: eBay or chase block is above the article body')
+    if summary is None:
+        return
+    unit_at = markup.find('news-ebay-unit', body_at)
+    body = markup[body_at:]
+    has_block = 'data-ebay-card' in body or 'story-chase' in body
+    if not has_block:
+        if unit_at != -1:
+            raise ValueError(f'{label}: empty news eBay unit')
+        return
+    if unit_at == -1:
+        raise ValueError(f'{label}: eBay or chase block is not in one news unit')
+    paragraphs = markup[body_at:unit_at].count('<p>')
+    expected_after = news_insert_at(len(summary_paragraphs(summary)))
+    if paragraphs != expected_after:
+        raise ValueError(
+            f'{label}: eBay unit follows {paragraphs} paragraphs, expected {expected_after}'
+        )

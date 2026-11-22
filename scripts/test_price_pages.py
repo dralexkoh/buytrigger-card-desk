@@ -16,13 +16,16 @@ import thirtieth_prices
 import delta_reign_prices
 import sv_151_prices
 import prismatic_evolutions_prices
+import paldean_fates_prices
+import crown_zenith_prices
+import fusion_strike_prices
 
 ROOT = Path(__file__).resolve().parents[1]
 
 
 class SnapshotFollowsEdits(unittest.TestCase):
     def test_published_page_follows_a_temporary_price_and_date(self):
-        modules = (thirtieth_prices, tcg_modern_prices, delta_reign_prices, sv_151_prices, prismatic_evolutions_prices)
+        modules = (thirtieth_prices, tcg_modern_prices, delta_reign_prices, sv_151_prices, prismatic_evolutions_prices, paldean_fates_prices, crown_zenith_prices, fusion_strike_prices)
         originals = {module: (ROOT / module.SNAPSHOT).read_text() for module in modules}
         try:
             for module in modules:
@@ -74,6 +77,9 @@ class AffiliateDisclosureTests(unittest.TestCase):
             delta_reign_prices,
             sv_151_prices,
             prismatic_evolutions_prices,
+            paldean_fates_prices,
+            crown_zenith_prices,
+            fusion_strike_prices,
         )
         total = 0
         for module in modules:
@@ -129,7 +135,7 @@ class AffiliateDisclosureTests(unittest.TestCase):
             self.assertNotIn('eBay UK', note)
             self.assertIn('eBay Partner Network partner', note)
             self.assertIn('Check price', note)
-        self.assertEqual(total, 823)
+        self.assertEqual(total, 1582)
         ray = BeautifulSoup(delta_reign_prices.render_page(ROOT), 'html.parser')
         chosen = ray.select_one('#price-table tr[data-number="138/103"]')
         raw_link = chosen.select_one('.ebay-brand')

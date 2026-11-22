@@ -233,7 +233,7 @@ from price_release import assert_price_as_of, release_date, visible_as_of_dates
 from check_cross_surface_prices import assert_same_release
 NAV_HREFS=(
  '/index.html#home','/market.html','/index.html#desk','/index.html#journal','/index.html#targets','/drops.html',
- '/index.html#about','/prices/thirtieth-anniversary/','/prices/tcg-modern/','/prices/delta-reign/','/prices/sv-151/','/prices/prismatic-evolutions/','/advertise/',
+ '/index.html#about','/prices/thirtieth-anniversary/','/prices/tcg-modern/','/prices/delta-reign/','/prices/sv-151/','/prices/prismatic-evolutions/','/prices/paldean-fates/','/prices/crown-zenith/','/prices/fusion-strike/','/advertise/',
  '/index.html#method','/index.html#privacy','/rss.xml',
 )
 def assert_root_nav(page, label):
@@ -310,6 +310,9 @@ assert_price_guide('tcg-modern', 'Raw (ungraded) market guide prices, source: TC
 assert_price_guide('delta-reign', 'Raw (ungraded) market guide prices, source: TCGCSV market price')
 assert_price_guide('sv-151', 'Raw (ungraded) market guide prices, source: TCGCSV market price')
 assert_price_guide('prismatic-evolutions', 'Raw (ungraded) market guide prices, source: TCGCSV market price')
+assert_price_guide('paldean-fates', 'Raw (ungraded) market guide prices, source: TCGCSV market price')
+assert_price_guide('crown-zenith', 'Raw (ungraded) market guide prices, source: TCGCSV market price')
+assert_price_guide('fusion-strike', 'Raw (ungraded) market guide prices, source: TCGCSV market price')
 assert_same_release(p)
 market_config=json.loads((d/'market-config.json').read_text())
 assert market_config=={'schemaVersion':1,'enabled':True,'endpoint':APPROVED_MARKET}
@@ -322,6 +325,9 @@ assert home.select_one('footer a[href="prices/tcg-modern/"]')
 assert home.select_one('footer a[href="prices/delta-reign/"]')
 assert home.select_one('footer a[href="prices/sv-151/"]')
 assert home.select_one('footer a[href="prices/prismatic-evolutions/"]')
+assert home.select_one('footer a[href="prices/paldean-fates/"]')
+assert home.select_one('footer a[href="prices/crown-zenith/"]')
+assert home.select_one('footer a[href="prices/fusion-strike/"]')
 assert home.select_one('#site-nav a[href="#journal"]')
 assert home.select_one('#site-nav a[href="drops.html"]')
 for link in home.select('header a[href], footer a[href]'):

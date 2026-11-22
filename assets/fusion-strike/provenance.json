@@ -1,0 +1,2849 @@
+{
+  "purpose": "Official Fusion Strike card images for the buytrigger.cards set tracker.",
+  "credit": "Card image: The Pokémon Company / pokemon.com",
+  "rights": "Card artwork © The Pokémon Company / Nintendo / Creatures / GAME FREAK. Images retrieved from images.pokemontcg.io.",
+  "processed": "Downloaded the official scan and resized it to 200px wide JPEG. No artwork was redrawn or generated.",
+  "release": "2026-11-21",
+  "cards": [
+    {
+      "productId": "253069",
+      "number": "001/264",
+      "name": "Caterpie",
+      "source_url": "https://images.pokemontcg.io/swsh8/1_hires.png",
+      "file": "assets/fusion-strike/253069.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "317bf33453af25322f2c7994ad04166b077066ec5612c0f8962348f7e4a0f858"
+    },
+    {
+      "productId": "253072",
+      "number": "002/264",
+      "name": "Metapod",
+      "source_url": "https://images.pokemontcg.io/swsh8/2_hires.png",
+      "file": "assets/fusion-strike/253072.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "973da7b0c5c61f1343c0d2f1c995d49ac62026d8c5c9129bda3c2bad933a53d6"
+    },
+    {
+      "productId": "253073",
+      "number": "003/264",
+      "name": "Butterfree",
+      "source_url": "https://images.pokemontcg.io/swsh8/3_hires.png",
+      "file": "assets/fusion-strike/253073.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "9ed7f3a72a31eb926c9265d105d5dcd33305e6b5f563ef8a4f8df610cdcb9850"
+    },
+    {
+      "productId": "253074",
+      "number": "004/264",
+      "name": "Shroomish",
+      "source_url": "https://images.pokemontcg.io/swsh8/4_hires.png",
+      "file": "assets/fusion-strike/253074.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "c028ff27ddf7bb5b4757805a4e2138c1e9fc251d486a490fce28563dcb9445f3"
+    },
+    {
+      "productId": "253075",
+      "number": "005/264",
+      "name": "Breloom",
+      "source_url": "https://images.pokemontcg.io/swsh8/5_hires.png",
+      "file": "assets/fusion-strike/253075.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "0842ac17a5aa2f6208cf72873a5c9fe031fb30c0dccc9739644b04261a5f2fc8"
+    },
+    {
+      "productId": "253076",
+      "number": "006/264",
+      "name": "Breloom V",
+      "source_url": "https://images.pokemontcg.io/swsh8/6_hires.png",
+      "file": "assets/fusion-strike/253076.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "e06aac1160f20e92e7d93d6c99f341a61a99862521b5fb5c797303ff42c25298"
+    },
+    {
+      "productId": "253077",
+      "number": "007/264",
+      "name": "Pansage",
+      "source_url": "https://images.pokemontcg.io/swsh8/7_hires.png",
+      "file": "assets/fusion-strike/253077.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "2a20213742f8087e71af15471a70775fdada1bba0a68e59604701423099d3c9a"
+    },
+    {
+      "productId": "253078",
+      "number": "008/264",
+      "name": "Simisage",
+      "source_url": "https://images.pokemontcg.io/swsh8/8_hires.png",
+      "file": "assets/fusion-strike/253078.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "266f788656c3e8b856e374ccfa28ad74854b37d41727663af512d9813c2a2984"
+    },
+    {
+      "productId": "253079",
+      "number": "009/264",
+      "name": "Sewaddle",
+      "source_url": "https://images.pokemontcg.io/swsh8/9_hires.png",
+      "file": "assets/fusion-strike/253079.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "3e76017267aaad46e54752fd9d925e008734308ca7ce3131fae2e65676f8c2ad"
+    },
+    {
+      "productId": "253080",
+      "number": "010/264",
+      "name": "Swadloon",
+      "source_url": "https://images.pokemontcg.io/swsh8/10_hires.png",
+      "file": "assets/fusion-strike/253080.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "ecf05d78ec6d766411df0db9828a5812da5e42e0945e3ee6112ae5be38896441"
+    },
+    {
+      "productId": "253081",
+      "number": "011/264",
+      "name": "Leavanny",
+      "source_url": "https://images.pokemontcg.io/swsh8/11_hires.png",
+      "file": "assets/fusion-strike/253081.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "c568a4f28e7151832cf5ca8cf5b24b807ae4fa82ef707a0fac09ce4c804c2fb9"
+    },
+    {
+      "productId": "253086",
+      "number": "012/264",
+      "name": "Maractus",
+      "source_url": "https://images.pokemontcg.io/swsh8/12_hires.png",
+      "file": "assets/fusion-strike/253086.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "0479792c4ea5da7bdc8f0d1d78173d6f5da1e1df977875249400bdbcc9a14569"
+    },
+    {
+      "productId": "253087",
+      "number": "013/264",
+      "name": "Shelmet",
+      "source_url": "https://images.pokemontcg.io/swsh8/13_hires.png",
+      "file": "assets/fusion-strike/253087.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "a56de614c14673dcb9e9636d2e323499251c5ecba9645ee10bafcb90231d9ba5"
+    },
+    {
+      "productId": "253090",
+      "number": "014/264",
+      "name": "Accelgor",
+      "source_url": "https://images.pokemontcg.io/swsh8/14_hires.png",
+      "file": "assets/fusion-strike/253090.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "7302c1b8fea30d8f34fe8a8560fac8444e2f2a8ac598ecfc1ec3565cd8abd6d0"
+    },
+    {
+      "productId": "253092",
+      "number": "015/264",
+      "name": "Virizion",
+      "source_url": "https://images.pokemontcg.io/swsh8/15_hires.png",
+      "file": "assets/fusion-strike/253092.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "d459ec99c95f21a38b4ecdbcfab423206c99e7df687dcee27e5d2576cda227d3"
+    },
+    {
+      "productId": "253094",
+      "number": "016/264",
+      "name": "Phantump",
+      "source_url": "https://images.pokemontcg.io/swsh8/16_hires.png",
+      "file": "assets/fusion-strike/253094.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "9f4eb1c8d7cd7ff35262968e17a972b92133f83ad76f0d877b1b7f247c9bb099"
+    },
+    {
+      "productId": "253096",
+      "number": "017/264",
+      "name": "Trevenant",
+      "source_url": "https://images.pokemontcg.io/swsh8/17_hires.png",
+      "file": "assets/fusion-strike/253096.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "899ef9e2d47554f8cb1b28baf66b5b01470df68a2062aabbd2a957a4cc0138c8"
+    },
+    {
+      "productId": "253098",
+      "number": "018/264",
+      "name": "Grubbin",
+      "source_url": "https://images.pokemontcg.io/swsh8/18_hires.png",
+      "file": "assets/fusion-strike/253098.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "f43c1f55ac138847380876d56c67c4f9c9c1f30e007dd49841887fea5828fc56"
+    },
+    {
+      "productId": "253102",
+      "number": "019/264",
+      "name": "Dewpider",
+      "source_url": "https://images.pokemontcg.io/swsh8/19_hires.png",
+      "file": "assets/fusion-strike/253102.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "03a61e3200f6fe070bcbeca4cf470037d8aa519df43ac94c31e10e2e35755e5a"
+    },
+    {
+      "productId": "253105",
+      "number": "020/264",
+      "name": "Araquanid",
+      "source_url": "https://images.pokemontcg.io/swsh8/20_hires.png",
+      "file": "assets/fusion-strike/253105.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "cd6d75fb6a7da14ef1008ed667b5557bca185f692ee665d1454e0a520e0e1787"
+    },
+    {
+      "productId": "253109",
+      "number": "021/264",
+      "name": "Tsareena V",
+      "source_url": "https://images.pokemontcg.io/swsh8/21_hires.png",
+      "file": "assets/fusion-strike/253109.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "5aebf66865352fc78ab75849a6444135e3782d65a8912ab4aa8ff1ed4b127df0"
+    },
+    {
+      "productId": "253113",
+      "number": "022/264",
+      "name": "Rillaboom V",
+      "source_url": "https://images.pokemontcg.io/swsh8/22_hires.png",
+      "file": "assets/fusion-strike/253113.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "180e7253fc4ccc2a94b7a1b353aae3b3cbbe8dac5fb09630180c8da12a9c0077"
+    },
+    {
+      "productId": "253108",
+      "number": "023/264",
+      "name": "Rillaboom VMAX",
+      "source_url": "https://images.pokemontcg.io/swsh8/23_hires.png",
+      "file": "assets/fusion-strike/253108.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "6c16fd681bdc75bb5c6c76d5d3e81b909515fafdaa606e65a504364aabe6be5c"
+    },
+    {
+      "productId": "253115",
+      "number": "024/264",
+      "name": "Gossifleur",
+      "source_url": "https://images.pokemontcg.io/swsh8/24_hires.png",
+      "file": "assets/fusion-strike/253115.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "47c965fbb172b48e62d91897ae7318bd7bee14e35fe4804b7f8acf42bfb17ce7"
+    },
+    {
+      "productId": "253118",
+      "number": "025/264",
+      "name": "Eldegoss",
+      "source_url": "https://images.pokemontcg.io/swsh8/25_hires.png",
+      "file": "assets/fusion-strike/253118.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "1b6ddc4f67f8d32c9c42913796e44986487b03acda54f548e499fb51534a8ddf"
+    },
+    {
+      "productId": "253120",
+      "number": "026/264",
+      "name": "Appletun V",
+      "source_url": "https://images.pokemontcg.io/swsh8/26_hires.png",
+      "file": "assets/fusion-strike/253120.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "f1d42cea1ec8254691725e8c64f610c4e084356ff05319aee7e4897ce027a828"
+    },
+    {
+      "productId": "253122",
+      "number": "027/264",
+      "name": "Zarude",
+      "source_url": "https://images.pokemontcg.io/swsh8/27_hires.png",
+      "file": "assets/fusion-strike/253122.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "fef6d22d9011e1960f9b016c403a8150c836e7bb65bd0e575373c2975ff1c10a"
+    },
+    {
+      "productId": "253124",
+      "number": "028/264",
+      "name": "Vulpix (28)",
+      "source_url": "https://images.pokemontcg.io/swsh8/28_hires.png",
+      "file": "assets/fusion-strike/253124.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "688767dd1ae625f9df3563d57bbc2d7abe101f9b7efe3ac00a12a08632eaeb80"
+    },
+    {
+      "productId": "253125",
+      "number": "029/264",
+      "name": "Vulpix (29)",
+      "source_url": "https://images.pokemontcg.io/swsh8/29_hires.png",
+      "file": "assets/fusion-strike/253125.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "79e29a82b2a39221670897ab8b47006ee2c9b9b165986a758e9da7326b6c5d27"
+    },
+    {
+      "productId": "253126",
+      "number": "030/264",
+      "name": "Ninetales (30)",
+      "source_url": "https://images.pokemontcg.io/swsh8/30_hires.png",
+      "file": "assets/fusion-strike/253126.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "445bd3e3e0c79d89f2ec00feba9321f4e0ec4679001fa6af5581e24c7fcb330c"
+    },
+    {
+      "productId": "253128",
+      "number": "031/264",
+      "name": "Ninetales (31)",
+      "source_url": "https://images.pokemontcg.io/swsh8/31_hires.png",
+      "file": "assets/fusion-strike/253128.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "4e9cf2023168596fea6903d562eadcc1d14f6a75c506ffc9818eeb435e598085"
+    },
+    {
+      "productId": "253129",
+      "number": "032/264",
+      "name": "Growlithe",
+      "source_url": "https://images.pokemontcg.io/swsh8/32_hires.png",
+      "file": "assets/fusion-strike/253129.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "5d6e50a5b3099cb8071b128c550e94089b34d3fa67e64b9c7e3099407c7f95c9"
+    },
+    {
+      "productId": "253130",
+      "number": "033/264",
+      "name": "Arcanine",
+      "source_url": "https://images.pokemontcg.io/swsh8/33_hires.png",
+      "file": "assets/fusion-strike/253130.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "144dffd2b14abf64cac731d7062b753be1e2247916431b181f3a5f78f74b7033"
+    },
+    {
+      "productId": "253131",
+      "number": "034/264",
+      "name": "Slugma",
+      "source_url": "https://images.pokemontcg.io/swsh8/34_hires.png",
+      "file": "assets/fusion-strike/253131.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "f5f5074b98201b38938a20a07dda790853676d2f1c66b2b3ea95fd392f1e9c95"
+    },
+    {
+      "productId": "253132",
+      "number": "035/264",
+      "name": "Magcargo",
+      "source_url": "https://images.pokemontcg.io/swsh8/35_hires.png",
+      "file": "assets/fusion-strike/253132.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "0c7b1d6b74feeb181337b71f81569c610f15c5bef2d950e01018a3feb6dabaaf"
+    },
+    {
+      "productId": "253136",
+      "number": "036/264",
+      "name": "Victini",
+      "source_url": "https://images.pokemontcg.io/swsh8/36_hires.png",
+      "file": "assets/fusion-strike/253136.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "ce2846fdf6d7ad80af5b6a9881b13cfe90d24fd4f64d5f76ef8674d69f74eb88"
+    },
+    {
+      "productId": "253137",
+      "number": "037/264",
+      "name": "Pansear",
+      "source_url": "https://images.pokemontcg.io/swsh8/37_hires.png",
+      "file": "assets/fusion-strike/253137.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "89bfd1f24c7e01e2fec08c6ff6e2092551794820cb1228c1990fc7766f1a20f7"
+    },
+    {
+      "productId": "253140",
+      "number": "038/264",
+      "name": "Simisear",
+      "source_url": "https://images.pokemontcg.io/swsh8/38_hires.png",
+      "file": "assets/fusion-strike/253140.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "04086fc25c5cabbf7ec53ae5a1d3cbfa22918e1e1edf298ef5c5c0eaebe8452b"
+    },
+    {
+      "productId": "253142",
+      "number": "039/264",
+      "name": "Chandelure V",
+      "source_url": "https://images.pokemontcg.io/swsh8/39_hires.png",
+      "file": "assets/fusion-strike/253142.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "e14d759fa661928af0f230d85c11ea6f4648299f20c860e22db23c3c1ef01e93"
+    },
+    {
+      "productId": "253145",
+      "number": "040/264",
+      "name": "Chandelure VMAX",
+      "source_url": "https://images.pokemontcg.io/swsh8/40_hires.png",
+      "file": "assets/fusion-strike/253145.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "6c19d5529601e83445de6e65512cb5b10d54db7a5d3b8321612654ca510cb200"
+    },
+    {
+      "productId": "253150",
+      "number": "041/264",
+      "name": "Heatmor",
+      "source_url": "https://images.pokemontcg.io/swsh8/41_hires.png",
+      "file": "assets/fusion-strike/253150.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "34b6e3882083113c1dffc0dd65ae90bda5e6f79480c8819b14d5c622f41a73d2"
+    },
+    {
+      "productId": "253158",
+      "number": "042/264",
+      "name": "Oricorio",
+      "source_url": "https://images.pokemontcg.io/swsh8/42_hires.png",
+      "file": "assets/fusion-strike/253158.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "0e2a236914ef33af6e9f593174179a4e58759b54ba00d548aff4e8ed5564b2ad"
+    },
+    {
+      "productId": "253164",
+      "number": "043/264",
+      "name": "Cinderace V (43)",
+      "source_url": "https://images.pokemontcg.io/swsh8/43_hires.png",
+      "file": "assets/fusion-strike/253164.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "6e0741f337733470acae8dd565dd02458d9be2092513850b206ff08dad01d518"
+    },
+    {
+      "productId": "253168",
+      "number": "044/264",
+      "name": "Cinderace V (44)",
+      "source_url": "https://images.pokemontcg.io/swsh8/44_hires.png",
+      "file": "assets/fusion-strike/253168.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "d67273ced8479a9c6642a5dbd9a055184294910b1ceebc366aae07ce601c73a8"
+    },
+    {
+      "productId": "253170",
+      "number": "045/264",
+      "name": "Cinderace VMAX",
+      "source_url": "https://images.pokemontcg.io/swsh8/45_hires.png",
+      "file": "assets/fusion-strike/253170.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "3c73f6b1ff04d24d13cf45b7ff43dc39f8d020bc54425c487939a94f05ff0eab"
+    },
+    {
+      "productId": "253172",
+      "number": "046/264",
+      "name": "Sizzlipede (46)",
+      "source_url": "https://images.pokemontcg.io/swsh8/46_hires.png",
+      "file": "assets/fusion-strike/253172.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "eefcfffd5bc2ce3f9f49cac712758646cb3894c9e85dc013e26a0ad9edc15685"
+    },
+    {
+      "productId": "253175",
+      "number": "047/264",
+      "name": "Sizzlipede (47)",
+      "source_url": "https://images.pokemontcg.io/swsh8/47_hires.png",
+      "file": "assets/fusion-strike/253175.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "98c617712d63caeddaee277e8756824496a5f78ff91fa379aab42d9c9492340f"
+    },
+    {
+      "productId": "253179",
+      "number": "048/264",
+      "name": "Centiskorch (48)",
+      "source_url": "https://images.pokemontcg.io/swsh8/48_hires.png",
+      "file": "assets/fusion-strike/253179.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "7eac5d9443f0388ec87fc0e5d30a0a0ea80f2e8217cbdf060d347f03fffde3f2"
+    },
+    {
+      "productId": "253180",
+      "number": "049/264",
+      "name": "Centiskorch (49)",
+      "source_url": "https://images.pokemontcg.io/swsh8/49_hires.png",
+      "file": "assets/fusion-strike/253180.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "dd3f30738a1a50704acea548847715ea8993f69c62680ac6c3851cf1e82060ee"
+    },
+    {
+      "productId": "253181",
+      "number": "050/264",
+      "name": "Shellder",
+      "source_url": "https://images.pokemontcg.io/swsh8/50_hires.png",
+      "file": "assets/fusion-strike/253181.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "6f7fddcff440c5f2f0a87b93c21b9ba3f937bb27bd0fb2d8f5147a76a2b70a16"
+    },
+    {
+      "productId": "253182",
+      "number": "051/264",
+      "name": "Cloyster",
+      "source_url": "https://images.pokemontcg.io/swsh8/51_hires.png",
+      "file": "assets/fusion-strike/253182.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "c1ce9904ba09d9a58a7a6d336c197f87731d865d1ff86cc0c5e12331728482f0"
+    },
+    {
+      "productId": "253183",
+      "number": "052/264",
+      "name": "Staryu",
+      "source_url": "https://images.pokemontcg.io/swsh8/52_hires.png",
+      "file": "assets/fusion-strike/253183.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "944227a9e11b0cbbe3a04dc4d4c791a6e26d4ece4e740bbd8520d46087930ddb"
+    },
+    {
+      "productId": "253184",
+      "number": "053/264",
+      "name": "Starmie",
+      "source_url": "https://images.pokemontcg.io/swsh8/53_hires.png",
+      "file": "assets/fusion-strike/253184.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "4f3412592b365dccdeaef9c78b09d2fd5c1edf0a1abed8b395832c5c34053487"
+    },
+    {
+      "productId": "253185",
+      "number": "054/264",
+      "name": "Lapras",
+      "source_url": "https://images.pokemontcg.io/swsh8/54_hires.png",
+      "file": "assets/fusion-strike/253185.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "53404c1662f2a9cf1e9ee76d39b793db1b4875cc5cc82dd760d0ed45e8fa0c38"
+    },
+    {
+      "productId": "253186",
+      "number": "055/264",
+      "name": "Totodile",
+      "source_url": "https://images.pokemontcg.io/swsh8/55_hires.png",
+      "file": "assets/fusion-strike/253186.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "d6b479a86ebe6caf8a6cff9a934f7717f542d3c53e030f6de186d18ec4f60518"
+    },
+    {
+      "productId": "253187",
+      "number": "056/264",
+      "name": "Croconaw",
+      "source_url": "https://images.pokemontcg.io/swsh8/56_hires.png",
+      "file": "assets/fusion-strike/253187.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "0d95ec42796a43e3985373ef10b697ec8ab990a8ff7311cc801cc42b8cb5ff66"
+    },
+    {
+      "productId": "253188",
+      "number": "057/264",
+      "name": "Feraligatr",
+      "source_url": "https://images.pokemontcg.io/swsh8/57_hires.png",
+      "file": "assets/fusion-strike/253188.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "73db8e09cb0ec310173c71bcc5c93bffa5e5e74935554af37c267c50c7f5293a"
+    },
+    {
+      "productId": "253189",
+      "number": "058/264",
+      "name": "Marill",
+      "source_url": "https://images.pokemontcg.io/swsh8/58_hires.png",
+      "file": "assets/fusion-strike/253189.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "9ae4c347a2c9b5c44d32497f2d6348d325a445ec8b0e170c5a720bcd10d3cb6c"
+    },
+    {
+      "productId": "253190",
+      "number": "059/264",
+      "name": "Azumarill",
+      "source_url": "https://images.pokemontcg.io/swsh8/59_hires.png",
+      "file": "assets/fusion-strike/253190.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "4b56c5a99b1e67994db558578610e38da435476ed0283c05ac35edf26235e5a7"
+    },
+    {
+      "productId": "253192",
+      "number": "060/264",
+      "name": "Qwilfish",
+      "source_url": "https://images.pokemontcg.io/swsh8/60_hires.png",
+      "file": "assets/fusion-strike/253192.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "9f21fa5d1b26d7ae57a758a1734b530b24be796943bfd5afddcb1e713379d6f7"
+    },
+    {
+      "productId": "253195",
+      "number": "061/264",
+      "name": "Mantine",
+      "source_url": "https://images.pokemontcg.io/swsh8/61_hires.png",
+      "file": "assets/fusion-strike/253195.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "edb689ce45837c5311023979147257535e2750e4fde9c727e97b1a0e04bdf00c"
+    },
+    {
+      "productId": "253199",
+      "number": "062/264",
+      "name": "Mudkip",
+      "source_url": "https://images.pokemontcg.io/swsh8/62_hires.png",
+      "file": "assets/fusion-strike/253199.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "3e241fc63962412e9fa6560b956ae4ad3615cf44289014ef64114e737414d3f5"
+    },
+    {
+      "productId": "253201",
+      "number": "063/264",
+      "name": "Marshtomp",
+      "source_url": "https://images.pokemontcg.io/swsh8/63_hires.png",
+      "file": "assets/fusion-strike/253201.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "a45dc9086504b0a90f37fe37fba81489688ae5e4931dd5425b966a7b07e3563d"
+    },
+    {
+      "productId": "253205",
+      "number": "064/264",
+      "name": "Swampert",
+      "source_url": "https://images.pokemontcg.io/swsh8/64_hires.png",
+      "file": "assets/fusion-strike/253205.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "f07d6529255614d9e870302d595ae1a903d2809c7936627810064c46850a576b"
+    },
+    {
+      "productId": "253208",
+      "number": "065/264",
+      "name": "Clamperl",
+      "source_url": "https://images.pokemontcg.io/swsh8/65_hires.png",
+      "file": "assets/fusion-strike/253208.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "e09477b43c2b395d61340c29ef7a542f9d747e8f2bfc8178e84ccfed483e33d0"
+    },
+    {
+      "productId": "253209",
+      "number": "066/264",
+      "name": "Huntail",
+      "source_url": "https://images.pokemontcg.io/swsh8/66_hires.png",
+      "file": "assets/fusion-strike/253209.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "05fa6ae409cb763fff904c0f4ec764a75fcea32cf5771c2ba0b1ee33f2c680f9"
+    },
+    {
+      "productId": "253210",
+      "number": "067/264",
+      "name": "Gorebyss",
+      "source_url": "https://images.pokemontcg.io/swsh8/67_hires.png",
+      "file": "assets/fusion-strike/253210.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "64130c9dfeab691bbb85d2b3395e88b4ef18bd7fbaf56ed5d318fba038ef0aac"
+    },
+    {
+      "productId": "253211",
+      "number": "068/264",
+      "name": "Panpour",
+      "source_url": "https://images.pokemontcg.io/swsh8/68_hires.png",
+      "file": "assets/fusion-strike/253211.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "511ecc10d30429a0ff1934eb4e14927bf2b094d78f2eed5d7dcf2aab47f7a26a"
+    },
+    {
+      "productId": "253212",
+      "number": "069/264",
+      "name": "Simipour",
+      "source_url": "https://images.pokemontcg.io/swsh8/69_hires.png",
+      "file": "assets/fusion-strike/253212.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "cb4b07132984e3c11015c70de588066c09aeb986e082fc869adf8f8a2352af3f"
+    },
+    {
+      "productId": "253215",
+      "number": "070/264",
+      "name": "Basculin",
+      "source_url": "https://images.pokemontcg.io/swsh8/70_hires.png",
+      "file": "assets/fusion-strike/253215.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "99ba0ab2cf65ff40a25b287e45ac0cef20af044cf3dd775a16e2448c6fe13faa"
+    },
+    {
+      "productId": "253218",
+      "number": "071/264",
+      "name": "Galarian Darumaka",
+      "source_url": "https://images.pokemontcg.io/swsh8/71_hires.png",
+      "file": "assets/fusion-strike/253218.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "834473d311996a70d697160e9c3a4b342d24311ff263fd7aa960478fa325a989"
+    },
+    {
+      "productId": "253222",
+      "number": "072/264",
+      "name": "Galarian Darmanitan",
+      "source_url": "https://images.pokemontcg.io/swsh8/72_hires.png",
+      "file": "assets/fusion-strike/253222.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "566f448a248ca981a7df76e338f4dea1e0df7af8a83534e49f2e4dbb1a3a08a2"
+    },
+    {
+      "productId": "253223",
+      "number": "073/264",
+      "name": "Greninja V",
+      "source_url": "https://images.pokemontcg.io/swsh8/73_hires.png",
+      "file": "assets/fusion-strike/253223.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "bfe1dcaeb4981cd11b9243a8841e6b30a47a941e8fc0610bdae0a9270a3df35b"
+    },
+    {
+      "productId": "253224",
+      "number": "074/264",
+      "name": "Clauncher",
+      "source_url": "https://images.pokemontcg.io/swsh8/74_hires.png",
+      "file": "assets/fusion-strike/253224.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "c0be4a74f573bc26ba2596c6aebe255b33d46df4abff1e74c4a3c9a8a089b402"
+    },
+    {
+      "productId": "253225",
+      "number": "075/264",
+      "name": "Clawitzer",
+      "source_url": "https://images.pokemontcg.io/swsh8/75_hires.png",
+      "file": "assets/fusion-strike/253225.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "f3358ab89ea3bf40d8865c0f3f09d4f81848eea5bd21ec32213b2846e459c040"
+    },
+    {
+      "productId": "253226",
+      "number": "076/264",
+      "name": "Crabominable V",
+      "source_url": "https://images.pokemontcg.io/swsh8/76_hires.png",
+      "file": "assets/fusion-strike/253226.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "5f91701e70abc71e11cd1cf2de606cc325fb0ec4de6123fa27d135e474a485ee"
+    },
+    {
+      "productId": "253229",
+      "number": "077/264",
+      "name": "Pyukumuku",
+      "source_url": "https://images.pokemontcg.io/swsh8/77_hires.png",
+      "file": "assets/fusion-strike/253229.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "38c3feb1465a1783bc2a2c6a945a075a59a6996b4aa3735b5e4339244ace0577"
+    },
+    {
+      "productId": "253232",
+      "number": "078/264",
+      "name": "Inteleon V",
+      "source_url": "https://images.pokemontcg.io/swsh8/78_hires.png",
+      "file": "assets/fusion-strike/253232.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "a368664df30b68083e7c3ebcd019c1d5732e429951a1086e236064f194ce662c"
+    },
+    {
+      "productId": "253233",
+      "number": "079/264",
+      "name": "Inteleon VMAX",
+      "source_url": "https://images.pokemontcg.io/swsh8/79_hires.png",
+      "file": "assets/fusion-strike/253233.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "98b716dad524c65b1c92c55c8dfeaf06f22697246e494d57f44d2d2267b08e38"
+    },
+    {
+      "productId": "253234",
+      "number": "080/264",
+      "name": "Chewtle",
+      "source_url": "https://images.pokemontcg.io/swsh8/80_hires.png",
+      "file": "assets/fusion-strike/253234.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "ce888f99731d5c33802b77f3b87c3bfda40743a1024348082ad8a1253e39db65"
+    },
+    {
+      "productId": "253235",
+      "number": "081/264",
+      "name": "Drednaw",
+      "source_url": "https://images.pokemontcg.io/swsh8/81_hires.png",
+      "file": "assets/fusion-strike/253235.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "8d22f297d458b8f9201d2d0a2ce5c513075f2778952d81a5319e5655131b5a78"
+    },
+    {
+      "productId": "253236",
+      "number": "082/264",
+      "name": "Arrokuda",
+      "source_url": "https://images.pokemontcg.io/swsh8/82_hires.png",
+      "file": "assets/fusion-strike/253236.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "b9f43f331bea669b2df9bda5f13c03b10bdaf6721c9c047a2d1cd9c5dea2edb0"
+    },
+    {
+      "productId": "253237",
+      "number": "083/264",
+      "name": "Barraskewda",
+      "source_url": "https://images.pokemontcg.io/swsh8/83_hires.png",
+      "file": "assets/fusion-strike/253237.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "4d4901bf43935642ecca43a8ba3457bf0e182d67a7466c09cbb8b5ca9123534b"
+    },
+    {
+      "productId": "253238",
+      "number": "084/264",
+      "name": "Snom",
+      "source_url": "https://images.pokemontcg.io/swsh8/84_hires.png",
+      "file": "assets/fusion-strike/253238.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "ca4167fdbeca343097bc4129ded8472475f80b53596caff95cf55bcfb26d23d1"
+    },
+    {
+      "productId": "253240",
+      "number": "085/264",
+      "name": "Frosmoth",
+      "source_url": "https://images.pokemontcg.io/swsh8/85_hires.png",
+      "file": "assets/fusion-strike/253240.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "3f7577b3a61e9c8673589726263a6f33229bf4e174d428ed99e7faba21e94956"
+    },
+    {
+      "productId": "253241",
+      "number": "086/264",
+      "name": "Pikachu V",
+      "source_url": "https://images.pokemontcg.io/swsh8/86_hires.png",
+      "file": "assets/fusion-strike/253241.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "36e81d868205a113071e03b9b211e7cd26a7bd6e800cd14a0612009c591525b9"
+    },
+    {
+      "productId": "253243",
+      "number": "087/264",
+      "name": "Voltorb",
+      "source_url": "https://images.pokemontcg.io/swsh8/87_hires.png",
+      "file": "assets/fusion-strike/253243.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "c98a16076ec56a2d6539486afd8b35501d7be6867f488a575a19c5baed300743"
+    },
+    {
+      "productId": "253244",
+      "number": "088/264",
+      "name": "Electrode",
+      "source_url": "https://images.pokemontcg.io/swsh8/88_hires.png",
+      "file": "assets/fusion-strike/253244.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "a960bdd92077b2891ba5be228fa00d5020809e14d3670f4be17e5fd275d1ec0e"
+    },
+    {
+      "productId": "253245",
+      "number": "089/264",
+      "name": "Plusle",
+      "source_url": "https://images.pokemontcg.io/swsh8/89_hires.png",
+      "file": "assets/fusion-strike/253245.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "8f48112e7124141cad9d6438b5eae84ff63e2e26ebe8dd0260c49f21a90037f9"
+    },
+    {
+      "productId": "253246",
+      "number": "090/264",
+      "name": "Minun",
+      "source_url": "https://images.pokemontcg.io/swsh8/90_hires.png",
+      "file": "assets/fusion-strike/253246.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "e95220fb75ce646ab06040dd59cab7fb7bf5591d4bb2cfd033bd9de03682520d"
+    },
+    {
+      "productId": "253247",
+      "number": "091/264",
+      "name": "Shinx",
+      "source_url": "https://images.pokemontcg.io/swsh8/91_hires.png",
+      "file": "assets/fusion-strike/253247.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "64aa47cc59b3375e1f86707d7b67ba876d291c3b5ffde987597b2f16e10a9805"
+    },
+    {
+      "productId": "253248",
+      "number": "092/264",
+      "name": "Luxio",
+      "source_url": "https://images.pokemontcg.io/swsh8/92_hires.png",
+      "file": "assets/fusion-strike/253248.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "037f13d91690473b527e7106be4b0e3466afd6e19276147a45c7967b55f5bd0b"
+    },
+    {
+      "productId": "253249",
+      "number": "093/264",
+      "name": "Luxray",
+      "source_url": "https://images.pokemontcg.io/swsh8/93_hires.png",
+      "file": "assets/fusion-strike/253249.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "9b7797b6dbc68f9c106d0c5b53bb971ed6b2a7d082276b3e81a3d6993347d1ae"
+    },
+    {
+      "productId": "253250",
+      "number": "094/264",
+      "name": "Rotom",
+      "source_url": "https://images.pokemontcg.io/swsh8/94_hires.png",
+      "file": "assets/fusion-strike/253250.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "ab0cc314fc4c69034da772d43e265bbb7d309c638b24d16e4e30e106e17e1f65"
+    },
+    {
+      "productId": "253251",
+      "number": "095/264",
+      "name": "Tynamo",
+      "source_url": "https://images.pokemontcg.io/swsh8/95_hires.png",
+      "file": "assets/fusion-strike/253251.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "ef0aa762cb2cc09d2222cc237cd1430426d66ebc8d9ba7bc2828bc16643728e1"
+    },
+    {
+      "productId": "253252",
+      "number": "096/264",
+      "name": "Eelektrik",
+      "source_url": "https://images.pokemontcg.io/swsh8/96_hires.png",
+      "file": "assets/fusion-strike/253252.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "889940c0039cd9d505dedb94eda68bdfb85f891621c67f302016362ff963ad16"
+    },
+    {
+      "productId": "253253",
+      "number": "097/264",
+      "name": "Eelektross",
+      "source_url": "https://images.pokemontcg.io/swsh8/97_hires.png",
+      "file": "assets/fusion-strike/253253.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "5bde972ce2647469fc05317bf5201c811173f8ed13133a2b03f64ace3e36ed35"
+    },
+    {
+      "productId": "253254",
+      "number": "098/264",
+      "name": "Helioptile",
+      "source_url": "https://images.pokemontcg.io/swsh8/98_hires.png",
+      "file": "assets/fusion-strike/253254.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "6aa8c2f17f73341bf672dac622a6fc3c54615091d15a66d0d522e5c54c464205"
+    },
+    {
+      "productId": "253255",
+      "number": "099/264",
+      "name": "Heliolisk",
+      "source_url": "https://images.pokemontcg.io/swsh8/99_hires.png",
+      "file": "assets/fusion-strike/253255.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "19ca72cacef032dc983ffdeb0fad8b94d530c26c2cb8a8fb661c4badb7e18324"
+    },
+    {
+      "productId": "253256",
+      "number": "100/264",
+      "name": "Charjabug",
+      "source_url": "https://images.pokemontcg.io/swsh8/100_hires.png",
+      "file": "assets/fusion-strike/253256.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "579370639864a65571e5f214c1f3605e755b2e194eff2fd41beffcc1ed0b1a8b"
+    },
+    {
+      "productId": "253257",
+      "number": "101/264",
+      "name": "Vikavolt",
+      "source_url": "https://images.pokemontcg.io/swsh8/101_hires.png",
+      "file": "assets/fusion-strike/253257.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "c98b5e2e0f0380051188c1a83f88d3ac3e2b26aabe20c993694c58b24a45a65e"
+    },
+    {
+      "productId": "253258",
+      "number": "102/264",
+      "name": "Zeraora",
+      "source_url": "https://images.pokemontcg.io/swsh8/102_hires.png",
+      "file": "assets/fusion-strike/253258.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "7106d7753698255d3d8eb7561593c889463673e2e5de90bbd34e91395c8f82d1"
+    },
+    {
+      "productId": "253259",
+      "number": "103/264",
+      "name": "Boltund V",
+      "source_url": "https://images.pokemontcg.io/swsh8/103_hires.png",
+      "file": "assets/fusion-strike/253259.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "79f9b7ae0c9bbc974755abc49c94e1b3f2a03c7468aa458a669fc27736cdc14e"
+    },
+    {
+      "productId": "253260",
+      "number": "104/264",
+      "name": "Boltund VMAX",
+      "source_url": "https://images.pokemontcg.io/swsh8/104_hires.png",
+      "file": "assets/fusion-strike/253260.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "349ad6e61040a34108c9e5e818c8ac51c4379c6253fc37a352b00be2752e7d7e"
+    },
+    {
+      "productId": "253261",
+      "number": "105/264",
+      "name": "Toxel (105)",
+      "source_url": "https://images.pokemontcg.io/swsh8/105_hires.png",
+      "file": "assets/fusion-strike/253261.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "bd8b077dc0bcf14c340cca2f9fb4bbf0a263f46ccab0eb33c8a2f4e02b295945"
+    },
+    {
+      "productId": "253262",
+      "number": "106/264",
+      "name": "Toxel (106)",
+      "source_url": "https://images.pokemontcg.io/swsh8/106_hires.png",
+      "file": "assets/fusion-strike/253262.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "aae3ed084915df179a9d4b88079f11924186d28b83187d67c5c0a71b61708146"
+    },
+    {
+      "productId": "253263",
+      "number": "107/264",
+      "name": "Toxtricity (107)",
+      "source_url": "https://images.pokemontcg.io/swsh8/107_hires.png",
+      "file": "assets/fusion-strike/253263.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "ac17ee564c84711fa8aa700416d04f34b0f81d7e779bfe6c73714c4698d28441"
+    },
+    {
+      "productId": "253264",
+      "number": "108/264",
+      "name": "Toxtricity (108)",
+      "source_url": "https://images.pokemontcg.io/swsh8/108_hires.png",
+      "file": "assets/fusion-strike/253264.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "79ea86a11a94324e78c2fac0ff65916f37a9bc23a1c85865477797399811afe1"
+    },
+    {
+      "productId": "253267",
+      "number": "109/264",
+      "name": "Morpeko (109)",
+      "source_url": "https://images.pokemontcg.io/swsh8/109_hires.png",
+      "file": "assets/fusion-strike/253267.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "01a2052158f047e4807e817fd95fd66a3d6685877a844b8d109992e452661979"
+    },
+    {
+      "productId": "253268",
+      "number": "110/264",
+      "name": "Jigglypuff",
+      "source_url": "https://images.pokemontcg.io/swsh8/110_hires.png",
+      "file": "assets/fusion-strike/253268.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "d23711794bdba8c9ca898a8e59df54d7b88a832b6f1989e8f9f140921a70532f"
+    },
+    {
+      "productId": "253269",
+      "number": "111/264",
+      "name": "Wigglytuff",
+      "source_url": "https://images.pokemontcg.io/swsh8/111_hires.png",
+      "file": "assets/fusion-strike/253269.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "457f5e816190b1c2a08078e1b92008cb62ee1eb2c35a7d8f58058ca2d5e308ef"
+    },
+    {
+      "productId": "253273",
+      "number": "112/264",
+      "name": "Jynx",
+      "source_url": "https://images.pokemontcg.io/swsh8/112_hires.png",
+      "file": "assets/fusion-strike/253273.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "0ac6da8a3b29547ba3eadd4bae62342568c60c48d178b626ed496e8b7bc1c0d2"
+    },
+    {
+      "productId": "253274",
+      "number": "113/264",
+      "name": "Mew V",
+      "source_url": "https://images.pokemontcg.io/swsh8/113_hires.png",
+      "file": "assets/fusion-strike/253274.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "afff09dad10e724752a257dffbd0738295d5e8b0ce8dc0d8e199543bd025985d"
+    },
+    {
+      "productId": "253275",
+      "number": "114/264",
+      "name": "Mew VMAX",
+      "source_url": "https://images.pokemontcg.io/swsh8/114_hires.png",
+      "file": "assets/fusion-strike/253275.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "56961d58f635097a26de9b3d62046012c21f08a6a386e93339de9453b3da4f28"
+    },
+    {
+      "productId": "253278",
+      "number": "115/264",
+      "name": "Snubbull",
+      "source_url": "https://images.pokemontcg.io/swsh8/115_hires.png",
+      "file": "assets/fusion-strike/253278.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "33b2dba06b5b46218daa463d368a081aa283cabe82cbfd35a93ba6f2992ba42c"
+    },
+    {
+      "productId": "253282",
+      "number": "116/264",
+      "name": "Granbull",
+      "source_url": "https://images.pokemontcg.io/swsh8/116_hires.png",
+      "file": "assets/fusion-strike/253282.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "1de67200169c9b495a7d57b3a52695c0bf75556ac6ddbc712bc924eac3ad616d"
+    },
+    {
+      "productId": "253283",
+      "number": "117/264",
+      "name": "Galarian Corsola",
+      "source_url": "https://images.pokemontcg.io/swsh8/117_hires.png",
+      "file": "assets/fusion-strike/253283.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "272bbfbab1b402e9665d7bc9fa1e8fab952ee7da44d83fac92c02a9e46dbb410"
+    },
+    {
+      "productId": "253288",
+      "number": "118/264",
+      "name": "Galarian Cursola",
+      "source_url": "https://images.pokemontcg.io/swsh8/118_hires.png",
+      "file": "assets/fusion-strike/253288.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "c6b01a1be8ff11eb9e628ba253d27d907dc34572788eb8b8282e54bf57728fd8"
+    },
+    {
+      "productId": "253290",
+      "number": "119/264",
+      "name": "Mawile",
+      "source_url": "https://images.pokemontcg.io/swsh8/119_hires.png",
+      "file": "assets/fusion-strike/253290.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "b062b55644f7f5dbb6f3519155e1579189089e87b6a6dbe5f15dd0c9c1058fe7"
+    },
+    {
+      "productId": "253293",
+      "number": "120/264",
+      "name": "Deoxys",
+      "source_url": "https://images.pokemontcg.io/swsh8/120_hires.png",
+      "file": "assets/fusion-strike/253293.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "9783563d0c2b5650f3b1028bd65fdc03bc45080f583d5e19ddb7e35c0aab34cc"
+    },
+    {
+      "productId": "253294",
+      "number": "121/264",
+      "name": "Munna",
+      "source_url": "https://images.pokemontcg.io/swsh8/121_hires.png",
+      "file": "assets/fusion-strike/253294.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "568457140b0027957df8f9f6b192ca20753eb2ec2ee90d98a7df31e911bbbba1"
+    },
+    {
+      "productId": "253299",
+      "number": "122/264",
+      "name": "Musharna",
+      "source_url": "https://images.pokemontcg.io/swsh8/122_hires.png",
+      "file": "assets/fusion-strike/253299.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "7146135f9432c50187174785331036166330565bd8d4d86e4b027ed09fb6884e"
+    },
+    {
+      "productId": "253303",
+      "number": "123/264",
+      "name": "Sigilyph",
+      "source_url": "https://images.pokemontcg.io/swsh8/123_hires.png",
+      "file": "assets/fusion-strike/253303.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "e2f00a84628a8f0376efb7e1070f8f103d3a26b4575a1b9c69f67c29dc620122"
+    },
+    {
+      "productId": "253308",
+      "number": "124/264",
+      "name": "Meloetta",
+      "source_url": "https://images.pokemontcg.io/swsh8/124_hires.png",
+      "file": "assets/fusion-strike/253308.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "36caa0c797b9abb09c9f6b3afd30154b5dfb136f9000ec434c31adfd0cb6cdd2"
+    },
+    {
+      "productId": "253311",
+      "number": "125/264",
+      "name": "Sandygast",
+      "source_url": "https://images.pokemontcg.io/swsh8/125_hires.png",
+      "file": "assets/fusion-strike/253311.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "f662f8ef62c725a1c01b82a806617739124baa699c23d399283ba6c1c3316bf6"
+    },
+    {
+      "productId": "253313",
+      "number": "126/264",
+      "name": "Palossand",
+      "source_url": "https://images.pokemontcg.io/swsh8/126_hires.png",
+      "file": "assets/fusion-strike/253313.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "8d270d6668a2e3ef5f499d24ab030c7ab803c846ca63e02fae185dd23572d3be"
+    },
+    {
+      "productId": "253318",
+      "number": "127/264",
+      "name": "Indeedee",
+      "source_url": "https://images.pokemontcg.io/swsh8/127_hires.png",
+      "file": "assets/fusion-strike/253318.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "7d6782abeefeb0af213d727899cab1d753594e4e1f10c38d0ad21a9fabb06b9c"
+    },
+    {
+      "productId": "253321",
+      "number": "128/264",
+      "name": "Dreepy",
+      "source_url": "https://images.pokemontcg.io/swsh8/128_hires.png",
+      "file": "assets/fusion-strike/253321.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "3274d2a944d8ae28d12eae23f3d118aa09791c7cee19b0d25bdefcc307de4ead"
+    },
+    {
+      "productId": "253325",
+      "number": "129/264",
+      "name": "Drakloak",
+      "source_url": "https://images.pokemontcg.io/swsh8/129_hires.png",
+      "file": "assets/fusion-strike/253325.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "d0b9d5b16cdc0c917a259f60361d922c7f9941ada94721418f5645482eae4dc2"
+    },
+    {
+      "productId": "253327",
+      "number": "130/264",
+      "name": "Dragapult",
+      "source_url": "https://images.pokemontcg.io/swsh8/130_hires.png",
+      "file": "assets/fusion-strike/253327.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "23167aea8fe12ced88e077cf5115fc4e67769014273e9504f86ed75cd6662456"
+    },
+    {
+      "productId": "253330",
+      "number": "131/264",
+      "name": "Sandshrew",
+      "source_url": "https://images.pokemontcg.io/swsh8/131_hires.png",
+      "file": "assets/fusion-strike/253330.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "eb57297144a43706ce1f3257f3f840b570d6967734ea3bfd25ba6613f1c03808"
+    },
+    {
+      "productId": "253449",
+      "number": "132/264",
+      "name": "Sandslash",
+      "source_url": "https://images.pokemontcg.io/swsh8/132_hires.png",
+      "file": "assets/fusion-strike/253449.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "66b6f9d780068670315240cd7c60fff42a5ba43b2eb1baefaa8dc42748461e32"
+    },
+    {
+      "productId": "253334",
+      "number": "133/264",
+      "name": "Mankey",
+      "source_url": "https://images.pokemontcg.io/swsh8/133_hires.png",
+      "file": "assets/fusion-strike/253334.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "a622bd4f0a1d4dcb49fb8846f1a90397eaa887d7cd1f5393be84c2e82dd40e80"
+    },
+    {
+      "productId": "253337",
+      "number": "134/264",
+      "name": "Primeape",
+      "source_url": "https://images.pokemontcg.io/swsh8/134_hires.png",
+      "file": "assets/fusion-strike/253337.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "c5faba679f6196482404953f7153ca31b84fe0da235ff85c50a38bbb83421618"
+    },
+    {
+      "productId": "253339",
+      "number": "135/264",
+      "name": "Geodude",
+      "source_url": "https://images.pokemontcg.io/swsh8/135_hires.png",
+      "file": "assets/fusion-strike/253339.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "b131e42fc484044c92894164717337675924411654be3874f4c195db3678b668"
+    },
+    {
+      "productId": "253341",
+      "number": "136/264",
+      "name": "Graveler",
+      "source_url": "https://images.pokemontcg.io/swsh8/136_hires.png",
+      "file": "assets/fusion-strike/253341.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "81f90e8f3b616d461c53fcd79918c2cc3f2aca47ec82a3548cb90b5531768d41"
+    },
+    {
+      "productId": "253342",
+      "number": "137/264",
+      "name": "Golem",
+      "source_url": "https://images.pokemontcg.io/swsh8/137_hires.png",
+      "file": "assets/fusion-strike/253342.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "15f3a86a9de6fc4de5237d76f6719c50ea80d1935a16ed447542b4011622b6ae"
+    },
+    {
+      "productId": "253343",
+      "number": "138/264",
+      "name": "Onix",
+      "source_url": "https://images.pokemontcg.io/swsh8/138_hires.png",
+      "file": "assets/fusion-strike/253343.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "81ade1dbfd4e6a2d53b75e3146d009d24ebf5851225403ac3af4b6bedf98e6bd"
+    },
+    {
+      "productId": "253346",
+      "number": "139/264",
+      "name": "Steelix",
+      "source_url": "https://images.pokemontcg.io/swsh8/139_hires.png",
+      "file": "assets/fusion-strike/253346.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "1b90d25b72f8cd9af1cefd1c5a75610fc723f73bec6853dac19f5501d4b9549d"
+    },
+    {
+      "productId": "253348",
+      "number": "140/264",
+      "name": "Gligar",
+      "source_url": "https://images.pokemontcg.io/swsh8/140_hires.png",
+      "file": "assets/fusion-strike/253348.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "bba2a3b250a17943524d868bff6c60603b98d67517b26c26d8dcd96d5db9bec2"
+    },
+    {
+      "productId": "253350",
+      "number": "141/264",
+      "name": "Gliscor",
+      "source_url": "https://images.pokemontcg.io/swsh8/141_hires.png",
+      "file": "assets/fusion-strike/253350.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "76ca2d145ebde983cb8b0b943dc9edde690748d5eabf6a35705eac50a17493aa"
+    },
+    {
+      "productId": "253352",
+      "number": "142/264",
+      "name": "Makuhita",
+      "source_url": "https://images.pokemontcg.io/swsh8/142_hires.png",
+      "file": "assets/fusion-strike/253352.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "6bcc5fe23e6007001e5d42fd80f6beedf28b19bdcabfbb3ad9922205e478e79e"
+    },
+    {
+      "productId": "253355",
+      "number": "143/264",
+      "name": "Hariyama",
+      "source_url": "https://images.pokemontcg.io/swsh8/143_hires.png",
+      "file": "assets/fusion-strike/253355.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "fa48af84773d9b618054d539b98b56b777e9fbad27d1dfad36f8b12b73a7658d"
+    },
+    {
+      "productId": "253356",
+      "number": "144/264",
+      "name": "Baltoy",
+      "source_url": "https://images.pokemontcg.io/swsh8/144_hires.png",
+      "file": "assets/fusion-strike/253356.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "785cfef6b739e1833fff39ebc969c0c8ddd94f4d33b60ce777afbf11fecb8455"
+    },
+    {
+      "productId": "253359",
+      "number": "145/264",
+      "name": "Claydol",
+      "source_url": "https://images.pokemontcg.io/swsh8/145_hires.png",
+      "file": "assets/fusion-strike/253359.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "bfa18320ca2e6b826b767a7fb8f3b09d9c4acebcec9e336a2f2607c9a957a41d"
+    },
+    {
+      "productId": "253360",
+      "number": "146/264",
+      "name": "Lucario V",
+      "source_url": "https://images.pokemontcg.io/swsh8/146_hires.png",
+      "file": "assets/fusion-strike/253360.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "8e765f3db144ce628ceec5a78ab2b7170fdb71707a21e2c8ac2a21b91fb4a751"
+    },
+    {
+      "productId": "253361",
+      "number": "147/264",
+      "name": "Drilbur",
+      "source_url": "https://images.pokemontcg.io/swsh8/147_hires.png",
+      "file": "assets/fusion-strike/253361.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "70457a3e1ae1c2e29b467691cd66a51d6b950967ea680ef2b8b23ed5388c3531"
+    },
+    {
+      "productId": "253362",
+      "number": "148/264",
+      "name": "Landorus",
+      "source_url": "https://images.pokemontcg.io/swsh8/148_hires.png",
+      "file": "assets/fusion-strike/253362.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "65044464c580cf47eff800a3566bb793d2a9c84889d93c8b4017ae082cc55fc9"
+    },
+    {
+      "productId": "253363",
+      "number": "149/264",
+      "name": "Pancham",
+      "source_url": "https://images.pokemontcg.io/swsh8/149_hires.png",
+      "file": "assets/fusion-strike/253363.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "30ac85a69531200c1caffd5535f75d627410d2b376e5afce67b174fd5887298b"
+    },
+    {
+      "productId": "253364",
+      "number": "150/264",
+      "name": "Stufful",
+      "source_url": "https://images.pokemontcg.io/swsh8/150_hires.png",
+      "file": "assets/fusion-strike/253364.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "e11e479719e8d7180c9b4bdbb2606fabd865bd200d0d3c13a969fb78ee51d4c3"
+    },
+    {
+      "productId": "253365",
+      "number": "151/264",
+      "name": "Bewear",
+      "source_url": "https://images.pokemontcg.io/swsh8/151_hires.png",
+      "file": "assets/fusion-strike/253365.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "952410fd4d50a295ca28c9e8be425d435761054ab21888f5045287dbb1920a60"
+    },
+    {
+      "productId": "253366",
+      "number": "152/264",
+      "name": "Clobbopus",
+      "source_url": "https://images.pokemontcg.io/swsh8/152_hires.png",
+      "file": "assets/fusion-strike/253366.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "8d53151e26b385e421dc495c98a1a42b5e484df9b5d36558cce36bf5cd2ed546"
+    },
+    {
+      "productId": "253367",
+      "number": "153/264",
+      "name": "Grapploct",
+      "source_url": "https://images.pokemontcg.io/swsh8/153_hires.png",
+      "file": "assets/fusion-strike/253367.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "abe08d30d93f472fee40f0b797eea96e6e9ba5a411dc26d9bda0e15b7914a28c"
+    },
+    {
+      "productId": "253368",
+      "number": "154/264",
+      "name": "Falinks (154)",
+      "source_url": "https://images.pokemontcg.io/swsh8/154_hires.png",
+      "file": "assets/fusion-strike/253368.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "0a67f816ed0286126bf8222ca179f173370a91cb91e33fc575936e48b7732791"
+    },
+    {
+      "productId": "253369",
+      "number": "155/264",
+      "name": "Falinks (155)",
+      "source_url": "https://images.pokemontcg.io/swsh8/155_hires.png",
+      "file": "assets/fusion-strike/253369.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "f95e7c840fa49d85c9e8fe3f094787f5cea29bfeac4517987e5d0ab9237e5a24"
+    },
+    {
+      "productId": "253370",
+      "number": "156/264",
+      "name": "Gengar V",
+      "source_url": "https://images.pokemontcg.io/swsh8/156_hires.png",
+      "file": "assets/fusion-strike/253370.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "a53cd489cb4ba19dc2b7720beb37947e0ccb97be6b9fb1802a1949847135d6bf"
+    },
+    {
+      "productId": "253371",
+      "number": "157/264",
+      "name": "Gengar VMAX",
+      "source_url": "https://images.pokemontcg.io/swsh8/157_hires.png",
+      "file": "assets/fusion-strike/253371.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "9f7bd2305fdedd766159b03e3d9ed4e160843f21133625489980babb844e6796"
+    },
+    {
+      "productId": "253372",
+      "number": "158/264",
+      "name": "Tyranitar V",
+      "source_url": "https://images.pokemontcg.io/swsh8/158_hires.png",
+      "file": "assets/fusion-strike/253372.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "80e764d37ccc25fad21ed9eae9005ff15caff2a63b52cb59c4fc22b9b632ea29"
+    },
+    {
+      "productId": "253373",
+      "number": "159/264",
+      "name": "Galarian Zigzagoon",
+      "source_url": "https://images.pokemontcg.io/swsh8/159_hires.png",
+      "file": "assets/fusion-strike/253373.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "c5fab282ae680d2065f389f4abf94f68ed04bf75f13b9d5459f6c6c7f81e1e4c"
+    },
+    {
+      "productId": "253374",
+      "number": "160/264",
+      "name": "Galarian Linoone",
+      "source_url": "https://images.pokemontcg.io/swsh8/160_hires.png",
+      "file": "assets/fusion-strike/253374.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "cfaaa9b68deb10a6f4bdbc962d9542a4a096eef3ab375f8465ca347e45484122"
+    },
+    {
+      "productId": "253375",
+      "number": "161/264",
+      "name": "Galarian Obstagoon",
+      "source_url": "https://images.pokemontcg.io/swsh8/161_hires.png",
+      "file": "assets/fusion-strike/253375.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "5f634bf4f828c2f9d7bb51352751076edd09e5b14fac1d3565b00187577e2ef5"
+    },
+    {
+      "productId": "253376",
+      "number": "162/264",
+      "name": "Carvanha",
+      "source_url": "https://images.pokemontcg.io/swsh8/162_hires.png",
+      "file": "assets/fusion-strike/253376.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "7d91ba3efbf73f8d14ff6b63e43f6145ba01bbf367f9a2731b2c6abf73724e4f"
+    },
+    {
+      "productId": "253377",
+      "number": "163/264",
+      "name": "Sharpedo",
+      "source_url": "https://images.pokemontcg.io/swsh8/163_hires.png",
+      "file": "assets/fusion-strike/253377.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "ea1a54b53d6f6f6a09cc25b2b7c6209c31cbe2c90a83ffec93808de950809c09"
+    },
+    {
+      "productId": "253378",
+      "number": "164/264",
+      "name": "Absol",
+      "source_url": "https://images.pokemontcg.io/swsh8/164_hires.png",
+      "file": "assets/fusion-strike/253378.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "8574e82dba0e3875ccb1ada9e68166d6f77a2dd76a914784042810f75c1a11ab"
+    },
+    {
+      "productId": "253379",
+      "number": "165/264",
+      "name": "Croagunk",
+      "source_url": "https://images.pokemontcg.io/swsh8/165_hires.png",
+      "file": "assets/fusion-strike/253379.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "104dc0dadcb824b6750e3b4913b6aafa80e98687d01c081482eccfd1d7acd945"
+    },
+    {
+      "productId": "253380",
+      "number": "166/264",
+      "name": "Toxicroak",
+      "source_url": "https://images.pokemontcg.io/swsh8/166_hires.png",
+      "file": "assets/fusion-strike/253380.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "e93b907e99f393149f92ce1734e50f1bb6f8a5175de919218d1369ced2f33e68"
+    },
+    {
+      "productId": "253381",
+      "number": "167/264",
+      "name": "Darkrai",
+      "source_url": "https://images.pokemontcg.io/swsh8/167_hires.png",
+      "file": "assets/fusion-strike/253381.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "903334304f0ffd7b204de8306872d28718e17af7be7fc2c9fa427cbf4112915f"
+    },
+    {
+      "productId": "253382",
+      "number": "168/264",
+      "name": "Trubbish",
+      "source_url": "https://images.pokemontcg.io/swsh8/168_hires.png",
+      "file": "assets/fusion-strike/253382.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "1150d596ea96cb3fcdde447250abc2cd6e34aa59a6a7ca1dc8f029b543c40ae9"
+    },
+    {
+      "productId": "253383",
+      "number": "169/264",
+      "name": "Garbodor",
+      "source_url": "https://images.pokemontcg.io/swsh8/169_hires.png",
+      "file": "assets/fusion-strike/253383.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "e8be969499c2b89ce88774564e8a861085afc816f45e36c43de6f143164cfb8e"
+    },
+    {
+      "productId": "253384",
+      "number": "170/264",
+      "name": "Zorua",
+      "source_url": "https://images.pokemontcg.io/swsh8/170_hires.png",
+      "file": "assets/fusion-strike/253384.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "b0a0440bf63174168624bb1f9cf4f49796828705e94bc71c14a0906376068916"
+    },
+    {
+      "productId": "253385",
+      "number": "171/264",
+      "name": "Zoroark",
+      "source_url": "https://images.pokemontcg.io/swsh8/171_hires.png",
+      "file": "assets/fusion-strike/253385.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "f7bcc758b631bc7a105a3346079b68e8293880bfeb51d5f4995c5c5a460ef0c0"
+    },
+    {
+      "productId": "253386",
+      "number": "172/264",
+      "name": "Vullaby",
+      "source_url": "https://images.pokemontcg.io/swsh8/172_hires.png",
+      "file": "assets/fusion-strike/253386.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "18a9104bef50e6a92ca8a1451ceb1fcaf6174cfdc9b426f5e2cf6e30ebf5b819"
+    },
+    {
+      "productId": "253387",
+      "number": "173/264",
+      "name": "Mandibuzz",
+      "source_url": "https://images.pokemontcg.io/swsh8/173_hires.png",
+      "file": "assets/fusion-strike/253387.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "4377df89dd87e8610d6aeaf6ea89411625ad1a2b615f7e23327452fdf0e290b8"
+    },
+    {
+      "productId": "253388",
+      "number": "174/264",
+      "name": "Pangoro",
+      "source_url": "https://images.pokemontcg.io/swsh8/174_hires.png",
+      "file": "assets/fusion-strike/253388.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "7d5d974c6db4436f4318a042b154d8a4ee93099bec9b8866525a5b61dcbff8f5"
+    },
+    {
+      "productId": "253389",
+      "number": "175/264",
+      "name": "Yveltal",
+      "source_url": "https://images.pokemontcg.io/swsh8/175_hires.png",
+      "file": "assets/fusion-strike/253389.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "809234d290788981379ee48a2e829e98a496a83edaf14b1a0a3cccccb7b9019a"
+    },
+    {
+      "productId": "253390",
+      "number": "176/264",
+      "name": "Impidimp",
+      "source_url": "https://images.pokemontcg.io/swsh8/176_hires.png",
+      "file": "assets/fusion-strike/253390.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "6f4bed3258703b630c86b4965b3ca8ef154af5eb8d0d27cb8782c34f83b2045d"
+    },
+    {
+      "productId": "253391",
+      "number": "177/264",
+      "name": "Morgrem",
+      "source_url": "https://images.pokemontcg.io/swsh8/177_hires.png",
+      "file": "assets/fusion-strike/253391.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "4f3c47bf83055504d00b4351ff26e53a6c8167a7c8d2742848b0dc9136d0a62e"
+    },
+    {
+      "productId": "253392",
+      "number": "178/264",
+      "name": "Grimmsnarl",
+      "source_url": "https://images.pokemontcg.io/swsh8/178_hires.png",
+      "file": "assets/fusion-strike/253392.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "df466ecdfef26739d2c4dc491e191f53f5c3ad89109c9c6da8ded27a378bbe89"
+    },
+    {
+      "productId": "253393",
+      "number": "179/264",
+      "name": "Morpeko (179)",
+      "source_url": "https://images.pokemontcg.io/swsh8/179_hires.png",
+      "file": "assets/fusion-strike/253393.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "7161ffa66363b78ffd1369f23beef2c78c535435e5eacad1c768ca2abf58820f"
+    },
+    {
+      "productId": "253326",
+      "number": "180/264",
+      "name": "Galarian Meowth",
+      "source_url": "https://images.pokemontcg.io/swsh8/180_hires.png",
+      "file": "assets/fusion-strike/253326.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "fb6688303d72eae263fccd83f81c99f556b78921546c087379c3987f4e113000"
+    },
+    {
+      "productId": "253328",
+      "number": "181/264",
+      "name": "Galarian Perrserker",
+      "source_url": "https://images.pokemontcg.io/swsh8/181_hires.png",
+      "file": "assets/fusion-strike/253328.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "80f4f14e93a5ac987908ff44b61799eaab03f8e802737c6d7b54dbd4166cd777"
+    },
+    {
+      "productId": "253329",
+      "number": "182/264",
+      "name": "Skarmory",
+      "source_url": "https://images.pokemontcg.io/swsh8/182_hires.png",
+      "file": "assets/fusion-strike/253329.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "8a8f761ca6ebd36b66c26b17a445d675ea65c4a61d3819284b0b6d0eff490112"
+    },
+    {
+      "productId": "253331",
+      "number": "183/264",
+      "name": "Excadrill",
+      "source_url": "https://images.pokemontcg.io/swsh8/183_hires.png",
+      "file": "assets/fusion-strike/253331.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "c59e950483224b45e4865c096786df59079bf97ffeb34ba717256c7c60bd2766"
+    },
+    {
+      "productId": "253332",
+      "number": "184/264",
+      "name": "Durant",
+      "source_url": "https://images.pokemontcg.io/swsh8/184_hires.png",
+      "file": "assets/fusion-strike/253332.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "49febd2557076098b390f382ea9652ccee03e2e02f6daa9357d94a451463c656"
+    },
+    {
+      "productId": "253333",
+      "number": "185/264",
+      "name": "Genesect V",
+      "source_url": "https://images.pokemontcg.io/swsh8/185_hires.png",
+      "file": "assets/fusion-strike/253333.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "796e32b3ec6528bfc38e53f3d49517b130c92b49b87182fef6a0f196b5ce70df"
+    },
+    {
+      "productId": "253335",
+      "number": "186/264",
+      "name": "Klefki",
+      "source_url": "https://images.pokemontcg.io/swsh8/186_hires.png",
+      "file": "assets/fusion-strike/253335.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "000defbca204ebadeb47e6996d9a0664defbb2a86ec3dd2c9e273ff862de6eab"
+    },
+    {
+      "productId": "253336",
+      "number": "187/264",
+      "name": "Togedemaru",
+      "source_url": "https://images.pokemontcg.io/swsh8/187_hires.png",
+      "file": "assets/fusion-strike/253336.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "a469ed292cd92724bca8f86212c63b4727bde15f54134183356a0299cfd54aca"
+    },
+    {
+      "productId": "253338",
+      "number": "188/264",
+      "name": "Meltan",
+      "source_url": "https://images.pokemontcg.io/swsh8/188_hires.png",
+      "file": "assets/fusion-strike/253338.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "5045346ecb7208a58d991b5c2b6564c69d3c20643e5d9504fc1cdc2f6a760143"
+    },
+    {
+      "productId": "253340",
+      "number": "189/264",
+      "name": "Melmetal",
+      "source_url": "https://images.pokemontcg.io/swsh8/189_hires.png",
+      "file": "assets/fusion-strike/253340.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "079e704a34f109b42dca34349040fb51e48bb9b9b82769b2d40ffd6de54ce30b"
+    },
+    {
+      "productId": "253344",
+      "number": "190/264",
+      "name": "Corviknight",
+      "source_url": "https://images.pokemontcg.io/swsh8/190_hires.png",
+      "file": "assets/fusion-strike/253344.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "a36d8a3d0ace614a286a1e207e2b90cb9dbf923787796dcfde3da645adc3158e"
+    },
+    {
+      "productId": "253345",
+      "number": "191/264",
+      "name": "Cufant",
+      "source_url": "https://images.pokemontcg.io/swsh8/191_hires.png",
+      "file": "assets/fusion-strike/253345.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "21382896a6f12b21629955f00806f5f05b4d98621070c4772eab31bf76e1f038"
+    },
+    {
+      "productId": "253347",
+      "number": "192/264",
+      "name": "Copperajah",
+      "source_url": "https://images.pokemontcg.io/swsh8/192_hires.png",
+      "file": "assets/fusion-strike/253347.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "f97e2653930ceb26091b9e68c24be087179832e5a1872144b098465da304e7b1"
+    },
+    {
+      "productId": "253349",
+      "number": "193/264",
+      "name": "Latias",
+      "source_url": "https://images.pokemontcg.io/swsh8/193_hires.png",
+      "file": "assets/fusion-strike/253349.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "4ef6442b6215816565d8293586f1975acaffa95dd93e61167aacec9bc33dfe3f"
+    },
+    {
+      "productId": "253351",
+      "number": "194/264",
+      "name": "Latios",
+      "source_url": "https://images.pokemontcg.io/swsh8/194_hires.png",
+      "file": "assets/fusion-strike/253351.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "48b49daa9e08862c83b5e87646ff48cea230c366554ca5cff1efe91bf648e2df"
+    },
+    {
+      "productId": "253353",
+      "number": "195/264",
+      "name": "Goomy",
+      "source_url": "https://images.pokemontcg.io/swsh8/195_hires.png",
+      "file": "assets/fusion-strike/253353.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "a38bcd4248bce8c7a2fd10d8f78c607effdc37c665b04d5e4e50dffa7820a233"
+    },
+    {
+      "productId": "253354",
+      "number": "196/264",
+      "name": "Sliggoo",
+      "source_url": "https://images.pokemontcg.io/swsh8/196_hires.png",
+      "file": "assets/fusion-strike/253354.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "bd53ae2ca43fb68bb8bcd4345b37adf43743abb780241b60c7946bffb4ea04bc"
+    },
+    {
+      "productId": "253357",
+      "number": "197/264",
+      "name": "Goodra",
+      "source_url": "https://images.pokemontcg.io/swsh8/197_hires.png",
+      "file": "assets/fusion-strike/253357.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "8e68416493a82128834a05f6fffdcb6db43b7bb39de43deb6e80bc61a29a0d41"
+    },
+    {
+      "productId": "253358",
+      "number": "198/264",
+      "name": "Turtonator",
+      "source_url": "https://images.pokemontcg.io/swsh8/198_hires.png",
+      "file": "assets/fusion-strike/253358.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "ec766158db7efec4b950885e20c7393e3766eac36ec4a37e36db3cd25456f341"
+    },
+    {
+      "productId": "253291",
+      "number": "199/264",
+      "name": "Meowth",
+      "source_url": "https://images.pokemontcg.io/swsh8/199_hires.png",
+      "file": "assets/fusion-strike/253291.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "c6d13e61bdafbcaf2393b784eb0ade976f0791fca1c60df72eed10d8cfb46447"
+    },
+    {
+      "productId": "253292",
+      "number": "200/264",
+      "name": "Persian",
+      "source_url": "https://images.pokemontcg.io/swsh8/200_hires.png",
+      "file": "assets/fusion-strike/253292.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "df5a990f8889c9b19023f9469b815f1634665aa655f418572e75994f636cc57c"
+    },
+    {
+      "productId": "253295",
+      "number": "201/264",
+      "name": "Dodrio V",
+      "source_url": "https://images.pokemontcg.io/swsh8/201_hires.png",
+      "file": "assets/fusion-strike/253295.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "e3ab8d08f5de8c14e92ae00a4d2c6e63f59394c1837a84073566ed5d8f5548a5"
+    },
+    {
+      "productId": "253296",
+      "number": "202/264",
+      "name": "Chansey",
+      "source_url": "https://images.pokemontcg.io/swsh8/202_hires.png",
+      "file": "assets/fusion-strike/253296.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "db6798538cc729361717e49bca82e18db3629bd9203184dc59c989d69325ba7d"
+    },
+    {
+      "productId": "253297",
+      "number": "203/264",
+      "name": "Blissey",
+      "source_url": "https://images.pokemontcg.io/swsh8/203_hires.png",
+      "file": "assets/fusion-strike/253297.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "1886da425dc742b7decb6918f7f4ca03edc54275914e003f0419364c5edadbfe"
+    },
+    {
+      "productId": "253298",
+      "number": "204/264",
+      "name": "Kangaskhan",
+      "source_url": "https://images.pokemontcg.io/swsh8/204_hires.png",
+      "file": "assets/fusion-strike/253298.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "7be4b8011dcbb09a988f160344d3dfdddfa2b24086a54e087601c385c115be86"
+    },
+    {
+      "productId": "253300",
+      "number": "205/264",
+      "name": "Eevee",
+      "source_url": "https://images.pokemontcg.io/swsh8/205_hires.png",
+      "file": "assets/fusion-strike/253300.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "28d946ab6a4e82e88f590c82989ff772c4b35e48f7feead1f042ddadc8223dae"
+    },
+    {
+      "productId": "253301",
+      "number": "206/264",
+      "name": "Snorlax",
+      "source_url": "https://images.pokemontcg.io/swsh8/206_hires.png",
+      "file": "assets/fusion-strike/253301.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "afb0465b34baf40acc265c8a835c0f98a68d34bf103750fa0eecdb17a4b4517f"
+    },
+    {
+      "productId": "253302",
+      "number": "207/264",
+      "name": "Dunsparce",
+      "source_url": "https://images.pokemontcg.io/swsh8/207_hires.png",
+      "file": "assets/fusion-strike/253302.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "8dbfdcd8941be58d494d4538c4824012946d16d8dc3160d356bf087c840e584b"
+    },
+    {
+      "productId": "253304",
+      "number": "208/264",
+      "name": "Stantler",
+      "source_url": "https://images.pokemontcg.io/swsh8/208_hires.png",
+      "file": "assets/fusion-strike/253304.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "99315213addbc350118262842b8e6c6e53f1277e88e42407ae976d051dcc6e99"
+    },
+    {
+      "productId": "253305",
+      "number": "209/264",
+      "name": "Smeargle",
+      "source_url": "https://images.pokemontcg.io/swsh8/209_hires.png",
+      "file": "assets/fusion-strike/253305.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "213367f3ba4b5460c7b78c2323c2be1c8f64996dc21f02b7c1090509168866b0"
+    },
+    {
+      "productId": "253306",
+      "number": "210/264",
+      "name": "Skitty",
+      "source_url": "https://images.pokemontcg.io/swsh8/210_hires.png",
+      "file": "assets/fusion-strike/253306.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "df9e3b2587630abf382e23f88512e24090285ac708e7bdfadf140280a03ad696"
+    },
+    {
+      "productId": "253307",
+      "number": "211/264",
+      "name": "Delcatty",
+      "source_url": "https://images.pokemontcg.io/swsh8/211_hires.png",
+      "file": "assets/fusion-strike/253307.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "3edc01957e70c592be41fb087b0b69362adf4273c06de76980a699e06bf07394"
+    },
+    {
+      "productId": "253309",
+      "number": "212/264",
+      "name": "Buneary",
+      "source_url": "https://images.pokemontcg.io/swsh8/212_hires.png",
+      "file": "assets/fusion-strike/253309.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "e5084fe8735366d97a3b4bf511fe4593bc40c7a9a50eea37566476efc04927ee"
+    },
+    {
+      "productId": "253310",
+      "number": "213/264",
+      "name": "Lopunny",
+      "source_url": "https://images.pokemontcg.io/swsh8/213_hires.png",
+      "file": "assets/fusion-strike/253310.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "2d5627e21d1702a1b567183ccb74f1dc2da95dd6f69831481b054dcff3aae1d6"
+    },
+    {
+      "productId": "253312",
+      "number": "214/264",
+      "name": "Bunnelby",
+      "source_url": "https://images.pokemontcg.io/swsh8/214_hires.png",
+      "file": "assets/fusion-strike/253312.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "e2050e5ab2f050900ec6f8dba82b2846b66197085fe8ecf392fe983b21082fe8"
+    },
+    {
+      "productId": "253314",
+      "number": "215/264",
+      "name": "Diggersby",
+      "source_url": "https://images.pokemontcg.io/swsh8/215_hires.png",
+      "file": "assets/fusion-strike/253314.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "9f5ae150ea258025942fe097715e4e8ab9e8991fd5a7700239da2d354a343b74"
+    },
+    {
+      "productId": "253315",
+      "number": "216/264",
+      "name": "Hawlucha",
+      "source_url": "https://images.pokemontcg.io/swsh8/216_hires.png",
+      "file": "assets/fusion-strike/253315.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "dcfe5cbf3412c980cd58d6d8ed56bc32ee5561274cccb1841acf25dc655df834"
+    },
+    {
+      "productId": "253316",
+      "number": "217/264",
+      "name": "Greedent V",
+      "source_url": "https://images.pokemontcg.io/swsh8/217_hires.png",
+      "file": "assets/fusion-strike/253316.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "eb7d23e8ee9fadb07a5d188c1a4e0f3ad0b9685c9cbd465c5f681ea90c73f951"
+    },
+    {
+      "productId": "253317",
+      "number": "218/264",
+      "name": "Greedent VMAX",
+      "source_url": "https://images.pokemontcg.io/swsh8/218_hires.png",
+      "file": "assets/fusion-strike/253317.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "c46cc1057a36e23edd040b953fbe710ce1c821b53490c74271ceac621f4c0afd"
+    },
+    {
+      "productId": "253319",
+      "number": "219/264",
+      "name": "Rookidee",
+      "source_url": "https://images.pokemontcg.io/swsh8/219_hires.png",
+      "file": "assets/fusion-strike/253319.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "00cda7f3231b06cc7ae6e889441d57265c26a9b5d29384c59d4d2a34abaca93e"
+    },
+    {
+      "productId": "253320",
+      "number": "220/264",
+      "name": "Corvisquire",
+      "source_url": "https://images.pokemontcg.io/swsh8/220_hires.png",
+      "file": "assets/fusion-strike/253320.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "29c9d6b8914f7131798e5d543124f5aaeabf2638c983ad095c45c4600ab9d104"
+    },
+    {
+      "productId": "253322",
+      "number": "221/264",
+      "name": "Wooloo (221)",
+      "source_url": "https://images.pokemontcg.io/swsh8/221_hires.png",
+      "file": "assets/fusion-strike/253322.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "87175b87c0e8c8eddf424c68f0768bdf7a086abfc5275320ca4642aaf5f57207"
+    },
+    {
+      "productId": "253323",
+      "number": "222/264",
+      "name": "Wooloo (222)",
+      "source_url": "https://images.pokemontcg.io/swsh8/222_hires.png",
+      "file": "assets/fusion-strike/253323.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "aa8e666f53760439bd50554165f850996f9768cbaf50b17d4686e3cce91d7da2"
+    },
+    {
+      "productId": "253324",
+      "number": "223/264",
+      "name": "Dubwool",
+      "source_url": "https://images.pokemontcg.io/swsh8/223_hires.png",
+      "file": "assets/fusion-strike/253324.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "b3f386007fae62e058e6cf390a1144452e0194a9dcd0b264e05db16fcd5e8682"
+    },
+    {
+      "productId": "253089",
+      "number": "224/264",
+      "name": "Adventurer's Discovery",
+      "source_url": "https://images.pokemontcg.io/swsh8/224_hires.png",
+      "file": "assets/fusion-strike/253089.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "514d22e88d48ea672309c3d9137afb6753fad77983344cbd5c2b894c3a1a34b6"
+    },
+    {
+      "productId": "253091",
+      "number": "225/264",
+      "name": "Battle VIP Pass",
+      "source_url": "https://images.pokemontcg.io/swsh8/225_hires.png",
+      "file": "assets/fusion-strike/253091.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "37d28e0136ecbc760ee6418f1be40d67c508401148f763e082efaf1a9a650a7e"
+    },
+    {
+      "productId": "253093",
+      "number": "226/264",
+      "name": "Bug Catcher",
+      "source_url": "https://images.pokemontcg.io/swsh8/226_hires.png",
+      "file": "assets/fusion-strike/253093.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "ae6f5674ad0b2179dcb8e827085fac91d7a58a8cd57be42ddea6879c99210b48"
+    },
+    {
+      "productId": "253097",
+      "number": "227/264",
+      "name": "Chili & Cilan & Cress",
+      "source_url": "https://images.pokemontcg.io/swsh8/227_hires.png",
+      "file": "assets/fusion-strike/253097.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "393d0a8a5e1d4cf438ee152ef5af96899fd1766d3bfdb1ca1492af0c9c6c2fde"
+    },
+    {
+      "productId": "253099",
+      "number": "228/264",
+      "name": "Cook",
+      "source_url": "https://images.pokemontcg.io/swsh8/228_hires.png",
+      "file": "assets/fusion-strike/253099.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "8abb01e91545a069bf01180c4e2ebc9a78188b8636c342d2f833825e8bb8123c"
+    },
+    {
+      "productId": "253100",
+      "number": "229/264",
+      "name": "Cram-o-matic",
+      "source_url": "https://images.pokemontcg.io/swsh8/229_hires.png",
+      "file": "assets/fusion-strike/253100.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "f60f4ab9c8f8e50c8d6daf20540fff275c4e0bdfd45490c62786b7f28f7f67d7"
+    },
+    {
+      "productId": "253101",
+      "number": "230/264",
+      "name": "Cross Switcher",
+      "source_url": "https://images.pokemontcg.io/swsh8/230_hires.png",
+      "file": "assets/fusion-strike/253101.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "10f972258602ccb319ba81da643c0e6c6d0cad9b592fd17710d45e0dd936eb66"
+    },
+    {
+      "productId": "253103",
+      "number": "231/264",
+      "name": "Crossceiver",
+      "source_url": "https://images.pokemontcg.io/swsh8/231_hires.png",
+      "file": "assets/fusion-strike/253103.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "993372f5653c916b822250d33d9375437737069a079ec29208d829f06fdd8b5c"
+    },
+    {
+      "productId": "253104",
+      "number": "232/264",
+      "name": "Dancer",
+      "source_url": "https://images.pokemontcg.io/swsh8/232_hires.png",
+      "file": "assets/fusion-strike/253104.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "eff975860171b349db4da114904883dc68008d2d8ce3573134a6479aa8518d63"
+    },
+    {
+      "productId": "253106",
+      "number": "233/264",
+      "name": "Elesa's Sparkle",
+      "source_url": "https://images.pokemontcg.io/swsh8/233_hires.png",
+      "file": "assets/fusion-strike/253106.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "3cde27785c28fb1cc11971dfd1506d9dd4898d198d804762cad0be4e8149ede6"
+    },
+    {
+      "productId": "253107",
+      "number": "234/264",
+      "name": "Farewell Bell",
+      "source_url": "https://images.pokemontcg.io/swsh8/234_hires.png",
+      "file": "assets/fusion-strike/253107.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "c5e233f329b5307dd0749838171767a66c3d52d88ae72f70be9bee13210adb49"
+    },
+    {
+      "productId": "253110",
+      "number": "235/264",
+      "name": "Judge",
+      "source_url": "https://images.pokemontcg.io/swsh8/235_hires.png",
+      "file": "assets/fusion-strike/253110.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "3be3e359eded38e57e28f28aed09e5e343bbfc5f349c4fe87d51c89538eb2ee8"
+    },
+    {
+      "productId": "253111",
+      "number": "236/264",
+      "name": "Power Tablet",
+      "source_url": "https://images.pokemontcg.io/swsh8/236_hires.png",
+      "file": "assets/fusion-strike/253111.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "539947825f265c6f2ca57b93f23f781cd4317d5a33f0856c426ac9c7633ff4be"
+    },
+    {
+      "productId": "253112",
+      "number": "237/264",
+      "name": "Quick Ball",
+      "source_url": "https://images.pokemontcg.io/swsh8/237_hires.png",
+      "file": "assets/fusion-strike/253112.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "2908e7848aa275980f93a9077a68b0d884338c2f8b5b3b58d34d96c3de044c18"
+    },
+    {
+      "productId": "253114",
+      "number": "238/264",
+      "name": "Schoolboy",
+      "source_url": "https://images.pokemontcg.io/swsh8/238_hires.png",
+      "file": "assets/fusion-strike/253114.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "fa92600e53699010ca42c761f99ed850672fb9cde386dd0170f008f10082afd2"
+    },
+    {
+      "productId": "253116",
+      "number": "239/264",
+      "name": "Schoolgirl",
+      "source_url": "https://images.pokemontcg.io/swsh8/239_hires.png",
+      "file": "assets/fusion-strike/253116.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "748b49de581aaec302bbc8a0f7d961de7875f1b54d553ab044b1c530b70a9e5e"
+    },
+    {
+      "productId": "253117",
+      "number": "240/264",
+      "name": "Shauna",
+      "source_url": "https://images.pokemontcg.io/swsh8/240_hires.png",
+      "file": "assets/fusion-strike/253117.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "e09df3c4205abfe1fc32db71b912812b9317b8e58d5a580c2cce0b62986225bc"
+    },
+    {
+      "productId": "253119",
+      "number": "241/264",
+      "name": "Sidney",
+      "source_url": "https://images.pokemontcg.io/swsh8/241_hires.png",
+      "file": "assets/fusion-strike/253119.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "b994c38f06aa4fb9a566de86837f948ae941b0a482061b1da6aeaeabffca779b"
+    },
+    {
+      "productId": "253121",
+      "number": "242/264",
+      "name": "Skaters' Park",
+      "source_url": "https://images.pokemontcg.io/swsh8/242_hires.png",
+      "file": "assets/fusion-strike/253121.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "d08b6ecd34af6a47dc2b9ce445924426c47b5d3e7e7564c86ac5254d046fa940"
+    },
+    {
+      "productId": "253123",
+      "number": "243/264",
+      "name": "Spongy Gloves",
+      "source_url": "https://images.pokemontcg.io/swsh8/243_hires.png",
+      "file": "assets/fusion-strike/253123.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "8cf5ee5f8950518a86e00f91de03c244f940f086eb6d7bba439559e599abcf55"
+    },
+    {
+      "productId": "253127",
+      "number": "244/264",
+      "name": "Fusion Strike Energy",
+      "source_url": "https://images.pokemontcg.io/swsh8/244_hires.png",
+      "file": "assets/fusion-strike/253127.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "56cd07f1be2f19da822db872fc51c12259dcfd47cfc976e01eabd0268f84f1ca"
+    },
+    {
+      "productId": "253138",
+      "number": "245/264",
+      "name": "Celebi V (Alternate Full Art)",
+      "source_url": "https://images.pokemontcg.io/swsh8/245_hires.png",
+      "file": "assets/fusion-strike/253138.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "995719cf02e3f4d09aab7e968c5438ee8399c3e11eaccf1693b99290168e6648"
+    },
+    {
+      "productId": "253139",
+      "number": "246/264",
+      "name": "Tsareena V (Full Art)",
+      "source_url": "https://images.pokemontcg.io/swsh8/246_hires.png",
+      "file": "assets/fusion-strike/253139.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "c6f080e4b95f5d2956147be8ba1bfec65970c9db8d56f87cac8aa14756ba0fa7"
+    },
+    {
+      "productId": "253141",
+      "number": "247/264",
+      "name": "Chandelure V (Full Art)",
+      "source_url": "https://images.pokemontcg.io/swsh8/247_hires.png",
+      "file": "assets/fusion-strike/253141.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "9e7f5910fa3a6605e53129033cce43850e5970fba3c04423768662d5c4845706"
+    },
+    {
+      "productId": "253143",
+      "number": "248/264",
+      "name": "Crabominable V (Full Art)",
+      "source_url": "https://images.pokemontcg.io/swsh8/248_hires.png",
+      "file": "assets/fusion-strike/253143.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "fceb394a6aa6ea233da4f028da5d86684ea04f6ca02c6d6cfcfcf3449773b38d"
+    },
+    {
+      "productId": "253144",
+      "number": "249/264",
+      "name": "Boltund V (Full Art)",
+      "source_url": "https://images.pokemontcg.io/swsh8/249_hires.png",
+      "file": "assets/fusion-strike/253144.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "81a62683946031841b54f37210ea491212af4996ab50c5f759e604dabb9e35c9"
+    },
+    {
+      "productId": "253146",
+      "number": "250/264",
+      "name": "Mew V (Full Art)",
+      "source_url": "https://images.pokemontcg.io/swsh8/250_hires.png",
+      "file": "assets/fusion-strike/253146.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "91870618b38bfc81f6bf857c01e32a2c4ab2a820eaafb1ce8857c495d080050d"
+    },
+    {
+      "productId": "253147",
+      "number": "251/264",
+      "name": "Mew V (Alternate Full Art)",
+      "source_url": "https://images.pokemontcg.io/swsh8/251_hires.png",
+      "file": "assets/fusion-strike/253147.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "2ae846241afda070f55ddffa2d7583833e2621c7026356aeef65f8c7dae3afd2"
+    },
+    {
+      "productId": "253149",
+      "number": "252/264",
+      "name": "Sandaconda V (Alternate Full Art)",
+      "source_url": "https://images.pokemontcg.io/swsh8/252_hires.png",
+      "file": "assets/fusion-strike/253149.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "f69dc503da05d2658f1ed991637cc619c131df4f77212cab3801c06ec3c05691"
+    },
+    {
+      "productId": "253152",
+      "number": "253/264",
+      "name": "Hoopa V (Full Art)",
+      "source_url": "https://images.pokemontcg.io/swsh8/253_hires.png",
+      "file": "assets/fusion-strike/253152.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "91e400c86f454212419451e0b1c22f5649069215e976b6f4fc741bb51a97dc6b"
+    },
+    {
+      "productId": "253154",
+      "number": "254/264",
+      "name": "Genesect V (Full Art)",
+      "source_url": "https://images.pokemontcg.io/swsh8/254_hires.png",
+      "file": "assets/fusion-strike/253154.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "15aa5d56e1ffb16d6661c9c3d3f8b153cc1ffd4f2bc3cb053dccec29c5367eb4"
+    },
+    {
+      "productId": "253155",
+      "number": "255/264",
+      "name": "Genesect V (Alternate Full Art)",
+      "source_url": "https://images.pokemontcg.io/swsh8/255_hires.png",
+      "file": "assets/fusion-strike/253155.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "c18dcc7b8c32964a6d93b299f3907bf5eff24baaa58d57e4ecc7e3b3fbf91597"
+    },
+    {
+      "productId": "253156",
+      "number": "256/264",
+      "name": "Greedent V (Full Art)",
+      "source_url": "https://images.pokemontcg.io/swsh8/256_hires.png",
+      "file": "assets/fusion-strike/253156.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "75c09c0463f7d0a81dca0c89c6b7981c224d34a043916227a04d8070993f7e7b"
+    },
+    {
+      "productId": "253157",
+      "number": "257/264",
+      "name": "Greedent V (Alternate Full Art)",
+      "source_url": "https://images.pokemontcg.io/swsh8/257_hires.png",
+      "file": "assets/fusion-strike/253157.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "11c07b6fb78a9d89c198e408493e121c2d28f548f50bb4cd3302d6ae000e2fa1"
+    },
+    {
+      "productId": "253159",
+      "number": "258/264",
+      "name": "Chili & Cilan & Cress (Full Art)",
+      "source_url": "https://images.pokemontcg.io/swsh8/258_hires.png",
+      "file": "assets/fusion-strike/253159.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "fe065c6144ade1219ec16080f6db5efbf81eb444a519d5ecfc684794e4e1fbb2"
+    },
+    {
+      "productId": "253160",
+      "number": "259/264",
+      "name": "Dancer (Full Art)",
+      "source_url": "https://images.pokemontcg.io/swsh8/259_hires.png",
+      "file": "assets/fusion-strike/253160.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "356cfa75e1974ce2d81fb4af9ef5ac4f00367f1a45e9d0eb4c4370d55630603f"
+    },
+    {
+      "productId": "253161",
+      "number": "260/264",
+      "name": "Elesa's Sparkle (Full Art)",
+      "source_url": "https://images.pokemontcg.io/swsh8/260_hires.png",
+      "file": "assets/fusion-strike/253161.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "b800740f9d768aac7fd7f09eae4d0cd51d886db0abcfa539c914d2827cc176f6"
+    },
+    {
+      "productId": "253162",
+      "number": "261/264",
+      "name": "Schoolboy (Full Art)",
+      "source_url": "https://images.pokemontcg.io/swsh8/261_hires.png",
+      "file": "assets/fusion-strike/253162.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "3c1f03dcad8a68574b8e4773637567a5513e833530af25d5229fddd121fc982b"
+    },
+    {
+      "productId": "253163",
+      "number": "262/264",
+      "name": "Schoolgirl (Full Art)",
+      "source_url": "https://images.pokemontcg.io/swsh8/262_hires.png",
+      "file": "assets/fusion-strike/253163.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "eadc0ebff0c2896e6d11df5162f850809ff9c3920a66bbb0b3044fcd39005b33"
+    },
+    {
+      "productId": "253165",
+      "number": "263/264",
+      "name": "Shauna (Full Art)",
+      "source_url": "https://images.pokemontcg.io/swsh8/263_hires.png",
+      "file": "assets/fusion-strike/253165.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "19741cb3a38d2423cc5b5c7fb745aecf6ebb6867f744549028575bc364c49c65"
+    },
+    {
+      "productId": "253166",
+      "number": "264/264",
+      "name": "Sidney (Full Art)",
+      "source_url": "https://images.pokemontcg.io/swsh8/264_hires.png",
+      "file": "assets/fusion-strike/253166.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "c1a3a569d13d1106ecd14b3f8d4203c98cd3eef6522a70ab5bf9b1c8c8d38771"
+    },
+    {
+      "productId": "253167",
+      "number": "265/264",
+      "name": "Chandelure VMAX (Secret)",
+      "source_url": "https://images.pokemontcg.io/swsh8/265_hires.png",
+      "file": "assets/fusion-strike/253167.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "f148adc22a2bc65c61ba82fbaf65bdf23227c63cab3cee3df6bae8354cf75fb6"
+    },
+    {
+      "productId": "253171",
+      "number": "266/264",
+      "name": "Inteleon VMAX (Alternate Art Secret)",
+      "source_url": "https://images.pokemontcg.io/swsh8/266_hires.png",
+      "file": "assets/fusion-strike/253171.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "2bef76e273543d8cfa820a97555441ecc9e5e8f80736abab2e52209a9df210a3"
+    },
+    {
+      "productId": "253174",
+      "number": "267/264",
+      "name": "Boltund VMAX (Secret)",
+      "source_url": "https://images.pokemontcg.io/swsh8/267_hires.png",
+      "file": "assets/fusion-strike/253174.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "4d6e04034eabf7df7ee8b88251989488f22b11620fecebc9d4f021497b29653b"
+    },
+    {
+      "productId": "253176",
+      "number": "268/264",
+      "name": "Mew VMAX (Secret)",
+      "source_url": "https://images.pokemontcg.io/swsh8/268_hires.png",
+      "file": "assets/fusion-strike/253176.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "49a170e5da5fa439d5860ffc53dcc59edc73ba8e0d490e1b273a1ad2c244f383"
+    },
+    {
+      "productId": "253177",
+      "number": "269/264",
+      "name": "Mew VMAX (Alternate Art Secret)",
+      "source_url": "https://images.pokemontcg.io/swsh8/269_hires.png",
+      "file": "assets/fusion-strike/253177.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "5fc6cc670ae177090adddb639a50d48eb4e119b9e074dfa733a56505a59f90d3"
+    },
+    {
+      "productId": "253265",
+      "number": "270/264",
+      "name": "Espeon VMAX (Alternate Art Secret)",
+      "source_url": "https://images.pokemontcg.io/swsh8/270_hires.png",
+      "file": "assets/fusion-strike/253265.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "0d453b86de17229e4ac95353fae115b778eba41a2249499d5098b74248248eaa"
+    },
+    {
+      "productId": "253266",
+      "number": "271/264",
+      "name": "Gengar VMAX (Alternate Art Secret)",
+      "source_url": "https://images.pokemontcg.io/swsh8/271_hires.png",
+      "file": "assets/fusion-strike/253266.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "01648449d6d9e1a1d95db6d76f9eb857d4950b767e2a0ff44a52990288ecbc7d"
+    },
+    {
+      "productId": "253270",
+      "number": "272/264",
+      "name": "Greedent VMAX (Secret)",
+      "source_url": "https://images.pokemontcg.io/swsh8/272_hires.png",
+      "file": "assets/fusion-strike/253270.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "f70201c03812e8d18a96acf9fe318d4b1718d5a302e655fa2dcaa0cb3efc0d5f"
+    },
+    {
+      "productId": "253271",
+      "number": "273/264",
+      "name": "Chili & Cilan & Cress (Secret)",
+      "source_url": "https://images.pokemontcg.io/swsh8/273_hires.png",
+      "file": "assets/fusion-strike/253271.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "2f9db94939c7a02bf09600d2608aaa3375567fba41b6efb9bf4bf637b89f2baf"
+    },
+    {
+      "productId": "253272",
+      "number": "274/264",
+      "name": "Dancer (Secret)",
+      "source_url": "https://images.pokemontcg.io/swsh8/274_hires.png",
+      "file": "assets/fusion-strike/253272.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "cef7b2f5f16ab90b36697231ea5213a70ddf6fe3244f73628c925e9a77b672e0"
+    },
+    {
+      "productId": "253276",
+      "number": "275/264",
+      "name": "Elesa's Sparkle (Secret)",
+      "source_url": "https://images.pokemontcg.io/swsh8/275_hires.png",
+      "file": "assets/fusion-strike/253276.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "7c24f3d5493b8d38015351e55059e1381697daa815ddd08c3775d4e0f0cd7a80"
+    },
+    {
+      "productId": "253277",
+      "number": "276/264",
+      "name": "Schoolboy (Secret)",
+      "source_url": "https://images.pokemontcg.io/swsh8/276_hires.png",
+      "file": "assets/fusion-strike/253277.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "7c8d7d3f0fb67e9e21e95f4e1706d2b999b8546d20897decc7b18eb99fe86510"
+    },
+    {
+      "productId": "253279",
+      "number": "277/264",
+      "name": "Schoolgirl (Secret)",
+      "source_url": "https://images.pokemontcg.io/swsh8/277_hires.png",
+      "file": "assets/fusion-strike/253279.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "40cbeec890b4defd60196a9076e386f91102640b6aece09d6b868e48daececfc"
+    },
+    {
+      "productId": "253280",
+      "number": "278/264",
+      "name": "Shauna (Secret)",
+      "source_url": "https://images.pokemontcg.io/swsh8/278_hires.png",
+      "file": "assets/fusion-strike/253280.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "1395d6edb54e1c07c75050d6f4e5ee52a220a7ba1861fc7205e47683f5e79269"
+    },
+    {
+      "productId": "253281",
+      "number": "279/264",
+      "name": "Sidney (Secret)",
+      "source_url": "https://images.pokemontcg.io/swsh8/279_hires.png",
+      "file": "assets/fusion-strike/253281.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "c4c38d93dfdea76d8b736a23a16d416c26d1d540ea303259ee1060482f41ae55"
+    },
+    {
+      "productId": "253284",
+      "number": "280/264",
+      "name": "Flaaffy (Secret)",
+      "source_url": "https://images.pokemontcg.io/swsh8/280_hires.png",
+      "file": "assets/fusion-strike/253284.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "05d8079614f3e1d1751535570eb2638c51355ce03122ca69cd313cd642552804"
+    },
+    {
+      "productId": "253285",
+      "number": "281/264",
+      "name": "Power Tablet (Secret)",
+      "source_url": "https://images.pokemontcg.io/swsh8/281_hires.png",
+      "file": "assets/fusion-strike/253285.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "e9ab6b01647e5919b29a4c5d50ad4d86369b78f3d0addc199ba7f583bdb15c83"
+    },
+    {
+      "productId": "253286",
+      "number": "282/264",
+      "name": "Training Court (Secret)",
+      "source_url": "https://images.pokemontcg.io/swsh8/282_hires.png",
+      "file": "assets/fusion-strike/253286.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "088810c2e250373572bb49dd60387d40c3c44d342792ffe1cefa0988df82ec2c"
+    },
+    {
+      "productId": "253287",
+      "number": "283/264",
+      "name": "Grass Energy (Secret)",
+      "source_url": "https://images.pokemontcg.io/swsh8/283_hires.png",
+      "file": "assets/fusion-strike/253287.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "1cfff378fdb73b316f8c8f7618db0d1fc100f62750dcdaa9c0469343299e282c"
+    },
+    {
+      "productId": "253289",
+      "number": "284/264",
+      "name": "Fire Energy (Secret)",
+      "source_url": "https://images.pokemontcg.io/swsh8/284_hires.png",
+      "file": "assets/fusion-strike/253289.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "31e6764a135e05ca1bc939ff8c95605ba9c3527a67034d4d232c69a92ffbef5c"
+    }
+  ]
+}

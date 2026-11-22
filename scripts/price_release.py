@@ -1,4 +1,4 @@
-"""Rebuild the five public price snapshots from the daily market caches.
+"""Rebuild the public price snapshots from the daily market caches.
 
 The public-site job already fetches TCGCSV and writes
 data/market-cache/*-current.json. /prices/ pages render data/prices/<slug>.json.
@@ -19,6 +19,9 @@ SLUGS = (
     ('delta-reign', 'delta-reign'),
     ('sv-151', 'sv-151'),
     ('prismatic-evolutions', 'prismatic-evolutions'),
+    ('paldean-fates', 'paldean-fates'),
+    ('crown-zenith', 'crown-zenith'),
+    ('fusion-strike', 'fusion-strike'),
 )
 PRICE_SNAPSHOTS = tuple(f'data/prices/{slug}.json' for slug, _index in SLUGS)
 DAY = re.compile(r'\d{4}-\d{2}-\d{2}')
