@@ -14,7 +14,7 @@ import json
 import re
 import sys
 
-SET_INDEXES = ('delta-reign', 'sv-151', 'prismatic-evolutions')
+SET_INDEXES = ('delta-reign', 'sv-151', 'prismatic-evolutions', 'paldean-fates', 'crown-zenith', 'fusion-strike')
 
 
 def _cents(value):
@@ -79,7 +79,7 @@ def displayed_prices(root: Path) -> dict:
             return
         surfaces.setdefault(str(pid), {})[surface] = _cents(price)
 
-    for slug in ('thirtieth-anniversary', 'tcg-modern', 'delta-reign', 'sv-151', 'prismatic-evolutions'):
+    for slug in ('thirtieth-anniversary', 'tcg-modern', 'delta-reign', 'sv-151', 'prismatic-evolutions', 'paldean-fates', 'crown-zenith', 'fusion-strike'):
         snapshot = json.loads((root / 'data' / 'prices' / f'{slug}.json').read_text())
         for card in snapshot['cards']:
             put(card['tcgplayer_product_id'], f'price:{slug}', card.get('raw_price_usd'))

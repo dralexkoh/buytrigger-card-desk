@@ -211,6 +211,18 @@ test('Prismatic Evolutions index resolves to its own route',()=>{
   assert.deepEqual(A.resolveRoute('https://buytrigger.cards/index.html#prismatic-evolutions',config,data),expected);
   assert.deepEqual(A.resolveRoute(base+'prismatic-evolutions-index.html',config,data),expected);
 });
+test('Paldean Fates, Crown Zenith and Fusion Strike resolve to their own routes',()=>{
+  const data={articles:[]};
+  for(const [slug,title,indexTitle] of [
+    ['paldean-fates','Paldean Fates raw prices','Paldean Fates Index'],
+    ['crown-zenith','Crown Zenith raw prices','Crown Zenith Index'],
+    ['fusion-strike','Fusion Strike raw prices','Fusion Strike Index'],
+  ]){
+    assert.deepEqual(A.resolveRoute('https://buytrigger.cards/prices/'+slug+'/',config,data),{id:'prices:'+slug,url:'/prices/'+slug+'/',title});
+    assert.deepEqual(A.resolveRoute('https://buytrigger.cards/'+slug+'-index.html',config,data),{id:slug,url:'/'+slug,title:indexTitle});
+    assert.deepEqual(A.resolveRoute('https://buytrigger.cards/index.html#'+slug,config,data),{id:slug,url:'/'+slug,title:indexTitle});
+  }
+});
 test('reddit, discord, substack and embed are accepted campaign sources; an unlisted source is dropped',()=>{
   for (const source of ['reddit','discord','substack','embed']) {
     const {out,controller:c}=controller('index.html?utm_source='+source+'&utm_medium=social&utm_campaign=launch_2026_11');

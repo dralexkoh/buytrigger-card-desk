@@ -1,0 +1,2459 @@
+{
+  "purpose": "Official Paldean Fates card images for the buytrigger.cards set tracker.",
+  "credit": "Card image: The Pokémon Company / pokemon.com",
+  "rights": "Card artwork © The Pokémon Company / Nintendo / Creatures / GAME FREAK. Images retrieved from images.pokemontcg.io.",
+  "processed": "Downloaded the official scan and resized it to 200px wide JPEG. No artwork was redrawn or generated.",
+  "release": "2026-11-21",
+  "cards": [
+    {
+      "productId": "534132",
+      "number": "001/091",
+      "name": "Pineco - 001/091",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/1_hires.png",
+      "file": "assets/paldean-fates/534132.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "5a11f2ba0922da76ddbe93f8ecb1466abb8c919c97899be8c7f85cbd05e96737"
+    },
+    {
+      "productId": "534133",
+      "number": "002/091",
+      "name": "Forretress ex - 002/091",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/2_hires.png",
+      "file": "assets/paldean-fates/534133.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "442c3e23f2e35d5a60ad868df46c2cd7fe3961bb4407b561f36c7fe2512f45df"
+    },
+    {
+      "productId": "534136",
+      "number": "003/091",
+      "name": "Maractus",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/3_hires.png",
+      "file": "assets/paldean-fates/534136.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "de8e1fab45f99bee6384d7e9e8df3850af35f720136f72d877cc459ac1923109"
+    },
+    {
+      "productId": "534137",
+      "number": "004/091",
+      "name": "Toedscool - 004/091",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/4_hires.png",
+      "file": "assets/paldean-fates/534137.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "7d6745ea53293b41f920b758efc029c263c25577de6f2d1b041c94e67bc311dd"
+    },
+    {
+      "productId": "534139",
+      "number": "005/091",
+      "name": "Toedscruel ex - 005/091",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/5_hires.png",
+      "file": "assets/paldean-fates/534139.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "99873e21830675bde7dfb4ab1c734bf432ebe8d58c84493a83abb94387a220df"
+    },
+    {
+      "productId": "534140",
+      "number": "006/091",
+      "name": "Espathra ex - 006/091",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/6_hires.png",
+      "file": "assets/paldean-fates/534140.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "3d643de102bb9b20dca06bd5964f905bf7219beaa823bbe3c938106fa0d75d4a"
+    },
+    {
+      "productId": "534142",
+      "number": "007/091",
+      "name": "Charmander - 007/091",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/7_hires.png",
+      "file": "assets/paldean-fates/534142.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "efa3d1628c516a571116de9f14fc154e95cf657e00d86554b5ad9957decacd00"
+    },
+    {
+      "productId": "534143",
+      "number": "008/091",
+      "name": "Charmeleon - 008/091",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/8_hires.png",
+      "file": "assets/paldean-fates/534143.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "157736b90c98f23fa5afd71bf7a761a3c98ee92268d04bf65d7a8a58e16b475d"
+    },
+    {
+      "productId": "534149",
+      "number": "009/091",
+      "name": "Magmar",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/9_hires.png",
+      "file": "assets/paldean-fates/534149.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "5d5db7279639886fdb59da9a59e205f706f39b3607f59a2d5816d20a79b51370"
+    },
+    {
+      "productId": "534150",
+      "number": "010/091",
+      "name": "Magmortar",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/10_hires.png",
+      "file": "assets/paldean-fates/534150.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "3d95bb177ecf5f3f1b36ba04e38dfc6861e6d59311dd73fa4cdddc006ac23888"
+    },
+    {
+      "productId": "534152",
+      "number": "011/091",
+      "name": "Numel",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/11_hires.png",
+      "file": "assets/paldean-fates/534152.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "47e9caf3905c8e18161184b2451684983163e23c8bea460d2b33011661b688c8"
+    },
+    {
+      "productId": "534153",
+      "number": "012/091",
+      "name": "Camerupt",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/12_hires.png",
+      "file": "assets/paldean-fates/534153.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "1f65f8d9af3303241acdad7945a9bc06c2d94b0f1cc2e0afb7920188d313a1e9"
+    },
+    {
+      "productId": "534154",
+      "number": "013/091",
+      "name": "Heat Rotom",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/13_hires.png",
+      "file": "assets/paldean-fates/534154.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "0cd8f5d5e8c00ffd91f9978b220f6301bbd246cab5416d36caca2076ee422019"
+    },
+    {
+      "productId": "534155",
+      "number": "014/091",
+      "name": "Charcadet - 014/091",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/14_hires.png",
+      "file": "assets/paldean-fates/534155.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "f370312e409e493592e4b51413ed0ca28c79d2fb82032b05b9756e358fbd310a"
+    },
+    {
+      "productId": "534156",
+      "number": "015/091",
+      "name": "Armarouge - 015/091",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/15_hires.png",
+      "file": "assets/paldean-fates/534156.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "60a740d43838b95b394f20601259762c2a56e11371f6755d03404d766724d9a6"
+    },
+    {
+      "productId": "534158",
+      "number": "016/091",
+      "name": "Lapras",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/16_hires.png",
+      "file": "assets/paldean-fates/534158.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "a87cb014887da1f2bf1cbba3111bc22b98ec911ab5de37cb1d5701fd1d31a8ed"
+    },
+    {
+      "productId": "534161",
+      "number": "017/091",
+      "name": "Frigibax - 017/091",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/17_hires.png",
+      "file": "assets/paldean-fates/534161.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "98ebfd95f4bd98dd5f80b5571a772a2a712fc13b4a0b195cbc126bdfbf61058d"
+    },
+    {
+      "productId": "534163",
+      "number": "018/091",
+      "name": "Pikachu - 018/091",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/18_hires.png",
+      "file": "assets/paldean-fates/534163.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "f7c4de4fc45a36328105df9b3b1de4415b1439631429ad54a40cc8562e25eb45"
+    },
+    {
+      "productId": "534165",
+      "number": "019/091",
+      "name": "Raichu - 019/091",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/19_hires.png",
+      "file": "assets/paldean-fates/534165.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "9528958e9ba405209a2273e3f3d84e38c114e3a9d8761d860d156f94d81dbbad"
+    },
+    {
+      "productId": "534166",
+      "number": "020/091",
+      "name": "Chinchou",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/20_hires.png",
+      "file": "assets/paldean-fates/534166.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "58a288ec6e8fd6168b43b904f01c9cd40813ce6a75fa8af3762b6c395287656c"
+    },
+    {
+      "productId": "534167",
+      "number": "021/091",
+      "name": "Lanturn",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/21_hires.png",
+      "file": "assets/paldean-fates/534167.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "38ce49783e18a07e287de7bd2539b5e3a5273efa9931b2af6388d4ccdfe5c827"
+    },
+    {
+      "productId": "534168",
+      "number": "022/091",
+      "name": "Kilowattrel - 022/091",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/22_hires.png",
+      "file": "assets/paldean-fates/534168.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "8aeed9d3d496f6127f03e174b3a60d15115dbb91c7953c50f8164793faecec85"
+    },
+    {
+      "productId": "534169",
+      "number": "023/091",
+      "name": "Exeggcute",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/23_hires.png",
+      "file": "assets/paldean-fates/534169.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "93fcd815fc70387acd862c5fac1c42587eccd4aade2e2aab9a15b9c3b2c0c64b"
+    },
+    {
+      "productId": "534170",
+      "number": "024/091",
+      "name": "Exeggutor",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/24_hires.png",
+      "file": "assets/paldean-fates/534170.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "13d7c33a13c498aaa61b2af72b46e459daaf1e118b4f0ce4c2362de6b361f180"
+    },
+    {
+      "productId": "535993",
+      "number": "025/091",
+      "name": "Natu - 025/091",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/25_hires.png",
+      "file": "assets/paldean-fates/535993.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "fff438b57ad6c55347e25d4fec01952e7b3b0779a532130e8edd2bf13e41bea1"
+    },
+    {
+      "productId": "534171",
+      "number": "026/091",
+      "name": "Xatu - 026/091",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/26_hires.png",
+      "file": "assets/paldean-fates/534171.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "a64df9ae0610ea6e9892c14c7a909c395cbe39b68162474533fa1a098fb95559"
+    },
+    {
+      "productId": "534173",
+      "number": "027/091",
+      "name": "Ralts - 027/091",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/27_hires.png",
+      "file": "assets/paldean-fates/534173.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "53476e86ea373d1797ff79ecafb10bf7766602c517d947536ad8ade8f73286f0"
+    },
+    {
+      "productId": "534174",
+      "number": "028/091",
+      "name": "Kirlia - 028/091",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/28_hires.png",
+      "file": "assets/paldean-fates/534174.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "fdcdbea21964e63dda7955ef591a8a9ef929ca9912399c21ceacbaa5235e748d"
+    },
+    {
+      "productId": "534175",
+      "number": "029/091",
+      "name": "Gardevoir ex - 029/091",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/29_hires.png",
+      "file": "assets/paldean-fates/534175.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "dbcdca971df0491a3ef9da0e5c363c0888cd683dea393bfd8ffa1bc5ba6e011b"
+    },
+    {
+      "productId": "534176",
+      "number": "030/091",
+      "name": "Chimecho",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/30_hires.png",
+      "file": "assets/paldean-fates/534176.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "7b0f21e2706307211a0ebc81b0c28ae5fc078e63e2b1ab808a1da5cd6d4d8320"
+    },
+    {
+      "productId": "534177",
+      "number": "031/091",
+      "name": "Mime Jr. - 031/091",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/31_hires.png",
+      "file": "assets/paldean-fates/534177.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "250ed92a506ae839efb9a5cfb6d6a77b71d0294aa872c6aa7dcd4d1a57f0e078"
+    },
+    {
+      "productId": "534178",
+      "number": "032/091",
+      "name": "Woobat",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/32_hires.png",
+      "file": "assets/paldean-fates/534178.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "c0c5cb40c8325df9281ac82e920910decf0b9482680e2539464b6c60bbf2aafe"
+    },
+    {
+      "productId": "534179",
+      "number": "033/091",
+      "name": "Swoobat",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/33_hires.png",
+      "file": "assets/paldean-fates/534179.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "d4fd3ce93ed0279edcdbe944323962c556e2c0394206ee8c01b7bff6f9052054"
+    },
+    {
+      "productId": "534180",
+      "number": "034/091",
+      "name": "Cottonee",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/34_hires.png",
+      "file": "assets/paldean-fates/534180.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "37242ee0bbea9534ef839392b0c33d36e34926cfaf080bf92991f8218293a7ef"
+    },
+    {
+      "productId": "534181",
+      "number": "035/091",
+      "name": "Whimsicott",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/35_hires.png",
+      "file": "assets/paldean-fates/534181.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "2173e5382fadf95c5a4a74e6003f5867087aafa05d29e571210e9fc205836859"
+    },
+    {
+      "productId": "534182",
+      "number": "036/091",
+      "name": "Dedenne",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/36_hires.png",
+      "file": "assets/paldean-fates/534182.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "7335b042ef0aeafab5dd62e249c504465c44b2b9128c4b531255eae6c9f4687b"
+    },
+    {
+      "productId": "534183",
+      "number": "037/091",
+      "name": "Mimikyu - 037/091",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/37_hires.png",
+      "file": "assets/paldean-fates/534183.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "82485170ccf72a265ac4eeebe7a3a740f115a51f6ae1fa43c8fde23fdb5000dd"
+    },
+    {
+      "productId": "534184",
+      "number": "038/091",
+      "name": "Fidough",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/38_hires.png",
+      "file": "assets/paldean-fates/534184.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "f0b66be5e33d0f0f538a1912984a8114f9f023f5ac83809545e89442d14e8b8b"
+    },
+    {
+      "productId": "534185",
+      "number": "039/091",
+      "name": "Dachsbun - 039/091",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/39_hires.png",
+      "file": "assets/paldean-fates/534185.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "db4b1d6169fd96e8dd13a3806e3e8f00e34772e9bef09b483937a4d4e3abfc2f"
+    },
+    {
+      "productId": "534186",
+      "number": "040/091",
+      "name": "Ceruledge - 040/091",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/40_hires.png",
+      "file": "assets/paldean-fates/534186.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "d3a6fc3c0f4c7825c108cbb2078312f9492eab63d64715f9f5825a6d46e4c0c6"
+    },
+    {
+      "productId": "534187",
+      "number": "041/091",
+      "name": "Flittle - 041/091",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/41_hires.png",
+      "file": "assets/paldean-fates/534187.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "020639552920caf25b66f21ff1cf0f023ad53dbb21ca4d1c621dbc71d3cc94b8"
+    },
+    {
+      "productId": "534188",
+      "number": "042/091",
+      "name": "Greavard",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/42_hires.png",
+      "file": "assets/paldean-fates/534188.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "76f4b7a152b582463515030e3f6ac33b1839f161f7d7e3194544b041d29982da"
+    },
+    {
+      "productId": "534190",
+      "number": "043/091",
+      "name": "Houndstone - 043/091",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/43_hires.png",
+      "file": "assets/paldean-fates/534190.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "3118da40a915d18f857b2cca82502a76436e8dc18ba45b956ee9ceb677335b75"
+    },
+    {
+      "productId": "534191",
+      "number": "044/091",
+      "name": "Gimmighoul",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/44_hires.png",
+      "file": "assets/paldean-fates/534191.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "81646a8573f4946986314109127730ab03192f131e70cd6dee08aa350387ed7e"
+    },
+    {
+      "productId": "534192",
+      "number": "045/091",
+      "name": "Mankey - 045/091",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/45_hires.png",
+      "file": "assets/paldean-fates/534192.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "805da8b23cbdbf4f85214a557000cf60e271983e7e9a6ece265f0a52bef02767"
+    },
+    {
+      "productId": "534194",
+      "number": "046/091",
+      "name": "Primeape - 046/091",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/46_hires.png",
+      "file": "assets/paldean-fates/534194.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "06cdeff9d215ed418fa691ee60518c5deefd1cbe4eb9bb6b56aaf7d155dbe78d"
+    },
+    {
+      "productId": "534197",
+      "number": "047/091",
+      "name": "Annihilape - 047/091",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/47_hires.png",
+      "file": "assets/paldean-fates/534197.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "17b906287e8f69b16673a888d4edbd4c6be00d74899d7e31102e4844251ae86f"
+    },
+    {
+      "productId": "534198",
+      "number": "048/091",
+      "name": "Phanpy",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/48_hires.png",
+      "file": "assets/paldean-fates/534198.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "a9f24980993a7d17397a770c4dc16af39ab02ef43ec277e9bc2d91c3c16bca99"
+    },
+    {
+      "productId": "534210",
+      "number": "049/091",
+      "name": "Donphan",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/49_hires.png",
+      "file": "assets/paldean-fates/534210.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "9f4931a377d39f46c343269c73453bc02b583c438ad5eec10c136188ab344b80"
+    },
+    {
+      "productId": "534211",
+      "number": "050/091",
+      "name": "Barboach",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/50_hires.png",
+      "file": "assets/paldean-fates/534211.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "9f872de3733c4f142733cdf73213c73e1b062b3fa3c602d0e98f83fd60df93de"
+    },
+    {
+      "productId": "534387",
+      "number": "051/091",
+      "name": "Clobbopus",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/51_hires.png",
+      "file": "assets/paldean-fates/534387.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "52f7044ba004ca39bea398d4b6cd88c576309dd9354df47ad71b16cabf25d06a"
+    },
+    {
+      "productId": "534414",
+      "number": "052/091",
+      "name": "Grapploct",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/52_hires.png",
+      "file": "assets/paldean-fates/534414.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "48de018f9b5f40895ecc3614261739e6aa82988607419ef981624978d242f264"
+    },
+    {
+      "productId": "534415",
+      "number": "053/091",
+      "name": "Great Tusk ex",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/53_hires.png",
+      "file": "assets/paldean-fates/534415.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "279f474f18733186a8ada2cdfc2a71a7b107a593568037680cdead356e8639d4"
+    },
+    {
+      "productId": "534416",
+      "number": "054/091",
+      "name": "Charizard ex - 054/091",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/54_hires.png",
+      "file": "assets/paldean-fates/534416.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "4666c75141cf201c445f3e9f8942973d226de1d66fad31d7a22e03715dd678f9"
+    },
+    {
+      "productId": "534417",
+      "number": "055/091",
+      "name": "Gastly",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/55_hires.png",
+      "file": "assets/paldean-fates/534417.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "2e7c18fbee2965d2cff9ad816047e2c7085015b0b98bcfd152ce1db31ec339e5"
+    },
+    {
+      "productId": "534418",
+      "number": "056/091",
+      "name": "Haunter",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/56_hires.png",
+      "file": "assets/paldean-fates/534418.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "c323547f89bbf6351443f87e8b1191694a320c403c54709dd77b6c8fe300c21d"
+    },
+    {
+      "productId": "534419",
+      "number": "057/091",
+      "name": "Gengar",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/57_hires.png",
+      "file": "assets/paldean-fates/534419.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "15111228a2c125f7f485d6ee74c66db07e6c124921b73938a514a78ad2809551"
+    },
+    {
+      "productId": "534420",
+      "number": "058/091",
+      "name": "Paldean Wooper - 058/091",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/58_hires.png",
+      "file": "assets/paldean-fates/534420.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "76a7d9991ee707f1ecddc14676d1640aaa1a2d479dea680f1bffa76b35312a1a"
+    },
+    {
+      "productId": "534421",
+      "number": "059/091",
+      "name": "Paldean Clodsire ex - 059/091",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/59_hires.png",
+      "file": "assets/paldean-fates/534421.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "e985e55afc56e1a8bad7d989b8f0ba2142062cdf5a1a48c6738e76e9b60ec76e"
+    },
+    {
+      "productId": "534422",
+      "number": "060/091",
+      "name": "Scraggy",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/60_hires.png",
+      "file": "assets/paldean-fates/534422.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "cd35bf952f0ceaac582247b6e6fd346a3abcc49dd0e673c593463589bce1f365"
+    },
+    {
+      "productId": "534423",
+      "number": "061/091",
+      "name": "Scrafty",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/61_hires.png",
+      "file": "assets/paldean-fates/534423.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "c2755a0d016c20e3ce62c4582e16fee53fce706abe63c7a2ce5e34cc53332d24"
+    },
+    {
+      "productId": "534424",
+      "number": "062/091",
+      "name": "Maschiff",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/62_hires.png",
+      "file": "assets/paldean-fates/534424.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "1c73ad98402743d355c042b8630c432f1fe843c50566904369bca8cbdda1aee6"
+    },
+    {
+      "productId": "534425",
+      "number": "063/091",
+      "name": "Mabosstiff - 063/091",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/63_hires.png",
+      "file": "assets/paldean-fates/534425.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "b7cd6df7cdb645c2c476a1b5ce36a6968f7a86bf8cdf59d22bb05b4f7b44c8a0"
+    },
+    {
+      "productId": "534426",
+      "number": "064/091",
+      "name": "Varoom - 064/091",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/64_hires.png",
+      "file": "assets/paldean-fates/534426.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "519da9e07f92df3ae7798709e4a64922fd83ea241bf27d4bf2f10f373b9a3556"
+    },
+    {
+      "productId": "534427",
+      "number": "065/091",
+      "name": "Revavroom - 065/091",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/65_hires.png",
+      "file": "assets/paldean-fates/534427.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "104f17df97a8c70d42273a4e0df28794af254af417313cd0ebace1e7053b1a09"
+    },
+    {
+      "productId": "534428",
+      "number": "066/091",
+      "name": "Iron Treads ex",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/66_hires.png",
+      "file": "assets/paldean-fates/534428.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "b0b5e2629e2563b946f668237170d8c2e70517d5e500e5735700000b6e1e6071"
+    },
+    {
+      "productId": "534429",
+      "number": "067/091",
+      "name": "Gholdengo",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/67_hires.png",
+      "file": "assets/paldean-fates/534429.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "44a271c1a08e5202adf239316c54101d288f63fc6a5b5489b12b47f25635c4e5"
+    },
+    {
+      "productId": "534430",
+      "number": "068/091",
+      "name": "Noibat - 068/091",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/68_hires.png",
+      "file": "assets/paldean-fates/534430.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "4f204da49058cedff5d473a234c9c3f85df1bf3a533eb4eb5ce7fe4779a854ef"
+    },
+    {
+      "productId": "534431",
+      "number": "069/091",
+      "name": "Noivern ex - 069/091",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/69_hires.png",
+      "file": "assets/paldean-fates/534431.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "beb9d0804ed3fe70238869580e2622875600d715c4f4bc552929110ba36dd23d"
+    },
+    {
+      "productId": "534432",
+      "number": "070/091",
+      "name": "Cyclizar - 070/091",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/70_hires.png",
+      "file": "assets/paldean-fates/534432.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "2956a07429a5ed183293f2c3d313a88f7921e9c09ef488e7b6613c6faf4da3fc"
+    },
+    {
+      "productId": "534433",
+      "number": "071/091",
+      "name": "Lechonk - 071/091",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/71_hires.png",
+      "file": "assets/paldean-fates/534433.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "4bca34b261c0ad05213c71578cda08c0b4bdcea5b165e2f0185a7c826ccd7cf2"
+    },
+    {
+      "productId": "534434",
+      "number": "072/091",
+      "name": "Oinkologne",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/72_hires.png",
+      "file": "assets/paldean-fates/534434.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "882a37c69821706ee8b231cd4b3ff0b91e81f4b0f895c12991c6baf92ec6e68d"
+    },
+    {
+      "productId": "534435",
+      "number": "073/091",
+      "name": "Tandemaus - 073/091",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/73_hires.png",
+      "file": "assets/paldean-fates/534435.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "c0e211ae614a86b7b3402677c9a4c0abbf1116fa3fd6bd31047371553b6ec410"
+    },
+    {
+      "productId": "534436",
+      "number": "074/091",
+      "name": "Maushold - 074/091",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/74_hires.png",
+      "file": "assets/paldean-fates/534436.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "b8fde9de094e939cb3b011ff2271679e446d6880c142cf0292ab7c9d493a2826"
+    },
+    {
+      "productId": "534437",
+      "number": "075/091",
+      "name": "Squawkabilly ex - 075/091",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/75_hires.png",
+      "file": "assets/paldean-fates/534437.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "8bdd44bdb6b2210fc87dd21a38d5b1f72e0087930db73f5a24b284962171a465"
+    },
+    {
+      "productId": "534438",
+      "number": "076/091",
+      "name": "Artazon",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/76_hires.png",
+      "file": "assets/paldean-fates/534438.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "6a76298b88457cb21e13e1c3a6e33c043cb7ca235ce09e707cb7d636224edf4d"
+    },
+    {
+      "productId": "534439",
+      "number": "077/091",
+      "name": "Atticus",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/77_hires.png",
+      "file": "assets/paldean-fates/534439.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "8a4c6c88c4fd474d71b1f58914523d839a392592673c7b124c09164b2a0e0f6a"
+    },
+    {
+      "productId": "534440",
+      "number": "078/091",
+      "name": "Clive - 078/091",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/78_hires.png",
+      "file": "assets/paldean-fates/534440.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "da951249a34a8aa2a438a53152e2583dd34da298671c1fc7c7920aeb54ebd1d0"
+    },
+    {
+      "productId": "534441",
+      "number": "079/091",
+      "name": "Electric Generator",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/79_hires.png",
+      "file": "assets/paldean-fates/534441.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "3d152a85fa30962136c7f0c8490be0ded04425fffc1b31d39918111d5ced2f2f"
+    },
+    {
+      "productId": "534442",
+      "number": "080/091",
+      "name": "Iono - 080/091",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/80_hires.png",
+      "file": "assets/paldean-fates/534442.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "1f0d7105b5423a320f69916e531447a792337455b93e362f1bc1db960f212042"
+    },
+    {
+      "productId": "534443",
+      "number": "081/091",
+      "name": "Moonlit Hill",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/81_hires.png",
+      "file": "assets/paldean-fates/534443.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "089b9ba0669c616d30dd4b1ab83baf1f3b735d439cec796d4c0db516ab4fc78d"
+    },
+    {
+      "productId": "534444",
+      "number": "082/091",
+      "name": "Nemona - 082/091",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/82_hires.png",
+      "file": "assets/paldean-fates/534444.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "63b7862d15e1b63dcda1eabae687ddf8a1d1f98fcdab5ad851cf783c767a4e37"
+    },
+    {
+      "productId": "534445",
+      "number": "083/091",
+      "name": "Nemona's Backpack",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/83_hires.png",
+      "file": "assets/paldean-fates/534445.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "829c052e3ec4a759099078a83e23a242c5a424a3c196f231ac2f0ed9f2ee6b6e"
+    },
+    {
+      "productId": "534446",
+      "number": "084/091",
+      "name": "Nest Ball",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/84_hires.png",
+      "file": "assets/paldean-fates/534446.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "c693adefbf2ef0c28c987ebe9f0480ad43b6a74b0893e016099436456a0a7cba"
+    },
+    {
+      "productId": "534447",
+      "number": "085/091",
+      "name": "Paldean Student - 085/091",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/85_hires.png",
+      "file": "assets/paldean-fates/534447.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "9be073855ee02cd052dedcc98577a6742eba1544c5fa5b9d09d79ec0e221e8d7"
+    },
+    {
+      "productId": "534448",
+      "number": "086/091",
+      "name": "Paldean Student - 086/091",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/86_hires.png",
+      "file": "assets/paldean-fates/534448.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "f6fe4c4bb464ee4ab1eb812dd324a953bc48d31db4def3ac6fd09c47be955676"
+    },
+    {
+      "productId": "534449",
+      "number": "087/091",
+      "name": "Professor's Research [Professor Sada] - 087/091",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/87_hires.png",
+      "file": "assets/paldean-fates/534449.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "14578e923b683f13f0508db471ce60f4d42443118b0260343a3fff7eff83924a"
+    },
+    {
+      "productId": "534450",
+      "number": "088/091",
+      "name": "Professor's Research [Professor Turo] - 088/091",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/88_hires.png",
+      "file": "assets/paldean-fates/534450.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "484b30b71c8a5ef46716b687990e455fac74c8c9418f3064092acc07be778ca0"
+    },
+    {
+      "productId": "534451",
+      "number": "089/091",
+      "name": "Rare Candy",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/89_hires.png",
+      "file": "assets/paldean-fates/534451.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "a3532913571f1e973f6fe00fb25265c5bb94276f1d5670620178ef470065ac13"
+    },
+    {
+      "productId": "534452",
+      "number": "090/091",
+      "name": "Technical Machine: Crisis Punch",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/90_hires.png",
+      "file": "assets/paldean-fates/534452.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "0ec2249d5144a41ebeb04f16e3d0c847deb0b6e5ec87864864fc33c329208742"
+    },
+    {
+      "productId": "534453",
+      "number": "091/091",
+      "name": "Ultra Ball",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/91_hires.png",
+      "file": "assets/paldean-fates/534453.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "69a7bd4e9cf71223127f7fa7e910ac16f224555a08d1757859efb9d7eb05795e"
+    },
+    {
+      "productId": "534459",
+      "number": "092/091",
+      "name": "Oddish",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/92_hires.png",
+      "file": "assets/paldean-fates/534459.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "f5c577605ad259beec7e108faacafd146089e0d4dac18e114ee022a0ca71b24b"
+    },
+    {
+      "productId": "534460",
+      "number": "093/091",
+      "name": "Gloom",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/93_hires.png",
+      "file": "assets/paldean-fates/534460.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "13d451546d7d8380dbfb19379a617facc3b84ae4a518414c097ccc3a117a044e"
+    },
+    {
+      "productId": "534462",
+      "number": "094/091",
+      "name": "Vileplume",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/94_hires.png",
+      "file": "assets/paldean-fates/534462.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "50e1ec52d0dc820349efbe0ed112980aea7e072f255a3abc515f74eaa74d02c1"
+    },
+    {
+      "productId": "534463",
+      "number": "095/091",
+      "name": "Scyther",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/95_hires.png",
+      "file": "assets/paldean-fates/534463.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "85dbf3964c91325182628cbc35fa2887703b29b688e27ed885dcf259d080969c"
+    },
+    {
+      "productId": "534465",
+      "number": "096/091",
+      "name": "Hoppip",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/96_hires.png",
+      "file": "assets/paldean-fates/534465.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "a6c85c4fee7e28e23235352217c07e98773bcfae689681a102d65d2d1b5e0a36"
+    },
+    {
+      "productId": "534466",
+      "number": "097/091",
+      "name": "Skiploom",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/97_hires.png",
+      "file": "assets/paldean-fates/534466.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "d2eafad6667bfeb3e371241553227a9bd387132c3ba6e43eff828006282e8ac7"
+    },
+    {
+      "productId": "534469",
+      "number": "098/091",
+      "name": "Jumpluff",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/98_hires.png",
+      "file": "assets/paldean-fates/534469.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "b15d43d75a2c424b34b6332de00718d17c96a56fbbdc6618576207219fe6036c"
+    },
+    {
+      "productId": "534470",
+      "number": "099/091",
+      "name": "Pineco - 099/091",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/99_hires.png",
+      "file": "assets/paldean-fates/534470.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "cf1a78bce403a31c7488a42d4081107855d89bf21b59d9c718126f41d4445cc1"
+    },
+    {
+      "productId": "534471",
+      "number": "100/091",
+      "name": "Snover",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/100_hires.png",
+      "file": "assets/paldean-fates/534471.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "9d1ffaeeea9def4624a79f55f572afefe491057e4cd29ca3a110525d8ea585ae"
+    },
+    {
+      "productId": "534472",
+      "number": "101/091",
+      "name": "Abomasnow",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/101_hires.png",
+      "file": "assets/paldean-fates/534472.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "46da96092051e341ea71bc1c4775aa2b95cded253cdeb797f2f30d4b4eb4197a"
+    },
+    {
+      "productId": "534473",
+      "number": "102/091",
+      "name": "Smoliv",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/102_hires.png",
+      "file": "assets/paldean-fates/534473.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "1b307a9bfb8b741db05ab6623b77a0b1e44dc988b033f14c923a8f25e26ba1f5"
+    },
+    {
+      "productId": "534475",
+      "number": "103/091",
+      "name": "Dolliv",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/103_hires.png",
+      "file": "assets/paldean-fates/534475.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "8d1bf9dbc38795af99ccf961285d2206933d82e12e785396923e02821f27434e"
+    },
+    {
+      "productId": "534476",
+      "number": "104/091",
+      "name": "Arboliva",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/104_hires.png",
+      "file": "assets/paldean-fates/534476.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "b49a397416aae1f288200856971f39e99b54868a293e1121215669ff40bd6a54"
+    },
+    {
+      "productId": "534478",
+      "number": "105/091",
+      "name": "Toedscool - 105/091",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/105_hires.png",
+      "file": "assets/paldean-fates/534478.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "4fd71f1241c53db717c5aa9f6ec66dd0c0fea0a26e8e2929e5a90adf04ac9fd8"
+    },
+    {
+      "productId": "534479",
+      "number": "106/091",
+      "name": "Capsakid",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/106_hires.png",
+      "file": "assets/paldean-fates/534479.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "01aa2d523ce82063b9e60373ee9e43d1e672a161bbffe03daab4fc884875c887"
+    },
+    {
+      "productId": "534481",
+      "number": "107/091",
+      "name": "Scovillain",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/107_hires.png",
+      "file": "assets/paldean-fates/534481.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "d45dae08a30063a60cff840393c7a1c077c6bd32522dd985fe234b5d22bf7eee"
+    },
+    {
+      "productId": "534482",
+      "number": "108/091",
+      "name": "Rellor",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/108_hires.png",
+      "file": "assets/paldean-fates/534482.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "ffb005408b6b72deb39fd766eb3ef0e7c381d80ff51cbdfc787aff61c2259f2e"
+    },
+    {
+      "productId": "534483",
+      "number": "109/091",
+      "name": "Charmander - 109/091",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/109_hires.png",
+      "file": "assets/paldean-fates/534483.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "f1d3bd55f68ec170dbcdd4ddfd7d9a6037391b85ac034c24b2ff9d92c93e842b"
+    },
+    {
+      "productId": "534484",
+      "number": "110/091",
+      "name": "Charmeleon - 110/091",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/110_hires.png",
+      "file": "assets/paldean-fates/534484.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "f4fa72c01e29cf6988fb19aef0ed9f887084e8a5f9377551811e7c526e012904"
+    },
+    {
+      "productId": "534485",
+      "number": "111/091",
+      "name": "Paldean Tauros - 111/091",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/111_hires.png",
+      "file": "assets/paldean-fates/534485.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "f1074db274ce3dc0fd3242e3f3f5d280b7f5ec080aff7a661a359e47324ee0b9"
+    },
+    {
+      "productId": "534493",
+      "number": "112/091",
+      "name": "Entei",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/112_hires.png",
+      "file": "assets/paldean-fates/534493.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "f03d168c7c5937501b02c29adabda3e42be8f701e97a1cae4ced22b524843749"
+    },
+    {
+      "productId": "534494",
+      "number": "113/091",
+      "name": "Oricorio",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/113_hires.png",
+      "file": "assets/paldean-fates/534494.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "2510680e6fddc0313154d515d602489db2a4f55909c2c35f55ff123bd5df0452"
+    },
+    {
+      "productId": "534496",
+      "number": "114/091",
+      "name": "Charcadet - 114/091",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/114_hires.png",
+      "file": "assets/paldean-fates/534496.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "fc29679bfcb9965fd4beddcc3fb9e9b24e5000d8cf6a99d3dd70dd1d0ae63a5e"
+    },
+    {
+      "productId": "534497",
+      "number": "115/091",
+      "name": "Armarouge - 115/091",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/115_hires.png",
+      "file": "assets/paldean-fates/534497.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "143bb382d8936a74b78f987674ce2dc3c19bc1e1b93ccd0d83458a9337f546b9"
+    },
+    {
+      "productId": "534504",
+      "number": "116/091",
+      "name": "Slowpoke",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/116_hires.png",
+      "file": "assets/paldean-fates/534504.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "339a77ed437c251dab3ddb02a119979cfec058e3e59c1a25d69e0a4c8c27d6a6"
+    },
+    {
+      "productId": "534507",
+      "number": "117/091",
+      "name": "Slowbro",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/117_hires.png",
+      "file": "assets/paldean-fates/534507.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "b2bc4a3554d6acadb21722f1d2c6656fe0c22ae65b786fd75a06ee31920c8022"
+    },
+    {
+      "productId": "534508",
+      "number": "118/091",
+      "name": "Staryu",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/118_hires.png",
+      "file": "assets/paldean-fates/534508.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "e35895997dff7a8cf10dbfa147d64e2752e765e6841a8149355a3c0a1a929783"
+    },
+    {
+      "productId": "534510",
+      "number": "119/091",
+      "name": "Starmie",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/119_hires.png",
+      "file": "assets/paldean-fates/534510.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "5fb89decd439bf7010c8276530f7aee256c75f19b42f5c4b7a0784edd479b253"
+    },
+    {
+      "productId": "534511",
+      "number": "120/091",
+      "name": "Paldean Tauros - 120/091",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/120_hires.png",
+      "file": "assets/paldean-fates/534511.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "3ebc81a452b73804fac20507aef8abe96fee56ef5f3472e30499c39c8e9bba7b"
+    },
+    {
+      "productId": "534512",
+      "number": "121/091",
+      "name": "Wiglett - 121/091",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/121_hires.png",
+      "file": "assets/paldean-fates/534512.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "488e62bf3f2354906ef556a31385595ed7bfde76529f0d31ce32796516002f1b"
+    },
+    {
+      "productId": "534513",
+      "number": "122/091",
+      "name": "Wugtrio - 122/091",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/122_hires.png",
+      "file": "assets/paldean-fates/534513.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "9cb725074ef86a8701df725e30b36a1877d897af67bc18d085afe40d5115b716"
+    },
+    {
+      "productId": "534514",
+      "number": "123/091",
+      "name": "Finizen",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/123_hires.png",
+      "file": "assets/paldean-fates/534514.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "c69c6c6c82ddbd3897cc8df40f7a66d394cb8554393ada42c11f23f085ed886f"
+    },
+    {
+      "productId": "534515",
+      "number": "124/091",
+      "name": "Palafin - 124/091",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/124_hires.png",
+      "file": "assets/paldean-fates/534515.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "7a4fd050f3da7e43cbf5dc2d61e298f543ff4ee66459cf1fde0bbc24d99e6c28"
+    },
+    {
+      "productId": "534516",
+      "number": "125/091",
+      "name": "Veluza - 125/091",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/125_hires.png",
+      "file": "assets/paldean-fates/534516.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "947590008486b0a9dc7d51bee1019742223c96ce0d1d7cca532d7d006842f01d"
+    },
+    {
+      "productId": "534517",
+      "number": "126/091",
+      "name": "Dondozo",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/126_hires.png",
+      "file": "assets/paldean-fates/534517.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "4acd4e3a1a3c85aa2cee2b6d6364b2733e9033cafa15433412b62156a3e7ccac"
+    },
+    {
+      "productId": "534518",
+      "number": "127/091",
+      "name": "Tatsugiri",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/127_hires.png",
+      "file": "assets/paldean-fates/534518.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "0c4f7409c5acd102b782491bf769ab4808af95777c57980f2a98f2f6d7406c92"
+    },
+    {
+      "productId": "534519",
+      "number": "128/091",
+      "name": "Frigibax - 128/091",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/128_hires.png",
+      "file": "assets/paldean-fates/534519.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "88801e2d1a802c93b96e6548218309efefcf66f8c3888201582c6460843407b5"
+    },
+    {
+      "productId": "534520",
+      "number": "129/091",
+      "name": "Arctibax",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/129_hires.png",
+      "file": "assets/paldean-fates/534520.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "23990ff0f34b226e4bc74be15599f645492e2bcf50651601e2a63cf9c00e5a96"
+    },
+    {
+      "productId": "534521",
+      "number": "130/091",
+      "name": "Baxcalibur",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/130_hires.png",
+      "file": "assets/paldean-fates/534521.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "72ae314695caf5f22eeb1209f12f00164a6cb0be3cbe3aa45aec7656c05cc487"
+    },
+    {
+      "productId": "534522",
+      "number": "131/091",
+      "name": "Pikachu - 131/091",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/131_hires.png",
+      "file": "assets/paldean-fates/534522.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "6da9f31ec4aa6bbc66eb95bcba7238762068e167f5b2c5cfda343c33ef0b3343"
+    },
+    {
+      "productId": "534523",
+      "number": "132/091",
+      "name": "Raichu - 132/091",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/132_hires.png",
+      "file": "assets/paldean-fates/534523.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "77d23b9fd8214ba88a086c383a6bc1870f25e48c8ab9c559719e416e73d5ce28"
+    },
+    {
+      "productId": "534525",
+      "number": "133/091",
+      "name": "Voltorb",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/133_hires.png",
+      "file": "assets/paldean-fates/534525.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "9fb54a22ef76a85aafc388e5e5c09d159cf3a01892ecc4fe97653d5041f1a1b5"
+    },
+    {
+      "productId": "534527",
+      "number": "134/091",
+      "name": "Electrode",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/134_hires.png",
+      "file": "assets/paldean-fates/534527.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "57009a3552abeaf2a4130cfc4ead122faf519e0620a0b63bd00752cf1b844f2c"
+    },
+    {
+      "productId": "534528",
+      "number": "135/091",
+      "name": "Shinx",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/135_hires.png",
+      "file": "assets/paldean-fates/534528.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "d912207356a76a43c1839cbcd9b5fbcb9c92b3e0dc5c286223cfc23a1dafd137"
+    },
+    {
+      "productId": "534529",
+      "number": "136/091",
+      "name": "Luxio",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/136_hires.png",
+      "file": "assets/paldean-fates/534529.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "92a35ad1c91e75b71c80a6dbcb484b11e7a3bfaa500e9f14d35c615d5eae9a71"
+    },
+    {
+      "productId": "534533",
+      "number": "137/091",
+      "name": "Luxray",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/137_hires.png",
+      "file": "assets/paldean-fates/534533.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "a1e4531c3ba69d617e6004dadcf4218013a6704ad59c24f82d16c6aefb4da485"
+    },
+    {
+      "productId": "534538",
+      "number": "138/091",
+      "name": "Pachirisu",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/138_hires.png",
+      "file": "assets/paldean-fates/534538.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "698439abaa480b56838b1bb18d79cd3e8300d11894d779657695892261823d8f"
+    },
+    {
+      "productId": "534540",
+      "number": "139/091",
+      "name": "Thundurus",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/139_hires.png",
+      "file": "assets/paldean-fates/534540.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "f6fef3c8173981b806240333c05a0694c4ff156ecf478759b992f23dccc79d39"
+    },
+    {
+      "productId": "534574",
+      "number": "140/091",
+      "name": "Toxel",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/140_hires.png",
+      "file": "assets/paldean-fates/534574.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "aaaac42c3992eaa27c9e3b4d36ae9a6ccf52bfabd6910368846ac371d3a8dc0f"
+    },
+    {
+      "productId": "534576",
+      "number": "141/091",
+      "name": "Toxtricity",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/141_hires.png",
+      "file": "assets/paldean-fates/534576.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "6d8729e4e1245964197f4ae2970edb071fc2fcdc0be21b2e3f1a8baf4537905c"
+    },
+    {
+      "productId": "534577",
+      "number": "142/091",
+      "name": "Pawmi - 142/091",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/142_hires.png",
+      "file": "assets/paldean-fates/534577.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "c1380a66cdfdacaebc11aa656f3bc22fb1598bf771e36a70dd53d00952413dc3"
+    },
+    {
+      "productId": "534579",
+      "number": "143/091",
+      "name": "Pawmo",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/143_hires.png",
+      "file": "assets/paldean-fates/534579.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "1cae5254e202425d33994f4c8ea20f527b6a019563691b33ec4fcc7f9b77a77b"
+    },
+    {
+      "productId": "534581",
+      "number": "144/091",
+      "name": "Pawmot",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/144_hires.png",
+      "file": "assets/paldean-fates/534581.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "ec1e51944edf2728e6189b160d88dbe5e1b6c30e52bb31e4c18f26c749d4b1e6"
+    },
+    {
+      "productId": "534582",
+      "number": "145/091",
+      "name": "Wattrel",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/145_hires.png",
+      "file": "assets/paldean-fates/534582.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "c59dd3ecf25674230cfa410e0966dae1ded83fd71c470eac71091f13dd3d08fe"
+    },
+    {
+      "productId": "534584",
+      "number": "146/091",
+      "name": "Kilowattrel - 146/091",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/146_hires.png",
+      "file": "assets/paldean-fates/534584.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "0e152991300aed98f6048e29147910aff068c895cd7ab01fae5aef9d1e26b87e"
+    },
+    {
+      "productId": "534616",
+      "number": "147/091",
+      "name": "Wigglytuff",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/147_hires.png",
+      "file": "assets/paldean-fates/534616.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "9dc3537b071ea529eab6ceae8e4d17e23fd8cf180d199f2e5db2cfa843613b7e"
+    },
+    {
+      "productId": "534631",
+      "number": "148/091",
+      "name": "Abra",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/148_hires.png",
+      "file": "assets/paldean-fates/534631.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "7486c2f3fd817aecd2d8b73c2f77c4da5284ed02b12e3a9e4794a5b50b753c57"
+    },
+    {
+      "productId": "534634",
+      "number": "149/091",
+      "name": "Kadabra",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/149_hires.png",
+      "file": "assets/paldean-fates/534634.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "e70c5c5ad72c17ca749c7e4cc0d23e21875155482b08af2f395bd0cf6946c2fd"
+    },
+    {
+      "productId": "534636",
+      "number": "150/091",
+      "name": "Cleffa",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/150_hires.png",
+      "file": "assets/paldean-fates/534636.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "6eab9bd3fe140e49e80ae79f4e06d31a06cc52a3032336dde86459cc1373239c"
+    },
+    {
+      "productId": "534642",
+      "number": "151/091",
+      "name": "Natu - 151/091",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/151_hires.png",
+      "file": "assets/paldean-fates/534642.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "f95744adc2ebb933f542cf611717ec3d8c9398387069a7a54f02dcb563614478"
+    },
+    {
+      "productId": "534646",
+      "number": "152/091",
+      "name": "Xatu - 152/091",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/152_hires.png",
+      "file": "assets/paldean-fates/534646.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "bdcee11b1e0676d28ebfbf113d0c26343d290da206f0225d10f1c4d69e61173d"
+    },
+    {
+      "productId": "534650",
+      "number": "153/091",
+      "name": "Ralts - 153/091",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/153_hires.png",
+      "file": "assets/paldean-fates/534650.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "968a6bc3ac04eb2e0c2548c5c00acd5432f9fd505f33ab5bc632bf5609810f63"
+    },
+    {
+      "productId": "534659",
+      "number": "154/091",
+      "name": "Kirlia - 154/091",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/154_hires.png",
+      "file": "assets/paldean-fates/534659.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "17d201f337ea275122c12829525b6f5c8082e56f718413d69ff5747d061d3e95"
+    },
+    {
+      "productId": "534662",
+      "number": "155/091",
+      "name": "Drifloon",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/155_hires.png",
+      "file": "assets/paldean-fates/534662.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "86b0b6349a28b3c79c60ae108c311c9a5673a052743fd292cc07943abbff68c1"
+    },
+    {
+      "productId": "534670",
+      "number": "156/091",
+      "name": "Drifblim",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/156_hires.png",
+      "file": "assets/paldean-fates/534670.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "883255d66b338f0d3c2e62a27e89dd0de109c610b51eb50d0c8127c18ea9d165"
+    },
+    {
+      "productId": "534671",
+      "number": "157/091",
+      "name": "Mime Jr. - 157/091",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/157_hires.png",
+      "file": "assets/paldean-fates/534671.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "9008a3ecb23e08eba0770eca8d3311bebcc49bf109e2c7a2fe8dc8f3db0681a0"
+    },
+    {
+      "productId": "534680",
+      "number": "158/091",
+      "name": "Spiritomb",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/158_hires.png",
+      "file": "assets/paldean-fates/534680.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "6c3384338e2cccf429c792545ec255666a5e8436696ff0b90a5c7ea96363ee05"
+    },
+    {
+      "productId": "534681",
+      "number": "159/091",
+      "name": "Klefki",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/159_hires.png",
+      "file": "assets/paldean-fates/534681.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "7b7f676716653cc8ae9c5835313f9d0f4245d838dc7008b845d461a89ab34343"
+    },
+    {
+      "productId": "534683",
+      "number": "160/091",
+      "name": "Mimikyu - 160/091",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/160_hires.png",
+      "file": "assets/paldean-fates/534683.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "e9c7fb60bee2a9d5c47ce5862d3fe03cc2f41368d3ff90d8566af716798dd514"
+    },
+    {
+      "productId": "534685",
+      "number": "161/091",
+      "name": "Dachsbun - 161/091",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/161_hires.png",
+      "file": "assets/paldean-fates/534685.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "c97392f6783446c54f050577fe577fb8037c2eaac70afc3566b558e713bda7c5"
+    },
+    {
+      "productId": "534687",
+      "number": "162/091",
+      "name": "Ceruledge - 162/091",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/162_hires.png",
+      "file": "assets/paldean-fates/534687.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "298f8b7d67d0a9fdea4d416624a5bb11375a4dc345fe34efb9ff043724f5f0f3"
+    },
+    {
+      "productId": "534693",
+      "number": "163/091",
+      "name": "Rabsca",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/163_hires.png",
+      "file": "assets/paldean-fates/534693.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "8be714e7ce4b4b6e2ae85c40d93c01d26da40571672647bd2f3f1ee70dd57254"
+    },
+    {
+      "productId": "534694",
+      "number": "164/091",
+      "name": "Flittle - 164/091",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/164_hires.png",
+      "file": "assets/paldean-fates/534694.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "32a7e7f1eb20922dfd0573ab1ff6eea2a96ddb26bf908ae159d6b9b06b26ad9f"
+    },
+    {
+      "productId": "534697",
+      "number": "165/091",
+      "name": "Tinkatink",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/165_hires.png",
+      "file": "assets/paldean-fates/534697.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "e4c85932b94e7f46011409d5646a7a6f5cd183cfff8e3849e2a69123b5d7fece"
+    },
+    {
+      "productId": "534699",
+      "number": "166/091",
+      "name": "Tinkatuff",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/166_hires.png",
+      "file": "assets/paldean-fates/534699.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "c08d7da489d876a7b296ecbf662cf6577ae9f7120c930b5d68418f8af5d3dfc9"
+    },
+    {
+      "productId": "534704",
+      "number": "167/091",
+      "name": "Tinkaton",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/167_hires.png",
+      "file": "assets/paldean-fates/534704.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "510b13c833b44918a2163d78b2a66a034305b0d9bd1f7e3b8c2be5ddc8d8c7b7"
+    },
+    {
+      "productId": "534724",
+      "number": "168/091",
+      "name": "Houndstone - 168/091",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/168_hires.png",
+      "file": "assets/paldean-fates/534724.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "1364f4f87f4615ce982efa37cd5c6a6f99732d3667171aef2185c68232e292e3"
+    },
+    {
+      "productId": "534728",
+      "number": "169/091",
+      "name": "Mankey - 169/091",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/169_hires.png",
+      "file": "assets/paldean-fates/534728.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "474a135816db593fcc6ab3e30e6e75526a4bdf3bdbbf64957cbd02097283c56a"
+    },
+    {
+      "productId": "534730",
+      "number": "170/091",
+      "name": "Primeape - 170/091",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/170_hires.png",
+      "file": "assets/paldean-fates/534730.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "d9da132211395e626c71c88ef2f4ac99407198ae9b11e19dde53bdee283e8193"
+    },
+    {
+      "productId": "534733",
+      "number": "171/091",
+      "name": "Annihilape - 171/091",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/171_hires.png",
+      "file": "assets/paldean-fates/534733.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "20ae059a900b3a7fd091589d8042c53dc088054c5e66b0aaad89a546e85b718e"
+    },
+    {
+      "productId": "535956",
+      "number": "172/091",
+      "name": "Paldean Tauros - 172/091",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/172_hires.png",
+      "file": "assets/paldean-fates/535956.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "a698ac700de198989030d5ae69c299a9d22d1eedc896bfdb62a5365caf6b2f5c"
+    },
+    {
+      "productId": "534749",
+      "number": "173/091",
+      "name": "Riolu",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/173_hires.png",
+      "file": "assets/paldean-fates/534749.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "6baf0a061b9a4f600ede8a2571460d6d6566d41f872df61b48268b35424101ee"
+    },
+    {
+      "productId": "534753",
+      "number": "174/091",
+      "name": "Lucario",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/174_hires.png",
+      "file": "assets/paldean-fates/534753.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "72c8398dfb44e889db135859f13770d19cd53dab5f5f83f6341baa565a2a30c8"
+    },
+    {
+      "productId": "534755",
+      "number": "175/091",
+      "name": "Hawlucha",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/175_hires.png",
+      "file": "assets/paldean-fates/534755.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "484c04629a96cba7aa711efd0b169e92843a89135824cdf89cf2b82af0edc63f"
+    },
+    {
+      "productId": "534762",
+      "number": "176/091",
+      "name": "Nacli - 176/091",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/176_hires.png",
+      "file": "assets/paldean-fates/534762.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "3b8389f523d643e4db9b577d6a36c80930de728d9040bbc119cae122325834d8"
+    },
+    {
+      "productId": "534921",
+      "number": "177/091",
+      "name": "Naclstack",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/177_hires.png",
+      "file": "assets/paldean-fates/534921.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "568983a469bbd09e6ce56d86a7f0e0f6002d4a7451ecc8e4a4d9e00fb64dbf7a"
+    },
+    {
+      "productId": "534923",
+      "number": "178/091",
+      "name": "Garganacl",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/178_hires.png",
+      "file": "assets/paldean-fates/534923.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "ed89eb7a20e9dfd9263bd6110865e1ffb01c0d9645ebfbd11d0c6d48d69766ab"
+    },
+    {
+      "productId": "535089",
+      "number": "179/091",
+      "name": "Glimmet",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/179_hires.png",
+      "file": "assets/paldean-fates/535089.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "37d8f8f976b5dfed97ce2bece682830579d578f90dbf598c00a8a4847573fee8"
+    },
+    {
+      "productId": "535093",
+      "number": "180/091",
+      "name": "Paldean Wooper - 180/091",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/180_hires.png",
+      "file": "assets/paldean-fates/535093.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "6525088994c2803b1379fc90a8e01bb00159e9f6aac56c2e70f473bf2209dba9"
+    },
+    {
+      "productId": "535097",
+      "number": "181/091",
+      "name": "Murkrow",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/181_hires.png",
+      "file": "assets/paldean-fates/535097.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "619dc32bfca389b76fcf067fe0d6561dc629fa7445937d347db89c679af10969"
+    },
+    {
+      "productId": "535110",
+      "number": "182/091",
+      "name": "Sneasel",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/182_hires.png",
+      "file": "assets/paldean-fates/535110.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "319da013bd7534596a1b6ae38339360abe8838051bc31ad4daf6e61cec23346a"
+    },
+    {
+      "productId": "535118",
+      "number": "183/091",
+      "name": "Weavile",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/183_hires.png",
+      "file": "assets/paldean-fates/535118.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "72b3184abd50151e58095a0bdef4e701b856c5382e79ab3b0c041e2d0f6f29ad"
+    },
+    {
+      "productId": "535122",
+      "number": "184/091",
+      "name": "Sableye",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/184_hires.png",
+      "file": "assets/paldean-fates/535122.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "7c01a14ee50738b86c58aa629679f72b8035838facabde5fa25e4922c7f8c8cb"
+    },
+    {
+      "productId": "535126",
+      "number": "185/091",
+      "name": "Pawniard",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/185_hires.png",
+      "file": "assets/paldean-fates/535126.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "5e4a22b299a9525e8f1b8027debbe2c111fb34a746036152de9c107297ec1f37"
+    },
+    {
+      "productId": "535130",
+      "number": "186/091",
+      "name": "Bisharp",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/186_hires.png",
+      "file": "assets/paldean-fates/535130.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "310fc304a5ede92d6618be600aa60fbd5ab54c3dc5d927902d345a5fa638284f"
+    },
+    {
+      "productId": "535132",
+      "number": "187/091",
+      "name": "Kingambit",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/187_hires.png",
+      "file": "assets/paldean-fates/535132.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "dd78714dda09f711eec3c1268bde3ae795f269d55390ca4cab2f981ce1a39a72"
+    },
+    {
+      "productId": "535135",
+      "number": "188/091",
+      "name": "Mabosstiff - 188/091",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/188_hires.png",
+      "file": "assets/paldean-fates/535135.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "5dbe5873fc6c50bd27854fa56fc4b446c66e318613f4d7f312ae195bd9d31574"
+    },
+    {
+      "productId": "535143",
+      "number": "189/091",
+      "name": "Shroodle - 189/091",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/189_hires.png",
+      "file": "assets/paldean-fates/535143.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "b5107249689d9cef911a380bb589eda6050116b7465014bdfcddf3adeb6496f7"
+    },
+    {
+      "productId": "535145",
+      "number": "190/091",
+      "name": "Grafaiai",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/190_hires.png",
+      "file": "assets/paldean-fates/535145.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "7c905ecc7a6de61710224b1bf0f7dfdd5dbc75653193a840cfe982449157be84"
+    },
+    {
+      "productId": "535149",
+      "number": "191/091",
+      "name": "Scizor",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/191_hires.png",
+      "file": "assets/paldean-fates/535149.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "b87f876fe96fea75cca06a155284dbf245f2d68188a4c148263bca667be552c0"
+    },
+    {
+      "productId": "535151",
+      "number": "192/091",
+      "name": "Varoom - 192/091",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/192_hires.png",
+      "file": "assets/paldean-fates/535151.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "06e89d90125d73d646aa79995222512c5980b3c0fd34601f8c0c6b0e7d010f16"
+    },
+    {
+      "productId": "535153",
+      "number": "193/091",
+      "name": "Revavroom - 193/091",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/193_hires.png",
+      "file": "assets/paldean-fates/535153.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "6a5586d4e0164e2d17484cc955b26204820da3141d9b0655bc41fe7cb798830f"
+    },
+    {
+      "productId": "535155",
+      "number": "194/091",
+      "name": "Noibat - 194/091",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/194_hires.png",
+      "file": "assets/paldean-fates/535155.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "073825d18ff7df1ee5b237a6661522d3b1ca6f80e38bc7fd9a2578840ea71e57"
+    },
+    {
+      "productId": "535157",
+      "number": "195/091",
+      "name": "Cyclizar - 195/091",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/195_hires.png",
+      "file": "assets/paldean-fates/535157.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "2e1ec61800ec8121cbda3b45e8f32173958210ccec3bff1fc43e53d8c007f231"
+    },
+    {
+      "productId": "535163",
+      "number": "196/091",
+      "name": "Pidgey",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/196_hires.png",
+      "file": "assets/paldean-fates/535163.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "d140dea48041cb6587d36dc6aceb4e1a34641c59b74abaf42beebbd8820c5c4a"
+    },
+    {
+      "productId": "535165",
+      "number": "197/091",
+      "name": "Pidgeotto",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/197_hires.png",
+      "file": "assets/paldean-fates/535165.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "d80e34be6db86fb091a90de4920c85a031a4be7f0f98b5d6e0c76bd2fe5ca7a7"
+    },
+    {
+      "productId": "535174",
+      "number": "198/091",
+      "name": "Jigglypuff",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/198_hires.png",
+      "file": "assets/paldean-fates/535174.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "492e404c667558a6a2628eaae72b80b45c48daada2e266317f888063928f2cdd"
+    },
+    {
+      "productId": "535183",
+      "number": "199/091",
+      "name": "Doduo",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/199_hires.png",
+      "file": "assets/paldean-fates/535183.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "eae46535ca59af28a8935dede04bfd226bf5617ff94fcddd2f041e7dab5f64cc"
+    },
+    {
+      "productId": "535185",
+      "number": "200/091",
+      "name": "Dodrio",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/200_hires.png",
+      "file": "assets/paldean-fates/535185.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "bce66dda12c56dce579578509b802cabf5f048292b482bdc618e175ffe37f1b6"
+    },
+    {
+      "productId": "535191",
+      "number": "201/091",
+      "name": "Ditto",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/201_hires.png",
+      "file": "assets/paldean-fates/535191.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "d1bf6bd5c0eae908dbc64a393a552212994d4def38682e2d48dcfae3e3839c9e"
+    },
+    {
+      "productId": "535193",
+      "number": "202/091",
+      "name": "Snorlax",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/202_hires.png",
+      "file": "assets/paldean-fates/535193.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "aa996d3cb91a96f59270c6fd0e9c70f39fb5dc99ba1444c536b4e5683d8b6217"
+    },
+    {
+      "productId": "535196",
+      "number": "203/091",
+      "name": "Wingull",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/203_hires.png",
+      "file": "assets/paldean-fates/535196.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "c76a9e3a60182f07987c42228f9839e9a7aeb8f5be3b05506bcc125b46795025"
+    },
+    {
+      "productId": "535200",
+      "number": "204/091",
+      "name": "Pelipper",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/204_hires.png",
+      "file": "assets/paldean-fates/535200.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "a1d7230d803290fa257b8d6d8f493ba073bc02e207de83f71741f43cc0073877"
+    },
+    {
+      "productId": "535201",
+      "number": "205/091",
+      "name": "Skwovet",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/205_hires.png",
+      "file": "assets/paldean-fates/535201.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "b79f59e5630f1a792b587e116d8b65cf9b8964e4244a51e84ec7859bbbd47551"
+    },
+    {
+      "productId": "535203",
+      "number": "206/091",
+      "name": "Greedent",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/206_hires.png",
+      "file": "assets/paldean-fates/535203.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "c63f27c99bf4e86ba3ed74194f967ccd3f9fd5b6e9efba86c78b411b6df86ae1"
+    },
+    {
+      "productId": "535213",
+      "number": "207/091",
+      "name": "Lechonk - 207/091",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/207_hires.png",
+      "file": "assets/paldean-fates/535213.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "05204e31f0e5a102eb7ed360812d68cb08bba6d854e9b8d984facee90beeb35f"
+    },
+    {
+      "productId": "535955",
+      "number": "208/091",
+      "name": "Oinkologne - 208/091",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/208_hires.png",
+      "file": "assets/paldean-fates/535955.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "483db82e58283bbb864544d86453b1603eb0985ae5c63e631f0df1b748eccd95"
+    },
+    {
+      "productId": "535214",
+      "number": "209/091",
+      "name": "Tandemaus - 209/091",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/209_hires.png",
+      "file": "assets/paldean-fates/535214.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "3e745a172b4afea4762f45f45016c0eae2debe1a105a08fa7011a76cfbbce752"
+    },
+    {
+      "productId": "535215",
+      "number": "210/091",
+      "name": "Maushold - 210/091",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/210_hires.png",
+      "file": "assets/paldean-fates/535215.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "c1ce6834a16abd3e53df454d4bbe64f63a35d3043e39e7734cd27d77aa7c66ce"
+    },
+    {
+      "productId": "535217",
+      "number": "211/091",
+      "name": "Flamigo",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/211_hires.png",
+      "file": "assets/paldean-fates/535217.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "ae6c4877cc0dcace98f2d6f74ecb79f6c3bedbab436d866b8e3389404dc16a02"
+    },
+    {
+      "productId": "535297",
+      "number": "212/091",
+      "name": "Forretress ex - 212/091",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/212_hires.png",
+      "file": "assets/paldean-fates/535297.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "f0c8374ff5f2510af67f5a3e4050c10ad9f8f1302ade58229f345ec43eff8342"
+    },
+    {
+      "productId": "535299",
+      "number": "213/091",
+      "name": "Toedscruel ex - 213/091",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/213_hires.png",
+      "file": "assets/paldean-fates/535299.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "df00eb033046fb245c3b952cb682a5e55221bd1126272e57c7651278811f2709"
+    },
+    {
+      "productId": "535303",
+      "number": "214/091",
+      "name": "Espathra ex - 214/091",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/214_hires.png",
+      "file": "assets/paldean-fates/535303.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "764d2567c1b1ba144e8288578931ea64b5e64b236c443320b1823b1323e7cdd9"
+    },
+    {
+      "productId": "535524",
+      "number": "215/091",
+      "name": "Alakazam ex",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/215_hires.png",
+      "file": "assets/paldean-fates/535524.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "9002ada29c3d4668c03afafd37386486e46276f51430c58ebea6e5f65c2e11bb"
+    },
+    {
+      "productId": "535527",
+      "number": "216/091",
+      "name": "Mew ex - 216/091",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/216_hires.png",
+      "file": "assets/paldean-fates/535527.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "c4d8835a8aa44f59c153c640475cdc7596e7f9b66522082df87700b910286396"
+    },
+    {
+      "productId": "535530",
+      "number": "217/091",
+      "name": "Gardevoir ex - 217/091",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/217_hires.png",
+      "file": "assets/paldean-fates/535530.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "b2709e737163ba1e9ad39f5fe7b34eb4bf330a81d7d4a6ad128faf951df0a0b1"
+    },
+    {
+      "productId": "535534",
+      "number": "218/091",
+      "name": "Glimmora ex",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/218_hires.png",
+      "file": "assets/paldean-fates/535534.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "6d8497ffe61f12a6fa474f359ccbf1cf50f697d6ddc771d1a6e0f37665e90da3"
+    },
+    {
+      "productId": "535537",
+      "number": "219/091",
+      "name": "Paldean Clodsire ex - 219/091",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/219_hires.png",
+      "file": "assets/paldean-fates/535537.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "8c7c0881d0061c3f529bbcdb76ba02e0f305e141a0f86b086c7237cf903a0254"
+    },
+    {
+      "productId": "535541",
+      "number": "220/091",
+      "name": "Noivern ex - 220/091",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/220_hires.png",
+      "file": "assets/paldean-fates/535541.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "d69707c9367600750d37fc50fd64c9e890f4a0627dee2ef616eb6e40b9a5cd43"
+    },
+    {
+      "productId": "535559",
+      "number": "221/091",
+      "name": "Pidgeot ex",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/221_hires.png",
+      "file": "assets/paldean-fates/535559.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "e0e7eb261a82842510ae33c11bbbca64aa9583e8c4edd0eb12d5d33b04481587"
+    },
+    {
+      "productId": "535562",
+      "number": "222/091",
+      "name": "Wigglytuff ex",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/222_hires.png",
+      "file": "assets/paldean-fates/535562.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "08b159e1319363762701609f04690e0168586222eea205f02efd3d678264a9c3"
+    },
+    {
+      "productId": "535654",
+      "number": "223/091",
+      "name": "Squawkabilly ex - 223/091",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/223_hires.png",
+      "file": "assets/paldean-fates/535654.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "2b6f0d7335cd59ca5abd596b8d11e72a851b3576b371873152fd34c19422ab9d"
+    },
+    {
+      "productId": "534731",
+      "number": "224/091",
+      "name": "Wugtrio - 224/091",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/224_hires.png",
+      "file": "assets/paldean-fates/534731.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "8efcbd21eb3a5cc67637a96586dd23807a18dcfd6307a1d10d002b833aee6a63"
+    },
+    {
+      "productId": "534736",
+      "number": "225/091",
+      "name": "Palafin - 225/091",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/225_hires.png",
+      "file": "assets/paldean-fates/534736.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "025bd11fba1e98540203e2b467445f1253de55ed418866dd9a6a679791fc6a49"
+    },
+    {
+      "productId": "534739",
+      "number": "226/091",
+      "name": "Pawmi - 226/091",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/226_hires.png",
+      "file": "assets/paldean-fates/534739.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "8631bcfd90929af042fb019895fe96fa38fd369ac6847d54ddd013a5f7949a97"
+    },
+    {
+      "productId": "534743",
+      "number": "227/091",
+      "name": "Clive - 227/091",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/227_hires.png",
+      "file": "assets/paldean-fates/534743.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "fcbc0e7081f8be4d5bd4218960ab6240efadc2fd5ebdd4918462942822eeaed2"
+    },
+    {
+      "productId": "534748",
+      "number": "228/091",
+      "name": "Judge",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/228_hires.png",
+      "file": "assets/paldean-fates/534748.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "fec03f7041689938c0a8e11eb5f5f1ce6e0a74ea96b553698f398774a4b3a03d"
+    },
+    {
+      "productId": "534754",
+      "number": "229/091",
+      "name": "Nemona - 229/091",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/229_hires.png",
+      "file": "assets/paldean-fates/534754.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "72f07e1297f179405072fef76bf1427941285ca32abe0472013d5b45d742249c"
+    },
+    {
+      "productId": "534757",
+      "number": "230/091",
+      "name": "Paldean Student - 230/091",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/230_hires.png",
+      "file": "assets/paldean-fates/534757.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "ab4441ae48ce0178c108944fbaf2238cd19f9f448548a12c9d8542543f33b0d5"
+    },
+    {
+      "productId": "534758",
+      "number": "231/091",
+      "name": "Paldean Student - 231/091",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/231_hires.png",
+      "file": "assets/paldean-fates/534758.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "a57aed764304fad26a442a5677aba8f0ddcf188b9fabf264547ad72fa6b290c7"
+    },
+    {
+      "productId": "534919",
+      "number": "232/091",
+      "name": "Mew ex - 232/091",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/232_hires.png",
+      "file": "assets/paldean-fates/534919.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "f8c7ebf375c7ac648f234880df56eba69faeb9bc5e7076655bcc9aebe476b204"
+    },
+    {
+      "productId": "535085",
+      "number": "233/091",
+      "name": "Gardevoir ex - 233/091",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/233_hires.png",
+      "file": "assets/paldean-fates/535085.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "0482be457c226ffeb8dd0fe4f9370ad7dc7fe65c8afd44ec23f9eec1353a0d90"
+    },
+    {
+      "productId": "535090",
+      "number": "234/091",
+      "name": "Charizard ex - 234/091",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/234_hires.png",
+      "file": "assets/paldean-fates/535090.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "4005a0f658f5854aae7a05e40a82cce6c60d0d40af573f411638fdabb9bacaaf"
+    },
+    {
+      "productId": "535095",
+      "number": "235/091",
+      "name": "Arven",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/235_hires.png",
+      "file": "assets/paldean-fates/535095.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "afd01c7ab8771a17b7fec80cd3acaafc68e504b11a3cc048e38d72bad070c20c"
+    },
+    {
+      "productId": "535098",
+      "number": "236/091",
+      "name": "Clive - 236/091",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/236_hires.png",
+      "file": "assets/paldean-fates/535098.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "55f1d1aa3a5c66662175ecad408fe051cc1da8c5bda3b863f38df46b8d7c2616"
+    },
+    {
+      "productId": "535101",
+      "number": "237/091",
+      "name": "Iono - 237/091",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/237_hires.png",
+      "file": "assets/paldean-fates/535101.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "ffb37813f40c66afdde472fa97c1b30c33637b5acd66229fad08e3cb9008fad5"
+    },
+    {
+      "productId": "535104",
+      "number": "238/091",
+      "name": "Nemona - 238/091",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/238_hires.png",
+      "file": "assets/paldean-fates/535104.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "8ccbc0fa2b0b60335c4466146109dc5acd5a77d27074faaa66b22ecf6d470859"
+    },
+    {
+      "productId": "535108",
+      "number": "239/091",
+      "name": "Penny",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/239_hires.png",
+      "file": "assets/paldean-fates/535108.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "c2b238304e17a1bcf30b88bd6a4423bbbf38d89581f4db3a5a1a9d0e266874e9"
+    },
+    {
+      "productId": "535112",
+      "number": "240/091",
+      "name": "Wo-Chien ex",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/240_hires.png",
+      "file": "assets/paldean-fates/535112.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "7277e63503c5f63e9b345efc838a0f1f4a372335d63f2f4fddd8d899a2f6632c"
+    },
+    {
+      "productId": "535116",
+      "number": "241/091",
+      "name": "Chi-Yu ex",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/241_hires.png",
+      "file": "assets/paldean-fates/535116.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "0a87a3825a0ec77f1d4489ecce6ffdf0d5356f9969b5f8de10d2e635a0ca6014"
+    },
+    {
+      "productId": "535120",
+      "number": "242/091",
+      "name": "Chien-Pao ex",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/242_hires.png",
+      "file": "assets/paldean-fates/535120.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "0f45547268e82ad441a1f45c0cc756efa6238901fb5b1fb5db7f0cadef74bf33"
+    },
+    {
+      "productId": "535124",
+      "number": "243/091",
+      "name": "Miraidon ex",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/243_hires.png",
+      "file": "assets/paldean-fates/535124.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "f2e28624bbedc80016fc848d4c7aa88edf07e16823a53bd024dda14b53a7fbfa"
+    },
+    {
+      "productId": "535127",
+      "number": "244/091",
+      "name": "Ting-Lu ex",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/244_hires.png",
+      "file": "assets/paldean-fates/535127.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "09e990beb55a952b3c0281e351fb557db7d48bafbc13fa7671eff941c98094af"
+    },
+    {
+      "productId": "535134",
+      "number": "245/091",
+      "name": "Koraidon ex",
+      "source_url": "https://images.pokemontcg.io/sv4pt5/245_hires.png",
+      "file": "assets/paldean-fates/535134.jpg",
+      "width": 200,
+      "height": 279,
+      "sha256": "b503645a87221a8ac281bc240a1df1337731540321672d712609ad3888ad3b2c"
+    }
+  ]
+}

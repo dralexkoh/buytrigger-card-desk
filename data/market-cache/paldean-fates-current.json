@@ -1,0 +1,4668 @@
+{
+  "schemaVersion": 1,
+  "index": "paldean-fates",
+  "sourceSystem": "shared-cards-market-cache",
+  "grade": "Raw",
+  "currency": "USD",
+  "measure": "tcgcsv_market",
+  "sourceDate": "2026-11-21",
+  "sourceBuildAt": "2026-11-21T20:03:19+00:00",
+  "expiresAt": "2026-11-23T20:03:19+00:00",
+  "cards": [
+    {
+      "productId": "534132",
+      "groupId": "23353",
+      "name": "Pineco - 001/091",
+      "set": "SV: Paldean Fates",
+      "number": "001/091",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/paldean-fates/534132.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 0.06,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534133",
+      "groupId": "23353",
+      "name": "Forretress ex - 002/091",
+      "set": "SV: Paldean Fates",
+      "number": "002/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534133.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 0.52,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534136",
+      "groupId": "23353",
+      "name": "Maractus",
+      "set": "SV: Paldean Fates",
+      "number": "003/091",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/paldean-fates/534136.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 0.08,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534137",
+      "groupId": "23353",
+      "name": "Toedscool - 004/091",
+      "set": "SV: Paldean Fates",
+      "number": "004/091",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/paldean-fates/534137.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 0.05,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534139",
+      "groupId": "23353",
+      "name": "Toedscruel ex - 005/091",
+      "set": "SV: Paldean Fates",
+      "number": "005/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534139.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 0.57,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534140",
+      "groupId": "23353",
+      "name": "Espathra ex - 006/091",
+      "set": "SV: Paldean Fates",
+      "number": "006/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534140.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 0.52,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534142",
+      "groupId": "23353",
+      "name": "Charmander - 007/091",
+      "set": "SV: Paldean Fates",
+      "number": "007/091",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/paldean-fates/534142.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 0.18,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534143",
+      "groupId": "23353",
+      "name": "Charmeleon - 008/091",
+      "set": "SV: Paldean Fates",
+      "number": "008/091",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/paldean-fates/534143.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 0.17,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534149",
+      "groupId": "23353",
+      "name": "Magmar",
+      "set": "SV: Paldean Fates",
+      "number": "009/091",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/paldean-fates/534149.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 0.08,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534150",
+      "groupId": "23353",
+      "name": "Magmortar",
+      "set": "SV: Paldean Fates",
+      "number": "010/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534150.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 0.1,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534152",
+      "groupId": "23353",
+      "name": "Numel",
+      "set": "SV: Paldean Fates",
+      "number": "011/091",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/paldean-fates/534152.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 0.06,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534153",
+      "groupId": "23353",
+      "name": "Camerupt",
+      "set": "SV: Paldean Fates",
+      "number": "012/091",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/paldean-fates/534153.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 0.1,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534154",
+      "groupId": "23353",
+      "name": "Heat Rotom",
+      "set": "SV: Paldean Fates",
+      "number": "013/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534154.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 0.17,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534155",
+      "groupId": "23353",
+      "name": "Charcadet - 014/091",
+      "set": "SV: Paldean Fates",
+      "number": "014/091",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/paldean-fates/534155.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 0.1,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534156",
+      "groupId": "23353",
+      "name": "Armarouge - 015/091",
+      "set": "SV: Paldean Fates",
+      "number": "015/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534156.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 0.18,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534158",
+      "groupId": "23353",
+      "name": "Lapras",
+      "set": "SV: Paldean Fates",
+      "number": "016/091",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/paldean-fates/534158.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 0.13,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534161",
+      "groupId": "23353",
+      "name": "Frigibax - 017/091",
+      "set": "SV: Paldean Fates",
+      "number": "017/091",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/paldean-fates/534161.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 0.16,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534163",
+      "groupId": "23353",
+      "name": "Pikachu - 018/091",
+      "set": "SV: Paldean Fates",
+      "number": "018/091",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/paldean-fates/534163.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 0.25,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534165",
+      "groupId": "23353",
+      "name": "Raichu - 019/091",
+      "set": "SV: Paldean Fates",
+      "number": "019/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534165.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 0.23,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534166",
+      "groupId": "23353",
+      "name": "Chinchou",
+      "set": "SV: Paldean Fates",
+      "number": "020/091",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/paldean-fates/534166.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 0.1,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534167",
+      "groupId": "23353",
+      "name": "Lanturn",
+      "set": "SV: Paldean Fates",
+      "number": "021/091",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/paldean-fates/534167.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 0.12,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534168",
+      "groupId": "23353",
+      "name": "Kilowattrel - 022/091",
+      "set": "SV: Paldean Fates",
+      "number": "022/091",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/paldean-fates/534168.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 0.09,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534169",
+      "groupId": "23353",
+      "name": "Exeggcute",
+      "set": "SV: Paldean Fates",
+      "number": "023/091",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/paldean-fates/534169.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 0.09,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534170",
+      "groupId": "23353",
+      "name": "Exeggutor",
+      "set": "SV: Paldean Fates",
+      "number": "024/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534170.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 0.16,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "535993",
+      "groupId": "23353",
+      "name": "Natu - 025/091",
+      "set": "SV: Paldean Fates",
+      "number": "025/091",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/paldean-fates/535993.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 0.14,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534171",
+      "groupId": "23353",
+      "name": "Xatu - 026/091",
+      "set": "SV: Paldean Fates",
+      "number": "026/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534171.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 0.2,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534173",
+      "groupId": "23353",
+      "name": "Ralts - 027/091",
+      "set": "SV: Paldean Fates",
+      "number": "027/091",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/paldean-fates/534173.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 0.13,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534174",
+      "groupId": "23353",
+      "name": "Kirlia - 028/091",
+      "set": "SV: Paldean Fates",
+      "number": "028/091",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/paldean-fates/534174.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 0.14,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534175",
+      "groupId": "23353",
+      "name": "Gardevoir ex - 029/091",
+      "set": "SV: Paldean Fates",
+      "number": "029/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534175.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 0.69,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534176",
+      "groupId": "23353",
+      "name": "Chimecho",
+      "set": "SV: Paldean Fates",
+      "number": "030/091",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/paldean-fates/534176.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 0.14,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534177",
+      "groupId": "23353",
+      "name": "Mime Jr. - 031/091",
+      "set": "SV: Paldean Fates",
+      "number": "031/091",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/paldean-fates/534177.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 0.13,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534178",
+      "groupId": "23353",
+      "name": "Woobat",
+      "set": "SV: Paldean Fates",
+      "number": "032/091",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/paldean-fates/534178.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 0.09,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534179",
+      "groupId": "23353",
+      "name": "Swoobat",
+      "set": "SV: Paldean Fates",
+      "number": "033/091",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/paldean-fates/534179.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 0.15,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534180",
+      "groupId": "23353",
+      "name": "Cottonee",
+      "set": "SV: Paldean Fates",
+      "number": "034/091",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/paldean-fates/534180.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 0.09,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534181",
+      "groupId": "23353",
+      "name": "Whimsicott",
+      "set": "SV: Paldean Fates",
+      "number": "035/091",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/paldean-fates/534181.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 0.12,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534182",
+      "groupId": "23353",
+      "name": "Dedenne",
+      "set": "SV: Paldean Fates",
+      "number": "036/091",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/paldean-fates/534182.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 0.17,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534183",
+      "groupId": "23353",
+      "name": "Mimikyu - 037/091",
+      "set": "SV: Paldean Fates",
+      "number": "037/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534183.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 0.28,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534184",
+      "groupId": "23353",
+      "name": "Fidough",
+      "set": "SV: Paldean Fates",
+      "number": "038/091",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/paldean-fates/534184.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 0.12,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534185",
+      "groupId": "23353",
+      "name": "Dachsbun - 039/091",
+      "set": "SV: Paldean Fates",
+      "number": "039/091",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/paldean-fates/534185.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 0.2,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534186",
+      "groupId": "23353",
+      "name": "Ceruledge - 040/091",
+      "set": "SV: Paldean Fates",
+      "number": "040/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534186.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 0.17,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534187",
+      "groupId": "23353",
+      "name": "Flittle - 041/091",
+      "set": "SV: Paldean Fates",
+      "number": "041/091",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/paldean-fates/534187.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 0.11,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534188",
+      "groupId": "23353",
+      "name": "Greavard",
+      "set": "SV: Paldean Fates",
+      "number": "042/091",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/paldean-fates/534188.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 0.11,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534190",
+      "groupId": "23353",
+      "name": "Houndstone - 043/091",
+      "set": "SV: Paldean Fates",
+      "number": "043/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534190.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 0.15,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534191",
+      "groupId": "23353",
+      "name": "Gimmighoul",
+      "set": "SV: Paldean Fates",
+      "number": "044/091",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/paldean-fates/534191.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 0.17,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534192",
+      "groupId": "23353",
+      "name": "Mankey - 045/091",
+      "set": "SV: Paldean Fates",
+      "number": "045/091",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/paldean-fates/534192.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 0.09,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534194",
+      "groupId": "23353",
+      "name": "Primeape - 046/091",
+      "set": "SV: Paldean Fates",
+      "number": "046/091",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/paldean-fates/534194.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 0.08,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534197",
+      "groupId": "23353",
+      "name": "Annihilape - 047/091",
+      "set": "SV: Paldean Fates",
+      "number": "047/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534197.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 0.19,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534198",
+      "groupId": "23353",
+      "name": "Phanpy",
+      "set": "SV: Paldean Fates",
+      "number": "048/091",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/paldean-fates/534198.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 0.11,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534210",
+      "groupId": "23353",
+      "name": "Donphan",
+      "set": "SV: Paldean Fates",
+      "number": "049/091",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/paldean-fates/534210.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 0.11,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534211",
+      "groupId": "23353",
+      "name": "Barboach",
+      "set": "SV: Paldean Fates",
+      "number": "050/091",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/paldean-fates/534211.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 0.11,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534387",
+      "groupId": "23353",
+      "name": "Clobbopus",
+      "set": "SV: Paldean Fates",
+      "number": "051/091",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/paldean-fates/534387.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 0.11,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534414",
+      "groupId": "23353",
+      "name": "Grapploct",
+      "set": "SV: Paldean Fates",
+      "number": "052/091",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/paldean-fates/534414.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 0.09,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534415",
+      "groupId": "23353",
+      "name": "Great Tusk ex",
+      "set": "SV: Paldean Fates",
+      "number": "053/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534415.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 0.55,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534416",
+      "groupId": "23353",
+      "name": "Charizard ex - 054/091",
+      "set": "SV: Paldean Fates",
+      "number": "054/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534416.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 4.09,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534417",
+      "groupId": "23353",
+      "name": "Gastly",
+      "set": "SV: Paldean Fates",
+      "number": "055/091",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/paldean-fates/534417.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 0.12,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534418",
+      "groupId": "23353",
+      "name": "Haunter",
+      "set": "SV: Paldean Fates",
+      "number": "056/091",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/paldean-fates/534418.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 0.15,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534419",
+      "groupId": "23353",
+      "name": "Gengar",
+      "set": "SV: Paldean Fates",
+      "number": "057/091",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/paldean-fates/534419.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 0.29,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534420",
+      "groupId": "23353",
+      "name": "Paldean Wooper - 058/091",
+      "set": "SV: Paldean Fates",
+      "number": "058/091",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/paldean-fates/534420.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 0.12,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534421",
+      "groupId": "23353",
+      "name": "Paldean Clodsire ex - 059/091",
+      "set": "SV: Paldean Fates",
+      "number": "059/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534421.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 0.6,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534422",
+      "groupId": "23353",
+      "name": "Scraggy",
+      "set": "SV: Paldean Fates",
+      "number": "060/091",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/paldean-fates/534422.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 0.13,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534423",
+      "groupId": "23353",
+      "name": "Scrafty",
+      "set": "SV: Paldean Fates",
+      "number": "061/091",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/paldean-fates/534423.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 0.09,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534424",
+      "groupId": "23353",
+      "name": "Maschiff",
+      "set": "SV: Paldean Fates",
+      "number": "062/091",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/paldean-fates/534424.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 0.09,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534425",
+      "groupId": "23353",
+      "name": "Mabosstiff - 063/091",
+      "set": "SV: Paldean Fates",
+      "number": "063/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534425.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 0.17,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534426",
+      "groupId": "23353",
+      "name": "Varoom - 064/091",
+      "set": "SV: Paldean Fates",
+      "number": "064/091",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/paldean-fates/534426.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 0.07,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534427",
+      "groupId": "23353",
+      "name": "Revavroom - 065/091",
+      "set": "SV: Paldean Fates",
+      "number": "065/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534427.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 0.1,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534428",
+      "groupId": "23353",
+      "name": "Iron Treads ex",
+      "set": "SV: Paldean Fates",
+      "number": "066/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534428.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 0.47,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534429",
+      "groupId": "23353",
+      "name": "Gholdengo",
+      "set": "SV: Paldean Fates",
+      "number": "067/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534429.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 0.2,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534430",
+      "groupId": "23353",
+      "name": "Noibat - 068/091",
+      "set": "SV: Paldean Fates",
+      "number": "068/091",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/paldean-fates/534430.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 0.09,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534431",
+      "groupId": "23353",
+      "name": "Noivern ex - 069/091",
+      "set": "SV: Paldean Fates",
+      "number": "069/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534431.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 0.51,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534432",
+      "groupId": "23353",
+      "name": "Cyclizar - 070/091",
+      "set": "SV: Paldean Fates",
+      "number": "070/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534432.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 0.13,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534433",
+      "groupId": "23353",
+      "name": "Lechonk - 071/091",
+      "set": "SV: Paldean Fates",
+      "number": "071/091",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/paldean-fates/534433.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 0.09,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534434",
+      "groupId": "23353",
+      "name": "Oinkologne",
+      "set": "SV: Paldean Fates",
+      "number": "072/091",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/paldean-fates/534434.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 0.1,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534435",
+      "groupId": "23353",
+      "name": "Tandemaus - 073/091",
+      "set": "SV: Paldean Fates",
+      "number": "073/091",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/paldean-fates/534435.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 0.16,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534436",
+      "groupId": "23353",
+      "name": "Maushold - 074/091",
+      "set": "SV: Paldean Fates",
+      "number": "074/091",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/paldean-fates/534436.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 0.16,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534437",
+      "groupId": "23353",
+      "name": "Squawkabilly ex - 075/091",
+      "set": "SV: Paldean Fates",
+      "number": "075/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534437.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 0.56,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534438",
+      "groupId": "23353",
+      "name": "Artazon",
+      "set": "SV: Paldean Fates",
+      "number": "076/091",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/paldean-fates/534438.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 0.3,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534439",
+      "groupId": "23353",
+      "name": "Atticus",
+      "set": "SV: Paldean Fates",
+      "number": "077/091",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/paldean-fates/534439.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 0.09,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534440",
+      "groupId": "23353",
+      "name": "Clive - 078/091",
+      "set": "SV: Paldean Fates",
+      "number": "078/091",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/paldean-fates/534440.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 0.1,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534441",
+      "groupId": "23353",
+      "name": "Electric Generator",
+      "set": "SV: Paldean Fates",
+      "number": "079/091",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/paldean-fates/534441.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 0.17,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534442",
+      "groupId": "23353",
+      "name": "Iono - 080/091",
+      "set": "SV: Paldean Fates",
+      "number": "080/091",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/paldean-fates/534442.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 0.26,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534443",
+      "groupId": "23353",
+      "name": "Moonlit Hill",
+      "set": "SV: Paldean Fates",
+      "number": "081/091",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/paldean-fates/534443.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 0.1,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534444",
+      "groupId": "23353",
+      "name": "Nemona - 082/091",
+      "set": "SV: Paldean Fates",
+      "number": "082/091",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/paldean-fates/534444.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 0.17,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534445",
+      "groupId": "23353",
+      "name": "Nemona's Backpack",
+      "set": "SV: Paldean Fates",
+      "number": "083/091",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/paldean-fates/534445.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 0.14,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534446",
+      "groupId": "23353",
+      "name": "Nest Ball",
+      "set": "SV: Paldean Fates",
+      "number": "084/091",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/paldean-fates/534446.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 0.26,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534447",
+      "groupId": "23353",
+      "name": "Paldean Student - 085/091",
+      "set": "SV: Paldean Fates",
+      "number": "085/091",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/paldean-fates/534447.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 0.12,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534448",
+      "groupId": "23353",
+      "name": "Paldean Student - 086/091",
+      "set": "SV: Paldean Fates",
+      "number": "086/091",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/paldean-fates/534448.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 0.11,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534449",
+      "groupId": "23353",
+      "name": "Professor's Research [Professor Sada] - 087/091",
+      "set": "SV: Paldean Fates",
+      "number": "087/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534449.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 0.2,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534450",
+      "groupId": "23353",
+      "name": "Professor's Research [Professor Turo] - 088/091",
+      "set": "SV: Paldean Fates",
+      "number": "088/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534450.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 0.17,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534451",
+      "groupId": "23353",
+      "name": "Rare Candy",
+      "set": "SV: Paldean Fates",
+      "number": "089/091",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/paldean-fates/534451.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 0.24,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534452",
+      "groupId": "23353",
+      "name": "Technical Machine: Crisis Punch",
+      "set": "SV: Paldean Fates",
+      "number": "090/091",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/paldean-fates/534452.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 0.17,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534453",
+      "groupId": "23353",
+      "name": "Ultra Ball",
+      "set": "SV: Paldean Fates",
+      "number": "091/091",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/paldean-fates/534453.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 0.2,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534459",
+      "groupId": "23353",
+      "name": "Oddish",
+      "set": "SV: Paldean Fates",
+      "number": "092/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534459.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 9.76,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534460",
+      "groupId": "23353",
+      "name": "Gloom",
+      "set": "SV: Paldean Fates",
+      "number": "093/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534460.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 4.89,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534462",
+      "groupId": "23353",
+      "name": "Vileplume",
+      "set": "SV: Paldean Fates",
+      "number": "094/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534462.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 7.63,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534463",
+      "groupId": "23353",
+      "name": "Scyther",
+      "set": "SV: Paldean Fates",
+      "number": "095/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534463.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 10.47,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534465",
+      "groupId": "23353",
+      "name": "Hoppip",
+      "set": "SV: Paldean Fates",
+      "number": "096/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534465.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 4.88,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534466",
+      "groupId": "23353",
+      "name": "Skiploom",
+      "set": "SV: Paldean Fates",
+      "number": "097/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534466.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 3.1,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534469",
+      "groupId": "23353",
+      "name": "Jumpluff",
+      "set": "SV: Paldean Fates",
+      "number": "098/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534469.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 6.2,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534470",
+      "groupId": "23353",
+      "name": "Pineco - 099/091",
+      "set": "SV: Paldean Fates",
+      "number": "099/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534470.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 2.66,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534471",
+      "groupId": "23353",
+      "name": "Snover",
+      "set": "SV: Paldean Fates",
+      "number": "100/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534471.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 2.93,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534472",
+      "groupId": "23353",
+      "name": "Abomasnow",
+      "set": "SV: Paldean Fates",
+      "number": "101/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534472.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 2.47,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534473",
+      "groupId": "23353",
+      "name": "Smoliv",
+      "set": "SV: Paldean Fates",
+      "number": "102/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534473.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 5.58,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534475",
+      "groupId": "23353",
+      "name": "Dolliv",
+      "set": "SV: Paldean Fates",
+      "number": "103/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534475.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 2.82,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534476",
+      "groupId": "23353",
+      "name": "Arboliva",
+      "set": "SV: Paldean Fates",
+      "number": "104/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534476.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 2.72,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534478",
+      "groupId": "23353",
+      "name": "Toedscool - 105/091",
+      "set": "SV: Paldean Fates",
+      "number": "105/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534478.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 2.47,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534479",
+      "groupId": "23353",
+      "name": "Capsakid",
+      "set": "SV: Paldean Fates",
+      "number": "106/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534479.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 2.58,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534481",
+      "groupId": "23353",
+      "name": "Scovillain",
+      "set": "SV: Paldean Fates",
+      "number": "107/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534481.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 2.07,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534482",
+      "groupId": "23353",
+      "name": "Rellor",
+      "set": "SV: Paldean Fates",
+      "number": "108/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534482.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 1.83,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534483",
+      "groupId": "23353",
+      "name": "Charmander - 109/091",
+      "set": "SV: Paldean Fates",
+      "number": "109/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534483.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 33.61,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534484",
+      "groupId": "23353",
+      "name": "Charmeleon - 110/091",
+      "set": "SV: Paldean Fates",
+      "number": "110/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534484.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 12.91,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534485",
+      "groupId": "23353",
+      "name": "Paldean Tauros - 111/091",
+      "set": "SV: Paldean Fates",
+      "number": "111/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534485.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 3.54,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534493",
+      "groupId": "23353",
+      "name": "Entei",
+      "set": "SV: Paldean Fates",
+      "number": "112/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534493.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 13.67,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534494",
+      "groupId": "23353",
+      "name": "Oricorio",
+      "set": "SV: Paldean Fates",
+      "number": "113/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534494.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 2.57,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534496",
+      "groupId": "23353",
+      "name": "Charcadet - 114/091",
+      "set": "SV: Paldean Fates",
+      "number": "114/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534496.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 8.06,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534497",
+      "groupId": "23353",
+      "name": "Armarouge - 115/091",
+      "set": "SV: Paldean Fates",
+      "number": "115/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534497.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 6.78,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534504",
+      "groupId": "23353",
+      "name": "Slowpoke",
+      "set": "SV: Paldean Fates",
+      "number": "116/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534504.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 18.83,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534507",
+      "groupId": "23353",
+      "name": "Slowbro",
+      "set": "SV: Paldean Fates",
+      "number": "117/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534507.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 17.46,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534508",
+      "groupId": "23353",
+      "name": "Staryu",
+      "set": "SV: Paldean Fates",
+      "number": "118/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534508.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 7.81,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534510",
+      "groupId": "23353",
+      "name": "Starmie",
+      "set": "SV: Paldean Fates",
+      "number": "119/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534510.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 7.26,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534511",
+      "groupId": "23353",
+      "name": "Paldean Tauros - 120/091",
+      "set": "SV: Paldean Fates",
+      "number": "120/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534511.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 4.0,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534512",
+      "groupId": "23353",
+      "name": "Wiglett - 121/091",
+      "set": "SV: Paldean Fates",
+      "number": "121/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534512.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 3.12,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534513",
+      "groupId": "23353",
+      "name": "Wugtrio - 122/091",
+      "set": "SV: Paldean Fates",
+      "number": "122/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534513.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 3.11,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534514",
+      "groupId": "23353",
+      "name": "Finizen",
+      "set": "SV: Paldean Fates",
+      "number": "123/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534514.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 5.1,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534515",
+      "groupId": "23353",
+      "name": "Palafin - 124/091",
+      "set": "SV: Paldean Fates",
+      "number": "124/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534515.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 2.89,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534516",
+      "groupId": "23353",
+      "name": "Veluza - 125/091",
+      "set": "SV: Paldean Fates",
+      "number": "125/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534516.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 2.23,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534517",
+      "groupId": "23353",
+      "name": "Dondozo",
+      "set": "SV: Paldean Fates",
+      "number": "126/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534517.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 4.34,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534518",
+      "groupId": "23353",
+      "name": "Tatsugiri",
+      "set": "SV: Paldean Fates",
+      "number": "127/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534518.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 7.76,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534519",
+      "groupId": "23353",
+      "name": "Frigibax - 128/091",
+      "set": "SV: Paldean Fates",
+      "number": "128/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534519.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 3.28,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534520",
+      "groupId": "23353",
+      "name": "Arctibax",
+      "set": "SV: Paldean Fates",
+      "number": "129/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534520.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 4.83,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534521",
+      "groupId": "23353",
+      "name": "Baxcalibur",
+      "set": "SV: Paldean Fates",
+      "number": "130/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534521.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 4.91,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534522",
+      "groupId": "23353",
+      "name": "Pikachu - 131/091",
+      "set": "SV: Paldean Fates",
+      "number": "131/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534522.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 72.71,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534523",
+      "groupId": "23353",
+      "name": "Raichu - 132/091",
+      "set": "SV: Paldean Fates",
+      "number": "132/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534523.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 19.74,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534525",
+      "groupId": "23353",
+      "name": "Voltorb",
+      "set": "SV: Paldean Fates",
+      "number": "133/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534525.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 4.97,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534527",
+      "groupId": "23353",
+      "name": "Electrode",
+      "set": "SV: Paldean Fates",
+      "number": "134/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534527.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 4.05,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534528",
+      "groupId": "23353",
+      "name": "Shinx",
+      "set": "SV: Paldean Fates",
+      "number": "135/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534528.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 13.21,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534529",
+      "groupId": "23353",
+      "name": "Luxio",
+      "set": "SV: Paldean Fates",
+      "number": "136/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534529.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 6.81,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534533",
+      "groupId": "23353",
+      "name": "Luxray",
+      "set": "SV: Paldean Fates",
+      "number": "137/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534533.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 10.95,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534538",
+      "groupId": "23353",
+      "name": "Pachirisu",
+      "set": "SV: Paldean Fates",
+      "number": "138/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534538.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 9.4,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534540",
+      "groupId": "23353",
+      "name": "Thundurus",
+      "set": "SV: Paldean Fates",
+      "number": "139/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534540.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 2.21,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534574",
+      "groupId": "23353",
+      "name": "Toxel",
+      "set": "SV: Paldean Fates",
+      "number": "140/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534574.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 5.73,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534576",
+      "groupId": "23353",
+      "name": "Toxtricity",
+      "set": "SV: Paldean Fates",
+      "number": "141/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534576.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 4.51,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534577",
+      "groupId": "23353",
+      "name": "Pawmi - 142/091",
+      "set": "SV: Paldean Fates",
+      "number": "142/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534577.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 5.99,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534579",
+      "groupId": "23353",
+      "name": "Pawmo",
+      "set": "SV: Paldean Fates",
+      "number": "143/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534579.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 5.3,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534581",
+      "groupId": "23353",
+      "name": "Pawmot",
+      "set": "SV: Paldean Fates",
+      "number": "144/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534581.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 3.55,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534582",
+      "groupId": "23353",
+      "name": "Wattrel",
+      "set": "SV: Paldean Fates",
+      "number": "145/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534582.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 2.78,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534584",
+      "groupId": "23353",
+      "name": "Kilowattrel - 146/091",
+      "set": "SV: Paldean Fates",
+      "number": "146/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534584.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 2.25,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534616",
+      "groupId": "23353",
+      "name": "Wigglytuff",
+      "set": "SV: Paldean Fates",
+      "number": "147/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534616.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 6.53,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534631",
+      "groupId": "23353",
+      "name": "Abra",
+      "set": "SV: Paldean Fates",
+      "number": "148/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534631.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 12.74,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534634",
+      "groupId": "23353",
+      "name": "Kadabra",
+      "set": "SV: Paldean Fates",
+      "number": "149/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534634.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 8.9,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534636",
+      "groupId": "23353",
+      "name": "Cleffa",
+      "set": "SV: Paldean Fates",
+      "number": "150/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534636.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 5.45,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534642",
+      "groupId": "23353",
+      "name": "Natu - 151/091",
+      "set": "SV: Paldean Fates",
+      "number": "151/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534642.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 2.63,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534646",
+      "groupId": "23353",
+      "name": "Xatu - 152/091",
+      "set": "SV: Paldean Fates",
+      "number": "152/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534646.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 2.81,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534650",
+      "groupId": "23353",
+      "name": "Ralts - 153/091",
+      "set": "SV: Paldean Fates",
+      "number": "153/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534650.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 10.54,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534659",
+      "groupId": "23353",
+      "name": "Kirlia - 154/091",
+      "set": "SV: Paldean Fates",
+      "number": "154/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534659.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 8.17,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534662",
+      "groupId": "23353",
+      "name": "Drifloon",
+      "set": "SV: Paldean Fates",
+      "number": "155/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534662.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 5.61,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534670",
+      "groupId": "23353",
+      "name": "Drifblim",
+      "set": "SV: Paldean Fates",
+      "number": "156/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534670.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 4.03,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534671",
+      "groupId": "23353",
+      "name": "Mime Jr. - 157/091",
+      "set": "SV: Paldean Fates",
+      "number": "157/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534671.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 5.98,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534680",
+      "groupId": "23353",
+      "name": "Spiritomb",
+      "set": "SV: Paldean Fates",
+      "number": "158/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534680.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 6.25,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534681",
+      "groupId": "23353",
+      "name": "Klefki",
+      "set": "SV: Paldean Fates",
+      "number": "159/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534681.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 3.49,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534683",
+      "groupId": "23353",
+      "name": "Mimikyu - 160/091",
+      "set": "SV: Paldean Fates",
+      "number": "160/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534683.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 47.99,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534685",
+      "groupId": "23353",
+      "name": "Dachsbun - 161/091",
+      "set": "SV: Paldean Fates",
+      "number": "161/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534685.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 12.87,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534687",
+      "groupId": "23353",
+      "name": "Ceruledge - 162/091",
+      "set": "SV: Paldean Fates",
+      "number": "162/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534687.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 11.52,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534693",
+      "groupId": "23353",
+      "name": "Rabsca",
+      "set": "SV: Paldean Fates",
+      "number": "163/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534693.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 2.1,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534694",
+      "groupId": "23353",
+      "name": "Flittle - 164/091",
+      "set": "SV: Paldean Fates",
+      "number": "164/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534694.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 2.84,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534697",
+      "groupId": "23353",
+      "name": "Tinkatink",
+      "set": "SV: Paldean Fates",
+      "number": "165/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534697.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 7.55,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534699",
+      "groupId": "23353",
+      "name": "Tinkatuff",
+      "set": "SV: Paldean Fates",
+      "number": "166/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534699.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 8.23,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534704",
+      "groupId": "23353",
+      "name": "Tinkaton",
+      "set": "SV: Paldean Fates",
+      "number": "167/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534704.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 11.42,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534724",
+      "groupId": "23353",
+      "name": "Houndstone - 168/091",
+      "set": "SV: Paldean Fates",
+      "number": "168/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534724.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 2.6,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534728",
+      "groupId": "23353",
+      "name": "Mankey - 169/091",
+      "set": "SV: Paldean Fates",
+      "number": "169/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534728.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 5.31,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534730",
+      "groupId": "23353",
+      "name": "Primeape - 170/091",
+      "set": "SV: Paldean Fates",
+      "number": "170/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534730.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 4.43,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534733",
+      "groupId": "23353",
+      "name": "Annihilape - 171/091",
+      "set": "SV: Paldean Fates",
+      "number": "171/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534733.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 4.15,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "535956",
+      "groupId": "23353",
+      "name": "Paldean Tauros - 172/091",
+      "set": "SV: Paldean Fates",
+      "number": "172/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/535956.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 4.02,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534749",
+      "groupId": "23353",
+      "name": "Riolu",
+      "set": "SV: Paldean Fates",
+      "number": "173/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534749.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 11.43,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534753",
+      "groupId": "23353",
+      "name": "Lucario",
+      "set": "SV: Paldean Fates",
+      "number": "174/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534753.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 19.14,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534755",
+      "groupId": "23353",
+      "name": "Hawlucha",
+      "set": "SV: Paldean Fates",
+      "number": "175/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534755.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 6.34,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534762",
+      "groupId": "23353",
+      "name": "Nacli - 176/091",
+      "set": "SV: Paldean Fates",
+      "number": "176/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534762.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 2.42,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534921",
+      "groupId": "23353",
+      "name": "Naclstack",
+      "set": "SV: Paldean Fates",
+      "number": "177/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534921.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 2.23,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534923",
+      "groupId": "23353",
+      "name": "Garganacl",
+      "set": "SV: Paldean Fates",
+      "number": "178/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534923.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 2.09,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "535089",
+      "groupId": "23353",
+      "name": "Glimmet",
+      "set": "SV: Paldean Fates",
+      "number": "179/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/535089.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 2.09,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "535093",
+      "groupId": "23353",
+      "name": "Paldean Wooper - 180/091",
+      "set": "SV: Paldean Fates",
+      "number": "180/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/535093.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 12.66,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "535097",
+      "groupId": "23353",
+      "name": "Murkrow",
+      "set": "SV: Paldean Fates",
+      "number": "181/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/535097.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 3.51,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "535110",
+      "groupId": "23353",
+      "name": "Sneasel",
+      "set": "SV: Paldean Fates",
+      "number": "182/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/535110.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 3.56,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "535118",
+      "groupId": "23353",
+      "name": "Weavile",
+      "set": "SV: Paldean Fates",
+      "number": "183/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/535118.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 2.95,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "535122",
+      "groupId": "23353",
+      "name": "Sableye",
+      "set": "SV: Paldean Fates",
+      "number": "184/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/535122.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 9.94,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "535126",
+      "groupId": "23353",
+      "name": "Pawniard",
+      "set": "SV: Paldean Fates",
+      "number": "185/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/535126.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 2.87,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "535130",
+      "groupId": "23353",
+      "name": "Bisharp",
+      "set": "SV: Paldean Fates",
+      "number": "186/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/535130.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 2.7,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "535132",
+      "groupId": "23353",
+      "name": "Kingambit",
+      "set": "SV: Paldean Fates",
+      "number": "187/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/535132.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 3.07,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "535135",
+      "groupId": "23353",
+      "name": "Mabosstiff - 188/091",
+      "set": "SV: Paldean Fates",
+      "number": "188/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/535135.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 2.41,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "535143",
+      "groupId": "23353",
+      "name": "Shroodle - 189/091",
+      "set": "SV: Paldean Fates",
+      "number": "189/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/535143.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 2.19,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "535145",
+      "groupId": "23353",
+      "name": "Grafaiai",
+      "set": "SV: Paldean Fates",
+      "number": "190/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/535145.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 2.32,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "535149",
+      "groupId": "23353",
+      "name": "Scizor",
+      "set": "SV: Paldean Fates",
+      "number": "191/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/535149.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 9.8,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "535151",
+      "groupId": "23353",
+      "name": "Varoom - 192/091",
+      "set": "SV: Paldean Fates",
+      "number": "192/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/535151.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 1.67,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "535153",
+      "groupId": "23353",
+      "name": "Revavroom - 193/091",
+      "set": "SV: Paldean Fates",
+      "number": "193/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/535153.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 2.27,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "535155",
+      "groupId": "23353",
+      "name": "Noibat - 194/091",
+      "set": "SV: Paldean Fates",
+      "number": "194/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/535155.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 4.34,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "535157",
+      "groupId": "23353",
+      "name": "Cyclizar - 195/091",
+      "set": "SV: Paldean Fates",
+      "number": "195/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/535157.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 2.09,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "535163",
+      "groupId": "23353",
+      "name": "Pidgey",
+      "set": "SV: Paldean Fates",
+      "number": "196/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/535163.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 7.32,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "535165",
+      "groupId": "23353",
+      "name": "Pidgeotto",
+      "set": "SV: Paldean Fates",
+      "number": "197/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/535165.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 5.46,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "535174",
+      "groupId": "23353",
+      "name": "Jigglypuff",
+      "set": "SV: Paldean Fates",
+      "number": "198/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/535174.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 20.97,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "535183",
+      "groupId": "23353",
+      "name": "Doduo",
+      "set": "SV: Paldean Fates",
+      "number": "199/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/535183.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 4.58,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "535185",
+      "groupId": "23353",
+      "name": "Dodrio",
+      "set": "SV: Paldean Fates",
+      "number": "200/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/535185.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 4.37,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "535191",
+      "groupId": "23353",
+      "name": "Ditto",
+      "set": "SV: Paldean Fates",
+      "number": "201/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/535191.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 33.4,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "535193",
+      "groupId": "23353",
+      "name": "Snorlax",
+      "set": "SV: Paldean Fates",
+      "number": "202/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/535193.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 44.01,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "535196",
+      "groupId": "23353",
+      "name": "Wingull",
+      "set": "SV: Paldean Fates",
+      "number": "203/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/535196.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 3.32,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "535200",
+      "groupId": "23353",
+      "name": "Pelipper",
+      "set": "SV: Paldean Fates",
+      "number": "204/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/535200.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 2.71,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "535201",
+      "groupId": "23353",
+      "name": "Skwovet",
+      "set": "SV: Paldean Fates",
+      "number": "205/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/535201.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 3.35,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "535203",
+      "groupId": "23353",
+      "name": "Greedent",
+      "set": "SV: Paldean Fates",
+      "number": "206/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/535203.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 3.31,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "535213",
+      "groupId": "23353",
+      "name": "Lechonk - 207/091",
+      "set": "SV: Paldean Fates",
+      "number": "207/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/535213.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 13.9,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "535955",
+      "groupId": "23353",
+      "name": "Oinkologne - 208/091",
+      "set": "SV: Paldean Fates",
+      "number": "208/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/535955.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 4.41,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "535214",
+      "groupId": "23353",
+      "name": "Tandemaus - 209/091",
+      "set": "SV: Paldean Fates",
+      "number": "209/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/535214.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 27.29,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "535215",
+      "groupId": "23353",
+      "name": "Maushold - 210/091",
+      "set": "SV: Paldean Fates",
+      "number": "210/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/535215.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 31.47,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "535217",
+      "groupId": "23353",
+      "name": "Flamigo",
+      "set": "SV: Paldean Fates",
+      "number": "211/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/535217.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 3.32,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "535297",
+      "groupId": "23353",
+      "name": "Forretress ex - 212/091",
+      "set": "SV: Paldean Fates",
+      "number": "212/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/535297.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 1.05,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "535299",
+      "groupId": "23353",
+      "name": "Toedscruel ex - 213/091",
+      "set": "SV: Paldean Fates",
+      "number": "213/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/535299.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 1.53,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "535303",
+      "groupId": "23353",
+      "name": "Espathra ex - 214/091",
+      "set": "SV: Paldean Fates",
+      "number": "214/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/535303.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 1.15,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "535524",
+      "groupId": "23353",
+      "name": "Alakazam ex",
+      "set": "SV: Paldean Fates",
+      "number": "215/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/535524.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 6.2,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "535527",
+      "groupId": "23353",
+      "name": "Mew ex - 216/091",
+      "set": "SV: Paldean Fates",
+      "number": "216/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/535527.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 35.33,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "535530",
+      "groupId": "23353",
+      "name": "Gardevoir ex - 217/091",
+      "set": "SV: Paldean Fates",
+      "number": "217/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/535530.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 8.2,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "535534",
+      "groupId": "23353",
+      "name": "Glimmora ex",
+      "set": "SV: Paldean Fates",
+      "number": "218/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/535534.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 1.04,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "535537",
+      "groupId": "23353",
+      "name": "Paldean Clodsire ex - 219/091",
+      "set": "SV: Paldean Fates",
+      "number": "219/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/535537.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 2.4,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "535541",
+      "groupId": "23353",
+      "name": "Noivern ex - 220/091",
+      "set": "SV: Paldean Fates",
+      "number": "220/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/535541.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 1.66,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "535559",
+      "groupId": "23353",
+      "name": "Pidgeot ex",
+      "set": "SV: Paldean Fates",
+      "number": "221/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/535559.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 2.02,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "535562",
+      "groupId": "23353",
+      "name": "Wigglytuff ex",
+      "set": "SV: Paldean Fates",
+      "number": "222/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/535562.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 2.14,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "535654",
+      "groupId": "23353",
+      "name": "Squawkabilly ex - 223/091",
+      "set": "SV: Paldean Fates",
+      "number": "223/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/535654.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 1.15,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534731",
+      "groupId": "23353",
+      "name": "Wugtrio - 224/091",
+      "set": "SV: Paldean Fates",
+      "number": "224/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534731.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 2.13,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534736",
+      "groupId": "23353",
+      "name": "Palafin - 225/091",
+      "set": "SV: Paldean Fates",
+      "number": "225/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534736.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 1.98,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534739",
+      "groupId": "23353",
+      "name": "Pawmi - 226/091",
+      "set": "SV: Paldean Fates",
+      "number": "226/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534739.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 2.42,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534743",
+      "groupId": "23353",
+      "name": "Clive - 227/091",
+      "set": "SV: Paldean Fates",
+      "number": "227/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534743.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 0.55,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534748",
+      "groupId": "23353",
+      "name": "Judge",
+      "set": "SV: Paldean Fates",
+      "number": "228/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534748.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 1.03,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534754",
+      "groupId": "23353",
+      "name": "Nemona - 229/091",
+      "set": "SV: Paldean Fates",
+      "number": "229/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534754.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 0.69,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534757",
+      "groupId": "23353",
+      "name": "Paldean Student - 230/091",
+      "set": "SV: Paldean Fates",
+      "number": "230/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534757.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 0.58,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534758",
+      "groupId": "23353",
+      "name": "Paldean Student - 231/091",
+      "set": "SV: Paldean Fates",
+      "number": "231/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534758.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 0.6,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "534919",
+      "groupId": "23353",
+      "name": "Mew ex - 232/091",
+      "set": "SV: Paldean Fates",
+      "number": "232/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534919.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 805.7,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "535085",
+      "groupId": "23353",
+      "name": "Gardevoir ex - 233/091",
+      "set": "SV: Paldean Fates",
+      "number": "233/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/535085.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 144.77,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "535090",
+      "groupId": "23353",
+      "name": "Charizard ex - 234/091",
+      "set": "SV: Paldean Fates",
+      "number": "234/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/535090.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 240.09,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "535095",
+      "groupId": "23353",
+      "name": "Arven",
+      "set": "SV: Paldean Fates",
+      "number": "235/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/535095.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 8.12,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "535098",
+      "groupId": "23353",
+      "name": "Clive - 236/091",
+      "set": "SV: Paldean Fates",
+      "number": "236/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/535098.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 18.05,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "535101",
+      "groupId": "23353",
+      "name": "Iono - 237/091",
+      "set": "SV: Paldean Fates",
+      "number": "237/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/535101.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 19.6,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "535104",
+      "groupId": "23353",
+      "name": "Nemona - 238/091",
+      "set": "SV: Paldean Fates",
+      "number": "238/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/535104.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 5.76,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "535108",
+      "groupId": "23353",
+      "name": "Penny",
+      "set": "SV: Paldean Fates",
+      "number": "239/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/535108.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 10.12,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "535112",
+      "groupId": "23353",
+      "name": "Wo-Chien ex",
+      "set": "SV: Paldean Fates",
+      "number": "240/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/535112.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 7.47,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "535116",
+      "groupId": "23353",
+      "name": "Chi-Yu ex",
+      "set": "SV: Paldean Fates",
+      "number": "241/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/535116.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 10.47,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "535120",
+      "groupId": "23353",
+      "name": "Chien-Pao ex",
+      "set": "SV: Paldean Fates",
+      "number": "242/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/535120.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 9.19,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "535124",
+      "groupId": "23353",
+      "name": "Miraidon ex",
+      "set": "SV: Paldean Fates",
+      "number": "243/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/535124.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 15.16,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "535127",
+      "groupId": "23353",
+      "name": "Ting-Lu ex",
+      "set": "SV: Paldean Fates",
+      "number": "244/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/535127.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 5.23,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    },
+    {
+      "productId": "535134",
+      "groupId": "23353",
+      "name": "Koraidon ex",
+      "set": "SV: Paldean Fates",
+      "number": "245/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/535134.jpg",
+      "points": [
+        {
+          "day": "2026-11-21",
+          "usd": 13.8,
+          "status": "ok",
+          "source": "https://tcgcsv.com/tcgplayer/3/23353/prices",
+          "sourceSha256": "b1fe3f8e6742733e72715ea701d9cff4a8d621dbb351c6428ac3bb660a2be1dc"
+        }
+      ]
+    }
+  ]
+}

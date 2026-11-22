@@ -1,0 +1,1777 @@
+{
+  "schemaVersion": 2,
+  "available": true,
+  "index": "thirtieth-anniversary",
+  "sourceSystem": "shared-cards-market",
+  "grade": "Raw",
+  "currency": "USD",
+  "measure": "tcgcsv_market",
+  "cards": [
+    {
+      "key": "en-30th-716435-holofoil",
+      "name": "Exeggcute",
+      "set": "ME: 30th Celebration",
+      "number": "001/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/716435.jpg"
+    },
+    {
+      "key": "en-30th-716436-holofoil",
+      "name": "Alolan Exeggutor - 002/128",
+      "set": "ME: 30th Celebration",
+      "number": "002/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/716436.jpg"
+    },
+    {
+      "key": "en-30th-716437-holofoil",
+      "name": "Volbeat",
+      "set": "ME: 30th Celebration",
+      "number": "003/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/716437.jpg"
+    },
+    {
+      "key": "en-30th-716438-holofoil",
+      "name": "Illumise",
+      "set": "ME: 30th Celebration",
+      "number": "004/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/716438.jpg"
+    },
+    {
+      "key": "en-30th-714372-holofoil",
+      "name": "Charizard",
+      "set": "ME: 30th Celebration Classic Collection",
+      "number": "4/102",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/714372.jpg"
+    },
+    {
+      "key": "en-30th-716439-holofoil",
+      "name": "Tropius",
+      "set": "ME: 30th Celebration",
+      "number": "005/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/716439.jpg"
+    },
+    {
+      "key": "en-30th-716156-holofoil",
+      "name": "Delcatty",
+      "set": "ME: 30th Celebration Classic Collection",
+      "number": "5/109",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/716156.jpg"
+    },
+    {
+      "key": "en-30th-716440-holofoil",
+      "name": "Cherubi",
+      "set": "ME: 30th Celebration",
+      "number": "006/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/716440.jpg"
+    },
+    {
+      "key": "en-30th-716441-holofoil",
+      "name": "Cherrim",
+      "set": "ME: 30th Celebration",
+      "number": "007/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/716441.jpg"
+    },
+    {
+      "key": "en-30th-716442-holofoil",
+      "name": "Vivillon",
+      "set": "ME: 30th Celebration",
+      "number": "008/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/716442.jpg"
+    },
+    {
+      "key": "en-30th-716443-holofoil",
+      "name": "Vulpix",
+      "set": "ME: 30th Celebration",
+      "number": "009/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/716443.jpg"
+    },
+    {
+      "key": "en-30th-716444-holofoil",
+      "name": "Ninetales",
+      "set": "ME: 30th Celebration",
+      "number": "010/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/716444.jpg"
+    },
+    {
+      "key": "en-30th-716445-holofoil",
+      "name": "Moltres - 011/128",
+      "set": "ME: 30th Celebration",
+      "number": "011/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/716445.jpg"
+    },
+    {
+      "key": "en-30th-716158-holofoil",
+      "name": "Genesect EX (Team Plasma)",
+      "set": "ME: 30th Celebration Classic Collection",
+      "number": "11/101",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/716158.jpg"
+    },
+    {
+      "key": "en-30th-716157-holofoil",
+      "name": "Metagross (Delta Species)",
+      "set": "ME: 30th Celebration Classic Collection",
+      "number": "11/113",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/716157.jpg"
+    },
+    {
+      "key": "en-30th-716446-holofoil",
+      "name": "Ho-Oh",
+      "set": "ME: 30th Celebration",
+      "number": "012/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/716446.jpg"
+    },
+    {
+      "key": "en-30th-696830-holofoil",
+      "name": "Victini",
+      "set": "ME: 30th Celebration",
+      "number": "013/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/696830.jpg"
+    },
+    {
+      "key": "en-30th-716447-holofoil",
+      "name": "Reshiram",
+      "set": "ME: 30th Celebration",
+      "number": "014/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/716447.jpg"
+    },
+    {
+      "key": "en-30th-716448-holofoil",
+      "name": "Fuecoco ex - 015/128",
+      "set": "ME: 30th Celebration",
+      "number": "015/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/716448.jpg"
+    },
+    {
+      "key": "en-30th-716449-holofoil",
+      "name": "Slowpoke",
+      "set": "ME: 30th Celebration",
+      "number": "016/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/716449.jpg"
+    },
+    {
+      "key": "en-30th-716450-holofoil",
+      "name": "Lapras - 017/128",
+      "set": "ME: 30th Celebration",
+      "number": "017/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/716450.jpg"
+    },
+    {
+      "key": "en-30th-716451-holofoil",
+      "name": "Articuno - 018/128",
+      "set": "ME: 30th Celebration",
+      "number": "018/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/716451.jpg"
+    },
+    {
+      "key": "en-30th-716159-holofoil",
+      "name": "Misty",
+      "set": "ME: 30th Celebration Classic Collection",
+      "number": "18/132",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/716159.jpg"
+    },
+    {
+      "key": "en-30th-716452-holofoil",
+      "name": "Kyogre",
+      "set": "ME: 30th Celebration",
+      "number": "019/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/716452.jpg"
+    },
+    {
+      "key": "en-30th-716160-holofoil",
+      "name": "Dark Tyranitar",
+      "set": "ME: 30th Celebration Classic Collection",
+      "number": "19/109",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/716160.jpg"
+    },
+    {
+      "key": "en-30th-716453-holofoil",
+      "name": "Palkia",
+      "set": "ME: 30th Celebration",
+      "number": "020/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/716453.jpg"
+    },
+    {
+      "key": "en-30th-696676-holofoil",
+      "name": "Greninja ex - 021/128",
+      "set": "ME: 30th Celebration",
+      "number": "021/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/696676.jpg"
+    },
+    {
+      "key": "en-30th-716454-holofoil",
+      "name": "Wishiwashi",
+      "set": "ME: 30th Celebration",
+      "number": "022/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/716454.jpg"
+    },
+    {
+      "key": "en-30th-712934-holofoil",
+      "name": "Pikachu - 023/128",
+      "set": "ME: 30th Celebration",
+      "number": "023/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/712934.jpg"
+    },
+    {
+      "key": "en-30th-716309-holofoil",
+      "name": "Pikachu - 024/128",
+      "set": "ME: 30th Celebration",
+      "number": "024/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/716309.jpg"
+    },
+    {
+      "key": "en-30th-712935-holofoil",
+      "name": "Pikachu - 025/128",
+      "set": "ME: 30th Celebration",
+      "number": "025/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/712935.jpg"
+    },
+    {
+      "key": "en-30th-716161-holofoil",
+      "name": "Sneasel",
+      "set": "ME: 30th Celebration Classic Collection",
+      "number": "25/111",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/716161.jpg"
+    },
+    {
+      "key": "en-30th-712936-holofoil",
+      "name": "Pikachu - 026/128",
+      "set": "ME: 30th Celebration",
+      "number": "026/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/712936.jpg"
+    },
+    {
+      "key": "en-30th-716310-holofoil",
+      "name": "Pikachu - 027/128",
+      "set": "ME: 30th Celebration",
+      "number": "027/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/716310.jpg"
+    },
+    {
+      "key": "en-30th-712937-holofoil",
+      "name": "Pikachu - 028/128",
+      "set": "ME: 30th Celebration",
+      "number": "028/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/712937.jpg"
+    },
+    {
+      "key": "en-30th-716311-holofoil",
+      "name": "Pikachu - 029/128",
+      "set": "ME: 30th Celebration",
+      "number": "029/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/716311.jpg"
+    },
+    {
+      "key": "en-30th-712938-holofoil",
+      "name": "Pikachu - 030/128",
+      "set": "ME: 30th Celebration",
+      "number": "030/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/712938.jpg"
+    },
+    {
+      "key": "en-30th-716312-holofoil",
+      "name": "Pikachu - 031/128",
+      "set": "ME: 30th Celebration",
+      "number": "031/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/716312.jpg"
+    },
+    {
+      "key": "en-30th-712939-holofoil",
+      "name": "Pikachu - 032/128",
+      "set": "ME: 30th Celebration",
+      "number": "032/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/712939.jpg"
+    },
+    {
+      "key": "en-30th-712940-holofoil",
+      "name": "Pikachu - 033/128",
+      "set": "ME: 30th Celebration",
+      "number": "033/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/712940.jpg"
+    },
+    {
+      "key": "en-30th-714373-holofoil",
+      "name": "Pikachu & Zekrom GX",
+      "set": "ME: 30th Celebration Classic Collection",
+      "number": "33/181",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/714373.jpg"
+    },
+    {
+      "key": "en-30th-712941-holofoil",
+      "name": "Pikachu - 034/128",
+      "set": "ME: 30th Celebration",
+      "number": "034/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/712941.jpg"
+    },
+    {
+      "key": "en-30th-716313-holofoil",
+      "name": "Pikachu - 035/128",
+      "set": "ME: 30th Celebration",
+      "number": "035/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/716313.jpg"
+    },
+    {
+      "key": "en-30th-696680-holofoil",
+      "name": "Pikachu - 036/128",
+      "set": "ME: 30th Celebration",
+      "number": "036/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/696680.jpg"
+    },
+    {
+      "key": "en-30th-696681-holofoil",
+      "name": "Pikachu - 037/128",
+      "set": "ME: 30th Celebration",
+      "number": "037/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/696681.jpg"
+    },
+    {
+      "key": "en-30th-712942-holofoil",
+      "name": "Pikachu - 038/128",
+      "set": "ME: 30th Celebration",
+      "number": "038/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/712942.jpg"
+    },
+    {
+      "key": "en-30th-712943-holofoil",
+      "name": "Pikachu - 039/128",
+      "set": "ME: 30th Celebration",
+      "number": "039/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/712943.jpg"
+    },
+    {
+      "key": "en-30th-712944-holofoil",
+      "name": "Pikachu - 040/128",
+      "set": "ME: 30th Celebration",
+      "number": "040/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/712944.jpg"
+    },
+    {
+      "key": "en-30th-712945-holofoil",
+      "name": "Pikachu - 041/128",
+      "set": "ME: 30th Celebration",
+      "number": "041/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/712945.jpg"
+    },
+    {
+      "key": "en-30th-716162-holofoil",
+      "name": "Greninja BREAK",
+      "set": "ME: 30th Celebration Classic Collection",
+      "number": "41/122",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/716162.jpg"
+    },
+    {
+      "key": "en-30th-712946-holofoil",
+      "name": "Pikachu - 042/128",
+      "set": "ME: 30th Celebration",
+      "number": "042/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/712946.jpg"
+    },
+    {
+      "key": "en-30th-712947-holofoil",
+      "name": "Pikachu - 043/128",
+      "set": "ME: 30th Celebration",
+      "number": "043/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/712947.jpg"
+    },
+    {
+      "key": "en-30th-716163-holofoil",
+      "name": "Uxie",
+      "set": "ME: 30th Celebration Classic Collection",
+      "number": "43/146",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/716163.jpg"
+    },
+    {
+      "key": "en-30th-712948-holofoil",
+      "name": "Pikachu - 044/128",
+      "set": "ME: 30th Celebration",
+      "number": "044/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/712948.jpg"
+    },
+    {
+      "key": "en-30th-716314-holofoil",
+      "name": "Pikachu - 045/128",
+      "set": "ME: 30th Celebration",
+      "number": "045/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/716314.jpg"
+    },
+    {
+      "key": "en-30th-716315-holofoil",
+      "name": "Pikachu - 046/128",
+      "set": "ME: 30th Celebration",
+      "number": "046/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/716315.jpg"
+    },
+    {
+      "key": "en-30th-696682-holofoil",
+      "name": "Pikachu - 047/128",
+      "set": "ME: 30th Celebration",
+      "number": "047/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/696682.jpg"
+    },
+    {
+      "key": "en-30th-716191-holofoil",
+      "name": "Crobat G",
+      "set": "ME: 30th Celebration Classic Collection",
+      "number": "47/127",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/716191.jpg"
+    },
+    {
+      "key": "en-30th-716316-holofoil",
+      "name": "Pikachu - 048/128",
+      "set": "ME: 30th Celebration",
+      "number": "048/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/716316.jpg"
+    },
+    {
+      "key": "en-30th-712949-holofoil",
+      "name": "Pikachu - 049/128",
+      "set": "ME: 30th Celebration",
+      "number": "049/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/712949.jpg"
+    },
+    {
+      "key": "en-30th-712950-holofoil",
+      "name": "Pikachu - 050/128",
+      "set": "ME: 30th Celebration",
+      "number": "050/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/712950.jpg"
+    },
+    {
+      "key": "en-30th-716192-holofoil",
+      "name": "Raikou",
+      "set": "ME: 30th Celebration Classic Collection",
+      "number": "050/185",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/716192.jpg"
+    },
+    {
+      "key": "en-30th-716317-holofoil",
+      "name": "Pikachu - 051/128",
+      "set": "ME: 30th Celebration",
+      "number": "051/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/716317.jpg"
+    },
+    {
+      "key": "en-30th-716318-holofoil",
+      "name": "Pikachu - 052/128",
+      "set": "ME: 30th Celebration",
+      "number": "052/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/716318.jpg"
+    },
+    {
+      "key": "en-30th-712951-holofoil",
+      "name": "Pikachu ex - 053/128",
+      "set": "ME: 30th Celebration",
+      "number": "053/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/712951.jpg"
+    },
+    {
+      "key": "en-30th-712952-holofoil",
+      "name": "Pikachu ex - 054/128",
+      "set": "ME: 30th Celebration",
+      "number": "054/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/712952.jpg"
+    },
+    {
+      "key": "en-30th-716455-holofoil",
+      "name": "Zapdos - 055/128",
+      "set": "ME: 30th Celebration",
+      "number": "055/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/716455.jpg"
+    },
+    {
+      "key": "en-30th-716456-holofoil",
+      "name": "Zekrom",
+      "set": "ME: 30th Celebration",
+      "number": "056/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/716456.jpg"
+    },
+    {
+      "key": "en-30th-696831-holofoil",
+      "name": "Zeraora",
+      "set": "ME: 30th Celebration",
+      "number": "057/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/696831.jpg"
+    },
+    {
+      "key": "en-30th-716193-holofoil",
+      "name": "Buzzwole GX",
+      "set": "ME: 30th Celebration Classic Collection",
+      "number": "57/111",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/716193.jpg"
+    },
+    {
+      "key": "en-30th-716457-holofoil",
+      "name": "Toxel",
+      "set": "ME: 30th Celebration",
+      "number": "058/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/716457.jpg"
+    },
+    {
+      "key": "en-30th-716194-holofoil",
+      "name": "Pikachu",
+      "set": "ME: 30th Celebration Classic Collection",
+      "number": "58/102",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/716194.jpg"
+    },
+    {
+      "key": "en-30th-716458-holofoil",
+      "name": "Toxtricity - 059/128",
+      "set": "ME: 30th Celebration",
+      "number": "059/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/716458.jpg"
+    },
+    {
+      "key": "en-30th-716459-holofoil",
+      "name": "Toxtricity - 060/128",
+      "set": "ME: 30th Celebration",
+      "number": "060/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/716459.jpg"
+    },
+    {
+      "key": "en-30th-716460-holofoil",
+      "name": "Morpeko - 061/128",
+      "set": "ME: 30th Celebration",
+      "number": "061/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/716460.jpg"
+    },
+    {
+      "key": "en-30th-716461-holofoil",
+      "name": "Miraidon",
+      "set": "ME: 30th Celebration",
+      "number": "062/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/716461.jpg"
+    },
+    {
+      "key": "en-30th-716462-holofoil",
+      "name": "Mewtwo",
+      "set": "ME: 30th Celebration",
+      "number": "063/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/716462.jpg"
+    },
+    {
+      "key": "en-30th-716463-holofoil",
+      "name": "Mewtwo ex - 064/128",
+      "set": "ME: 30th Celebration",
+      "number": "064/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/716463.jpg"
+    },
+    {
+      "key": "en-30th-716464-holofoil",
+      "name": "Mew",
+      "set": "ME: 30th Celebration",
+      "number": "065/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/716464.jpg"
+    },
+    {
+      "key": "en-30th-716465-holofoil",
+      "name": "Mew ex - 066/128",
+      "set": "ME: 30th Celebration",
+      "number": "066/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/716465.jpg"
+    },
+    {
+      "key": "en-30th-716466-holofoil",
+      "name": "Marill",
+      "set": "ME: 30th Celebration",
+      "number": "067/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/716466.jpg"
+    },
+    {
+      "key": "en-30th-716467-holofoil",
+      "name": "Azumarill",
+      "set": "ME: 30th Celebration",
+      "number": "068/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/716467.jpg"
+    },
+    {
+      "key": "en-30th-696678-holofoil",
+      "name": "Espeon",
+      "set": "ME: 30th Celebration",
+      "number": "069/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/696678.jpg"
+    },
+    {
+      "key": "en-30th-716195-holofoil",
+      "name": "Erika's Jigglypuff",
+      "set": "ME: 30th Celebration Classic Collection",
+      "number": "69/132",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/716195.jpg"
+    },
+    {
+      "key": "en-30th-696834-holofoil",
+      "name": "Espeon ex",
+      "set": "ME: 30th Celebration",
+      "number": "070/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/696834.jpg"
+    },
+    {
+      "key": "en-30th-696677-holofoil",
+      "name": "Sylveon ex - 071/128",
+      "set": "ME: 30th Celebration",
+      "number": "071/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/696677.jpg"
+    },
+    {
+      "key": "en-30th-716468-holofoil",
+      "name": "Unown",
+      "set": "ME: 30th Celebration",
+      "number": "072/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/716468.jpg"
+    },
+    {
+      "key": "en-30th-716469-holofoil",
+      "name": "Drifloon - 073/128",
+      "set": "ME: 30th Celebration",
+      "number": "073/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/716469.jpg"
+    },
+    {
+      "key": "en-30th-716470-holofoil",
+      "name": "Cresselia",
+      "set": "ME: 30th Celebration",
+      "number": "074/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/716470.jpg"
+    },
+    {
+      "key": "en-30th-716471-holofoil",
+      "name": "Chandelure - 075/128",
+      "set": "ME: 30th Celebration",
+      "number": "075/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/716471.jpg"
+    },
+    {
+      "key": "en-30th-716472-holofoil",
+      "name": "Xerneas",
+      "set": "ME: 30th Celebration",
+      "number": "076/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/716472.jpg"
+    },
+    {
+      "key": "en-30th-716473-holofoil",
+      "name": "Comfey",
+      "set": "ME: 30th Celebration",
+      "number": "077/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/716473.jpg"
+    },
+    {
+      "key": "en-30th-716474-holofoil",
+      "name": "Cosmog",
+      "set": "ME: 30th Celebration",
+      "number": "078/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/716474.jpg"
+    },
+    {
+      "key": "en-30th-716475-holofoil",
+      "name": "Cosmoem",
+      "set": "ME: 30th Celebration",
+      "number": "079/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/716475.jpg"
+    },
+    {
+      "key": "en-30th-716476-holofoil",
+      "name": "Lunala",
+      "set": "ME: 30th Celebration",
+      "number": "080/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/716476.jpg"
+    },
+    {
+      "key": "en-30th-716477-holofoil",
+      "name": "Gimmighoul",
+      "set": "ME: 30th Celebration",
+      "number": "081/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/716477.jpg"
+    },
+    {
+      "key": "en-30th-716478-holofoil",
+      "name": "Groudon",
+      "set": "ME: 30th Celebration",
+      "number": "082/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/716478.jpg"
+    },
+    {
+      "key": "en-30th-716479-holofoil",
+      "name": "Lucario",
+      "set": "ME: 30th Celebration",
+      "number": "083/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/716479.jpg"
+    },
+    {
+      "key": "en-30th-716480-holofoil",
+      "name": "Seismitoad",
+      "set": "ME: 30th Celebration",
+      "number": "084/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/716480.jpg"
+    },
+    {
+      "key": "en-30th-716481-holofoil",
+      "name": "Lycanroc - 085/128",
+      "set": "ME: 30th Celebration",
+      "number": "085/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/716481.jpg"
+    },
+    {
+      "key": "en-30th-716196-holofoil",
+      "name": "Rayquaza EX",
+      "set": "ME: 30th Celebration Classic Collection",
+      "number": "85/124",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/716196.jpg"
+    },
+    {
+      "key": "en-30th-716482-holofoil",
+      "name": "Koraidon",
+      "set": "ME: 30th Celebration",
+      "number": "086/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/716482.jpg"
+    },
+    {
+      "key": "en-30th-716483-holofoil",
+      "name": "Nidoran F",
+      "set": "ME: 30th Celebration",
+      "number": "087/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/716483.jpg"
+    },
+    {
+      "key": "en-30th-716484-holofoil",
+      "name": "Nidorina",
+      "set": "ME: 30th Celebration",
+      "number": "088/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/716484.jpg"
+    },
+    {
+      "key": "en-30th-714359-holofoil",
+      "name": "Alolan Meowth - 089/128",
+      "set": "ME: 30th Celebration",
+      "number": "089/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/714359.jpg"
+    },
+    {
+      "key": "en-30th-716197-holofoil",
+      "name": "Solgaleo GX",
+      "set": "ME: 30th Celebration Classic Collection",
+      "number": "89/149",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/716197.jpg"
+    },
+    {
+      "key": "en-30th-716485-holofoil",
+      "name": "Gengar ex - 090/128",
+      "set": "ME: 30th Celebration",
+      "number": "090/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/716485.jpg"
+    },
+    {
+      "key": "en-30th-696679-holofoil",
+      "name": "Umbreon",
+      "set": "ME: 30th Celebration",
+      "number": "091/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/696679.jpg"
+    },
+    {
+      "key": "en-30th-696835-holofoil",
+      "name": "Umbreon ex",
+      "set": "ME: 30th Celebration",
+      "number": "092/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/696835.jpg"
+    },
+    {
+      "key": "en-30th-716486-holofoil",
+      "name": "Murkrow",
+      "set": "ME: 30th Celebration",
+      "number": "093/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/716486.jpg"
+    },
+    {
+      "key": "en-30th-716487-holofoil",
+      "name": "Scraggy - 094/128",
+      "set": "ME: 30th Celebration",
+      "number": "094/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/716487.jpg"
+    },
+    {
+      "key": "en-30th-716198-holofoil",
+      "name": "Gengar (Prime)",
+      "set": "ME: 30th Celebration Classic Collection",
+      "number": "94/102",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/716198.jpg"
+    },
+    {
+      "key": "en-30th-716488-holofoil",
+      "name": "Zorua",
+      "set": "ME: 30th Celebration",
+      "number": "095/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/716488.jpg"
+    },
+    {
+      "key": "en-30th-716489-holofoil",
+      "name": "Zoroark",
+      "set": "ME: 30th Celebration",
+      "number": "096/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/716489.jpg"
+    },
+    {
+      "key": "en-30th-716490-holofoil",
+      "name": "Deino",
+      "set": "ME: 30th Celebration",
+      "number": "097/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/716490.jpg"
+    },
+    {
+      "key": "en-30th-716491-holofoil",
+      "name": "Zweilous",
+      "set": "ME: 30th Celebration",
+      "number": "098/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/716491.jpg"
+    },
+    {
+      "key": "en-30th-716492-holofoil",
+      "name": "Hydreigon",
+      "set": "ME: 30th Celebration",
+      "number": "099/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/716492.jpg"
+    },
+    {
+      "key": "en-30th-716199-holofoil",
+      "name": "Darkrai & Cresselia Legend (Top)",
+      "set": "ME: 30th Celebration Classic Collection",
+      "number": "99/102",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/716199.jpg"
+    },
+    {
+      "key": "en-30th-716200-holofoil",
+      "name": "Darkrai & Cresselia Legend (Bottom)",
+      "set": "ME: 30th Celebration Classic Collection",
+      "number": "100/102",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/716200.jpg"
+    },
+    {
+      "key": "en-30th-716493-holofoil",
+      "name": "Yveltal",
+      "set": "ME: 30th Celebration",
+      "number": "100/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/716493.jpg"
+    },
+    {
+      "key": "en-30th-716202-holofoil",
+      "name": "N (Supporter)",
+      "set": "ME: 30th Celebration Classic Collection",
+      "number": "101/101",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/716202.jpg"
+    },
+    {
+      "key": "en-30th-716494-holofoil",
+      "name": "Galarian Meowth - 101/128",
+      "set": "ME: 30th Celebration",
+      "number": "101/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/716494.jpg"
+    },
+    {
+      "key": "en-30th-716495-holofoil",
+      "name": "Jirachi ex - 102/128",
+      "set": "ME: 30th Celebration",
+      "number": "102/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/716495.jpg"
+    },
+    {
+      "key": "en-30th-716496-holofoil",
+      "name": "Dialga",
+      "set": "ME: 30th Celebration",
+      "number": "103/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/716496.jpg"
+    },
+    {
+      "key": "en-30th-716497-holofoil",
+      "name": "Ferrothorn",
+      "set": "ME: 30th Celebration",
+      "number": "104/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/716497.jpg"
+    },
+    {
+      "key": "en-30th-716498-holofoil",
+      "name": "Solgaleo",
+      "set": "ME: 30th Celebration",
+      "number": "105/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/716498.jpg"
+    },
+    {
+      "key": "en-30th-716205-holofoil",
+      "name": "Shining Celebi",
+      "set": "ME: 30th Celebration Classic Collection",
+      "number": "106/105",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/716205.jpg"
+    },
+    {
+      "key": "en-30th-716203-holofoil",
+      "name": "Palkia LV.X",
+      "set": "ME: 30th Celebration Classic Collection",
+      "number": "106/106",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/716203.jpg"
+    },
+    {
+      "key": "en-30th-716499-holofoil",
+      "name": "Zacian",
+      "set": "ME: 30th Celebration",
+      "number": "106/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/716499.jpg"
+    },
+    {
+      "key": "en-30th-716204-holofoil",
+      "name": "M Gardevoir EX",
+      "set": "ME: 30th Celebration Classic Collection",
+      "number": "106/160",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/716204.jpg"
+    },
+    {
+      "key": "en-30th-713257-holofoil",
+      "name": "Pikachu ex - 107 (30th Celebration)",
+      "set": "ME: Mega Evolution Promo",
+      "number": "107",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/713257.jpg"
+    },
+    {
+      "key": "en-30th-716500-holofoil",
+      "name": "Zamazenta",
+      "set": "ME: 30th Celebration",
+      "number": "107/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/716500.jpg"
+    },
+    {
+      "key": "en-30th-713258-holofoil",
+      "name": "Espeon ex - 108 (30th Celebration)",
+      "set": "ME: Mega Evolution Promo",
+      "number": "108",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/713258.jpg"
+    },
+    {
+      "key": "en-30th-716206-holofoil",
+      "name": "Scizor ex",
+      "set": "ME: 30th Celebration Classic Collection",
+      "number": "108/115",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/716206.jpg"
+    },
+    {
+      "key": "en-30th-716501-holofoil",
+      "name": "Gholdengo - 108/128",
+      "set": "ME: 30th Celebration",
+      "number": "108/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/716501.jpg"
+    },
+    {
+      "key": "en-30th-713256-holofoil",
+      "name": "Pikachu ex - 109 (30th Celebration)",
+      "set": "ME: Mega Evolution Promo",
+      "number": "109",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/713256.jpg"
+    },
+    {
+      "key": "en-30th-716502-holofoil",
+      "name": "Salamence ex - 109/128",
+      "set": "ME: 30th Celebration",
+      "number": "109/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/716502.jpg"
+    },
+    {
+      "key": "en-30th-713259-holofoil",
+      "name": "Umbreon ex - 110 (30th Celebration)",
+      "set": "ME: Mega Evolution Promo",
+      "number": "110",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/713259.jpg"
+    },
+    {
+      "key": "en-30th-716503-holofoil",
+      "name": "Jangmo-o",
+      "set": "ME: 30th Celebration",
+      "number": "110/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/716503.jpg"
+    },
+    {
+      "key": "en-30th-716504-holofoil",
+      "name": "Hakamo-o",
+      "set": "ME: 30th Celebration",
+      "number": "111/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/716504.jpg"
+    },
+    {
+      "key": "en-30th-716505-holofoil",
+      "name": "Kommo-o - 112/128",
+      "set": "ME: 30th Celebration",
+      "number": "112/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/716505.jpg"
+    },
+    {
+      "key": "en-30th-714356-holofoil",
+      "name": "Meowth - 113/128",
+      "set": "ME: 30th Celebration",
+      "number": "113/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/714356.jpg"
+    },
+    {
+      "key": "en-30th-716506-holofoil",
+      "name": "Kangaskhan",
+      "set": "ME: 30th Celebration",
+      "number": "114/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/716506.jpg"
+    },
+    {
+      "key": "en-30th-716207-holofoil",
+      "name": "Mew VMAX",
+      "set": "ME: 30th Celebration Classic Collection",
+      "number": "114/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/716207.jpg"
+    },
+    {
+      "key": "en-30th-716507-holofoil",
+      "name": "Ditto",
+      "set": "ME: 30th Celebration",
+      "number": "115/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/716507.jpg"
+    },
+    {
+      "key": "en-30th-714357-holofoil",
+      "name": "Eevee - 116/128",
+      "set": "ME: 30th Celebration",
+      "number": "116/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/714357.jpg"
+    },
+    {
+      "key": "en-30th-696832-holofoil",
+      "name": "Eevee - 117/128",
+      "set": "ME: 30th Celebration",
+      "number": "117/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/696832.jpg"
+    },
+    {
+      "key": "en-30th-696833-holofoil",
+      "name": "Eevee - 118/128",
+      "set": "ME: 30th Celebration",
+      "number": "118/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/696833.jpg"
+    },
+    {
+      "key": "en-30th-716508-holofoil",
+      "name": "Snorlax",
+      "set": "ME: 30th Celebration",
+      "number": "119/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/716508.jpg"
+    },
+    {
+      "key": "en-30th-716509-holofoil",
+      "name": "Igglybuff",
+      "set": "ME: 30th Celebration",
+      "number": "120/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/716509.jpg"
+    },
+    {
+      "key": "en-30th-716510-holofoil",
+      "name": "Lugia",
+      "set": "ME: 30th Celebration",
+      "number": "121/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/716510.jpg"
+    },
+    {
+      "key": "en-30th-716511-holofoil",
+      "name": "Hisuian Zorua - 122/128",
+      "set": "ME: 30th Celebration",
+      "number": "122/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/716511.jpg"
+    },
+    {
+      "key": "en-30th-716512-holofoil",
+      "name": "Hisuian Zoroark",
+      "set": "ME: 30th Celebration",
+      "number": "123/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/716512.jpg"
+    },
+    {
+      "key": "en-30th-716208-holofoil",
+      "name": "Arceus VSTAR",
+      "set": "ME: 30th Celebration Classic Collection",
+      "number": "123/172",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/716208.jpg"
+    },
+    {
+      "key": "en-30th-716513-holofoil",
+      "name": "Minior",
+      "set": "ME: 30th Celebration",
+      "number": "124/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/716513.jpg"
+    },
+    {
+      "key": "en-30th-716514-holofoil",
+      "name": "Maushold - 125/128",
+      "set": "ME: 30th Celebration",
+      "number": "125/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/716514.jpg"
+    },
+    {
+      "key": "en-30th-716515-holofoil",
+      "name": "Poke Pad",
+      "set": "ME: 30th Celebration",
+      "number": "126/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/716515.jpg"
+    },
+    {
+      "key": "en-30th-716516-holofoil",
+      "name": "Switch",
+      "set": "ME: 30th Celebration",
+      "number": "127/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/716516.jpg"
+    },
+    {
+      "key": "en-30th-716517-holofoil",
+      "name": "Ultra Ball",
+      "set": "ME: 30th Celebration",
+      "number": "128/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/716517.jpg"
+    },
+    {
+      "key": "en-30th-716218-holofoil",
+      "name": "Alolan Exeggutor - 129/128",
+      "set": "ME: 30th Celebration",
+      "number": "129/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/716218.jpg"
+    },
+    {
+      "key": "en-30th-716219-holofoil",
+      "name": "Moltres - 130/128",
+      "set": "ME: 30th Celebration",
+      "number": "130/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/716219.jpg"
+    },
+    {
+      "key": "en-30th-696683-holofoil",
+      "name": "Lapras - 131/128",
+      "set": "ME: 30th Celebration",
+      "number": "131/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/696683.jpg"
+    },
+    {
+      "key": "en-30th-716220-holofoil",
+      "name": "Articuno - 132/128",
+      "set": "ME: 30th Celebration",
+      "number": "132/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/716220.jpg"
+    },
+    {
+      "key": "en-30th-716221-holofoil",
+      "name": "Zapdos - 133/128",
+      "set": "ME: 30th Celebration",
+      "number": "133/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/716221.jpg"
+    },
+    {
+      "key": "en-30th-716222-holofoil",
+      "name": "Toxtricity - 134/128",
+      "set": "ME: 30th Celebration",
+      "number": "134/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/716222.jpg"
+    },
+    {
+      "key": "en-30th-716223-holofoil",
+      "name": "Morpeko - 135/128",
+      "set": "ME: 30th Celebration",
+      "number": "135/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/716223.jpg"
+    },
+    {
+      "key": "en-30th-696684-holofoil",
+      "name": "Drifloon - 136/128",
+      "set": "ME: 30th Celebration",
+      "number": "136/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/696684.jpg"
+    },
+    {
+      "key": "en-30th-716224-holofoil",
+      "name": "Chandelure - 137/128",
+      "set": "ME: 30th Celebration",
+      "number": "137/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/716224.jpg"
+    },
+    {
+      "key": "en-30th-696685-holofoil",
+      "name": "Lycanroc - 138/128",
+      "set": "ME: 30th Celebration",
+      "number": "138/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/696685.jpg"
+    },
+    {
+      "key": "en-30th-716209-holofoil",
+      "name": "Zacian V",
+      "set": "ME: 30th Celebration Classic Collection",
+      "number": "138/202",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/716209.jpg"
+    },
+    {
+      "key": "en-30th-714360-holofoil",
+      "name": "Alolan Meowth - 139/128",
+      "set": "ME: 30th Celebration",
+      "number": "139/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/714360.jpg"
+    },
+    {
+      "key": "en-30th-716225-holofoil",
+      "name": "Scraggy - 140/128",
+      "set": "ME: 30th Celebration",
+      "number": "140/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/716225.jpg"
+    },
+    {
+      "key": "en-30th-716226-holofoil",
+      "name": "Galarian Meowth - 141/128",
+      "set": "ME: 30th Celebration",
+      "number": "141/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/716226.jpg"
+    },
+    {
+      "key": "en-30th-716227-holofoil",
+      "name": "Gholdengo - 142/128",
+      "set": "ME: 30th Celebration",
+      "number": "142/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/716227.jpg"
+    },
+    {
+      "key": "en-30th-717621-holofoil",
+      "name": "Kommo-o - 143/128",
+      "set": "ME: 30th Celebration",
+      "number": "143/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/717621.jpg"
+    },
+    {
+      "key": "en-30th-714358-holofoil",
+      "name": "Meowth - 144/128",
+      "set": "ME: 30th Celebration",
+      "number": "144/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/714358.jpg"
+    },
+    {
+      "key": "en-30th-696686-holofoil",
+      "name": "Hisuian Zorua - 145/128",
+      "set": "ME: 30th Celebration",
+      "number": "145/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/696686.jpg"
+    },
+    {
+      "key": "en-30th-716228-holofoil",
+      "name": "Maushold - 146/128",
+      "set": "ME: 30th Celebration",
+      "number": "146/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/716228.jpg"
+    },
+    {
+      "key": "en-30th-716229-holofoil",
+      "name": "Fuecoco ex - 147/128",
+      "set": "ME: 30th Celebration",
+      "number": "147/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/716229.jpg"
+    },
+    {
+      "key": "en-30th-716230-holofoil",
+      "name": "Greninja ex - 148/128",
+      "set": "ME: 30th Celebration",
+      "number": "148/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/716230.jpg"
+    },
+    {
+      "key": "en-30th-712953-holofoil",
+      "name": "Pikachu ex - 149/128",
+      "set": "ME: 30th Celebration",
+      "number": "149/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/712953.jpg"
+    },
+    {
+      "key": "en-30th-714386-holofoil",
+      "name": "Lugia",
+      "set": "ME: 30th Celebration Classic Collection",
+      "number": "149/147",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/714386.jpg"
+    },
+    {
+      "key": "en-30th-712954-holofoil",
+      "name": "Pikachu ex - 150/128",
+      "set": "ME: 30th Celebration",
+      "number": "150/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/712954.jpg"
+    },
+    {
+      "key": "en-30th-celebration-mewtwo-ex-151-128-holofoil",
+      "name": "Mewtwo ex - 151/128",
+      "set": "ME: 30th Celebration",
+      "number": "151/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/717603.jpg"
+    },
+    {
+      "key": "en-30th-717605-holofoil",
+      "name": "Mew ex - 152/128",
+      "set": "ME: 30th Celebration",
+      "number": "152/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/717605.jpg"
+    },
+    {
+      "key": "en-30th-716231-holofoil",
+      "name": "Sylveon ex - 153/128",
+      "set": "ME: 30th Celebration",
+      "number": "153/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/716231.jpg"
+    },
+    {
+      "key": "en-30th-717610-holofoil",
+      "name": "Gengar ex - 154/128",
+      "set": "ME: 30th Celebration",
+      "number": "154/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/717610.jpg"
+    },
+    {
+      "key": "en-30th-716232-holofoil",
+      "name": "Jirachi ex - 155/128",
+      "set": "ME: 30th Celebration",
+      "number": "155/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/716232.jpg"
+    },
+    {
+      "key": "en-30th-716233-holofoil",
+      "name": "Salamence ex - 156/128",
+      "set": "ME: 30th Celebration",
+      "number": "156/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/716233.jpg"
+    },
+    {
+      "key": "en-30th-696687-holofoil",
+      "name": "Mewtwo ex - 157/128",
+      "set": "ME: 30th Celebration",
+      "number": "157/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/696687.jpg"
+    },
+    {
+      "key": "en-30th-696688-holofoil",
+      "name": "Mew ex - 158/128",
+      "set": "ME: 30th Celebration",
+      "number": "158/128",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/696688.jpg"
+    },
+    {
+      "key": "en-30th-716210-holofoil",
+      "name": "Magikarp",
+      "set": "ME: 30th Celebration Classic Collection",
+      "number": "203/193",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/716210.jpg"
+    },
+    {
+      "key": "en-30th-717609-holofoil",
+      "name": "Mew - B/RGB",
+      "set": "ME: 30th Celebration",
+      "number": "B/RGB",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/717609.jpg"
+    },
+    {
+      "key": "en-30th-717608-holofoil",
+      "name": "Mew - G/RGB",
+      "set": "ME: 30th Celebration",
+      "number": "G/RGB",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/717608.jpg"
+    },
+    {
+      "key": "en-30th-717607-holofoil",
+      "name": "Mew - R/RGB",
+      "set": "ME: 30th Celebration",
+      "number": "R/RGB",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/thirtieth/717607.jpg"
+    }
+  ],
+  "sourceDate": "2026-11-21",
+  "source": "https://tcgcsv.com/faq",
+  "sources": [],
+  "baseline": {
+    "date": "2026-10-08",
+    "usd": null,
+    "proposed": false
+  },
+  "preview": true,
+  "previewNote": "Card list for the 195-card page. Prices are read from data/market-cache/thirtieth-current.json and are not rewritten here. The whole-set index stays at — until a complete 195-card guide for 8 October 2026 is in that public history.",
+  "sourceVersion": "3434be7d017922cf85932e4476943fa6d7ff63e7652c2fd5ad582d401f683b6c"
+}

@@ -13,7 +13,8 @@ from bs4 import BeautifulSoup
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from ebay_cards import (render_ebay_cards, validate_ebay_cards, validate_section_blocks,
-                        news_placement_for, check_rendered_news_placements)
+                        news_placement_for, check_rendered_news_placements,
+                        news_insert_at, render_news_paragraphs, summary_paragraphs)
 
 ROOT = Path(__file__).resolve().parents[1]
 BRIEF = {'id': 'delta-reign-raikou-ex-sir-spike-cools-2026-11-19',
@@ -95,6 +96,62 @@ class EbayCardBlocks(unittest.TestCase):
             validate_section_blocks({'slug': 'other', 'sections': [{'html': good}]}, 'other')
         with self.assertRaises(ValueError):
             validate_section_blocks({'slug': 'my-feature', 'sections': [{'html': good + good}]}, 'my-feature')
+
+    def test_news_unit_follows_paragraph_three_two_or_the_last_lead(self):
+        def page(paragraphs, with_chase=True):
+            summary = '\n\n'.join(f'Paragraph {i}.' for i in range(1, paragraphs + 1))
+            item = {'id': BRIEF['id'], 'summary': summary, 'ebay_cards': [
+                {'name': 'Raikou ex', 'number': '136/103', 'set': 'Delta Reign'},
+                {'name': 'Alakazam ex', 'number': '201/165', 'set': 'Scarlet & Violet 151'},
+            ]}
+            chase = ''
+            if with_chase:
+                item['chase_cards'] = [{'name': 'Alakazam ex', 'number': '201/165', 'image': 'assets/sv-151/517047.jpg', 'alt': 'Alakazam ex'}]
+                item['chase_cards_credit'] = 'Card image: TCGplayer.'
+                from chase_cards import render_chase_cards
+                chase = render_chase_cards(item, {'Alakazam ex': '201/165'})
+            unit = '<div class="news-ebay-unit">' + render_ebay_cards(item, item['id'], {('Alakazam ex', '201/165')}) + chase + '</div>'
+            body = render_news_paragraphs(summary, unit)
+            html = f'<header class="reading-head"><p>{summary_paragraphs(summary)[0]}</p></header><article class="article-body">{body}</article>'
+            check_rendered_news_placements(html, item['id'], 'placed', summary)
+            article = BeautifulSoup(html, 'html.parser').select_one('.article-body')
+            children = [child.name for child in article.find_all(recursive=False)]
+            unit_at = children.index('div')
+            self.assertEqual(unit_at, news_insert_at(paragraphs))
+            self.assertEqual(len(article.select(':scope > p')), paragraphs)
+            self.assertIsNotNone(article.select_one('.news-ebay-unit [data-ebay-card]'))
+            if with_chase:
+                self.assertIsNotNone(article.select_one('.news-ebay-unit .story-chase'))
+            self.assertIsNone(BeautifulSoup(html, 'html.parser').select_one('header .news-ebay-unit'))
+
+        page(1, with_chase=False)
+        page(2)
+        page(3)
+        page(6)
+
+    def test_site_js_inserts_the_unit_at_the_same_paragraph(self):
+        src = (ROOT / 'site.js').read_text()
+        names = ('summaryParts', 'newsInsertAt', 'ebayBlock', 'ebayCards', 'chaseStrip', 'newsEbayUnit', 'newsParagraphs')
+        lines = []
+        for name in names:
+            line = next(row for row in src.splitlines() if row.startswith(f'function {name}('))
+            lines.append(line)
+        esc = re.search(r'const esc=.*?;\n', src).group(0)
+        script = esc + '\n' + '\n'.join(lines) + """
+        const counts=[1,2,3,6];
+        const out=counts.map(n=>{
+          const summary=Array.from({length:n},(_,i)=>'Paragraph '+(i+1)+'.').join('\\n\\n');
+          return {n, at:newsInsertAt(n), html:newsParagraphs({id:'delta-reign-raikou-ex-sir-spike-cools-2026-11-19', summary, ebay_cards:[{name:'Raikou ex', number:'136/103', set:'Delta Reign'}]})};
+        });
+        process.stdout.write(JSON.stringify(out));
+        """
+        parsed = json.loads(subprocess.check_output(['node', '-e', script]))
+        for row in parsed:
+            self.assertEqual(row['at'], news_insert_at(row['n']))
+            article = BeautifulSoup('<article class="article-body">' + row['html'] + '</article>', 'html.parser')
+            children = [child.name for child in article.select_one('.article-body').find_all(recursive=False)]
+            self.assertEqual(children.index('div'), news_insert_at(row['n']))
+            check_rendered_news_placements(str(article), BRIEF['id'], 'spa', '\n\n'.join(f'Paragraph {i}.' for i in range(1, row['n'] + 1)))
 
     def test_every_live_block_renders_a_shop_box(self):
         found = blocks_in_editorial()

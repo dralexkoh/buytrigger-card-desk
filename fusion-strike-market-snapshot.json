@@ -1,0 +1,2867 @@
+{
+  "schemaVersion": 2,
+  "available": true,
+  "index": "fusion-strike",
+  "sourceSystem": "shared-cards-market",
+  "grade": "Raw",
+  "currency": "USD",
+  "measure": "tcgcsv_market",
+  "cards": [
+    {
+      "key": "en-fusion-strike-253069-normal",
+      "name": "Caterpie",
+      "set": "SWSH08: Fusion Strike",
+      "number": "001/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253069.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-fusion-strike-253072-normal",
+      "name": "Metapod",
+      "set": "SWSH08: Fusion Strike",
+      "number": "002/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253072.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-fusion-strike-253073-holofoil",
+      "name": "Butterfree",
+      "set": "SWSH08: Fusion Strike",
+      "number": "003/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253073.jpg",
+      "rarity": "Holo Rare"
+    },
+    {
+      "key": "en-fusion-strike-253074-normal",
+      "name": "Shroomish",
+      "set": "SWSH08: Fusion Strike",
+      "number": "004/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253074.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-fusion-strike-253075-normal",
+      "name": "Breloom",
+      "set": "SWSH08: Fusion Strike",
+      "number": "005/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253075.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-fusion-strike-253076-holofoil",
+      "name": "Breloom V",
+      "set": "SWSH08: Fusion Strike",
+      "number": "006/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253076.jpg",
+      "rarity": "Ultra Rare"
+    },
+    {
+      "key": "en-fusion-strike-253077-normal",
+      "name": "Pansage",
+      "set": "SWSH08: Fusion Strike",
+      "number": "007/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253077.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-fusion-strike-253078-normal",
+      "name": "Simisage",
+      "set": "SWSH08: Fusion Strike",
+      "number": "008/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253078.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-fusion-strike-253079-normal",
+      "name": "Sewaddle",
+      "set": "SWSH08: Fusion Strike",
+      "number": "009/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253079.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-fusion-strike-253080-normal",
+      "name": "Swadloon",
+      "set": "SWSH08: Fusion Strike",
+      "number": "010/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253080.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-fusion-strike-253081-normal",
+      "name": "Leavanny",
+      "set": "SWSH08: Fusion Strike",
+      "number": "011/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253081.jpg",
+      "rarity": "Rare"
+    },
+    {
+      "key": "en-fusion-strike-253086-normal",
+      "name": "Maractus",
+      "set": "SWSH08: Fusion Strike",
+      "number": "012/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253086.jpg",
+      "rarity": "Rare"
+    },
+    {
+      "key": "en-fusion-strike-253087-normal",
+      "name": "Shelmet",
+      "set": "SWSH08: Fusion Strike",
+      "number": "013/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253087.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-fusion-strike-253090-normal",
+      "name": "Accelgor",
+      "set": "SWSH08: Fusion Strike",
+      "number": "014/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253090.jpg",
+      "rarity": "Rare"
+    },
+    {
+      "key": "en-fusion-strike-253092-normal",
+      "name": "Virizion",
+      "set": "SWSH08: Fusion Strike",
+      "number": "015/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253092.jpg",
+      "rarity": "Rare"
+    },
+    {
+      "key": "en-fusion-strike-253094-normal",
+      "name": "Phantump",
+      "set": "SWSH08: Fusion Strike",
+      "number": "016/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253094.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-fusion-strike-253096-normal",
+      "name": "Trevenant",
+      "set": "SWSH08: Fusion Strike",
+      "number": "017/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253096.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-fusion-strike-253098-normal",
+      "name": "Grubbin",
+      "set": "SWSH08: Fusion Strike",
+      "number": "018/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253098.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-fusion-strike-253102-normal",
+      "name": "Dewpider",
+      "set": "SWSH08: Fusion Strike",
+      "number": "019/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253102.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-fusion-strike-253105-normal",
+      "name": "Araquanid",
+      "set": "SWSH08: Fusion Strike",
+      "number": "020/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253105.jpg",
+      "rarity": "Rare"
+    },
+    {
+      "key": "en-fusion-strike-253109-holofoil",
+      "name": "Tsareena V",
+      "set": "SWSH08: Fusion Strike",
+      "number": "021/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253109.jpg",
+      "rarity": "Ultra Rare"
+    },
+    {
+      "key": "en-fusion-strike-253113-holofoil",
+      "name": "Rillaboom V",
+      "set": "SWSH08: Fusion Strike",
+      "number": "022/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253113.jpg",
+      "rarity": "Ultra Rare"
+    },
+    {
+      "key": "en-fusion-strike-253108-holofoil",
+      "name": "Rillaboom VMAX",
+      "set": "SWSH08: Fusion Strike",
+      "number": "023/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253108.jpg",
+      "rarity": "Ultra Rare"
+    },
+    {
+      "key": "en-fusion-strike-253115-normal",
+      "name": "Gossifleur",
+      "set": "SWSH08: Fusion Strike",
+      "number": "024/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253115.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-fusion-strike-253118-normal",
+      "name": "Eldegoss",
+      "set": "SWSH08: Fusion Strike",
+      "number": "025/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253118.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-fusion-strike-253120-holofoil",
+      "name": "Appletun V",
+      "set": "SWSH08: Fusion Strike",
+      "number": "026/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253120.jpg",
+      "rarity": "Ultra Rare"
+    },
+    {
+      "key": "en-fusion-strike-253122-normal",
+      "name": "Zarude",
+      "set": "SWSH08: Fusion Strike",
+      "number": "027/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253122.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-fusion-strike-253124-normal",
+      "name": "Vulpix (28)",
+      "set": "SWSH08: Fusion Strike",
+      "number": "028/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253124.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-fusion-strike-253125-normal",
+      "name": "Vulpix (29)",
+      "set": "SWSH08: Fusion Strike",
+      "number": "029/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253125.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-fusion-strike-253126-normal",
+      "name": "Ninetales (30)",
+      "set": "SWSH08: Fusion Strike",
+      "number": "030/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253126.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-fusion-strike-253128-normal",
+      "name": "Ninetales (31)",
+      "set": "SWSH08: Fusion Strike",
+      "number": "031/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253128.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-fusion-strike-253129-normal",
+      "name": "Growlithe",
+      "set": "SWSH08: Fusion Strike",
+      "number": "032/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253129.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-fusion-strike-253130-normal",
+      "name": "Arcanine",
+      "set": "SWSH08: Fusion Strike",
+      "number": "033/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253130.jpg",
+      "rarity": "Rare"
+    },
+    {
+      "key": "en-fusion-strike-253131-normal",
+      "name": "Slugma",
+      "set": "SWSH08: Fusion Strike",
+      "number": "034/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253131.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-fusion-strike-253132-normal",
+      "name": "Magcargo",
+      "set": "SWSH08: Fusion Strike",
+      "number": "035/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253132.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-fusion-strike-253136-normal",
+      "name": "Victini",
+      "set": "SWSH08: Fusion Strike",
+      "number": "036/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253136.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-fusion-strike-253137-normal",
+      "name": "Pansear",
+      "set": "SWSH08: Fusion Strike",
+      "number": "037/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253137.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-fusion-strike-253140-normal",
+      "name": "Simisear",
+      "set": "SWSH08: Fusion Strike",
+      "number": "038/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253140.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-fusion-strike-253142-holofoil",
+      "name": "Chandelure V",
+      "set": "SWSH08: Fusion Strike",
+      "number": "039/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253142.jpg",
+      "rarity": "Ultra Rare"
+    },
+    {
+      "key": "en-fusion-strike-253145-holofoil",
+      "name": "Chandelure VMAX",
+      "set": "SWSH08: Fusion Strike",
+      "number": "040/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253145.jpg",
+      "rarity": "Ultra Rare"
+    },
+    {
+      "key": "en-fusion-strike-253150-normal",
+      "name": "Heatmor",
+      "set": "SWSH08: Fusion Strike",
+      "number": "041/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253150.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-fusion-strike-253158-normal",
+      "name": "Oricorio",
+      "set": "SWSH08: Fusion Strike",
+      "number": "042/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253158.jpg",
+      "rarity": "Rare"
+    },
+    {
+      "key": "en-fusion-strike-253164-holofoil",
+      "name": "Cinderace V (43)",
+      "set": "SWSH08: Fusion Strike",
+      "number": "043/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253164.jpg",
+      "rarity": "Ultra Rare"
+    },
+    {
+      "key": "en-fusion-strike-253168-holofoil",
+      "name": "Cinderace V (44)",
+      "set": "SWSH08: Fusion Strike",
+      "number": "044/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253168.jpg",
+      "rarity": "Ultra Rare"
+    },
+    {
+      "key": "en-fusion-strike-253170-holofoil",
+      "name": "Cinderace VMAX",
+      "set": "SWSH08: Fusion Strike",
+      "number": "045/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253170.jpg",
+      "rarity": "Ultra Rare"
+    },
+    {
+      "key": "en-fusion-strike-253172-normal",
+      "name": "Sizzlipede (46)",
+      "set": "SWSH08: Fusion Strike",
+      "number": "046/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253172.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-fusion-strike-253175-normal",
+      "name": "Sizzlipede (47)",
+      "set": "SWSH08: Fusion Strike",
+      "number": "047/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253175.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-fusion-strike-253179-normal",
+      "name": "Centiskorch (48)",
+      "set": "SWSH08: Fusion Strike",
+      "number": "048/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253179.jpg",
+      "rarity": "Rare"
+    },
+    {
+      "key": "en-fusion-strike-253180-normal",
+      "name": "Centiskorch (49)",
+      "set": "SWSH08: Fusion Strike",
+      "number": "049/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253180.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-fusion-strike-253181-normal",
+      "name": "Shellder",
+      "set": "SWSH08: Fusion Strike",
+      "number": "050/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253181.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-fusion-strike-253182-normal",
+      "name": "Cloyster",
+      "set": "SWSH08: Fusion Strike",
+      "number": "051/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253182.jpg",
+      "rarity": "Rare"
+    },
+    {
+      "key": "en-fusion-strike-253183-normal",
+      "name": "Staryu",
+      "set": "SWSH08: Fusion Strike",
+      "number": "052/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253183.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-fusion-strike-253184-holofoil",
+      "name": "Starmie",
+      "set": "SWSH08: Fusion Strike",
+      "number": "053/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253184.jpg",
+      "rarity": "Holo Rare"
+    },
+    {
+      "key": "en-fusion-strike-253185-normal",
+      "name": "Lapras",
+      "set": "SWSH08: Fusion Strike",
+      "number": "054/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253185.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-fusion-strike-253186-normal",
+      "name": "Totodile",
+      "set": "SWSH08: Fusion Strike",
+      "number": "055/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253186.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-fusion-strike-253187-normal",
+      "name": "Croconaw",
+      "set": "SWSH08: Fusion Strike",
+      "number": "056/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253187.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-fusion-strike-253188-holofoil",
+      "name": "Feraligatr",
+      "set": "SWSH08: Fusion Strike",
+      "number": "057/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253188.jpg",
+      "rarity": "Holo Rare"
+    },
+    {
+      "key": "en-fusion-strike-253189-normal",
+      "name": "Marill",
+      "set": "SWSH08: Fusion Strike",
+      "number": "058/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253189.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-fusion-strike-253190-normal",
+      "name": "Azumarill",
+      "set": "SWSH08: Fusion Strike",
+      "number": "059/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253190.jpg",
+      "rarity": "Rare"
+    },
+    {
+      "key": "en-fusion-strike-253192-normal",
+      "name": "Qwilfish",
+      "set": "SWSH08: Fusion Strike",
+      "number": "060/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253192.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-fusion-strike-253195-normal",
+      "name": "Mantine",
+      "set": "SWSH08: Fusion Strike",
+      "number": "061/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253195.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-fusion-strike-253199-normal",
+      "name": "Mudkip",
+      "set": "SWSH08: Fusion Strike",
+      "number": "062/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253199.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-fusion-strike-253201-normal",
+      "name": "Marshtomp",
+      "set": "SWSH08: Fusion Strike",
+      "number": "063/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253201.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-fusion-strike-253205-holofoil",
+      "name": "Swampert",
+      "set": "SWSH08: Fusion Strike",
+      "number": "064/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253205.jpg",
+      "rarity": "Holo Rare"
+    },
+    {
+      "key": "en-fusion-strike-253208-normal",
+      "name": "Clamperl",
+      "set": "SWSH08: Fusion Strike",
+      "number": "065/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253208.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-fusion-strike-253209-normal",
+      "name": "Huntail",
+      "set": "SWSH08: Fusion Strike",
+      "number": "066/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253209.jpg",
+      "rarity": "Rare"
+    },
+    {
+      "key": "en-fusion-strike-253210-normal",
+      "name": "Gorebyss",
+      "set": "SWSH08: Fusion Strike",
+      "number": "067/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253210.jpg",
+      "rarity": "Rare"
+    },
+    {
+      "key": "en-fusion-strike-253211-normal",
+      "name": "Panpour",
+      "set": "SWSH08: Fusion Strike",
+      "number": "068/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253211.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-fusion-strike-253212-normal",
+      "name": "Simipour",
+      "set": "SWSH08: Fusion Strike",
+      "number": "069/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253212.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-fusion-strike-253215-normal",
+      "name": "Basculin",
+      "set": "SWSH08: Fusion Strike",
+      "number": "070/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253215.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-fusion-strike-253218-normal",
+      "name": "Galarian Darumaka",
+      "set": "SWSH08: Fusion Strike",
+      "number": "071/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253218.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-fusion-strike-253222-normal",
+      "name": "Galarian Darmanitan",
+      "set": "SWSH08: Fusion Strike",
+      "number": "072/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253222.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-fusion-strike-253223-holofoil",
+      "name": "Greninja V",
+      "set": "SWSH08: Fusion Strike",
+      "number": "073/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253223.jpg",
+      "rarity": "Ultra Rare"
+    },
+    {
+      "key": "en-fusion-strike-253224-normal",
+      "name": "Clauncher",
+      "set": "SWSH08: Fusion Strike",
+      "number": "074/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253224.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-fusion-strike-253225-normal",
+      "name": "Clawitzer",
+      "set": "SWSH08: Fusion Strike",
+      "number": "075/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253225.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-fusion-strike-253226-holofoil",
+      "name": "Crabominable V",
+      "set": "SWSH08: Fusion Strike",
+      "number": "076/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253226.jpg",
+      "rarity": "Ultra Rare"
+    },
+    {
+      "key": "en-fusion-strike-253229-normal",
+      "name": "Pyukumuku",
+      "set": "SWSH08: Fusion Strike",
+      "number": "077/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253229.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-fusion-strike-253232-holofoil",
+      "name": "Inteleon V",
+      "set": "SWSH08: Fusion Strike",
+      "number": "078/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253232.jpg",
+      "rarity": "Ultra Rare"
+    },
+    {
+      "key": "en-fusion-strike-253233-holofoil",
+      "name": "Inteleon VMAX",
+      "set": "SWSH08: Fusion Strike",
+      "number": "079/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253233.jpg",
+      "rarity": "Ultra Rare"
+    },
+    {
+      "key": "en-fusion-strike-253234-normal",
+      "name": "Chewtle",
+      "set": "SWSH08: Fusion Strike",
+      "number": "080/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253234.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-fusion-strike-253235-normal",
+      "name": "Drednaw",
+      "set": "SWSH08: Fusion Strike",
+      "number": "081/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253235.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-fusion-strike-253236-normal",
+      "name": "Arrokuda",
+      "set": "SWSH08: Fusion Strike",
+      "number": "082/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253236.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-fusion-strike-253237-normal",
+      "name": "Barraskewda",
+      "set": "SWSH08: Fusion Strike",
+      "number": "083/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253237.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-fusion-strike-253238-normal",
+      "name": "Snom",
+      "set": "SWSH08: Fusion Strike",
+      "number": "084/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253238.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-fusion-strike-253240-normal",
+      "name": "Frosmoth",
+      "set": "SWSH08: Fusion Strike",
+      "number": "085/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253240.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-fusion-strike-253241-holofoil",
+      "name": "Pikachu V",
+      "set": "SWSH08: Fusion Strike",
+      "number": "086/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253241.jpg",
+      "rarity": "Ultra Rare"
+    },
+    {
+      "key": "en-fusion-strike-253243-normal",
+      "name": "Voltorb",
+      "set": "SWSH08: Fusion Strike",
+      "number": "087/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253243.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-fusion-strike-253244-normal",
+      "name": "Electrode",
+      "set": "SWSH08: Fusion Strike",
+      "number": "088/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253244.jpg",
+      "rarity": "Rare"
+    },
+    {
+      "key": "en-fusion-strike-253245-normal",
+      "name": "Plusle",
+      "set": "SWSH08: Fusion Strike",
+      "number": "089/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253245.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-fusion-strike-253246-normal",
+      "name": "Minun",
+      "set": "SWSH08: Fusion Strike",
+      "number": "090/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253246.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-fusion-strike-253247-normal",
+      "name": "Shinx",
+      "set": "SWSH08: Fusion Strike",
+      "number": "091/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253247.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-fusion-strike-253248-normal",
+      "name": "Luxio",
+      "set": "SWSH08: Fusion Strike",
+      "number": "092/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253248.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-fusion-strike-253249-normal",
+      "name": "Luxray",
+      "set": "SWSH08: Fusion Strike",
+      "number": "093/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253249.jpg",
+      "rarity": "Rare"
+    },
+    {
+      "key": "en-fusion-strike-253250-normal",
+      "name": "Rotom",
+      "set": "SWSH08: Fusion Strike",
+      "number": "094/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253250.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-fusion-strike-253251-normal",
+      "name": "Tynamo",
+      "set": "SWSH08: Fusion Strike",
+      "number": "095/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253251.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-fusion-strike-253252-normal",
+      "name": "Eelektrik",
+      "set": "SWSH08: Fusion Strike",
+      "number": "096/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253252.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-fusion-strike-253253-normal",
+      "name": "Eelektross",
+      "set": "SWSH08: Fusion Strike",
+      "number": "097/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253253.jpg",
+      "rarity": "Rare"
+    },
+    {
+      "key": "en-fusion-strike-253254-normal",
+      "name": "Helioptile",
+      "set": "SWSH08: Fusion Strike",
+      "number": "098/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253254.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-fusion-strike-253255-normal",
+      "name": "Heliolisk",
+      "set": "SWSH08: Fusion Strike",
+      "number": "099/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253255.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-fusion-strike-253256-normal",
+      "name": "Charjabug",
+      "set": "SWSH08: Fusion Strike",
+      "number": "100/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253256.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-fusion-strike-253257-normal",
+      "name": "Vikavolt",
+      "set": "SWSH08: Fusion Strike",
+      "number": "101/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253257.jpg",
+      "rarity": "Rare"
+    },
+    {
+      "key": "en-fusion-strike-253258-normal",
+      "name": "Zeraora",
+      "set": "SWSH08: Fusion Strike",
+      "number": "102/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253258.jpg",
+      "rarity": "Rare"
+    },
+    {
+      "key": "en-fusion-strike-253259-holofoil",
+      "name": "Boltund V",
+      "set": "SWSH08: Fusion Strike",
+      "number": "103/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253259.jpg",
+      "rarity": "Ultra Rare"
+    },
+    {
+      "key": "en-fusion-strike-253260-holofoil",
+      "name": "Boltund VMAX",
+      "set": "SWSH08: Fusion Strike",
+      "number": "104/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253260.jpg",
+      "rarity": "Ultra Rare"
+    },
+    {
+      "key": "en-fusion-strike-253261-normal",
+      "name": "Toxel (105)",
+      "set": "SWSH08: Fusion Strike",
+      "number": "105/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253261.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-fusion-strike-253262-normal",
+      "name": "Toxel (106)",
+      "set": "SWSH08: Fusion Strike",
+      "number": "106/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253262.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-fusion-strike-253263-holofoil",
+      "name": "Toxtricity (107)",
+      "set": "SWSH08: Fusion Strike",
+      "number": "107/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253263.jpg",
+      "rarity": "Holo Rare"
+    },
+    {
+      "key": "en-fusion-strike-253264-holofoil",
+      "name": "Toxtricity (108)",
+      "set": "SWSH08: Fusion Strike",
+      "number": "108/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253264.jpg",
+      "rarity": "Holo Rare"
+    },
+    {
+      "key": "en-fusion-strike-253267-normal",
+      "name": "Morpeko (109)",
+      "set": "SWSH08: Fusion Strike",
+      "number": "109/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253267.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-fusion-strike-253268-normal",
+      "name": "Jigglypuff",
+      "set": "SWSH08: Fusion Strike",
+      "number": "110/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253268.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-fusion-strike-253269-normal",
+      "name": "Wigglytuff",
+      "set": "SWSH08: Fusion Strike",
+      "number": "111/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253269.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-fusion-strike-253273-normal",
+      "name": "Jynx",
+      "set": "SWSH08: Fusion Strike",
+      "number": "112/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253273.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-fusion-strike-253274-holofoil",
+      "name": "Mew V",
+      "set": "SWSH08: Fusion Strike",
+      "number": "113/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253274.jpg",
+      "rarity": "Ultra Rare"
+    },
+    {
+      "key": "en-fusion-strike-253275-holofoil",
+      "name": "Mew VMAX",
+      "set": "SWSH08: Fusion Strike",
+      "number": "114/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253275.jpg",
+      "rarity": "Ultra Rare"
+    },
+    {
+      "key": "en-fusion-strike-253278-normal",
+      "name": "Snubbull",
+      "set": "SWSH08: Fusion Strike",
+      "number": "115/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253278.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-fusion-strike-253282-normal",
+      "name": "Granbull",
+      "set": "SWSH08: Fusion Strike",
+      "number": "116/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253282.jpg",
+      "rarity": "Rare"
+    },
+    {
+      "key": "en-fusion-strike-253283-normal",
+      "name": "Galarian Corsola",
+      "set": "SWSH08: Fusion Strike",
+      "number": "117/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253283.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-fusion-strike-253288-normal",
+      "name": "Galarian Cursola",
+      "set": "SWSH08: Fusion Strike",
+      "number": "118/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253288.jpg",
+      "rarity": "Rare"
+    },
+    {
+      "key": "en-fusion-strike-253290-normal",
+      "name": "Mawile",
+      "set": "SWSH08: Fusion Strike",
+      "number": "119/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253290.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-fusion-strike-253293-holofoil",
+      "name": "Deoxys",
+      "set": "SWSH08: Fusion Strike",
+      "number": "120/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253293.jpg",
+      "rarity": "Holo Rare"
+    },
+    {
+      "key": "en-fusion-strike-253294-normal",
+      "name": "Munna",
+      "set": "SWSH08: Fusion Strike",
+      "number": "121/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253294.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-fusion-strike-253299-normal",
+      "name": "Musharna",
+      "set": "SWSH08: Fusion Strike",
+      "number": "122/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253299.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-fusion-strike-253303-normal",
+      "name": "Sigilyph",
+      "set": "SWSH08: Fusion Strike",
+      "number": "123/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253303.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-fusion-strike-253308-normal",
+      "name": "Meloetta",
+      "set": "SWSH08: Fusion Strike",
+      "number": "124/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253308.jpg",
+      "rarity": "Rare"
+    },
+    {
+      "key": "en-fusion-strike-253311-normal",
+      "name": "Sandygast",
+      "set": "SWSH08: Fusion Strike",
+      "number": "125/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253311.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-fusion-strike-253313-normal",
+      "name": "Palossand",
+      "set": "SWSH08: Fusion Strike",
+      "number": "126/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253313.jpg",
+      "rarity": "Rare"
+    },
+    {
+      "key": "en-fusion-strike-253318-normal",
+      "name": "Indeedee",
+      "set": "SWSH08: Fusion Strike",
+      "number": "127/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253318.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-fusion-strike-253321-normal",
+      "name": "Dreepy",
+      "set": "SWSH08: Fusion Strike",
+      "number": "128/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253321.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-fusion-strike-253325-normal",
+      "name": "Drakloak",
+      "set": "SWSH08: Fusion Strike",
+      "number": "129/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253325.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-fusion-strike-253327-holofoil",
+      "name": "Dragapult",
+      "set": "SWSH08: Fusion Strike",
+      "number": "130/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253327.jpg",
+      "rarity": "Holo Rare"
+    },
+    {
+      "key": "en-fusion-strike-253330-normal",
+      "name": "Sandshrew",
+      "set": "SWSH08: Fusion Strike",
+      "number": "131/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253330.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-fusion-strike-253449-normal",
+      "name": "Sandslash",
+      "set": "SWSH08: Fusion Strike",
+      "number": "132/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253449.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-fusion-strike-253334-normal",
+      "name": "Mankey",
+      "set": "SWSH08: Fusion Strike",
+      "number": "133/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253334.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-fusion-strike-253337-normal",
+      "name": "Primeape",
+      "set": "SWSH08: Fusion Strike",
+      "number": "134/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253337.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-fusion-strike-253339-normal",
+      "name": "Geodude",
+      "set": "SWSH08: Fusion Strike",
+      "number": "135/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253339.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-fusion-strike-253341-normal",
+      "name": "Graveler",
+      "set": "SWSH08: Fusion Strike",
+      "number": "136/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253341.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-fusion-strike-253342-normal",
+      "name": "Golem",
+      "set": "SWSH08: Fusion Strike",
+      "number": "137/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253342.jpg",
+      "rarity": "Rare"
+    },
+    {
+      "key": "en-fusion-strike-253343-normal",
+      "name": "Onix",
+      "set": "SWSH08: Fusion Strike",
+      "number": "138/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253343.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-fusion-strike-253346-holofoil",
+      "name": "Steelix",
+      "set": "SWSH08: Fusion Strike",
+      "number": "139/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253346.jpg",
+      "rarity": "Holo Rare"
+    },
+    {
+      "key": "en-fusion-strike-253348-normal",
+      "name": "Gligar",
+      "set": "SWSH08: Fusion Strike",
+      "number": "140/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253348.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-fusion-strike-253350-normal",
+      "name": "Gliscor",
+      "set": "SWSH08: Fusion Strike",
+      "number": "141/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253350.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-fusion-strike-253352-normal",
+      "name": "Makuhita",
+      "set": "SWSH08: Fusion Strike",
+      "number": "142/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253352.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-fusion-strike-253355-normal",
+      "name": "Hariyama",
+      "set": "SWSH08: Fusion Strike",
+      "number": "143/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253355.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-fusion-strike-253356-normal",
+      "name": "Baltoy",
+      "set": "SWSH08: Fusion Strike",
+      "number": "144/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253356.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-fusion-strike-253359-normal",
+      "name": "Claydol",
+      "set": "SWSH08: Fusion Strike",
+      "number": "145/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253359.jpg",
+      "rarity": "Rare"
+    },
+    {
+      "key": "en-fusion-strike-253360-holofoil",
+      "name": "Lucario V",
+      "set": "SWSH08: Fusion Strike",
+      "number": "146/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253360.jpg",
+      "rarity": "Ultra Rare"
+    },
+    {
+      "key": "en-fusion-strike-253361-normal",
+      "name": "Drilbur",
+      "set": "SWSH08: Fusion Strike",
+      "number": "147/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253361.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-fusion-strike-253362-holofoil",
+      "name": "Landorus",
+      "set": "SWSH08: Fusion Strike",
+      "number": "148/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253362.jpg",
+      "rarity": "Holo Rare"
+    },
+    {
+      "key": "en-fusion-strike-253363-normal",
+      "name": "Pancham",
+      "set": "SWSH08: Fusion Strike",
+      "number": "149/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253363.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-fusion-strike-253364-normal",
+      "name": "Stufful",
+      "set": "SWSH08: Fusion Strike",
+      "number": "150/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253364.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-fusion-strike-253365-normal",
+      "name": "Bewear",
+      "set": "SWSH08: Fusion Strike",
+      "number": "151/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253365.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-fusion-strike-253366-normal",
+      "name": "Clobbopus",
+      "set": "SWSH08: Fusion Strike",
+      "number": "152/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253366.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-fusion-strike-253367-normal",
+      "name": "Grapploct",
+      "set": "SWSH08: Fusion Strike",
+      "number": "153/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253367.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-fusion-strike-253368-normal",
+      "name": "Falinks (154)",
+      "set": "SWSH08: Fusion Strike",
+      "number": "154/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253368.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-fusion-strike-253369-normal",
+      "name": "Falinks (155)",
+      "set": "SWSH08: Fusion Strike",
+      "number": "155/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253369.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-fusion-strike-253370-holofoil",
+      "name": "Gengar V",
+      "set": "SWSH08: Fusion Strike",
+      "number": "156/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253370.jpg",
+      "rarity": "Ultra Rare"
+    },
+    {
+      "key": "en-fusion-strike-253371-holofoil",
+      "name": "Gengar VMAX",
+      "set": "SWSH08: Fusion Strike",
+      "number": "157/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253371.jpg",
+      "rarity": "Ultra Rare"
+    },
+    {
+      "key": "en-fusion-strike-253372-holofoil",
+      "name": "Tyranitar V",
+      "set": "SWSH08: Fusion Strike",
+      "number": "158/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253372.jpg",
+      "rarity": "Ultra Rare"
+    },
+    {
+      "key": "en-fusion-strike-253373-normal",
+      "name": "Galarian Zigzagoon",
+      "set": "SWSH08: Fusion Strike",
+      "number": "159/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253373.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-fusion-strike-253374-normal",
+      "name": "Galarian Linoone",
+      "set": "SWSH08: Fusion Strike",
+      "number": "160/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253374.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-fusion-strike-253375-holofoil",
+      "name": "Galarian Obstagoon",
+      "set": "SWSH08: Fusion Strike",
+      "number": "161/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253375.jpg",
+      "rarity": "Holo Rare"
+    },
+    {
+      "key": "en-fusion-strike-253376-normal",
+      "name": "Carvanha",
+      "set": "SWSH08: Fusion Strike",
+      "number": "162/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253376.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-fusion-strike-253377-normal",
+      "name": "Sharpedo",
+      "set": "SWSH08: Fusion Strike",
+      "number": "163/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253377.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-fusion-strike-253378-normal",
+      "name": "Absol",
+      "set": "SWSH08: Fusion Strike",
+      "number": "164/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253378.jpg",
+      "rarity": "Rare"
+    },
+    {
+      "key": "en-fusion-strike-253379-normal",
+      "name": "Croagunk",
+      "set": "SWSH08: Fusion Strike",
+      "number": "165/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253379.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-fusion-strike-253380-normal",
+      "name": "Toxicroak",
+      "set": "SWSH08: Fusion Strike",
+      "number": "166/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253380.jpg",
+      "rarity": "Rare"
+    },
+    {
+      "key": "en-fusion-strike-253381-normal",
+      "name": "Darkrai",
+      "set": "SWSH08: Fusion Strike",
+      "number": "167/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253381.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-fusion-strike-253382-normal",
+      "name": "Trubbish",
+      "set": "SWSH08: Fusion Strike",
+      "number": "168/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253382.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-fusion-strike-253383-normal",
+      "name": "Garbodor",
+      "set": "SWSH08: Fusion Strike",
+      "number": "169/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253383.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-fusion-strike-253384-normal",
+      "name": "Zorua",
+      "set": "SWSH08: Fusion Strike",
+      "number": "170/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253384.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-fusion-strike-253385-normal",
+      "name": "Zoroark",
+      "set": "SWSH08: Fusion Strike",
+      "number": "171/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253385.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-fusion-strike-253386-normal",
+      "name": "Vullaby",
+      "set": "SWSH08: Fusion Strike",
+      "number": "172/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253386.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-fusion-strike-253387-normal",
+      "name": "Mandibuzz",
+      "set": "SWSH08: Fusion Strike",
+      "number": "173/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253387.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-fusion-strike-253388-normal",
+      "name": "Pangoro",
+      "set": "SWSH08: Fusion Strike",
+      "number": "174/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253388.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-fusion-strike-253389-normal",
+      "name": "Yveltal",
+      "set": "SWSH08: Fusion Strike",
+      "number": "175/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253389.jpg",
+      "rarity": "Rare"
+    },
+    {
+      "key": "en-fusion-strike-253390-normal",
+      "name": "Impidimp",
+      "set": "SWSH08: Fusion Strike",
+      "number": "176/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253390.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-fusion-strike-253391-normal",
+      "name": "Morgrem",
+      "set": "SWSH08: Fusion Strike",
+      "number": "177/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253391.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-fusion-strike-253392-holofoil",
+      "name": "Grimmsnarl",
+      "set": "SWSH08: Fusion Strike",
+      "number": "178/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253392.jpg",
+      "rarity": "Holo Rare"
+    },
+    {
+      "key": "en-fusion-strike-253393-normal",
+      "name": "Morpeko (179)",
+      "set": "SWSH08: Fusion Strike",
+      "number": "179/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253393.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-fusion-strike-253326-normal",
+      "name": "Galarian Meowth",
+      "set": "SWSH08: Fusion Strike",
+      "number": "180/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253326.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-fusion-strike-253328-normal",
+      "name": "Galarian Perrserker",
+      "set": "SWSH08: Fusion Strike",
+      "number": "181/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253328.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-fusion-strike-253329-normal",
+      "name": "Skarmory",
+      "set": "SWSH08: Fusion Strike",
+      "number": "182/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253329.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-fusion-strike-253331-normal",
+      "name": "Excadrill",
+      "set": "SWSH08: Fusion Strike",
+      "number": "183/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253331.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-fusion-strike-253332-normal",
+      "name": "Durant",
+      "set": "SWSH08: Fusion Strike",
+      "number": "184/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253332.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-fusion-strike-253333-holofoil",
+      "name": "Genesect V",
+      "set": "SWSH08: Fusion Strike",
+      "number": "185/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253333.jpg",
+      "rarity": "Ultra Rare"
+    },
+    {
+      "key": "en-fusion-strike-253335-normal",
+      "name": "Klefki",
+      "set": "SWSH08: Fusion Strike",
+      "number": "186/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253335.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-fusion-strike-253336-normal",
+      "name": "Togedemaru",
+      "set": "SWSH08: Fusion Strike",
+      "number": "187/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253336.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-fusion-strike-253338-normal",
+      "name": "Meltan",
+      "set": "SWSH08: Fusion Strike",
+      "number": "188/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253338.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-fusion-strike-253340-holofoil",
+      "name": "Melmetal",
+      "set": "SWSH08: Fusion Strike",
+      "number": "189/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253340.jpg",
+      "rarity": "Holo Rare"
+    },
+    {
+      "key": "en-fusion-strike-253344-normal",
+      "name": "Corviknight",
+      "set": "SWSH08: Fusion Strike",
+      "number": "190/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253344.jpg",
+      "rarity": "Rare"
+    },
+    {
+      "key": "en-fusion-strike-253345-normal",
+      "name": "Cufant",
+      "set": "SWSH08: Fusion Strike",
+      "number": "191/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253345.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-fusion-strike-253347-normal",
+      "name": "Copperajah",
+      "set": "SWSH08: Fusion Strike",
+      "number": "192/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253347.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-fusion-strike-253349-normal",
+      "name": "Latias",
+      "set": "SWSH08: Fusion Strike",
+      "number": "193/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253349.jpg",
+      "rarity": "Rare"
+    },
+    {
+      "key": "en-fusion-strike-253351-normal",
+      "name": "Latios",
+      "set": "SWSH08: Fusion Strike",
+      "number": "194/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253351.jpg",
+      "rarity": "Rare"
+    },
+    {
+      "key": "en-fusion-strike-253353-normal",
+      "name": "Goomy",
+      "set": "SWSH08: Fusion Strike",
+      "number": "195/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253353.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-fusion-strike-253354-normal",
+      "name": "Sliggoo",
+      "set": "SWSH08: Fusion Strike",
+      "number": "196/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253354.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-fusion-strike-253357-normal",
+      "name": "Goodra",
+      "set": "SWSH08: Fusion Strike",
+      "number": "197/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253357.jpg",
+      "rarity": "Rare"
+    },
+    {
+      "key": "en-fusion-strike-253358-normal",
+      "name": "Turtonator",
+      "set": "SWSH08: Fusion Strike",
+      "number": "198/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253358.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-fusion-strike-253291-normal",
+      "name": "Meowth",
+      "set": "SWSH08: Fusion Strike",
+      "number": "199/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253291.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-fusion-strike-253292-normal",
+      "name": "Persian",
+      "set": "SWSH08: Fusion Strike",
+      "number": "200/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253292.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-fusion-strike-253295-holofoil",
+      "name": "Dodrio V",
+      "set": "SWSH08: Fusion Strike",
+      "number": "201/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253295.jpg",
+      "rarity": "Ultra Rare"
+    },
+    {
+      "key": "en-fusion-strike-253296-normal",
+      "name": "Chansey",
+      "set": "SWSH08: Fusion Strike",
+      "number": "202/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253296.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-fusion-strike-253297-normal",
+      "name": "Blissey",
+      "set": "SWSH08: Fusion Strike",
+      "number": "203/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253297.jpg",
+      "rarity": "Rare"
+    },
+    {
+      "key": "en-fusion-strike-253298-normal",
+      "name": "Kangaskhan",
+      "set": "SWSH08: Fusion Strike",
+      "number": "204/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253298.jpg",
+      "rarity": "Rare"
+    },
+    {
+      "key": "en-fusion-strike-253300-normal",
+      "name": "Eevee",
+      "set": "SWSH08: Fusion Strike",
+      "number": "205/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253300.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-fusion-strike-253301-normal",
+      "name": "Snorlax",
+      "set": "SWSH08: Fusion Strike",
+      "number": "206/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253301.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-fusion-strike-253302-normal",
+      "name": "Dunsparce",
+      "set": "SWSH08: Fusion Strike",
+      "number": "207/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253302.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-fusion-strike-253304-normal",
+      "name": "Stantler",
+      "set": "SWSH08: Fusion Strike",
+      "number": "208/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253304.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-fusion-strike-253305-normal",
+      "name": "Smeargle",
+      "set": "SWSH08: Fusion Strike",
+      "number": "209/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253305.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-fusion-strike-253306-normal",
+      "name": "Skitty",
+      "set": "SWSH08: Fusion Strike",
+      "number": "210/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253306.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-fusion-strike-253307-normal",
+      "name": "Delcatty",
+      "set": "SWSH08: Fusion Strike",
+      "number": "211/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253307.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-fusion-strike-253309-normal",
+      "name": "Buneary",
+      "set": "SWSH08: Fusion Strike",
+      "number": "212/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253309.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-fusion-strike-253310-normal",
+      "name": "Lopunny",
+      "set": "SWSH08: Fusion Strike",
+      "number": "213/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253310.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-fusion-strike-253312-normal",
+      "name": "Bunnelby",
+      "set": "SWSH08: Fusion Strike",
+      "number": "214/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253312.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-fusion-strike-253314-normal",
+      "name": "Diggersby",
+      "set": "SWSH08: Fusion Strike",
+      "number": "215/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253314.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-fusion-strike-253315-normal",
+      "name": "Hawlucha",
+      "set": "SWSH08: Fusion Strike",
+      "number": "216/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253315.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-fusion-strike-253316-holofoil",
+      "name": "Greedent V",
+      "set": "SWSH08: Fusion Strike",
+      "number": "217/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253316.jpg",
+      "rarity": "Ultra Rare"
+    },
+    {
+      "key": "en-fusion-strike-253317-holofoil",
+      "name": "Greedent VMAX",
+      "set": "SWSH08: Fusion Strike",
+      "number": "218/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253317.jpg",
+      "rarity": "Ultra Rare"
+    },
+    {
+      "key": "en-fusion-strike-253319-normal",
+      "name": "Rookidee",
+      "set": "SWSH08: Fusion Strike",
+      "number": "219/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253319.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-fusion-strike-253320-normal",
+      "name": "Corvisquire",
+      "set": "SWSH08: Fusion Strike",
+      "number": "220/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253320.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-fusion-strike-253322-normal",
+      "name": "Wooloo (221)",
+      "set": "SWSH08: Fusion Strike",
+      "number": "221/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253322.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-fusion-strike-253323-normal",
+      "name": "Wooloo (222)",
+      "set": "SWSH08: Fusion Strike",
+      "number": "222/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253323.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-fusion-strike-253324-normal",
+      "name": "Dubwool",
+      "set": "SWSH08: Fusion Strike",
+      "number": "223/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253324.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-fusion-strike-253089-normal",
+      "name": "Adventurer's Discovery",
+      "set": "SWSH08: Fusion Strike",
+      "number": "224/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253089.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-fusion-strike-253091-normal",
+      "name": "Battle VIP Pass",
+      "set": "SWSH08: Fusion Strike",
+      "number": "225/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253091.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-fusion-strike-253093-normal",
+      "name": "Bug Catcher",
+      "set": "SWSH08: Fusion Strike",
+      "number": "226/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253093.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-fusion-strike-253097-normal",
+      "name": "Chili & Cilan & Cress",
+      "set": "SWSH08: Fusion Strike",
+      "number": "227/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253097.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-fusion-strike-253099-normal",
+      "name": "Cook",
+      "set": "SWSH08: Fusion Strike",
+      "number": "228/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253099.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-fusion-strike-253100-normal",
+      "name": "Cram-o-matic",
+      "set": "SWSH08: Fusion Strike",
+      "number": "229/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253100.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-fusion-strike-253101-normal",
+      "name": "Cross Switcher",
+      "set": "SWSH08: Fusion Strike",
+      "number": "230/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253101.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-fusion-strike-253103-normal",
+      "name": "Crossceiver",
+      "set": "SWSH08: Fusion Strike",
+      "number": "231/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253103.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-fusion-strike-253104-normal",
+      "name": "Dancer",
+      "set": "SWSH08: Fusion Strike",
+      "number": "232/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253104.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-fusion-strike-253106-normal",
+      "name": "Elesa's Sparkle",
+      "set": "SWSH08: Fusion Strike",
+      "number": "233/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253106.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-fusion-strike-253107-normal",
+      "name": "Farewell Bell",
+      "set": "SWSH08: Fusion Strike",
+      "number": "234/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253107.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-fusion-strike-253110-normal",
+      "name": "Judge",
+      "set": "SWSH08: Fusion Strike",
+      "number": "235/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253110.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-fusion-strike-253111-normal",
+      "name": "Power Tablet",
+      "set": "SWSH08: Fusion Strike",
+      "number": "236/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253111.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-fusion-strike-253112-normal",
+      "name": "Quick Ball",
+      "set": "SWSH08: Fusion Strike",
+      "number": "237/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253112.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-fusion-strike-253114-normal",
+      "name": "Schoolboy",
+      "set": "SWSH08: Fusion Strike",
+      "number": "238/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253114.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-fusion-strike-253116-normal",
+      "name": "Schoolgirl",
+      "set": "SWSH08: Fusion Strike",
+      "number": "239/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253116.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-fusion-strike-253117-normal",
+      "name": "Shauna",
+      "set": "SWSH08: Fusion Strike",
+      "number": "240/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253117.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-fusion-strike-253119-normal",
+      "name": "Sidney",
+      "set": "SWSH08: Fusion Strike",
+      "number": "241/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253119.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-fusion-strike-253121-normal",
+      "name": "Skaters' Park",
+      "set": "SWSH08: Fusion Strike",
+      "number": "242/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253121.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-fusion-strike-253123-normal",
+      "name": "Spongy Gloves",
+      "set": "SWSH08: Fusion Strike",
+      "number": "243/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253123.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-fusion-strike-253127-normal",
+      "name": "Fusion Strike Energy",
+      "set": "SWSH08: Fusion Strike",
+      "number": "244/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253127.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-fusion-strike-253138-holofoil",
+      "name": "Celebi V (Alternate Full Art)",
+      "set": "SWSH08: Fusion Strike",
+      "number": "245/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253138.jpg",
+      "rarity": "Ultra Rare"
+    },
+    {
+      "key": "en-fusion-strike-253139-holofoil",
+      "name": "Tsareena V (Full Art)",
+      "set": "SWSH08: Fusion Strike",
+      "number": "246/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253139.jpg",
+      "rarity": "Ultra Rare"
+    },
+    {
+      "key": "en-fusion-strike-253141-holofoil",
+      "name": "Chandelure V (Full Art)",
+      "set": "SWSH08: Fusion Strike",
+      "number": "247/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253141.jpg",
+      "rarity": "Ultra Rare"
+    },
+    {
+      "key": "en-fusion-strike-253143-holofoil",
+      "name": "Crabominable V (Full Art)",
+      "set": "SWSH08: Fusion Strike",
+      "number": "248/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253143.jpg",
+      "rarity": "Ultra Rare"
+    },
+    {
+      "key": "en-fusion-strike-253144-holofoil",
+      "name": "Boltund V (Full Art)",
+      "set": "SWSH08: Fusion Strike",
+      "number": "249/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253144.jpg",
+      "rarity": "Ultra Rare"
+    },
+    {
+      "key": "en-fusion-strike-253146-holofoil",
+      "name": "Mew V (Full Art)",
+      "set": "SWSH08: Fusion Strike",
+      "number": "250/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253146.jpg",
+      "rarity": "Ultra Rare"
+    },
+    {
+      "key": "en-fusion-strike-253147-holofoil",
+      "name": "Mew V (Alternate Full Art)",
+      "set": "SWSH08: Fusion Strike",
+      "number": "251/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253147.jpg",
+      "rarity": "Ultra Rare"
+    },
+    {
+      "key": "en-fusion-strike-253149-holofoil",
+      "name": "Sandaconda V (Alternate Full Art)",
+      "set": "SWSH08: Fusion Strike",
+      "number": "252/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253149.jpg",
+      "rarity": "Ultra Rare"
+    },
+    {
+      "key": "en-fusion-strike-253152-holofoil",
+      "name": "Hoopa V (Full Art)",
+      "set": "SWSH08: Fusion Strike",
+      "number": "253/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253152.jpg",
+      "rarity": "Ultra Rare"
+    },
+    {
+      "key": "en-fusion-strike-253154-holofoil",
+      "name": "Genesect V (Full Art)",
+      "set": "SWSH08: Fusion Strike",
+      "number": "254/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253154.jpg",
+      "rarity": "Ultra Rare"
+    },
+    {
+      "key": "en-fusion-strike-253155-holofoil",
+      "name": "Genesect V (Alternate Full Art)",
+      "set": "SWSH08: Fusion Strike",
+      "number": "255/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253155.jpg",
+      "rarity": "Ultra Rare"
+    },
+    {
+      "key": "en-fusion-strike-253156-holofoil",
+      "name": "Greedent V (Full Art)",
+      "set": "SWSH08: Fusion Strike",
+      "number": "256/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253156.jpg",
+      "rarity": "Ultra Rare"
+    },
+    {
+      "key": "en-fusion-strike-253157-holofoil",
+      "name": "Greedent V (Alternate Full Art)",
+      "set": "SWSH08: Fusion Strike",
+      "number": "257/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253157.jpg",
+      "rarity": "Ultra Rare"
+    },
+    {
+      "key": "en-fusion-strike-253159-holofoil",
+      "name": "Chili & Cilan & Cress (Full Art)",
+      "set": "SWSH08: Fusion Strike",
+      "number": "258/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253159.jpg",
+      "rarity": "Ultra Rare"
+    },
+    {
+      "key": "en-fusion-strike-253160-holofoil",
+      "name": "Dancer (Full Art)",
+      "set": "SWSH08: Fusion Strike",
+      "number": "259/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253160.jpg",
+      "rarity": "Ultra Rare"
+    },
+    {
+      "key": "en-fusion-strike-253161-holofoil",
+      "name": "Elesa's Sparkle (Full Art)",
+      "set": "SWSH08: Fusion Strike",
+      "number": "260/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253161.jpg",
+      "rarity": "Ultra Rare"
+    },
+    {
+      "key": "en-fusion-strike-253162-holofoil",
+      "name": "Schoolboy (Full Art)",
+      "set": "SWSH08: Fusion Strike",
+      "number": "261/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253162.jpg",
+      "rarity": "Ultra Rare"
+    },
+    {
+      "key": "en-fusion-strike-253163-holofoil",
+      "name": "Schoolgirl (Full Art)",
+      "set": "SWSH08: Fusion Strike",
+      "number": "262/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253163.jpg",
+      "rarity": "Ultra Rare"
+    },
+    {
+      "key": "en-fusion-strike-253165-holofoil",
+      "name": "Shauna (Full Art)",
+      "set": "SWSH08: Fusion Strike",
+      "number": "263/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253165.jpg",
+      "rarity": "Ultra Rare"
+    },
+    {
+      "key": "en-fusion-strike-253166-holofoil",
+      "name": "Sidney (Full Art)",
+      "set": "SWSH08: Fusion Strike",
+      "number": "264/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253166.jpg",
+      "rarity": "Ultra Rare"
+    },
+    {
+      "key": "en-fusion-strike-253167-holofoil",
+      "name": "Chandelure VMAX (Secret)",
+      "set": "SWSH08: Fusion Strike",
+      "number": "265/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253167.jpg",
+      "rarity": "Secret Rare"
+    },
+    {
+      "key": "en-fusion-strike-253171-holofoil",
+      "name": "Inteleon VMAX (Alternate Art Secret)",
+      "set": "SWSH08: Fusion Strike",
+      "number": "266/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253171.jpg",
+      "rarity": "Secret Rare"
+    },
+    {
+      "key": "en-fusion-strike-253174-holofoil",
+      "name": "Boltund VMAX (Secret)",
+      "set": "SWSH08: Fusion Strike",
+      "number": "267/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253174.jpg",
+      "rarity": "Secret Rare"
+    },
+    {
+      "key": "en-fusion-strike-253176-holofoil",
+      "name": "Mew VMAX (Secret)",
+      "set": "SWSH08: Fusion Strike",
+      "number": "268/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253176.jpg",
+      "rarity": "Secret Rare"
+    },
+    {
+      "key": "en-fusion-strike-253177-holofoil",
+      "name": "Mew VMAX (Alternate Art Secret)",
+      "set": "SWSH08: Fusion Strike",
+      "number": "269/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253177.jpg",
+      "rarity": "Secret Rare"
+    },
+    {
+      "key": "en-fusion-strike-253265-holofoil",
+      "name": "Espeon VMAX (Alternate Art Secret)",
+      "set": "SWSH08: Fusion Strike",
+      "number": "270/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253265.jpg",
+      "rarity": "Secret Rare"
+    },
+    {
+      "key": "en-fusion-strike-253266-holofoil",
+      "name": "Gengar VMAX (Alternate Art Secret)",
+      "set": "SWSH08: Fusion Strike",
+      "number": "271/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253266.jpg",
+      "rarity": "Secret Rare"
+    },
+    {
+      "key": "en-fusion-strike-253270-holofoil",
+      "name": "Greedent VMAX (Secret)",
+      "set": "SWSH08: Fusion Strike",
+      "number": "272/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253270.jpg",
+      "rarity": "Secret Rare"
+    },
+    {
+      "key": "en-fusion-strike-253271-holofoil",
+      "name": "Chili & Cilan & Cress (Secret)",
+      "set": "SWSH08: Fusion Strike",
+      "number": "273/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253271.jpg",
+      "rarity": "Secret Rare"
+    },
+    {
+      "key": "en-fusion-strike-253272-holofoil",
+      "name": "Dancer (Secret)",
+      "set": "SWSH08: Fusion Strike",
+      "number": "274/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253272.jpg",
+      "rarity": "Secret Rare"
+    },
+    {
+      "key": "en-fusion-strike-253276-holofoil",
+      "name": "Elesa's Sparkle (Secret)",
+      "set": "SWSH08: Fusion Strike",
+      "number": "275/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253276.jpg",
+      "rarity": "Secret Rare"
+    },
+    {
+      "key": "en-fusion-strike-253277-holofoil",
+      "name": "Schoolboy (Secret)",
+      "set": "SWSH08: Fusion Strike",
+      "number": "276/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253277.jpg",
+      "rarity": "Secret Rare"
+    },
+    {
+      "key": "en-fusion-strike-253279-holofoil",
+      "name": "Schoolgirl (Secret)",
+      "set": "SWSH08: Fusion Strike",
+      "number": "277/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253279.jpg",
+      "rarity": "Secret Rare"
+    },
+    {
+      "key": "en-fusion-strike-253280-holofoil",
+      "name": "Shauna (Secret)",
+      "set": "SWSH08: Fusion Strike",
+      "number": "278/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253280.jpg",
+      "rarity": "Secret Rare"
+    },
+    {
+      "key": "en-fusion-strike-253281-holofoil",
+      "name": "Sidney (Secret)",
+      "set": "SWSH08: Fusion Strike",
+      "number": "279/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253281.jpg",
+      "rarity": "Secret Rare"
+    },
+    {
+      "key": "en-fusion-strike-253284-holofoil",
+      "name": "Flaaffy (Secret)",
+      "set": "SWSH08: Fusion Strike",
+      "number": "280/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253284.jpg",
+      "rarity": "Secret Rare"
+    },
+    {
+      "key": "en-fusion-strike-253285-holofoil",
+      "name": "Power Tablet (Secret)",
+      "set": "SWSH08: Fusion Strike",
+      "number": "281/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253285.jpg",
+      "rarity": "Secret Rare"
+    },
+    {
+      "key": "en-fusion-strike-253286-holofoil",
+      "name": "Training Court (Secret)",
+      "set": "SWSH08: Fusion Strike",
+      "number": "282/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253286.jpg",
+      "rarity": "Secret Rare"
+    },
+    {
+      "key": "en-fusion-strike-253287-holofoil",
+      "name": "Grass Energy (Secret)",
+      "set": "SWSH08: Fusion Strike",
+      "number": "283/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253287.jpg",
+      "rarity": "Secret Rare"
+    },
+    {
+      "key": "en-fusion-strike-253289-holofoil",
+      "name": "Fire Energy (Secret)",
+      "set": "SWSH08: Fusion Strike",
+      "number": "284/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253289.jpg",
+      "rarity": "Secret Rare"
+    }
+  ],
+  "sourceDate": "2026-11-21",
+  "source": "https://tcgcsv.com/faq",
+  "sources": [
+    {
+      "day": "2026-11-21",
+      "url": "https://tcgcsv.com/tcgplayer/3/2906/prices"
+    }
+  ],
+  "baseline": {
+    "date": "2021-11-12",
+    "usd": null,
+    "proposed": false
+  },
+  "preview": true,
+  "previewNote": "One current Raw guide per card, dated 2026-11-21. The index start date is 12 November 2021. That launch-day set of guides is not in this file, so the index stays at — . No launch-day price was invented.",
+  "sourceVersion": "650c15ff52707409b7c9f4b0300b2604788ffaea0b7ffc21ec43aad672ae1c21"
+}

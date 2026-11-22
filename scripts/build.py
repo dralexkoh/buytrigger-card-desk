@@ -5,7 +5,7 @@ from datetime import datetime, timezone
 from email.utils import format_datetime
 from editorial_visuals import validate_editorial_visuals
 from chase_cards import render_chase_cards
-from ebay_cards import render_ebay_block, render_ebay_cards, check_rendered_news_placements
+from ebay_cards import render_ebay_block, render_ebay_cards, check_rendered_news_placements, render_news_paragraphs, news_standfirst
 from ebay_citations import tag_tree
 from xml.sax.saxutils import escape
 import site_seo as seo
@@ -15,6 +15,9 @@ from tcg_modern_prices import publish_price_page as publish_modern_prices, PRICE
 from delta_reign_prices import publish_price_page as publish_delta_reign_prices, PRICE_PAGE_URL as DELTA_REIGN_PRICE_URL, source_date as delta_reign_source_date
 from sv_151_prices import publish_price_page as publish_sv_151_prices, PRICE_PAGE_URL as SV_151_PRICE_URL, source_date as sv_151_source_date
 from prismatic_evolutions_prices import publish_price_page as publish_prismatic_evolutions_prices, PRICE_PAGE_URL as PRISMATIC_EVOLUTIONS_PRICE_URL, source_date as prismatic_evolutions_source_date
+from paldean_fates_prices import publish_price_page as publish_paldean_fates_prices, PRICE_PAGE_URL as PALDEAN_FATES_PRICE_URL, source_date as paldean_fates_source_date
+from crown_zenith_prices import publish_price_page as publish_crown_zenith_prices, PRICE_PAGE_URL as CROWN_ZENITH_PRICE_URL, source_date as crown_zenith_source_date
+from fusion_strike_prices import publish_price_page as publish_fusion_strike_prices, PRICE_PAGE_URL as FUSION_STRIKE_PRICE_URL, source_date as fusion_strike_source_date
 from raw_price_page import absolutize_document_nav, root_absolute_href
 
 def absolutize_story_links(page):
@@ -58,7 +61,7 @@ FILES+=['bluechip-raw-archive.html','bluechip-engine.js','bluechip.js','bluechip
 FILES+=['bluechip-collection-data.js','bluechip-collection-sources.json']
 FILES+=['grading-calculator.js','grading-calculator.css']
 FILES+=['thirtieth-engine.js','thirtieth.js','thirtieth.css','thirtieth-catalogue.json','thirtieth-release.json']
-FILES+=['set-index-engine.js','delta-reign.js','delta-reign-market-snapshot.json','sv-151.js','sv-151-market-snapshot.json','prismatic-evolutions.js','prismatic-evolutions-market-snapshot.json']
+FILES+=['set-index-engine.js','delta-reign.js','delta-reign-market-snapshot.json','sv-151.js','sv-151-market-snapshot.json','prismatic-evolutions.js','prismatic-evolutions-market-snapshot.json','thirtieth-market-snapshot.json','paldean-fates.js','paldean-fates-market-snapshot.json','crown-zenith.js','crown-zenith-market-snapshot.json','fusion-strike.js','fusion-strike-market-snapshot.json']
 FILES+=['prices-table.js','prices-table.css']
 for name in FILES:shutil.copy2(P/name,D/name)
 bluechip=json.loads((P/'bluechip-release.json').read_text())
@@ -125,7 +128,7 @@ soup.select_one('main').clear();soup.select_one('main').append(BeautifulSoup('<s
 (D/'drops.html').write_text(str(soup))
 release_day=datetime.strptime(json.loads((P/'refresh-status.json').read_text())['sourceDate'],'%Y-%m-%d')
 release_as_of=f'{release_day.day} {release_day.strftime("%B")} {release_day.year}'
-for route, filename, title, description in [('calculator','grading-calculator.html','Grading Calculator','Compare selling a card raw with grading. Calculate what you keep, break-even sale prices and a buy limit for each grade.'),('market','market.html','Market','Explore the existing card benchmarks and set trackers.'),('thirtieth','30th-anniversary-index.html','30th Anniversary Index','Follow the 30th Celebration chases, numbered Pikachu, RGB Mews and four Day & Night promos, with a Top 20 Raw ranking and dated histories.'),('delta-reign','delta-reign-index.html','Delta Reign Index','Follow all 141 English ME06: Delta Reign cards, with a Raw market-guide index starting at 100 on 6 November 2026 and dated prices as of '+release_as_of+'.'),('sv-151','sv-151-index.html','SV 151 Index','Follow all 207 English Scarlet & Violet 151 cards, with a Raw market-guide index and dated prices as of '+release_as_of+'.'),('prismatic-evolutions','prismatic-evolutions-index.html','Prismatic Evolutions Index','Follow 180 English Prismatic Evolutions cards, with a Raw market-guide index and dated prices as of '+release_as_of+'. The roster is the 180 English base printings, leaving out Poké Ball and Master Ball pattern versions.')]:
+for route, filename, title, description in [('calculator','grading-calculator.html','Grading Calculator','Compare selling a card raw with grading. Calculate what you keep, break-even sale prices and a buy limit for each grade.'),('market','market.html','Market','Explore the existing card benchmarks and set trackers.'),('thirtieth','30th-anniversary-index.html','30th Anniversary Index','All 195 English 30th Anniversary cards, with a Raw market-guide total dated with the daily release. Chase cards, the 30 Pikachu and the RGB Mews keep their own charts. As of '+release_as_of+'.'),('delta-reign','delta-reign-index.html','Delta Reign Index','Follow all 141 English ME06: Delta Reign cards, with a Raw market-guide index starting at 100 on 6 November 2026 and dated prices as of '+release_as_of+'.'),('sv-151','sv-151-index.html','SV 151 Index','Follow all 207 English Scarlet & Violet 151 cards, with a Raw market-guide index and dated prices as of '+release_as_of+'.'),('prismatic-evolutions','prismatic-evolutions-index.html','Prismatic Evolutions Index','Follow 180 English Prismatic Evolutions cards, with a Raw market-guide index and dated prices as of '+release_as_of+'. The roster is the 180 English base printings, leaving out Poké Ball and Master Ball pattern versions.'),('paldean-fates','paldean-fates-index.html','Paldean Fates Index','All 245 English Paldean Fates cards, including the Shiny Vault, with a Raw market-guide total dated with the daily release as of '+release_as_of+'.'),('crown-zenith','crown-zenith-index.html','Crown Zenith Index','All 230 English Crown Zenith cards, including all 70 Galarian Gallery cards, with a Raw market-guide total dated with the daily release as of '+release_as_of+'.'),('fusion-strike','fusion-strike-index.html','Fusion Strike Index','All 284 English Fusion Strike cards, including Gengar VMAX 271/264, with a Raw market-guide total dated with the daily release as of '+release_as_of+'.')]:
  soup=BeautifulSoup((P/'index.html').read_text(),'html.parser');soup.body['data-route']=route
  soup.title.string=title+' · '+BRAND
  soup.select_one('link[rel=canonical]')['href']=BASE+filename
@@ -197,14 +200,18 @@ for w in e.get('wire',[]):
  source=''
  if w.get('url') and w.get('sourceLabel'):
   source='<p class="news-source"><a href="'+html.escape(w['url'])+'" rel="noopener noreferrer">Source: '+html.escape(w['sourceLabel'])+' ↗</a></p>'
- paragraphs=''.join('<p>'+html.escape(part)+'</p>' for part in (w.get('summary') or '').split('\n\n') if part.strip())
  img=''
  if picture and not str(picture).startswith(('http://','https://','//')) and (P/picture).is_file():
   img=f'<figure class="reading-image"><div class="story-cover full-image"><img src="{html.escape(picture)}" alt="{html.escape(w.get("imageAlt") or w["title"])}" style="object-fit:contain;background:#fff"></div><figcaption>{html.escape(w.get("imageCredit") or "")}</figcaption></figure>'
  chase_keys={(c.get('name'), c.get('number')) for c in (w.get('chase_cards') or []) if isinstance(c, dict)}
  ebay_under_image={key: render_ebay_block(c, w['id']) for c in (w.get('ebay_cards') or []) if (key := (c.get('name'), c.get('number'))) in chase_keys}
- content=f'<header class="reading-head"><a class="back-link" href="index.html#desk">← Back to the newsroom</a><span class="kicker red-text">{html.escape(w.get("category") or "Newsroom")}</span><h1>{html.escape(w["title"])}</h1><p>{html.escape(w.get("summary") or "")}</p><p class="news-credit"><span class="news-author">{byline}</span> · {html.escape(w.get("kind") or "Newsroom")} · {html.escape(w.get("displayDate") or published)}</p></header>{img}{render_ebay_cards(w,w["id"],chase_keys)}{render_chase_cards(w,ebay_under_image)}<div class="reading-layout"><article class="article-body">{paragraphs}{source}<p class="small">This brief is also listed on the <a href="index.html#desk/{html.escape(w["id"])}">Card Desk</a>.</p><a class="btn red" href="index.html#desk">More from the newsroom →</a></article></div>'+digest_signup_html(w['id'])
- check_rendered_news_placements(content,w['id'],w['id'])
+ unit=render_ebay_cards(w,w['id'],chase_keys)+render_chase_cards(w,ebay_under_image)
+ if unit:unit='<div class="news-ebay-unit">'+unit+'</div>'
+ paragraphs=render_news_paragraphs(w.get('summary') or '', unit)
+ standfirst=html.escape(news_standfirst(w.get('summary') or ''))
+ standfirst_html=f'<p>{standfirst}</p>' if standfirst else ''
+ content=f'<header class="reading-head"><a class="back-link" href="index.html#desk">← Back to the newsroom</a><span class="kicker red-text">{html.escape(w.get("category") or "Newsroom")}</span><h1>{html.escape(w["title"])}</h1>{standfirst_html}<p class="news-credit"><span class="news-author">{byline}</span> · {html.escape(w.get("kind") or "Newsroom")} · {html.escape(w.get("displayDate") or published)}</p></header>{img}<div class="reading-layout"><article class="article-body">{paragraphs}{source}<p class="small">This brief is also listed on the <a href="index.html#desk/{html.escape(w["id"])}">Card Desk</a>.</p><a class="btn red" href="index.html#desk">More from the newsroom →</a></article></div>'+digest_signup_html(w['id'])
+ check_rendered_news_placements(content,w['id'],w['id'],w.get('summary') or '')
  main.append(BeautifulSoup(content,'html.parser'));absolutize_story_links(soup);folder=D/'news'/w['id'];folder.mkdir(parents=True);(folder/'index.html').write_text(str(soup))
 
 from price_release import rebuild_price_snapshots
@@ -214,6 +221,9 @@ publish_modern_prices(P, D)
 publish_delta_reign_prices(P, D)
 publish_sv_151_prices(P, D)
 publish_prismatic_evolutions_prices(P, D)
+publish_paldean_fates_prices(P, D)
+publish_crown_zenith_prices(P, D)
+publish_fusion_strike_prices(P, D)
 advertise_description='Advertising and sponsorship on BuyTrigger.Cards for shops and brands serving Pokémon TCG collectors. Audience figures coming soon.'
 soup=BeautifulSoup((P/'index.html').read_text(),'html.parser');soup.body['data-route']='advertise';soup.head.insert(0,soup.new_tag('base',href='../'))
 soup.title.string='Advertise / Sponsor · '+BRAND;url=BASE+'advertise/'
@@ -224,13 +234,16 @@ main=soup.select_one('main');main.clear();main.append(BeautifulSoup(advertise_ma
 absolutize_document_nav(soup)
 folder=D/'advertise';folder.mkdir(parents=True);(folder/'index.html').write_text(str(soup))
 
-static_urls=[BASE,BASE+'grading-calculator.html',BASE+'undervalued.html',BASE+'undervalued-japanese.html',BASE+'market.html',BASE+'30th-anniversary-index.html',BASE+'delta-reign-index.html',BASE+'sv-151-index.html',BASE+'prismatic-evolutions-index.html',BASE+'drops.html',BASE+'tcg-modern-index.html',BASE+'top-50.html',BASE+'bluechip-raw-archive.html',BASE+'advertise/']
+static_urls=[BASE,BASE+'grading-calculator.html',BASE+'undervalued.html',BASE+'undervalued-japanese.html',BASE+'market.html',BASE+'30th-anniversary-index.html',BASE+'delta-reign-index.html',BASE+'sv-151-index.html',BASE+'prismatic-evolutions-index.html',BASE+'paldean-fates-index.html',BASE+'crown-zenith-index.html',BASE+'fusion-strike-index.html',BASE+'drops.html',BASE+'tcg-modern-index.html',BASE+'top-50.html',BASE+'bluechip-raw-archive.html',BASE+'advertise/']
 sitemap_entries=seo.collect_sitemap_entries(e,static_urls)
 sitemap_entries.append({'url':THIRTIETH_PRICE_URL,'lastmod':thirtieth_source_date(P)})
 sitemap_entries.append({'url':MODERN_PRICE_URL,'lastmod':modern_source_date(P)})
 sitemap_entries.append({'url':DELTA_REIGN_PRICE_URL,'lastmod':delta_reign_source_date(P)})
 sitemap_entries.append({'url':SV_151_PRICE_URL,'lastmod':sv_151_source_date(P)})
 sitemap_entries.append({'url':PRISMATIC_EVOLUTIONS_PRICE_URL,'lastmod':prismatic_evolutions_source_date(P)})
+sitemap_entries.append({'url':PALDEAN_FATES_PRICE_URL,'lastmod':paldean_fates_source_date(P)})
+sitemap_entries.append({'url':CROWN_ZENITH_PRICE_URL,'lastmod':crown_zenith_source_date(P)})
+sitemap_entries.append({'url':FUSION_STRIKE_PRICE_URL,'lastmod':fusion_strike_source_date(P)})
 (D/'sitemap.xml').write_text(seo.urlset_xml(sitemap_entries))
 (D/'news-sitemap.xml').write_text(seo.news_sitemap_xml(seo.collect_news_entries(e)))
 (D/'robots.txt').write_text(seo.robots_txt())

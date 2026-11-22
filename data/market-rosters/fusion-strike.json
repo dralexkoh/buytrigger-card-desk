@@ -1,0 +1,2851 @@
+{
+  "schemaVersion": 1,
+  "index": "fusion-strike",
+  "chase_source": "set-trackers brief 22 Nov 2026, the three named heroes",
+  "sourceList": "TCGCSV 2906 SWSH08: Fusion Strike. English base printing only (Holofoil, or Normal where that card has no Holofoil). Reverse Holofoil and 45 sealed products with no collector number are left out. Guides are the 21 Nov 2026 TCGCSV prices file. No launch-day archive was backfilled.",
+  "cards": [
+    {
+      "productId": "253069",
+      "groupId": "2906",
+      "name": "Caterpie",
+      "set": "SWSH08: Fusion Strike",
+      "number": "001/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253069.jpg"
+    },
+    {
+      "productId": "253072",
+      "groupId": "2906",
+      "name": "Metapod",
+      "set": "SWSH08: Fusion Strike",
+      "number": "002/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253072.jpg"
+    },
+    {
+      "productId": "253073",
+      "groupId": "2906",
+      "name": "Butterfree",
+      "set": "SWSH08: Fusion Strike",
+      "number": "003/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253073.jpg"
+    },
+    {
+      "productId": "253074",
+      "groupId": "2906",
+      "name": "Shroomish",
+      "set": "SWSH08: Fusion Strike",
+      "number": "004/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253074.jpg"
+    },
+    {
+      "productId": "253075",
+      "groupId": "2906",
+      "name": "Breloom",
+      "set": "SWSH08: Fusion Strike",
+      "number": "005/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253075.jpg"
+    },
+    {
+      "productId": "253076",
+      "groupId": "2906",
+      "name": "Breloom V",
+      "set": "SWSH08: Fusion Strike",
+      "number": "006/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253076.jpg"
+    },
+    {
+      "productId": "253077",
+      "groupId": "2906",
+      "name": "Pansage",
+      "set": "SWSH08: Fusion Strike",
+      "number": "007/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253077.jpg"
+    },
+    {
+      "productId": "253078",
+      "groupId": "2906",
+      "name": "Simisage",
+      "set": "SWSH08: Fusion Strike",
+      "number": "008/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253078.jpg"
+    },
+    {
+      "productId": "253079",
+      "groupId": "2906",
+      "name": "Sewaddle",
+      "set": "SWSH08: Fusion Strike",
+      "number": "009/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253079.jpg"
+    },
+    {
+      "productId": "253080",
+      "groupId": "2906",
+      "name": "Swadloon",
+      "set": "SWSH08: Fusion Strike",
+      "number": "010/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253080.jpg"
+    },
+    {
+      "productId": "253081",
+      "groupId": "2906",
+      "name": "Leavanny",
+      "set": "SWSH08: Fusion Strike",
+      "number": "011/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253081.jpg"
+    },
+    {
+      "productId": "253086",
+      "groupId": "2906",
+      "name": "Maractus",
+      "set": "SWSH08: Fusion Strike",
+      "number": "012/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253086.jpg"
+    },
+    {
+      "productId": "253087",
+      "groupId": "2906",
+      "name": "Shelmet",
+      "set": "SWSH08: Fusion Strike",
+      "number": "013/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253087.jpg"
+    },
+    {
+      "productId": "253090",
+      "groupId": "2906",
+      "name": "Accelgor",
+      "set": "SWSH08: Fusion Strike",
+      "number": "014/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253090.jpg"
+    },
+    {
+      "productId": "253092",
+      "groupId": "2906",
+      "name": "Virizion",
+      "set": "SWSH08: Fusion Strike",
+      "number": "015/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253092.jpg"
+    },
+    {
+      "productId": "253094",
+      "groupId": "2906",
+      "name": "Phantump",
+      "set": "SWSH08: Fusion Strike",
+      "number": "016/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253094.jpg"
+    },
+    {
+      "productId": "253096",
+      "groupId": "2906",
+      "name": "Trevenant",
+      "set": "SWSH08: Fusion Strike",
+      "number": "017/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253096.jpg"
+    },
+    {
+      "productId": "253098",
+      "groupId": "2906",
+      "name": "Grubbin",
+      "set": "SWSH08: Fusion Strike",
+      "number": "018/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253098.jpg"
+    },
+    {
+      "productId": "253102",
+      "groupId": "2906",
+      "name": "Dewpider",
+      "set": "SWSH08: Fusion Strike",
+      "number": "019/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253102.jpg"
+    },
+    {
+      "productId": "253105",
+      "groupId": "2906",
+      "name": "Araquanid",
+      "set": "SWSH08: Fusion Strike",
+      "number": "020/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253105.jpg"
+    },
+    {
+      "productId": "253109",
+      "groupId": "2906",
+      "name": "Tsareena V",
+      "set": "SWSH08: Fusion Strike",
+      "number": "021/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253109.jpg"
+    },
+    {
+      "productId": "253113",
+      "groupId": "2906",
+      "name": "Rillaboom V",
+      "set": "SWSH08: Fusion Strike",
+      "number": "022/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253113.jpg"
+    },
+    {
+      "productId": "253108",
+      "groupId": "2906",
+      "name": "Rillaboom VMAX",
+      "set": "SWSH08: Fusion Strike",
+      "number": "023/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253108.jpg"
+    },
+    {
+      "productId": "253115",
+      "groupId": "2906",
+      "name": "Gossifleur",
+      "set": "SWSH08: Fusion Strike",
+      "number": "024/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253115.jpg"
+    },
+    {
+      "productId": "253118",
+      "groupId": "2906",
+      "name": "Eldegoss",
+      "set": "SWSH08: Fusion Strike",
+      "number": "025/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253118.jpg"
+    },
+    {
+      "productId": "253120",
+      "groupId": "2906",
+      "name": "Appletun V",
+      "set": "SWSH08: Fusion Strike",
+      "number": "026/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253120.jpg"
+    },
+    {
+      "productId": "253122",
+      "groupId": "2906",
+      "name": "Zarude",
+      "set": "SWSH08: Fusion Strike",
+      "number": "027/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253122.jpg"
+    },
+    {
+      "productId": "253124",
+      "groupId": "2906",
+      "name": "Vulpix (28)",
+      "set": "SWSH08: Fusion Strike",
+      "number": "028/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253124.jpg"
+    },
+    {
+      "productId": "253125",
+      "groupId": "2906",
+      "name": "Vulpix (29)",
+      "set": "SWSH08: Fusion Strike",
+      "number": "029/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253125.jpg"
+    },
+    {
+      "productId": "253126",
+      "groupId": "2906",
+      "name": "Ninetales (30)",
+      "set": "SWSH08: Fusion Strike",
+      "number": "030/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253126.jpg"
+    },
+    {
+      "productId": "253128",
+      "groupId": "2906",
+      "name": "Ninetales (31)",
+      "set": "SWSH08: Fusion Strike",
+      "number": "031/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253128.jpg"
+    },
+    {
+      "productId": "253129",
+      "groupId": "2906",
+      "name": "Growlithe",
+      "set": "SWSH08: Fusion Strike",
+      "number": "032/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253129.jpg"
+    },
+    {
+      "productId": "253130",
+      "groupId": "2906",
+      "name": "Arcanine",
+      "set": "SWSH08: Fusion Strike",
+      "number": "033/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253130.jpg"
+    },
+    {
+      "productId": "253131",
+      "groupId": "2906",
+      "name": "Slugma",
+      "set": "SWSH08: Fusion Strike",
+      "number": "034/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253131.jpg"
+    },
+    {
+      "productId": "253132",
+      "groupId": "2906",
+      "name": "Magcargo",
+      "set": "SWSH08: Fusion Strike",
+      "number": "035/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253132.jpg"
+    },
+    {
+      "productId": "253136",
+      "groupId": "2906",
+      "name": "Victini",
+      "set": "SWSH08: Fusion Strike",
+      "number": "036/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253136.jpg"
+    },
+    {
+      "productId": "253137",
+      "groupId": "2906",
+      "name": "Pansear",
+      "set": "SWSH08: Fusion Strike",
+      "number": "037/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253137.jpg"
+    },
+    {
+      "productId": "253140",
+      "groupId": "2906",
+      "name": "Simisear",
+      "set": "SWSH08: Fusion Strike",
+      "number": "038/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253140.jpg"
+    },
+    {
+      "productId": "253142",
+      "groupId": "2906",
+      "name": "Chandelure V",
+      "set": "SWSH08: Fusion Strike",
+      "number": "039/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253142.jpg"
+    },
+    {
+      "productId": "253145",
+      "groupId": "2906",
+      "name": "Chandelure VMAX",
+      "set": "SWSH08: Fusion Strike",
+      "number": "040/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253145.jpg"
+    },
+    {
+      "productId": "253150",
+      "groupId": "2906",
+      "name": "Heatmor",
+      "set": "SWSH08: Fusion Strike",
+      "number": "041/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253150.jpg"
+    },
+    {
+      "productId": "253158",
+      "groupId": "2906",
+      "name": "Oricorio",
+      "set": "SWSH08: Fusion Strike",
+      "number": "042/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253158.jpg"
+    },
+    {
+      "productId": "253164",
+      "groupId": "2906",
+      "name": "Cinderace V (43)",
+      "set": "SWSH08: Fusion Strike",
+      "number": "043/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253164.jpg"
+    },
+    {
+      "productId": "253168",
+      "groupId": "2906",
+      "name": "Cinderace V (44)",
+      "set": "SWSH08: Fusion Strike",
+      "number": "044/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253168.jpg"
+    },
+    {
+      "productId": "253170",
+      "groupId": "2906",
+      "name": "Cinderace VMAX",
+      "set": "SWSH08: Fusion Strike",
+      "number": "045/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253170.jpg"
+    },
+    {
+      "productId": "253172",
+      "groupId": "2906",
+      "name": "Sizzlipede (46)",
+      "set": "SWSH08: Fusion Strike",
+      "number": "046/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253172.jpg"
+    },
+    {
+      "productId": "253175",
+      "groupId": "2906",
+      "name": "Sizzlipede (47)",
+      "set": "SWSH08: Fusion Strike",
+      "number": "047/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253175.jpg"
+    },
+    {
+      "productId": "253179",
+      "groupId": "2906",
+      "name": "Centiskorch (48)",
+      "set": "SWSH08: Fusion Strike",
+      "number": "048/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253179.jpg"
+    },
+    {
+      "productId": "253180",
+      "groupId": "2906",
+      "name": "Centiskorch (49)",
+      "set": "SWSH08: Fusion Strike",
+      "number": "049/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253180.jpg"
+    },
+    {
+      "productId": "253181",
+      "groupId": "2906",
+      "name": "Shellder",
+      "set": "SWSH08: Fusion Strike",
+      "number": "050/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253181.jpg"
+    },
+    {
+      "productId": "253182",
+      "groupId": "2906",
+      "name": "Cloyster",
+      "set": "SWSH08: Fusion Strike",
+      "number": "051/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253182.jpg"
+    },
+    {
+      "productId": "253183",
+      "groupId": "2906",
+      "name": "Staryu",
+      "set": "SWSH08: Fusion Strike",
+      "number": "052/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253183.jpg"
+    },
+    {
+      "productId": "253184",
+      "groupId": "2906",
+      "name": "Starmie",
+      "set": "SWSH08: Fusion Strike",
+      "number": "053/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253184.jpg"
+    },
+    {
+      "productId": "253185",
+      "groupId": "2906",
+      "name": "Lapras",
+      "set": "SWSH08: Fusion Strike",
+      "number": "054/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253185.jpg"
+    },
+    {
+      "productId": "253186",
+      "groupId": "2906",
+      "name": "Totodile",
+      "set": "SWSH08: Fusion Strike",
+      "number": "055/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253186.jpg"
+    },
+    {
+      "productId": "253187",
+      "groupId": "2906",
+      "name": "Croconaw",
+      "set": "SWSH08: Fusion Strike",
+      "number": "056/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253187.jpg"
+    },
+    {
+      "productId": "253188",
+      "groupId": "2906",
+      "name": "Feraligatr",
+      "set": "SWSH08: Fusion Strike",
+      "number": "057/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253188.jpg"
+    },
+    {
+      "productId": "253189",
+      "groupId": "2906",
+      "name": "Marill",
+      "set": "SWSH08: Fusion Strike",
+      "number": "058/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253189.jpg"
+    },
+    {
+      "productId": "253190",
+      "groupId": "2906",
+      "name": "Azumarill",
+      "set": "SWSH08: Fusion Strike",
+      "number": "059/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253190.jpg"
+    },
+    {
+      "productId": "253192",
+      "groupId": "2906",
+      "name": "Qwilfish",
+      "set": "SWSH08: Fusion Strike",
+      "number": "060/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253192.jpg"
+    },
+    {
+      "productId": "253195",
+      "groupId": "2906",
+      "name": "Mantine",
+      "set": "SWSH08: Fusion Strike",
+      "number": "061/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253195.jpg"
+    },
+    {
+      "productId": "253199",
+      "groupId": "2906",
+      "name": "Mudkip",
+      "set": "SWSH08: Fusion Strike",
+      "number": "062/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253199.jpg"
+    },
+    {
+      "productId": "253201",
+      "groupId": "2906",
+      "name": "Marshtomp",
+      "set": "SWSH08: Fusion Strike",
+      "number": "063/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253201.jpg"
+    },
+    {
+      "productId": "253205",
+      "groupId": "2906",
+      "name": "Swampert",
+      "set": "SWSH08: Fusion Strike",
+      "number": "064/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253205.jpg"
+    },
+    {
+      "productId": "253208",
+      "groupId": "2906",
+      "name": "Clamperl",
+      "set": "SWSH08: Fusion Strike",
+      "number": "065/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253208.jpg"
+    },
+    {
+      "productId": "253209",
+      "groupId": "2906",
+      "name": "Huntail",
+      "set": "SWSH08: Fusion Strike",
+      "number": "066/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253209.jpg"
+    },
+    {
+      "productId": "253210",
+      "groupId": "2906",
+      "name": "Gorebyss",
+      "set": "SWSH08: Fusion Strike",
+      "number": "067/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253210.jpg"
+    },
+    {
+      "productId": "253211",
+      "groupId": "2906",
+      "name": "Panpour",
+      "set": "SWSH08: Fusion Strike",
+      "number": "068/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253211.jpg"
+    },
+    {
+      "productId": "253212",
+      "groupId": "2906",
+      "name": "Simipour",
+      "set": "SWSH08: Fusion Strike",
+      "number": "069/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253212.jpg"
+    },
+    {
+      "productId": "253215",
+      "groupId": "2906",
+      "name": "Basculin",
+      "set": "SWSH08: Fusion Strike",
+      "number": "070/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253215.jpg"
+    },
+    {
+      "productId": "253218",
+      "groupId": "2906",
+      "name": "Galarian Darumaka",
+      "set": "SWSH08: Fusion Strike",
+      "number": "071/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253218.jpg"
+    },
+    {
+      "productId": "253222",
+      "groupId": "2906",
+      "name": "Galarian Darmanitan",
+      "set": "SWSH08: Fusion Strike",
+      "number": "072/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253222.jpg"
+    },
+    {
+      "productId": "253223",
+      "groupId": "2906",
+      "name": "Greninja V",
+      "set": "SWSH08: Fusion Strike",
+      "number": "073/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253223.jpg"
+    },
+    {
+      "productId": "253224",
+      "groupId": "2906",
+      "name": "Clauncher",
+      "set": "SWSH08: Fusion Strike",
+      "number": "074/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253224.jpg"
+    },
+    {
+      "productId": "253225",
+      "groupId": "2906",
+      "name": "Clawitzer",
+      "set": "SWSH08: Fusion Strike",
+      "number": "075/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253225.jpg"
+    },
+    {
+      "productId": "253226",
+      "groupId": "2906",
+      "name": "Crabominable V",
+      "set": "SWSH08: Fusion Strike",
+      "number": "076/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253226.jpg"
+    },
+    {
+      "productId": "253229",
+      "groupId": "2906",
+      "name": "Pyukumuku",
+      "set": "SWSH08: Fusion Strike",
+      "number": "077/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253229.jpg"
+    },
+    {
+      "productId": "253232",
+      "groupId": "2906",
+      "name": "Inteleon V",
+      "set": "SWSH08: Fusion Strike",
+      "number": "078/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253232.jpg"
+    },
+    {
+      "productId": "253233",
+      "groupId": "2906",
+      "name": "Inteleon VMAX",
+      "set": "SWSH08: Fusion Strike",
+      "number": "079/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253233.jpg"
+    },
+    {
+      "productId": "253234",
+      "groupId": "2906",
+      "name": "Chewtle",
+      "set": "SWSH08: Fusion Strike",
+      "number": "080/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253234.jpg"
+    },
+    {
+      "productId": "253235",
+      "groupId": "2906",
+      "name": "Drednaw",
+      "set": "SWSH08: Fusion Strike",
+      "number": "081/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253235.jpg"
+    },
+    {
+      "productId": "253236",
+      "groupId": "2906",
+      "name": "Arrokuda",
+      "set": "SWSH08: Fusion Strike",
+      "number": "082/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253236.jpg"
+    },
+    {
+      "productId": "253237",
+      "groupId": "2906",
+      "name": "Barraskewda",
+      "set": "SWSH08: Fusion Strike",
+      "number": "083/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253237.jpg"
+    },
+    {
+      "productId": "253238",
+      "groupId": "2906",
+      "name": "Snom",
+      "set": "SWSH08: Fusion Strike",
+      "number": "084/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253238.jpg"
+    },
+    {
+      "productId": "253240",
+      "groupId": "2906",
+      "name": "Frosmoth",
+      "set": "SWSH08: Fusion Strike",
+      "number": "085/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253240.jpg"
+    },
+    {
+      "productId": "253241",
+      "groupId": "2906",
+      "name": "Pikachu V",
+      "set": "SWSH08: Fusion Strike",
+      "number": "086/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253241.jpg"
+    },
+    {
+      "productId": "253243",
+      "groupId": "2906",
+      "name": "Voltorb",
+      "set": "SWSH08: Fusion Strike",
+      "number": "087/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253243.jpg"
+    },
+    {
+      "productId": "253244",
+      "groupId": "2906",
+      "name": "Electrode",
+      "set": "SWSH08: Fusion Strike",
+      "number": "088/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253244.jpg"
+    },
+    {
+      "productId": "253245",
+      "groupId": "2906",
+      "name": "Plusle",
+      "set": "SWSH08: Fusion Strike",
+      "number": "089/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253245.jpg"
+    },
+    {
+      "productId": "253246",
+      "groupId": "2906",
+      "name": "Minun",
+      "set": "SWSH08: Fusion Strike",
+      "number": "090/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253246.jpg"
+    },
+    {
+      "productId": "253247",
+      "groupId": "2906",
+      "name": "Shinx",
+      "set": "SWSH08: Fusion Strike",
+      "number": "091/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253247.jpg"
+    },
+    {
+      "productId": "253248",
+      "groupId": "2906",
+      "name": "Luxio",
+      "set": "SWSH08: Fusion Strike",
+      "number": "092/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253248.jpg"
+    },
+    {
+      "productId": "253249",
+      "groupId": "2906",
+      "name": "Luxray",
+      "set": "SWSH08: Fusion Strike",
+      "number": "093/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253249.jpg"
+    },
+    {
+      "productId": "253250",
+      "groupId": "2906",
+      "name": "Rotom",
+      "set": "SWSH08: Fusion Strike",
+      "number": "094/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253250.jpg"
+    },
+    {
+      "productId": "253251",
+      "groupId": "2906",
+      "name": "Tynamo",
+      "set": "SWSH08: Fusion Strike",
+      "number": "095/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253251.jpg"
+    },
+    {
+      "productId": "253252",
+      "groupId": "2906",
+      "name": "Eelektrik",
+      "set": "SWSH08: Fusion Strike",
+      "number": "096/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253252.jpg"
+    },
+    {
+      "productId": "253253",
+      "groupId": "2906",
+      "name": "Eelektross",
+      "set": "SWSH08: Fusion Strike",
+      "number": "097/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253253.jpg"
+    },
+    {
+      "productId": "253254",
+      "groupId": "2906",
+      "name": "Helioptile",
+      "set": "SWSH08: Fusion Strike",
+      "number": "098/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253254.jpg"
+    },
+    {
+      "productId": "253255",
+      "groupId": "2906",
+      "name": "Heliolisk",
+      "set": "SWSH08: Fusion Strike",
+      "number": "099/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253255.jpg"
+    },
+    {
+      "productId": "253256",
+      "groupId": "2906",
+      "name": "Charjabug",
+      "set": "SWSH08: Fusion Strike",
+      "number": "100/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253256.jpg"
+    },
+    {
+      "productId": "253257",
+      "groupId": "2906",
+      "name": "Vikavolt",
+      "set": "SWSH08: Fusion Strike",
+      "number": "101/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253257.jpg"
+    },
+    {
+      "productId": "253258",
+      "groupId": "2906",
+      "name": "Zeraora",
+      "set": "SWSH08: Fusion Strike",
+      "number": "102/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253258.jpg"
+    },
+    {
+      "productId": "253259",
+      "groupId": "2906",
+      "name": "Boltund V",
+      "set": "SWSH08: Fusion Strike",
+      "number": "103/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253259.jpg"
+    },
+    {
+      "productId": "253260",
+      "groupId": "2906",
+      "name": "Boltund VMAX",
+      "set": "SWSH08: Fusion Strike",
+      "number": "104/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253260.jpg"
+    },
+    {
+      "productId": "253261",
+      "groupId": "2906",
+      "name": "Toxel (105)",
+      "set": "SWSH08: Fusion Strike",
+      "number": "105/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253261.jpg"
+    },
+    {
+      "productId": "253262",
+      "groupId": "2906",
+      "name": "Toxel (106)",
+      "set": "SWSH08: Fusion Strike",
+      "number": "106/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253262.jpg"
+    },
+    {
+      "productId": "253263",
+      "groupId": "2906",
+      "name": "Toxtricity (107)",
+      "set": "SWSH08: Fusion Strike",
+      "number": "107/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253263.jpg"
+    },
+    {
+      "productId": "253264",
+      "groupId": "2906",
+      "name": "Toxtricity (108)",
+      "set": "SWSH08: Fusion Strike",
+      "number": "108/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253264.jpg"
+    },
+    {
+      "productId": "253267",
+      "groupId": "2906",
+      "name": "Morpeko (109)",
+      "set": "SWSH08: Fusion Strike",
+      "number": "109/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253267.jpg"
+    },
+    {
+      "productId": "253268",
+      "groupId": "2906",
+      "name": "Jigglypuff",
+      "set": "SWSH08: Fusion Strike",
+      "number": "110/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253268.jpg"
+    },
+    {
+      "productId": "253269",
+      "groupId": "2906",
+      "name": "Wigglytuff",
+      "set": "SWSH08: Fusion Strike",
+      "number": "111/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253269.jpg"
+    },
+    {
+      "productId": "253273",
+      "groupId": "2906",
+      "name": "Jynx",
+      "set": "SWSH08: Fusion Strike",
+      "number": "112/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253273.jpg"
+    },
+    {
+      "productId": "253274",
+      "groupId": "2906",
+      "name": "Mew V",
+      "set": "SWSH08: Fusion Strike",
+      "number": "113/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253274.jpg"
+    },
+    {
+      "productId": "253275",
+      "groupId": "2906",
+      "name": "Mew VMAX",
+      "set": "SWSH08: Fusion Strike",
+      "number": "114/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253275.jpg"
+    },
+    {
+      "productId": "253278",
+      "groupId": "2906",
+      "name": "Snubbull",
+      "set": "SWSH08: Fusion Strike",
+      "number": "115/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253278.jpg"
+    },
+    {
+      "productId": "253282",
+      "groupId": "2906",
+      "name": "Granbull",
+      "set": "SWSH08: Fusion Strike",
+      "number": "116/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253282.jpg"
+    },
+    {
+      "productId": "253283",
+      "groupId": "2906",
+      "name": "Galarian Corsola",
+      "set": "SWSH08: Fusion Strike",
+      "number": "117/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253283.jpg"
+    },
+    {
+      "productId": "253288",
+      "groupId": "2906",
+      "name": "Galarian Cursola",
+      "set": "SWSH08: Fusion Strike",
+      "number": "118/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253288.jpg"
+    },
+    {
+      "productId": "253290",
+      "groupId": "2906",
+      "name": "Mawile",
+      "set": "SWSH08: Fusion Strike",
+      "number": "119/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253290.jpg"
+    },
+    {
+      "productId": "253293",
+      "groupId": "2906",
+      "name": "Deoxys",
+      "set": "SWSH08: Fusion Strike",
+      "number": "120/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253293.jpg"
+    },
+    {
+      "productId": "253294",
+      "groupId": "2906",
+      "name": "Munna",
+      "set": "SWSH08: Fusion Strike",
+      "number": "121/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253294.jpg"
+    },
+    {
+      "productId": "253299",
+      "groupId": "2906",
+      "name": "Musharna",
+      "set": "SWSH08: Fusion Strike",
+      "number": "122/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253299.jpg"
+    },
+    {
+      "productId": "253303",
+      "groupId": "2906",
+      "name": "Sigilyph",
+      "set": "SWSH08: Fusion Strike",
+      "number": "123/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253303.jpg"
+    },
+    {
+      "productId": "253308",
+      "groupId": "2906",
+      "name": "Meloetta",
+      "set": "SWSH08: Fusion Strike",
+      "number": "124/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253308.jpg"
+    },
+    {
+      "productId": "253311",
+      "groupId": "2906",
+      "name": "Sandygast",
+      "set": "SWSH08: Fusion Strike",
+      "number": "125/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253311.jpg"
+    },
+    {
+      "productId": "253313",
+      "groupId": "2906",
+      "name": "Palossand",
+      "set": "SWSH08: Fusion Strike",
+      "number": "126/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253313.jpg"
+    },
+    {
+      "productId": "253318",
+      "groupId": "2906",
+      "name": "Indeedee",
+      "set": "SWSH08: Fusion Strike",
+      "number": "127/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253318.jpg"
+    },
+    {
+      "productId": "253321",
+      "groupId": "2906",
+      "name": "Dreepy",
+      "set": "SWSH08: Fusion Strike",
+      "number": "128/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253321.jpg"
+    },
+    {
+      "productId": "253325",
+      "groupId": "2906",
+      "name": "Drakloak",
+      "set": "SWSH08: Fusion Strike",
+      "number": "129/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253325.jpg"
+    },
+    {
+      "productId": "253327",
+      "groupId": "2906",
+      "name": "Dragapult",
+      "set": "SWSH08: Fusion Strike",
+      "number": "130/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253327.jpg"
+    },
+    {
+      "productId": "253330",
+      "groupId": "2906",
+      "name": "Sandshrew",
+      "set": "SWSH08: Fusion Strike",
+      "number": "131/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253330.jpg"
+    },
+    {
+      "productId": "253449",
+      "groupId": "2906",
+      "name": "Sandslash",
+      "set": "SWSH08: Fusion Strike",
+      "number": "132/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253449.jpg"
+    },
+    {
+      "productId": "253334",
+      "groupId": "2906",
+      "name": "Mankey",
+      "set": "SWSH08: Fusion Strike",
+      "number": "133/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253334.jpg"
+    },
+    {
+      "productId": "253337",
+      "groupId": "2906",
+      "name": "Primeape",
+      "set": "SWSH08: Fusion Strike",
+      "number": "134/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253337.jpg"
+    },
+    {
+      "productId": "253339",
+      "groupId": "2906",
+      "name": "Geodude",
+      "set": "SWSH08: Fusion Strike",
+      "number": "135/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253339.jpg"
+    },
+    {
+      "productId": "253341",
+      "groupId": "2906",
+      "name": "Graveler",
+      "set": "SWSH08: Fusion Strike",
+      "number": "136/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253341.jpg"
+    },
+    {
+      "productId": "253342",
+      "groupId": "2906",
+      "name": "Golem",
+      "set": "SWSH08: Fusion Strike",
+      "number": "137/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253342.jpg"
+    },
+    {
+      "productId": "253343",
+      "groupId": "2906",
+      "name": "Onix",
+      "set": "SWSH08: Fusion Strike",
+      "number": "138/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253343.jpg"
+    },
+    {
+      "productId": "253346",
+      "groupId": "2906",
+      "name": "Steelix",
+      "set": "SWSH08: Fusion Strike",
+      "number": "139/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253346.jpg"
+    },
+    {
+      "productId": "253348",
+      "groupId": "2906",
+      "name": "Gligar",
+      "set": "SWSH08: Fusion Strike",
+      "number": "140/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253348.jpg"
+    },
+    {
+      "productId": "253350",
+      "groupId": "2906",
+      "name": "Gliscor",
+      "set": "SWSH08: Fusion Strike",
+      "number": "141/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253350.jpg"
+    },
+    {
+      "productId": "253352",
+      "groupId": "2906",
+      "name": "Makuhita",
+      "set": "SWSH08: Fusion Strike",
+      "number": "142/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253352.jpg"
+    },
+    {
+      "productId": "253355",
+      "groupId": "2906",
+      "name": "Hariyama",
+      "set": "SWSH08: Fusion Strike",
+      "number": "143/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253355.jpg"
+    },
+    {
+      "productId": "253356",
+      "groupId": "2906",
+      "name": "Baltoy",
+      "set": "SWSH08: Fusion Strike",
+      "number": "144/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253356.jpg"
+    },
+    {
+      "productId": "253359",
+      "groupId": "2906",
+      "name": "Claydol",
+      "set": "SWSH08: Fusion Strike",
+      "number": "145/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253359.jpg"
+    },
+    {
+      "productId": "253360",
+      "groupId": "2906",
+      "name": "Lucario V",
+      "set": "SWSH08: Fusion Strike",
+      "number": "146/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253360.jpg"
+    },
+    {
+      "productId": "253361",
+      "groupId": "2906",
+      "name": "Drilbur",
+      "set": "SWSH08: Fusion Strike",
+      "number": "147/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253361.jpg"
+    },
+    {
+      "productId": "253362",
+      "groupId": "2906",
+      "name": "Landorus",
+      "set": "SWSH08: Fusion Strike",
+      "number": "148/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253362.jpg"
+    },
+    {
+      "productId": "253363",
+      "groupId": "2906",
+      "name": "Pancham",
+      "set": "SWSH08: Fusion Strike",
+      "number": "149/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253363.jpg"
+    },
+    {
+      "productId": "253364",
+      "groupId": "2906",
+      "name": "Stufful",
+      "set": "SWSH08: Fusion Strike",
+      "number": "150/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253364.jpg"
+    },
+    {
+      "productId": "253365",
+      "groupId": "2906",
+      "name": "Bewear",
+      "set": "SWSH08: Fusion Strike",
+      "number": "151/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253365.jpg"
+    },
+    {
+      "productId": "253366",
+      "groupId": "2906",
+      "name": "Clobbopus",
+      "set": "SWSH08: Fusion Strike",
+      "number": "152/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253366.jpg"
+    },
+    {
+      "productId": "253367",
+      "groupId": "2906",
+      "name": "Grapploct",
+      "set": "SWSH08: Fusion Strike",
+      "number": "153/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253367.jpg"
+    },
+    {
+      "productId": "253368",
+      "groupId": "2906",
+      "name": "Falinks (154)",
+      "set": "SWSH08: Fusion Strike",
+      "number": "154/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253368.jpg"
+    },
+    {
+      "productId": "253369",
+      "groupId": "2906",
+      "name": "Falinks (155)",
+      "set": "SWSH08: Fusion Strike",
+      "number": "155/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253369.jpg"
+    },
+    {
+      "productId": "253370",
+      "groupId": "2906",
+      "name": "Gengar V",
+      "set": "SWSH08: Fusion Strike",
+      "number": "156/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253370.jpg"
+    },
+    {
+      "productId": "253371",
+      "groupId": "2906",
+      "name": "Gengar VMAX",
+      "set": "SWSH08: Fusion Strike",
+      "number": "157/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253371.jpg"
+    },
+    {
+      "productId": "253372",
+      "groupId": "2906",
+      "name": "Tyranitar V",
+      "set": "SWSH08: Fusion Strike",
+      "number": "158/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253372.jpg"
+    },
+    {
+      "productId": "253373",
+      "groupId": "2906",
+      "name": "Galarian Zigzagoon",
+      "set": "SWSH08: Fusion Strike",
+      "number": "159/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253373.jpg"
+    },
+    {
+      "productId": "253374",
+      "groupId": "2906",
+      "name": "Galarian Linoone",
+      "set": "SWSH08: Fusion Strike",
+      "number": "160/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253374.jpg"
+    },
+    {
+      "productId": "253375",
+      "groupId": "2906",
+      "name": "Galarian Obstagoon",
+      "set": "SWSH08: Fusion Strike",
+      "number": "161/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253375.jpg"
+    },
+    {
+      "productId": "253376",
+      "groupId": "2906",
+      "name": "Carvanha",
+      "set": "SWSH08: Fusion Strike",
+      "number": "162/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253376.jpg"
+    },
+    {
+      "productId": "253377",
+      "groupId": "2906",
+      "name": "Sharpedo",
+      "set": "SWSH08: Fusion Strike",
+      "number": "163/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253377.jpg"
+    },
+    {
+      "productId": "253378",
+      "groupId": "2906",
+      "name": "Absol",
+      "set": "SWSH08: Fusion Strike",
+      "number": "164/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253378.jpg"
+    },
+    {
+      "productId": "253379",
+      "groupId": "2906",
+      "name": "Croagunk",
+      "set": "SWSH08: Fusion Strike",
+      "number": "165/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253379.jpg"
+    },
+    {
+      "productId": "253380",
+      "groupId": "2906",
+      "name": "Toxicroak",
+      "set": "SWSH08: Fusion Strike",
+      "number": "166/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253380.jpg"
+    },
+    {
+      "productId": "253381",
+      "groupId": "2906",
+      "name": "Darkrai",
+      "set": "SWSH08: Fusion Strike",
+      "number": "167/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253381.jpg"
+    },
+    {
+      "productId": "253382",
+      "groupId": "2906",
+      "name": "Trubbish",
+      "set": "SWSH08: Fusion Strike",
+      "number": "168/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253382.jpg"
+    },
+    {
+      "productId": "253383",
+      "groupId": "2906",
+      "name": "Garbodor",
+      "set": "SWSH08: Fusion Strike",
+      "number": "169/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253383.jpg"
+    },
+    {
+      "productId": "253384",
+      "groupId": "2906",
+      "name": "Zorua",
+      "set": "SWSH08: Fusion Strike",
+      "number": "170/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253384.jpg"
+    },
+    {
+      "productId": "253385",
+      "groupId": "2906",
+      "name": "Zoroark",
+      "set": "SWSH08: Fusion Strike",
+      "number": "171/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253385.jpg"
+    },
+    {
+      "productId": "253386",
+      "groupId": "2906",
+      "name": "Vullaby",
+      "set": "SWSH08: Fusion Strike",
+      "number": "172/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253386.jpg"
+    },
+    {
+      "productId": "253387",
+      "groupId": "2906",
+      "name": "Mandibuzz",
+      "set": "SWSH08: Fusion Strike",
+      "number": "173/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253387.jpg"
+    },
+    {
+      "productId": "253388",
+      "groupId": "2906",
+      "name": "Pangoro",
+      "set": "SWSH08: Fusion Strike",
+      "number": "174/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253388.jpg"
+    },
+    {
+      "productId": "253389",
+      "groupId": "2906",
+      "name": "Yveltal",
+      "set": "SWSH08: Fusion Strike",
+      "number": "175/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253389.jpg"
+    },
+    {
+      "productId": "253390",
+      "groupId": "2906",
+      "name": "Impidimp",
+      "set": "SWSH08: Fusion Strike",
+      "number": "176/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253390.jpg"
+    },
+    {
+      "productId": "253391",
+      "groupId": "2906",
+      "name": "Morgrem",
+      "set": "SWSH08: Fusion Strike",
+      "number": "177/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253391.jpg"
+    },
+    {
+      "productId": "253392",
+      "groupId": "2906",
+      "name": "Grimmsnarl",
+      "set": "SWSH08: Fusion Strike",
+      "number": "178/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253392.jpg"
+    },
+    {
+      "productId": "253393",
+      "groupId": "2906",
+      "name": "Morpeko (179)",
+      "set": "SWSH08: Fusion Strike",
+      "number": "179/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253393.jpg"
+    },
+    {
+      "productId": "253326",
+      "groupId": "2906",
+      "name": "Galarian Meowth",
+      "set": "SWSH08: Fusion Strike",
+      "number": "180/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253326.jpg"
+    },
+    {
+      "productId": "253328",
+      "groupId": "2906",
+      "name": "Galarian Perrserker",
+      "set": "SWSH08: Fusion Strike",
+      "number": "181/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253328.jpg"
+    },
+    {
+      "productId": "253329",
+      "groupId": "2906",
+      "name": "Skarmory",
+      "set": "SWSH08: Fusion Strike",
+      "number": "182/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253329.jpg"
+    },
+    {
+      "productId": "253331",
+      "groupId": "2906",
+      "name": "Excadrill",
+      "set": "SWSH08: Fusion Strike",
+      "number": "183/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253331.jpg"
+    },
+    {
+      "productId": "253332",
+      "groupId": "2906",
+      "name": "Durant",
+      "set": "SWSH08: Fusion Strike",
+      "number": "184/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253332.jpg"
+    },
+    {
+      "productId": "253333",
+      "groupId": "2906",
+      "name": "Genesect V",
+      "set": "SWSH08: Fusion Strike",
+      "number": "185/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253333.jpg"
+    },
+    {
+      "productId": "253335",
+      "groupId": "2906",
+      "name": "Klefki",
+      "set": "SWSH08: Fusion Strike",
+      "number": "186/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253335.jpg"
+    },
+    {
+      "productId": "253336",
+      "groupId": "2906",
+      "name": "Togedemaru",
+      "set": "SWSH08: Fusion Strike",
+      "number": "187/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253336.jpg"
+    },
+    {
+      "productId": "253338",
+      "groupId": "2906",
+      "name": "Meltan",
+      "set": "SWSH08: Fusion Strike",
+      "number": "188/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253338.jpg"
+    },
+    {
+      "productId": "253340",
+      "groupId": "2906",
+      "name": "Melmetal",
+      "set": "SWSH08: Fusion Strike",
+      "number": "189/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253340.jpg"
+    },
+    {
+      "productId": "253344",
+      "groupId": "2906",
+      "name": "Corviknight",
+      "set": "SWSH08: Fusion Strike",
+      "number": "190/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253344.jpg"
+    },
+    {
+      "productId": "253345",
+      "groupId": "2906",
+      "name": "Cufant",
+      "set": "SWSH08: Fusion Strike",
+      "number": "191/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253345.jpg"
+    },
+    {
+      "productId": "253347",
+      "groupId": "2906",
+      "name": "Copperajah",
+      "set": "SWSH08: Fusion Strike",
+      "number": "192/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253347.jpg"
+    },
+    {
+      "productId": "253349",
+      "groupId": "2906",
+      "name": "Latias",
+      "set": "SWSH08: Fusion Strike",
+      "number": "193/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253349.jpg"
+    },
+    {
+      "productId": "253351",
+      "groupId": "2906",
+      "name": "Latios",
+      "set": "SWSH08: Fusion Strike",
+      "number": "194/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253351.jpg"
+    },
+    {
+      "productId": "253353",
+      "groupId": "2906",
+      "name": "Goomy",
+      "set": "SWSH08: Fusion Strike",
+      "number": "195/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253353.jpg"
+    },
+    {
+      "productId": "253354",
+      "groupId": "2906",
+      "name": "Sliggoo",
+      "set": "SWSH08: Fusion Strike",
+      "number": "196/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253354.jpg"
+    },
+    {
+      "productId": "253357",
+      "groupId": "2906",
+      "name": "Goodra",
+      "set": "SWSH08: Fusion Strike",
+      "number": "197/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253357.jpg"
+    },
+    {
+      "productId": "253358",
+      "groupId": "2906",
+      "name": "Turtonator",
+      "set": "SWSH08: Fusion Strike",
+      "number": "198/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253358.jpg"
+    },
+    {
+      "productId": "253291",
+      "groupId": "2906",
+      "name": "Meowth",
+      "set": "SWSH08: Fusion Strike",
+      "number": "199/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253291.jpg"
+    },
+    {
+      "productId": "253292",
+      "groupId": "2906",
+      "name": "Persian",
+      "set": "SWSH08: Fusion Strike",
+      "number": "200/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253292.jpg"
+    },
+    {
+      "productId": "253295",
+      "groupId": "2906",
+      "name": "Dodrio V",
+      "set": "SWSH08: Fusion Strike",
+      "number": "201/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253295.jpg"
+    },
+    {
+      "productId": "253296",
+      "groupId": "2906",
+      "name": "Chansey",
+      "set": "SWSH08: Fusion Strike",
+      "number": "202/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253296.jpg"
+    },
+    {
+      "productId": "253297",
+      "groupId": "2906",
+      "name": "Blissey",
+      "set": "SWSH08: Fusion Strike",
+      "number": "203/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253297.jpg"
+    },
+    {
+      "productId": "253298",
+      "groupId": "2906",
+      "name": "Kangaskhan",
+      "set": "SWSH08: Fusion Strike",
+      "number": "204/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253298.jpg"
+    },
+    {
+      "productId": "253300",
+      "groupId": "2906",
+      "name": "Eevee",
+      "set": "SWSH08: Fusion Strike",
+      "number": "205/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253300.jpg"
+    },
+    {
+      "productId": "253301",
+      "groupId": "2906",
+      "name": "Snorlax",
+      "set": "SWSH08: Fusion Strike",
+      "number": "206/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253301.jpg"
+    },
+    {
+      "productId": "253302",
+      "groupId": "2906",
+      "name": "Dunsparce",
+      "set": "SWSH08: Fusion Strike",
+      "number": "207/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253302.jpg"
+    },
+    {
+      "productId": "253304",
+      "groupId": "2906",
+      "name": "Stantler",
+      "set": "SWSH08: Fusion Strike",
+      "number": "208/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253304.jpg"
+    },
+    {
+      "productId": "253305",
+      "groupId": "2906",
+      "name": "Smeargle",
+      "set": "SWSH08: Fusion Strike",
+      "number": "209/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253305.jpg"
+    },
+    {
+      "productId": "253306",
+      "groupId": "2906",
+      "name": "Skitty",
+      "set": "SWSH08: Fusion Strike",
+      "number": "210/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253306.jpg"
+    },
+    {
+      "productId": "253307",
+      "groupId": "2906",
+      "name": "Delcatty",
+      "set": "SWSH08: Fusion Strike",
+      "number": "211/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253307.jpg"
+    },
+    {
+      "productId": "253309",
+      "groupId": "2906",
+      "name": "Buneary",
+      "set": "SWSH08: Fusion Strike",
+      "number": "212/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253309.jpg"
+    },
+    {
+      "productId": "253310",
+      "groupId": "2906",
+      "name": "Lopunny",
+      "set": "SWSH08: Fusion Strike",
+      "number": "213/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253310.jpg"
+    },
+    {
+      "productId": "253312",
+      "groupId": "2906",
+      "name": "Bunnelby",
+      "set": "SWSH08: Fusion Strike",
+      "number": "214/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253312.jpg"
+    },
+    {
+      "productId": "253314",
+      "groupId": "2906",
+      "name": "Diggersby",
+      "set": "SWSH08: Fusion Strike",
+      "number": "215/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253314.jpg"
+    },
+    {
+      "productId": "253315",
+      "groupId": "2906",
+      "name": "Hawlucha",
+      "set": "SWSH08: Fusion Strike",
+      "number": "216/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253315.jpg"
+    },
+    {
+      "productId": "253316",
+      "groupId": "2906",
+      "name": "Greedent V",
+      "set": "SWSH08: Fusion Strike",
+      "number": "217/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253316.jpg"
+    },
+    {
+      "productId": "253317",
+      "groupId": "2906",
+      "name": "Greedent VMAX",
+      "set": "SWSH08: Fusion Strike",
+      "number": "218/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253317.jpg"
+    },
+    {
+      "productId": "253319",
+      "groupId": "2906",
+      "name": "Rookidee",
+      "set": "SWSH08: Fusion Strike",
+      "number": "219/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253319.jpg"
+    },
+    {
+      "productId": "253320",
+      "groupId": "2906",
+      "name": "Corvisquire",
+      "set": "SWSH08: Fusion Strike",
+      "number": "220/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253320.jpg"
+    },
+    {
+      "productId": "253322",
+      "groupId": "2906",
+      "name": "Wooloo (221)",
+      "set": "SWSH08: Fusion Strike",
+      "number": "221/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253322.jpg"
+    },
+    {
+      "productId": "253323",
+      "groupId": "2906",
+      "name": "Wooloo (222)",
+      "set": "SWSH08: Fusion Strike",
+      "number": "222/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253323.jpg"
+    },
+    {
+      "productId": "253324",
+      "groupId": "2906",
+      "name": "Dubwool",
+      "set": "SWSH08: Fusion Strike",
+      "number": "223/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253324.jpg"
+    },
+    {
+      "productId": "253089",
+      "groupId": "2906",
+      "name": "Adventurer's Discovery",
+      "set": "SWSH08: Fusion Strike",
+      "number": "224/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253089.jpg"
+    },
+    {
+      "productId": "253091",
+      "groupId": "2906",
+      "name": "Battle VIP Pass",
+      "set": "SWSH08: Fusion Strike",
+      "number": "225/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253091.jpg"
+    },
+    {
+      "productId": "253093",
+      "groupId": "2906",
+      "name": "Bug Catcher",
+      "set": "SWSH08: Fusion Strike",
+      "number": "226/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253093.jpg"
+    },
+    {
+      "productId": "253097",
+      "groupId": "2906",
+      "name": "Chili & Cilan & Cress",
+      "set": "SWSH08: Fusion Strike",
+      "number": "227/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253097.jpg"
+    },
+    {
+      "productId": "253099",
+      "groupId": "2906",
+      "name": "Cook",
+      "set": "SWSH08: Fusion Strike",
+      "number": "228/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253099.jpg"
+    },
+    {
+      "productId": "253100",
+      "groupId": "2906",
+      "name": "Cram-o-matic",
+      "set": "SWSH08: Fusion Strike",
+      "number": "229/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253100.jpg"
+    },
+    {
+      "productId": "253101",
+      "groupId": "2906",
+      "name": "Cross Switcher",
+      "set": "SWSH08: Fusion Strike",
+      "number": "230/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253101.jpg"
+    },
+    {
+      "productId": "253103",
+      "groupId": "2906",
+      "name": "Crossceiver",
+      "set": "SWSH08: Fusion Strike",
+      "number": "231/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253103.jpg"
+    },
+    {
+      "productId": "253104",
+      "groupId": "2906",
+      "name": "Dancer",
+      "set": "SWSH08: Fusion Strike",
+      "number": "232/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253104.jpg"
+    },
+    {
+      "productId": "253106",
+      "groupId": "2906",
+      "name": "Elesa's Sparkle",
+      "set": "SWSH08: Fusion Strike",
+      "number": "233/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253106.jpg"
+    },
+    {
+      "productId": "253107",
+      "groupId": "2906",
+      "name": "Farewell Bell",
+      "set": "SWSH08: Fusion Strike",
+      "number": "234/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253107.jpg"
+    },
+    {
+      "productId": "253110",
+      "groupId": "2906",
+      "name": "Judge",
+      "set": "SWSH08: Fusion Strike",
+      "number": "235/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253110.jpg"
+    },
+    {
+      "productId": "253111",
+      "groupId": "2906",
+      "name": "Power Tablet",
+      "set": "SWSH08: Fusion Strike",
+      "number": "236/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253111.jpg"
+    },
+    {
+      "productId": "253112",
+      "groupId": "2906",
+      "name": "Quick Ball",
+      "set": "SWSH08: Fusion Strike",
+      "number": "237/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253112.jpg"
+    },
+    {
+      "productId": "253114",
+      "groupId": "2906",
+      "name": "Schoolboy",
+      "set": "SWSH08: Fusion Strike",
+      "number": "238/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253114.jpg"
+    },
+    {
+      "productId": "253116",
+      "groupId": "2906",
+      "name": "Schoolgirl",
+      "set": "SWSH08: Fusion Strike",
+      "number": "239/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253116.jpg"
+    },
+    {
+      "productId": "253117",
+      "groupId": "2906",
+      "name": "Shauna",
+      "set": "SWSH08: Fusion Strike",
+      "number": "240/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253117.jpg"
+    },
+    {
+      "productId": "253119",
+      "groupId": "2906",
+      "name": "Sidney",
+      "set": "SWSH08: Fusion Strike",
+      "number": "241/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253119.jpg"
+    },
+    {
+      "productId": "253121",
+      "groupId": "2906",
+      "name": "Skaters' Park",
+      "set": "SWSH08: Fusion Strike",
+      "number": "242/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253121.jpg"
+    },
+    {
+      "productId": "253123",
+      "groupId": "2906",
+      "name": "Spongy Gloves",
+      "set": "SWSH08: Fusion Strike",
+      "number": "243/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253123.jpg"
+    },
+    {
+      "productId": "253127",
+      "groupId": "2906",
+      "name": "Fusion Strike Energy",
+      "set": "SWSH08: Fusion Strike",
+      "number": "244/264",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/fusion-strike/253127.jpg"
+    },
+    {
+      "productId": "253138",
+      "groupId": "2906",
+      "name": "Celebi V (Alternate Full Art)",
+      "set": "SWSH08: Fusion Strike",
+      "number": "245/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253138.jpg"
+    },
+    {
+      "productId": "253139",
+      "groupId": "2906",
+      "name": "Tsareena V (Full Art)",
+      "set": "SWSH08: Fusion Strike",
+      "number": "246/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253139.jpg"
+    },
+    {
+      "productId": "253141",
+      "groupId": "2906",
+      "name": "Chandelure V (Full Art)",
+      "set": "SWSH08: Fusion Strike",
+      "number": "247/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253141.jpg"
+    },
+    {
+      "productId": "253143",
+      "groupId": "2906",
+      "name": "Crabominable V (Full Art)",
+      "set": "SWSH08: Fusion Strike",
+      "number": "248/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253143.jpg"
+    },
+    {
+      "productId": "253144",
+      "groupId": "2906",
+      "name": "Boltund V (Full Art)",
+      "set": "SWSH08: Fusion Strike",
+      "number": "249/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253144.jpg"
+    },
+    {
+      "productId": "253146",
+      "groupId": "2906",
+      "name": "Mew V (Full Art)",
+      "set": "SWSH08: Fusion Strike",
+      "number": "250/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253146.jpg"
+    },
+    {
+      "productId": "253147",
+      "groupId": "2906",
+      "name": "Mew V (Alternate Full Art)",
+      "set": "SWSH08: Fusion Strike",
+      "number": "251/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253147.jpg"
+    },
+    {
+      "productId": "253149",
+      "groupId": "2906",
+      "name": "Sandaconda V (Alternate Full Art)",
+      "set": "SWSH08: Fusion Strike",
+      "number": "252/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253149.jpg"
+    },
+    {
+      "productId": "253152",
+      "groupId": "2906",
+      "name": "Hoopa V (Full Art)",
+      "set": "SWSH08: Fusion Strike",
+      "number": "253/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253152.jpg"
+    },
+    {
+      "productId": "253154",
+      "groupId": "2906",
+      "name": "Genesect V (Full Art)",
+      "set": "SWSH08: Fusion Strike",
+      "number": "254/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253154.jpg"
+    },
+    {
+      "productId": "253155",
+      "groupId": "2906",
+      "name": "Genesect V (Alternate Full Art)",
+      "set": "SWSH08: Fusion Strike",
+      "number": "255/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253155.jpg"
+    },
+    {
+      "productId": "253156",
+      "groupId": "2906",
+      "name": "Greedent V (Full Art)",
+      "set": "SWSH08: Fusion Strike",
+      "number": "256/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253156.jpg"
+    },
+    {
+      "productId": "253157",
+      "groupId": "2906",
+      "name": "Greedent V (Alternate Full Art)",
+      "set": "SWSH08: Fusion Strike",
+      "number": "257/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253157.jpg"
+    },
+    {
+      "productId": "253159",
+      "groupId": "2906",
+      "name": "Chili & Cilan & Cress (Full Art)",
+      "set": "SWSH08: Fusion Strike",
+      "number": "258/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253159.jpg"
+    },
+    {
+      "productId": "253160",
+      "groupId": "2906",
+      "name": "Dancer (Full Art)",
+      "set": "SWSH08: Fusion Strike",
+      "number": "259/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253160.jpg"
+    },
+    {
+      "productId": "253161",
+      "groupId": "2906",
+      "name": "Elesa's Sparkle (Full Art)",
+      "set": "SWSH08: Fusion Strike",
+      "number": "260/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253161.jpg"
+    },
+    {
+      "productId": "253162",
+      "groupId": "2906",
+      "name": "Schoolboy (Full Art)",
+      "set": "SWSH08: Fusion Strike",
+      "number": "261/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253162.jpg"
+    },
+    {
+      "productId": "253163",
+      "groupId": "2906",
+      "name": "Schoolgirl (Full Art)",
+      "set": "SWSH08: Fusion Strike",
+      "number": "262/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253163.jpg"
+    },
+    {
+      "productId": "253165",
+      "groupId": "2906",
+      "name": "Shauna (Full Art)",
+      "set": "SWSH08: Fusion Strike",
+      "number": "263/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253165.jpg"
+    },
+    {
+      "productId": "253166",
+      "groupId": "2906",
+      "name": "Sidney (Full Art)",
+      "set": "SWSH08: Fusion Strike",
+      "number": "264/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253166.jpg"
+    },
+    {
+      "productId": "253167",
+      "groupId": "2906",
+      "name": "Chandelure VMAX (Secret)",
+      "set": "SWSH08: Fusion Strike",
+      "number": "265/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253167.jpg"
+    },
+    {
+      "productId": "253171",
+      "groupId": "2906",
+      "name": "Inteleon VMAX (Alternate Art Secret)",
+      "set": "SWSH08: Fusion Strike",
+      "number": "266/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253171.jpg"
+    },
+    {
+      "productId": "253174",
+      "groupId": "2906",
+      "name": "Boltund VMAX (Secret)",
+      "set": "SWSH08: Fusion Strike",
+      "number": "267/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253174.jpg"
+    },
+    {
+      "productId": "253176",
+      "groupId": "2906",
+      "name": "Mew VMAX (Secret)",
+      "set": "SWSH08: Fusion Strike",
+      "number": "268/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253176.jpg"
+    },
+    {
+      "productId": "253177",
+      "groupId": "2906",
+      "name": "Mew VMAX (Alternate Art Secret)",
+      "set": "SWSH08: Fusion Strike",
+      "number": "269/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253177.jpg",
+      "chase_rank": 2
+    },
+    {
+      "productId": "253265",
+      "groupId": "2906",
+      "name": "Espeon VMAX (Alternate Art Secret)",
+      "set": "SWSH08: Fusion Strike",
+      "number": "270/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253265.jpg",
+      "chase_rank": 3
+    },
+    {
+      "productId": "253266",
+      "groupId": "2906",
+      "name": "Gengar VMAX (Alternate Art Secret)",
+      "set": "SWSH08: Fusion Strike",
+      "number": "271/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253266.jpg",
+      "chase_rank": 1
+    },
+    {
+      "productId": "253270",
+      "groupId": "2906",
+      "name": "Greedent VMAX (Secret)",
+      "set": "SWSH08: Fusion Strike",
+      "number": "272/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253270.jpg"
+    },
+    {
+      "productId": "253271",
+      "groupId": "2906",
+      "name": "Chili & Cilan & Cress (Secret)",
+      "set": "SWSH08: Fusion Strike",
+      "number": "273/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253271.jpg"
+    },
+    {
+      "productId": "253272",
+      "groupId": "2906",
+      "name": "Dancer (Secret)",
+      "set": "SWSH08: Fusion Strike",
+      "number": "274/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253272.jpg"
+    },
+    {
+      "productId": "253276",
+      "groupId": "2906",
+      "name": "Elesa's Sparkle (Secret)",
+      "set": "SWSH08: Fusion Strike",
+      "number": "275/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253276.jpg"
+    },
+    {
+      "productId": "253277",
+      "groupId": "2906",
+      "name": "Schoolboy (Secret)",
+      "set": "SWSH08: Fusion Strike",
+      "number": "276/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253277.jpg"
+    },
+    {
+      "productId": "253279",
+      "groupId": "2906",
+      "name": "Schoolgirl (Secret)",
+      "set": "SWSH08: Fusion Strike",
+      "number": "277/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253279.jpg"
+    },
+    {
+      "productId": "253280",
+      "groupId": "2906",
+      "name": "Shauna (Secret)",
+      "set": "SWSH08: Fusion Strike",
+      "number": "278/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253280.jpg"
+    },
+    {
+      "productId": "253281",
+      "groupId": "2906",
+      "name": "Sidney (Secret)",
+      "set": "SWSH08: Fusion Strike",
+      "number": "279/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253281.jpg"
+    },
+    {
+      "productId": "253284",
+      "groupId": "2906",
+      "name": "Flaaffy (Secret)",
+      "set": "SWSH08: Fusion Strike",
+      "number": "280/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253284.jpg"
+    },
+    {
+      "productId": "253285",
+      "groupId": "2906",
+      "name": "Power Tablet (Secret)",
+      "set": "SWSH08: Fusion Strike",
+      "number": "281/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253285.jpg"
+    },
+    {
+      "productId": "253286",
+      "groupId": "2906",
+      "name": "Training Court (Secret)",
+      "set": "SWSH08: Fusion Strike",
+      "number": "282/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253286.jpg"
+    },
+    {
+      "productId": "253287",
+      "groupId": "2906",
+      "name": "Grass Energy (Secret)",
+      "set": "SWSH08: Fusion Strike",
+      "number": "283/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253287.jpg"
+    },
+    {
+      "productId": "253289",
+      "groupId": "2906",
+      "name": "Fire Energy (Secret)",
+      "set": "SWSH08: Fusion Strike",
+      "number": "284/264",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/fusion-strike/253289.jpg"
+    }
+  ]
+}

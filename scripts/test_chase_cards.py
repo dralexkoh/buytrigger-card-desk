@@ -17,6 +17,9 @@ import sv_151_prices
 import prismatic_evolutions_prices
 import thirtieth_prices
 import tcg_modern_prices
+import paldean_fates_prices
+import crown_zenith_prices
+import fusion_strike_prices
 from chase_cards import render_chase_cards, validate_chase_cards
 from editorial_visuals import validate_editorial_visuals
 
@@ -25,11 +28,17 @@ KEEPER = {
     'delta-reign': ['728061', '728062', '726574', '726567', '726576', '728060', '727592', '726565', '726575', '726563'],
     'sv-151': ['517045', '517046', '517044', '502556', '502549', '517048', '517018', '517047', '516997', '513721'],
     'prismatic-evolutions': ['610516', '610511', '610499', '610510', '610505', '610504', '610501', '610508', '610522', '610517'],
+    'paldean-fates': ['534919', '535090', '535101'],
+    'crown-zenith': ['478101', '478098', '478103'],
+    'fusion-strike': ['253266', '253177', '253265'],
 }
 MODULES = {
     'delta-reign': delta_reign_prices,
     'sv-151': sv_151_prices,
     'prismatic-evolutions': prismatic_evolutions_prices,
+    'paldean-fates': paldean_fates_prices,
+    'crown-zenith': crown_zenith_prices,
+    'fusion-strike': fusion_strike_prices,
 }
 
 
@@ -67,7 +76,7 @@ class ChasePricePages(unittest.TestCase):
                 self.assertEqual(tile.select_one('.chase-number').get_text(), row['data-number'])
 
     def test_pages_without_a_roster_do_not_invent_a_chase_block(self):
-        for module in (thirtieth_prices, tcg_modern_prices):
+        for module in (tcg_modern_prices,):
             page = BeautifulSoup(module.render_page(ROOT), 'html.parser')
             self.assertIsNone(page.select_one('#chase-cards'))
 

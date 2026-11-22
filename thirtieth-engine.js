@@ -17,7 +17,9 @@ function focus(v){
  if(pikachu.length!==30||selected.some(c=>!c||c.key!==cardKey(Number(c.image.match(/([0-9]+)\.jpg$/)?.[1])))||
   new Set(selected.map(c=>c.key)).size!==46)throw Error('30th focus printings changed');
  const promos=v.cards.filter(c=>c.set==='ME: Mega Evolution Promo');
- return {chases,pikachu,rgb,promos};
+ const celebration=v.cards.filter(c=>c.set==='ME: 30th Celebration');
+ const classic=v.cards.filter(c=>c.set==='ME: 30th Celebration Classic Collection');
+ return {all:[...v.cards],chases,pikachu,rgb,promos,celebration,classic};
 }
 function validate(v,now=Date.now()){
  if(!keys(v,['schemaVersion','available','index','sourceSystem','grade','currency','measure','cards','points','sourceDate','source','sources','baseline','generatedAt','expiresAt','sourceVersion'])||v.schemaVersion!==2||typeof v.available!=='boolean')throw Error('Invalid market response');

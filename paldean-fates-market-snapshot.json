@@ -1,0 +1,2477 @@
+{
+  "schemaVersion": 2,
+  "available": true,
+  "index": "paldean-fates",
+  "sourceSystem": "shared-cards-market",
+  "grade": "Raw",
+  "currency": "USD",
+  "measure": "tcgcsv_market",
+  "cards": [
+    {
+      "key": "en-paldean-fates-534132-normal",
+      "name": "Pineco - 001/091",
+      "set": "SV: Paldean Fates",
+      "number": "001/091",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/paldean-fates/534132.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-paldean-fates-534133-holofoil",
+      "name": "Forretress ex - 002/091",
+      "set": "SV: Paldean Fates",
+      "number": "002/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534133.jpg",
+      "rarity": "Double Rare"
+    },
+    {
+      "key": "en-paldean-fates-534136-normal",
+      "name": "Maractus",
+      "set": "SV: Paldean Fates",
+      "number": "003/091",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/paldean-fates/534136.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-paldean-fates-534137-normal",
+      "name": "Toedscool - 004/091",
+      "set": "SV: Paldean Fates",
+      "number": "004/091",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/paldean-fates/534137.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-paldean-fates-534139-holofoil",
+      "name": "Toedscruel ex - 005/091",
+      "set": "SV: Paldean Fates",
+      "number": "005/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534139.jpg",
+      "rarity": "Double Rare"
+    },
+    {
+      "key": "en-paldean-fates-534140-holofoil",
+      "name": "Espathra ex - 006/091",
+      "set": "SV: Paldean Fates",
+      "number": "006/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534140.jpg",
+      "rarity": "Double Rare"
+    },
+    {
+      "key": "en-paldean-fates-534142-normal",
+      "name": "Charmander - 007/091",
+      "set": "SV: Paldean Fates",
+      "number": "007/091",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/paldean-fates/534142.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-paldean-fates-534143-normal",
+      "name": "Charmeleon - 008/091",
+      "set": "SV: Paldean Fates",
+      "number": "008/091",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/paldean-fates/534143.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-paldean-fates-534149-normal",
+      "name": "Magmar",
+      "set": "SV: Paldean Fates",
+      "number": "009/091",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/paldean-fates/534149.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-paldean-fates-534150-holofoil",
+      "name": "Magmortar",
+      "set": "SV: Paldean Fates",
+      "number": "010/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534150.jpg",
+      "rarity": "Rare"
+    },
+    {
+      "key": "en-paldean-fates-534152-normal",
+      "name": "Numel",
+      "set": "SV: Paldean Fates",
+      "number": "011/091",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/paldean-fates/534152.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-paldean-fates-534153-normal",
+      "name": "Camerupt",
+      "set": "SV: Paldean Fates",
+      "number": "012/091",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/paldean-fates/534153.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-paldean-fates-534154-holofoil",
+      "name": "Heat Rotom",
+      "set": "SV: Paldean Fates",
+      "number": "013/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534154.jpg",
+      "rarity": "Rare"
+    },
+    {
+      "key": "en-paldean-fates-534155-normal",
+      "name": "Charcadet - 014/091",
+      "set": "SV: Paldean Fates",
+      "number": "014/091",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/paldean-fates/534155.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-paldean-fates-534156-holofoil",
+      "name": "Armarouge - 015/091",
+      "set": "SV: Paldean Fates",
+      "number": "015/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534156.jpg",
+      "rarity": "Rare"
+    },
+    {
+      "key": "en-paldean-fates-534158-normal",
+      "name": "Lapras",
+      "set": "SV: Paldean Fates",
+      "number": "016/091",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/paldean-fates/534158.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-paldean-fates-534161-normal",
+      "name": "Frigibax - 017/091",
+      "set": "SV: Paldean Fates",
+      "number": "017/091",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/paldean-fates/534161.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-paldean-fates-534163-normal",
+      "name": "Pikachu - 018/091",
+      "set": "SV: Paldean Fates",
+      "number": "018/091",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/paldean-fates/534163.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-paldean-fates-534165-holofoil",
+      "name": "Raichu - 019/091",
+      "set": "SV: Paldean Fates",
+      "number": "019/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534165.jpg",
+      "rarity": "Rare"
+    },
+    {
+      "key": "en-paldean-fates-534166-normal",
+      "name": "Chinchou",
+      "set": "SV: Paldean Fates",
+      "number": "020/091",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/paldean-fates/534166.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-paldean-fates-534167-normal",
+      "name": "Lanturn",
+      "set": "SV: Paldean Fates",
+      "number": "021/091",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/paldean-fates/534167.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-paldean-fates-534168-normal",
+      "name": "Kilowattrel - 022/091",
+      "set": "SV: Paldean Fates",
+      "number": "022/091",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/paldean-fates/534168.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-paldean-fates-534169-normal",
+      "name": "Exeggcute",
+      "set": "SV: Paldean Fates",
+      "number": "023/091",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/paldean-fates/534169.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-paldean-fates-534170-holofoil",
+      "name": "Exeggutor",
+      "set": "SV: Paldean Fates",
+      "number": "024/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534170.jpg",
+      "rarity": "Rare"
+    },
+    {
+      "key": "en-paldean-fates-535993-normal",
+      "name": "Natu - 025/091",
+      "set": "SV: Paldean Fates",
+      "number": "025/091",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/paldean-fates/535993.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-paldean-fates-534171-holofoil",
+      "name": "Xatu - 026/091",
+      "set": "SV: Paldean Fates",
+      "number": "026/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534171.jpg",
+      "rarity": "Rare"
+    },
+    {
+      "key": "en-paldean-fates-534173-normal",
+      "name": "Ralts - 027/091",
+      "set": "SV: Paldean Fates",
+      "number": "027/091",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/paldean-fates/534173.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-paldean-fates-534174-normal",
+      "name": "Kirlia - 028/091",
+      "set": "SV: Paldean Fates",
+      "number": "028/091",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/paldean-fates/534174.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-paldean-fates-534175-holofoil",
+      "name": "Gardevoir ex - 029/091",
+      "set": "SV: Paldean Fates",
+      "number": "029/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534175.jpg",
+      "rarity": "Double Rare"
+    },
+    {
+      "key": "en-paldean-fates-534176-normal",
+      "name": "Chimecho",
+      "set": "SV: Paldean Fates",
+      "number": "030/091",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/paldean-fates/534176.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-paldean-fates-534177-normal",
+      "name": "Mime Jr. - 031/091",
+      "set": "SV: Paldean Fates",
+      "number": "031/091",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/paldean-fates/534177.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-paldean-fates-534178-normal",
+      "name": "Woobat",
+      "set": "SV: Paldean Fates",
+      "number": "032/091",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/paldean-fates/534178.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-paldean-fates-534179-normal",
+      "name": "Swoobat",
+      "set": "SV: Paldean Fates",
+      "number": "033/091",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/paldean-fates/534179.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-paldean-fates-534180-normal",
+      "name": "Cottonee",
+      "set": "SV: Paldean Fates",
+      "number": "034/091",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/paldean-fates/534180.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-paldean-fates-534181-normal",
+      "name": "Whimsicott",
+      "set": "SV: Paldean Fates",
+      "number": "035/091",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/paldean-fates/534181.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-paldean-fates-534182-normal",
+      "name": "Dedenne",
+      "set": "SV: Paldean Fates",
+      "number": "036/091",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/paldean-fates/534182.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-paldean-fates-534183-holofoil",
+      "name": "Mimikyu - 037/091",
+      "set": "SV: Paldean Fates",
+      "number": "037/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534183.jpg",
+      "rarity": "Rare"
+    },
+    {
+      "key": "en-paldean-fates-534184-normal",
+      "name": "Fidough",
+      "set": "SV: Paldean Fates",
+      "number": "038/091",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/paldean-fates/534184.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-paldean-fates-534185-normal",
+      "name": "Dachsbun - 039/091",
+      "set": "SV: Paldean Fates",
+      "number": "039/091",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/paldean-fates/534185.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-paldean-fates-534186-holofoil",
+      "name": "Ceruledge - 040/091",
+      "set": "SV: Paldean Fates",
+      "number": "040/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534186.jpg",
+      "rarity": "Rare"
+    },
+    {
+      "key": "en-paldean-fates-534187-normal",
+      "name": "Flittle - 041/091",
+      "set": "SV: Paldean Fates",
+      "number": "041/091",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/paldean-fates/534187.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-paldean-fates-534188-normal",
+      "name": "Greavard",
+      "set": "SV: Paldean Fates",
+      "number": "042/091",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/paldean-fates/534188.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-paldean-fates-534190-holofoil",
+      "name": "Houndstone - 043/091",
+      "set": "SV: Paldean Fates",
+      "number": "043/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534190.jpg",
+      "rarity": "Rare"
+    },
+    {
+      "key": "en-paldean-fates-534191-normal",
+      "name": "Gimmighoul",
+      "set": "SV: Paldean Fates",
+      "number": "044/091",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/paldean-fates/534191.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-paldean-fates-534192-normal",
+      "name": "Mankey - 045/091",
+      "set": "SV: Paldean Fates",
+      "number": "045/091",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/paldean-fates/534192.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-paldean-fates-534194-normal",
+      "name": "Primeape - 046/091",
+      "set": "SV: Paldean Fates",
+      "number": "046/091",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/paldean-fates/534194.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-paldean-fates-534197-holofoil",
+      "name": "Annihilape - 047/091",
+      "set": "SV: Paldean Fates",
+      "number": "047/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534197.jpg",
+      "rarity": "Rare"
+    },
+    {
+      "key": "en-paldean-fates-534198-normal",
+      "name": "Phanpy",
+      "set": "SV: Paldean Fates",
+      "number": "048/091",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/paldean-fates/534198.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-paldean-fates-534210-normal",
+      "name": "Donphan",
+      "set": "SV: Paldean Fates",
+      "number": "049/091",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/paldean-fates/534210.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-paldean-fates-534211-normal",
+      "name": "Barboach",
+      "set": "SV: Paldean Fates",
+      "number": "050/091",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/paldean-fates/534211.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-paldean-fates-534387-normal",
+      "name": "Clobbopus",
+      "set": "SV: Paldean Fates",
+      "number": "051/091",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/paldean-fates/534387.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-paldean-fates-534414-normal",
+      "name": "Grapploct",
+      "set": "SV: Paldean Fates",
+      "number": "052/091",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/paldean-fates/534414.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-paldean-fates-534415-holofoil",
+      "name": "Great Tusk ex",
+      "set": "SV: Paldean Fates",
+      "number": "053/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534415.jpg",
+      "rarity": "Double Rare"
+    },
+    {
+      "key": "en-paldean-fates-534416-holofoil",
+      "name": "Charizard ex - 054/091",
+      "set": "SV: Paldean Fates",
+      "number": "054/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534416.jpg",
+      "rarity": "Double Rare"
+    },
+    {
+      "key": "en-paldean-fates-534417-normal",
+      "name": "Gastly",
+      "set": "SV: Paldean Fates",
+      "number": "055/091",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/paldean-fates/534417.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-paldean-fates-534418-normal",
+      "name": "Haunter",
+      "set": "SV: Paldean Fates",
+      "number": "056/091",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/paldean-fates/534418.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-paldean-fates-534419-normal",
+      "name": "Gengar",
+      "set": "SV: Paldean Fates",
+      "number": "057/091",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/paldean-fates/534419.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-paldean-fates-534420-normal",
+      "name": "Paldean Wooper - 058/091",
+      "set": "SV: Paldean Fates",
+      "number": "058/091",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/paldean-fates/534420.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-paldean-fates-534421-holofoil",
+      "name": "Paldean Clodsire ex - 059/091",
+      "set": "SV: Paldean Fates",
+      "number": "059/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534421.jpg",
+      "rarity": "Double Rare"
+    },
+    {
+      "key": "en-paldean-fates-534422-normal",
+      "name": "Scraggy",
+      "set": "SV: Paldean Fates",
+      "number": "060/091",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/paldean-fates/534422.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-paldean-fates-534423-normal",
+      "name": "Scrafty",
+      "set": "SV: Paldean Fates",
+      "number": "061/091",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/paldean-fates/534423.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-paldean-fates-534424-normal",
+      "name": "Maschiff",
+      "set": "SV: Paldean Fates",
+      "number": "062/091",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/paldean-fates/534424.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-paldean-fates-534425-holofoil",
+      "name": "Mabosstiff - 063/091",
+      "set": "SV: Paldean Fates",
+      "number": "063/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534425.jpg",
+      "rarity": "Rare"
+    },
+    {
+      "key": "en-paldean-fates-534426-normal",
+      "name": "Varoom - 064/091",
+      "set": "SV: Paldean Fates",
+      "number": "064/091",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/paldean-fates/534426.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-paldean-fates-534427-holofoil",
+      "name": "Revavroom - 065/091",
+      "set": "SV: Paldean Fates",
+      "number": "065/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534427.jpg",
+      "rarity": "Rare"
+    },
+    {
+      "key": "en-paldean-fates-534428-holofoil",
+      "name": "Iron Treads ex",
+      "set": "SV: Paldean Fates",
+      "number": "066/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534428.jpg",
+      "rarity": "Double Rare"
+    },
+    {
+      "key": "en-paldean-fates-534429-holofoil",
+      "name": "Gholdengo",
+      "set": "SV: Paldean Fates",
+      "number": "067/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534429.jpg",
+      "rarity": "Rare"
+    },
+    {
+      "key": "en-paldean-fates-534430-normal",
+      "name": "Noibat - 068/091",
+      "set": "SV: Paldean Fates",
+      "number": "068/091",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/paldean-fates/534430.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-paldean-fates-534431-holofoil",
+      "name": "Noivern ex - 069/091",
+      "set": "SV: Paldean Fates",
+      "number": "069/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534431.jpg",
+      "rarity": "Double Rare"
+    },
+    {
+      "key": "en-paldean-fates-534432-holofoil",
+      "name": "Cyclizar - 070/091",
+      "set": "SV: Paldean Fates",
+      "number": "070/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534432.jpg",
+      "rarity": "Rare"
+    },
+    {
+      "key": "en-paldean-fates-534433-normal",
+      "name": "Lechonk - 071/091",
+      "set": "SV: Paldean Fates",
+      "number": "071/091",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/paldean-fates/534433.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-paldean-fates-534434-normal",
+      "name": "Oinkologne",
+      "set": "SV: Paldean Fates",
+      "number": "072/091",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/paldean-fates/534434.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-paldean-fates-534435-normal",
+      "name": "Tandemaus - 073/091",
+      "set": "SV: Paldean Fates",
+      "number": "073/091",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/paldean-fates/534435.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-paldean-fates-534436-normal",
+      "name": "Maushold - 074/091",
+      "set": "SV: Paldean Fates",
+      "number": "074/091",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/paldean-fates/534436.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-paldean-fates-534437-holofoil",
+      "name": "Squawkabilly ex - 075/091",
+      "set": "SV: Paldean Fates",
+      "number": "075/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534437.jpg",
+      "rarity": "Double Rare"
+    },
+    {
+      "key": "en-paldean-fates-534438-normal",
+      "name": "Artazon",
+      "set": "SV: Paldean Fates",
+      "number": "076/091",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/paldean-fates/534438.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-paldean-fates-534439-normal",
+      "name": "Atticus",
+      "set": "SV: Paldean Fates",
+      "number": "077/091",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/paldean-fates/534439.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-paldean-fates-534440-normal",
+      "name": "Clive - 078/091",
+      "set": "SV: Paldean Fates",
+      "number": "078/091",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/paldean-fates/534440.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-paldean-fates-534441-normal",
+      "name": "Electric Generator",
+      "set": "SV: Paldean Fates",
+      "number": "079/091",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/paldean-fates/534441.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-paldean-fates-534442-normal",
+      "name": "Iono - 080/091",
+      "set": "SV: Paldean Fates",
+      "number": "080/091",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/paldean-fates/534442.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-paldean-fates-534443-normal",
+      "name": "Moonlit Hill",
+      "set": "SV: Paldean Fates",
+      "number": "081/091",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/paldean-fates/534443.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-paldean-fates-534444-normal",
+      "name": "Nemona - 082/091",
+      "set": "SV: Paldean Fates",
+      "number": "082/091",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/paldean-fates/534444.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-paldean-fates-534445-normal",
+      "name": "Nemona's Backpack",
+      "set": "SV: Paldean Fates",
+      "number": "083/091",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/paldean-fates/534445.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-paldean-fates-534446-normal",
+      "name": "Nest Ball",
+      "set": "SV: Paldean Fates",
+      "number": "084/091",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/paldean-fates/534446.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-paldean-fates-534447-normal",
+      "name": "Paldean Student - 085/091",
+      "set": "SV: Paldean Fates",
+      "number": "085/091",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/paldean-fates/534447.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-paldean-fates-534448-normal",
+      "name": "Paldean Student - 086/091",
+      "set": "SV: Paldean Fates",
+      "number": "086/091",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/paldean-fates/534448.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-paldean-fates-534449-holofoil",
+      "name": "Professor's Research [Professor Sada] - 087/091",
+      "set": "SV: Paldean Fates",
+      "number": "087/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534449.jpg",
+      "rarity": "Rare"
+    },
+    {
+      "key": "en-paldean-fates-534450-holofoil",
+      "name": "Professor's Research [Professor Turo] - 088/091",
+      "set": "SV: Paldean Fates",
+      "number": "088/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534450.jpg",
+      "rarity": "Rare"
+    },
+    {
+      "key": "en-paldean-fates-534451-normal",
+      "name": "Rare Candy",
+      "set": "SV: Paldean Fates",
+      "number": "089/091",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/paldean-fates/534451.jpg",
+      "rarity": "Common"
+    },
+    {
+      "key": "en-paldean-fates-534452-normal",
+      "name": "Technical Machine: Crisis Punch",
+      "set": "SV: Paldean Fates",
+      "number": "090/091",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/paldean-fates/534452.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-paldean-fates-534453-normal",
+      "name": "Ultra Ball",
+      "set": "SV: Paldean Fates",
+      "number": "091/091",
+      "language": "English",
+      "printing": "Normal",
+      "image": "assets/paldean-fates/534453.jpg",
+      "rarity": "Uncommon"
+    },
+    {
+      "key": "en-paldean-fates-534459-holofoil",
+      "name": "Oddish",
+      "set": "SV: Paldean Fates",
+      "number": "092/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534459.jpg",
+      "rarity": "Shiny Rare"
+    },
+    {
+      "key": "en-paldean-fates-534460-holofoil",
+      "name": "Gloom",
+      "set": "SV: Paldean Fates",
+      "number": "093/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534460.jpg",
+      "rarity": "Shiny Rare"
+    },
+    {
+      "key": "en-paldean-fates-534462-holofoil",
+      "name": "Vileplume",
+      "set": "SV: Paldean Fates",
+      "number": "094/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534462.jpg",
+      "rarity": "Shiny Rare"
+    },
+    {
+      "key": "en-paldean-fates-534463-holofoil",
+      "name": "Scyther",
+      "set": "SV: Paldean Fates",
+      "number": "095/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534463.jpg",
+      "rarity": "Shiny Rare"
+    },
+    {
+      "key": "en-paldean-fates-534465-holofoil",
+      "name": "Hoppip",
+      "set": "SV: Paldean Fates",
+      "number": "096/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534465.jpg",
+      "rarity": "Shiny Rare"
+    },
+    {
+      "key": "en-paldean-fates-534466-holofoil",
+      "name": "Skiploom",
+      "set": "SV: Paldean Fates",
+      "number": "097/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534466.jpg",
+      "rarity": "Shiny Rare"
+    },
+    {
+      "key": "en-paldean-fates-534469-holofoil",
+      "name": "Jumpluff",
+      "set": "SV: Paldean Fates",
+      "number": "098/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534469.jpg",
+      "rarity": "Shiny Rare"
+    },
+    {
+      "key": "en-paldean-fates-534470-holofoil",
+      "name": "Pineco - 099/091",
+      "set": "SV: Paldean Fates",
+      "number": "099/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534470.jpg",
+      "rarity": "Shiny Rare"
+    },
+    {
+      "key": "en-paldean-fates-534471-holofoil",
+      "name": "Snover",
+      "set": "SV: Paldean Fates",
+      "number": "100/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534471.jpg",
+      "rarity": "Shiny Rare"
+    },
+    {
+      "key": "en-paldean-fates-534472-holofoil",
+      "name": "Abomasnow",
+      "set": "SV: Paldean Fates",
+      "number": "101/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534472.jpg",
+      "rarity": "Shiny Rare"
+    },
+    {
+      "key": "en-paldean-fates-534473-holofoil",
+      "name": "Smoliv",
+      "set": "SV: Paldean Fates",
+      "number": "102/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534473.jpg",
+      "rarity": "Shiny Rare"
+    },
+    {
+      "key": "en-paldean-fates-534475-holofoil",
+      "name": "Dolliv",
+      "set": "SV: Paldean Fates",
+      "number": "103/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534475.jpg",
+      "rarity": "Shiny Rare"
+    },
+    {
+      "key": "en-paldean-fates-534476-holofoil",
+      "name": "Arboliva",
+      "set": "SV: Paldean Fates",
+      "number": "104/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534476.jpg",
+      "rarity": "Shiny Rare"
+    },
+    {
+      "key": "en-paldean-fates-534478-holofoil",
+      "name": "Toedscool - 105/091",
+      "set": "SV: Paldean Fates",
+      "number": "105/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534478.jpg",
+      "rarity": "Shiny Rare"
+    },
+    {
+      "key": "en-paldean-fates-534479-holofoil",
+      "name": "Capsakid",
+      "set": "SV: Paldean Fates",
+      "number": "106/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534479.jpg",
+      "rarity": "Shiny Rare"
+    },
+    {
+      "key": "en-paldean-fates-534481-holofoil",
+      "name": "Scovillain",
+      "set": "SV: Paldean Fates",
+      "number": "107/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534481.jpg",
+      "rarity": "Shiny Rare"
+    },
+    {
+      "key": "en-paldean-fates-534482-holofoil",
+      "name": "Rellor",
+      "set": "SV: Paldean Fates",
+      "number": "108/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534482.jpg",
+      "rarity": "Shiny Rare"
+    },
+    {
+      "key": "en-paldean-fates-534483-holofoil",
+      "name": "Charmander - 109/091",
+      "set": "SV: Paldean Fates",
+      "number": "109/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534483.jpg",
+      "rarity": "Shiny Rare"
+    },
+    {
+      "key": "en-paldean-fates-534484-holofoil",
+      "name": "Charmeleon - 110/091",
+      "set": "SV: Paldean Fates",
+      "number": "110/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534484.jpg",
+      "rarity": "Shiny Rare"
+    },
+    {
+      "key": "en-paldean-fates-534485-holofoil",
+      "name": "Paldean Tauros - 111/091",
+      "set": "SV: Paldean Fates",
+      "number": "111/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534485.jpg",
+      "rarity": "Shiny Rare"
+    },
+    {
+      "key": "en-paldean-fates-534493-holofoil",
+      "name": "Entei",
+      "set": "SV: Paldean Fates",
+      "number": "112/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534493.jpg",
+      "rarity": "Shiny Rare"
+    },
+    {
+      "key": "en-paldean-fates-534494-holofoil",
+      "name": "Oricorio",
+      "set": "SV: Paldean Fates",
+      "number": "113/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534494.jpg",
+      "rarity": "Shiny Rare"
+    },
+    {
+      "key": "en-paldean-fates-534496-holofoil",
+      "name": "Charcadet - 114/091",
+      "set": "SV: Paldean Fates",
+      "number": "114/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534496.jpg",
+      "rarity": "Shiny Rare"
+    },
+    {
+      "key": "en-paldean-fates-534497-holofoil",
+      "name": "Armarouge - 115/091",
+      "set": "SV: Paldean Fates",
+      "number": "115/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534497.jpg",
+      "rarity": "Shiny Rare"
+    },
+    {
+      "key": "en-paldean-fates-534504-holofoil",
+      "name": "Slowpoke",
+      "set": "SV: Paldean Fates",
+      "number": "116/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534504.jpg",
+      "rarity": "Shiny Rare"
+    },
+    {
+      "key": "en-paldean-fates-534507-holofoil",
+      "name": "Slowbro",
+      "set": "SV: Paldean Fates",
+      "number": "117/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534507.jpg",
+      "rarity": "Shiny Rare"
+    },
+    {
+      "key": "en-paldean-fates-534508-holofoil",
+      "name": "Staryu",
+      "set": "SV: Paldean Fates",
+      "number": "118/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534508.jpg",
+      "rarity": "Shiny Rare"
+    },
+    {
+      "key": "en-paldean-fates-534510-holofoil",
+      "name": "Starmie",
+      "set": "SV: Paldean Fates",
+      "number": "119/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534510.jpg",
+      "rarity": "Shiny Rare"
+    },
+    {
+      "key": "en-paldean-fates-534511-holofoil",
+      "name": "Paldean Tauros - 120/091",
+      "set": "SV: Paldean Fates",
+      "number": "120/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534511.jpg",
+      "rarity": "Shiny Rare"
+    },
+    {
+      "key": "en-paldean-fates-534512-holofoil",
+      "name": "Wiglett - 121/091",
+      "set": "SV: Paldean Fates",
+      "number": "121/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534512.jpg",
+      "rarity": "Shiny Rare"
+    },
+    {
+      "key": "en-paldean-fates-534513-holofoil",
+      "name": "Wugtrio - 122/091",
+      "set": "SV: Paldean Fates",
+      "number": "122/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534513.jpg",
+      "rarity": "Shiny Rare"
+    },
+    {
+      "key": "en-paldean-fates-534514-holofoil",
+      "name": "Finizen",
+      "set": "SV: Paldean Fates",
+      "number": "123/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534514.jpg",
+      "rarity": "Shiny Rare"
+    },
+    {
+      "key": "en-paldean-fates-534515-holofoil",
+      "name": "Palafin - 124/091",
+      "set": "SV: Paldean Fates",
+      "number": "124/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534515.jpg",
+      "rarity": "Shiny Rare"
+    },
+    {
+      "key": "en-paldean-fates-534516-holofoil",
+      "name": "Veluza - 125/091",
+      "set": "SV: Paldean Fates",
+      "number": "125/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534516.jpg",
+      "rarity": "Shiny Rare"
+    },
+    {
+      "key": "en-paldean-fates-534517-holofoil",
+      "name": "Dondozo",
+      "set": "SV: Paldean Fates",
+      "number": "126/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534517.jpg",
+      "rarity": "Shiny Rare"
+    },
+    {
+      "key": "en-paldean-fates-534518-holofoil",
+      "name": "Tatsugiri",
+      "set": "SV: Paldean Fates",
+      "number": "127/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534518.jpg",
+      "rarity": "Shiny Rare"
+    },
+    {
+      "key": "en-paldean-fates-534519-holofoil",
+      "name": "Frigibax - 128/091",
+      "set": "SV: Paldean Fates",
+      "number": "128/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534519.jpg",
+      "rarity": "Shiny Rare"
+    },
+    {
+      "key": "en-paldean-fates-534520-holofoil",
+      "name": "Arctibax",
+      "set": "SV: Paldean Fates",
+      "number": "129/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534520.jpg",
+      "rarity": "Shiny Rare"
+    },
+    {
+      "key": "en-paldean-fates-534521-holofoil",
+      "name": "Baxcalibur",
+      "set": "SV: Paldean Fates",
+      "number": "130/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534521.jpg",
+      "rarity": "Shiny Rare"
+    },
+    {
+      "key": "en-paldean-fates-534522-holofoil",
+      "name": "Pikachu - 131/091",
+      "set": "SV: Paldean Fates",
+      "number": "131/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534522.jpg",
+      "rarity": "Shiny Rare"
+    },
+    {
+      "key": "en-paldean-fates-534523-holofoil",
+      "name": "Raichu - 132/091",
+      "set": "SV: Paldean Fates",
+      "number": "132/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534523.jpg",
+      "rarity": "Shiny Rare"
+    },
+    {
+      "key": "en-paldean-fates-534525-holofoil",
+      "name": "Voltorb",
+      "set": "SV: Paldean Fates",
+      "number": "133/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534525.jpg",
+      "rarity": "Shiny Rare"
+    },
+    {
+      "key": "en-paldean-fates-534527-holofoil",
+      "name": "Electrode",
+      "set": "SV: Paldean Fates",
+      "number": "134/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534527.jpg",
+      "rarity": "Shiny Rare"
+    },
+    {
+      "key": "en-paldean-fates-534528-holofoil",
+      "name": "Shinx",
+      "set": "SV: Paldean Fates",
+      "number": "135/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534528.jpg",
+      "rarity": "Shiny Rare"
+    },
+    {
+      "key": "en-paldean-fates-534529-holofoil",
+      "name": "Luxio",
+      "set": "SV: Paldean Fates",
+      "number": "136/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534529.jpg",
+      "rarity": "Shiny Rare"
+    },
+    {
+      "key": "en-paldean-fates-534533-holofoil",
+      "name": "Luxray",
+      "set": "SV: Paldean Fates",
+      "number": "137/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534533.jpg",
+      "rarity": "Shiny Rare"
+    },
+    {
+      "key": "en-paldean-fates-534538-holofoil",
+      "name": "Pachirisu",
+      "set": "SV: Paldean Fates",
+      "number": "138/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534538.jpg",
+      "rarity": "Shiny Rare"
+    },
+    {
+      "key": "en-paldean-fates-534540-holofoil",
+      "name": "Thundurus",
+      "set": "SV: Paldean Fates",
+      "number": "139/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534540.jpg",
+      "rarity": "Shiny Rare"
+    },
+    {
+      "key": "en-paldean-fates-534574-holofoil",
+      "name": "Toxel",
+      "set": "SV: Paldean Fates",
+      "number": "140/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534574.jpg",
+      "rarity": "Shiny Rare"
+    },
+    {
+      "key": "en-paldean-fates-534576-holofoil",
+      "name": "Toxtricity",
+      "set": "SV: Paldean Fates",
+      "number": "141/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534576.jpg",
+      "rarity": "Shiny Rare"
+    },
+    {
+      "key": "en-paldean-fates-534577-holofoil",
+      "name": "Pawmi - 142/091",
+      "set": "SV: Paldean Fates",
+      "number": "142/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534577.jpg",
+      "rarity": "Shiny Rare"
+    },
+    {
+      "key": "en-paldean-fates-534579-holofoil",
+      "name": "Pawmo",
+      "set": "SV: Paldean Fates",
+      "number": "143/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534579.jpg",
+      "rarity": "Shiny Rare"
+    },
+    {
+      "key": "en-paldean-fates-534581-holofoil",
+      "name": "Pawmot",
+      "set": "SV: Paldean Fates",
+      "number": "144/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534581.jpg",
+      "rarity": "Shiny Rare"
+    },
+    {
+      "key": "en-paldean-fates-534582-holofoil",
+      "name": "Wattrel",
+      "set": "SV: Paldean Fates",
+      "number": "145/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534582.jpg",
+      "rarity": "Shiny Rare"
+    },
+    {
+      "key": "en-paldean-fates-534584-holofoil",
+      "name": "Kilowattrel - 146/091",
+      "set": "SV: Paldean Fates",
+      "number": "146/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534584.jpg",
+      "rarity": "Shiny Rare"
+    },
+    {
+      "key": "en-paldean-fates-534616-holofoil",
+      "name": "Wigglytuff",
+      "set": "SV: Paldean Fates",
+      "number": "147/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534616.jpg",
+      "rarity": "Shiny Rare"
+    },
+    {
+      "key": "en-paldean-fates-534631-holofoil",
+      "name": "Abra",
+      "set": "SV: Paldean Fates",
+      "number": "148/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534631.jpg",
+      "rarity": "Shiny Rare"
+    },
+    {
+      "key": "en-paldean-fates-534634-holofoil",
+      "name": "Kadabra",
+      "set": "SV: Paldean Fates",
+      "number": "149/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534634.jpg",
+      "rarity": "Shiny Rare"
+    },
+    {
+      "key": "en-paldean-fates-534636-holofoil",
+      "name": "Cleffa",
+      "set": "SV: Paldean Fates",
+      "number": "150/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534636.jpg",
+      "rarity": "Shiny Rare"
+    },
+    {
+      "key": "en-paldean-fates-534642-holofoil",
+      "name": "Natu - 151/091",
+      "set": "SV: Paldean Fates",
+      "number": "151/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534642.jpg",
+      "rarity": "Shiny Rare"
+    },
+    {
+      "key": "en-paldean-fates-534646-holofoil",
+      "name": "Xatu - 152/091",
+      "set": "SV: Paldean Fates",
+      "number": "152/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534646.jpg",
+      "rarity": "Shiny Rare"
+    },
+    {
+      "key": "en-paldean-fates-534650-holofoil",
+      "name": "Ralts - 153/091",
+      "set": "SV: Paldean Fates",
+      "number": "153/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534650.jpg",
+      "rarity": "Shiny Rare"
+    },
+    {
+      "key": "en-paldean-fates-534659-holofoil",
+      "name": "Kirlia - 154/091",
+      "set": "SV: Paldean Fates",
+      "number": "154/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534659.jpg",
+      "rarity": "Shiny Rare"
+    },
+    {
+      "key": "en-paldean-fates-534662-holofoil",
+      "name": "Drifloon",
+      "set": "SV: Paldean Fates",
+      "number": "155/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534662.jpg",
+      "rarity": "Shiny Rare"
+    },
+    {
+      "key": "en-paldean-fates-534670-holofoil",
+      "name": "Drifblim",
+      "set": "SV: Paldean Fates",
+      "number": "156/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534670.jpg",
+      "rarity": "Shiny Rare"
+    },
+    {
+      "key": "en-paldean-fates-534671-holofoil",
+      "name": "Mime Jr. - 157/091",
+      "set": "SV: Paldean Fates",
+      "number": "157/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534671.jpg",
+      "rarity": "Shiny Rare"
+    },
+    {
+      "key": "en-paldean-fates-534680-holofoil",
+      "name": "Spiritomb",
+      "set": "SV: Paldean Fates",
+      "number": "158/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534680.jpg",
+      "rarity": "Shiny Rare"
+    },
+    {
+      "key": "en-paldean-fates-534681-holofoil",
+      "name": "Klefki",
+      "set": "SV: Paldean Fates",
+      "number": "159/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534681.jpg",
+      "rarity": "Shiny Rare"
+    },
+    {
+      "key": "en-paldean-fates-534683-holofoil",
+      "name": "Mimikyu - 160/091",
+      "set": "SV: Paldean Fates",
+      "number": "160/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534683.jpg",
+      "rarity": "Shiny Rare"
+    },
+    {
+      "key": "en-paldean-fates-534685-holofoil",
+      "name": "Dachsbun - 161/091",
+      "set": "SV: Paldean Fates",
+      "number": "161/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534685.jpg",
+      "rarity": "Shiny Rare"
+    },
+    {
+      "key": "en-paldean-fates-534687-holofoil",
+      "name": "Ceruledge - 162/091",
+      "set": "SV: Paldean Fates",
+      "number": "162/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534687.jpg",
+      "rarity": "Shiny Rare"
+    },
+    {
+      "key": "en-paldean-fates-534693-holofoil",
+      "name": "Rabsca",
+      "set": "SV: Paldean Fates",
+      "number": "163/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534693.jpg",
+      "rarity": "Shiny Rare"
+    },
+    {
+      "key": "en-paldean-fates-534694-holofoil",
+      "name": "Flittle - 164/091",
+      "set": "SV: Paldean Fates",
+      "number": "164/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534694.jpg",
+      "rarity": "Shiny Rare"
+    },
+    {
+      "key": "en-paldean-fates-534697-holofoil",
+      "name": "Tinkatink",
+      "set": "SV: Paldean Fates",
+      "number": "165/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534697.jpg",
+      "rarity": "Shiny Rare"
+    },
+    {
+      "key": "en-paldean-fates-534699-holofoil",
+      "name": "Tinkatuff",
+      "set": "SV: Paldean Fates",
+      "number": "166/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534699.jpg",
+      "rarity": "Shiny Rare"
+    },
+    {
+      "key": "en-paldean-fates-534704-holofoil",
+      "name": "Tinkaton",
+      "set": "SV: Paldean Fates",
+      "number": "167/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534704.jpg",
+      "rarity": "Shiny Rare"
+    },
+    {
+      "key": "en-paldean-fates-534724-holofoil",
+      "name": "Houndstone - 168/091",
+      "set": "SV: Paldean Fates",
+      "number": "168/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534724.jpg",
+      "rarity": "Shiny Rare"
+    },
+    {
+      "key": "en-paldean-fates-534728-holofoil",
+      "name": "Mankey - 169/091",
+      "set": "SV: Paldean Fates",
+      "number": "169/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534728.jpg",
+      "rarity": "Shiny Rare"
+    },
+    {
+      "key": "en-paldean-fates-534730-holofoil",
+      "name": "Primeape - 170/091",
+      "set": "SV: Paldean Fates",
+      "number": "170/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534730.jpg",
+      "rarity": "Shiny Rare"
+    },
+    {
+      "key": "en-paldean-fates-534733-holofoil",
+      "name": "Annihilape - 171/091",
+      "set": "SV: Paldean Fates",
+      "number": "171/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534733.jpg",
+      "rarity": "Shiny Rare"
+    },
+    {
+      "key": "en-paldean-fates-535956-holofoil",
+      "name": "Paldean Tauros - 172/091",
+      "set": "SV: Paldean Fates",
+      "number": "172/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/535956.jpg",
+      "rarity": "Shiny Rare"
+    },
+    {
+      "key": "en-paldean-fates-534749-holofoil",
+      "name": "Riolu",
+      "set": "SV: Paldean Fates",
+      "number": "173/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534749.jpg",
+      "rarity": "Shiny Rare"
+    },
+    {
+      "key": "en-paldean-fates-534753-holofoil",
+      "name": "Lucario",
+      "set": "SV: Paldean Fates",
+      "number": "174/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534753.jpg",
+      "rarity": "Shiny Rare"
+    },
+    {
+      "key": "en-paldean-fates-534755-holofoil",
+      "name": "Hawlucha",
+      "set": "SV: Paldean Fates",
+      "number": "175/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534755.jpg",
+      "rarity": "Shiny Rare"
+    },
+    {
+      "key": "en-paldean-fates-534762-holofoil",
+      "name": "Nacli - 176/091",
+      "set": "SV: Paldean Fates",
+      "number": "176/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534762.jpg",
+      "rarity": "Shiny Rare"
+    },
+    {
+      "key": "en-paldean-fates-534921-holofoil",
+      "name": "Naclstack",
+      "set": "SV: Paldean Fates",
+      "number": "177/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534921.jpg",
+      "rarity": "Shiny Rare"
+    },
+    {
+      "key": "en-paldean-fates-534923-holofoil",
+      "name": "Garganacl",
+      "set": "SV: Paldean Fates",
+      "number": "178/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534923.jpg",
+      "rarity": "Shiny Rare"
+    },
+    {
+      "key": "en-paldean-fates-535089-holofoil",
+      "name": "Glimmet",
+      "set": "SV: Paldean Fates",
+      "number": "179/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/535089.jpg",
+      "rarity": "Shiny Rare"
+    },
+    {
+      "key": "en-paldean-fates-535093-holofoil",
+      "name": "Paldean Wooper - 180/091",
+      "set": "SV: Paldean Fates",
+      "number": "180/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/535093.jpg",
+      "rarity": "Shiny Rare"
+    },
+    {
+      "key": "en-paldean-fates-535097-holofoil",
+      "name": "Murkrow",
+      "set": "SV: Paldean Fates",
+      "number": "181/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/535097.jpg",
+      "rarity": "Shiny Rare"
+    },
+    {
+      "key": "en-paldean-fates-535110-holofoil",
+      "name": "Sneasel",
+      "set": "SV: Paldean Fates",
+      "number": "182/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/535110.jpg",
+      "rarity": "Shiny Rare"
+    },
+    {
+      "key": "en-paldean-fates-535118-holofoil",
+      "name": "Weavile",
+      "set": "SV: Paldean Fates",
+      "number": "183/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/535118.jpg",
+      "rarity": "Shiny Rare"
+    },
+    {
+      "key": "en-paldean-fates-535122-holofoil",
+      "name": "Sableye",
+      "set": "SV: Paldean Fates",
+      "number": "184/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/535122.jpg",
+      "rarity": "Shiny Rare"
+    },
+    {
+      "key": "en-paldean-fates-535126-holofoil",
+      "name": "Pawniard",
+      "set": "SV: Paldean Fates",
+      "number": "185/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/535126.jpg",
+      "rarity": "Shiny Rare"
+    },
+    {
+      "key": "en-paldean-fates-535130-holofoil",
+      "name": "Bisharp",
+      "set": "SV: Paldean Fates",
+      "number": "186/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/535130.jpg",
+      "rarity": "Shiny Rare"
+    },
+    {
+      "key": "en-paldean-fates-535132-holofoil",
+      "name": "Kingambit",
+      "set": "SV: Paldean Fates",
+      "number": "187/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/535132.jpg",
+      "rarity": "Shiny Rare"
+    },
+    {
+      "key": "en-paldean-fates-535135-holofoil",
+      "name": "Mabosstiff - 188/091",
+      "set": "SV: Paldean Fates",
+      "number": "188/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/535135.jpg",
+      "rarity": "Shiny Rare"
+    },
+    {
+      "key": "en-paldean-fates-535143-holofoil",
+      "name": "Shroodle - 189/091",
+      "set": "SV: Paldean Fates",
+      "number": "189/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/535143.jpg",
+      "rarity": "Shiny Rare"
+    },
+    {
+      "key": "en-paldean-fates-535145-holofoil",
+      "name": "Grafaiai",
+      "set": "SV: Paldean Fates",
+      "number": "190/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/535145.jpg",
+      "rarity": "Shiny Rare"
+    },
+    {
+      "key": "en-paldean-fates-535149-holofoil",
+      "name": "Scizor",
+      "set": "SV: Paldean Fates",
+      "number": "191/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/535149.jpg",
+      "rarity": "Shiny Rare"
+    },
+    {
+      "key": "en-paldean-fates-535151-holofoil",
+      "name": "Varoom - 192/091",
+      "set": "SV: Paldean Fates",
+      "number": "192/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/535151.jpg",
+      "rarity": "Shiny Rare"
+    },
+    {
+      "key": "en-paldean-fates-535153-holofoil",
+      "name": "Revavroom - 193/091",
+      "set": "SV: Paldean Fates",
+      "number": "193/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/535153.jpg",
+      "rarity": "Shiny Rare"
+    },
+    {
+      "key": "en-paldean-fates-535155-holofoil",
+      "name": "Noibat - 194/091",
+      "set": "SV: Paldean Fates",
+      "number": "194/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/535155.jpg",
+      "rarity": "Shiny Rare"
+    },
+    {
+      "key": "en-paldean-fates-535157-holofoil",
+      "name": "Cyclizar - 195/091",
+      "set": "SV: Paldean Fates",
+      "number": "195/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/535157.jpg",
+      "rarity": "Shiny Rare"
+    },
+    {
+      "key": "en-paldean-fates-535163-holofoil",
+      "name": "Pidgey",
+      "set": "SV: Paldean Fates",
+      "number": "196/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/535163.jpg",
+      "rarity": "Shiny Rare"
+    },
+    {
+      "key": "en-paldean-fates-535165-holofoil",
+      "name": "Pidgeotto",
+      "set": "SV: Paldean Fates",
+      "number": "197/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/535165.jpg",
+      "rarity": "Shiny Rare"
+    },
+    {
+      "key": "en-paldean-fates-535174-holofoil",
+      "name": "Jigglypuff",
+      "set": "SV: Paldean Fates",
+      "number": "198/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/535174.jpg",
+      "rarity": "Shiny Rare"
+    },
+    {
+      "key": "en-paldean-fates-535183-holofoil",
+      "name": "Doduo",
+      "set": "SV: Paldean Fates",
+      "number": "199/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/535183.jpg",
+      "rarity": "Shiny Rare"
+    },
+    {
+      "key": "en-paldean-fates-535185-holofoil",
+      "name": "Dodrio",
+      "set": "SV: Paldean Fates",
+      "number": "200/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/535185.jpg",
+      "rarity": "Shiny Rare"
+    },
+    {
+      "key": "en-paldean-fates-535191-holofoil",
+      "name": "Ditto",
+      "set": "SV: Paldean Fates",
+      "number": "201/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/535191.jpg",
+      "rarity": "Shiny Rare"
+    },
+    {
+      "key": "en-paldean-fates-535193-holofoil",
+      "name": "Snorlax",
+      "set": "SV: Paldean Fates",
+      "number": "202/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/535193.jpg",
+      "rarity": "Shiny Rare"
+    },
+    {
+      "key": "en-paldean-fates-535196-holofoil",
+      "name": "Wingull",
+      "set": "SV: Paldean Fates",
+      "number": "203/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/535196.jpg",
+      "rarity": "Shiny Rare"
+    },
+    {
+      "key": "en-paldean-fates-535200-holofoil",
+      "name": "Pelipper",
+      "set": "SV: Paldean Fates",
+      "number": "204/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/535200.jpg",
+      "rarity": "Shiny Rare"
+    },
+    {
+      "key": "en-paldean-fates-535201-holofoil",
+      "name": "Skwovet",
+      "set": "SV: Paldean Fates",
+      "number": "205/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/535201.jpg",
+      "rarity": "Shiny Rare"
+    },
+    {
+      "key": "en-paldean-fates-535203-holofoil",
+      "name": "Greedent",
+      "set": "SV: Paldean Fates",
+      "number": "206/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/535203.jpg",
+      "rarity": "Shiny Rare"
+    },
+    {
+      "key": "en-paldean-fates-535213-holofoil",
+      "name": "Lechonk - 207/091",
+      "set": "SV: Paldean Fates",
+      "number": "207/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/535213.jpg",
+      "rarity": "Shiny Rare"
+    },
+    {
+      "key": "en-paldean-fates-535955-holofoil",
+      "name": "Oinkologne - 208/091",
+      "set": "SV: Paldean Fates",
+      "number": "208/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/535955.jpg",
+      "rarity": "Shiny Rare"
+    },
+    {
+      "key": "en-paldean-fates-535214-holofoil",
+      "name": "Tandemaus - 209/091",
+      "set": "SV: Paldean Fates",
+      "number": "209/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/535214.jpg",
+      "rarity": "Shiny Rare"
+    },
+    {
+      "key": "en-paldean-fates-535215-holofoil",
+      "name": "Maushold - 210/091",
+      "set": "SV: Paldean Fates",
+      "number": "210/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/535215.jpg",
+      "rarity": "Shiny Rare"
+    },
+    {
+      "key": "en-paldean-fates-535217-holofoil",
+      "name": "Flamigo",
+      "set": "SV: Paldean Fates",
+      "number": "211/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/535217.jpg",
+      "rarity": "Shiny Rare"
+    },
+    {
+      "key": "en-paldean-fates-535297-holofoil",
+      "name": "Forretress ex - 212/091",
+      "set": "SV: Paldean Fates",
+      "number": "212/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/535297.jpg",
+      "rarity": "Shiny Ultra Rare"
+    },
+    {
+      "key": "en-paldean-fates-535299-holofoil",
+      "name": "Toedscruel ex - 213/091",
+      "set": "SV: Paldean Fates",
+      "number": "213/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/535299.jpg",
+      "rarity": "Shiny Ultra Rare"
+    },
+    {
+      "key": "en-paldean-fates-535303-holofoil",
+      "name": "Espathra ex - 214/091",
+      "set": "SV: Paldean Fates",
+      "number": "214/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/535303.jpg",
+      "rarity": "Shiny Ultra Rare"
+    },
+    {
+      "key": "en-paldean-fates-535524-holofoil",
+      "name": "Alakazam ex",
+      "set": "SV: Paldean Fates",
+      "number": "215/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/535524.jpg",
+      "rarity": "Shiny Ultra Rare"
+    },
+    {
+      "key": "en-paldean-fates-535527-holofoil",
+      "name": "Mew ex - 216/091",
+      "set": "SV: Paldean Fates",
+      "number": "216/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/535527.jpg",
+      "rarity": "Shiny Ultra Rare"
+    },
+    {
+      "key": "en-paldean-fates-535530-holofoil",
+      "name": "Gardevoir ex - 217/091",
+      "set": "SV: Paldean Fates",
+      "number": "217/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/535530.jpg",
+      "rarity": "Shiny Ultra Rare"
+    },
+    {
+      "key": "en-paldean-fates-535534-holofoil",
+      "name": "Glimmora ex",
+      "set": "SV: Paldean Fates",
+      "number": "218/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/535534.jpg",
+      "rarity": "Shiny Ultra Rare"
+    },
+    {
+      "key": "en-paldean-fates-535537-holofoil",
+      "name": "Paldean Clodsire ex - 219/091",
+      "set": "SV: Paldean Fates",
+      "number": "219/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/535537.jpg",
+      "rarity": "Shiny Ultra Rare"
+    },
+    {
+      "key": "en-paldean-fates-535541-holofoil",
+      "name": "Noivern ex - 220/091",
+      "set": "SV: Paldean Fates",
+      "number": "220/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/535541.jpg",
+      "rarity": "Shiny Ultra Rare"
+    },
+    {
+      "key": "en-paldean-fates-535559-holofoil",
+      "name": "Pidgeot ex",
+      "set": "SV: Paldean Fates",
+      "number": "221/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/535559.jpg",
+      "rarity": "Shiny Ultra Rare"
+    },
+    {
+      "key": "en-paldean-fates-535562-holofoil",
+      "name": "Wigglytuff ex",
+      "set": "SV: Paldean Fates",
+      "number": "222/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/535562.jpg",
+      "rarity": "Shiny Ultra Rare"
+    },
+    {
+      "key": "en-paldean-fates-535654-holofoil",
+      "name": "Squawkabilly ex - 223/091",
+      "set": "SV: Paldean Fates",
+      "number": "223/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/535654.jpg",
+      "rarity": "Shiny Ultra Rare"
+    },
+    {
+      "key": "en-paldean-fates-534731-holofoil",
+      "name": "Wugtrio - 224/091",
+      "set": "SV: Paldean Fates",
+      "number": "224/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534731.jpg",
+      "rarity": "Illustration Rare"
+    },
+    {
+      "key": "en-paldean-fates-534736-holofoil",
+      "name": "Palafin - 225/091",
+      "set": "SV: Paldean Fates",
+      "number": "225/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534736.jpg",
+      "rarity": "Illustration Rare"
+    },
+    {
+      "key": "en-paldean-fates-534739-holofoil",
+      "name": "Pawmi - 226/091",
+      "set": "SV: Paldean Fates",
+      "number": "226/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534739.jpg",
+      "rarity": "Illustration Rare"
+    },
+    {
+      "key": "en-paldean-fates-534743-holofoil",
+      "name": "Clive - 227/091",
+      "set": "SV: Paldean Fates",
+      "number": "227/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534743.jpg",
+      "rarity": "Ultra Rare"
+    },
+    {
+      "key": "en-paldean-fates-534748-holofoil",
+      "name": "Judge",
+      "set": "SV: Paldean Fates",
+      "number": "228/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534748.jpg",
+      "rarity": "Ultra Rare"
+    },
+    {
+      "key": "en-paldean-fates-534754-holofoil",
+      "name": "Nemona - 229/091",
+      "set": "SV: Paldean Fates",
+      "number": "229/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534754.jpg",
+      "rarity": "Ultra Rare"
+    },
+    {
+      "key": "en-paldean-fates-534757-holofoil",
+      "name": "Paldean Student - 230/091",
+      "set": "SV: Paldean Fates",
+      "number": "230/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534757.jpg",
+      "rarity": "Ultra Rare"
+    },
+    {
+      "key": "en-paldean-fates-534758-holofoil",
+      "name": "Paldean Student - 231/091",
+      "set": "SV: Paldean Fates",
+      "number": "231/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534758.jpg",
+      "rarity": "Ultra Rare"
+    },
+    {
+      "key": "en-paldean-fates-534919-holofoil",
+      "name": "Mew ex - 232/091",
+      "set": "SV: Paldean Fates",
+      "number": "232/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/534919.jpg",
+      "rarity": "Special Illustration Rare"
+    },
+    {
+      "key": "en-paldean-fates-535085-holofoil",
+      "name": "Gardevoir ex - 233/091",
+      "set": "SV: Paldean Fates",
+      "number": "233/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/535085.jpg",
+      "rarity": "Special Illustration Rare"
+    },
+    {
+      "key": "en-paldean-fates-535090-holofoil",
+      "name": "Charizard ex - 234/091",
+      "set": "SV: Paldean Fates",
+      "number": "234/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/535090.jpg",
+      "rarity": "Special Illustration Rare"
+    },
+    {
+      "key": "en-paldean-fates-535095-holofoil",
+      "name": "Arven",
+      "set": "SV: Paldean Fates",
+      "number": "235/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/535095.jpg",
+      "rarity": "Special Illustration Rare"
+    },
+    {
+      "key": "en-paldean-fates-535098-holofoil",
+      "name": "Clive - 236/091",
+      "set": "SV: Paldean Fates",
+      "number": "236/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/535098.jpg",
+      "rarity": "Special Illustration Rare"
+    },
+    {
+      "key": "en-paldean-fates-535101-holofoil",
+      "name": "Iono - 237/091",
+      "set": "SV: Paldean Fates",
+      "number": "237/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/535101.jpg",
+      "rarity": "Special Illustration Rare"
+    },
+    {
+      "key": "en-paldean-fates-535104-holofoil",
+      "name": "Nemona - 238/091",
+      "set": "SV: Paldean Fates",
+      "number": "238/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/535104.jpg",
+      "rarity": "Special Illustration Rare"
+    },
+    {
+      "key": "en-paldean-fates-535108-holofoil",
+      "name": "Penny",
+      "set": "SV: Paldean Fates",
+      "number": "239/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/535108.jpg",
+      "rarity": "Special Illustration Rare"
+    },
+    {
+      "key": "en-paldean-fates-535112-holofoil",
+      "name": "Wo-Chien ex",
+      "set": "SV: Paldean Fates",
+      "number": "240/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/535112.jpg",
+      "rarity": "Hyper Rare"
+    },
+    {
+      "key": "en-paldean-fates-535116-holofoil",
+      "name": "Chi-Yu ex",
+      "set": "SV: Paldean Fates",
+      "number": "241/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/535116.jpg",
+      "rarity": "Hyper Rare"
+    },
+    {
+      "key": "en-paldean-fates-535120-holofoil",
+      "name": "Chien-Pao ex",
+      "set": "SV: Paldean Fates",
+      "number": "242/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/535120.jpg",
+      "rarity": "Hyper Rare"
+    },
+    {
+      "key": "en-paldean-fates-535124-holofoil",
+      "name": "Miraidon ex",
+      "set": "SV: Paldean Fates",
+      "number": "243/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/535124.jpg",
+      "rarity": "Hyper Rare"
+    },
+    {
+      "key": "en-paldean-fates-535127-holofoil",
+      "name": "Ting-Lu ex",
+      "set": "SV: Paldean Fates",
+      "number": "244/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/535127.jpg",
+      "rarity": "Hyper Rare"
+    },
+    {
+      "key": "en-paldean-fates-535134-holofoil",
+      "name": "Koraidon ex",
+      "set": "SV: Paldean Fates",
+      "number": "245/091",
+      "language": "English",
+      "printing": "Holofoil",
+      "image": "assets/paldean-fates/535134.jpg",
+      "rarity": "Hyper Rare"
+    }
+  ],
+  "sourceDate": "2026-11-21",
+  "source": "https://tcgcsv.com/faq",
+  "sources": [
+    {
+      "day": "2026-11-21",
+      "url": "https://tcgcsv.com/tcgplayer/3/23353/prices"
+    }
+  ],
+  "baseline": {
+    "date": "2024-01-26",
+    "usd": null,
+    "proposed": false
+  },
+  "preview": true,
+  "previewNote": "One current Raw guide per card, dated 2026-11-21. The index start date is 26 January 2024. That launch-day set of guides is not in this file, so the index stays at — . No launch-day price was invented.",
+  "sourceVersion": "b6c247c1b389d1f8650310f93f2b0bbe7632179af6008bba910c29af267746e3"
+}
