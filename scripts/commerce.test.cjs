@@ -3,7 +3,7 @@ const assert=require('node:assert/strict');
 const fs=require('node:fs');
 const path=require('node:path');
 const vm=require('node:vm');
-const {ebayLink,citeHref,isFresh,activeOffers,affiliateCard,cardSearchUrl,ebayCardBlock,cleanCard,capturePostType}=require('../commerce.js');
+const {ebayLink,citeHref,isFresh,activeOffers,affiliateCard,cardSearchUrl,ebayCardBlock,cleanCard,capturePostType,visitorMarket,rewriteEbayHref,rewriteEbayHrefs,ebayPageNote}=require('../commerce.js');
 const config={schemaVersion:1,placements:{home:false,drops:true},ebay:{enabled:true,campaignId:'5339239680'},amazonUk:{enabled:false,trackingId:'buytrigger-21'}};
 const now=Date.parse('2026-11-04T17:00:00Z');
 const offer={id:'ebay-123456789012',region:'UK',affiliateProvider:'ebay',productUrl:'https://www.ebay.co.uk/itm/123456789012',checkedAt:'2026-11-04T16:59:00Z',expiresAt:'2026-11-04T17:14:00Z',availability:'In stock'};
@@ -45,7 +45,8 @@ test('search advertisements do not masquerade as verified product offers',()=>{
 test('card search keeps the campaign from commerce config and the approved URL shape',()=>{
  const card={name:'Mega Rayquaza ex - 138/103',number:'138/103',set:'ME06: Delta Reign'};
  const raw=cardSearchUrl(card,config,'price','raw');
- assert.equal(raw,'https://www.ebay.co.uk/sch/i.html?_nkw=Mega+Rayquaza+ex+138%2F103+Delta+Reign&LH_BIN=1&LH_PrefLoc=1&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339239680&toolid=10001&customid=price-raw');
+ assert.equal(raw,'https://www.ebay.co.uk/sch/i.html?_nkw=Mega+Rayquaza+ex+138%2F103+Delta+Reign&LH_BIN=1&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339239680&toolid=10001&customid=price-raw');
+ assert.equal(new URL(raw).searchParams.get('LH_PrefLoc'),null);
  const psa=new URL(cardSearchUrl(card,config,'price','psa10'));
  assert.equal(psa.searchParams.get('_nkw'),'Mega Rayquaza ex 138/103 Delta Reign PSA 10');
  assert.equal(psa.searchParams.get('customid'),'price-psa10');
@@ -63,7 +64,10 @@ test('Buy It Now filters are allowed only as 1, and a card without a clean set i
  const shop=ebayCardBlock({name:'Mega Rayquaza ex - 138/103',number:'138/103',set:'ME06: Delta Reign'},config,{placement:'db',variant:'shop'});
  assert.match(shop,/shop-inline/);
  assert.match(shop,/Affiliate link/);
- assert.match(shop,/UK Buy It Now search/);
+ assert.match(shop,/eBay search \(UK or US site depending on your location\)/);
+ assert.doesNotMatch(shop,/eBay UK|UK Buy It Now/);
+ assert.match(ebayPageNote(),/eBay search \(UK or US site depending on your location\)/);
+ assert.doesNotMatch(ebayPageNote(),/eBay UK/);
  const ja=new URL(cardSearchUrl({name:'Palafin ex',number:'207/187',set:'Terastal Festival',language:'Japanese'},config,'uvjp','raw'));
  assert.equal(ja.searchParams.get('_nkw'),'Palafin ex 207/187 Terastal Festival Japanese');
  assert.equal(ja.searchParams.get('customid'),'uvjp-raw');
@@ -99,19 +103,23 @@ function memoryStorage(){
  const items=new Map();
  return {writes:0,getItem:k=>items.has(k)?items.get(k):null,setItem(k,v){this.writes++;items.set(String(k),String(v));}};
 }
-function boot(href,storage,hrefs=[]){
+function boot(href,storage,hrefs=[],market){
  const anchors=hrefs.map(value=>({value,getAttribute(){return this.value;},setAttribute(name,next){if(name==='href')this.value=next;}}));
- let timers=0;
+ let timers=0,observed=null;
  const win={
   location:new URL(href),
   sessionStorage:storage||memoryStorage(),
-  document:{body:{dataset:{}},querySelector(){return null;},querySelectorAll(sel){return String(sel).includes('customid')?anchors:[];},addEventListener(){}},
+  navigator:market?{language:market.language,languages:market.languages||[market.language]}:undefined,
+  Intl:market?{DateTimeFormat(){return {resolvedOptions(){return {timeZone:market.timeZone};}}}}:undefined,
+  MutationObserver:market&&market.watch?class{constructor(cb){observed=cb;}observe(){}disconnect(){}}:undefined,
+  document:{body:{dataset:{}},documentElement:market&&market.watch?{}:undefined,querySelector(){return null;},querySelectorAll(sel){const key=String(sel);return key.includes('customid')||key.includes('ebay.')?anchors:[];},addEventListener(){}},
   addEventListener(){},
   setInterval(){timers+=1;return 0;},
  };
  vm.runInNewContext(source,{window:win,URL,console},{filename:'commerce.js'});
  win.timers=timers;
  win.anchors=anchors;
+ win.observed=observed;
  return win;
 }
 function customOf(win,placement){return new URL(win.BTCommerce.ebayLink(SEARCH,config,placement)).searchParams.get('customid');}
@@ -139,7 +147,7 @@ test('a prefixed custom id is trimmed to 64 characters',()=>{
 });
 test('the post type persists across page navigation within the session',()=>{
  const storage=memoryStorage();
- const baked='https://www.ebay.co.uk/sch/i.html?_nkw=Mega+Rayquaza+ex+138%2F103+Delta+Reign&LH_BIN=1&LH_PrefLoc=1&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339239680&toolid=10001&customid=price-raw';
+ const baked='https://www.ebay.co.uk/sch/i.html?_nkw=Mega+Rayquaza+ex+138%2F103+Delta+Reign&LH_BIN=1&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339239680&toolid=10001&customid=price-raw';
  boot('https://buytrigger.cards/stories/mega-rayquaza/?utm_content=feature',storage);
  const price=boot('https://buytrigger.cards/prices/delta-reign/',storage,[baked]);
  assert.equal(price.timers,0);
@@ -147,6 +155,9 @@ test('the post type persists across page navigation within the session',()=>{
  assert.equal(stamped.searchParams.get('customid'),'f_price-raw');
  assert.equal(stamped.searchParams.get('_nkw'),'Mega Rayquaza ex 138/103 Delta Reign');
  assert.equal(stamped.searchParams.get('campid'),'5339239680');
+ assert.equal(stamped.hostname,'www.ebay.com');
+ assert.equal(stamped.searchParams.get('LH_PrefLoc'),null);
+ assert.equal(stamped.searchParams.get('mkrid'),'711-53200-19255-0');
  const later=boot('https://buytrigger.cards/index.html?utm_content=not-a-type',storage);
  assert.equal(customOf(later,'story-mega-rayquaza'),'f_story-mega-rayquaza');
  assert.equal(later.BTCommerce.activeOffers({items:[offer]},config,now,'UK').length,1);
@@ -156,4 +167,118 @@ test('a blocked sessionStorage leaves the placement id unchanged',()=>{
  assert.doesNotThrow(()=>vm.runInNewContext(source,{window:win,URL},{filename:'commerce.js'}));
  assert.equal(new URL(win.BTCommerce.ebayLink(SEARCH,config,'price-raw')).searchParams.get('customid'),'price-raw');
  assert.doesNotThrow(()=>capturePostType(win));
+});
+const STATIC='https://www.ebay.co.uk/sch/i.html?_nkw=Mega+Rayquaza+ex+138%2F103+Delta+Reign&LH_BIN=1&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339239680&toolid=10001&customid=price-raw';
+const UK_HREF='https://www.ebay.co.uk/sch/i.html?_nkw=Mega+Rayquaza+ex+138%2F103+Delta+Reign&LH_BIN=1&LH_PrefLoc=1&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339239680&toolid=10001&customid=price-raw';
+const COM_HREF='https://www.ebay.com/sch/i.html?_nkw=Mega+Rayquaza+ex+138%2F103+Delta+Reign&LH_BIN=1&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339239680&toolid=10001&customid=price-raw';
+function marketOf(language,timeZone,languages){
+ return visitorMarket({navigator:{language,languages:languages||[language]},Intl:{DateTimeFormat(){return {resolvedOptions(){return {timeZone};}}}}});
+}
+function expectMarket(href,market){
+ const u=new URL(href);
+ assert.equal(u.searchParams.get('campid'),'5339239680');
+ assert.equal(u.searchParams.get('mkevt'),'1');
+ assert.equal(u.searchParams.get('mkcid'),'1');
+ assert.equal(u.searchParams.get('toolid'),'10001');
+ assert.equal(u.searchParams.get('LH_BIN'),'1');
+ if(market==='uk'){
+  assert.equal(u.hostname,'www.ebay.co.uk');
+  assert.equal(u.searchParams.get('mkrid'),'710-53481-19255-0');
+  assert.equal(u.searchParams.get('LH_PrefLoc'),'1');
+ }else{
+  assert.equal(u.hostname,'www.ebay.com');
+  assert.equal(u.searchParams.get('mkrid'),'711-53200-19255-0');
+  assert.equal(u.searchParams.get('LH_PrefLoc'),null);
+ }
+}
+test('UK, US and other visitors choose a marketplace without storage or a network call',()=>{
+ assert.equal(marketOf('en-GB','Europe/London'),'uk');
+ assert.equal(marketOf('en-GB','America/New_York'),'uk');
+ assert.equal(marketOf('en-US','Europe/London'),'uk');
+ assert.equal(marketOf('en-US','America/New_York'),'us');
+ assert.equal(marketOf('en-US','America/Los_Angeles'),'us');
+ assert.equal(marketOf('en-US','Pacific/Honolulu'),'us');
+ assert.equal(marketOf('de-DE','America/Chicago'),'us');
+ assert.equal(marketOf('de-DE','Europe/Berlin'),'other');
+ assert.equal(marketOf('en-US','Europe/Berlin'),'other');
+ assert.equal(marketOf('en-US','America/Toronto'),'other');
+ assert.equal(source.includes('fetch('),false);
+ assert.equal(source.includes('localStorage'),false);
+ assert.equal(source.includes('geoip')||source.includes('ip-api')||source.includes('ipapi'),false);
+});
+test('static default stays on ebay.co.uk and drops the UK-only location filter',()=>{
+ assert.equal(cardSearchUrl({name:'Mega Rayquaza ex - 138/103',number:'138/103',set:'ME06: Delta Reign'},config,'price','raw'),STATIC);
+ assert.equal(rewriteEbayHref(STATIC,'uk'),UK_HREF);
+ assert.equal(rewriteEbayHref(STATIC,'us'),COM_HREF);
+ assert.equal(rewriteEbayHref(STATIC,'other'),COM_HREF);
+ assert.equal(rewriteEbayHref(UK_HREF,'uk'),UK_HREF);
+ assert.equal(rewriteEbayHref(COM_HREF,'us'),COM_HREF);
+});
+test('rewrite keeps custom ids, prefixes, campid and search words, and location-restricts only the UK',()=>{
+ const card={name:'Palafin ex',number:'207/187',set:'Terastal Festival',language:'Japanese'};
+ const ja=cardSearchUrl(card,config,'uvjp','raw');
+ assert.equal(new URL(ja).searchParams.get('_nkw'),'Palafin ex 207/187 Terastal Festival Japanese');
+ assert.equal(new URL(ja).searchParams.get('customid'),'uvjp-raw');
+ for(const market of ['uk','us','other']){
+  const next=new URL(rewriteEbayHref(ja,market));
+  expectMarket(next.href,market);
+  assert.equal(next.searchParams.get('_nkw'),'Palafin ex 207/187 Terastal Festival Japanese');
+  assert.equal(next.searchParams.get('customid'),'uvjp-raw');
+ }
+ for(const id of ['d_price-raw','n_price-psa10','f_story-mega-rayquaza','r_db-raw','price-raw','db-psa10','index-raw','uv-raw','story-mega-rayquaza-raw']){
+  for(const market of ['uk','us','other']){
+   const href=rewriteEbayHref(STATIC.replace('customid=price-raw','customid='+id),market);
+   expectMarket(href,market);
+   assert.equal(new URL(href).searchParams.get('customid'),id);
+  }
+ }
+ for(const [placement,grade] of [['price','raw'],['price','psa10'],['db','raw'],['index','psa10'],['uv','raw'],['uvjp','psa10'],['story-mega-rayquaza','raw']]){
+  const href=cardSearchUrl({name:'Mega Rayquaza ex',number:'138/103',set:'Delta Reign'},config,placement,grade);
+  assert.match(href,/campid=5339239680/);
+  assert.doesNotMatch(href,/LH_PrefLoc/);
+  assert.match(href,new RegExp('customid='+placement+'-'+grade));
+ }
+ const item='https://www.ebay.com/itm/117509772649?nordt=true&campid=5339239680&customid=story-example-cite';
+ assert.equal(rewriteEbayHref(item,'uk'),item);
+ assert.equal(rewriteEbayHref(item,'other'),item);
+ const sold='https://www.ebay.com/sch/i.html?_nkw=Mega+Rayquaza+ex+141%2F103+Delta+Reign&LH_Sold=1&LH_Complete=1&_sop=13&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339239680&toolid=10001&customid=story-gold-rayquaza-cite';
+ assert.equal(rewriteEbayHref(sold,'uk'),sold);
+ assert.equal(rewriteEbayHref(sold,'us'),sold);
+ assert.equal(rewriteEbayHref(sold,'other'),sold);
+});
+test('page load and a dialog rewrite every search href for UK, US and other visitors',()=>{
+ const cases=[
+  [{language:'en-GB',timeZone:'Europe/London',watch:true},'uk',UK_HREF],
+  [{language:'en-US',timeZone:'America/Chicago',watch:true},'us',COM_HREF],
+  [{language:'de-DE',timeZone:'Europe/Berlin',languages:['de-DE','de'],watch:true},'other',COM_HREF],
+ ];
+ for(const [market,name,expected] of cases){
+  const win=boot('https://buytrigger.cards/prices/delta-reign/',null,[STATIC],market);
+  assert.equal(win.anchors[0].value,expected);
+  assert.equal(new URL(win.anchors[0].value).searchParams.get('customid'),'price-raw');
+  expectMarket(win.anchors[0].value,name);
+  const dialogLink={value:STATIC,getAttribute(){return this.value;},setAttribute(key,next){if(key==='href')this.value=next;}};
+  const itemLink={value:'https://www.ebay.nl/itm/227601558139?campid=5339239680&customid=story-example-cite',getAttribute(){return this.value;},setAttribute(key,next){if(key==='href')this.value=next;}};
+  const dialog={nodeType:1,tagName:'DIALOG',querySelectorAll(sel){return String(sel).includes('ebay')?[dialogLink,itemLink]:[];}};
+  assert.equal(typeof win.observed,'function');
+  win.observed([{addedNodes:[dialog]}]);
+  expectMarket(dialogLink.value,name);
+  assert.equal(itemLink.value,'https://www.ebay.nl/itm/227601558139?campid=5339239680&customid=story-example-cite');
+  const table={nodeType:1,tagName:'TABLE',links:[],querySelectorAll(sel){return String(sel).includes('ebay')?this.links:[];}};
+  const row={value:STATIC.replace('customid=price-raw','customid=f_db-psa10'),getAttribute(){return this.value;},setAttribute(key,next){if(key==='href')this.value=next;}};
+  table.links=[row];
+  rewriteEbayHrefs(table,win);
+  expectMarket(row.value,name);
+  assert.equal(new URL(row.value).searchParams.get('customid'),'f_db-psa10');
+  const block=win.BTCommerce.ebayCardBlock({name:'Palafin ex',number:'207/187',set:'Terastal Festival',language:'Japanese'},config,{placement:'uvjp',variant:'shop'});
+  const hrefs=[...block.matchAll(/href="([^"]+)"/g)].map(match=>match[1].replaceAll('&amp;','&'));
+  assert.equal(hrefs.length,3);
+  for(const href of hrefs){
+   expectMarket(href,name);
+   assert.match(new URL(href).searchParams.get('_nkw'),/Japanese/);
+   assert.match(new URL(href).searchParams.get('customid'),/^uvjp-(raw|psa10)$/);
+  }
+  assert.equal(hrefs.filter(href=>href.includes('customid=uvjp-raw')).length,2);
+  assert.equal(hrefs.filter(href=>href.includes('customid=uvjp-psa10')).length,1);
+ }
 });

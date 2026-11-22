@@ -285,6 +285,8 @@ def assert_price_guide(slug, lead):
   assert logo and logo.get('alt')=='eBay' and logo.get('src','').endswith('assets/ebay/ebay-wordmark-b4-trimmed.png')
   for buy in buys:
    assert buy['href'].startswith('https://www.ebay.co.uk/sch/i.html?')
+   assert 'LH_PrefLoc' not in buy['href']
+   assert 'campid=5339239680' in buy['href']
    assert buy.get('target')=='_blank'
    buy_rel=buy.get('rel') or []
    buy_rel=buy_rel if isinstance(buy_rel,list) else str(buy_rel).split()
