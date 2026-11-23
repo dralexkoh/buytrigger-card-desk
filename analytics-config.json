@@ -45,7 +45,9 @@
     "profile",
     "story",
     "index",
-    "top50"
+    "top50",
+    "guess-the-price",
+    "price-it-sunday"
   ],
   "collectorEndpoint": "https://brzawmbpwkdundruicca.supabase.co/functions/v1/cards-traffic-ingest"
 }
