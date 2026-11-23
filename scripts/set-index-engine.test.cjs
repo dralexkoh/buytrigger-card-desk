@@ -47,21 +47,37 @@ test('Delta Reign snapshot validates and ranks the three most expensive cards fi
 });
 
 test('chase cards follow roster chase_rank, with 1 at the top', () => {
-  const {chaseEntries} = require('../set-index-engine.js');
+  const {chaseEntries, sortCards, chaseRankMap} = require('../set-index-engine.js');
   const expected = {
     'delta-reign': ['728061', '728062', '726574', '726567', '726576', '728060', '727592', '726565', '726575', '726563'],
     'sv-151': ['517045', '517046', '517044', '502556', '502549', '517048', '517018', '517047', '516997', '513721'],
     'prismatic-evolutions': ['610516', '610511', '610499', '610510', '610505', '610504', '610501', '610508', '610522', '610517'],
+    'paldean-fates': ['534919', '535090', '535085', '534522', '534683', '535193', '535527', '534483', '535191', '535215'],
+    'crown-zenith': ['478100', '477057', '478101', '478099', '478097', '477060', '478027', '478077', '477061', '478067'],
+    'fusion-strike': ['253266', '253265', '253177', '253147', '253176', '253138', '253146', '253371', '253155', '253171'],
   };
+  const keeperSource = new Set(['delta-reign', 'sv-151', 'prismatic-evolutions']);
   for (const [slug, ids] of Object.entries(expected)) {
     const roster = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'data/market-rosters', slug + '.json'), 'utf8'));
-    assert.equal(roster.chase_source, 'keeper-2026-11-17');
+    if (keeperSource.has(slug)) assert.equal(roster.chase_source, 'keeper-2026-11-17');
     const entries = chaseEntries(roster);
     assert.deepEqual(entries.map((card) => card.productId), ids);
-    assert.deepEqual(entries.map((card) => card.chase_rank), [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
+    assert.deepEqual(entries.map((card) => card.chase_rank), ids.map((_, index) => index + 1));
   }
   const swapped = {cards: [{productId: '2', chase_rank: 2, name: 'B', number: '2'}, {productId: '1', chase_rank: 1, name: 'A', number: '1'}, {productId: '9', name: 'Skip'}]};
   assert.deepEqual(chaseEntries(swapped).map((card) => card.productId), ['1', '2']);
+  const cards = [
+    {key: 'c', name: 'C', number: '003/100', image: 'assets/example/30.jpg'},
+    {key: 'a', name: 'A', number: '010/100', image: 'assets/example/10.jpg'},
+    {key: 'b', name: 'B', number: '002/100', image: 'assets/example/20.jpg'},
+  ];
+  const ranks = chaseRankMap({cards: [{productId: '20', chase_rank: 1}, {productId: '10', chase_rank: 2}]});
+  const latest = (key) => ({a: [0, 1, 'ok'], b: [0, 9, 'ok'], c: [0, 4, 'ok']}[key]);
+  assert.deepEqual(sortCards(cards, 'default', 'all', latest, ranks).map((card) => card.key), ['b', 'a', 'c']);
+  assert.deepEqual(sortCards(cards, 'number', 'all', latest, ranks).map((card) => card.key), ['b', 'c', 'a']);
+  assert.deepEqual(sortCards(cards, 'name', 'all', latest, ranks).map((card) => card.key), ['a', 'b', 'c']);
+  assert.deepEqual(sortCards(cards, 'price', 'all', latest, ranks).map((card) => card.key), ['b', 'c', 'a']);
+  assert.deepEqual(sortCards(cards, 'default', 'top20', latest, ranks).map((card) => card.key), ['b', 'c', 'a']);
 });
 
 test('Prismatic index view stays at 180 while ball patterns stay out of the gallery', () => {

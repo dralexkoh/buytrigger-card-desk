@@ -53,11 +53,11 @@
 .advertise-options{margin:0;padding-left:1.15em;color:var(--muted);font-size:16px;line-height:1.55}
 .advertise-options li+li{margin-top:8px}
 .method-card>.kicker{margin-bottom:8px}
-.chase-band{background:#fff;padding:14px 56px 8px}
+.chase-band{background:#fff;max-width:100%;padding:14px 56px 8px}
 .chase-band-inset{padding:0 0 16px;background:transparent}
 .chase-head h2{font-size:22px;letter-spacing:-.4px;margin:0 0 4px}
 .chase-head p{max-width:70ch;margin:0 0 10px;color:#626269;font-size:13px;line-height:1.35}
-.chase-strip{display:flex;gap:8px;overflow-x:auto;scroll-snap-type:x mandatory;padding:0 0 8px;-webkit-overflow-scrolling:touch}
+.chase-strip{display:flex;gap:8px;max-width:100%;min-width:0;overflow-x:auto;scroll-snap-type:x mandatory;padding:0 0 8px;-webkit-overflow-scrolling:touch}
 .chase-tile{flex:0 0 98px;scroll-snap-align:start;display:flex;flex-direction:column;gap:2px;margin:0;padding:0;border:0;background:transparent;color:inherit;text-align:left;text-decoration:none;min-height:0}
 .chase-art{display:block;background:#fff;border:1px solid #deded9;border-radius:6px;overflow:hidden}
 .chase-art img{width:100%;height:auto;aspect-ratio:63/88;object-fit:contain;background:#fff}

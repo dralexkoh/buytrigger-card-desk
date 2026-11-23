@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "index": "crown-zenith",
-  "chase_source": "set-trackers brief 22 Nov 2026, the three named heroes",
+  "chase_source": "22 Nov 2026 Raw market guide, highest first. Radiant Charizard and Pikachu 160/159, the previous #2 and #3, are outside the top 10, so this band is ranked purely by price.",
   "sourceList": "TCGCSV 17688 SWSH: Crown Zenith, 17689 SWSH: Crown Zenith Galarian Gallery. English base printing only (Holofoil, or Normal where that card has no Holofoil). Reverse Holofoil and 66 sealed products with no collector number are left out. Guides are the 21 Nov 2026 TCGCSV prices file. No launch-day archive was backfilled.",
   "cards": [
     {
@@ -202,8 +202,7 @@
       "number": "020/159",
       "language": "English",
       "printing": "Holofoil",
-      "image": "assets/crown-zenith/478098.jpg",
-      "chase_rank": 2
+      "image": "assets/crown-zenith/478098.jpg"
     },
     {
       "productId": "478105",
@@ -1603,8 +1602,7 @@
       "number": "160/159",
       "language": "English",
       "printing": "Holofoil",
-      "image": "assets/crown-zenith/478103.jpg",
-      "chase_rank": 3
+      "image": "assets/crown-zenith/478103.jpg"
     },
     {
       "productId": "478017",
@@ -1704,7 +1702,8 @@
       "number": "GG10/GG70",
       "language": "English",
       "printing": "Holofoil",
-      "image": "assets/crown-zenith/478027.jpg"
+      "image": "assets/crown-zenith/478027.jpg",
+      "chase_rank": 7
     },
     {
       "productId": "478028",
@@ -1954,7 +1953,8 @@
       "number": "GG35/GG70",
       "language": "English",
       "printing": "Holofoil",
-      "image": "assets/crown-zenith/477060.jpg"
+      "image": "assets/crown-zenith/477060.jpg",
+      "chase_rank": 6
     },
     {
       "productId": "478065",
@@ -1984,7 +1984,8 @@
       "number": "GG38/GG70",
       "language": "English",
       "printing": "Holofoil",
-      "image": "assets/crown-zenith/478067.jpg"
+      "image": "assets/crown-zenith/478067.jpg",
+      "chase_rank": 10
     },
     {
       "productId": "478068",
@@ -2004,7 +2005,8 @@
       "number": "GG40/GG70",
       "language": "English",
       "printing": "Holofoil",
-      "image": "assets/crown-zenith/477061.jpg"
+      "image": "assets/crown-zenith/477061.jpg",
+      "chase_rank": 9
     },
     {
       "productId": "478069",
@@ -2044,7 +2046,8 @@
       "number": "GG44/GG70",
       "language": "English",
       "printing": "Holofoil",
-      "image": "assets/crown-zenith/477057.jpg"
+      "image": "assets/crown-zenith/477057.jpg",
+      "chase_rank": 2
     },
     {
       "productId": "477354",
@@ -2104,7 +2107,8 @@
       "number": "GG50/GG70",
       "language": "English",
       "printing": "Holofoil",
-      "image": "assets/crown-zenith/478077.jpg"
+      "image": "assets/crown-zenith/478077.jpg",
+      "chase_rank": 8
     },
     {
       "productId": "478078",
@@ -2274,7 +2278,8 @@
       "number": "GG67/GG70",
       "language": "English",
       "printing": "Holofoil",
-      "image": "assets/crown-zenith/478097.jpg"
+      "image": "assets/crown-zenith/478097.jpg",
+      "chase_rank": 5
     },
     {
       "productId": "478099",
@@ -2284,7 +2289,8 @@
       "number": "GG68/GG70",
       "language": "English",
       "printing": "Holofoil",
-      "image": "assets/crown-zenith/478099.jpg"
+      "image": "assets/crown-zenith/478099.jpg",
+      "chase_rank": 4
     },
     {
       "productId": "478100",
@@ -2294,7 +2300,8 @@
       "number": "GG69/GG70",
       "language": "English",
       "printing": "Holofoil",
-      "image": "assets/crown-zenith/478100.jpg"
+      "image": "assets/crown-zenith/478100.jpg",
+      "chase_rank": 1
     },
     {
       "productId": "478101",
@@ -2305,7 +2312,7 @@
       "language": "English",
       "printing": "Holofoil",
       "image": "assets/crown-zenith/478101.jpg",
-      "chase_rank": 1
+      "chase_rank": 3
     }
   ]
 }

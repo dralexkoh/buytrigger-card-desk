@@ -126,6 +126,45 @@ function chaseEntries(roster){
  })).filter(card=>card.productId).sort((a,b)=>a.chase_rank-b.chase_rank||a.productId.localeCompare(b.productId));
 }
 
+function chaseRankMap(roster){
+ const map=new Map();
+ for(const entry of chaseEntries(roster)) map.set(String(entry.productId), entry.chase_rank);
+ return map;
+}
+function cardProductId(card){
+ const match=String(card&&card.image||'').match(/(\d+)\.jpg$/);
+ return match?match[1]:'';
+}
+function numberOrder(a,b){
+ return String(a.number||'').localeCompare(String(b.number||''),undefined,{numeric:true});
+}
+function sortCards(cards,mode,group,latest,ranks){
+ const list=cards.slice();
+ if(mode==='name'){
+  list.sort((a,b)=>String(a.name||'').localeCompare(String(b.name||''),undefined,{numeric:true}));
+  return list;
+ }
+ if(mode==='price'||(mode==='default'&&group==='top20')){
+  list.sort((a,b)=>(latest(b.key)?.[1]||0)-(latest(a.key)?.[1]||0));
+  return list;
+ }
+ if(mode==='number'){
+  list.sort(numberOrder);
+  return list;
+ }
+ const rankOf=card=>{
+  const rank=ranks&&ranks.get(cardProductId(card));
+  return Number.isInteger(rank)&&rank>0?rank:0;
+ };
+ list.sort((a,b)=>{
+  const ar=rankOf(a),br=rankOf(b);
+  if(ar&&br&&ar!==br)return ar-br;
+  if(Boolean(ar)!==Boolean(br))return ar?-1:1;
+  return numberOrder(a,b);
+ });
+ return list;
+}
+
 function chaseHtml(roster,data,latest,helpers){
  const esc=helpers.esc,money=helpers.money,date=helpers.date;
  const byId=new Map((data.cards||[]).map(card=>{
@@ -149,5 +188,5 @@ function chaseHtml(roster,data,latest,helpers){
  return `<section class="chase-band" aria-labelledby="chase-title"><div class="chase-head"><h2 id="chase-title">Chase cards</h2><p>${note}</p></div><div class="chase-strip">${tiles.join('')}</div></section>`;
 }
 
-return {positive,day,keys,createEngine,adaptDailyCache,chaseEntries,chaseHtml};
+return {positive,day,keys,createEngine,adaptDailyCache,chaseEntries,chaseHtml,chaseRankMap,sortCards};
 });
