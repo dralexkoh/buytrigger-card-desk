@@ -34,7 +34,7 @@ class SnapshotTests(unittest.TestCase):
         mews = [card for card in self.cards if str(card['image']).startswith('assets/thirtieth/')]
         self.assertEqual(sorted(card['product_id'] for card in mews), ['717607', '717608', '717609'])
         self.assertTrue(all((ROOT / card['image']).is_file() for card in mews))
-        self.assertEqual(sum(1 for card in self.cards if card['image']), 4)
+        self.assertEqual(sum(1 for card in self.cards if card['image']), 7)
 
     def test_default_order_is_market_guide_high_to_low(self):
         ordered = [card['price'] for card in self.cards]
@@ -113,7 +113,15 @@ class PageTests(unittest.TestCase):
         images = self.page.select('#price-table .price-card img')
         self.assertEqual(
             sorted(img['src'] for img in images),
-            ['assets/tcg-modern/728061.jpg', 'assets/thirtieth/717607.jpg', 'assets/thirtieth/717608.jpg', 'assets/thirtieth/717609.jpg'],
+            [
+                'assets/tcg-modern/253265.jpg',
+                'assets/tcg-modern/253266.jpg',
+                'assets/tcg-modern/534919.jpg',
+                'assets/tcg-modern/728061.jpg',
+                'assets/thirtieth/717607.jpg',
+                'assets/thirtieth/717608.jpg',
+                'assets/thirtieth/717609.jpg',
+            ],
         )
         self.assertEqual(len(self.page.select('.price-card-fallback')), len(self.cards) - len(images))
         links = self.page.select('#price-table a.price-check')
