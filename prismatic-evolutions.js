@@ -46,7 +46,7 @@ function page(){
   </div>
   <div id="prismatic-evolutions-summary" aria-live="polite"><p class="set-status">Loading the latest Raw guides…</p></div>
   <div class="shared-periods" role="group" aria-label="History window">${['7D','30D','All'].map(p=>`<button data-set-period="${p}" aria-pressed="${p===period}">${p==='All'?'All history':p}</button>`).join('')}</div>
-  <div id="prismatic-evolutions-chart"></div>
+  <div class="set-chart" id="prismatic-evolutions-chart"></div>
   <details class="set-method">
    <summary>How the chart works</summary>
    <p>The index adds the Raw market guide for one of each of the 180 English base printings and sets that total to 100 on 17 January 2025, the set’s English launch day. The index stays at — until a complete launch-day set of guides is available, because the dated guides in this snapshot do not include one. A day needs every price in the set. Missing dates stay as gaps.</p>
@@ -58,7 +58,7 @@ function page(){
   <div class="set-tools">
    <label>Find a card<input type="search" id="set-search" placeholder="Name or card number" autocomplete="off"></label>
    <label>Collection<select id="set-collection"><option value="all">All 180 cards</option><option value="top20">Top 20 by Raw</option><option value="secret">Secret rares</option><option value="special-illustration">Special Illustration Rares</option><option value="ace-spec">ACE SPEC Rares</option><option value="hyper">Hyper Rares</option></select></label>
-   <label>Sort<select id="set-sort"><option value="default">Card number</option><option value="price">Raw price: high to low</option><option value="number">Card number</option><option value="name">Name</option></select></label>
+   <label>Sort<select id="set-sort"><option value="default">Chase cards, then number</option><option value="price">Raw price: high to low</option><option value="number">Card number</option><option value="name">Name</option></select></label>
   </div>
   <p class="set-chart-note" id="set-ranking-note" hidden></p>
   <div class="set-grid" id="set-grid"></div>
@@ -140,11 +140,9 @@ function drawCards(){
   total+=focus[group].length;
   count+=cards.length;
   if(!cards.length)return '';
-  if(sort==='name')cards.sort((a,b)=>a.name.localeCompare(b.name,undefined,{numeric:true}));
-  else if(sort==='price'||(sort==='default'&&group==='top20'))cards.sort((a,b)=>(E.latest(data,b.key)?.[1]||0)-(E.latest(data,a.key)?.[1]||0));
-  else cards.sort((a,b)=>a.number.localeCompare(b.number,undefined,{numeric:true}));
-  return `<h3 class="set-group-title">${galleryLabels[group]} <small>${cards.length} / ${focus[group].length}</small></h3>`+
-   cards.map(c=>cardMarkup(c,group,group==='top20'?focus.top20.indexOf(c)+1:null)).join('');
+  const ordered=Factory.sortCards(cards,sort,group,key=>E.latest(data,key),Factory.chaseRankMap(chaseRoster));
+  return `<h3 class="set-group-title">${galleryLabels[group]} <small>${ordered.length} / ${focus[group].length}</small></h3>`+
+   ordered.map(c=>cardMarkup(c,group,group==='top20'?focus.top20.indexOf(c)+1:null)).join('');
  }).join('');
  document.getElementById('set-count').textContent=`${count} of ${total} cards`;
  const note=document.getElementById('set-ranking-note');note.hidden=collection!=='top20';

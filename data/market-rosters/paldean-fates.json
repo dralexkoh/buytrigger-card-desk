@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "index": "paldean-fates",
-  "chase_source": "set-trackers brief 22 Nov 2026, the three named heroes",
+  "chase_source": "22 Nov 2026 Raw market guide, highest first. Iono 237/091, the previous #3, is outside the top 10, so this band is ranked purely by price.",
   "sourceList": "TCGCSV 23353 SV: Paldean Fates. English base printing only (Holofoil, or Normal where that card has no Holofoil). Reverse Holofoil and 50 sealed products with no collector number are left out. Guides are the 21 Nov 2026 TCGCSV prices file. No launch-day archive was backfilled.",
   "cards": [
     {
@@ -1092,7 +1092,8 @@
       "number": "109/091",
       "language": "English",
       "printing": "Holofoil",
-      "image": "assets/paldean-fates/534483.jpg"
+      "image": "assets/paldean-fates/534483.jpg",
+      "chase_rank": 8
     },
     {
       "productId": "534484",
@@ -1312,7 +1313,8 @@
       "number": "131/091",
       "language": "English",
       "printing": "Holofoil",
-      "image": "assets/paldean-fates/534522.jpg"
+      "image": "assets/paldean-fates/534522.jpg",
+      "chase_rank": 4
     },
     {
       "productId": "534523",
@@ -1602,7 +1604,8 @@
       "number": "160/091",
       "language": "English",
       "printing": "Holofoil",
-      "image": "assets/paldean-fates/534683.jpg"
+      "image": "assets/paldean-fates/534683.jpg",
+      "chase_rank": 5
     },
     {
       "productId": "534685",
@@ -2012,7 +2015,8 @@
       "number": "201/091",
       "language": "English",
       "printing": "Holofoil",
-      "image": "assets/paldean-fates/535191.jpg"
+      "image": "assets/paldean-fates/535191.jpg",
+      "chase_rank": 9
     },
     {
       "productId": "535193",
@@ -2022,7 +2026,8 @@
       "number": "202/091",
       "language": "English",
       "printing": "Holofoil",
-      "image": "assets/paldean-fates/535193.jpg"
+      "image": "assets/paldean-fates/535193.jpg",
+      "chase_rank": 6
     },
     {
       "productId": "535196",
@@ -2102,7 +2107,8 @@
       "number": "210/091",
       "language": "English",
       "printing": "Holofoil",
-      "image": "assets/paldean-fates/535215.jpg"
+      "image": "assets/paldean-fates/535215.jpg",
+      "chase_rank": 10
     },
     {
       "productId": "535217",
@@ -2162,7 +2168,8 @@
       "number": "216/091",
       "language": "English",
       "printing": "Holofoil",
-      "image": "assets/paldean-fates/535527.jpg"
+      "image": "assets/paldean-fates/535527.jpg",
+      "chase_rank": 7
     },
     {
       "productId": "535530",
@@ -2333,7 +2340,8 @@
       "number": "233/091",
       "language": "English",
       "printing": "Holofoil",
-      "image": "assets/paldean-fates/535085.jpg"
+      "image": "assets/paldean-fates/535085.jpg",
+      "chase_rank": 3
     },
     {
       "productId": "535090",
@@ -2374,8 +2382,7 @@
       "number": "237/091",
       "language": "English",
       "printing": "Holofoil",
-      "image": "assets/paldean-fates/535101.jpg",
-      "chase_rank": 3
+      "image": "assets/paldean-fates/535101.jpg"
     },
     {
       "productId": "535104",

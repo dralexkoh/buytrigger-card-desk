@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "index": "fusion-strike",
-  "chase_source": "set-trackers brief 22 Nov 2026, the three named heroes",
+  "chase_source": "22 Nov 2026 Raw market guide, highest first. The previous #1 to #3 remain in the top 10 and keep those ranks. #4 to #10 are the next guide prices.",
   "sourceList": "TCGCSV 2906 SWSH08: Fusion Strike. English base printing only (Holofoil, or Normal where that card has no Holofoil). Reverse Holofoil and 45 sealed products with no collector number are left out. Guides are the 21 Nov 2026 TCGCSV prices file. No launch-day archive was backfilled.",
   "cards": [
     {
@@ -1572,7 +1572,8 @@
       "number": "157/264",
       "language": "English",
       "printing": "Holofoil",
-      "image": "assets/fusion-strike/253371.jpg"
+      "image": "assets/fusion-strike/253371.jpg",
+      "chase_rank": 8
     },
     {
       "productId": "253372",
@@ -2452,7 +2453,8 @@
       "number": "245/264",
       "language": "English",
       "printing": "Holofoil",
-      "image": "assets/fusion-strike/253138.jpg"
+      "image": "assets/fusion-strike/253138.jpg",
+      "chase_rank": 6
     },
     {
       "productId": "253139",
@@ -2502,7 +2504,8 @@
       "number": "250/264",
       "language": "English",
       "printing": "Holofoil",
-      "image": "assets/fusion-strike/253146.jpg"
+      "image": "assets/fusion-strike/253146.jpg",
+      "chase_rank": 7
     },
     {
       "productId": "253147",
@@ -2512,7 +2515,8 @@
       "number": "251/264",
       "language": "English",
       "printing": "Holofoil",
-      "image": "assets/fusion-strike/253147.jpg"
+      "image": "assets/fusion-strike/253147.jpg",
+      "chase_rank": 4
     },
     {
       "productId": "253149",
@@ -2552,7 +2556,8 @@
       "number": "255/264",
       "language": "English",
       "printing": "Holofoil",
-      "image": "assets/fusion-strike/253155.jpg"
+      "image": "assets/fusion-strike/253155.jpg",
+      "chase_rank": 9
     },
     {
       "productId": "253156",
@@ -2662,7 +2667,8 @@
       "number": "266/264",
       "language": "English",
       "printing": "Holofoil",
-      "image": "assets/fusion-strike/253171.jpg"
+      "image": "assets/fusion-strike/253171.jpg",
+      "chase_rank": 10
     },
     {
       "productId": "253174",
@@ -2682,7 +2688,8 @@
       "number": "268/264",
       "language": "English",
       "printing": "Holofoil",
-      "image": "assets/fusion-strike/253176.jpg"
+      "image": "assets/fusion-strike/253176.jpg",
+      "chase_rank": 5
     },
     {
       "productId": "253177",

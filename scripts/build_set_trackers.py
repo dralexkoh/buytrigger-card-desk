@@ -108,7 +108,8 @@ SPECS = [
         'search_set': 'SV: Paldean Fates',
         'source_groups': '23353',
         'heroes': [('534919', 'Mew ex 232/091'), ('535090', 'Charizard ex 234/091'), ('535101', 'Iono 237/091')],
-        'chase': ['534919', '535090', '535101'],
+        'chase': ['534919', '535090', '535085', '534522', '534683', '535193', '535527', '534483', '535191', '535215'],
+        'chase_source': '22 Nov 2026 Raw market guide, highest first. Iono 237/091, the previous #3, is outside the top 10, so this band is ranked purely by price.',
         'gallery_js': '"shiny":c=>{const n=parseInt(c.number,10);return n>=92&&n<=226;},\n  "secret":c=>parseInt(c.number,10)>226',
         'labels_js': '{"all": "All 245 cards", "top20": "Top 20 by Raw", "shiny": "Shiny Vault", "secret": "Secret rares"}',
         'options': '<option value="all">All 245 cards</option><option value="top20">Top 20 by Raw</option><option value="shiny">Shiny Vault</option><option value="secret">Secret rares</option>',
@@ -135,7 +136,8 @@ SPECS = [
         'search_set': 'Crown Zenith',
         'source_groups': '(?:17688|17689)',
         'heroes': [('478101', 'Arceus VSTAR GG70/GG70'), ('478098', 'Radiant Charizard 020/159'), ('478103', 'Pikachu 160/159')],
-        'chase': ['478101', '478098', '478103'],
+        'chase': ['478100', '477057', '478101', '478099', '478097', '477060', '478027', '478077', '477061', '478067'],
+        'chase_source': '22 Nov 2026 Raw market guide, highest first. Radiant Charizard and Pikachu 160/159, the previous #2 and #3, are outside the top 10, so this band is ranked purely by price.',
         'gallery_js': '"galarian":c=>String(c.number).startsWith(\'GG\'),\n  "secret":c=>parseInt(c.number,10)>159',
         'labels_js': '{"all": "All 230 cards", "top20": "Top 20 by Raw", "galarian": "Galarian Gallery", "secret": "Secret rares"}',
         'options': '<option value="all">All 230 cards</option><option value="top20">Top 20 by Raw</option><option value="galarian">Galarian Gallery</option><option value="secret">Secret rares</option>',
@@ -158,7 +160,8 @@ SPECS = [
         'search_set': 'SWSH08: Fusion Strike',
         'source_groups': '2906',
         'heroes': [('253266', 'Gengar VMAX 271/264'), ('253177', 'Mew VMAX 269/264'), ('253265', 'Espeon VMAX 270/264')],
-        'chase': ['253266', '253177', '253265'],
+        'chase': ['253266', '253177', '253265', '253147', '253176', '253138', '253146', '253371', '253155', '253171'],
+        'chase_source': '22 Nov 2026 Raw market guide, highest first. The previous #1 to #3 remain in the top 10 and keep those ranks. #4 to #10 are the next guide prices.',
         'gallery_js': '"secret":c=>parseInt(c.number,10)>264',
         'labels_js': '{"all": "All 284 cards", "top20": "Top 20 by Raw", "secret": "Secret rares"}',
         'options': '<option value="all">All 284 cards</option><option value="top20">Top 20 by Raw</option><option value="secret">Secret rares</option>',
@@ -265,7 +268,7 @@ function page(){{
   </div>
   <div id="{index}-summary" aria-live="polite"><p class="set-status">Loading the latest Raw guides…</p></div>
   <div class="shared-periods" role="group" aria-label="History window">${{['7D','30D','All'].map(p=>`<button data-set-period="${{p}}" aria-pressed="${{p===period}}">${{p==='All'?'All history':p}}</button>`).join('')}}</div>
-  <div id="{index}-chart"></div>
+  <div class="set-chart" id="{index}-chart"></div>
   <details class="set-method">
    <summary>How the chart works</summary>
    <p>The index adds the Raw market guide for one of each of the {spec['count']} English base printings and sets that total to 100 on {spec['baseline_text']}, the set’s English launch day. The index stays at — until a complete launch-day set of guides is available, because the dated guides in this snapshot do not include one. A day needs every price in the set. Missing dates stay as gaps.</p>
@@ -277,7 +280,7 @@ function page(){{
   <div class="set-tools">
    <label>Find a card<input type="search" id="set-search" placeholder="Name or card number" autocomplete="off"></label>
    <label>Collection<select id="set-collection">{spec['options']}</select></label>
-   <label>Sort<select id="set-sort"><option value="default">Card number</option><option value="price">Raw price: high to low</option><option value="number">Card number</option><option value="name">Name</option></select></label>
+   <label>Sort<select id="set-sort"><option value="default">Chase cards, then number</option><option value="price">Raw price: high to low</option><option value="number">Card number</option><option value="name">Name</option></select></label>
   </div>
   <p class="set-chart-note" id="set-ranking-note" hidden></p>
   <div class="set-grid" id="set-grid"></div>
@@ -358,11 +361,9 @@ function drawCards(){{
   total+=focus[group].length;
   count+=cards.length;
   if(!cards.length)return '';
-  if(sort==='name')cards.sort((a,b)=>a.name.localeCompare(b.name,undefined,{{numeric:true}}));
-  else if(sort==='price'||(sort==='default'&&group==='top20'))cards.sort((a,b)=>(E.latest(data,b.key)?.[1]||0)-(E.latest(data,a.key)?.[1]||0));
-  else cards.sort((a,b)=>a.number.localeCompare(b.number,undefined,{{numeric:true}}));
-  return `<h3 class="set-group-title">${{galleryLabels[group]}} <small>${{cards.length}} / ${{focus[group].length}}</small></h3>`+
-   cards.map(c=>cardMarkup(c,group,group==='top20'?focus.top20.indexOf(c)+1:null)).join('');
+  const ordered=Factory.sortCards(cards,sort,group,key=>E.latest(data,key),Factory.chaseRankMap(chaseRoster));
+  return `<h3 class="set-group-title">${{galleryLabels[group]}} <small>${{ordered.length}} / ${{focus[group].length}}</small></h3>`+
+   ordered.map(c=>cardMarkup(c,group,group==='top20'?focus.top20.indexOf(c)+1:null)).join('');
  }}).join('');
  document.getElementById('set-count').textContent=`${{count}} of ${{total}} cards`;
  const note=document.getElementById('set-ranking-note');note.hidden=collection!=='top20';
@@ -935,7 +936,7 @@ def main():
         write_json(ROOT / 'data/market-rosters' / f'{index}.json', {
             'schemaVersion': 1,
             'index': index,
-            'chase_source': 'set-trackers brief 22 Nov 2026, the three named heroes',
+            'chase_source': spec['chase_source'],
             'sourceList': f'TCGCSV {groups}. English base printing only (Holofoil, or Normal where that card has no Holofoil). Reverse Holofoil and {spec["_sealed"]} sealed products with no collector number are left out. Guides are the 21 Nov 2026 TCGCSV prices file. No launch-day archive was backfilled.',
             'cards': roster_cards,
         })
