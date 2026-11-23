@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "index": "fusion-strike",
-  "chase_source": "22 Nov 2026 Raw market guide, highest first. The previous #1 to #3 remain in the top 10 and keep those ranks. #4 to #10 are the next guide prices.",
+  "chase_source": "22 Nov 2026 Raw market guide, highest first. Ranked purely by price, so Espeon VMAX 270/264 is #2 and Mew VMAX 269/264 is #3.",
   "sourceList": "TCGCSV 2906 SWSH08: Fusion Strike. English base printing only (Holofoil, or Normal where that card has no Holofoil). Reverse Holofoil and 45 sealed products with no collector number are left out. Guides are the 21 Nov 2026 TCGCSV prices file. No launch-day archive was backfilled.",
   "cards": [
     {
@@ -2700,7 +2700,7 @@
       "language": "English",
       "printing": "Holofoil",
       "image": "assets/fusion-strike/253177.jpg",
-      "chase_rank": 2
+      "chase_rank": 3
     },
     {
       "productId": "253265",
@@ -2711,7 +2711,7 @@
       "language": "English",
       "printing": "Holofoil",
       "image": "assets/tcg-modern/253265.jpg",
-      "chase_rank": 3
+      "chase_rank": 2
     },
     {
       "productId": "253266",
