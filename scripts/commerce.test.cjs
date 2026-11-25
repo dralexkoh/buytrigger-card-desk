@@ -3,7 +3,7 @@ const assert=require('node:assert/strict');
 const fs=require('node:fs');
 const path=require('node:path');
 const vm=require('node:vm');
-const {ebayLink,citeHref,isFresh,activeOffers,affiliateCard,cardSearchUrl,ebayCardBlock,cleanCard,capturePostType,visitorMarket,rewriteEbayHref,rewriteEbayHrefs,ebayPageNote,tcgplayerHref,tcgplayerBanner}=require('../commerce.js');
+const {ebayLink,citeHref,isFresh,activeOffers,affiliateCard,cardSearchUrl,ebayCardBlock,cleanCard,capturePostType,visitorMarket,rewriteEbayHref,rewriteEbayHrefs,ebayPageNote,tcgplayerHref,tcgplayerBanner,cardImageFor,underChasePicture,clearShopThumb,safeCardImage}=require('../commerce.js');
 const config={schemaVersion:1,placements:{home:false,drops:true},ebay:{enabled:true,campaignId:'5339239680'},amazonUk:{enabled:false,trackingId:'buytrigger-21'}};
 const now=Date.parse('2026-11-04T17:00:00Z');
 const offer={id:'ebay-123456789012',region:'UK',affiliateProvider:'ebay',productUrl:'https://www.ebay.co.uk/itm/123456789012',checkedAt:'2026-11-04T16:59:00Z',expiresAt:'2026-11-04T17:14:00Z',availability:'In stock'};
@@ -318,4 +318,50 @@ test('page load and a dialog rewrite every search href for UK, US and other visi
   assert.equal(hrefs.filter(href=>href.includes('customid=uvjp-raw')).length,2);
   assert.equal(hrefs.filter(href=>href.includes('customid=uvjp-psa10')).length,1);
  }
+});
+test('story and news shop blocks can show a local card thumbnail, and other surfaces stay as they are',()=>{
+ const card={name:'Umbreon ex',number:'161/131',set:'Prismatic Evolutions'};
+ const src='assets/prismatic-evolutions/610516.jpg';
+ const map={[card.name+'|'+card.number+'|'+card.set]:src};
+ assert.equal(cardImageFor(card,map),src);
+ assert.equal(cardImageFor(card,{}), '');
+ assert.equal(safeCardImage('https://tcgplayer-cdn.tcgplayer.com/product/610516.jpg'),'');
+ assert.equal(safeCardImage('assets/../commerce.js'),'');
+ assert.equal(cardImageFor({name:'Moltres',number:'30/110',set:'Legendary Collection'},map),'');
+ const plain=ebayCardBlock(card,config,{placement:'story-modern-card-prices-is-it-just-bad-copies',variant:'shop'});
+ assert.match(plain,/Umbreon ex · 161\/131 · Prismatic Evolutions/);
+ assert.doesNotMatch(plain,/shop-card|shop-has-card|<img(?![^>]*ebay-logo)/);
+ const pictured=ebayCardBlock(card,config,{placement:'story-modern-card-prices-is-it-just-bad-copies',variant:'shop',image:src});
+ assert.match(pictured,/class="shop-card"/);
+ assert.match(pictured,/src="assets\/prismatic-evolutions\/610516.jpg"/);
+ assert.match(pictured,/alt="Umbreon ex 161\/131 Prismatic Evolutions"/);
+ assert.match(pictured,/width="200"/);
+ assert.match(pictured,/height="279"/);
+ assert.match(pictured,/loading="lazy"/);
+ assert.match(pictured,/shop-has-card/);
+ assert.equal((pictured.match(/customid=story-modern-card-prices-is-it-just-bad-copies-raw/g)||[]).length,2);
+ const row=ebayCardBlock(card,config,{placement:'price',variant:'row',image:src});
+ assert.match(row,/class="ebay-bar ebay-bar-grey"/);
+ assert.doesNotMatch(row,/shop-card|610516/);
+ const index=ebayCardBlock(card,config,{placement:'index',variant:'shop'});
+ assert.doesNotMatch(index,/shop-card/);
+ const chaseImg={classList:{contains(){return false;}}};
+ const li={querySelector(){return chaseImg;}};
+ assert.equal(underChasePicture({closest(sel){return sel==='.story-chase li'?li:null;}}),true);
+ assert.equal(underChasePicture({closest(){return null;}}),false);
+ const copy={classList:{contains(name){return name==='shop-copy';}},children:[],get firstChild(){return this.children[0]||null;},remove(){const i=aside.children.indexOf(this);if(i>=0)aside.children.splice(i,1);}};
+ const label={parent:copy};
+ copy.children.push(label);
+ const aside={
+  classList:{classes:new Set(['shop-strip','shop-inline','shop-has-card']),remove(name){this.classes.delete(name);}},
+  children:[copy],
+  get firstChild(){return this.children[0]||null;},
+  insertBefore(node){if(node.parent){const i=node.parent.children.indexOf(node);if(i>=0)node.parent.children.splice(i,1);}node.parent=this;this.children.unshift(node);},
+  querySelector(sel){return sel==='.shop-copy'?copy:null;},
+ };
+ const img={closest(){return aside;},remove(){this.removed=true;}};
+ clearShopThumb(img);
+ assert.equal(img.removed,true);
+ assert.equal(aside.classList.classes.has('shop-has-card'),false);
+ assert.equal(aside.children.includes(label),true);
 });

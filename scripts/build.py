@@ -5,6 +5,7 @@ from datetime import datetime, timezone
 from email.utils import format_datetime
 from editorial_visuals import validate_editorial_visuals
 from chase_cards import render_chase_cards
+from card_images import card_images
 from ebay_cards import render_ebay_block, render_ebay_cards, check_rendered_news_placements, render_news_paragraphs, news_standfirst
 from ebay_citations import tag_tree
 from xml.sax.saxutils import escape
@@ -88,7 +89,9 @@ from drops_offers import validate_offers
 commerce=json.loads((P/'commerce.json').read_text())
 offers=json.loads((P/'drops-offers.json').read_text())
 validate_offers(offers,commerce)
-(D/'commerce-data.js').write_text('window.BT_COMMERCE='+json.dumps(commerce,ensure_ascii=False)+';\nwindow.BT_DROPS_OFFERS='+json.dumps(offers,ensure_ascii=False)+';\n')
+published=dict(commerce)
+published['cardImages']=card_images(P)
+(D/'commerce-data.js').write_text('window.BT_COMMERCE='+json.dumps(published,ensure_ascii=False)+';\nwindow.BT_DROPS_OFFERS='+json.dumps(offers,ensure_ascii=False)+';\n')
 e=json.loads((P/'editorial.json').read_text())
 validate_editorial_visuals(e,P)
 from build_tracking_catalogue import create_catalogue

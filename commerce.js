@@ -295,17 +295,46 @@ function ebayBar(card,raw,psa,line){
 function shopLabel(id){
   return [id.name,id.number,id.set].filter(Boolean).join(' · ');
 }
-function ebayShop(card,raw,psa,id){
+function safeCardImage(src){
+  const value=String(src||'');
+  return /^assets\/(?:[a-z0-9-]+\/)*[a-z0-9][a-z0-9._-]*\.(?:jpg|jpeg|png|webp)$/.test(value)&&!value.includes('..')?value:'';
+}
+function cardImageKey(card){
+  const id=cleanCard(card);
+  return id?id.name+'|'+id.number+'|'+id.set:'';
+}
+function cardImageFor(card,map){
+  if(!map||typeof map!=='object')return '';
+  return safeCardImage(map[cardImageKey(card)]);
+}
+function underChasePicture(el){
+  const li=el?.closest?.('.story-chase li');
+  if(!li?.querySelector)return false;
+  const img=li.querySelector('img');
+  return !!img&&!img.classList?.contains('shop-card');
+}
+function clearShopThumb(img){
+  const aside=img?.closest?.('aside');
+  const copy=aside?.querySelector?.('.shop-copy');
+  if(copy&&aside){while(copy.firstChild)aside.insertBefore(copy.firstChild,copy);copy.remove();}
+  aside?.classList?.remove('shop-has-card');
+  img?.remove?.();
+}
+function ebayShop(card,raw,psa,id,image){
   const label=shopLabel(id);
   const line='eBay search (UK or US site depending on your location). Results, seller prices and availability vary.';
-  return `<aside class="shop-strip shop-inline" aria-label="Buy on eBay"><p class="shop-id">${esc(label)}</p>${ebayBar(id,raw,psa,false)}<p class="shop-meta"><span class="shop-affil">Affiliate link</span><span class="shop-explain">${esc(line)}</span></p></aside>`;
+  const src=safeCardImage(image);
+  const alt=[id.name,id.number,id.set].filter(Boolean).join(' ');
+  const thumb=src?`<img class="shop-card" src="${esc(src)}" alt="${esc(alt)}" width="200" height="279" loading="lazy" decoding="async">`:'';
+  const open=thumb?`<aside class="shop-strip shop-inline shop-has-card" aria-label="Buy on eBay">${thumb}<div class="shop-copy">`:'<aside class="shop-strip shop-inline" aria-label="Buy on eBay">';
+  return `${open}<p class="shop-id">${esc(label)}</p>${ebayBar(id,raw,psa,false)}<p class="shop-meta"><span class="shop-affil">Affiliate link</span><span class="shop-explain">${esc(line)}</span></p>${thumb?'</div></aside>':'</aside>'}`;
 }
 function ebayCardBlock(card,config,options={}){
   const id=cleanCard(card);
   const raw=forVisitor(cardSearchUrl(card,config,options.placement,'raw'));
   const psa=forVisitor(cardSearchUrl(card,config,options.placement,'psa10'));
   if(!id||!raw||!psa)return '';
-  if(options.variant==='shop'||options.detail)return ebayShop(card,raw,psa,id);
+  if(options.variant==='shop'||options.detail)return ebayShop(card,raw,psa,id,options.image);
   return ebayBar(id,raw,psa,false);
 }
 function ebayPageNote(){return `<div class="ebay-footnote"><p><strong>About the eBay links.</strong> ${PRICE_NOTE} “Check price” is a separate affiliate link.</p></div>`;}
@@ -332,7 +361,7 @@ function tcgplayerBanner(config){
   if(!url)return '';
   return `<aside class="tcgplayer-banner" aria-label="TCGplayer affiliate advertisement"><p class="tcgplayer-banner-label">Advertisement · affiliate link</p><div class="tcgplayer-banner-body"><p class="tcgplayer-brand">${tcgplayerMark()}<span>TCGplayer</span></p><div class="tcgplayer-banner-copy"><h2>Find your next Pokémon single.</h2><p>Explore the TCGplayer marketplace.</p></div><a class="btn black" href="${esc(url)}" target="_blank" rel="sponsored nofollow noopener">Shop Pokémon on TCGplayer</a></div><p class="tcgplayer-banner-disclosure">We may earn a commission from a purchase through this link.</p></aside>`;
 }
-const api={ebayLink,citeHref,tagCitations,isFresh,activeOffers,affiliateCard,disclosure,createPlacementTracker,cleanCard,cardSearchUrl,ebayCardBlock,ebayPageNote,ebayListNote,capturePostType,stampEbayCustomIds,visitorMarket,rewriteEbayHref,rewriteEbayHrefs,tcgplayerHref,tcgplayerBanner};
+const api={ebayLink,citeHref,tagCitations,isFresh,activeOffers,affiliateCard,disclosure,createPlacementTracker,cleanCard,cardSearchUrl,ebayCardBlock,ebayPageNote,ebayListNote,capturePostType,stampEbayCustomIds,visitorMarket,rewriteEbayHref,rewriteEbayHrefs,tcgplayerHref,tcgplayerBanner,cardImageFor,underChasePicture,clearShopThumb,safeCardImage};
 if(typeof module==='object'&&module.exports)module.exports=api;
 if(root)root.BTCommerce=api;
 if(!root?.document)return;
@@ -383,14 +412,24 @@ function mountCardSlots(){
   const config=root.BT_COMMERCE;if(!config)return;
   for(const el of doc.querySelectorAll('[data-ebay-card]')){
     if(el.dataset.ebayReady)continue;
-    el.innerHTML=ebayCardBlock({
+    const card={
       name:el.getAttribute('data-ebay-name'),
       number:el.getAttribute('data-ebay-number'),
       set:el.getAttribute('data-ebay-set')
-    },config,{
+    };
+    const variant=el.getAttribute('data-ebay-detail')==='tile'?'row':'shop';
+    const image=variant==='shop'&&!underChasePicture(el)?cardImageFor(card,config.cardImages):'';
+    el.innerHTML=ebayCardBlock(card,config,{
       placement:el.getAttribute('data-ebay-placement')||'',
-      variant:el.getAttribute('data-ebay-detail')==='tile'?'row':'shop'
+      variant,
+      image
     });
+    const thumb=el.querySelector('img.shop-card');
+    if(thumb){
+      const drop=()=>clearShopThumb(thumb);
+      thumb.addEventListener('error',drop);
+      if(thumb.complete&&thumb.naturalWidth===0)drop();
+    }
     el.dataset.ebayReady='1';
   }
   const grid=doc.querySelector('#set-grid');
