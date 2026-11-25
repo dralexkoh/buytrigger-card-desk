@@ -43,6 +43,16 @@
  .feature-reference .shop-inline img.ebay-logo,.article-body .shop-inline img.ebay-logo,.shop-inline img.ebay-logo{height:16px!important;max-height:16px!important}
 }
 
+/* Story and news shop blocks. A local thumbnail sits beside the label. Price rows do not use it. */
+.shop-inline.shop-has-card{flex-direction:row;align-items:flex-start;gap:12px;max-width:100%}
+.shop-inline.shop-has-card .shop-copy{flex:1 1 auto;min-width:0;max-width:100%}
+.shop-inline.shop-has-card .ebay-bar{max-width:100%;min-width:0}
+.shop-inline.shop-has-card img.shop-card{box-sizing:border-box;display:block;width:76px!important;max-width:76px!important;height:auto!important;max-height:none!important;flex:0 0 76px;object-fit:contain;background:#fff;border:1px solid #deded9;border-radius:3px}
+@media(max-width:720px){
+ .shop-inline.shop-has-card{gap:10px}
+ .shop-inline.shop-has-card img.shop-card{width:64px!important;max-width:64px!important;flex-basis:64px}
+}
+
 /* Homepage TCGplayer affiliate card. Swap TCGPLAYER_LOGO in commerce.js for the official file. */
 .editorial-page .tcgplayer-banner-wrap{padding-top:0;padding-bottom:28px}
 .tcgplayer-banner{background:var(--yellow,#f5d331);color:var(--ink,#171719);border:1px solid #171719;border-radius:7px;padding:10px 16px 8px}
