@@ -1,0 +1,210 @@
+{
+  "reviewer": "Vault Newsroom",
+  "review_date": "2026-11-26",
+  "rights_basis": "Official English card scans from The Pokémon Company (pokemon.com static card assets), used unchanged for editorial identification of the nine English Mega Hyper Rares named in PSA's 25 Nov 2026 article, composed on the owner-locked BuyTrigger.Cards brand canvas. No generated or redrawn franchise characters. No third-party slab photos.",
+  "credit_line": "Card images: The Pokémon Company / pokemon.com. Graphic: BuyTrigger.Cards",
+  "crops_checked": [
+    "full-size 1600x900",
+    "390px phone width",
+    "rail thumbnail 72x64"
+  ],
+  "generation_prompt": null,
+  "tool": "Pillow composition (/workspace/nr20261126-work/compose_and_apply.py, helpers /workspace/nr1118b-work/compose_heroes.py)",
+  "reference_files": [],
+  "outputs": [
+    {
+      "path": "assets/newsroom-20261126/psa-stops-grading-english-mega-hyper-rares-hero.webp",
+      "sha256": "787a1ced2a0038308bd5ca295acaa22028dcf59913ee666f4b14ca387442a8ea",
+      "size_px": [
+        1600,
+        900
+      ],
+      "class": "permitted-media + brand-asset composition",
+      "inputs": [
+        {
+          "path": "/workspace/nr20261126-work/official-src/ME01_EN_187.png",
+          "source_url": "https://assets.pokemon.com/static-assets/content-assets/cms2/img/cards/web/ME01/ME01_EN_187.png",
+          "sha256": "6e8470dc3512acab5921df999038b7428b170a7b8a22196749b60f11e9b2878f",
+          "class": "permitted-media (official Pokémon Company card scan, pokemon.com)"
+        },
+        {
+          "path": "/workspace/nr20261126-work/official-src/ME01_EN_188.png",
+          "source_url": "https://assets.pokemon.com/static-assets/content-assets/cms2/img/cards/web/ME01/ME01_EN_188.png",
+          "sha256": "2d6bff80a39a94e2e3c57378d4ac04f155a08c9fb6f55d31c84bbaf478814547",
+          "class": "permitted-media (official Pokémon Company card scan, pokemon.com)"
+        },
+        {
+          "path": "/workspace/nr20261126-work/official-src/ME02_EN_130.png",
+          "source_url": "https://assets.pokemon.com/static-assets/content-assets/cms2/img/cards/web/ME02/ME02_EN_130.png",
+          "sha256": "dc2a739f37659610de354537326a7f014710d6b170518d8831c1ba994dddff3f",
+          "class": "permitted-media (official Pokémon Company card scan, pokemon.com)"
+        },
+        {
+          "path": "/workspace/nr20261126-work/official-src/ME2PT5_EN_294.png",
+          "source_url": "https://assets.pokemon.com/static-assets/content-assets/cms2/img/cards/web/ME2PT5/ME2PT5_EN_294.png",
+          "sha256": "843def224843b920ba8b0747166507f060434fdea872f6e7f9afe425f23cb22a",
+          "class": "permitted-media (official Pokémon Company card scan, pokemon.com)"
+        },
+        {
+          "path": "/workspace/nr20261126-work/official-src/ME2PT5_EN_295.png",
+          "source_url": "https://assets.pokemon.com/static-assets/content-assets/cms2/img/cards/web/ME2PT5/ME2PT5_EN_295.png",
+          "sha256": "ba7d218b6a4d251b22a6e885dd309000aad3d79e8ca679079fe7ce6dab343b55",
+          "class": "permitted-media (official Pokémon Company card scan, pokemon.com)"
+        },
+        {
+          "path": "/workspace/nr20261126-work/official-src/ME03_EN_124.png",
+          "source_url": "https://assets.pokemon.com/static-assets/content-assets/cms2/img/cards/web/ME03/ME03_EN_124.png",
+          "sha256": "1bb23b48f5cea902d118f83c5252b0b8178a66e1b620439d46fc39f09527a2dd",
+          "class": "permitted-media (official Pokémon Company card scan, pokemon.com)"
+        },
+        {
+          "path": "/workspace/nr20261126-work/official-src/ME04_EN_122.png",
+          "source_url": "https://assets.pokemon.com/static-assets/content-assets/cms2/img/cards/web/ME04/ME04_EN_122.png",
+          "sha256": "1f093c32a628cff067b239626bb95ac221a7509ca622c924715ab8c36cb744f3",
+          "class": "permitted-media (official Pokémon Company card scan, pokemon.com)"
+        },
+        {
+          "path": "/workspace/nr20261126-work/official-src/ME05_EN_120.png",
+          "source_url": "https://assets.pokemon.com/static-assets/content-assets/cms2/img/cards/web/ME05/ME05_EN_120.png",
+          "sha256": "aff1f7b90192b51811a224bb95d1cbad0310b9f75f3e2e104f21109bcd8c0971",
+          "class": "permitted-media (official Pokémon Company card scan, pokemon.com)"
+        },
+        {
+          "path": "/workspace/nr20261126-work/official-src/ME06_EN_141.png",
+          "source_url": "https://assets.pokemon.com/static-assets/content-assets/cms2/img/cards/web/ME06/ME06_EN_141.png",
+          "sha256": "2e4864813901230c403ed9170c919a5462701436cf544035ad7e1033f76788ac",
+          "class": "permitted-media (official Pokémon Company card scan, pokemon.com)"
+        },
+        {
+          "path": "/home/box/private/buytrigger/full/BuyTrigger-Cards-Grok-Handover-2026-11-10/workspace/brand/buytrigger-cards/skill/assets/buytrigger-badge-gengar-vaporeon-web.png",
+          "source_url": "owner brand asset",
+          "sha256": "303e7a82ef8ebe755375d864029ab623c55b6272c44cec15462539cc5c25a4fa",
+          "class": "brand-asset"
+        },
+        {
+          "path": "/workspace/nr20261126/assets/publisher-logo-600x60.png",
+          "source_url": "repo brand asset (wordmark)",
+          "sha256": "ae4ac346e762dfc13bb5a5b11211a6fc9d05f6117a3588e55a2b8ea2283d6aac",
+          "class": "brand-asset"
+        }
+      ]
+    },
+    {
+      "path": "assets/newsroom-20261126/me01-187-mega-gardevoir-ex.webp",
+      "sha256": "34b5fb6862deef9dbb7aba837c5f919bfaf68beee0291feb1613e4180799a5f5",
+      "class": "permitted-media (official Pokémon Company card scan, pokemon.com)",
+      "inputs": [
+        {
+          "path": "/workspace/nr20261126-work/official-src/ME01_EN_187.png",
+          "source_url": "https://assets.pokemon.com/static-assets/content-assets/cms2/img/cards/web/ME01/ME01_EN_187.png",
+          "sha256": "6e8470dc3512acab5921df999038b7428b170a7b8a22196749b60f11e9b2878f",
+          "class": "permitted-media"
+        }
+      ]
+    },
+    {
+      "path": "assets/newsroom-20261126/me01-188-mega-lucario-ex.webp",
+      "sha256": "6a58d655e86b028275d11932a3074ef20e768c653e342972159237441a957acc",
+      "class": "permitted-media (official Pokémon Company card scan, pokemon.com)",
+      "inputs": [
+        {
+          "path": "/workspace/nr20261126-work/official-src/ME01_EN_188.png",
+          "source_url": "https://assets.pokemon.com/static-assets/content-assets/cms2/img/cards/web/ME01/ME01_EN_188.png",
+          "sha256": "2d6bff80a39a94e2e3c57378d4ac04f155a08c9fb6f55d31c84bbaf478814547",
+          "class": "permitted-media"
+        }
+      ]
+    },
+    {
+      "path": "assets/newsroom-20261126/me02-130-mega-charizard-x-ex.webp",
+      "sha256": "d32febeb03a165d9a5ca33ecd937a9c11cca6ae794e026b02b6a9dcd93f6cdfd",
+      "class": "permitted-media (official Pokémon Company card scan, pokemon.com)",
+      "inputs": [
+        {
+          "path": "/workspace/nr20261126-work/official-src/ME02_EN_130.png",
+          "source_url": "https://assets.pokemon.com/static-assets/content-assets/cms2/img/cards/web/ME02/ME02_EN_130.png",
+          "sha256": "dc2a739f37659610de354537326a7f014710d6b170518d8831c1ba994dddff3f",
+          "class": "permitted-media"
+        }
+      ]
+    },
+    {
+      "path": "assets/newsroom-20261126/me2pt5-294-mega-charizard-y-ex.webp",
+      "sha256": "32f4d0710b693107cb39779144a1e8b4b692c4557bbd81959ab17b2bdab35a63",
+      "class": "permitted-media (official Pokémon Company card scan, pokemon.com)",
+      "inputs": [
+        {
+          "path": "/workspace/nr20261126-work/official-src/ME2PT5_EN_294.png",
+          "source_url": "https://assets.pokemon.com/static-assets/content-assets/cms2/img/cards/web/ME2PT5/ME2PT5_EN_294.png",
+          "sha256": "843def224843b920ba8b0747166507f060434fdea872f6e7f9afe425f23cb22a",
+          "class": "permitted-media"
+        }
+      ]
+    },
+    {
+      "path": "assets/newsroom-20261126/me2pt5-295-mega-dragonite-ex.webp",
+      "sha256": "7db87a3e051b738b63b2e25447b129f868b85d790b3a0bbb565e6879997d0ced",
+      "class": "permitted-media (official Pokémon Company card scan, pokemon.com)",
+      "inputs": [
+        {
+          "path": "/workspace/nr20261126-work/official-src/ME2PT5_EN_295.png",
+          "source_url": "https://assets.pokemon.com/static-assets/content-assets/cms2/img/cards/web/ME2PT5/ME2PT5_EN_295.png",
+          "sha256": "ba7d218b6a4d251b22a6e885dd309000aad3d79e8ca679079fe7ce6dab343b55",
+          "class": "permitted-media"
+        }
+      ]
+    },
+    {
+      "path": "assets/newsroom-20261126/me03-124-mega-zygarde-ex.webp",
+      "sha256": "f208f6670ce24a4e016f1a9bbffb8d92b7933a9f564d9cb120285396fed1a919",
+      "class": "permitted-media (official Pokémon Company card scan, pokemon.com)",
+      "inputs": [
+        {
+          "path": "/workspace/nr20261126-work/official-src/ME03_EN_124.png",
+          "source_url": "https://assets.pokemon.com/static-assets/content-assets/cms2/img/cards/web/ME03/ME03_EN_124.png",
+          "sha256": "1bb23b48f5cea902d118f83c5252b0b8178a66e1b620439d46fc39f09527a2dd",
+          "class": "permitted-media"
+        }
+      ]
+    },
+    {
+      "path": "assets/newsroom-20261126/me04-122-mega-greninja-ex.webp",
+      "sha256": "ed5861a87f79cf540f687ce8cf4a39897d7d3cb88cda7a7c1582652078d03bb0",
+      "class": "permitted-media (official Pokémon Company card scan, pokemon.com)",
+      "inputs": [
+        {
+          "path": "/workspace/nr20261126-work/official-src/ME04_EN_122.png",
+          "source_url": "https://assets.pokemon.com/static-assets/content-assets/cms2/img/cards/web/ME04/ME04_EN_122.png",
+          "sha256": "1f093c32a628cff067b239626bb95ac221a7509ca622c924715ab8c36cb744f3",
+          "class": "permitted-media"
+        }
+      ]
+    },
+    {
+      "path": "assets/newsroom-20261126/me05-120-mega-darkrai-ex.webp",
+      "sha256": "3bb670986a311b616bca06c8d88c60953fdbf1c9716bf3c2bd7bd6ed130a9754",
+      "class": "permitted-media (official Pokémon Company card scan, pokemon.com)",
+      "inputs": [
+        {
+          "path": "/workspace/nr20261126-work/official-src/ME05_EN_120.png",
+          "source_url": "https://assets.pokemon.com/static-assets/content-assets/cms2/img/cards/web/ME05/ME05_EN_120.png",
+          "sha256": "aff1f7b90192b51811a224bb95d1cbad0310b9f75f3e2e104f21109bcd8c0971",
+          "class": "permitted-media"
+        }
+      ]
+    },
+    {
+      "path": "assets/newsroom-20261126/me06-141-mega-rayquaza-ex.webp",
+      "sha256": "f03d59cfe544cf67b334f531d81a74c4706bdf742c3914c76951062d2957c156",
+      "class": "permitted-media (official Pokémon Company card scan, pokemon.com)",
+      "inputs": [
+        {
+          "path": "/workspace/nr20261126-work/official-src/ME06_EN_141.png",
+          "source_url": "https://assets.pokemon.com/static-assets/content-assets/cms2/img/cards/web/ME06/ME06_EN_141.png",
+          "sha256": "2e4864813901230c403ed9170c919a5462701436cf544035ad7e1033f76788ac",
+          "class": "permitted-media"
+        }
+      ]
+    }
+  ]
+}

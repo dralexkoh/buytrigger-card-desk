@@ -2454,6 +2454,78 @@
   ],
   "wire": [
     {
+      "id": "psa-stops-grading-english-mega-hyper-rares-2026-11-26",
+      "eventKey": "psa-stops-grading-english-mega-hyper-rares-2026-11-25",
+      "date": "2026-11-25",
+      "displayDate": "25 Nov · Official",
+      "category": "Grading",
+      "kind": "Official announcement",
+      "title": "PSA Stops Grading English Gold MEGAS",
+      "summary": "PSA will no longer accept English-language Mega Hyper Rare Pokémon cards for grading, effective immediately.\n\nIt said so in its own article on 25 November 2026. The change covers current and future English Mega Hyper Rares, unless PSA says otherwise.\n\nPSA said a manufacturing issue “can cause the gold foil on the front of these cards to deteriorate over time, leaving visible patches or fading.” Severity varies widely, from no change at all to significant deterioration.\n\nPSA has seen this in raw cards and in binder-stored cards. It has also seen it in its own holders, and says the cause is in the card itself.\n\nJapanese-language versions were printed at a different facility with different techniques, and PSA says they are not affected.\n\nCards already submitted, or in transit, will be returned ungraded, with no service fee.\n\nExisting PSA grades will not be changed. A later Review or Reholder is judged on the card’s condition at that time.\n\nThe PSA Guarantee covers errors in authentication and grading. It does not cover manufacturer defects that degrade the card after it is assessed and holdered.\n\nWhy it matters: a grade already on the slab still stands. New submissions of these nine cards will come back ungraded.\n\nPSA has not confirmed anything about other languages, or about other graders such as Beckett (BGS).\n\nThe numbers\n\nAs of 25 November 2026. Source: PSA, “PSA to Stop Grading English-Language Mega Hyper Rare Pokémon Cards”, 25 November 2026.\n\nAffected English-language Mega Hyper Rares, listed by PSA:\n\nMega Evolution: 187/132 Mega Gardevoir ex; 188/132 Mega Lucario ex.\n\nPhantasmal Flames: 130/094 Mega Charizard X ex.\n\nAscended Heroes: 294/217 Mega Charizard Y ex; 295/217 Mega Dragonite ex.\n\nPerfect Order: 124/088 Mega Zygarde ex.\n\nChaos Rising: 122/086 Mega Greninja ex.\n\nPitch Black: 120/084 Mega Darkrai ex.\n\nDelta Reign: 141/103 Mega Rayquaza ex.\n\nJapanese-language versions: printed at a different facility, not affected.\n\nOther languages, and other graders including BGS: not confirmed by PSA.",
+      "sourceLabel": "PSA (psacard.com)",
+      "url": "https://www.psacard.com/articles/articleview/15794/psa-stops-grading-english-mega-hyper-rare-pokemon-cards",
+      "checkedAt": "2026-11-26T08:10:00Z",
+      "sourcePublishedAt": "2026-11-25",
+      "visual": "source-media",
+      "image": "assets/newsroom-20261126/psa-stops-grading-english-mega-hyper-rares-hero.webp",
+      "imageAlt": "Curated graphic of the nine official English Mega Hyper Rare Pokémon cards named by PSA: Mega Gardevoir ex, Mega Lucario ex, Mega Charizard X ex, Mega Charizard Y ex, Mega Dragonite ex, Mega Zygarde ex, Mega Greninja ex, Mega Darkrai ex and Mega Rayquaza ex. Official card images from pokemon.com.",
+      "imageCredit": "Card images: The Pokémon Company / pokemon.com. Graphic: BuyTrigger.Cards",
+      "imageSourceUrl": "https://www.pokemon.com/",
+      "author": {
+        "id": "zara-chen",
+        "name": "Zara Chen",
+        "type": "named_ai_correspondent",
+        "label": "Correspondent",
+        "beat": "Global news desk"
+      },
+      "newsRevision": 1,
+      "chase_cards": [
+        {
+          "name": "Mega Gardevoir ex",
+          "image": "assets/newsroom-20261126/me01-187-mega-gardevoir-ex.webp",
+          "alt": "Official English Mega Evolution Mega Gardevoir ex 187/132 Mega Hyper Rare card image from pokemon.com.",
+          "set": "Mega Evolution",
+          "number": "187/132"
+        },
+        {
+          "name": "Mega Lucario ex",
+          "image": "assets/newsroom-20261126/me01-188-mega-lucario-ex.webp",
+          "alt": "Official English Mega Evolution Mega Lucario ex 188/132 Mega Hyper Rare card image from pokemon.com.",
+          "set": "Mega Evolution",
+          "number": "188/132"
+        },
+        {
+          "name": "Mega Charizard X ex",
+          "image": "assets/newsroom-20261126/me02-130-mega-charizard-x-ex.webp",
+          "alt": "Official English Phantasmal Flames Mega Charizard X ex 130/094 Mega Hyper Rare card image from pokemon.com.",
+          "set": "Phantasmal Flames",
+          "number": "130/094"
+        },
+        {
+          "name": "Mega Charizard Y ex",
+          "image": "assets/newsroom-20261126/me2pt5-294-mega-charizard-y-ex.webp",
+          "alt": "Official English Ascended Heroes Mega Charizard Y ex 294/217 Mega Hyper Rare card image from pokemon.com.",
+          "set": "Ascended Heroes",
+          "number": "294/217"
+        },
+        {
+          "name": "Mega Dragonite ex",
+          "image": "assets/newsroom-20261126/me2pt5-295-mega-dragonite-ex.webp",
+          "alt": "Official English Ascended Heroes Mega Dragonite ex 295/217 Mega Hyper Rare card image from pokemon.com.",
+          "set": "Ascended Heroes",
+          "number": "295/217"
+        }
+      ],
+      "chase_cards_credit": "Card images: The Pokémon Company / pokemon.com",
+      "ebay_cards": [
+        {
+          "name": "Mega Rayquaza ex",
+          "number": "141/103",
+          "set": "Delta Reign"
+        }
+      ]
+    },
+    {
       "id": "delta-reign-pokemon-center-etb-halved-since-launch-2026-11-21",
       "eventKey": "delta-reign-pokemon-center-etb-since-launch-2026-11-21",
       "date": "2026-11-21",
