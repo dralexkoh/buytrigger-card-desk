@@ -346,18 +346,20 @@ function tcgplayerMark(){
   if(src)return `<img class="tcgplayer-mark" src="${esc(src)}" alt="" width="20" height="20">`;
   return `<svg class="tcgplayer-mark" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M6 8h12l-1.2 12H7.2L6 8zM9 8V6.8a3 3 0 0 1 6 0V8"/></svg>`;
 }
-function tcgplayerHref(config){
+function tcgplayerHref(config,slot){
   const raw=String(config?.tcgplayerImpactUrl??'').trim();
   if(!raw)return '';
   let u;
   try{u=new URL(raw);}catch(_){return '';}
   if(u.protocol!=='https:'||!u.host||u.username||u.password)return '';
-  u.searchParams.set('subId1','banner');
-  u.searchParams.set('subId2','home');
+  const sub1=String(slot?.subId1||'banner').trim()||'banner';
+  const sub2=String(slot?.subId2||'home').trim()||'home';
+  u.searchParams.set('subId1',sub1);
+  u.searchParams.set('subId2',sub2);
   return u.href;
 }
-function tcgplayerBanner(config){
-  const url=tcgplayerHref(config);
+function tcgplayerBanner(config,slot){
+  const url=tcgplayerHref(config,slot);
   if(!url)return '';
   return `<aside class="tcgplayer-banner" aria-label="TCGplayer affiliate advertisement"><p class="tcgplayer-banner-label">Advertisement · affiliate link</p><div class="tcgplayer-banner-body"><p class="tcgplayer-brand">${tcgplayerMark()}<span>TCGplayer</span></p><div class="tcgplayer-banner-copy"><h2>Find your next Pokémon single.</h2><p>Explore the TCGplayer marketplace.</p></div><a class="btn black" href="${esc(url)}" target="_blank" rel="sponsored nofollow noopener">Shop Pokémon on TCGplayer</a></div><p class="tcgplayer-banner-disclosure">We may earn a commission from a purchase through this link.</p></aside>`;
 }
@@ -390,12 +392,25 @@ function mountPlacement(page){
   else{const cards=[...main.querySelectorAll('#drop-list > .drop-card')],anchor=cards[Math.min(2,cards.length-1)];if(anchor)anchor.after(node);else main.append(node);}
 }
 function mountTcgplayerBanner(){
-  if(doc.body?.dataset?.page!=='home'||doc.getElementById('tcgplayer-home-banner'))return;
-  const html=tcgplayerBanner(root.BT_COMMERCE);
-  if(!html)return;
-  const main=doc.querySelector('#main');if(!main)return;
-  const node=doc.createElement('div');node.id='tcgplayer-home-banner';node.className='section tcgplayer-banner-wrap';node.innerHTML=html;
-  main.append(node);
+  if(doc.body?.dataset?.page==='home'&&!doc.getElementById('tcgplayer-home-banner')){
+    const html=tcgplayerBanner(root.BT_COMMERCE);
+    if(html){
+      const main=doc.querySelector('#main');
+      if(main){
+        const node=doc.createElement('div');node.id='tcgplayer-home-banner';node.className='section tcgplayer-banner-wrap';node.innerHTML=html;
+        main.append(node);
+      }
+    }
+  }
+  for(const host of doc.querySelectorAll('[data-tcgplayer-banner]')){
+    if(host.dataset.tcgplayerReady)continue;
+    const html=tcgplayerBanner(root.BT_COMMERCE,{
+      subId1:host.getAttribute('data-tcgplayer-subid1')||'banner',
+      subId2:host.getAttribute('data-tcgplayer-subid2')||'black-friday-deals'
+    });
+    if(html)host.innerHTML=html;
+    host.dataset.tcgplayerReady='1';
+  }
 }
 function mount(){
   const main=doc.querySelector('#main'),page=doc.body.dataset.page;if(!main||!['home','drops'].includes(page))return;

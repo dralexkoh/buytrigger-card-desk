@@ -57,7 +57,7 @@ FEED_GUID_BASE='https://dralexkoh.github.io/buytrigger-card-desk/'
 BRAND='BuyTrigger.Cards';BYLINE='BuyTrigger Cards'
 if D.exists():shutil.rmtree(D)
 D.mkdir()
-FILES=['public-targets.js','public-targets.css','public-targets-config.json','shared-market-engine.js','shared-market.js','shared-market.css','shared-market-config.json','market-config.json','article-authors.js','article-features.css','commerce.js','commerce.css','refinement.css','index-refinement.css','card-art.js','homepage.css','typography.css','CNAME','analytics.js','analytics-config.json','index.html','tcg-modern-index.html','site.css','header.css','social.css','site.js','social.js','modern.css','modern.js','catalogue.js','editorial.js','market-engine.js','market-history.js','market-release.json','image-sources.json','market-sources.json','top-50.html','top50.css','top50.js','top50-data.js','top50-feature.js','top50-release.json','top50-sources.json','top50-image-sources.json','refresh-status.js','refresh-status.json']
+FILES=['public-targets.js','public-targets.css','public-targets-config.json','shared-market-engine.js','shared-market.js','shared-market.css','shared-market-config.json','market-config.json','article-authors.js','article-features.css','commerce.js','commerce.css','refinement.css','index-refinement.css','card-art.js','homepage.css','typography.css','CNAME','analytics.js','analytics-config.json','index.html','tcg-modern-index.html','site.css','header.css','social.css','site.js','black-friday-deals.js','social.js','modern.css','modern.js','catalogue.js','editorial.js','market-engine.js','market-history.js','market-release.json','image-sources.json','market-sources.json','top-50.html','top50.css','top50.js','top50-data.js','top50-feature.js','top50-release.json','top50-sources.json','top50-image-sources.json','refresh-status.js','refresh-status.json']
 FILES+=['bluechip-raw-archive.html','bluechip-engine.js','bluechip.js','bluechip.css','bluechip-release.json']
 FILES+=['bluechip-collection-data.js','bluechip-collection-sources.json']
 FILES+=['grading-calculator.js','grading-calculator.css']
@@ -237,7 +237,30 @@ main=soup.select_one('main');main.clear();main.append(BeautifulSoup(advertise_ma
 absolutize_document_nav(soup)
 folder=D/'advertise';folder.mkdir(parents=True);(folder/'index.html').write_text(str(soup))
 
-static_urls=[BASE,BASE+'grading-calculator.html',BASE+'undervalued.html',BASE+'undervalued-japanese.html',BASE+'market.html',BASE+'30th-anniversary-index.html',BASE+'delta-reign-index.html',BASE+'sv-151-index.html',BASE+'prismatic-evolutions-index.html',BASE+'paldean-fates-index.html',BASE+'crown-zenith-index.html',BASE+'fusion-strike-index.html',BASE+'drops.html',BASE+'tcg-modern-index.html',BASE+'top-50.html',BASE+'bluechip-raw-archive.html',BASE+'advertise/']
+# Deals: /deals/ hub and the TCGplayer Cyber Weekend page at /deals/black-friday/.
+import black_friday_deals as bf
+bf.write_js(D/'black-friday-deals.js',P)
+bf_description=bf.description(P)
+soup=BeautifulSoup((P/'index.html').read_text(),'html.parser');soup.body['data-route']=bf.ROUTE;soup.head.insert(0,soup.new_tag('base',href='../../'))
+soup.title.string=bf.TITLE+' · '+BRAND
+soup.select_one('link[rel=canonical]')['href']=bf.URL
+for key,val in [('og:title',bf.TITLE+' · '+BRAND),('og:description',bf_description),('og:url',bf.URL),('og:type','website')]:soup.select_one('meta[property="'+key+'"]')['content']=val
+soup.select_one('meta[name=description]')['content']=bf_description
+seo.apply_share_tags(soup,url=bf.URL,title=bf.TITLE,description=bf_description,image=BASE+bf.HERO,og_type='website')
+main=soup.select_one('main');main.clear();main.append(BeautifulSoup(bf.page_html(P),'html.parser'))
+absolutize_story_links(soup);absolutize_document_nav(soup)
+folder=D/'deals'/'black-friday';folder.mkdir(parents=True);(folder/'index.html').write_text(str(soup))
+hub_description='Seasonal Pokémon card promotions, with official terms, dates and our own dated price context.'
+soup=BeautifulSoup((P/'index.html').read_text(),'html.parser');soup.body['data-route']='deals';soup.head.insert(0,soup.new_tag('base',href='../'))
+soup.title.string='Deals · '+BRAND
+soup.select_one('link[rel=canonical]')['href']=BASE+'deals/'
+for key,val in [('og:title','Deals · '+BRAND),('og:description',hub_description),('og:url',BASE+'deals/'),('og:type','website')]:soup.select_one('meta[property="'+key+'"]')['content']=val
+soup.select_one('meta[name=description]')['content']=hub_description
+main=soup.select_one('main');main.clear();main.append(BeautifulSoup(bf.hub_html(),'html.parser'))
+absolutize_story_links(soup);absolutize_document_nav(soup)
+(D/'deals'/'index.html').write_text(str(soup))
+
+static_urls=[BASE,BASE+'grading-calculator.html',BASE+'undervalued.html',BASE+'undervalued-japanese.html',BASE+'market.html',BASE+'30th-anniversary-index.html',BASE+'delta-reign-index.html',BASE+'sv-151-index.html',BASE+'prismatic-evolutions-index.html',BASE+'paldean-fates-index.html',BASE+'crown-zenith-index.html',BASE+'fusion-strike-index.html',BASE+'drops.html',BASE+'tcg-modern-index.html',BASE+'top-50.html',BASE+'bluechip-raw-archive.html',BASE+'advertise/',BASE+'deals/',bf.URL]
 sitemap_entries=seo.collect_sitemap_entries(e,static_urls)
 sitemap_entries.append({'url':THIRTIETH_PRICE_URL,'lastmod':thirtieth_source_date(P)})
 sitemap_entries.append({'url':MODERN_PRICE_URL,'lastmod':modern_source_date(P)})

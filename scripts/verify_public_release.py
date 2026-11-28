@@ -16,7 +16,7 @@ NAMES += ['traffic-catalogue.json','tracking-catalogue.js']
 NAMES = list(dict.fromkeys(NAMES))
 NAMES += ['google794a81691b44d31d.html']
 
-NAMES += ['market.html','30th-anniversary-index.html','shared-market.js','shared-market-engine.js','shared-market.css','shared-market-config.json','assets/30th-mewtwo-151-128.jpg']
+NAMES += ['deals/black-friday/index.html','deals/index.html','black-friday-deals.js','market.html','30th-anniversary-index.html','shared-market.js','shared-market-engine.js','shared-market.css','shared-market-config.json','assets/30th-mewtwo-151-128.jpg']
 
 NAMES += ['bluechip-raw-archive.html','bluechip-engine.js','bluechip.js','bluechip.css','bluechip-release.json','bluechip-data.js']
 NAMES += ['bluechip-collection-data.js','bluechip-collection-sources.json']

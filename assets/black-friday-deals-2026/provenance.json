@@ -1,0 +1,84 @@
+{
+  "reviewer": "Vault Newsroom",
+  "review_date": "2026-11-26",
+  "rights_basis": "TCGplayer catalogue references (pack and exact card images, credited; card artwork \u00a9 Pok\u00e9mon), composed on the owner-locked BuyTrigger.Cards brand canvas. No generated or redrawn franchise characters. No prices, grades or dates are baked into the graphic.",
+  "credit_line": "Card and pack images: TCGplayer \u00b7 Card artwork \u00a9 Pok\u00e9mon \u00b7 Graphic: BuyTrigger.Cards",
+  "crops_checked": [
+    "full-size",
+    "390px phone width"
+  ],
+  "generation_prompt": null,
+  "tool": "Pillow composition (/workspace/bf-deals-work/compose_hero.py)",
+  "reference_files": [],
+  "outputs": [
+    {
+      "path": "assets/black-friday-deals-2026/hero-1600x900.webp",
+      "sha256": "6ebf763f86e7255892cea637a7d1440f6b297f18b3eb499f0bb703d8a374ac83",
+      "size_px": [
+        1600,
+        900
+      ],
+      "class": "permitted-media + brand-asset composition",
+      "inputs": [
+        {
+          "path": "/workspace/bf-deals-work/src/tcg-712099.jpg",
+          "source_url": "https://tcgplayer-cdn.tcgplayer.com/product/712099_in_1000x1000.jpg",
+          "sha256": "a01a302f16fa2747b73cdc0b0a992819aa734ffe38dd5b349ae38f0ae497fd0c",
+          "class": "permitted-media (TCGplayer catalogue reference)"
+        },
+        {
+          "path": "/workspace/bf-deals-work/src/tcg-728062.jpg",
+          "source_url": "https://tcgplayer-cdn.tcgplayer.com/product/728062_in_1000x1000.jpg",
+          "sha256": "63bec14d7f8cf3ceaf36645e6107b46023416f310ed9f45428a11e94375742a9",
+          "class": "permitted-media (TCGplayer catalogue reference)"
+        },
+        {
+          "path": "/workspace/bf-deals-work/src/tcg-517045.jpg",
+          "source_url": "https://tcgplayer-cdn.tcgplayer.com/product/517045_in_1000x1000.jpg",
+          "sha256": "49ab157be44087673a1e9aca4ab8b3bc91d5740519a73688ca92c035a813d11e",
+          "class": "permitted-media (TCGplayer catalogue reference)"
+        },
+        {
+          "path": "/home/box/private/buytrigger/full/BuyTrigger-Cards-Grok-Handover-2026-11-10/workspace/brand/buytrigger-cards/skill/assets/buytrigger-badge-gengar-vaporeon-web.png",
+          "sha256": "303e7a82ef8ebe755375d864029ab623c55b6272c44cec15462539cc5c25a4fa",
+          "class": "brand-asset"
+        },
+        {
+          "path": "/workspace/bf-deals-desk/assets/publisher-logo-600x60.png",
+          "sha256": "ae4ac346e762dfc13bb5a5b11211a6fc9d05f6117a3588e55a2b8ea2283d6aac",
+          "class": "brand-asset"
+        }
+      ]
+    }
+  ],
+  "inputs": [
+    {
+      "path": "/workspace/bf-deals-work/src/tcg-712099.jpg",
+      "source_url": "https://tcgplayer-cdn.tcgplayer.com/product/712099_in_1000x1000.jpg",
+      "sha256": "a01a302f16fa2747b73cdc0b0a992819aa734ffe38dd5b349ae38f0ae497fd0c",
+      "class": "permitted-media (TCGplayer catalogue reference)"
+    },
+    {
+      "path": "/workspace/bf-deals-work/src/tcg-728062.jpg",
+      "source_url": "https://tcgplayer-cdn.tcgplayer.com/product/728062_in_1000x1000.jpg",
+      "sha256": "63bec14d7f8cf3ceaf36645e6107b46023416f310ed9f45428a11e94375742a9",
+      "class": "permitted-media (TCGplayer catalogue reference)"
+    },
+    {
+      "path": "/workspace/bf-deals-work/src/tcg-517045.jpg",
+      "source_url": "https://tcgplayer-cdn.tcgplayer.com/product/517045_in_1000x1000.jpg",
+      "sha256": "49ab157be44087673a1e9aca4ab8b3bc91d5740519a73688ca92c035a813d11e",
+      "class": "permitted-media (TCGplayer catalogue reference)"
+    },
+    {
+      "path": "/home/box/private/buytrigger/full/BuyTrigger-Cards-Grok-Handover-2026-11-10/workspace/brand/buytrigger-cards/skill/assets/buytrigger-badge-gengar-vaporeon-web.png",
+      "sha256": "303e7a82ef8ebe755375d864029ab623c55b6272c44cec15462539cc5c25a4fa",
+      "class": "brand-asset"
+    },
+    {
+      "path": "/workspace/bf-deals-desk/assets/publisher-logo-600x60.png",
+      "sha256": "ae4ac346e762dfc13bb5a5b11211a6fc9d05f6117a3588e55a2b8ea2283d6aac",
+      "class": "brand-asset"
+    }
+  ]
+}

@@ -86,7 +86,7 @@ for f in d.rglob('*'):
    if not target.exists():fail.append(f'{f.relative_to(d)}: missing {v}')
   if not soup.title:fail.append(f'{f}: missing title')
   if f.name!='404.html':
-   relative=str(f.relative_to(d));route='' if relative=='index.html' else relative.removesuffix('index.html') if relative.startswith(('stories/','news/','prices/','advertise/')) else relative
+   relative=str(f.relative_to(d));route='' if relative=='index.html' else relative.removesuffix('index.html') if relative.startswith(('stories/','news/','prices/','advertise/','deals/')) else relative
    expected=PUBLIC_BASE+route
    canonical=soup.select_one('link[rel=canonical]');og=soup.select_one('meta[property="og:url"]');picture=soup.select_one('meta[property="og:image"]')
    if not canonical or canonical.get('href')!=expected:fail.append(f'{relative}: wrong canonical URL')

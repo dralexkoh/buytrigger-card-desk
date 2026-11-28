@@ -124,6 +124,9 @@ test('tcgplayer homepage banner stays hidden until the Impact URL is set',()=>{
  const replaced=new URL(tcgplayerHref({tcgplayerImpactUrl:'https://impact.example/go?subId1=old&subId2=other'}));
  assert.equal(replaced.searchParams.get('subId1'),'banner');
  assert.equal(replaced.searchParams.get('subId2'),'home');
+ const placed=new URL(tcgplayerHref({tcgplayerImpactUrl:'https://impact.example/go'},{subId1:'banner',subId2:'black-friday-deals'}));
+ assert.equal(placed.searchParams.get('subId1'),'banner');
+ assert.equal(placed.searchParams.get('subId2'),'black-friday-deals');
  const site=fs.readFileSync(path.join(__dirname,'..','site.js'),'utf8');
  const home=site.slice(site.indexOf('function home()'),site.indexOf('function digestSignup'));
  assert.doesNotMatch(home,/Open the grading calculator|harder question|grading-calculator\.html/);
